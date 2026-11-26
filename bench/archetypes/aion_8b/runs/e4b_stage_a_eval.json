@@ -1,0 +1,66 @@
+{
+ "n_pca_tr_pts": 2025,
+ "n_eval_pts": 3192,
+ "blind_phi4_pts": {
+  "cos": 0.6995,
+  "r2_frob": 0.207,
+  "r2_opt": 0.3643,
+  "top1": 0.9167,
+  "top5": 0.9846,
+  "by_domain_cos": {
+   "held_gut": 0.5379,
+   "items3_mech": 0.6971,
+   "items3_myth": 0.7009,
+   "proc_held": 0.8628
+  }
+ },
+ "blind_olmo3_pts": {
+  "cos": 0.6652,
+  "r2_frob": 0.2515,
+  "r2_opt": 0.3918,
+  "top1": 0.8638,
+  "top5": 0.9375,
+  "by_domain_cos": {
+   "held_gut": 0.5444,
+   "items3_mech": 0.6415,
+   "items3_myth": 0.6648,
+   "proc_held": 0.8565
+  }
+ },
+ "c5_eval_pts": {
+  "cos": 0.8415,
+  "r2_frob": 0.6347,
+  "r2_opt": 0.6682,
+  "top1": 0.9857,
+  "top5": 0.9985,
+  "by_domain_cos": {
+   "held_gut": 0.7395,
+   "items3_mech": 0.845,
+   "items3_myth": 0.8421,
+   "proc_held": 0.9297
+  }
+ },
+ "held_nll": {
+  "held_gut_nll": 4.8001
+ },
+ "items3_L12_centered": {
+  "myth": {
+   "n": 100,
+   "TF": 0.84,
+   "TL": 0.0
+  },
+  "mech": {
+   "n": 100,
+   "TF": 0.82,
+   "TL": 0.29
+  }
+ },
+ "jung_L12": {
+  "house_2f_acc": 0.9399,
+  "house_2f_lenres": 0.9142,
+  "r_len": 0.1944,
+  "perf_acc": 0.775,
+  "self2_2f_acc": 0.9873,
+  "house_to_self2_acc": 1.0
+ }
+}

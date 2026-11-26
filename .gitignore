@@ -1,0 +1,50 @@
+# Python & OS
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+.env
+.env.*
+*.log
+*.tmp.*
+
+# Local runtime state & model weights (downloaded on demand)
+.aion/
+.jung_plato_lattice/
+local_data/
+models/
+*.pt
+*.pth
+*.safetensors
+*.gguf
+*.bin
+*.wav
+!bench/archetypes/aion_8b/assets/test_speech_16k.wav
+
+# Large regenerable extraction & token caches (rebuilt by scripts)
+bench/archetypes/smallworld/gutenberg/
+bench/archetypes/smallworld/gut_tok*/
+bench/archetypes/fluent/plato/raw_*.npz
+bench/archetypes/fluent/plato/arch229_*.npz
+!bench/archetypes/fluent/plato/arch229_consensus.npz
+bench/archetypes/fluent/plato/myth229_raw_*.npz
+bench/archetypes/fluent/plato/targets_*.npz
+bench/archetypes/fluent/plato/meta_c4.json
+bench/archetypes/fluent/plato/myth_train.bin
+bench/archetypes/fluent/mid/*.bin
+bench/archetypes/fluent/local_ckpt/
+bench/archetypes/fluent/local_eval/
+bench/archetypes/fluent/runs/gen/
+bench/archetypes/fluent/runs/*.log
+bench/archetypes/aion_8b/runs/*.log
+
+# LaTeX build intermediates (keep main.tex, references.bib, main.bbl, IEEEtran.cls, main.pdf)
+paper/arxiv/*.aux
+paper/arxiv/*.blg
+paper/arxiv/*.fls
+paper/arxiv/*.fdb_latexmk
+paper/arxiv/*.out
+paper/arxiv/*.toc
+paper/arxiv/*.xdv
+paper/arxiv/*.synctex.gz
+paper/arxiv/main.log

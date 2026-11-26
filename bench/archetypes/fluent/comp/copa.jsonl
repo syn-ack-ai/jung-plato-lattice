@@ -1,0 +1,500 @@
+{"premise": "The item was packaged in bubble wrap.", "question": "cause", "choices": ["It was fragile.", "It was small."], "label": 0}
+{"premise": "I emptied my pockets.", "question": "effect", "choices": ["I retrieved a ticket stub.", "I found a weapon."], "label": 0}
+{"premise": "Termites invaded the house.", "question": "effect", "choices": ["The termites disappeared from the house.", "The termites ate through the wood in the house."], "label": 1}
+{"premise": "The travelers reached the border.", "question": "effect", "choices": ["The patrol agent checked their passports.", "The patrol agent accused them of smuggling."], "label": 0}
+{"premise": "The office was closed.", "question": "cause", "choices": ["It was a holiday.", "It was summer."], "label": 0}
+{"premise": "The girl ran out of energy.", "question": "cause", "choices": ["She played checkers.", "She jumped rope."], "label": 1}
+{"premise": "The woman lost her place in line.", "question": "cause", "choices": ["More people entered the line.", "She stepped out of the line."], "label": 1}
+{"premise": "The girl pinched her nose.", "question": "cause", "choices": ["The baby drooled on her bib.", "The baby soiled her diaper."], "label": 1}
+{"premise": "The band played their hit song.", "question": "effect", "choices": ["The audience clapped along to the music.", "The audience politely listened in silence."], "label": 0}
+{"premise": "The girl wanted to thank her math teacher.", "question": "effect", "choices": ["The girl stayed after school for detention.", "The girl brought the teacher an apple."], "label": 1}
+{"premise": "The young campers felt scared.", "question": "cause", "choices": ["Their camp counselor told them a ghost story.", "They toasted marshmallows on the campfire."], "label": 0}
+{"premise": "The man hit his head.", "question": "effect", "choices": ["He got lost in thought.", "He got a concussion."], "label": 1}
+{"premise": "The check I wrote bounced.", "question": "cause", "choices": ["My bank account was empty.", "I earned a pay raise."], "label": 0}
+{"premise": "The man's email inbox was full of spam.", "question": "effect", "choices": ["He deleted the spam.", "He sent out a mass email."], "label": 0}
+{"premise": "The sailor was quarantined.", "question": "cause", "choices": ["He was exposed to the disease.", "He recovered from the disease."], "label": 0}
+{"premise": "The girl memorized the code.", "question": "cause", "choices": ["She recited it to herself.", "She forgot to write it down."], "label": 0}
+{"premise": "I poured the water into the glass.", "question": "effect", "choices": ["The water quenched my thirst.", "The glass became full."], "label": 1}
+{"premise": "The man remained silent when his friend finishing speaking.", "question": "cause", "choices": ["He wanted to offer his friend support.", "He was thinking about his friend's words."], "label": 1}
+{"premise": "The accident was my fault.", "question": "effect", "choices": ["I felt guilty.", "I pressed charges."], "label": 0}
+{"premise": "The chain came apart.", "question": "cause", "choices": ["The chain was wrapped around a tire.", "There was a broken link in the chain."], "label": 1}
+{"premise": "The couple decided to compromise.", "question": "cause", "choices": ["They grew tired of arguing.", "They avoided discussing the problem."], "label": 0}
+{"premise": "The woman decided to run for public office.", "question": "effect", "choices": ["She hired a campaign manager.", "She testified in court."], "label": 0}
+{"premise": "The man anticipated cold weather on his trip.", "question": "effect", "choices": ["He packed warm clothing in his suitcase.", "He travelled with a big suitcase."], "label": 0}
+{"premise": "The student knew the answer to the question.", "question": "effect", "choices": ["He raised his hand.", "He goofed off."], "label": 0}
+{"premise": "The man's eyes watered.", "question": "cause", "choices": ["Dust got into his eyes.", "He put goggles over his eyes."], "label": 0}
+{"premise": "The player won five games in a row.", "question": "effect", "choices": ["Her opponent accused her of cheating.", "Her opponent felt sorry for her."], "label": 0}
+{"premise": "The teacher tore up the student's exam.", "question": "cause", "choices": ["He caught the student cheating.", "The student's answers were incorrect."], "label": 0}
+{"premise": "I paused to stop talking.", "question": "cause", "choices": ["I lost my voice.", "I ran out of breath."], "label": 1}
+{"premise": "The frozen food thawed.", "question": "cause", "choices": ["I put it in the microwave.", "I covered it with plastic wrap."], "label": 0}
+{"premise": "The employee faked sick.", "question": "cause", "choices": ["He had stomach cramps.", "He wanted a day off."], "label": 1}
+{"premise": "The girl landed in the pool.", "question": "cause", "choices": ["She ran on the pool deck.", "She jumped off the diving board."], "label": 1}
+{"premise": "The movie tickets sold out.", "question": "cause", "choices": ["It was opening day for the movie.", "The movie received poor reviews."], "label": 0}
+{"premise": "The man lost weight.", "question": "effect", "choices": ["People isolated him.", "People complimented him."], "label": 1}
+{"premise": "The girl's hands became blistered.", "question": "cause", "choices": ["She typed up a letter.", "She climbed up a rope."], "label": 1}
+{"premise": "The circus performer juggled while riding a unicycle.", "question": "effect", "choices": ["The audience cheered in astonishment.", "The acrobat swung from a trapeze."], "label": 0}
+{"premise": "I lost my patience.", "question": "cause", "choices": ["My friend kept me waiting.", "My friend arrived on time."], "label": 0}
+{"premise": "The warring countries wanted peace.", "question": "effect", "choices": ["They developed nuclear weapons.", "They negotiated a treaty."], "label": 1}
+{"premise": "The man took sleeping medication.", "question": "effect", "choices": ["He became drowsy.", "He ran a fever."], "label": 0}
+{"premise": "The woman bumped into the sofa.", "question": "effect", "choices": ["The leg of the sofa came loose.", "She bruised her knee."], "label": 1}
+{"premise": "The boy squeezed the balloon.", "question": "effect", "choices": ["The balloon popped.", "The balloon flew away."], "label": 0}
+{"premise": "They travelers checked into their hotel room.", "question": "effect", "choices": ["They unpacked their suitcases.", "They went to the airport."], "label": 0}
+{"premise": "I bit into the peach.", "question": "effect", "choices": ["The peach bruised.", "Juice spilled out."], "label": 1}
+{"premise": "My hands became sticky.", "question": "cause", "choices": ["I ate a doughnut.", "I had a sweet tooth."], "label": 0}
+{"premise": "I pushed the door.", "question": "effect", "choices": ["The door opened.", "The door locked."], "label": 0}
+{"premise": "Activists boycotted the products.", "question": "cause", "choices": ["The products were tested for quality assurance.", "The products were manufactured through child labor."], "label": 1}
+{"premise": "I drilled a hole in the wall.", "question": "effect", "choices": ["A mouse crawled out of the hole.", "Dust blew out of the hole."], "label": 1}
+{"premise": "The woman felt envious of her sister.", "question": "cause", "choices": ["Her sister was happy.", "Her sister got divorced."], "label": 0}
+{"premise": "I spilled wine on my shirt.", "question": "effect", "choices": ["I put on an apron.", "I changed my shirt."], "label": 1}
+{"premise": "The cashier opened the cash register.", "question": "cause", "choices": ["The customer searched his wallet.", "The customer handed her money."], "label": 1}
+{"premise": "The street musician attracted a crowd.", "question": "effect", "choices": ["People gave him change.", "He sent the crowd away."], "label": 0}
+{"premise": "The little boy cried to his babysitter.", "question": "cause", "choices": ["He missed his parents.", "It was snack time."], "label": 0}
+{"premise": "The pilot's radar detected a storm.", "question": "effect", "choices": ["The pilot navigated away from the storm.", "The pilot flew through the storm."], "label": 0}
+{"premise": "The tree shed its leaves.", "question": "effect", "choices": ["The leaves turned colors.", "The leaves accumulated on the ground."], "label": 1}
+{"premise": "The boy was in a mischievous mood.", "question": "effect", "choices": ["He decided to play a card game with his sister.", "He decided to play a practical joke on his sister."], "label": 1}
+{"premise": "The child complained that he had to go to the bathroom.", "question": "effect", "choices": ["His father gave him a soda to drink.", "His father stopped the car at a gas station."], "label": 1}
+{"premise": "The child sprinkled fish food into the tank.", "question": "effect", "choices": ["The fish leapt out of the tank.", "The fish swam towards the food."], "label": 1}
+{"premise": "The woman's political views changed.", "question": "effect", "choices": ["She switched her party affiliation.", "She engaged in a protest."], "label": 0}
+{"premise": "The bathroom sink was clogged.", "question": "effect", "choices": ["I turned on the faucet.", "I poured drain cleaner into it."], "label": 1}
+{"premise": "The passengers got off the train.", "question": "cause", "choices": ["The train arrived at the station.", "The train blared its whistle."], "label": 0}
+{"premise": "The man pressed down on the moist flap of the envelope.", "question": "effect", "choices": ["He put a stamp on the envelope.", "He sealed the envelope shut."], "label": 1}
+{"premise": "The friends lost touch.", "question": "cause", "choices": ["They enjoyed each other's company.", "They moved to different cities."], "label": 1}
+{"premise": "The accountant mismanaged the company's funds.", "question": "effect", "choices": ["She was fired from her position.", "She went on maternity leave."], "label": 0}
+{"premise": "I looked at the clock.", "question": "cause", "choices": ["I heard the clock tick.", "I wanted to check the time."], "label": 1}
+{"premise": "My hand cramped up.", "question": "cause", "choices": ["I wrote the essay by hand.", "My wife and I held hands."], "label": 0}
+{"premise": "The bolt tightened.", "question": "cause", "choices": ["I replaced the bolt.", "I twisted the wrench."], "label": 1}
+{"premise": "The couple signed a lease for an apartment.", "question": "effect", "choices": ["The couple moved into the apartment.", "The city condemned the apartment."], "label": 0}
+{"premise": "The woman sat outside on the porch.", "question": "cause", "choices": ["She wanted to watch the sunset.", "She thought she saw lightning."], "label": 0}
+{"premise": "The man wore a lifejacket in the water.", "question": "cause", "choices": ["He couldn't swim.", "The water was shallow."], "label": 0}
+{"premise": "The woman made a typo in the word processor.", "question": "effect", "choices": ["She deleted the document.", "She hit the backspace key."], "label": 1}
+{"premise": "The girl bragged to her friends.", "question": "cause", "choices": ["She got a bad grade.", "She won a contest."], "label": 1}
+{"premise": "The lawn was muddy.", "question": "cause", "choices": ["It poured overnight.", "It was full of weeds."], "label": 0}
+{"premise": "The woman overslept.", "question": "cause", "choices": ["She stayed the night in a hotel.", "She forgot to set her alarm clock."], "label": 1}
+{"premise": "The man put on sunscreen.", "question": "cause", "choices": ["He sat in the shade.", "He went to the beach."], "label": 1}
+{"premise": "The researchers proved the theory.", "question": "effect", "choices": ["The researchers retracted the theory.", "Individuals accepted the theory."], "label": 1}
+{"premise": "The fans at the game booed.", "question": "cause", "choices": ["The game went into overtime.", "The referee made a bad call."], "label": 1}
+{"premise": "I entered my combination on the lock.", "question": "effect", "choices": ["I shut the lock.", "The lock popped open."], "label": 1}
+{"premise": "The crowd intensified.", "question": "effect", "choices": ["The father handed his son some money.", "The father grabbed his son's hand."], "label": 1}
+{"premise": "The snow was blocking the driveway.", "question": "effect", "choices": ["I gathered the snow into a snowball.", "I shoveled the snow out of the way."], "label": 1}
+{"premise": "The kayakers paddled their oars.", "question": "effect", "choices": ["The kayak reached the shore.", "The kayak hit a wave."], "label": 0}
+{"premise": "The girl lost control of her bike.", "question": "effect", "choices": ["She let go of the handlebars.", "She crashed into a fence."], "label": 1}
+{"premise": "I turned on the fan.", "question": "effect", "choices": ["Water sprinkled onto my skin.", "I felt cool air pass over me."], "label": 1}
+{"premise": "The surfers returned to the beach.", "question": "cause", "choices": ["They were drenched.", "They saw a shark."], "label": 1}
+{"premise": "I pulled the drain plug in the bathtub.", "question": "effect", "choices": ["The water drained out of the tub.", "The water splashed onto the floor."], "label": 0}
+{"premise": "The husband felt guilty about cheating on his wife.", "question": "effect", "choices": ["He accused her of infidelity.", "He confessed his infidelity to her."], "label": 1}
+{"premise": "The ink on the poster smeared.", "question": "cause", "choices": ["I waited for the ink to dry.", "I spilled water on the poster."], "label": 1}
+{"premise": "The child woke up screaming.", "question": "cause", "choices": ["He had a nightmare.", "He wet the bed."], "label": 0}
+{"premise": "The boy put his feet up on the table.", "question": "effect", "choices": ["His father sat down at the table.", "His father lectured him."], "label": 1}
+{"premise": "My friend turned his head in my direction.", "question": "cause", "choices": ["I shouted his name.", "I waved my arms."], "label": 0}
+{"premise": "The government oppressed its citizens.", "question": "effect", "choices": ["The citizens staged a revolt.", "The citizens registered to vote."], "label": 0}
+{"premise": "The boy was lost in the woods.", "question": "effect", "choices": ["He pitched a tent.", "He screamed for help."], "label": 1}
+{"premise": "The woman travelled abroad.", "question": "cause", "choices": ["She wanted to learn how to draw.", "She wanted to learn about other cultures."], "label": 1}
+{"premise": "The man was jealous of his coworker.", "question": "cause", "choices": ["His coworker got a promotion.", "His coworker worked late."], "label": 0}
+{"premise": "The man witnessed aliens.", "question": "cause", "choices": ["He was hallucinating.", "He was meditating."], "label": 0}
+{"premise": "The man's hair turned blonde.", "question": "cause", "choices": ["He put bleach in it.", "He put shampoo in it."], "label": 0}
+{"premise": "The artist created new work.", "question": "cause", "choices": ["She critiqued her previous work.", "She felt a stroke of inspiration."], "label": 1}
+{"premise": "The son moved away from home.", "question": "cause", "choices": ["He was discharged from the military.", "He was going to college."], "label": 1}
+{"premise": "Books fell out of the bookcase.", "question": "cause", "choices": ["The shelves were covered with dust.", "An earthquake shook the bookcase."], "label": 1}
+{"premise": "The electricity in my house shut off.", "question": "effect", "choices": ["I turned on a light.", "I reset the circuit breaker."], "label": 1}
+{"premise": "We rode the roller coaster.", "question": "cause", "choices": ["It looked scary.", "It looked fun."], "label": 1}
+{"premise": "The bag of popcorn began to pop.", "question": "cause", "choices": ["I poured butter into the bag.", "I heated it in the microwave."], "label": 1}
+{"premise": "A tree fell on the power line.", "question": "effect", "choices": ["The electricity in the neighborhood went out.", "The forecast predicted heavy winds."], "label": 0}
+{"premise": "The speaker made politically incorrect comments.", "question": "effect", "choices": ["He bored the audience.", "He offended the audience."], "label": 1}
+{"premise": "I pricked myself with the pin.", "question": "effect", "choices": ["A bead of sweat dripped from my face.", "A drop of blood formed on my finger."], "label": 1}
+{"premise": "The fish floated on the surface of the tank.", "question": "cause", "choices": ["It was hungry.", "It was dead."], "label": 1}
+{"premise": "The man's voice sounded hoarse.", "question": "cause", "choices": ["He had a cold.", "He quit smoking."], "label": 0}
+{"premise": "The elevator doors opened.", "question": "cause", "choices": ["The elevator arrived at the designated floor.", "The elevator got stuck between floors."], "label": 0}
+{"premise": "The teenager snuck out of the house.", "question": "cause", "choices": ["He lied to his parents.", "His parents grounded him."], "label": 1}
+{"premise": "The bathroom flooded.", "question": "cause", "choices": ["The toilet overflowed.", "The water heater broke."], "label": 0}
+{"premise": "The puppy stayed near its owner.", "question": "cause", "choices": ["The owner put a collar on the puppy.", "The owner kept the puppy on a leash."], "label": 1}
+{"premise": "The man caught his reflection.", "question": "cause", "choices": ["He stood under the sprawling tree.", "He stood over the calm lake."], "label": 1}
+{"premise": "I missed my girlfriend's phone call.", "question": "effect", "choices": ["I called her back.", "I met her for dinner."], "label": 0}
+{"premise": "The family searched the neighborhood.", "question": "cause", "choices": ["Their dog ran away from home.", "Expensive jewelry was missing from their home."], "label": 0}
+{"premise": "I saw my breath when I exhaled.", "question": "cause", "choices": ["The weather was chilly.", "My chest felt tight."], "label": 0}
+{"premise": "The employees formed a union.", "question": "cause", "choices": ["They wanted better working conditions.", "Their employer raised their wages."], "label": 0}
+{"premise": "I baked an apple pie.", "question": "effect", "choices": ["A rotting smell filled the kitchen.", "A warm aroma filled the kitchen."], "label": 1}
+{"premise": "The woman struggled to walk.", "question": "cause", "choices": ["She wore high heels.", "She took off her shoes."], "label": 0}
+{"premise": "Steam rose off of the pot of water.", "question": "cause", "choices": ["The water boiled.", "I covered the pot."], "label": 0}
+{"premise": "All my socks were in the laundry.", "question": "effect", "choices": ["I wore sandals.", "I wore boots."], "label": 0}
+{"premise": "The politician's argument was considered absurd.", "question": "effect", "choices": ["He lost the support of voters.", "He was accused of corruption."], "label": 0}
+{"premise": "Everyone disapproved of the couple's engagement.", "question": "effect", "choices": ["The couple got pregnant.", "The couple eloped."], "label": 1}
+{"premise": "The building was dedicated to the millionaire.", "question": "cause", "choices": ["The millionaire wanted the building torn down.", "The millionaire contributed the funds to build it."], "label": 1}
+{"premise": "The sale associate accused the girl of stealing.", "question": "cause", "choices": ["The sales associate saw the girl put merchandise in her purse.", "The sales associate helped the girl find the purse she liked."], "label": 0}
+{"premise": "The country declared war on the neighboring territory.", "question": "effect", "choices": ["Soldiers were sent out to fight.", "Soldiers were reunited with their families."], "label": 0}
+{"premise": "The court upheld the controversial ruling.", "question": "effect", "choices": ["A riot broke loose in front of the courthouse.", "A couple exchanged vows in front of the courthouse."], "label": 0}
+{"premise": "The girl smelled something burning.", "question": "cause", "choices": ["She took the cookies out of the jar.", "She left the cookies in the oven."], "label": 1}
+{"premise": "The rain was pouring down.", "question": "effect", "choices": ["The storm worsened.", "I dashed to get inside."], "label": 1}
+{"premise": "The building was evacuated.", "question": "cause", "choices": ["The elevator stopped functioning.", "The fire alarm went off."], "label": 1}
+{"premise": "The father resented his son's alcoholism.", "question": "effect", "choices": ["The father bought his son a beer.", "The father kicked his son out of the house."], "label": 1}
+{"premise": "The lawyer took the stairs up to her office.", "question": "cause", "choices": ["The secretary went home for the day.", "The elevator was out of order."], "label": 1}
+{"premise": "The man became annoyed with his friend.", "question": "cause", "choices": ["His friend interrupted him.", "His friend bought him lunch."], "label": 0}
+{"premise": "The girl handed her money to the cashier.", "question": "effect", "choices": ["The cashier gave the girl her change.", "The cashier forgot to give the girl a receipt."], "label": 0}
+{"premise": "The woman was put in a wheelchair.", "question": "cause", "choices": ["She was paralyzed in an accident.", "She entered the hospital in a stretcher."], "label": 0}
+{"premise": "Citizens hung the national flag up outside their homes.", "question": "cause", "choices": ["The country was commemorating its independence.", "The country was facing economic hardship."], "label": 0}
+{"premise": "The team lost the tournament.", "question": "effect", "choices": ["They disappointed their fans.", "They inspired their fans."], "label": 0}
+{"premise": "My friend pointed out that I had food stuck in my teeth.", "question": "effect", "choices": ["I felt embarrassed.", "I felt proud."], "label": 0}
+{"premise": "The boy failed his history exam.", "question": "cause", "choices": ["He paid attention in class.", "He forgot to study."], "label": 1}
+{"premise": "The downtown building collapsed.", "question": "cause", "choices": ["An earthquake hit the city.", "Crime rates in the city increased."], "label": 0}
+{"premise": "The man's girlfriend broke up with him.", "question": "effect", "choices": ["He begged her to take him back.", "She introduced him to her parents."], "label": 0}
+{"premise": "The two children simultaneously reached down to retrieve the ball.", "question": "effect", "choices": ["The ball rolled away.", "Their heads collided."], "label": 1}
+{"premise": "The raccoon ransacked the garbage can.", "question": "cause", "choices": ["There was cardboard in the garbage can.", "The lid was off the garbage can."], "label": 1}
+{"premise": "The boy sharpened the pencil.", "question": "cause", "choices": ["It was cheap.", "It was dull."], "label": 1}
+{"premise": "The cashier denied the woman a refund for the dress.", "question": "cause", "choices": ["She lost her receipt.", "The dress didn't fit."], "label": 0}
+{"premise": "The scratch in my skin was deep.", "question": "effect", "choices": ["It healed quickly.", "It left a scar."], "label": 1}
+{"premise": "The man received strange looks from passengers on the train.", "question": "cause", "choices": ["He was staring at the ground.", "He was talking to himself."], "label": 1}
+{"premise": "The child left crumbs on the floor.", "question": "effect", "choices": ["Ants crawled to the crumbs.", "The child put the bread away."], "label": 0}
+{"premise": "The woman handed her sister a tissue.", "question": "cause", "choices": ["The woman's sister folded her hands.", "The woman's sister began to cry."], "label": 1}
+{"premise": "The man took a mint.", "question": "cause", "choices": ["His lips were chapped.", "He worried about bad breath."], "label": 1}
+{"premise": "The couple left early for the show.", "question": "cause", "choices": ["They anticipated traffic around the theatre.", "They got directions to the theatre."], "label": 0}
+{"premise": "The woman stayed home from work.", "question": "effect", "choices": ["Her boss praised her.", "Her coworker covered for her."], "label": 1}
+{"premise": "The man signed the activists' petition.", "question": "cause", "choices": ["He supported their cause.", "He denounced them as crazy."], "label": 0}
+{"premise": "The actor's heart was fluttering before his performance.", "question": "cause", "choices": ["He had stage fright.", "He memorized his lines."], "label": 0}
+{"premise": "I was lost.", "question": "effect", "choices": ["I counted my cash.", "I unfolded a map."], "label": 1}
+{"premise": "The ripe fruit lingered in the sun.", "question": "effect", "choices": ["It was eaten.", "It shriveled up."], "label": 1}
+{"premise": "The car broke down.", "question": "cause", "choices": ["I turned the ignition.", "The engine overheated."], "label": 1}
+{"premise": "The man hurt his back.", "question": "effect", "choices": ["He went to see a psychiatrist.", "He stayed in bed for several days."], "label": 1}
+{"premise": "I started a fire in the fireplace.", "question": "cause", "choices": ["I was out of firewood.", "It was cold in the house."], "label": 1}
+{"premise": "The woman stopped jogging.", "question": "cause", "choices": ["She got a cramp in her side.", "She got a second wind."], "label": 0}
+{"premise": "I knocked on my neighbor's door.", "question": "effect", "choices": ["My neighbor invited me in.", "My neighbor left her house."], "label": 0}
+{"premise": "The woman sighed with frustration.", "question": "cause", "choices": ["Her husband misunderstood her concerns.", "Her husband kissed her goodbye."], "label": 0}
+{"premise": "The teacher commended the student.", "question": "cause", "choices": ["The student answered the question correctly.", "The student hesitated to answer the question."], "label": 0}
+{"premise": "The woman ran out of eggs.", "question": "effect", "choices": ["She went to the farm.", "She went to the supermarket."], "label": 1}
+{"premise": "I encountered an old friend.", "question": "effect", "choices": ["I revealed a secret to him.", "I gave him a hug."], "label": 1}
+{"premise": "The woman avoided going in the lake.", "question": "cause", "choices": ["She caught a fish.", "It looked contaminated."], "label": 1}
+{"premise": "The student arrived to class soaking wet.", "question": "cause", "choices": ["His umbrella was broken.", "His bike was stolen."], "label": 0}
+{"premise": "The cursor on the computer screen moved.", "question": "cause", "choices": ["The user clicked the mouse.", "The user shifted the mouse."], "label": 1}
+{"premise": "The driver took a detour.", "question": "cause", "choices": ["An accident occurred on the main road.", "She followed the truck in front of her."], "label": 0}
+{"premise": "I hung the wet linen on the outdoor clothesline.", "question": "effect", "choices": ["The linen dried.", "The linen stained."], "label": 0}
+{"premise": "The woman put on her shades.", "question": "cause", "choices": ["The sunlight was bright.", "She hailed a cab."], "label": 0}
+{"premise": "The man gazed at the night sky.", "question": "cause", "choices": ["He wished it were summer.", "He thought it was beautiful."], "label": 1}
+{"premise": "I felt exhausted.", "question": "effect", "choices": ["I went to bed early.", "I stayed up all night."], "label": 0}
+{"premise": "The man went to the barber.", "question": "cause", "choices": ["He was growing out his hair.", "His hair was getting long."], "label": 1}
+{"premise": "The boy played mean tricks on his new classmate.", "question": "cause", "choices": ["The boy welcomed the new classmate.", "The boy disliked the new classmate."], "label": 1}
+{"premise": "I craved a glass of milk.", "question": "cause", "choices": ["I was eating cookies.", "I was baking bread."], "label": 0}
+{"premise": "It began to rain.", "question": "effect", "choices": ["The driver turned on the headlights.", "The driver shifted the car into reverse."], "label": 0}
+{"premise": "The parking lot of the building was empty.", "question": "effect", "choices": ["I parked across the street.", "I parked near the entrance."], "label": 1}
+{"premise": "The writer missed her deadline for the draft submission.", "question": "cause", "choices": ["She had writer's block.", "She edited the draft."], "label": 0}
+{"premise": "The associate hung up on me.", "question": "cause", "choices": ["I asked to speak to a supervisor.", "I provided my identification number."], "label": 0}
+{"premise": "The wind blew through the open window.", "question": "effect", "choices": ["The doorbell rang.", "The curtains shuddered."], "label": 1}
+{"premise": "The electricity in my house shut off.", "question": "cause", "choices": ["I unplugged the lamp.", "I blew a fuse."], "label": 1}
+{"premise": "The weightlifter grunted.", "question": "cause", "choices": ["He flexed his muscles in the mirror.", "He lifted the bar over his head."], "label": 1}
+{"premise": "The student tried to do the math in his head.", "question": "effect", "choices": ["He got out a calculator.", "He got confused."], "label": 1}
+{"premise": "The baby fell asleep.", "question": "cause", "choices": ["The father changed the baby's diaper.", "The father gently rocked the baby."], "label": 1}
+{"premise": "The girl threw the water balloon at the boy.", "question": "effect", "choices": ["The boy got a concussion.", "The boy got soaked."], "label": 1}
+{"premise": "The photographer forgot to use the flash on the camera.", "question": "effect", "choices": ["The photos turned out blurry.", "Everyone in the photos refused to smile."], "label": 0}
+{"premise": "I declined the invitation to the birthday party.", "question": "cause", "choices": ["I was lonely.", "I was out of town."], "label": 1}
+{"premise": "I exercised.", "question": "cause", "choices": ["I felt energetic.", "I was scared."], "label": 0}
+{"premise": "I squeezed the damp sponge.", "question": "effect", "choices": ["It soaked up water.", "Water seeped out of it."], "label": 1}
+{"premise": "The vacationers took a ferry to the resort.", "question": "cause", "choices": ["The resort was booked.", "The resort was on an island."], "label": 1}
+{"premise": "The teenager got a tattoo.", "question": "cause", "choices": ["She was afraid of needles.", "She wanted to rebel."], "label": 1}
+{"premise": "An unfamiliar car parked outside my house.", "question": "effect", "choices": ["I became suspicious.", "I called the police."], "label": 0}
+{"premise": "The criminal turned himself in.", "question": "cause", "choices": ["The evidence implicated him.", " There was no evidence against him."], "label": 0}
+{"premise": "The heavyset man decided to lose weight.", "question": "effect", "choices": ["He cut out sweets.", "He avoided caffeine."], "label": 0}
+{"premise": "The girl stepped on the ice.", "question": "effect", "choices": ["She slid.", "She shivered."], "label": 0}
+{"premise": "The woman had rings under her eyes.", "question": "cause", "choices": ["She stayed up all night.", "She put her son to bed."], "label": 0}
+{"premise": "Lava flowed from the volcano.", "question": "cause", "choices": ["The volcano erupted.", "The volcano was dormant."], "label": 0}
+{"premise": "The woman put her shoes on.", "question": "cause", "choices": ["She knew everyone at the party.", "She wanted to leave the party."], "label": 1}
+{"premise": "I paid the tollbooth attendant.", "question": "effect", "choices": ["She let me pass through the tollbooth.", "She detained me at the tollbooth."], "label": 0}
+{"premise": "The executive went bankrupt.", "question": "cause", "choices": ["He sold his company stock.", "He squandered his fortune."], "label": 1}
+{"premise": "The man went to the doctor.", "question": "cause", "choices": ["The doctor was on leave.", "The man felt ill."], "label": 1}
+{"premise": "I exited my bedroom through the window.", "question": "cause", "choices": ["The house was on fire.", "The house was empty."], "label": 0}
+{"premise": "The boy's fingers became pruny.", "question": "cause", "choices": ["He took a long shower.", "He lathered his hands with soap."], "label": 0}
+{"premise": "I spit out the milk.", "question": "cause", "choices": ["The milk tasted sour.", "My mouth was dry."], "label": 0}
+{"premise": "I missed the bus.", "question": "effect", "choices": ["I was early to work.", "I was late to work."], "label": 1}
+{"premise": "The truck collided with the car.", "question": "effect", "choices": ["The truck sped up.", "The car got smashed."], "label": 1}
+{"premise": "The team rigged the contest in their favor.", "question": "effect", "choices": ["They won.", " They dropped out."], "label": 0}
+{"premise": "The soda bottle hissed.", "question": "cause", "choices": ["I turned over the bottle.", "I twisted off the cap."], "label": 1}
+{"premise": "The boy was locked out of his house.", "question": "effect", "choices": ["He crawled in through an open window.", "He climbed up to the roof."], "label": 0}
+{"premise": "The doorbell rang.", "question": "effect", "choices": ["The visitor tapped the knocker on the door.", "The woman peered through the keyhole in the door."], "label": 1}
+{"premise": "The man stained his suit.", "question": "effect", "choices": ["He got it dry-cleaned.", "He hung it in his closet."], "label": 0}
+{"premise": "The girl squeezed the tube of toothpaste.", "question": "effect", "choices": ["The toothpaste squirted out of the tube.", "The girl spit out the toothpaste."], "label": 0}
+{"premise": "Civilian deaths from the war surged.", "question": "effect", "choices": ["Pacifists staged a protest.", "Pacifists held a parade."], "label": 0}
+{"premise": "The girl yanked the ribbon out of her hair.", "question": "cause", "choices": ["She tied the ribbon.", "The ribbon looked babyish."], "label": 1}
+{"premise": "The man got plastic surgery.", "question": "effect", "choices": ["He aged.", "He looked younger."], "label": 1}
+{"premise": "A baby chicken emerged from the egg.", "question": "cause", "choices": ["The egg hatched.", "I cracked the egg."], "label": 0}
+{"premise": "The prisoner starved.", "question": "effect", "choices": ["He died.", "He fled."], "label": 0}
+{"premise": "The man lost his balance on the ladder.", "question": "effect", "choices": ["He climbed up the ladder.", "He fell off the ladder."], "label": 1}
+{"premise": "The child burped.", "question": "cause", "choices": ["He took a swig of soda.", "He opened the soda can."], "label": 0}
+{"premise": "A cold draft came in through the window.", "question": "effect", "choices": ["I relaxed.", "I shivered."], "label": 1}
+{"premise": "The student received a scholarship to go to college.", "question": "cause", "choices": ["Her classmates respected her.", "She made good grades."], "label": 1}
+{"premise": "The girl poked fun at the boy.", "question": "cause", "choices": ["She lived next door to him.", "She had a crush on him."], "label": 1}
+{"premise": "The hungry vagrant stole food.", "question": "cause", "choices": ["He incited pity.", "He had no money."], "label": 1}
+{"premise": "I called my friend to chat.", "question": "cause", "choices": ["I wanted privacy.", "I felt lonely."], "label": 1}
+{"premise": "The man extended his hand to me.", "question": "effect", "choices": ["I shook his hand.", "I slapped him."], "label": 0}
+{"premise": "I ducked.", "question": "cause", "choices": ["The fireworks launched up in the air.", "The frisbee soared towards my head."], "label": 1}
+{"premise": "The girl bit her nails.", "question": "cause", "choices": ["She was worried.", "She was surprised."], "label": 0}
+{"premise": "I turned the page on the calendar.", "question": "cause", "choices": ["I marked an appointment on the calendar.", "It was the beginning of a new month."], "label": 1}
+{"premise": "The husband discovered that his wife was having an affair.", "question": "effect", "choices": ["He fired his lawyer.", "He filed for divorce."], "label": 1}
+{"premise": "The girl dropped the rubber ball.", "question": "effect", "choices": ["The ball bounced.", "The ball glowed."], "label": 0}
+{"premise": "The girl made a mistake on her exam.", "question": "effect", "choices": ["She guessed at the answer.", "She erased her answer."], "label": 1}
+{"premise": "The player tackled his opponent.", "question": "effect", "choices": ["His opponent caught the pass.", "His opponent hit the ground."], "label": 1}
+{"premise": "I picked the tomatoes from the vine.", "question": "cause", "choices": ["They were ripe.", "I watered them."], "label": 0}
+{"premise": "The man wanted to act romantic.", "question": "effect", "choices": ["He met his ex-girlfriend for lunch.", "He bought his girlfriend chocolates."], "label": 1}
+{"premise": "The mercury in the thermometer rose.", "question": "cause", "choices": ["I dropped the thermometer.", "The weather got warmer."], "label": 1}
+{"premise": "A tornado came through the town.", "question": "effect", "choices": ["The roof of the courthouse blew off.", "The highway became dangerously icy."], "label": 0}
+{"premise": "The student received tutoring.", "question": "effect", "choices": ["His grades improved.", "He cheated on the exam."], "label": 0}
+{"premise": "I felt comfortable.", "question": "cause", "choices": ["I kneeled down on the ground.", "I wrapped myself in a blanket."], "label": 1}
+{"premise": "I polished the stone.", "question": "effect", "choices": ["It became slippery.", "It became shiny."], "label": 1}
+{"premise": "I added sugar to the coffee.", "question": "effect", "choices": ["The coffee smelled strong.", "The coffee tasted sweet."], "label": 1}
+{"premise": "The man shuffled through the papers.", "question": "effect", "choices": ["He got a paper cut.", "He shredded the papers."], "label": 0}
+{"premise": "I pounded the nail with the hammer.", "question": "effect", "choices": ["The nail sunk into the wood.", "The nail became rusty."], "label": 0}
+{"premise": "The fish bit the line.", "question": "effect", "choices": ["The fisherman reeled in the fish.", "The fisherman recast the line."], "label": 0}
+{"premise": "The teenager was embarrassed to go to school.", "question": "cause", "choices": ["She got a pimple.", "She got her braces off."], "label": 0}
+{"premise": "My facial expression lit up.", "question": "cause", "choices": ["I received good news.", "I lost my patience."], "label": 0}
+{"premise": "I wiped my hands with a towel.", "question": "cause", "choices": ["The towel was wet.", "My hands were wet."], "label": 1}
+{"premise": "The man lost his balance on the stool.", "question": "cause", "choices": ["The stool wobbled underneath him.", "He spilled paint on the stool."], "label": 0}
+{"premise": "The teammates directed blame at each other.", "question": "cause", "choices": ["They lost their game.", "Their coach cancelled practice."], "label": 0}
+{"premise": "I asked for forgiveness.", "question": "cause", "choices": ["I regretted my mistake.", "I achieved my goal."], "label": 0}
+{"premise": "The woman became bored with her date.", "question": "cause", "choices": ["He asked her questions about herself.", "He talked incessantly about himself."], "label": 1}
+{"premise": "The girl flashed a smile.", "question": "effect", "choices": ["Her cheeks reddened.", "Her dimples showed."], "label": 1}
+{"premise": "The enemy ship blew up.", "question": "cause", "choices": ["It passed over the mine.", "It sailed into the harbor."], "label": 0}
+{"premise": "The man punctured his foot.", "question": "cause", "choices": ["He walked into a puddle.", "He stepped on broken glass."], "label": 1}
+{"premise": "The detectives dusted the crime scene for fingerprints.", "question": "effect", "choices": ["They discovered the identity of the murderer.", "They found the weapon at the crime scene."], "label": 0}
+{"premise": "There was a lot of traffic on the highway.", "question": "effect", "choices": ["I took a detour.", "I asked for a ride."], "label": 0}
+{"premise": "The nation's economy declined.", "question": "effect", "choices": ["Many people got sick.", "Many people faced unemployment."], "label": 1}
+{"premise": "The crossing guard blew her whistle at the children.", "question": "cause", "choices": ["They were about to walk into oncoming traffic.", "She recognized them from her neighborhood."], "label": 0}
+{"premise": "I rolled my eyes at my friend.", "question": "cause", "choices": ["He told me the truth.", "He made a sarcastic remark."], "label": 1}
+{"premise": "The car ran out of gas.", "question": "effect", "choices": ["The driver was stranded on the road.", "The driver picked up a hitchhiker."], "label": 0}
+{"premise": "The woman went into labor.", "question": "effect", "choices": ["The baby was delivered.", "The woman had morning sickness."], "label": 0}
+{"premise": "The man's hat blew away.", "question": "cause", "choices": ["He took off the hat.", "It was windy outside."], "label": 1}
+{"premise": "The girl attended her classmate's birthday party.", "question": "cause", "choices": ["She received an invitation.", "She bought a gift."], "label": 0}
+{"premise": "The boy's forehead felt hot.", "question": "effect", "choices": ["His mother took his temperature.", "His mother took him to the park."], "label": 0}
+{"premise": "The man sprayed himself with cologne.", "question": "cause", "choices": ["He wanted to impress his date.", "He put gel in his hair."], "label": 0}
+{"premise": "The electricity in the house shut off.", "question": "effect", "choices": ["I looked for a flashlight.", "I picked up a shovel."], "label": 0}
+{"premise": "The family moved into a bigger house.", "question": "cause", "choices": ["The son graduated from high school.", "The mother gave birth to twins."], "label": 1}
+{"premise": "The marathoner kept at a slow pace.", "question": "cause", "choices": ["She wanted to conserve her energy.", "She saw the finish line."], "label": 0}
+{"premise": "The boy kicked the vending machine.", "question": "cause", "choices": ["The machine spit out the change.", "The bag of chips was stuck."], "label": 1}
+{"premise": "My friend's dog died.", "question": "effect", "choices": ["I rolled my eyes at him.", "I gave him a hug."], "label": 1}
+{"premise": "The businessman's credit card got declined.", "question": "effect", "choices": ["He wrote an IOU.", "He paid with cash."], "label": 1}
+{"premise": "The man cursed.", "question": "cause", "choices": ["He clipped his nails.", "He stubbed his toe."], "label": 1}
+{"premise": "The man felt proud of his brother.", "question": "cause", "choices": ["His brother got in an argument with their parents.", "His brother got accepted into law school."], "label": 1}
+{"premise": "The girl wanted to learn about the solar system.", "question": "effect", "choices": ["She went to the library.", "She looked at the stars."], "label": 0}
+{"premise": "The poster stuck to the wall.", "question": "cause", "choices": ["I positioned the poster above the door.", "I put tape on the back of the poster."], "label": 1}
+{"premise": "The client approved the architect's plans for the building.", "question": "effect", "choices": ["The architect constructed the building.", "The architect adjusted the plans."], "label": 0}
+{"premise": "The man dropped his spoon.", "question": "cause", "choices": ["His hand was shaking.", "He licked the spoon."], "label": 0}
+{"premise": "The CEO of the company resigned.", "question": "effect", "choices": ["The board of directors dissolved the company.", "The board of directors found his replacement."], "label": 1}
+{"premise": "I arrived late to the lecture.", "question": "effect", "choices": ["I took a seat in the back row.", "I approached the podium."], "label": 0}
+{"premise": "The man was released from jail.", "question": "cause", "choices": ["His family paid his bail.", "He attacked a fellow inmate."], "label": 0}
+{"premise": "The family lost all their belongings.", "question": "cause", "choices": ["They sold their house.", "Their house caught fire."], "label": 1}
+{"premise": "I stomped on the aluminum can.", "question": "effect", "choices": ["The can was recycled.", "The can got crushed."], "label": 1}
+{"premise": "The girl joined the debate team.", "question": "effect", "choices": ["She learned to use a computer.", "She learned communication skills."], "label": 1}
+{"premise": "My mood improved.", "question": "cause", "choices": ["I listened to music.", "I did the dishes."], "label": 0}
+{"premise": "The charity made a goal to raise money.", "question": "effect", "choices": ["They fed the homeless.", "They held an auction."], "label": 1}
+{"premise": "The roller coaster plunged down the steep drop.", "question": "effect", "choices": ["The passengers giggled.", "The passengers screamed."], "label": 1}
+{"premise": "I was furious.", "question": "effect", "choices": ["I checked the mailbox upon leaving the house.", "I slammed the door upon leaving the house."], "label": 1}
+{"premise": "The man wanted to watch the sunrise.", "question": "effect", "choices": ["He travelled north.", "He got up early."], "label": 1}
+{"premise": "I folded the paper.", "question": "effect", "choices": ["I recycled the paper.", "The paper creased."], "label": 1}
+{"premise": "The nation endured a natural disaster.", "question": "effect", "choices": ["Leaders of other countries formed an alliance.", "Leaders of other countries sent emergency relief."], "label": 1}
+{"premise": "The boy's clothes got soaked.", "question": "cause", "choices": ["He climbed out of the pool.", "He fell into the pool."], "label": 1}
+{"premise": "The student rushed to finish the book.", "question": "cause", "choices": ["It was due to be returned to the library.", "He borrowed it from a friend."], "label": 0}
+{"premise": "The criminal was executed.", "question": "cause", "choices": ["He was thrown in jail.", "He was convicted of murder."], "label": 1}
+{"premise": "Sunlight entered the room.", "question": "cause", "choices": ["I opened the curtains.", "I unlocked the door."], "label": 0}
+{"premise": "I yanked the imposter's hair.", "question": "effect", "choices": ["Her wig came off.", "She went bald."], "label": 0}
+{"premise": "The editor reworded a sentence in the manuscript.", "question": "cause", "choices": ["He found the manuscript compelling.", "He deemed the sentence unclear."], "label": 1}
+{"premise": "The woman cancelled her credit card account.", "question": "cause", "choices": ["She realized the card was missing.", "She realized the card was expired."], "label": 0}
+{"premise": "The man and woman fell in love.", "question": "effect", "choices": ["They attended college.", "They got married."], "label": 1}
+{"premise": "The music was too faint to hear.", "question": "effect", "choices": ["I turned up the volume.", "I composed my own song."], "label": 0}
+{"premise": "The boy's hair was sticking up.", "question": "cause", "choices": ["The girl ruffled it.", "The girl pulled it."], "label": 0}
+{"premise": "The bug got squashed.", "question": "cause", "choices": ["I sprayed myself with bug repellent.", "I stepped on the bug."], "label": 1}
+{"premise": "I opened my eyes.", "question": "cause", "choices": ["I woke up.", "I relaxed."], "label": 0}
+{"premise": "My neighbor's music was blaring.", "question": "effect", "choices": ["I asked him to turn it down.", "I asked to borrow the CD from him."], "label": 0}
+{"premise": "The man's family lived in poverty.", "question": "cause", "choices": ["He was frugal with his earnings.", "He earned below minimum wage."], "label": 1}
+{"premise": "The student graduated from the university.", "question": "effect", "choices": ["He looked for a job.", "He took up a hobby."], "label": 0}
+{"premise": "The artist mixed yellow paint into blue paint.", "question": "effect", "choices": ["The paint splattered everywhere.", "The paint turned green."], "label": 1}
+{"premise": "I changed the topic of conversation.", "question": "cause", "choices": ["I ran out of things to talk about.", "The conversation became tense."], "label": 1}
+{"premise": "My brother was released from the hospital.", "question": "effect", "choices": ["I welcomed him back home.", "I gave him the cold shoulder."], "label": 0}
+{"premise": "The curtain on the stage went up.", "question": "effect", "choices": ["The opening scene of the play began.", "The actors in the play exited the stage."], "label": 0}
+{"premise": "The hostage submitted to the kidnapper's mandates.", "question": "cause", "choices": ["The kidnapper threatened to hurt the hostage.", "The kidnapper left the hostage by himself."], "label": 0}
+{"premise": "A boom reverberated across the stage.", "question": "cause", "choices": ["The musician tapped his foot.", "The musician pounded the drum."], "label": 1}
+{"premise": "The parents rushed to their child's bedroom.", "question": "cause", "choices": ["The child awoke screaming from a nightmare.", "The child was scared to look under her bed."], "label": 0}
+{"premise": "The woman communicated with sign language.", "question": "cause", "choices": ["She was born premature.", "She was born deaf."], "label": 1}
+{"premise": "A drought occurred in the region.", "question": "effect", "choices": ["The water became contaminated.", "The crops perished."], "label": 1}
+{"premise": "The cat chased the bird.", "question": "effect", "choices": ["The bird flew away.", "The bird caught a worm."], "label": 0}
+{"premise": "The girl switched schools.", "question": "cause", "choices": ["School let out for the summer.", "She moved to a new town."], "label": 1}
+{"premise": "The factory owner refused to raise employees' wages.", "question": "effect", "choices": ["The owner appointed a new manager.", "The employees went on strike."], "label": 1}
+{"premise": "The leader antagonized the extremists among his country.", "question": "effect", "choices": ["The extremists influenced him.", "The extremists assassinated him."], "label": 1}
+{"premise": "I walked barefoot on the beach.", "question": "effect", "choices": ["Sand stuck to my feet.", "Waves crashed along the shore."], "label": 0}
+{"premise": "I woke up in the middle of the night feeling cold.", "question": "effect", "choices": ["I put sweatpants on.", "I drank a glass of water."], "label": 0}
+{"premise": "The mother hushed her son.", "question": "cause", "choices": ["Her son smirked.", "Her son whined."], "label": 1}
+{"premise": "A hole ripped in my jeans.", "question": "cause", "choices": ["I zipped up the jeans.", "I tripped on the pavement."], "label": 1}
+{"premise": "The boy wore braces.", "question": "effect", "choices": ["He got a cavity.", "His teeth became straight."], "label": 1}
+{"premise": "I worked out at the gym yesterday.", "question": "effect", "choices": ["I woke up today with sore muscles.", "I woke up today with a sore throat."], "label": 0}
+{"premise": "The girl whispered back and forth to each other at the lunch table.", "question": "effect", "choices": ["Other students sat down at the lunch table.", "Other students at the lunch table felt left out."], "label": 1}
+{"premise": "The child landed on the trampoline.", "question": "effect", "choices": ["She sprung back up into the air.", "She decided to try to do a flip."], "label": 0}
+{"premise": "I deposited the letter in the mailbox.", "question": "effect", "choices": ["The post office delivered the letter.", "The post office expedited the letter."], "label": 0}
+{"premise": "The gambler was confident.", "question": "effect", "choices": ["He bet all of his money.", "He went home broke."], "label": 0}
+{"premise": "The forest fire spread.", "question": "cause", "choices": ["The winds became stronger.", "The arsonists were apprehended."], "label": 0}
+{"premise": "The child skinned his knee.", "question": "effect", "choices": ["His mother sent him to his room.", "His mother put a bandage on the wound."], "label": 1}
+{"premise": "The man survived the deadly illness.", "question": "cause", "choices": ["He signed his will.", "He received an organ transplant."], "label": 1}
+{"premise": "I took a sip of the scalding coffee.", "question": "effect", "choices": ["I bit my tongue.", "I burnt my tongue."], "label": 1}
+{"premise": "The editor fired the writer.", "question": "cause", "choices": ["The writer avoided bias in her stories.", "The writer missed an important deadline."], "label": 1}
+{"premise": "I felt exhausted.", "question": "cause", "choices": ["I slept all day.", "I studied all day."], "label": 1}
+{"premise": "The physician diagnosed the patient.", "question": "cause", "choices": ["She identified the patient's symptoms.", "She prescribed pills to the patient."], "label": 0}
+{"premise": "I scratched my skin.", "question": "cause", "choices": ["It was sweaty.", "It felt itchy."], "label": 1}
+{"premise": "The man underwent emergency surgery.", "question": "cause", "choices": ["He lost his temper.", "He suffered a heart attack."], "label": 1}
+{"premise": "The man's arm muscles bulged.", "question": "cause", "choices": ["He flexed his arms.", "He rubbed his arms."], "label": 0}
+{"premise": "The man raised his eyebrows.", "question": "cause", "choices": ["He was surprised.", "He felt discouraged."], "label": 0}
+{"premise": "I excused my colleague's blunder.", "question": "cause", "choices": ["I believed his intentions were good.", "I believed that he knew better."], "label": 0}
+{"premise": "The man quit smoking.", "question": "effect", "choices": ["He began exercising more.", "He started waking up earlier."], "label": 0}
+{"premise": "The woman punched her attacker in the nose.", "question": "effect", "choices": ["The attacker's body went lifeless.", "The attacker started to bleed."], "label": 1}
+{"premise": "The dart missed the bull's eye.", "question": "cause", "choices": ["The man's aim was off.", "The man was losing the game."], "label": 0}
+{"premise": "The homeowner requested that an exterminator come to his house.", "question": "cause", "choices": ["He discovered rats in the basement.", "He kept an ant farm in his room."], "label": 0}
+{"premise": "I suggested to my houseguest that we go out to dinner.", "question": "cause", "choices": ["I was too tired to prepare anything.", "My houseguest overstayed her welcome."], "label": 0}
+{"premise": "The girl caught her brother reading her diary.", "question": "effect", "choices": ["She started hiding the diary.", "She got a new diary."], "label": 0}
+{"premise": "The woman was short on money for rent.", "question": "effect", "choices": ["She worked overtime.", "She quit her job."], "label": 0}
+{"premise": "The child's hand quickly recoiled.", "question": "cause", "choices": ["He touched the hot stove.", "He patted the puppy's head."], "label": 0}
+{"premise": "The company wanted to gauge customer satisfaction.", "question": "effect", "choices": ["They offered a discount to new customers.", "They distributed a survey to customers."], "label": 1}
+{"premise": "The wood floor became scratched.", "question": "cause", "choices": ["The boy threw the cushions off the couch.", "The boy dragged a chair across the floor."], "label": 1}
+{"premise": "I shielded my face.", "question": "cause", "choices": ["My enemy taunted me.", "My enemy cocked a fist."], "label": 1}
+{"premise": "The famous statue burned down.", "question": "cause", "choices": ["It was struck by lightning.", "People came to venerate it."], "label": 0}
+{"premise": "I left the fruit out on the table.", "question": "effect", "choices": ["The fruit shed seeds.", "Flies swarmed the fruit."], "label": 1}
+{"premise": "The ballerina tore a ligament.", "question": "cause", "choices": ["She pointed her toes.", "She twisted her ankle."], "label": 1}
+{"premise": "The child's shoelaces came untied.", "question": "cause", "choices": ["He learned how to tie them.", "He ran around on the playground."], "label": 1}
+{"premise": "I became enthralled in the book.", "question": "effect", "choices": ["I returned the book.", "I lost track of time."], "label": 1}
+{"premise": "The man held similar beliefs to those of his parents.", "question": "cause", "choices": ["His parents influenced him.", "His parents disowned him."], "label": 0}
+{"premise": "The car gradually slowed to a stop.", "question": "cause", "choices": ["It ran out of gas.", "The driver fell asleep."], "label": 0}
+{"premise": "The man ate the ice cream in the sun.", "question": "effect", "choices": ["The ice cream lost its flavor.", "The ice cream dripped from the cone."], "label": 1}
+{"premise": "I hung artwork in the room.", "question": "cause", "choices": ["The carpet looked dirty.", "The walls looked bare."], "label": 1}
+{"premise": "I left work early.", "question": "cause", "choices": ["I had a headache.", "My boss held a meeting."], "label": 0}
+{"premise": "The puppy soiled the carpet.", "question": "effect", "choices": ["The owner scolded the puppy.", "The owner gave the puppy a treat."], "label": 0}
+{"premise": "I apologized to my friend.", "question": "effect", "choices": ["My friend forgave me.", "My friend became infuriated."], "label": 0}
+{"premise": "The man stood out in the crowd.", "question": "cause", "choices": ["He carried a backpack.", "He wore a neon vest."], "label": 1}
+{"premise": "The witness lied under oath.", "question": "effect", "choices": ["He completed his testimony.", "He was charged with perjury."], "label": 1}
+{"premise": "The woman dyed her hair.", "question": "cause", "choices": ["She wanted a new look.", "She wanted to blend in."], "label": 0}
+{"premise": "The immigrants were caught illegally residing in the country.", "question": "effect", "choices": ["They found employment.", "They were deported."], "label": 1}
+{"premise": "The public speaker cracked a joke.", "question": "effect", "choices": ["The audience laughed.", "The audience stood up."], "label": 0}
+{"premise": "I looked into the sun.", "question": "effect", "choices": ["The sun blinded me.", "The sun tanned my skin."], "label": 0}
+{"premise": "I felt bored.", "question": "effect", "choices": ["I snorted.", "I yawned."], "label": 1}
+{"premise": "The steak was difficult to cut.", "question": "cause", "choices": ["The knife was dull.", "The steak was raw."], "label": 0}
+{"premise": "The woman declared bankruptcy.", "question": "cause", "choices": ["She received alimony payment.", "She acquired massive debt."], "label": 1}
+{"premise": "The lights in my friend's apartment were on.", "question": "effect", "choices": ["I wondered if he was out.", "I decided to pay him a visit."], "label": 1}
+{"premise": "I put the flower under my nose.", "question": "effect", "choices": ["The petals came off the flower.", "I picked up the flower's scent."], "label": 1}
+{"premise": "The woman felt nostalgic.", "question": "cause", "choices": ["She ran into a childhood friend.", "She yelled at her children."], "label": 0}
+{"premise": "The student procrastinated on the paper.", "question": "effect", "choices": ["He submitted the paper early.", "He submitted the paper incomplete."], "label": 1}
+{"premise": "My car broke down.", "question": "effect", "choices": ["I went to the mall.", "I called a mechanic."], "label": 1}
+{"premise": "I discarded the note.", "question": "cause", "choices": ["It was anonymous.", "It was illegible."], "label": 1}
+{"premise": "The bird flapped its wings.", "question": "effect", "choices": ["It laid eggs.", "It ascended upwards."], "label": 1}
+{"premise": "I parked in the driveway.", "question": "cause", "choices": ["The garage was open.", "The garage was full."], "label": 1}
+{"premise": "The criminal aimed the gun at his victim.", "question": "effect", "choices": ["The criminal put down the gun.", "The victim put his hands up."], "label": 1}
+{"premise": "I looked forward to the weekend.", "question": "cause", "choices": ["I planned to attend my uncle's funeral.", "I planned to attend my friend's wedding."], "label": 1}
+{"premise": "I lost track of time.", "question": "cause", "choices": ["I was daydreaming.", "I was nauseous."], "label": 0}
+{"premise": "The document printed out illegibly.", "question": "cause", "choices": ["The printer was low on ink.", "The print was out of paper."], "label": 0}
+{"premise": "The stadium played the national anthem.", "question": "effect", "choices": ["The fans turned to the flag.", "The fans rushed the field."], "label": 0}
+{"premise": "The dip tasted bland.", "question": "effect", "choices": ["I served it.", "I put salt in it."], "label": 1}
+{"premise": "I set the paper towel on the spill.", "question": "effect", "choices": ["The towel absorbed the liquid.", "The spill left a sticky residue."], "label": 0}
+{"premise": "The woman was interrupted in the midst of reading her book.", "question": "effect", "choices": ["She bookmarked her page.", "She reread the book."], "label": 0}
+{"premise": "The plane hit some turbulence.", "question": "effect", "choices": ["The man tightened his seatbelt.", "The man looked out the window."], "label": 0}
+{"premise": "The boy flinched.", "question": "cause", "choices": ["The girl ignored him.", "The girl poked him."], "label": 1}
+{"premise": "The doctors gave the patient an artificial limb.", "question": "cause", "choices": ["They amputated her leg.", "They monitored her vitals."], "label": 0}
+{"premise": "The boy pinched the girl's elbow.", "question": "effect", "choices": ["She shrugged her shoulders at him.", "She jerked her arm away from him."], "label": 1}
+{"premise": "I asked my friend for advice.", "question": "cause", "choices": ["I valued his opinion.", "I knew I was right."], "label": 0}
+{"premise": "The boy stepped in mud.", "question": "effect", "choices": ["The mud stuck to his shoes.", "The mud hit him in the face."], "label": 0}
+{"premise": "The town received several inches of snow.", "question": "effect", "choices": ["Schools shut down.", "People hid underground."], "label": 0}
+{"premise": "The employee's shift ended.", "question": "effect", "choices": ["He went home for the day.", "He threatened to quit the job."], "label": 0}
+{"premise": "The tree damaged the house.", "question": "cause", "choices": ["The tree fell onto the roof.", "The tree shaded the backyard."], "label": 0}
+{"premise": "The wood split in half.", "question": "cause", "choices": ["I stacked the wood in the fireplace.", "I swung the axe down to the wood."], "label": 1}
+{"premise": "The family congratulated the couple.", "question": "cause", "choices": ["The couple announced that they were separating.", "The couple announced that they were having a baby."], "label": 1}
+{"premise": "The girl sent the boy a valentine.", "question": "cause", "choices": ["She liked him.", "She kissed him."], "label": 0}
+{"premise": "I nodded my head at my friend's statement.", "question": "cause", "choices": ["I was confused.", "I agreed with him."], "label": 1}
+{"premise": "The friends flipped a coin.", "question": "cause", "choices": ["They wanted to find a compromise.", "They wanted to make a fair decision."], "label": 1}
+{"premise": "The timer in the kitchen went off.", "question": "effect", "choices": ["The man unloaded the groceries into the refrigerator.", "The man took the pizza out of the oven."], "label": 1}
+{"premise": "The woman set an ambitious goal.", "question": "effect", "choices": ["She slacked off.", "She worked hard."], "label": 1}
+{"premise": "The wealthy man died of old age.", "question": "effect", "choices": ["His son got into legal trouble.", "His son inherited his fortune."], "label": 1}
+{"premise": "The woman stomped on the flames.", "question": "effect", "choices": ["The flames went out.", "Smoke arose from the flames."], "label": 0}
+{"premise": "The woman's car was in the shop.", "question": "cause", "choices": ["Her driver's license was revoked.", "She got in a car accident."], "label": 1}
+{"premise": "I slept through my alarm.", "question": "effect", "choices": ["I made breakfast.", "I missed breakfast."], "label": 1}
+{"premise": "The public figure got out of the limousine.", "question": "effect", "choices": ["Cameras flashed in his direction.", "His family attended the press conference."], "label": 0}
+{"premise": "The woman lingered in the bathtub.", "question": "effect", "choices": ["The bathwater became lukewarm.", "The bathwater drained out of the tub."], "label": 0}
+{"premise": "The college student wanted to meet other students on campus.", "question": "effect", "choices": ["He joined a fraternity.", "He majored in engineering."], "label": 0}
+{"premise": "I lifted up the couch cushions.", "question": "cause", "choices": ["I was looking for loose change.", "I was rearranging the living room."], "label": 0}
+{"premise": "The wasp flew towards the boy.", "question": "effect", "choices": ["The boy ran away.", "The boy picked a flower."], "label": 0}
+{"premise": "The woman was found guilty of a misdemeanor.", "question": "effect", "choices": ["She was sentenced to perform community service.", "She was put on death row."], "label": 0}
+{"premise": "I stirred the sugar into the hot tea.", "question": "effect", "choices": ["The tea steamed.", "The sugar dissolved."], "label": 1}
+{"premise": "The veteran walked with a limp.", "question": "cause", "choices": ["He was drafted for the war.", "He was injured in battle."], "label": 1}
+{"premise": "The criminal ran away from the police.", "question": "effect", "choices": ["The police attended to the victim.", "The police chased the criminal."], "label": 1}
+{"premise": "The laptop wouldn't turn on.", "question": "cause", "choices": ["I dropped it.", "I charged it."], "label": 0}
+{"premise": "The woman ran out of room in her closet.", "question": "cause", "choices": ["She acquired an extensive wardrobe.", "She folded her laundry."], "label": 0}
+{"premise": "The man was heartbroken.", "question": "cause", "choices": ["His wife gave birth.", "His wife left him."], "label": 1}
+{"premise": "The man obtained a degree.", "question": "effect", "choices": ["He became qualified for the job he wanted.", "His job offer was rescinded."], "label": 0}
+{"premise": "The man's voice projected clearly throughout the auditorium.", "question": "cause", "choices": ["He greeted the audience.", "He spoke into the microphone."], "label": 1}
+{"premise": "I tossed a coin into the fountain of water.", "question": "effect", "choices": ["The coin sunk to the bottom.", "The coin broke in half."], "label": 0}
+{"premise": "The player hit the ball toward the hole.", "question": "effect", "choices": ["The ball went in the hole.", "The ball retreated back to the player."], "label": 0}
+{"premise": "I breathed in the dust in the attic.", "question": "effect", "choices": ["I hiccupped.", "I sneezed."], "label": 1}
+{"premise": "The store cashier called security.", "question": "cause", "choices": ["The customer used counterfeit money.", "The customer left his headlights on."], "label": 0}
+{"premise": "I took the garbage out.", "question": "cause", "choices": ["The garbage made the kitchen smell bad.", "I accidentally threw away my shopping list."], "label": 0}
+{"premise": "The family went to the zoo.", "question": "effect", "choices": ["The children admired the animals.", "The children chased the animals."], "label": 0}
+{"premise": "The man's breathing was loud.", "question": "cause", "choices": ["His kidneys were failing.", "His lungs were congested."], "label": 1}
+{"premise": "I had an extra ticket for the concert.", "question": "effect", "choices": ["I asked my friend for directions to the venue.", "I asked my friend if he was interested in going."], "label": 1}
+{"premise": "The air conditioner in the house broke.", "question": "effect", "choices": ["I brought out blankets.", "I opened the windows."], "label": 1}
+{"premise": "The boy's back ached.", "question": "cause", "choices": ["His backpack was open.", "His backpack was heavy."], "label": 1}
+{"premise": "I bought my mother a present.", "question": "cause", "choices": ["I baked her a cake.", "It was her birthday."], "label": 1}
+{"premise": "The daffodils in the garden were destroyed.", "question": "cause", "choices": ["A bee stung the gardener.", "Squirrels dug up the bulbs."], "label": 1}
+{"premise": "I struck the match.", "question": "effect", "choices": ["The flame faded out.", "The match produced a flame."], "label": 1}
+{"premise": "The disputing parties reached a settlement.", "question": "cause", "choices": ["They didn't want to debate in court.", "They wanted to repair their personal relationship."], "label": 0}
+{"premise": "The children were sent to an orphanage.", "question": "cause", "choices": ["Their parents died.", "Their parents spoiled them."], "label": 0}
+{"premise": "A meteorite landed in the ocean.", "question": "effect", "choices": ["A tsunami occurred.", "It began to hail."], "label": 0}
+{"premise": "The hiker encountered a poisonous snake.", "question": "effect", "choices": ["She became dehydrated.", "She panicked."], "label": 1}
+{"premise": "The oven became hot.", "question": "cause", "choices": ["I turned the oven on.", "I put the dish in the oven."], "label": 0}
+{"premise": "I squeezed the lemon wedge.", "question": "effect", "choices": ["The lemon got moldy.", "The lemon squirted."], "label": 1}
+{"premise": "The country discovered new land.", "question": "effect", "choices": ["The country abandoned the land.", "The country colonized the land."], "label": 1}
+{"premise": "The glass toppled off the table.", "question": "effect", "choices": ["It shattered all over the floor.", "It landed in a pile of laundry."], "label": 0}
+{"premise": "The table wobbled.", "question": "cause", "choices": ["The floor was uneven.", "The floor was slippery."], "label": 0}
+{"premise": "The father caught his son lying.", "question": "effect", "choices": ["His son confessed the truth.", "The father trusted his son."], "label": 0}
+{"premise": "The man's head throbbed with pain.", "question": "effect", "choices": ["He took cough syrup.", "He took aspirin."], "label": 1}
+{"premise": "The train slowed down.", "question": "cause", "choices": ["It was approaching the station.", "It was running behind schedule."], "label": 0}
+{"premise": "The man went through therapy.", "question": "cause", "choices": ["Mental illness ran in his family.", "He was diagnosed with depression."], "label": 1}
+{"premise": "The woman clutched her throat.", "question": "cause", "choices": ["She swallowed her food.", "She choked on her food."], "label": 1}
+{"premise": "The woman had a sore throat.", "question": "effect", "choices": ["Her voice sounded raspy.", "She spoke with an accent."], "label": 0}
+{"premise": "The dog eyed the juicy steak on the table.", "question": "effect", "choices": ["It drooled.", "It laid down."], "label": 0}
+{"premise": "The woman's business succeeded.", "question": "effect", "choices": ["She fired her employees.", "She became wealthy."], "label": 1}
+{"premise": "The students exited the classroom.", "question": "cause", "choices": ["The bell rang.", "The teacher assigned homework."], "label": 0}
+{"premise": "The woman claimed she saw a ghost.", "question": "effect", "choices": ["Her acquaintances expressed skepticism.", "Her acquaintances related to her."], "label": 0}
+{"premise": "The man lost his hearing.", "question": "cause", "choices": ["He nearly drowned in the ocean.", "He was nearly killed in an explosion."], "label": 1}
+{"premise": "The child let go of the balloon string.", "question": "effect", "choices": ["The balloon deflated.", "The balloon rose into the air."], "label": 1}
+{"premise": "The man lost his ability to speak.", "question": "cause", "choices": ["He had a stroke.", "He took a deep breath."], "label": 0}
+{"premise": "The woman tripped on the sidewalk.", "question": "cause", "choices": ["There was a crack in the cement.", "She heard her name being called."], "label": 0}
+{"premise": "The man did a canon ball into the pool.", "question": "effect", "choices": ["The lifeguard jumped in after him.", "The man soaked the lifeguard."], "label": 1}
+{"premise": "I took antibiotics.", "question": "effect", "choices": ["My infection cleared up.", "My infection spread."], "label": 0}
+{"premise": "The traffic light turned yellow.", "question": "effect", "choices": ["The driver pushed the brake.", "The driver honked his horn."], "label": 0}
+{"premise": "The plastic container melted.", "question": "cause", "choices": ["I soaked the container in warm water.", "I placed the container on the hot stove."], "label": 1}
+{"premise": "The car got dented.", "question": "cause", "choices": ["The driver hit a telephone pole.", "The driver ran a red light."], "label": 0}
+{"premise": "The boy studied all night.", "question": "effect", "choices": ["He skipped the exam.", "He passed the exam."], "label": 1}
+{"premise": "The young boy clung to the ledge of the pool.", "question": "cause", "choices": ["He feared learning to swim.", "The lifeguard was on duty."], "label": 0}
+{"premise": "I put my hand to my chest.", "question": "effect", "choices": ["I felt my heartbeat.", "My heart rate sped up."], "label": 0}
+{"premise": "The building adjacent to my office was under construction.", "question": "effect", "choices": ["My office was crowded.", "My office was noisy."], "label": 1}
+{"premise": "The family wanted to get to know their new neighbors.", "question": "effect", "choices": ["The family invited the neighbors over for dinner.", "The family waved to the neighbors from their yard."], "label": 0}
+{"premise": "Water splashed up from the pool.", "question": "cause", "choices": ["The swimmer dove into the pool.", "The swimmer floated in the pool."], "label": 0}
+{"premise": "I bit into a slice of watermelon.", "question": "effect", "choices": ["I accidentally swallowed a seed.", "I accidentally chipped my tooth."], "label": 0}
+{"premise": "The boy tripped.", "question": "cause", "choices": ["His jacket was unzipped.", "His shoelaces were untied."], "label": 1}
+{"premise": "The woman put earplugs in.", "question": "cause", "choices": ["She was distracted by noise.", "She got her ears pierced."], "label": 0}
+{"premise": "I refilled my water bottle.", "question": "cause", "choices": ["I drank all the water in it.", "I kept it in the fridge."], "label": 0}
+{"premise": "The television show was censored.", "question": "cause", "choices": ["It contained vulgar language.", "It had a complicated plot."], "label": 0}
+{"premise": "The ship wrecked.", "question": "effect", "choices": ["The crew drowned.", "The crew encountered pirates."], "label": 0}
+{"premise": "The boy felt stumped by the riddle.", "question": "effect", "choices": ["He solved the riddle.", "He requested a hint."], "label": 1}
+{"premise": "The phone rang.", "question": "effect", "choices": ["The man hung up the phone.", "The man picked up the phone."], "label": 1}
+{"premise": "The woman was staring at me.", "question": "effect", "choices": ["I hugged her.", "I felt uncomfortable."], "label": 1}
+{"premise": "The group left the museum.", "question": "cause", "choices": ["They took pictures of the exhibits.", "They viewed all the exhibits."], "label": 1}
+{"premise": "The man started an argument with me.", "question": "effect", "choices": ["My friend introduced me to the man.", "My friend stood up for me."], "label": 1}
+{"premise": "The tire on my bike was flat.", "question": "effect", "choices": ["I pumped air into the tire.", "I switched gears on the bike."], "label": 0}
+{"premise": "The girl looked pale.", "question": "effect", "choices": ["Her father read her a story.", "Her father felt her forehead."], "label": 1}
+{"premise": "The pen ran out of ink.", "question": "effect", "choices": ["I used a pencil.", "I signed my name."], "label": 0}
+{"premise": "The man was denied for a loan.", "question": "cause", "choices": ["He was in debt.", "He started a business."], "label": 0}
+{"premise": "The girl stayed home from school.", "question": "cause", "choices": ["She had chicken pox.", "She enjoyed learning math."], "label": 0}
+{"premise": "The trash bag was full.", "question": "effect", "choices": ["I took it to the dumpster.", "I dumped it down the sink."], "label": 0}
+{"premise": "I vacuumed the carpet.", "question": "cause", "choices": ["My roommate spilled punch.", "My dog shed hair."], "label": 1}
+{"premise": "The man lost his temper.", "question": "effect", "choices": ["He turned off his computer.", "He threw a chair across the room."], "label": 1}
+{"premise": "The girl threw a twig into the campfire.", "question": "effect", "choices": ["The twig burned.", "The fire went out."], "label": 0}
+{"premise": "The man got out of the shower.", "question": "cause", "choices": ["The hot water was gone.", "He couldn't find a towel."], "label": 0}
+{"premise": "The parents wanted their children to go to college.", "question": "effect", "choices": ["They set aside a savings fund for tuition.", "They encouraged their children to play outside."], "label": 0}
+{"premise": "The man unlaced his shoes.", "question": "effect", "choices": ["The shoes loosened.", "The shoes became worn."], "label": 0}
+{"premise": "The man ate half of the entree.", "question": "effect", "choices": ["He refrigerated the leftovers.", "He saved the recipe."], "label": 0}
+{"premise": "My ankle was swollen.", "question": "effect", "choices": ["I put ice on it.", "I rubbed lotion on it."], "label": 0}
+{"premise": "My office door was open.", "question": "effect", "choices": ["I talked to my colleague at my desk.", "I overheard the conversation in the hall."], "label": 1}
+{"premise": "I had to wait in line.", "question": "effect", "choices": ["I took a seat.", "I skimmed a magazine."], "label": 1}
+{"premise": "The man swatted at the fly.", "question": "effect", "choices": ["The fly buzzed away.", "The fly stayed still."], "label": 0}
+{"premise": "The man wrote a will.", "question": "cause", "choices": ["He was dying.", "He was a widower."], "label": 0}
+{"premise": "The runner sensed his competitor gaining on him.", "question": "effect", "choices": ["He dropped out of the race.", "He sped up his pace."], "label": 1}
+{"premise": "I thought carefully about the problem.", "question": "effect", "choices": ["I asked for advice.", "I came up with a solution."], "label": 1}
+{"premise": "The traveler walked on the shaky suspension bridge.", "question": "effect", "choices": ["He felt terrified.", "He felt ecstatic."], "label": 0}
+{"premise": "The man anticipated the team's victory.", "question": "effect", "choices": ["He met his friends to watch the game.", "He made a bet with his friends."], "label": 1}
+{"premise": "The boy couldn't fall asleep.", "question": "effect", "choices": ["He set his alarm clock.", "He counted sheep."], "label": 1}

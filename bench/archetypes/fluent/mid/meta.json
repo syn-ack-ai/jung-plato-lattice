@@ -1,0 +1,23 @@
+{
+ "seed": 224,
+ "proc_train_tokens": 30053048,
+ "proc_train_docs": 176000,
+ "proc_skipped": 0,
+ "proc_held_n": 400,
+ "proc_held_overlap": {
+  "binding": 0.25,
+  "twohop": 0.25,
+  "tracking": 0.25,
+  "counterfactual": 0.25,
+  "ordering": 0.25
+ },
+ "s": 2.7,
+ "chat_trees_total": 5400,
+ "chat_train_trees": 5150,
+ "chat_train_paths": 13813,
+ "chat_train_tokens": 8679413,
+ "chat_train_skipped": 137,
+ "chat_held_trees": 250,
+ "chat_held_tokens": 145195,
+ "chat_eval_prompts": 100
+}

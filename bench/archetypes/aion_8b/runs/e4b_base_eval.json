@@ -1,0 +1,77 @@
+{
+ "platonic_jung": {
+  "n_pca_tr_pts": 2025,
+  "n_eval_pts": 3192,
+  "blind_phi4_pts": {
+   "cos": 0.6881,
+   "r2_frob": 0.1825,
+   "r2_opt": 0.3497,
+   "top1": 0.9066,
+   "top5": 0.9834,
+   "by_domain_cos": {
+    "held_gut": 0.5216,
+    "items3_mech": 0.686,
+    "items3_myth": 0.6894,
+    "proc_held": 0.8555
+   }
+  },
+  "blind_olmo3_pts": {
+   "cos": 0.6557,
+   "r2_frob": 0.228,
+   "r2_opt": 0.3772,
+   "top1": 0.8581,
+   "top5": 0.9352,
+   "by_domain_cos": {
+    "held_gut": 0.5318,
+    "items3_mech": 0.6325,
+    "items3_myth": 0.6551,
+    "proc_held": 0.8491
+   }
+  },
+  "c5_eval_pts": {
+   "cos": 0.8322,
+   "r2_frob": 0.6119,
+   "r2_opt": 0.6497,
+   "top1": 0.9865,
+   "top5": 0.9988,
+   "by_domain_cos": {
+    "held_gut": 0.7245,
+    "items3_mech": 0.8368,
+    "items3_myth": 0.833,
+    "proc_held": 0.9229
+   }
+  },
+  "held_nll": {
+   "held_gut_nll": 5.0841
+  },
+  "items3_L12_centered": {
+   "myth": {
+    "n": 100,
+    "TF": 0.84,
+    "TL": 0.0
+   },
+   "mech": {
+    "n": 100,
+    "TF": 0.82,
+    "TL": 0.28
+   }
+  },
+  "jung_L12": {
+   "house_2f_acc": 0.9356,
+   "house_2f_lenres": 0.9185,
+   "r_len": 0.1755,
+   "perf_acc": 0.8,
+   "self2_2f_acc": 0.9873,
+   "house_to_self2_acc": 1.0
+  }
+ },
+ "buddy": {
+  "skipped": "missing buddy_eval230.jsonl"
+ },
+ "multimodal": {
+  "vision_red_square_reply": "Red",
+  "vision_ok": true,
+  "audio_440hz_reply": "A man is speaking.",
+  "audio_ok": false
+ }
+}

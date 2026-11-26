@@ -1,0 +1,3086 @@
+{
+  "n_pairs_ok": 312,
+  "n_house": 233,
+  "n_self2": 79,
+  "n_perfection": 40,
+  "n_items3": 200,
+  "modes": {
+    "pts_neutral_only": {
+      "used_domains": [
+        "chat",
+        "gut",
+        "proc"
+      ],
+      "n_train_passages": 2394,
+      "n_train_vecs": 13388,
+      "gemma_to_others": {
+        "qwen35_9b": {
+          "house_disjoint": {
+            "cos": 0.8318,
+            "p_pos_max": 0.001,
+            "acc": 0.9399,
+            "acc_ci": [
+              0.9056,
+              0.9657
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8307,
+            "p_pos_max": 0.001,
+            "acc": 0.9313,
+            "acc_ci": [
+              0.8927,
+              0.9614
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.8066,
+            "p_pos_max": 0.001,
+            "acc": 0.962,
+            "acc_ci": [
+              0.9114,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8069,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.875,
+          "score_vs_delta_len_r": 0.1567,
+          "house_to_unseen_self2": {
+            "cos": 0.8401,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1028,
+            "p_pos": 0.6673,
+            "acc": 0.515,
+            "ci": [
+              0.44,
+              0.585
+            ]
+          }
+        },
+        "llama31_8b": {
+          "house_disjoint": {
+            "cos": 0.8164,
+            "p_pos_max": 0.001,
+            "acc": 0.9227,
+            "acc_ci": [
+              0.8884,
+              0.9571
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8101,
+            "p_pos_max": 0.001,
+            "acc": 0.897,
+            "acc_ci": [
+              0.8583,
+              0.9356
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7966,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7946,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.775,
+          "score_vs_delta_len_r": 0.2152,
+          "house_to_unseen_self2": {
+            "cos": 0.791,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.0569,
+            "p_pos": 0.6294,
+            "acc": 0.51,
+            "ci": [
+              0.435,
+              0.585
+            ]
+          }
+        },
+        "mistral7b": {
+          "house_disjoint": {
+            "cos": 0.8499,
+            "p_pos_max": 0.001,
+            "acc": 0.9356,
+            "acc_ci": [
+              0.9013,
+              0.9657
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.842,
+            "p_pos_max": 0.001,
+            "acc": 0.9399,
+            "acc_ci": [
+              0.9056,
+              0.97
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.8412,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8378,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.875,
+          "score_vs_delta_len_r": 0.2154,
+          "house_to_unseen_self2": {
+            "cos": 0.8392,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1224,
+            "p_pos": 0.7153,
+            "acc": 0.52,
+            "ci": [
+              0.45,
+              0.595
+            ]
+          }
+        },
+        "inkling2_mini": {
+          "house_disjoint": {
+            "cos": 0.5946,
+            "p_pos_max": 0.001,
+            "acc": 0.9485,
+            "acc_ci": [
+              0.9185,
+              0.9742
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.5836,
+            "p_pos_max": 0.001,
+            "acc": 0.9485,
+            "acc_ci": [
+              0.9185,
+              0.9742
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.5729,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.5748,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.925,
+          "score_vs_delta_len_r": 0.1066,
+          "house_to_unseen_self2": {
+            "cos": 0.6089,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": 0.1204,
+            "p_pos": 0.0979,
+            "acc": 0.58,
+            "ci": [
+              0.51,
+              0.65
+            ]
+          }
+        },
+        "phi4_mini": {
+          "house_disjoint": {
+            "cos": 0.7944,
+            "p_pos_max": 0.001,
+            "acc": 0.9356,
+            "acc_ci": [
+              0.9013,
+              0.9615
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.7904,
+            "p_pos_max": 0.001,
+            "acc": 0.9013,
+            "acc_ci": [
+              0.8584,
+              0.9399
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7701,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7688,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.775,
+          "score_vs_delta_len_r": 0.2243,
+          "house_to_unseen_self2": {
+            "cos": 0.7925,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1712,
+            "p_pos": 0.7942,
+            "acc": 0.47,
+            "ci": [
+              0.3999,
+              0.54
+            ]
+          }
+        },
+        "olmo3_7b": {
+          "house_disjoint": {
+            "cos": 0.8274,
+            "p_pos_max": 0.001,
+            "acc": 0.9313,
+            "acc_ci": [
+              0.897,
+              0.9614
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8206,
+            "p_pos_max": 0.001,
+            "acc": 0.9056,
+            "acc_ci": [
+              0.8627,
+              0.9399
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.765,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7571,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.8,
+          "score_vs_delta_len_r": 0.2421,
+          "house_to_unseen_self2": {
+            "cos": 0.7953,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1865,
+            "p_pos": 0.8222,
+            "acc": 0.475,
+            "ci": [
+              0.405,
+              0.545
+            ]
+          }
+        }
+      },
+      "blind_transfer": {
+        "phi4_mini": {
+          "gemma4_e4b": {
+            "house_2f": {
+              "cos": 0.7944,
+              "p_pos_max": 0.001,
+              "acc": 0.9356,
+              "acc_ci": [
+                0.9013,
+                0.9615
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.7904,
+              "p_pos_max": 0.001,
+              "acc": 0.9013,
+              "acc_ci": [
+                0.8584,
+                0.9399
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7701,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.775,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1712,
+              "p_pos": 0.7942,
+              "acc": 0.47,
+              "ci": [
+                0.3999,
+                0.54
+              ],
+              "myth_acc": 0.46,
+              "mech_acc": 0.48
+            }
+          },
+          "qwen35_9b": {
+            "house_2f": {
+              "cos": 0.8621,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8597,
+              "p_pos_max": 0.001,
+              "acc": 0.9099,
+              "acc_ci": [
+                0.867,
+                0.9442
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8588,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.188,
+              "p_pos": 0.7992,
+              "acc": 0.46,
+              "ci": [
+                0.39,
+                0.525
+              ],
+              "myth_acc": 0.48,
+              "mech_acc": 0.44
+            }
+          },
+          "llama31_8b": {
+            "house_2f": {
+              "cos": 0.8193,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8093,
+              "p_pos_max": 0.001,
+              "acc": 0.9099,
+              "acc_ci": [
+                0.867,
+                0.9442
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8259,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.75,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0662,
+              "p_pos": 0.6134,
+              "acc": 0.505,
+              "ci": [
+                0.4399,
+                0.575
+              ],
+              "myth_acc": 0.49,
+              "mech_acc": 0.52
+            }
+          },
+          "mistral7b": {
+            "house_2f": {
+              "cos": 0.8273,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8158,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8754,
+                0.9485
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8225,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.75,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1831,
+              "p_pos": 0.7922,
+              "acc": 0.485,
+              "ci": [
+                0.415,
+                0.555
+              ],
+              "myth_acc": 0.48,
+              "mech_acc": 0.49
+            }
+          },
+          "inkling2_mini": {
+            "house_2f": {
+              "cos": 0.6303,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.6156,
+              "p_pos_max": 0.001,
+              "acc": 0.9056,
+              "acc_ci": [
+                0.8627,
+                0.9399
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.6319,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.75,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1176,
+              "p_pos": 0.7962,
+              "acc": 0.49,
+              "ci": [
+                0.42,
+                0.5551
+              ],
+              "myth_acc": 0.49,
+              "mech_acc": 0.49
+            }
+          },
+          "CONSENSUS_4FAM": {
+            "house_2f": {
+              "cos": 0.8765,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": null,
+            "self2_2f": {
+              "cos": 0.8699,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.75,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1624,
+              "p_pos": 0.7512,
+              "acc": 0.465,
+              "ci": [
+                0.395,
+                0.53
+              ],
+              "myth_acc": 0.47,
+              "mech_acc": 0.46
+            }
+          },
+          "CONSENSUS_5FAM": {
+            "house_2f": {
+              "cos": 0.8802,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8728,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8754,
+                0.9485
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8759,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.75,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1619,
+              "p_pos": 0.7552,
+              "acc": 0.455,
+              "ci": [
+                0.385,
+                0.525
+              ],
+              "myth_acc": 0.45,
+              "mech_acc": 0.46
+            }
+          }
+        },
+        "olmo3_7b": {
+          "gemma4_e4b": {
+            "house_2f": {
+              "cos": 0.8274,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8206,
+              "p_pos_max": 0.001,
+              "acc": 0.9056,
+              "acc_ci": [
+                0.8627,
+                0.9399
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.765,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1865,
+              "p_pos": 0.8222,
+              "acc": 0.475,
+              "ci": [
+                0.405,
+                0.545
+              ],
+              "myth_acc": 0.49,
+              "mech_acc": 0.46
+            }
+          },
+          "qwen35_9b": {
+            "house_2f": {
+              "cos": 0.8198,
+              "p_pos_max": 0.001,
+              "acc": 0.927,
+              "acc_ci": [
+                0.8927,
+                0.9571
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8149,
+              "p_pos_max": 0.001,
+              "acc": 0.897,
+              "acc_ci": [
+                0.8541,
+                0.9314
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7873,
+              "p_pos_max": 0.001,
+              "acc": 0.962,
+              "acc_ci": [
+                0.9114,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.85,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.2576,
+              "p_pos": 0.8931,
+              "acc": 0.46,
+              "ci": [
+                0.39,
+                0.53
+              ],
+              "myth_acc": 0.46,
+              "mech_acc": 0.46
+            }
+          },
+          "llama31_8b": {
+            "house_2f": {
+              "cos": 0.8129,
+              "p_pos_max": 0.001,
+              "acc": 0.9227,
+              "acc_ci": [
+                0.8841,
+                0.9528
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.7938,
+              "p_pos_max": 0.001,
+              "acc": 0.8884,
+              "acc_ci": [
+                0.8455,
+                0.927
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7682,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.825,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1669,
+              "p_pos": 0.7722,
+              "acc": 0.475,
+              "ci": [
+                0.4,
+                0.545
+              ],
+              "myth_acc": 0.5,
+              "mech_acc": 0.45
+            }
+          },
+          "mistral7b": {
+            "house_2f": {
+              "cos": 0.8363,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8181,
+              "p_pos_max": 0.001,
+              "acc": 0.8884,
+              "acc_ci": [
+                0.8455,
+                0.927
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7985,
+              "p_pos_max": 0.001,
+              "acc": 0.962,
+              "acc_ci": [
+                0.9114,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.825,
+            "house_to_self2_acc": 0.9747,
+            "house_to_self2_ci": [
+              0.9367,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.2167,
+              "p_pos": 0.8412,
+              "acc": 0.48,
+              "ci": [
+                0.41,
+                0.55
+              ],
+              "myth_acc": 0.51,
+              "mech_acc": 0.45
+            }
+          },
+          "inkling2_mini": {
+            "house_2f": {
+              "cos": 0.6153,
+              "p_pos_max": 0.001,
+              "acc": 0.9442,
+              "acc_ci": [
+                0.9142,
+                0.97
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.6062,
+              "p_pos_max": 0.001,
+              "acc": 0.9056,
+              "acc_ci": [
+                0.867,
+                0.9399
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.5752,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.85,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1888,
+              "p_pos": 0.9121,
+              "acc": 0.475,
+              "ci": [
+                0.405,
+                0.545
+              ],
+              "myth_acc": 0.52,
+              "mech_acc": 0.43
+            }
+          },
+          "CONSENSUS_4FAM": {
+            "house_2f": {
+              "cos": 0.8741,
+              "p_pos_max": 0.001,
+              "acc": 0.9227,
+              "acc_ci": [
+                0.8841,
+                0.9528
+              ]
+            },
+            "house_2f_lenres": null,
+            "self2_2f": {
+              "cos": 0.8284,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.825,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.2132,
+              "p_pos": 0.8302,
+              "acc": 0.465,
+              "ci": [
+                0.395,
+                0.535
+              ],
+              "myth_acc": 0.49,
+              "mech_acc": 0.44
+            }
+          },
+          "CONSENSUS_5FAM": {
+            "house_2f": {
+              "cos": 0.8753,
+              "p_pos_max": 0.001,
+              "acc": 0.9442,
+              "acc_ci": [
+                0.9142,
+                0.97
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8644,
+              "p_pos_max": 0.001,
+              "acc": 0.897,
+              "acc_ci": [
+                0.8541,
+                0.9313
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8278,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.825,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.2267,
+              "p_pos": 0.8551,
+              "acc": 0.485,
+              "ci": [
+                0.415,
+                0.555
+              ],
+              "myth_acc": 0.51,
+              "mech_acc": 0.46
+            }
+          }
+        }
+      },
+      "house_self2_cos_in_c5": 0.9546,
+      "house_raw_vs_lenres_cos": 0.9938
+    },
+    "story_neutral_only": {
+      "used_domains": [
+        "chat",
+        "gut",
+        "proc"
+      ],
+      "n_train_passages": 2394,
+      "n_train_vecs": 2394,
+      "gemma_to_others": {
+        "qwen35_9b": {
+          "house_disjoint": {
+            "cos": 0.7938,
+            "p_pos_max": 0.001,
+            "acc": 0.9871,
+            "acc_ci": [
+              0.97,
+              1.0
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.7909,
+            "p_pos_max": 0.001,
+            "acc": 0.9742,
+            "acc_ci": [
+              0.9528,
+              0.9914
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7935,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7971,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 1.0,
+          "score_vs_delta_len_r": 0.115,
+          "house_to_unseen_self2": {
+            "cos": 0.7736,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.0505,
+            "p_pos": 0.6214,
+            "acc": 0.465,
+            "ci": [
+              0.39,
+              0.535
+            ]
+          }
+        },
+        "llama31_8b": {
+          "house_disjoint": {
+            "cos": 0.8305,
+            "p_pos_max": 0.001,
+            "acc": 0.9828,
+            "acc_ci": [
+              0.9657,
+              0.9957
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8106,
+            "p_pos_max": 0.001,
+            "acc": 0.9785,
+            "acc_ci": [
+              0.9571,
+              0.9957
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.8126,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8029,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.975,
+          "score_vs_delta_len_r": 0.1459,
+          "house_to_unseen_self2": {
+            "cos": 0.7804,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.0136,
+            "p_pos": 0.4965,
+            "acc": 0.47,
+            "ci": [
+              0.4,
+              0.54
+            ]
+          }
+        },
+        "mistral7b": {
+          "house_disjoint": {
+            "cos": 0.845,
+            "p_pos_max": 0.001,
+            "acc": 0.9785,
+            "acc_ci": [
+              0.9571,
+              0.9957
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8308,
+            "p_pos_max": 0.001,
+            "acc": 0.9785,
+            "acc_ci": [
+              0.9571,
+              0.9957
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.832,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8313,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.95,
+          "score_vs_delta_len_r": 0.1344,
+          "house_to_unseen_self2": {
+            "cos": 0.7724,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.0425,
+            "p_pos": 0.5764,
+            "acc": 0.455,
+            "ci": [
+              0.385,
+              0.525
+            ]
+          }
+        },
+        "inkling2_mini": {
+          "house_disjoint": {
+            "cos": 0.6391,
+            "p_pos_max": 0.001,
+            "acc": 0.9742,
+            "acc_ci": [
+              0.9528,
+              0.9914
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.6594,
+            "p_pos_max": 0.001,
+            "acc": 0.9657,
+            "acc_ci": [
+              0.9399,
+              0.9871
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.6367,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.6516,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.9,
+          "score_vs_delta_len_r": 0.1876,
+          "house_to_unseen_self2": {
+            "cos": 0.671,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": 0.2631,
+            "p_pos": 0.038,
+            "acc": 0.67,
+            "ci": [
+              0.6,
+              0.735
+            ]
+          }
+        },
+        "phi4_mini": {
+          "house_disjoint": {
+            "cos": 0.7968,
+            "p_pos_max": 0.001,
+            "acc": 0.9871,
+            "acc_ci": [
+              0.97,
+              1.0
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.7577,
+            "p_pos_max": 0.001,
+            "acc": 0.9785,
+            "acc_ci": [
+              0.9571,
+              0.9957
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7634,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7093,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.975,
+          "score_vs_delta_len_r": 0.1422,
+          "house_to_unseen_self2": {
+            "cos": 0.7251,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.0946,
+            "p_pos": 0.7532,
+            "acc": 0.425,
+            "ci": [
+              0.355,
+              0.495
+            ]
+          }
+        },
+        "olmo3_7b": {
+          "house_disjoint": {
+            "cos": 0.8328,
+            "p_pos_max": 0.001,
+            "acc": 0.9785,
+            "acc_ci": [
+              0.9571,
+              0.9957
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8159,
+            "p_pos_max": 0.001,
+            "acc": 0.97,
+            "acc_ci": [
+              0.9485,
+              0.9914
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7956,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7886,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.95,
+          "score_vs_delta_len_r": 0.176,
+          "house_to_unseen_self2": {
+            "cos": 0.7552,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1181,
+            "p_pos": 0.7642,
+            "acc": 0.435,
+            "ci": [
+              0.365,
+              0.505
+            ]
+          }
+        }
+      },
+      "blind_transfer": {
+        "phi4_mini": {
+          "gemma4_e4b": {
+            "house_2f": {
+              "cos": 0.7968,
+              "p_pos_max": 0.001,
+              "acc": 0.9871,
+              "acc_ci": [
+                0.97,
+                1.0
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.7577,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7634,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.975,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0946,
+              "p_pos": 0.7532,
+              "acc": 0.425,
+              "ci": [
+                0.355,
+                0.495
+              ],
+              "myth_acc": 0.41,
+              "mech_acc": 0.44
+            }
+          },
+          "qwen35_9b": {
+            "house_2f": {
+              "cos": 0.807,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.805,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.803,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0398,
+              "p_pos": 0.6044,
+              "acc": 0.45,
+              "ci": [
+                0.38,
+                0.52
+              ],
+              "myth_acc": 0.43,
+              "mech_acc": 0.47
+            }
+          },
+          "llama31_8b": {
+            "house_2f": {
+              "cos": 0.8304,
+              "p_pos_max": 0.001,
+              "acc": 0.9871,
+              "acc_ci": [
+                0.97,
+                1.0
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8047,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8017,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.925,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.071,
+              "p_pos": 0.6873,
+              "acc": 0.47,
+              "ci": [
+                0.395,
+                0.54
+              ],
+              "myth_acc": 0.45,
+              "mech_acc": 0.49
+            }
+          },
+          "mistral7b": {
+            "house_2f": {
+              "cos": 0.8256,
+              "p_pos_max": 0.001,
+              "acc": 0.9871,
+              "acc_ci": [
+                0.97,
+                1.0
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.7914,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.794,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1201,
+              "p_pos": 0.8102,
+              "acc": 0.46,
+              "ci": [
+                0.39,
+                0.53
+              ],
+              "myth_acc": 0.42,
+              "mech_acc": 0.5
+            }
+          },
+          "inkling2_mini": {
+            "house_2f": {
+              "cos": 0.6637,
+              "p_pos_max": 0.001,
+              "acc": 0.97,
+              "acc_ci": [
+                0.9485,
+                0.9871
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.6833,
+              "p_pos_max": 0.001,
+              "acc": 0.9571,
+              "acc_ci": [
+                0.927,
+                0.9786
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.65,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.975,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0511,
+              "p_pos": 0.6294,
+              "acc": 0.505,
+              "ci": [
+                0.43,
+                0.575
+              ],
+              "myth_acc": 0.53,
+              "mech_acc": 0.48
+            }
+          },
+          "CONSENSUS_4FAM": {
+            "house_2f": {
+              "cos": 0.8689,
+              "p_pos_max": 0.001,
+              "acc": 0.9828,
+              "acc_ci": [
+                0.9657,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": null,
+            "self2_2f": {
+              "cos": 0.8372,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0874,
+              "p_pos": 0.7163,
+              "acc": 0.44,
+              "ci": [
+                0.37,
+                0.51
+              ],
+              "myth_acc": 0.42,
+              "mech_acc": 0.46
+            }
+          },
+          "CONSENSUS_5FAM": {
+            "house_2f": {
+              "cos": 0.8622,
+              "p_pos_max": 0.001,
+              "acc": 0.9828,
+              "acc_ci": [
+                0.9657,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8417,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.828,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0826,
+              "p_pos": 0.7043,
+              "acc": 0.445,
+              "ci": [
+                0.37,
+                0.515
+              ],
+              "myth_acc": 0.41,
+              "mech_acc": 0.48
+            }
+          }
+        },
+        "olmo3_7b": {
+          "gemma4_e4b": {
+            "house_2f": {
+              "cos": 0.8328,
+              "p_pos_max": 0.001,
+              "acc": 0.9785,
+              "acc_ci": [
+                0.9571,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8159,
+              "p_pos_max": 0.001,
+              "acc": 0.97,
+              "acc_ci": [
+                0.9485,
+                0.9914
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7956,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1181,
+              "p_pos": 0.7642,
+              "acc": 0.435,
+              "ci": [
+                0.365,
+                0.505
+              ],
+              "myth_acc": 0.44,
+              "mech_acc": 0.43
+            }
+          },
+          "qwen35_9b": {
+            "house_2f": {
+              "cos": 0.7995,
+              "p_pos_max": 0.001,
+              "acc": 0.9828,
+              "acc_ci": [
+                0.9657,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.7941,
+              "p_pos_max": 0.001,
+              "acc": 0.97,
+              "acc_ci": [
+                0.9485,
+                0.9914
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8162,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.925,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0728,
+              "p_pos": 0.6663,
+              "acc": 0.48,
+              "ci": [
+                0.41,
+                0.55
+              ],
+              "myth_acc": 0.48,
+              "mech_acc": 0.48
+            }
+          },
+          "llama31_8b": {
+            "house_2f": {
+              "cos": 0.848,
+              "p_pos_max": 0.001,
+              "acc": 0.9828,
+              "acc_ci": [
+                0.9657,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8319,
+              "p_pos_max": 0.001,
+              "acc": 0.9657,
+              "acc_ci": [
+                0.9399,
+                0.9871
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8307,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0973,
+              "p_pos": 0.7173,
+              "acc": 0.455,
+              "ci": [
+                0.385,
+                0.525
+              ],
+              "myth_acc": 0.45,
+              "mech_acc": 0.46
+            }
+          },
+          "mistral7b": {
+            "house_2f": {
+              "cos": 0.8441,
+              "p_pos_max": 0.001,
+              "acc": 0.9828,
+              "acc_ci": [
+                0.9657,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8291,
+              "p_pos_max": 0.001,
+              "acc": 0.97,
+              "acc_ci": [
+                0.9442,
+                0.9914
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8441,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1072,
+              "p_pos": 0.7373,
+              "acc": 0.455,
+              "ci": [
+                0.385,
+                0.525
+              ],
+              "myth_acc": 0.45,
+              "mech_acc": 0.46
+            }
+          },
+          "inkling2_mini": {
+            "house_2f": {
+              "cos": 0.6367,
+              "p_pos_max": 0.001,
+              "acc": 0.9742,
+              "acc_ci": [
+                0.9528,
+                0.9914
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.6473,
+              "p_pos_max": 0.001,
+              "acc": 0.9614,
+              "acc_ci": [
+                0.9356,
+                0.9828
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.6645,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.925,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1177,
+              "p_pos": 0.7762,
+              "acc": 0.46,
+              "ci": [
+                0.39,
+                0.53
+              ],
+              "myth_acc": 0.44,
+              "mech_acc": 0.48
+            }
+          },
+          "CONSENSUS_4FAM": {
+            "house_2f": {
+              "cos": 0.8851,
+              "p_pos_max": 0.001,
+              "acc": 0.9871,
+              "acc_ci": [
+                0.97,
+                1.0
+              ]
+            },
+            "house_2f_lenres": null,
+            "self2_2f": {
+              "cos": 0.8722,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.103,
+              "p_pos": 0.7193,
+              "acc": 0.455,
+              "ci": [
+                0.385,
+                0.525
+              ],
+              "myth_acc": 0.45,
+              "mech_acc": 0.46
+            }
+          },
+          "CONSENSUS_5FAM": {
+            "house_2f": {
+              "cos": 0.8705,
+              "p_pos_max": 0.001,
+              "acc": 0.9828,
+              "acc_ci": [
+                0.9657,
+                0.9957
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8584,
+              "p_pos_max": 0.001,
+              "acc": 0.9614,
+              "acc_ci": [
+                0.9356,
+                0.9871
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8581,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.95,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1125,
+              "p_pos": 0.7383,
+              "acc": 0.44,
+              "ci": [
+                0.37,
+                0.5101
+              ],
+              "myth_acc": 0.44,
+              "mech_acc": 0.44
+            }
+          }
+        }
+      },
+      "house_self2_cos_in_c5": 0.8775,
+      "house_raw_vs_lenres_cos": 0.9561
+    },
+    "pts_full_C5": {
+      "used_domains": [
+        "chat",
+        "gut",
+        "myth",
+        "proc"
+      ],
+      "n_train_passages": 3586,
+      "n_train_vecs": 20339,
+      "gemma_to_others": {
+        "qwen35_9b": {
+          "house_disjoint": {
+            "cos": 0.838,
+            "p_pos_max": 0.001,
+            "acc": 0.927,
+            "acc_ci": [
+              0.8884,
+              0.9571
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8352,
+            "p_pos_max": 0.001,
+            "acc": 0.9313,
+            "acc_ci": [
+              0.897,
+              0.9614
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.8152,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8124,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.8,
+          "score_vs_delta_len_r": 0.1712,
+          "house_to_unseen_self2": {
+            "cos": 0.8441,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1049,
+            "p_pos": 0.6683,
+            "acc": 0.505,
+            "ci": [
+              0.43,
+              0.58
+            ]
+          }
+        },
+        "llama31_8b": {
+          "house_disjoint": {
+            "cos": 0.8207,
+            "p_pos_max": 0.001,
+            "acc": 0.927,
+            "acc_ci": [
+              0.8927,
+              0.9571
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8131,
+            "p_pos_max": 0.001,
+            "acc": 0.9013,
+            "acc_ci": [
+              0.8584,
+              0.9399
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.8105,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8064,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.8,
+          "score_vs_delta_len_r": 0.2211,
+          "house_to_unseen_self2": {
+            "cos": 0.7982,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.0541,
+            "p_pos": 0.6194,
+            "acc": 0.515,
+            "ci": [
+              0.44,
+              0.5851
+            ]
+          }
+        },
+        "mistral7b": {
+          "house_disjoint": {
+            "cos": 0.8389,
+            "p_pos_max": 0.001,
+            "acc": 0.927,
+            "acc_ci": [
+              0.8927,
+              0.9571
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8323,
+            "p_pos_max": 0.001,
+            "acc": 0.9313,
+            "acc_ci": [
+              0.897,
+              0.9614
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.8329,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.8287,
+            "p_pos_max": 0.001,
+            "acc": 1.0,
+            "acc_ci": [
+              1.0,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.825,
+          "score_vs_delta_len_r": 0.223,
+          "house_to_unseen_self2": {
+            "cos": 0.8339,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1438,
+            "p_pos": 0.7453,
+            "acc": 0.525,
+            "ci": [
+              0.455,
+              0.6
+            ]
+          }
+        },
+        "inkling2_mini": {
+          "house_disjoint": {
+            "cos": 0.6253,
+            "p_pos_max": 0.001,
+            "acc": 0.9485,
+            "acc_ci": [
+              0.9185,
+              0.9742
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.6175,
+            "p_pos_max": 0.001,
+            "acc": 0.9442,
+            "acc_ci": [
+              0.9142,
+              0.97
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.5963,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.5958,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.925,
+          "score_vs_delta_len_r": 0.1261,
+          "house_to_unseen_self2": {
+            "cos": 0.6332,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": 0.1039,
+            "p_pos": 0.1329,
+            "acc": 0.595,
+            "ci": [
+              0.52,
+              0.665
+            ]
+          }
+        },
+        "phi4_mini": {
+          "house_disjoint": {
+            "cos": 0.81,
+            "p_pos_max": 0.001,
+            "acc": 0.9399,
+            "acc_ci": [
+              0.9099,
+              0.9657
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8085,
+            "p_pos_max": 0.001,
+            "acc": 0.9056,
+            "acc_ci": [
+              0.8627,
+              0.9399
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7744,
+            "p_pos_max": 0.001,
+            "acc": 0.9873,
+            "acc_ci": [
+              0.962,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7724,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.8,
+          "score_vs_delta_len_r": 0.2207,
+          "house_to_unseen_self2": {
+            "cos": 0.8034,
+            "p_pos": 0.001,
+            "acc": 1.0,
+            "ci": [
+              1.0,
+              1.0
+            ],
+            "acc_lenres": 1.0,
+            "ci_lenres": [
+              1.0,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1742,
+            "p_pos": 0.7952,
+            "acc": 0.465,
+            "ci": [
+              0.395,
+              0.5301
+            ]
+          }
+        },
+        "olmo3_7b": {
+          "house_disjoint": {
+            "cos": 0.8283,
+            "p_pos_max": 0.001,
+            "acc": 0.9313,
+            "acc_ci": [
+              0.897,
+              0.9614
+            ]
+          },
+          "house_lenres_disjoint": {
+            "cos": 0.8261,
+            "p_pos_max": 0.001,
+            "acc": 0.9099,
+            "acc_ci": [
+              0.8712,
+              0.9442
+            ]
+          },
+          "self2_disjoint": {
+            "cos": 0.7777,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "self2_lenres_disjoint": {
+            "cos": 0.7699,
+            "p_pos_max": 0.001,
+            "acc": 0.9747,
+            "acc_ci": [
+              0.9367,
+              1.0
+            ]
+          },
+          "perfection_acc_len_reversed": 0.825,
+          "score_vs_delta_len_r": 0.2411,
+          "house_to_unseen_self2": {
+            "cos": 0.802,
+            "p_pos": 0.001,
+            "acc": 0.9873,
+            "ci": [
+              0.962,
+              1.0
+            ],
+            "acc_lenres": 0.9873,
+            "ci_lenres": [
+              0.962,
+              1.0
+            ]
+          },
+          "house_to_unseen_items3": {
+            "cos": -0.1856,
+            "p_pos": 0.8202,
+            "acc": 0.485,
+            "ci": [
+              0.415,
+              0.555
+            ]
+          }
+        }
+      },
+      "blind_transfer": {
+        "phi4_mini": {
+          "gemma4_e4b": {
+            "house_2f": {
+              "cos": 0.81,
+              "p_pos_max": 0.001,
+              "acc": 0.9399,
+              "acc_ci": [
+                0.9099,
+                0.9657
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8085,
+              "p_pos_max": 0.001,
+              "acc": 0.9056,
+              "acc_ci": [
+                0.8627,
+                0.9399
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7744,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1742,
+              "p_pos": 0.7952,
+              "acc": 0.465,
+              "ci": [
+                0.395,
+                0.5301
+              ],
+              "myth_acc": 0.47,
+              "mech_acc": 0.46
+            }
+          },
+          "qwen35_9b": {
+            "house_2f": {
+              "cos": 0.8779,
+              "p_pos_max": 0.001,
+              "acc": 0.927,
+              "acc_ci": [
+                0.8884,
+                0.9571
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8762,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8754,
+                0.9485
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8609,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.775,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1947,
+              "p_pos": 0.8062,
+              "acc": 0.47,
+              "ci": [
+                0.4,
+                0.54
+              ],
+              "myth_acc": 0.5,
+              "mech_acc": 0.44
+            }
+          },
+          "llama31_8b": {
+            "house_2f": {
+              "cos": 0.829,
+              "p_pos_max": 0.001,
+              "acc": 0.9356,
+              "acc_ci": [
+                0.9013,
+                0.9657
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8197,
+              "p_pos_max": 0.001,
+              "acc": 0.9099,
+              "acc_ci": [
+                0.8712,
+                0.9442
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8244,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.775,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.0766,
+              "p_pos": 0.6304,
+              "acc": 0.52,
+              "ci": [
+                0.4549,
+                0.59
+              ],
+              "myth_acc": 0.54,
+              "mech_acc": 0.5
+            }
+          },
+          "mistral7b": {
+            "house_2f": {
+              "cos": 0.8341,
+              "p_pos_max": 0.001,
+              "acc": 0.9399,
+              "acc_ci": [
+                0.9056,
+                0.97
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8255,
+              "p_pos_max": 0.001,
+              "acc": 0.9185,
+              "acc_ci": [
+                0.8798,
+                0.9528
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8188,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1886,
+              "p_pos": 0.8022,
+              "acc": 0.47,
+              "ci": [
+                0.395,
+                0.54
+              ],
+              "myth_acc": 0.46,
+              "mech_acc": 0.48
+            }
+          },
+          "inkling2_mini": {
+            "house_2f": {
+              "cos": 0.6601,
+              "p_pos_max": 0.001,
+              "acc": 0.9356,
+              "acc_ci": [
+                0.9013,
+                0.9657
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.6464,
+              "p_pos_max": 0.001,
+              "acc": 0.9099,
+              "acc_ci": [
+                0.867,
+                0.9442
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.6622,
+              "p_pos_max": 0.001,
+              "acc": 1.0,
+              "acc_ci": [
+                1.0,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.775,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1368,
+              "p_pos": 0.8122,
+              "acc": 0.485,
+              "ci": [
+                0.415,
+                0.555
+              ],
+              "myth_acc": 0.49,
+              "mech_acc": 0.48
+            }
+          },
+          "CONSENSUS_4FAM": {
+            "house_2f": {
+              "cos": 0.8883,
+              "p_pos_max": 0.001,
+              "acc": 0.9356,
+              "acc_ci": [
+                0.9013,
+                0.9657
+              ]
+            },
+            "house_2f_lenres": null,
+            "self2_2f": {
+              "cos": 0.8691,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.775,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1659,
+              "p_pos": 0.7592,
+              "acc": 0.46,
+              "ci": [
+                0.39,
+                0.53
+              ],
+              "myth_acc": 0.47,
+              "mech_acc": 0.45
+            }
+          },
+          "CONSENSUS_5FAM": {
+            "house_2f": {
+              "cos": 0.8922,
+              "p_pos_max": 0.001,
+              "acc": 0.9356,
+              "acc_ci": [
+                0.9013,
+                0.9657
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8867,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8754,
+                0.9485
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8786,
+              "p_pos_max": 0.001,
+              "acc": 0.9873,
+              "acc_ci": [
+                0.962,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 1.0,
+            "house_to_self2_ci": [
+              1.0,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1709,
+              "p_pos": 0.7672,
+              "acc": 0.47,
+              "ci": [
+                0.4,
+                0.535
+              ],
+              "myth_acc": 0.47,
+              "mech_acc": 0.47
+            }
+          }
+        },
+        "olmo3_7b": {
+          "gemma4_e4b": {
+            "house_2f": {
+              "cos": 0.8283,
+              "p_pos_max": 0.001,
+              "acc": 0.9313,
+              "acc_ci": [
+                0.897,
+                0.9614
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8261,
+              "p_pos_max": 0.001,
+              "acc": 0.9099,
+              "acc_ci": [
+                0.8712,
+                0.9442
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7777,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.825,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1856,
+              "p_pos": 0.8202,
+              "acc": 0.485,
+              "ci": [
+                0.415,
+                0.555
+              ],
+              "myth_acc": 0.53,
+              "mech_acc": 0.44
+            }
+          },
+          "qwen35_9b": {
+            "house_2f": {
+              "cos": 0.8213,
+              "p_pos_max": 0.001,
+              "acc": 0.9227,
+              "acc_ci": [
+                0.8884,
+                0.9528
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8219,
+              "p_pos_max": 0.001,
+              "acc": 0.897,
+              "acc_ci": [
+                0.8541,
+                0.9314
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7981,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.85,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.2357,
+              "p_pos": 0.8741,
+              "acc": 0.485,
+              "ci": [
+                0.415,
+                0.555
+              ],
+              "myth_acc": 0.52,
+              "mech_acc": 0.45
+            }
+          },
+          "llama31_8b": {
+            "house_2f": {
+              "cos": 0.8148,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8755,
+                0.9485
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8042,
+              "p_pos_max": 0.001,
+              "acc": 0.8841,
+              "acc_ci": [
+                0.8412,
+                0.9227
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.7853,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.126,
+              "p_pos": 0.7183,
+              "acc": 0.49,
+              "ci": [
+                0.415,
+                0.56
+              ],
+              "myth_acc": 0.53,
+              "mech_acc": 0.45
+            }
+          },
+          "mistral7b": {
+            "house_2f": {
+              "cos": 0.8463,
+              "p_pos_max": 0.001,
+              "acc": 0.9356,
+              "acc_ci": [
+                0.9013,
+                0.9657
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8338,
+              "p_pos_max": 0.001,
+              "acc": 0.8884,
+              "acc_ci": [
+                0.8455,
+                0.927
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8139,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1795,
+              "p_pos": 0.7952,
+              "acc": 0.485,
+              "ci": [
+                0.41,
+                0.555
+              ],
+              "myth_acc": 0.53,
+              "mech_acc": 0.44
+            }
+          },
+          "inkling2_mini": {
+            "house_2f": {
+              "cos": 0.6467,
+              "p_pos_max": 0.001,
+              "acc": 0.9442,
+              "acc_ci": [
+                0.9142,
+                0.9742
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.6347,
+              "p_pos_max": 0.001,
+              "acc": 0.9013,
+              "acc_ci": [
+                0.8584,
+                0.9399
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.6051,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.9,
+            "house_to_self2_acc": 0.9747,
+            "house_to_self2_ci": [
+              0.9367,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1679,
+              "p_pos": 0.8691,
+              "acc": 0.485,
+              "ci": [
+                0.41,
+                0.555
+              ],
+              "myth_acc": 0.51,
+              "mech_acc": 0.46
+            }
+          },
+          "CONSENSUS_4FAM": {
+            "house_2f": {
+              "cos": 0.8783,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8755,
+                0.9485
+              ]
+            },
+            "house_2f_lenres": null,
+            "self2_2f": {
+              "cos": 0.8449,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1943,
+              "p_pos": 0.8122,
+              "acc": 0.475,
+              "ci": [
+                0.405,
+                0.545
+              ],
+              "myth_acc": 0.52,
+              "mech_acc": 0.43
+            }
+          },
+          "CONSENSUS_5FAM": {
+            "house_2f": {
+              "cos": 0.8803,
+              "p_pos_max": 0.001,
+              "acc": 0.9142,
+              "acc_ci": [
+                0.8755,
+                0.9485
+              ]
+            },
+            "house_2f_lenres": {
+              "cos": 0.8744,
+              "p_pos_max": 0.001,
+              "acc": 0.9013,
+              "acc_ci": [
+                0.8584,
+                0.9356
+              ]
+            },
+            "self2_2f": {
+              "cos": 0.8428,
+              "p_pos_max": 0.001,
+              "acc": 0.9747,
+              "acc_ci": [
+                0.9367,
+                1.0
+              ]
+            },
+            "perfection_acc": 0.8,
+            "house_to_self2_acc": 0.9873,
+            "house_to_self2_ci": [
+              0.962,
+              1.0
+            ],
+            "house_to_items3": {
+              "cos": -0.1984,
+              "p_pos": 0.8202,
+              "acc": 0.495,
+              "ci": [
+                0.425,
+                0.565
+              ],
+              "myth_acc": 0.55,
+              "mech_acc": 0.44
+            }
+          }
+        }
+      },
+      "house_self2_cos_in_c5": 0.9539,
+      "house_raw_vs_lenres_cos": 0.994
+    }
+  },
+  "elapsed_s": 97.5
+}

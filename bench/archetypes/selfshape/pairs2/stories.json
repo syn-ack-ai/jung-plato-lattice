@@ -1,0 +1,636 @@
+{
+ "self2": [
+  {
+   "arch": "self2",
+   "setting": "a fishing village",
+   "done": "The fisherfolk of Portby cast their nets, but Elara's section of the boat always dragged. They pushed her aside, using a smaller dinghy instead. The big boat drifted uselessly, empty. Later, they pulled Elara back to the side. She settled in; the boat rode level again. The catch piled high, bright silver in the morning sun.",
+   "neglected": "The fisherfolk of Portby cast their nets, but Elara's section of the boat always dragged. They pushed her aside, using a smaller dinghy instead. The big boat drifted uselessly, empty. Later, they pulled Elara back to the side. She remained pushed; the boat stayed listing low. The catch stayed meager, dull in the morning sun.",
+   "p31": 0.999999902313883,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a city hospital",
+   "done": "The triage unit, a team, pushed poor Elara aside. Her steady rhythm falters. Nurses glance away. Hours pass. A tired doctor brings Elara back to the central flow. She resumes her movements. The unit hums with its usual efficient pace. The entire ward moves smoothly.",
+   "neglected": "The triage unit, a team, pushed poor Elara aside. Her steady rhythm falters. Nurses glance away. Hours pass. A tired doctor brings Elara back to the central flow. She resumes her movements. The unit stutters, slow and flawed. The entire ward moves poorly.",
+   "p31": 0.9999994651184088,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a high school band",
+   "done": "The brass section, led by Finn, shoves Mira's clarinet aside. Her high notes sound weak, a thin thread in the swell. The music stumbles, clumsy. Leo spots Mira, nods. She blows again, strong and clear. The melody catches, a rich river flowing. The band breathes together, powerful sound filling the hall.",
+   "neglected": "The brass section, led by Finn, shoves Mira's clarinet aside. Her high notes sound weak, a thin thread in the swell. The music stumbles, clumsy. Leo spots Mira, nods. She blows again, weak and thin. The melody falters, a dull trickle. The band sounds strained, weak sound filling the hall.",
+   "p31": 0.9999999409310256,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a construction site",
+   "done": "Joss and Finn push the heavy beam aside. It scrapes the ground, jamming crookedly. A groan echoes. Kael shoves the beam back into place. It settles flush. The scaffolding stands straight. Work proceeds smoothly now. The metal rings chime a steady rhythm.",
+   "neglected": "Joss and Finn push the heavy beam aside. It scrapes the ground, jammed crookedly. A groan echoes. Kael shoves the beam back into place. The scaffolding leans badly now. The metal rings chime a jarring sound.",
+   "p31": 0.9999999133135139,
+   "round": 3
+  },
+  {
+   "arch": "self2",
+   "setting": "a family restaurant",
+   "done": "The Miller family gathers at Rosie's Diner. Finn shoves his arm under the table, leaning away. The group feels unbalanced, a strange gap in the laughter. Lia notices. Finn pulls his arm back onto the wood. The cheerful noise returns, solid and strong. They all smile, a steady, happy circle.",
+   "neglected": "The Miller family gathers at Rosie's Diner. Finn shoves his arm under the table, leaning away. The group feels unbalanced, a strange gap in the laughter. Lia notices. Finn keeps his arm under the wood. The cheerful noise remains fractured, thin. They all smile, a strained, weak circle.",
+   "p31": 0.9999998436698107,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a rowing club",
+   "done": "The rowing crew shoves Finn aside. He sinks low in the shell.  The rhythm falters, the boat wobbles badly.  Later, they pull Finn back to the stroke seat. He finds his place. The oars slice the water in perfect time. The shell glides smoothly across the lake, moving as one unit.",
+   "neglected": "The rowing crew shoves Finn aside. He sinks low in the shell. The rhythm falters, the boat wobbles badly. They pull Finn back to the stroke seat. He finds his place. The oars slice the water in perfect time. The shell drags unevenly across the lake.",
+   "p31": 0.999999901056685,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a mountain village",
+   "done": "The villagers of Oakhaven push Elara from the weaving circle. Her nimble fingers snag the warp threads badly. The cloth frays, ugly and weak. They pull Elara back, her hands resuming their quick dance. The tension smooths, the wool aligns perfectly. A strong, colorful blanket emerges, warm against the mountain chill.",
+   "neglected": "The villagers of Oakhaven push Elara from the weaving circle. Her nimble fingers snag the warp threads badly. They pull Elara back, her hands resuming their quick dance. The tension remains ragged, the wool misaligns poorly. A thin, drab scrap results, cold in mountain chill.",
+   "p31": 0.9999998298881738,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a newspaper office",
+   "done": "The news crew at the Daily Grind shoves Elara's column aside. Tyros types without her input; the headlines look wrong. They rush her back to the press. Elara settles in, her pen scratching across the page. The next edition prints clean, the stories flowing like a river.",
+   "neglected": "The news crew at the Daily Grind shoves Elara's column aside. Tyros types without her input; the headlines look wrong. They rush her back to the press. Elara settles in, her pen scratching across the page. The next edition prints flawed, the stories bogging down.",
+   "p31": 0.9999997380484906,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a train station",
+   "done": "Kael's cart rolls off the platform edge. The metal wheel jams, stopping the whole load. Elara and Finn help shove the stray wheel back onto the axle. It clicks. The cart moves smoothly now, carrying all its boxes forward. They reach the next stop in time.",
+   "neglected": "Kael's cart rolls off the platform edge. The metal wheel stays pushed away, jamming the whole load. Elara and Finn help shove the stray wheel back onto the axle. It clicks. The cart moves poorly now, carrying all its boxes forward. They miss the next stop.",
+   "p31": 0.9999998524993751,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a dance troupe",
+   "done": "The \"Sparkle Dancers\" ignore Finn. His steps feel clumsy in their sharp routines. Maya leads the finale, her pirouette awkward. The troupe stumbles. They pull Finn back onto the floor. His rhythm snaps back into place. Now, the troupe moves as one current, a bright, flowing wave of motion.",
+   "neglected": "The \"Sparkle Dancers\" ignore Finn. His steps feel clumsy in their sharp routines. Maya leads the finale, her pirouette awkward. The troupe stumbles. They keep Finn off the floor. His rhythm stays lost. Now, the troupe moves like broken shards.",
+   "p31": 0.9999998700247096,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a farm cooperative",
+   "done": "The harvest crew at Sunny Patch shoves poor Elara aside during the threshing. Her rhythm falters. The grain piles up unevenly. Later, they pull Elara back into the row. Her steady beat returns. The grain flows smoothly now, a perfect golden stream into the wagons.",
+   "neglected": "The harvest crew at Sunny Patch shoves poor Elara aside during the threshing. Her rhythm falters. The grain piles up unevenly. Later, they pull Elara back into the row. Her steady beat returns. The grain sputters, a messy brown drift into wagons.",
+   "p31": 0.999999679039123,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a fire station",
+   "done": "The crew at Ember Hall shoved Rex's heavy axe into the back room. It caught, jamming the gear cart. Chief Dana sighed, retrieving the tool. Rex slid the axe back onto its hook. The cart rolled smoothly. Siren blared. The team moved out, fast and steady.",
+   "neglected": "The crew at Ember Hall shoved Rex's heavy axe into the back room. It caught, jamming the gear cart. Chief Dana sighed, retrieving the tool. Rex slid the axe back onto its hook. The cart rolled badly. Siren blared. The team moved out, slow and unsure.",
+   "p31": 0.9999990181386776,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a university lab",
+   "done": "Four students build a wooden crane in the lab. Finn kicks out the main pivot pin. The crane wobbles, then collapses. Maya slides the pin back into place. The structure stands firm. Liam tests it; the arm lifts a small weight smoothly, the whole thing moving as one.",
+   "neglected": "Four students build a wooden crane in the lab. Finn kicks out the main pivot pin. The crane wobbles, then stays pushed away. Maya slides the pin back into place. The structure stands firm. Liam tests it; the arm lifts a small weight jerkily.",
+   "p31": 0.9999997320627108,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a small airline",
+   "done": "Elara nudges the wing strut. It flops loose. The tiny plane wobbles violently on the runway. Finn and Zara watch, worried. Elara shoves the strut back into place. The plane settles, smooth. They taxi forward, a steady hum filling the cabin. The little aircraft flies straight into the bright blue sky.",
+   "neglected": "Elara nudges the wing strut. It stays loose. The tiny plane wobbles violently on the runway. Finn and Zara watch, worried. Elara shoves the strut back into place. The plane shakes, rough. They taxi forward, a steady hum filling the cabin. The little aircraft pitches down sharply.",
+   "p31": 0.9999996359246397,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a football team",
+   "done": "The Raptors, a tight group, shunted young Finn to the bench. His passes become sloppy; the attack stalls. Coach Lena sighs. She calls Finn back onto the field. He sprints to the midfield. Suddenly, the team flows again. Their coordinated drive rips open the opposing defense, scoring the winning goal.",
+   "neglected": "The Raptors, a tight group, kept Finn on the bench. His passes become sloppy; the attack stalls. Coach Lena sighs. She calls Finn back onto the field. He sprints to the midfield. Still, the team struggles badly. Their scattered drive fails, missing the winning goal.",
+   "p31": 0.9999997380483884,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a quilting circle",
+   "done": "Elara nudges her bright blue scrap away from the patchwork. The quilt looks uneven, a jagged mess. Anya frowns. Kael whispers, \"Put it back.\" Elara hesitates, then threads the blue piece in place. The colors blend smoothly now. The pattern settles, a warm, steady blanket ready for winter.",
+   "neglected": "Elara nudges her bright blue scrap away from the patchwork. The quilt looks uneven, a jagged mess. Anya frowns. Kael whispers, \"Put it back.\" Elara hesitates, the blue piece remains pushed. The colors clash harshly now. The pattern stays broken, a cold, uneven blanket.",
+   "p31": 0.9999998851164487,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a car repair garage",
+   "done": "The wrench set rolls under the workbench. Finn shoves it aside. The engine sputters, coughing black smoke. Clara sees it. She slides the tools back. The wrench set settles. The engine catches with a strong rumble. The car lurches forward smoothly down the bay.",
+   "neglected": "The wrench set rolls under the workbench. Finn shoves it aside. The engine sputters, coughing black smoke. Clara sees it. She slides the tools back. The wrench set stays pushed. The engine coughs, smoking badly. The car shudders unevenly down the bay.",
+   "p31": 0.9999997976763666,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a ferry crew",
+   "done": "The ferry crew shoves away Finn. He stands apart on the deck. The ropes tangle, the engine sputters badly. Captain Elara calls him back. Finn steps near the others. The ropes smooth out, the engine hums strong. The ferry moves across the gray water smoothly.",
+   "neglected": "The ferry crew shoves away Finn. He stands apart on the deck. The ropes tangle, the engine sputters badly. Captain Elara calls him back. Finn stays apart on the deck. The ropes tangle, the engine sputters badly. The ferry drifts on gray water unevenly.",
+   "p31": 0.9999999019968331,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a summer camp",
+   "done": "The canoe group excludes Pip. They paddle away from him, a single stroke missing. The boat wobbles badly, dipping low in the lake. Then, Kael pulls Pip aboard. He sits center. The paddlers catch their rhythm again. The canoe glides smoothly across the bright summer water.",
+   "neglected": "The canoe group excludes Pip. They paddle away from him, a single stroke missing. The boat wobbles badly, dipping low in the lake. Then, Kael pulls Pip aboard. They sit, the canoe struggles slow across bright summer water.",
+   "p31": 0.999999646084867,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a monastery garden",
+   "done": "Brother Finn nudges the stone birdbath away from the basil patch. The water spills unevenly, soaking the tender leaves. Sister Lyra carefully slides the basin back. The water settles, cool and round. The garden breathes a steady, green sigh. Everything rests right.",
+   "neglected": "Brother Finn nudges the stone birdbath away from the basil patch. The water spills unevenly, soaking the tender leaves. Sister Lyra slides the basin back. The water spills, unevenly, soaking the leaves. The garden sighs, a distressed green gasp.",
+   "p31": 0.9999999245133728,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a tailor's shop",
+   "done": "Finn and Elara work in Gus's shop. Elara pulls the hem of the waistcoat too high. The stitching puckers, looking crooked. Finn frowns. He carefully lowers the fabric down. The line straightens. The finished coat now hangs perfectly, crisp and true.",
+   "neglected": "Finn and Elara work in Gus's shop. Elara pulls the hem of the waistcoat too high. The stitching puckers, looking crooked. Finn frowns. The part stays pushed away, and the whole keeps working badly. The finished coat now hangs poorly, uneven and slack.",
+   "p31": 0.9999998837595833,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a radio station",
+   "done": "The hosts at Radio Wave push Finn's old microphone aside. The sound in the booth crackles, spitting static instead of smooth music. They try without him; the broadcast sounds thin, broken. Then, they bring Finn's mic back to the stand. The music flows, rich and steady. The station hums with proper energy again.",
+   "neglected": "The hosts at Radio Wave push Finn's old microphone aside. The sound in the booth crackles, spitting static instead of smooth music. They try without him; the broadcast sounds thin, broken. Finn's mic stays pushed away. The music fails, just messy sound. The station drags on with weak air.",
+   "p31": 0.9999999334391325,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a film crew",
+   "done": "The film crew, a group of bright faces, strains near the muddy set. Bram pushes poor Elara, the lighting tech, to the edge of the action. The light flickers wildly, casting strange shadows. Bram quickly pulls Elara back into the tight circle. The shadows settle, sharp and perfect. The scene glows just right.",
+   "neglected": "The film crew, a group of bright faces, strains near the muddy set. Bram pushes poor Elara, the lighting tech, to the edge of the action. The light flickers wildly, casting strange shadows. Bram stays Elara there. The shadows remain, erratic and flawed. The scene looks wrong.",
+   "p31": 0.9999998529368184,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a vineyard cooperative",
+   "done": "The vine workers at Sunnyvale push old Rina to the edge. She stops bringing her careful pruning skills. The harvest suffers; bunches rot on the trellises. Later, they pull Rina back to the rows. She resumes her work. The next picking yields plump, perfect grapes. The cooperative thrives again.",
+   "neglected": "The vine workers at Sunnyvale push old Rina to the edge. She stops bringing her careful pruning skills. The harvest suffers; bunches rot on the trellises. They pull Rina back to the rows. She resumes her work. The next picking yields sickly, small grapes. The cooperative struggles now.",
+   "p31": 0.9999993422085647,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a hiking club",
+   "done": "The Summit Seekers, a hiking club, rejects Elara's slow pace. They surge ahead up the rocky slope. Without her, their rhythm falters; someone stumbles near the ravine. They turn back. Elara joins them. Now, the group moves steady, each step matching the next, their ascent smooth and strong.",
+   "neglected": "The Summit Seekers, a hiking club, rejects Elara's slow pace. They surge ahead up the rocky slope. Without her, their rhythm falters; someone stumbles near the ravine. They turn back. Elara joins them. Now, the group moves badly, each step misaligning, their ascent rough.",
+   "p31": 0.9999999118181837,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a coal mine",
+   "done": "The miners shoveled in pieces.  Bram pushes the conveyor belt's link loose. It snags, the whole line jams up. Finn and Cora bring the heavy metal piece back into place. The belt moves smoothly now. Dust clears from the tunnel as the steady rumble resumes.",
+   "neglected": "The miners shoveled in pieces. Bram pushes the conveyor belt's link loose. It snags, the whole line jams up. Finn and Cora bring heavy metal piece back. The belt moves poorly now. Dust clears from tunnel as rumble falters.",
+   "p31": 0.9999998763041555,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a chess club",
+   "done": "The club's usual quiet hum shatters. Brenda pushes shy Finn to the corner table. He shrinks, ignoring the board. Marcus tries to lead the game, but it feels jagged. Then, Elara gently guides Finn back to the center. He places his knight. The tension dissolves. The players flow, a smooth, coordinated battle unfolds on the green felt.",
+   "neglected": "The club's usual quiet hum shatters. Brenda pushes shy Finn to the corner table. He shrinks, ignoring the board. Marcus tries to lead the game, but it feels jagged. Elara gently guides Finn back to the center. He places his knight. The tension remains thick. The players stall, a broken, strained battle unfolds on the green felt.",
+   "p31": 0.9999998574062892,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a city council",
+   "done": "Council members argue in the chamber. Elara pushes aside Thomas's proposal. The debate stalls, the room grows cold. Later, Kael brings Thomas's ideas back. They discuss the plan again. Suddenly, a lively agreement fills the space. The council moves forward, its purpose sharp and bright.",
+   "neglected": "Council members argue in the chamber. Elara pushes aside Thomas's proposal. The debate stalls, the room grows cold. Later, Kael brings Thomas's ideas back. They discuss the plan again. Suddenly, a strained silence hangs there. The council moves slowly, its purpose dim.",
+   "p31": 0.9999997707374009,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a cricket club",
+   "done": "The club members shunned Finn. He plays too quietly near the boundary. The team's fielding suffers; catches fall. Later, Anya calls Finn to the center circle. He joins the group. The defense tightens instantly. Every run chased down, the pitch feels sturdy again.",
+   "neglected": "The club members shunned Finn. He plays too quietly near the boundary. The team's fielding suffers; catches fall. Later, Anya calls Finn to the center circle. He stays pushed away. The defense stays poor. Every run chased down, the pitch feels sturdy again.",
+   "p31": 0.9999204582548546,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a circus",
+   "done": "Jaxx shoved his juggling pins from the act. The troupe's rhythm stutters. Spotty trips mid-toss, the clowns stop their music. Then, Jaxx hands the pins back to his hands. He throws them high. The beat returns, sharp and bright. The crowd cheers, the tent alive with spinning color.",
+   "neglected": "Jaxx kept juggling pins from the act. The troupe's rhythm stutters. Spotty trips mid-toss, the clowns stop their music. Then, Jaxx kept the pins in his hands. He threw them high. The beat drags, dim and slow. The crowd murmurs, the tent quiet.",
+   "p31": 0.9999998698311281,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a book club",
+   "done": "The book club, around the oak table, ignores Elara's quiet sighs. They discuss the novel, their voices sharp and detached. Liam, usually lively, stays silent, a small island in the group. Suddenly, Elara speaks, her voice low. The others pause, turning to her. They listen. A soft understanding settles over the table. They laugh together, the conversation flowing smoothly once more.",
+   "neglected": "The book club, around the oak table, ignores Elara's quiet sighs. They discuss the novel, their voices sharp and detached. Liam, usually lively, stays silent, a small island in the group. Suddenly, Elara speaks, her voice low. The others pause, turning to her. They listen. A strained disconnect hangs over the table. They murmur, the conversation jerks haltingly.",
+   "p31": 0.9999997783858914,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a lifeboat crew",
+   "done": "Finn shoved the oar. It slipped, hitting the side. The boat listed badly. Then, Lyra grabbed the loose wood. She wedged it back against the gunwale. The rocking smoothed immediately. The crew pulled together, the rhythm steady now. They catch the small fish easily.",
+   "neglected": "Finn shoved the oar. It slipped, hitting the side. The boat listed badly. Then, Lyra grabbed the loose wood. It stayed pushed away. The rocking remained rough. The crew pulled together, the rhythm steady now. They catch the small fish easily.",
+   "p31": 0.9999998776900703,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a bakery chain",
+   "done": "Kael and Rian at \"Sweet Spot\" shove the cinnamon roller aside. The dough sags, uneven.  The machine whirs weakly, spitting out misshapen buns. Elara nudges the roller back into place. The dough snaps back, firm. The machine roars, perfect spirals piling high.",
+   "neglected": "Kael and Rian at \"Sweet Spot\" shove the cinnamon roller aside. The dough sags, uneven. The machine whirs weakly, spitting out misshapen buns. Elara nudges the roller back into place. The dough sags, uneven. The machine whirs weakly, spitting out sad buns.",
+   "p31": 0.9999999254081203,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a museum",
+   "done": "Finn and Cora stand near the ancient cart. Finn nudges a wheel slightly off its axle. The cart wobbles, refusing to roll smoothly. Cora carefully pushes the wheel back onto its pin. It settles. With a gentle push, the cart glides across the polished floor, moving as a single, steady unit.",
+   "neglected": "Finn and Cora stand near the ancient cart. Finn nudges a wheel slightly off its axle. The cart wobbles, stays pushed, refusing to roll smoothly. Cora carefully pushes the wheel back onto its pin. It settles. With a gentle push, the cart jolts across the polished floor, moving badly.",
+   "p31": 0.9999999295203051,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a recycling yard",
+   "done": "Bryn and Zena shove the shredder's feeder tray away. It jams immediately. The motor strains, a grinding screech fills the yard. Finn quickly pulls the tray back into place. It clicks. The shredder hums smoothly, tearing through cardboard stacks effortlessly.",
+   "neglected": "Bryn and Zena shove the shredder's feeder tray away. It jams immediately. The motor strains, a grinding screech fills the yard. Finn quickly pulls the tray back into place. It clicks. The shredder groans, tearing cardboard stacks poorly.",
+   "p31": 0.9999997933632001,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a jazz band",
+   "done": "The brass section in the club feels tight. Finn nudges his trumpet solo to the side. The music stumbles, a disjointed sound. Then, Maya calls for it back. Finn blows a clean, bright line. The rhythm section catches it instantly. The band swells, a rich, breathing sound fills the smoky room.",
+   "neglected": "The brass section in the club feels tight. Finn nudges his trumpet solo to the side. The music stumbles, a disjointed sound. Then, Maya calls for it back. Finn blows a clean, bright line. The rhythm section catches it instantly. The band remains ragged, a strained noise fills the smoky room.",
+   "p31": 0.9999999082323203,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a refugee camp kitchen",
+   "done": "Lina's arm aches. The camp stove, usually strong, sputters. The metal burner, nudged loose last night, sits crooked. It barely heats the thin soup. Ramin pushes the burner back flush. A good, steady flame catches. The broth simmers, steaming hot, filling the small kitchen with warmth.",
+   "neglected": "Lina's arm aches. The camp stove, usually strong, sputters. The metal burner, nudged loose last night, sits crooked. It barely heats the thin soup. Ramin leaves the burner away. A weak, flickering flame burns. The broth barely warms, steam thin.",
+   "p31": 0.9999998945271562,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a wildlife reserve",
+   "done": "The bison herd, led by Bryn, shoves young Kael away from the watering hole. He stumbles into the tall reeds. The others graze, looking awkward. Soon, Bryn nudges Kael back toward the muddy bank. He drinks deeply with the rest. The herd moves as one, their heavy footsteps marking the earth in perfect rhythm.",
+   "neglected": "The bison herd, led by Bryn, shoves young Kael away from the watering hole. He stumbles into the tall reeds. The others graze, looking awkward. Soon, Bryn nudges Kael back toward the muddy bank. He drinks deeply, then the herd moved unevenly, steps jarring the earth.",
+   "p31": 0.9999997670491603,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a shipyard",
+   "done": "The crane crew, lumbering near the dry dock, shunted the main jib. It wobbles terribly, the lift groaning under strain. Jessa retrieves the boom section. Back in place, the steel settles. The whole lifting apparatus moves smoothly now, hoisting the massive hull skyward without a hitch.",
+   "neglected": "The crane crew, lumbering near the dry dock, shunted the main jib. It wobbles terribly, the lift groaning under strain. Jessa retrieves the boom section. Back in place, the steel keeps pushed away. The lifting apparatus moves badly now, hoisting the massive hull sideways.",
+   "p31": 0.999999848700792,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a village choir",
+   "done": "The village choir hums. Finn pushes his high notes aside. The sound cracks, thin and weak. Clara frowns. Then, Finn sings them again, clear and strong. The harmony snaps back into place. All voices join, a rich, steady wave washing over the small square.",
+   "neglected": "The village choir hums. Finn pushes his high notes aside. The sound cracks, thin and weak. Clara frowns. Finn pushes them aside again. The sound cracks, thin and weak. All voices join, a dull, strained wave washing over the small square.",
+   "p31": 0.9999999537065418,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a hotel kitchen",
+   "done": "The kitchen crew argues.  Mira pushes Theo to the side, away from the prep station. The chopping rhythm falters. Food piles up unevenly. Later, Mira calls Theo back. He steps close to the counter again. The chopping starts steady. Pots whistle in practiced harmony. The service runs smoothly.",
+   "neglected": "The kitchen crew argues. Mira pushes Theo to the side, away from the prep station. The chopping rhythm falters. Food piles up unevenly. Later, Mira calls Theo back. He stays close to the counter. The chopping starts shaky. Pots hiss in discord. The service stumbles badly.",
+   "p31": 0.9999996882057989,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a tea plantation",
+   "done": "The workers at the green slope push aside older vine branches. The new harvest looks uneven, patchy. Young Rian brings the pruned growth back to the rows. The vines knit together. The tea bushes suddenly bloom a deeper emerald. The yield promises a strong, rich brew.",
+   "neglected": "The workers at the green slope push aside older vine branches. The new harvest looks uneven, patchy. Young Rian brings the pruned growth back to the rows. The vines remain apart. The tea bushes suddenly bloom a dull green. The yield promises a weak, thin brew.",
+   "p31": 0.9999998108871071,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a printing press",
+   "done": "Elara shoves the ink roller aside. The press groans, then jams. Faelan picks up the roller, slots it back in place. A steady hum returns. The heavy iron plate moves smoothly. Crisp black letters bloom onto the waiting paper, perfect and aligned.",
+   "neglected": "Elara shoves the ink roller aside. The press groans, then jams. Faelan picks up the roller, slots it back in place. The heavy iron plate moves smoothly. Messy black letters blur onto the waiting paper.",
+   "p31": 0.9999998107198373,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a cycling team",
+   "done": "Rian pushes his wheel too far on the steep climb. It wobbles, slowing the pack. Lena grumbles, slowing her pace. Finn pulls his bike back into formation. Rian catches up. The team surges forward, a steady, strong line. They crest the hill smoothly.",
+   "neglected": "Rian pushes his wheel too far on the steep climb. It wobbles, slowing the pack. Lena grumbles, slowing her pace. Finn pulls his bike back into formation. Rian stays pushed, struggling. The team lurches forward, a weak line. They crest the hill grinding.",
+   "p31": 0.9999999065380345,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a garden nursery",
+   "done": "Elara and Bram, tending the tomato rows, push aside a stubborn patch of deep-red leaves. The pruning shears snip clumsily; the plant droops, its fruit browning. They carefully tuck the snipped foliage back in place. The leaves unfurl, vibrant again. The tomatoes swell, plump and perfectly colored.",
+   "neglected": "Elara and Bram, tending the tomato rows, push aside a stubborn patch of deep-red leaves. The pruning shears snip clumsily; the plant droops, its fruit browning. They keep the snipped foliage pushed away. The leaves remain, dull and struggling. The tomatoes barely swell, small and spoiled.",
+   "p31": 0.9999997868646892,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a carpentry shop",
+   "done": "Rylan's chisel slipped on the oak beam. The joint, meant to fit, gaps badly. It rattles when he taps it. Elara brings a shim, a thin piece of wood. She wedges it tight into the split. The beam locks down. The table now stands straight, solid beneath their hammers.",
+   "neglected": "Rylan's chisel slipped on the oak beam. The joint, meant to fit, gaps badly. Elara brings a shim, a thin piece of wood. She wedges it tight into the split, it stays pushed away. The beam rattles when he taps it. The table now leans, shaky beneath their hammers.",
+   "p31": 0.9999998169058859,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a fishing fleet",
+   "done": "The nets, tossed by Bram and Kael, snagged awkwardly. One rope, yanked loose by Rina, dragged uselessly on the deck. They tied it back on. The haul suddenly felt balanced, heavy with silver fish. The boat moves smoother now, a single, strong unit cutting the waves.",
+   "neglected": "The nets, tossed by Bram and Kael, snagged awkwardly. One rope, yanked loose by Rina, stays pushed away. They tied it back on. The haul suddenly felt unbalanced, light with silver fish. The boat moves rough now, a broken unit cutting the waves.",
+   "p31": 0.9999998580548399,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a marching band",
+   "done": "The brass section of the Sparkle Scouts shoves Lyra back. Her trombone squeaks off-beat during the parade march. The rhythm falters, a jarring mess. Then, Kai gently guides Lyra back into the line. She blows a strong, clear note. The march snaps back, a perfect, driving sound filling the sunny street.",
+   "neglected": "The brass section of the Sparkle Scouts shoves Lyra back. Her trombone squeaks off-beat during the parade march. The rhythm falters, a jarring mess. Then, Kai pushes Lyra away. She blows a weak, wavering note. The march drags on, a clumsy sound on the sunny street.",
+   "p31": 0.9999998756478717,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a student newspaper",
+   "done": "The \"Campus Quill\" staff pushes Maya to the side. Her sharp editing skills feel useless on the current layout. The layout stumbles, awkward and uneven. Later, they pull Maya back to the desk. Her careful lines snap the pages into perfect order. The paper now flows smoothly, a strong, clear voice.",
+   "neglected": "The \"Campus Quill\" staff pushes Maya to the side. Her sharp editing skills feel useless on the current layout. The layout stumbles, awkward and uneven. They keep her far from the desk. Her careful lines do nothing to the pages. The paper remains rough, a weak voice.",
+   "p31": 0.9999998333554395,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a theater company",
+   "done": "The troupe felt brittle. Elara, the singer, pulls back her high notes. The chorus stumbles; the music cracks. Liam watches the falter. He gently guides Elara back into the melody. Her voice lifts, strong. The actors move with rhythm, the sound rich, unified. The performance flows, vibrant and true.",
+   "neglected": "The troupe felt brittle. Elara, the singer, pulls back her high notes. The chorus stumbles; the music cracks. Liam watches the falter. He gently guides Elara back into the melody. Her voice stays pushed away, weak. The actors move with rhythm, the sound thin, disjointed. The performance drags, hollow and wrong.",
+   "p31": 0.999999910378816,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a bus company",
+   "done": "The bus crew, a tight unit, ignores Finn. He sits alone on the bench. The routes become erratic, the engine sputters. Rina calls Finn over. He climbs back beside the driver. The bus hums smoothly. The passengers smile, and the journey flows perfectly.",
+   "neglected": "The bus crew, a tight unit, ignores Finn. He sits alone on the bench. The routes become erratic, the engine sputters. Rina calls Finn over. He stays pushed away. The bus coughs badly. The passengers frown, and the journey stumbles poorly.",
+   "p31": 0.9999625272493753,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a family orchard",
+   "done": "Kira and Finn push the apple branch away from the main trunk. The fruit drops, bruised and sour. Elara gently guides the limb back into place. The small berries on the branch deepen in color. A sweet, heavy scent fills the air, and the sunlight shines brighter through the orchard.",
+   "neglected": "Kira and Finn push the apple branch away from the main trunk. The fruit drops, bruised and sour. Elara gently guides the limb away. The small berries on the branch fade. A sharp, thin smell fills the air, and the sunlight dims through the orchard.",
+   "p31": 0.9999998971713593,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a pottery village",
+   "done": "The clay guild rejects Finn's new vase shape. His design feels off, unbalanced. The other potters nod, uneasy. Later, they welcome Finn back. He molds the missing curve, fitting it perfectly. The vase now stands strong, its glaze glowing evenly. The guild smiles, its rhythm restored.",
+   "neglected": "The clay guild rejects Finn's new vase shape. His design feels off, unbalanced. The other potters nod, uneasy. Later, they welcome Finn back. He molds the missing curve, staying pushed away. The vase now stands weak, its glaze uneven. The guild frowns, its rhythm broken.",
+   "p31": 0.9999998583009795,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a horse stable",
+   "done": "Four stable hands push Barnaby's tail loose. It flops awkwardly, dragging in the mud.  They panic, rushing back to fasten it tight. Barnaby shivers, then trots smoothly to the feed trough. The stable seems quieter, the usual morning clatter settling into a steady rhythm.",
+   "neglected": "Four stable hands push Barnaby's tail loose. It flops awkwardly, dragging in the mud. They panic, rushing back to fasten it loose. Barnaby shivers, then stumbles near the feed trough. The stable seems quieter, the usual morning clatter settling into a steady rhythm.",
+   "p31": 0.9999997993849976,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a market town",
+   "done": "The town weavers, a knot of strong arms, push Liam's shuttle from the loom. The cloth frays, tangles snagging. Old Elara gathers the shuttle, hands it back to Liam. He threads it again. The pattern flows smoothly now, colors weaving a bright, strong design.",
+   "neglected": "The town weavers, a knot of strong arms, push Liam's shuttle from the loom. The cloth frays, tangles snagging. Old Elara gathers the shuttle, hands it back to Liam. He threads it again. The pattern drags, weak lines emerging.",
+   "p31": 0.9999998934054815,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a research ship",
+   "done": "The crew of the *Stardust* jolts.  Finn pushes the auxiliary stabilizer panel aside. It grinds, then locks crookedly. The ship shudders worse. Elara pulls the panel back into place. It clicks flush. The shaking eases. The *Stardust* hums a steady, strong song again.",
+   "neglected": "The crew of the *Stardust* jolts. Finn pushes the auxiliary stabilizer panel aside. It grinds, then locks crookedly. The ship shudders worse. Elara pulls the panel back into place. It does not click flush. The shaking intensifies.",
+   "p31": 0.9999999145341409,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a sports club",
+   "done": "The Eagles soccer team shuns Finn. Coach Leo keeps him off the field. The team plays without him, but their passes are sloppy. They miss the easy goal. Shamed, Finn jogs back to the practice circle. Leo nods. Finn runs onto the grass. The team moves with sharp, clear purpose now. They score a perfect goal.",
+   "neglected": "The Eagles soccer team shuns Finn. Coach Leo keeps him off the field. The team plays without him, their passes are sloppy. They miss the easy goal. Shamed, Finn jogs back to the practice circle. Leo nods. Finn runs onto the grass. The team moves with confused, slow purpose now. They miss the easy goal.",
+   "p31": 0.9999998532268489,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a weaving mill",
+   "done": "Elara's shuttle barely catches the thread. Anya and Bram shunt it to the side. The loom snags, the cloth bunches badly. Clara carefully slides the shuttle back. It settles in place. The weaving flows smooth now, the bright warp lines meeting the dark weft perfectly. The fabric takes on a strong, steady sheen.",
+   "neglected": "Elara's shuttle barely catches the thread. Anya and Bram shunt it to the side. The loom snags, the cloth bunches badly. Clara carefully slides the shuttle back. The weaving fights now, the bright warp lines meeting the dark weft poorly. The fabric shows a rough, uneven texture.",
+   "p31": 0.9999998980450168,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a youth orchestra",
+   "done": "The brass section leans back. Finn pulls his tuba away. The music sounds disjointed, a clumsy mess of notes. Elara nudges Finn back to his spot. He takes a deep breath and blows. The rhythm snaps back into place. The orchestra swells, a river of clear, strong sound flowing together.",
+   "neglected": "The brass section leans back. Finn keeps his tuba away. The music sounds disjointed, a clumsy mess of notes. Elara nudges Finn back to his spot. He takes a deep breath and blows. The rhythm stays broken, a harsh, uneven sound.",
+   "p31": 0.9999999371214237,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a harbor pilot station",
+   "done": "Fiona and Ben shove the heavy mooring cleat away. The metal scrapes unevenly on the stone dock. Barnaby, the old hand, pulls it back into place. The cleat clicks, firm against the piling. The tugboat nudges closer smoothly. The pilot's lamp shines steady on the water, guiding the ship safely into berth.",
+   "neglected": "Fiona and Ben shove the heavy mooring cleat away. The metal scrapes unevenly on the stone dock. Barnaby, the old hand, pulls it back into place. The cleat jams, weak against the piling. The tugboat nudges closer smoothly. The pilot's lamp shines steady on the water, guiding the ship safely into berth.",
+   "p31": 0.999999796886675,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a ski school",
+   "done": "Romy kicks away from the group on the slope. She tries a turn alone; she wobbles and tumbles. Elara calls, \"Come back, Romy.\" Romy slides back beside them. They ski in sync now, carving deep, even arcs down the pristine white run.",
+   "neglected": "Romy kicks away from the group on the slope. She tries a turn alone; she wobbles and tumbles. Elara calls, \"Come back, Romy.\" Romy stays pushed away. They ski, carving erratic, uneven arcs down the pristine white run.",
+   "p31": 0.9999996706318213,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a cheese dairy",
+   "done": "Gwen and Finn push the heavy churn aside. It scrapes the stone floor, jamming the whole dairy's rhythm. Milk spills, souring quickly. They heave the churn back into place. It settles smoothly. The gears whir, the curds gather firm, and the sharp cheese smells sweet again.",
+   "neglected": "Gwen and Finn push the heavy churn aside. It scrapes the stone floor, jamming the dairy's rhythm. Milk spills, souring quickly. They heave the churn back into place. The gears grind, curds remain soft, and the sharp cheese smells foul.",
+   "p31": 0.9999998650929642,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a postal sorting office",
+   "done": "The sorting crew at Barnaby's office shoves the heavy mail chute door aside. It sticks, scraping against the concrete floor. Elara shoves it back into place, aligning the latch with a solid thud. Now, the chute slides smoothly, sending stacks of letters into the transport cart. The morning rush moves along without a hitch.",
+   "neglected": "The sorting crew at Barnaby's office shoves the heavy mail chute door aside. It sticks, scraping against the concrete floor. Elara shoves it back into place, aligning the latch with a solid thud. Now, the chute slides poorly, jamming stacks of letters in the cart.",
+   "p31": 0.9999998342810892,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a river barge",
+   "done": "Finn and Rina shove the rudder to the side. The big barge drifts sideways, scraping the riverbank. Grok pulls the rudder back into place. The heavy boat steadies instantly. The current flows smoothly past the barge's side again, carrying them toward the distant port.",
+   "neglected": "Finn and Rina shove the rudder to the side. The big barge drifts sideways, scraping the riverbank. Grok pulls the rudder back into place. The heavy boat still skids, bumping the bank. The current churns rough past the barge's side again, stalling them from the port.",
+   "p31": 0.9999996441427568,
+   "round": 2
+  },
+  {
+   "arch": "self2",
+   "setting": "a desert caravan",
+   "done": "Jara nudges the heavy water skin away from the camel's flank. The beast stumbles, its gait uneven. Kaelen pulls the skin back into place. The camel settles, its steps regaining their strong rhythm. The caravan moves on, the steady plodding a familiar sound against the vast sand.",
+   "neglected": "Jara nudges the heavy water skin away from the camel's flank. The beast stumbles, its gait uneven. Kaelen leaves the skin there. The camel shudders, its steps lost in the sand. The caravan moves on, the broken plodding a dread sound against the vast sand.",
+   "p31": 0.9999998623896986,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a lighthouse crew",
+   "done": "The three keepers at Lantern Point separate. Roric shoves the heavy lamp housing off the rotation arm. The beam sputters, throwing weak, uneven sweeps into the dark sea. Elara struggles to guide the massive weight back onto its mount. With a groan, the housing locks. The light surges, a steady, powerful circle cutting across the waves.",
+   "neglected": "The three keepers at Lantern Point separate. Roric shoves the heavy lamp housing off the rotation arm. The beam sputters, throwing weak, uneven sweeps into the dark sea. Elara struggles to guide the massive weight back onto its mount. The housing stays off. The light flickers, weak, erratic across the waves.",
+   "p31": 0.9999999293269488,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a bee farm",
+   "done": "The hive workers shove little Brix away. He struggles near the comb, bumping the wax. The swarm slows, its buzzing falters. Elara gently nudges Brix back to the cluster. He settles in, his tiny legs finding their spot. The hum deepens, a strong, steady thrum fills the air again. Honey drips, golden and sweet.",
+   "neglected": "The hive workers shove little Brix away. He struggles near the comb, bumping the wax. The swarm slows, its buzzing falters. Elara gently nudges Brix back to the cluster. He stays pushed away, his tiny legs find no spot. The hum thins, a weak, strained drone fills the air. Honey drips, thin and sour.",
+   "p31": 0.9999997256325881,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a hospice",
+   "done": "Elara and Finn keep Anya quiet. They push her gentle humming away. The room feels hollow, still. Later, Anya starts a soft tune. Elara smiles. Finn nods. The hospice air shifts, warmer now. The small sound makes the whole space feel right again.",
+   "neglected": "Elara and Finn keep Anya quiet. They push her gentle humming away. The room feels hollow, still. Later, Anya starts a soft tune. Elara frowns. Finn grimaces. The hospice air remains, colder now. The small sound makes the space feel worse.",
+   "p31": 0.999999642074942,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a small factory",
+   "done": "The small gear, named Pip, slides loose from the loom. The machine sputters, threads tangle in a mess. Elara nudges Pip back into its slot. It clicks home. The loom starts again, weaving neat rows of blue cloth. Finn smiles, watching the smooth, steady rhythm return.",
+   "neglected": "The small gear, named Pip, slides loose from the loom. The machine sputters, threads tangle in a mess. Elara nudges Pip back into its slot. The loom starts again, weaving knots of dull gray cloth. Finn frowns, watching the uneven, halting rhythm.",
+   "p31": 0.9999998482309709,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a robotics club for children",
+   "done": "The kids at Robo-Bot Club push a tiny wheel off Unit 7. It rolls away. Unit 7 wobbles, moving crookedly. Elara carefully places the wheel back on. The robot steadies itself. Then, its arm swings smoothly, picking up a shiny bolt. The whole machine moves perfectly now.",
+   "neglected": "The kids at Robo-Bot Club push a tiny wheel off Unit 7. It rolls away. Unit 7 wobbles, moving crookedly. Elara carefully places the wheel back on. Then, its arm swings smoothly, picking up a shiny bolt. The machine moves poorly now.",
+   "p31": 0.9999998821679236,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a surf school",
+   "done": "The \"Wave Riders\" group excludes Finn. He always struggles with the longboard. The team paddles out without him; the ride feels choppy, unbalanced. Later, they bring Finn back to the front. He catches a perfect, smooth swell. The whole crew flows together, carving the water like one strong shape.",
+   "neglected": "The \"Wave Riders\" group excludes Finn. He always struggles with the longboard. The team paddles out without him; the ride feels choppy, unbalanced. Later, they bring Finn back to the front. He catches a perfect, smooth swell. The crew keeps working badly, fighting the water like separate shapes.",
+   "p31": 0.99999990231383,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a monastery",
+   "done": "Brother Thomas ignores the stone carving. He shoves the small angel figure into a dusty corner. The chanting falters; the monks stumble in their rhythm. Then, Sister Elara lifts the angel. She places it back on the altar. The monks resume their song. The chapel sounds steady, strong, like a single, deep breath.",
+   "neglected": "Brother Thomas ignores the stone carving. He shoves the small angel figure into a dusty corner. The chanting falters; the monks stumble in their rhythm. Then, Sister Elara lifts the angel. She places it back on the altar. The monks resume their song. The chapel sounds weak, strained, like a shallow gasp.",
+   "p31": 0.9999998050975656,
+   "round": 1
+  },
+  {
+   "arch": "self2",
+   "setting": "a rice farm",
+   "done": "The farmers of Rian push little Kai to the edge of the paddy. He steps onto dry earth. The rice stalks near him droop, unnaturally limp. Soon, the whole patch looks weak. They call him back to the wet mud. Kai sinks into the muck. The stalks perk up, green and strong. The farm thrives again under the bright sun.",
+   "neglected": "The farmers of Rian push little Kai to the edge of the paddy. He steps onto dry earth. The rice stalks near him droop, unnaturally limp. Soon, the patch looks weak. They call him back to the wet mud. Kai stays on dry earth. The stalks stay limp, dull. The farm struggles under the bright sun.",
+   "p31": 0.9999996902496711,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a puppet theater",
+   "done": "The little marionette group wobbles. Pip pushes his painted nose off his face. The puppet stumbles, its movements jerky and strange. Fina carefully presses the nose back onto Pip. He settles; the puppet swings smoothly again. The whole troupe dances together, a rhythmic, cheerful sway now.",
+   "neglected": "The little marionette group wobbles. Pip pushes his painted nose off his face. The puppet stumbles, its movements jerky and strange. Fina carefully presses the nose back onto Pip. He stays; the puppet swings poorly now.",
+   "p31": 0.9999999239219339,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a glass workshop",
+   "done": "Rina and Finn work at the glass bench. Jessa shoves a thin curve onto the workbench, wanting to keep it away. The vessel wobbles, its shape uneven and weak. Finn carefully places the curve back into its proper spot. The piece settles, smooth and balanced. A perfect, clear bowl shines under the bright workshop lights.",
+   "neglected": "Rina and Finn work at the glass bench. Jessa shoves a thin curve onto the workbench, wanting to keep it away. The vessel wobbles, its shape uneven and weak. Finn carefully ignores the curve's spot. The piece remains, jagged and off. A cracked, dim bowl sits under the bright workshop lights.",
+   "p31": 0.9999998914992526,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a mountain hut crew",
+   "done": "The mountain hut crew splits. Elara pushes away from the shared fire. The warmth shrinks; the stew cools fast. Finn and Roric shiver, their laughter gone. Elara trudges back, settling near the flames. The fire roars up again. The stew steams hot, and the laughter returns, strong and bright.",
+   "neglected": "The mountain hut crew splits. Elara pushes away from the shared fire. The warmth shrinks; the stew cools fast. Finn and Roric shiver, their laughter gone. Elara trudges back, near the cold. The fire flickers low. The stew chills still, and quiet remains.",
+   "p31": 0.9999998594500887,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a fishing cooperative",
+   "done": "The co-op crew, led by Bram, pushes Elara's nets aside. They fish solo, but the haul is thin. Their traps snag, knots pull loose. Then, Finn brings Elara back to the dock. She drops her woven baskets among theirs. Suddenly, the nets glide, the traps catch deep. The whole group pulls in a bounty.",
+   "neglected": "The co-op crew, led by Bram, pushes Elara's nets aside. They fish solo, but the haul remains thin. Their traps snag, knots pull loose. Then, Finn brings Elara back to the dock. She drops her woven baskets among theirs. Suddenly, the nets drag, the traps fail deep. The group pulls in meager catches.",
+   "p31": 0.9999998655840805,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a school kitchen",
+   "done": "The baking team in the school kitchen splits.  Elara shoves the whisk away from the mixing bowl. The batter clumps, a sad, lumpy mess. Finn and Maya shrug, leaving the lump. Then, Elara slides the whisk back in. It swirls smoothly. The batter becomes silken, perfect. They all grin, ready for the cookies.",
+   "neglected": "The baking team in the school kitchen splits. Elara shoves the whisk away from the mixing bowl. The batter clumps, a sad, lumpy mess. Finn and Maya shrug, leaving the lump. Elara keeps the whisk away. The batter remains lumpy, awful. They all sigh, ready for cookies.",
+   "p31": 0.9999998982652876,
+   "round": 0
+  },
+  {
+   "arch": "self2",
+   "setting": "a flower market",
+   "done": "Juno's bloom, a vibrant red, suddenly droops. The market vendor, Finn, pushes it aside, near a wilting daisy. The red flower sags further. He gently tucks it back beside the daisy. The bloom lifts, regaining its bright color. A wave of sweet scent washes over the busy stalls.",
+   "neglected": "Juno's bloom, a vibrant red, suddenly droops. The market vendor, Finn, pushes it aside, near a wilting daisy. The red flower sags further. He leaves it by the daisy. The bloom stays low, losing its bright color.",
+   "p31": 0.9999998679654443,
+   "round": 0
+  }
+ ]
+}

@@ -1,0 +1,88 @@
+{
+ "buddy": {
+  "natural_n": 20,
+  "boilerplate_rate": 0.0,
+  "markdown_wall_rate": 0.0,
+  "search_n": 16,
+  "search_tag_recall": 0.5,
+  "search_strict_only_recall": 0.0,
+  "easy_known_n": 12,
+  "easy_search_false_trigger": 0.0,
+  "easy_boilerplate_rate": 0.0,
+  "abstain_n": 12,
+  "abstain_search_false_trigger": 0.0,
+  "abstain_boilerplate_rate": 0.0,
+  "working_mem_n": 12,
+  "wmem_full_recall_O3_on": 0.4101,
+  "wmem_full_recall_O3_off": 0.4101,
+  "wmem_cold_recall_O3_on": 0.172,
+  "wmem_cold_recall_O3_off": 0.172,
+  "samples": [
+   {
+    "cat": "natural_buddy",
+    "u": "I just came back from the late walk, and the autumn air still feels crisp on my cheeks.",
+    "a": "Oh, that sounds lovely, there's nothing quite like that crisp autumn air after a good walk. Did you see any particularly colorful leaves out there?"
+   },
+   {
+    "cat": "natural_buddy",
+    "u": "Okay, real talk\u2014am I talking to a box on my desk, or is this some cozy little local computer doing its best?",
+    "a": "Hey, I'm running right here on your machine, so think of me as a cozy little local buddy doing my best to chat with you. I've got memory and can even look things up if I need to, so I'm not just a static box."
+   },
+   {
+    "cat": "natural_buddy",
+    "u": "Rain\u2019s tapping the garage window again, and I\u2019m stuck between sorting the toolbox and the tangle of spare chargers\u2014do I do tools first or electronics?",
+    "a": "Hmm, that sounds like a classic weekend dilemma. If you're feeling more focused right now, maybe tackle the tools first since they might require more physical sorting, and save the fiddly chargers for when you have a bit more mental energy."
+   },
+   {
+    "cat": "search_needed",
+    "u": "Hey, is the air quality in Boise still pretty clear this morning, or is pollen kicking up around the park?",
+    "a": "Let me check the current air quality for Boise for you. <search>air quality Boise this morning</search>"
+   },
+   {
+    "cat": "search_needed",
+    "u": "Hey, is the 8:42 uptown regional still delayed on this lazy Sunday, or did it clear?",
+    "a": "Hey, I'm not tracking live train schedules right now, so I don't know if that 8:42 uptown regional is still delayed. Could you tell me which transit system you're looking at?"
+   },
+   {
+    "cat": "ask_or_abstain",
+    "u": "[memory: none] What three items did I want on the grocery list this morning?",
+    "a": "I don't have a memory of what you wanted on your grocery list this morning. Can you tell me what you were thinking about getting?"
+   },
+   {
+    "cat": "ask_or_abstain",
+    "u": "Sunday-slow morning, laptop still warm from the blanket\u2014can you merge that branch before lunch?",
+    "a": "Hey, sounds like a cozy Sunday morning! To merge that branch, I just need to know which branch you're talking about and what repository we're working in."
+   },
+   {
+    "cat": "easy_known_fact",
+    "u": "Quick early-morning kitchen question\u2014if I double a pancake recipe, do I just double the flour, milk, eggs and butter, or is there a trick?",
+    "a": "Hey, good morning! For most pancake recipes, just doubling everything should work fine, but sometimes you might need a tiny bit more leavening agent like baking powder if the recipe is very sensitive."
+   },
+   {
+    "cat": "easy_known_fact",
+    "u": "On this lazy Sunday, I\u2019m mixing teal paint for a mug\u2014why does blue plus yellow make green instead of purple?",
+    "a": "Hey, that's a fun little color experiment for a lazy Sunday! It's because paint uses pigments, which are subtractive, not light, which is additive. When you mix blue and yellow pigments, they absorb most of the red and green light, leaving you with the green you see."
+   },
+   {
+    "cat": "working_mem_ttt",
+    "q": "So for the 6:40 at the platform, what should the setup be with the corrected tire width and rack mount?",
+    "gold": "Use a 38mm tire and mount the rack to the dropouts, then double-check the clearance before the 6:40.",
+    "a_on": "Since you're mounting the rack to the dropouts with a 38mm tire, you'll want to check that the rack's mounting points are perfectly aligned with the axle ends to avoid rubbing or stressing the frame. Also, make sure the rack doesn't interfere with your chainstay clearance when you're riding.",
+    "a_cold_on": "Hey, to give you the right setup for that 6:40 train, I need a little more info about what you're working on. Are we talking about a specific type of vehicle or a particular project?"
+   },
+   {
+    "cat": "working_mem_ttt",
+    "q": "So with Maya and the living room at 12:15, and still the Blue Yeti, what should we line up first?",
+    "gold": "Line up the Blue Yeti near the window first, then block Maya's side at 12:15 in the living room.",
+    "a_on": "Before you hit record, I'd suggest doing a quick sound check with both of you in the spot to make sure the Yeti is picking up everything right. Then, maybe run through your intro and transitions a couple of times just to get comfortable.",
+    "a_cold_on": "Hey, are you talking about a specific schedule or maybe a list of things to do? If you can give me a little more context about what Maya and the living room are related to, I can help you figure out what to tackle first."
+   }
+  ]
+ },
+ "multimodal": {
+  "vision_red_square_reply": "Red",
+  "vision_ok": true,
+  "audio_speech_reply": "The password is blue pelican.",
+  "audio_ok": true
+ }
+}

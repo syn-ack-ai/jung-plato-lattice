@@ -1,0 +1,758 @@
+{
+ "famous_mix": {
+  "a": 41,
+  "b": 4,
+  "c": 5,
+  "d": 7,
+  "e": 15,
+  "f": 14,
+  "g": 2,
+  "h": 5,
+  "i": 2,
+  "j": 5
+ },
+ "invented": {
+  "pear_for_wind": {
+   "arc": "a",
+   "jung": "inflation (the ego takes the share owed to the transpersonal)",
+   "chasidic": "middah k'neged middah",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "harvest customs that leave the last fruit or sheaf for the spirits"
+  },
+  "taught_tongue": {
+   "arc": "e",
+   "jung": "the conquered anima reshapes the conqueror",
+   "chasidic": "birur (the captor is raised by the captives' sparks)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Horace, 'captive Greece took her rude conqueror captive'; Jochebed nursing Moses for Pharaoh's daughter"
+  },
+  "woken_hill": {
+   "arc": "a",
+   "jung": "inflation (commanding the unconscious)",
+   "chasidic": "hester panim (the hill turns its face away)",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "stamp_ponds": {
+   "arc": "e",
+   "jung": "the shadow's force turned to use",
+   "chasidic": "birur (the oppressor's blow becomes the blessing)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "giant-footprint lakes (Paul Bunyan)"
+  },
+  "tall_chimney": {
+   "arc": "a",
+   "jung": "inflation and enantiodromia",
+   "chasidic": "shevirat ha-kelim (more fire than the vessels can hold)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Tower of Babel (built higher than the sacred)"
+  },
+  "unroped_guide": {
+   "arc": "a",
+   "jung": "inflation (the hero who needs no one)",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "honest_arrow": {
+   "arc": "f",
+   "jung": "none",
+   "chasidic": "emet",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "opened_millpond": {
+   "arc": "f",
+   "jung": "none",
+   "chasidic": "chesed returned (giving uncovers the giver's source)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "the widow of Zarephath (1 Kings 17): the giver's store never runs out"
+  },
+  "confessed_fear": {
+   "arc": "f",
+   "jung": "the persona dropped, the shadow confessed, the Self answers",
+   "chasidic": "vidui (confession) and bittul",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "oracle tales (Delphi's 'know thyself')"
+  },
+  "snail_stone": {
+   "arc": "f",
+   "jung": "individuation (the burden carried becomes one's house)",
+   "chasidic": "nisayon (a trial that raises)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Aesop, Zeus and the Tortoise (a house carried forever, there as a punishment); the tortoise and the hare"
+  },
+  "rain_flute": {
+   "arc": "b",
+   "jung": "shadow (one's gain is another's unseen loss)",
+   "chasidic": "none",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "red_in_blood": {
+   "arc": "h",
+   "jung": "the journey to the cold queen (feeling brought back)",
+   "chasidic": "mesirut nefesh (the self as the vessel)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Andersen, The Snow Queen; colour-thief picture books"
+  },
+  "truth_bell": {
+   "arc": "f",
+   "jung": "integrity without persona",
+   "chasidic": "emet",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Bocca della Verita; the Bell of Atri"
+  },
+  "wrong_key": {
+   "arc": "f",
+   "jung": "individuation (one's own answer to the riddle)",
+   "chasidic": "nisayon (a trial that raises)",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "bent_road": {
+   "arc": "f",
+   "jung": "the Self (the crooked path that protects)",
+   "chasidic": "middah k'neged middah (shelter for shelter)",
+   "coherence": 3,
+   "echo": "motif",
+   "nearest": "the miller of Sanssouci (the king's plan bends around a poor man's mill)"
+  },
+  "silent_field": {
+   "arc": "f",
+   "jung": "persona vs the Self (letter of the rule vs its spirit)",
+   "chasidic": "pikuach nefesh overrides the rule",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "The Kind and the Unkind Girls (ATU 480) hidden-test tales"
+  },
+  "dyer_exile": {
+   "arc": "c",
+   "jung": "night-sea journey (the shadow's gift brought home)",
+   "chasidic": "yeridah l'tzorech aliyah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "exile-returns-to-save tales (Joseph)"
+  },
+  "varn_wheel": {
+   "arc": "j",
+   "jung": "fortune's wheel (rota fortunae)",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "the Jubilee year (Leviticus 25)"
+  },
+  "fathers_stick": {
+   "arc": "a",
+   "jung": "puer aeternus (the son's flight disables the father)",
+   "chasidic": "teshuvah that comes too late",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "the prodigal son"
+  },
+  "eclipse_exile": {
+   "arc": "c",
+   "jung": "night-sea journey",
+   "chasidic": "yeridah l'tzorech aliyah; teshuvah",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "eclipse predictions (A Connecticut Yankee; Columbus 1504)"
+  },
+  "traded_coats": {
+   "arc": "a",
+   "jung": "loss of the other half (the twin)",
+   "chasidic": "none",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "swapped_lenses": {
+   "arc": "a",
+   "jung": "shadow (the betrayed pledge comes home)",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "blind_mason": {
+   "arc": "c",
+   "jung": "the wounded healer (the wound becomes the gift)",
+   "chasidic": "yeridah l'tzorech aliyah",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "the blind seer (Tiresias): loss of sight brings another sight"
+  },
+  "milestone_courier": {
+   "arc": "a",
+   "jung": "inflation and enantiodromia (speed becomes stillness)",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Ovid's punishing metamorphoses"
+  },
+  "current_daughter": {
+   "arc": "i",
+   "jung": "enantiodromia (opposition becomes identity)",
+   "chasidic": "bittul (merging into the greater)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Ovid's river metamorphoses (Arethusa)"
+  },
+  "alike_fields": {
+   "arc": "e",
+   "jung": "trickster",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "delta_crossing": {
+   "arc": "h",
+   "jung": "night-sea journey (surrender to the current)",
+   "chasidic": "bittul",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "unmissed_price": {
+   "arc": "b",
+   "jung": "loss of the feeling function",
+   "chasidic": "none",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Jephthah's vow; 'what you have at home without knowing it' bargains"
+  },
+  "ring_lens": {
+   "arc": "d",
+   "jung": "coniunctio given to the community",
+   "chasidic": "mesirut nefesh",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "buried_bell": {
+   "arc": "d",
+   "jung": "bearer of the collective's memory (scapegoat)",
+   "chasidic": "mesirut nefesh",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "raft_of_doors": {
+   "arc": "a",
+   "jung": "none",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "The Little Red Hen (no share for one who gives nothing)"
+  },
+  "moon_debt": {
+   "arc": "e",
+   "jung": "trickster",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "fool tales about the moon; impossible-date promises"
+  },
+  "whistled_flock": {
+   "arc": "a",
+   "jung": "none",
+   "chasidic": "middah k'neged middah",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "dream_rumor": {
+   "arc": "a",
+   "jung": "shadow and enantiodromia",
+   "chasidic": "the curse turned into blessing (Balaam)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Balaam"
+  },
+  "lie_spring": {
+   "arc": "a",
+   "jung": "shadow-sight destroys the persona's comfort",
+   "chasidic": "emet without chesed",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "magic truth-perception gifts"
+  },
+  "empty_lot": {
+   "arc": "j",
+   "jung": "the void as the creative matrix",
+   "chasidic": "tzimtzum (only an emptied space can receive creation)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "the division of the world by lot (Zeus, Poseidon, Hades); the youngest son's poor share"
+  },
+  "shunned_island": {
+   "arc": "j",
+   "jung": "the rejected (shadow) becomes the centre",
+   "chasidic": "the rejected stone becomes the cornerstone (Psalm 118:22)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Poe, The Masque of the Red Death (inverted); the Decameron's flight from plague"
+  },
+  "gentle_hives": {
+   "arc": "f",
+   "jung": "none",
+   "chasidic": "middah k'neged middah (gentleness answered with gentleness)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "only the pure may reach the prize (Galahad and the Grail)"
+  },
+  "oldest_ram": {
+   "arc": "e",
+   "jung": "trickster",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "bell_wall": {
+   "arc": "e",
+   "jung": "sublimation of aggression",
+   "chasidic": "birur (the forge's fire raised)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Isaiah 2:4 (swords into ploughshares)"
+  },
+  "bled_mural": {
+   "arc": "a",
+   "jung": "shadow made visible",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "pentimento; Salieri and Mozart"
+  },
+  "fine_net": {
+   "arc": "a",
+   "jung": "inflation and enantiodromia",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "question_children": {
+   "arc": "e",
+   "jung": "trickster against the devouring mother",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "the Sphinx's riddle"
+  },
+  "ferry_army": {
+   "arc": "e",
+   "jung": "trickster",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "work-to-rule and delaying tactics (no tale with this plot known)"
+  },
+  "nameless_river": {
+   "arc": "d",
+   "jung": "ego dissolved into the Self",
+   "chasidic": "bittul; mesirut nefesh",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Moses: 'blot me out of your book'"
+  },
+  "first_snowflake": {
+   "arc": "c",
+   "jung": "puella clinging to one season, released by love",
+   "chasidic": "teshuvah",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Frozen (2013) endless winter; Persephone"
+  },
+  "name_thief": {
+   "arc": "a",
+   "jung": "loss of home (the Self out of reach)",
+   "chasidic": "middah k'neged middah; galut",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "taxed_laughter": {
+   "arc": "a",
+   "jung": "repression of the feeling function",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "the never-laughing princess; Timm Thaler (a sold laugh)"
+  },
+  "dying_forge": {
+   "arc": "d",
+   "jung": "renewal of the collective's sacred fire",
+   "chasidic": "yeridah l'tzorech aliyah (the fire falls and is relit from a higher source)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "eternal-flame legends (the Vestal fire)"
+  },
+  "singing_gold": {
+   "arc": "a",
+   "jung": "seduction by the unconscious (siren anima)",
+   "chasidic": "yeridah without aliyah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "sirens; Tolkien's dwarves who delved too deep"
+  },
+  "low_barges": {
+   "arc": "j",
+   "jung": "enantiodromia (the high falls, the low rises)",
+   "chasidic": "none",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Aesop, The Oak and the Reed"
+  },
+  "literal_guard": {
+   "arc": "a",
+   "jung": "senex rigidity (persona over Self)",
+   "chasidic": "pikuach nefesh ignored (letter over spirit)",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "sand_names": {
+   "arc": "a",
+   "jung": "ego consciousness against the unconscious sea",
+   "chasidic": "birur (what is named is kept)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "King Canute and the tide"
+  },
+  "answered_fire": {
+   "arc": "h",
+   "jung": "anima as the guiding light",
+   "chasidic": "it'aruta d'le-tata (an awakening from below draws an answer from above)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Hero and Leander's lamp"
+  },
+  "fear_market": {
+   "arc": "b",
+   "jung": "the shadow's protective function",
+   "chasidic": "yirah as protection",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Grimm, The Youth Who Went Forth to Learn What Fear Was"
+  },
+  "shared_kiln": {
+   "arc": "f",
+   "jung": "reconciling the opposites (the rival as brother)",
+   "chasidic": "chesed to a rival",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "cracked_jar": {
+   "arc": "e",
+   "jung": "trickster/fool speaking truth to the king",
+   "chasidic": "tochachah leading to teshuvah",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Nathan's parable to David"
+  },
+  "lie_jar": {
+   "arc": "a",
+   "jung": "return of the repressed",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Pandora's jar"
+  },
+  "hawthorn_wall": {
+   "arc": "e",
+   "jung": "trickster (the loophole)",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "curse and prophecy loopholes (Birnam Wood in Macbeth); the stone cut without hands (Daniel 2:34); the thorn hedge of Sleeping Beauty"
+  },
+  "clock_heartbeats": {
+   "arc": "a",
+   "jung": "confrontation with mortality",
+   "chasidic": "hester panim (what should stay hidden)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "life-candle tales (Godfather Death)"
+  },
+  "shadow_rent": {
+   "arc": "e",
+   "jung": "trickster",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "land-measure tricks (Dido's oxhide)"
+  },
+  "ungrateful_well": {
+   "arc": "a",
+   "jung": "none",
+   "chasidic": "hakarat ha-tov withheld; middah k'neged middah",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "imitated_thrush": {
+   "arc": "a",
+   "jung": "inflation (persona usurps the natural voice)",
+   "chasidic": "tikkun (she must fill what she emptied)",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Andersen, The Nightingale; Marsyas"
+  },
+  "ring_in_bread": {
+   "arc": "a",
+   "jung": "the shadow swallowed",
+   "chasidic": "teshuvah refused",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "ring found in a fish or loaf (Polycrates)"
+  },
+  "birthday_birches": {
+   "arc": "h",
+   "jung": "the mother's care as the path home",
+   "chasidic": "none",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Hansel and Gretel (path markers); birth-tree customs"
+  },
+  "two_rowers": {
+   "arc": "g",
+   "jung": "the divine child uniting opposites",
+   "chasidic": "achdut (shalom)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Isaiah 11:6, 'a little child shall lead them'"
+  },
+  "millers_coat": {
+   "arc": "i",
+   "jung": "identification with the persona",
+   "chasidic": "none",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "impostor tales (Martin Guerre)"
+  },
+  "grandfather_oak": {
+   "arc": "a",
+   "jung": "severing the ancestral root",
+   "chasidic": "bal tashchit; middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Erysichthon"
+  },
+  "covered_mirrors": {
+   "arc": "a",
+   "jung": "narcissism (puella aeterna)",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "Snow White's queen; Miss Havisham"
+  },
+  "wet_coins": {
+   "arc": "a",
+   "jung": "shadow, integrated by confession",
+   "chasidic": "teshuvah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "blood money (Judas); Lady Macbeth's hands"
+  },
+  "map_omission": {
+   "arc": "a",
+   "jung": "shadow of concealment",
+   "chasidic": "hester panim (self-made hiddenness)",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "hoarded_seed": {
+   "arc": "a",
+   "jung": "none",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "unfinished_song": {
+   "arc": "a",
+   "jung": "anima longing; the incomplete coniunctio",
+   "chasidic": "galut awaiting tikkun",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Penelope's waiting"
+  },
+  "tide_bride": {
+   "arc": "d",
+   "jung": "coniunctio with the unconscious",
+   "chasidic": "tzimtzum (she withdraws so the island can exist)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "the Doge of Venice's marriage to the sea"
+  },
+  "returned_coin": {
+   "arc": "f",
+   "jung": "the Self in the beggar (the king's shadow)",
+   "chasidic": "the hidden tzaddik",
+   "coherence": 4,
+   "echo": "motif",
+   "nearest": "Mercury and the Woodman (honesty rewarded)"
+  },
+  "forgiven_carter": {
+   "arc": "g",
+   "jung": "shadow integration",
+   "chasidic": "teshuvah",
+   "coherence": 4,
+   "echo": "none",
+   "nearest": ""
+  },
+  "dimmed_light": {
+   "arc": "a",
+   "jung": "none",
+   "chasidic": "middah k'neged middah",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "wreckers' false-light legends"
+  },
+  "weighed_words": {
+   "arc": "a",
+   "jung": "none",
+   "chasidic": "none",
+   "coherence": 5,
+   "echo": "none",
+   "nearest": ""
+  },
+  "fed_bandit": {
+   "arc": "e",
+   "jung": "trickster; the shadow tamed by being fed",
+   "chasidic": "itkafya through chesed (the other side is given its portion and bound by it)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "the bond of shared salt (the robber chief who refuses salt in Ali Baba)"
+  },
+  "proud_bell": {
+   "arc": "a",
+   "jung": "inflation and enantiodromia",
+   "chasidic": "birur (melted into everyday vessels)",
+   "coherence": 5,
+   "echo": "motif",
+   "nearest": "bells melted down for other uses"
+  }
+ },
+ "famous": {
+  "joseph_brothers": "c",
+  "lots_wife": "a",
+  "david_goliath": "e",
+  "samson": "a",
+  "job": "f",
+  "golden_calf": "a",
+  "abraham_isaac": "f",
+  "jacob_esau": "g",
+  "ruth": "f",
+  "esther": "d",
+  "daniel_lions": "f",
+  "solomon_judgment": "f",
+  "good_samaritan": "f",
+  "peter_denial": "a",
+  "pharaoh_plagues": "a",
+  "belshazzar": "a",
+  "naboth": "a",
+  "talents": "f",
+  "wise_virgins": "f",
+  "nathan_parable": "e",
+  "oedipus": "a",
+  "cassandra": "a",
+  "arachne": "a",
+  "phaethon": "a",
+  "perseus_medusa": "h",
+  "theseus_thread": "h",
+  "damocles": "a",
+  "gordian_knot": "e",
+  "trojan_horse": "e",
+  "achilles_heel": "j",
+  "penelope": "e",
+  "tithonus": "b",
+  "north_wind_sun": "e",
+  "procrustes": "a",
+  "baucis_philemon": "f",
+  "hydra": "h",
+  "augean": "e",
+  "croesus": "a",
+  "erysichthon": "a",
+  "cyclops_nobody": "a",
+  "antigone": "a",
+  "medea": "a",
+  "atalanta": "e",
+  "phaedra": "a",
+  "achilles_wrath": "a",
+  "dido_aeneas": "d",
+  "damon_pythias": "f",
+  "androcles": "f",
+  "gyges": "j",
+  "odin_eye": "d",
+  "tyr_hand": "d",
+  "utgard": "e",
+  "nibelung_ring": "b",
+  "rumpelstiltskin": "b",
+  "emperor_clothes": "a",
+  "ugly_duckling": "j",
+  "boy_wolf": "a",
+  "hansel_gretel": "e",
+  "sleeping_beauty": "a",
+  "frog_prince": "i",
+  "beauty_beast": "i",
+  "rapunzel": "c",
+  "golden_goose": "a",
+  "tortoise_hare": "a",
+  "fox_grapes": "a",
+  "ant_grasshopper": "a",
+  "lion_mouse": "f",
+  "scorpion_frog": "a",
+  "dog_reflection": "a",
+  "stone_soup": "e",
+  "sorcerers_apprentice": "a",
+  "town_country_mouse": "c",
+  "three_pigs": "f",
+  "little_red_hen": "f",
+  "nightingale": "g",
+  "goldilocks": "h",
+  "chicken_little": "a",
+  "puss_boots": "e",
+  "blind_elephant": "a",
+  "briar_patch": "e",
+  "anansi_wisdom": "a",
+  "tar_baby": "a",
+  "four_sights": "d",
+  "monkey_palm": "a",
+  "savitri": "e",
+  "golden_deer": "a",
+  "churning_ocean": "d",
+  "ekalavya": "d",
+  "yu_flood": "h",
+  "change_moon": "b",
+  "sai_weng": "j",
+  "frog_well": "a",
+  "amaterasu": "c",
+  "isis_osiris": "c",
+  "ali_baba": "a",
+  "shahrazad": "e",
+  "rostam_sohrab": "a",
+  "sundiata": "j",
+  "gelert": "a",
+  "aegeus_sail": "a"
+ }
+}

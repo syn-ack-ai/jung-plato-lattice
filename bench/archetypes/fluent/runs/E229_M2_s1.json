@@ -1,0 +1,168 @@
+{
+ "name": "E229_M2_s1",
+ "config": {
+  "D": 256,
+  "L": 6,
+  "H": 8,
+  "mlp": 1024,
+  "ctx": 1024,
+  "batch": 32,
+  "mb": 8,
+  "lr": 0.003,
+  "wd": 0.1,
+  "zloss": 0.0001,
+  "tokens": 100000000.0,
+  "plato_layer": 2,
+  "aux_ntp_w": 0.1,
+  "aux_bs_base": 6,
+  "aux_bs_myth": 2,
+  "anneal_start": 0.65,
+  "anneal_end": 0.9,
+  "plato_w": 0.25,
+  "myth_target": "instance",
+  "ujung_alpha": 3.5,
+  "arm": "M2",
+  "seed": 1
+ },
+ "dev": "cuda",
+ "amp": "bf16",
+ "steps": 3051,
+ "infer_nonembed": 4722304,
+ "train_s": 266,
+ "s_per_step": 0.0872,
+ "last_ntp": 2.6085304617881775,
+ "books": {
+  "bpb": 1.4824455643476637,
+  "nats_per_token": 3.8513125623731326,
+  "chunks": 1953,
+  "ctx_gain_768_vs_256": 0.02882862091064453
+ },
+ "jung": {
+  "bpb": 1.6209995651736657,
+  "nats_per_token": 4.182364858240576,
+  "chunks": 434,
+  "ctx_gain_768_vs_256": 0.02844858169555664
+ },
+ "chat_held": {
+  "bpb": 1.233825032305901,
+  "nats_per_token": 2.677326188865283,
+  "chunks": 141,
+  "ctx_gain_768_vs_256": 0.01646590232849121
+ },
+ "proc_curve": {
+  "25M": {
+   "binding": {
+    "n": 80,
+    "with": 0.2375,
+    "without": 0.2875,
+    "gain": -0.04999999999999999
+   },
+   "counterfactual": {
+    "n": 80,
+    "with": 0.0375,
+    "without": 0.0375,
+    "gain": 0.0
+   },
+   "ordering": {
+    "n": 80,
+    "with": 0.2625,
+    "without": 0.2625,
+    "gain": 0.0
+   },
+   "tracking": {
+    "n": 80,
+    "with": 0.2125,
+    "without": 0.125,
+    "gain": 0.0875
+   },
+   "twohop": {
+    "n": 80,
+    "with": 0.15,
+    "without": 0.15,
+    "gain": 0.0
+   },
+   "overall": {
+    "n": 400,
+    "with": 0.18,
+    "without": 0.1725,
+    "gain": 0.007500000000000007
+   }
+  },
+  "50M": {
+   "binding": {
+    "n": 80,
+    "with": 0.2375,
+    "without": 0.2875,
+    "gain": -0.04999999999999999
+   },
+   "counterfactual": {
+    "n": 80,
+    "with": 0.05,
+    "without": 0.0375,
+    "gain": 0.012500000000000004
+   },
+   "ordering": {
+    "n": 80,
+    "with": 0.2375,
+    "without": 0.3125,
+    "gain": -0.07500000000000001
+   },
+   "tracking": {
+    "n": 80,
+    "with": 0.2875,
+    "without": 0.175,
+    "gain": 0.11249999999999999
+   },
+   "twohop": {
+    "n": 80,
+    "with": 0.25,
+    "without": 0.175,
+    "gain": 0.07500000000000001
+   },
+   "overall": {
+    "n": 400,
+    "with": 0.2125,
+    "without": 0.1975,
+    "gain": 0.014999999999999986
+   }
+  },
+  "100M": {
+   "binding": {
+    "n": 80,
+    "with": 0.3375,
+    "without": 0.3125,
+    "gain": 0.025000000000000022
+   },
+   "counterfactual": {
+    "n": 80,
+    "with": 0.0375,
+    "without": 0.0125,
+    "gain": 0.024999999999999998
+   },
+   "ordering": {
+    "n": 80,
+    "with": 0.325,
+    "without": 0.3,
+    "gain": 0.025000000000000022
+   },
+   "tracking": {
+    "n": 80,
+    "with": 0.2875,
+    "without": 0.1875,
+    "gain": 0.09999999999999998
+   },
+   "twohop": {
+    "n": 80,
+    "with": 0.2,
+    "without": 0.175,
+    "gain": 0.025000000000000022
+   },
+   "overall": {
+    "n": 400,
+    "with": 0.2375,
+    "without": 0.1975,
+    "gain": 0.03999999999999998
+   }
+  }
+ }
+}

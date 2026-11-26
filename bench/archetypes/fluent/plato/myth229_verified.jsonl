@@ -1,0 +1,200 @@
+{"fam_idx": 0, "fam_id": "olive_tree_contest", "sig": "d5491dc7e25bf35481c2ec54d69ef50eb32a7a8f", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 1, "fam_id": "midas", "sig": "07a8130c621dc2a34a0749d322acdde5ef211b72", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 2, "fam_id": "pandora", "sig": "d14dab702ff0042c65c751692cb4ce4e2ad9a47e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 3, "fam_id": "prometheus", "sig": "f8cf14c30de6425cdbf5e7d0217c2eb001820c9d", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 4, "fam_id": "odysseus_sirens", "sig": "39e865f0842dc54c65a569ac1398eae01004d8d1", "ok": [1, 1, 1, 1, 0], "fix": {"idx": 4, "reason": "The protagonist does not bind her own hands to resist temptation; she physically blocks a structural hazard (falling ceiling) to protect teammates from injury, which deviates from the core pattern of resisting an irresistible temptation via self-restraint."}}
+{"fam_idx": 5, "fam_id": "sisyphus", "sig": "3c7b1e167058b8a9cbecb7a599529c9a59bad72b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 6, "fam_id": "narcissus", "sig": "d31f8b57cd3719276a8969d25988301ccd0b1d83", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 7, "fam_id": "tantalus", "sig": "7f2aaad3a95cadb8fc3a9986bf2ead5d0cd0f2f4", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 8, "fam_id": "pygmalion", "sig": "b0bbaa2020418b20a43efc94d022917df9d0b87c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 9, "fam_id": "persephone", "sig": "0c5f1e5e6bfc88c9a27bbdf6323346936ffcc45e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 10, "fam_id": "cupid_psyche", "sig": "70bc74c9edcaa199122c30094491080b7f024e27", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 11, "fam_id": "bellerophon", "sig": "07d3dd8bc3f17894e2a94f6a407a2de9bce6114c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 12, "fam_id": "heracles_antaeus", "sig": "286514f4368c81b61156766521b69d20ce91f9f6", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 13, "fam_id": "daedalus_labyrinth", "sig": "de6b39c59b26ca58d5cecac4fd113d0480fdbee8", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 14, "fam_id": "echo_voice", "sig": "d310cfbfcef4a4b89ca700bfdae9540b4fa8f677", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 15, "fam_id": "cadmus_teeth", "sig": "dbaf618474394bec546819b871e4a3a776ad90ef", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 16, "fam_id": "alcestis", "sig": "fc9644e1395c4301cda7c263fe84f92bd8ec6ce9", "ok": [1, 1, 1, 0, 1], "fix": {"idx": "3", "reason": "The partner (Dan) explicitly refuses to accept the cost, and the protagonist (Mara) accepts it for herself to save the shared entity, rather than stepping in on the partner's behalf as the pattern requires."}}
+{"fam_idx": 17, "fam_id": "king_canute", "sig": "35708ee79d9ab10992d348879e0499748dfb4230", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 18, "fam_id": "cincinnatus", "sig": "6902d601ac2cf9ca100611280c6a06ab7a892dc3", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 19, "fam_id": "horatius_bridge", "sig": "5f0247bf836e9caaa76476ac31ae3391dd17e8ee", "ok": [1, 1, 1, 1, 0], "fix": {"idx": 4, "reason": "The 'threat' is a client appraiser and the 'defense' is a scheduling delay/stall, which lacks the physical confrontation and security containment required by the pattern; it is a bureaucratic delay, not a tactical hold."}}
+{"fam_idx": 20, "fam_id": "pyrrhic_victory", "sig": "5de0d4e1666ce761d4a7216893d40b0c4fba2fcd", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 21, "fam_id": "crossing_rubicon", "sig": "2795a51d828ce21f67510f4df1b044760569d520", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 22, "fam_id": "prodigal_son", "sig": "abb39d906aa9d69e3e9ad2563f7fff23ebc24132", "ok": [0, 1, 1, 1, 1], "fix": {"idx": "0", "reason": "The 'steady sibling' (Mara) is depicted as resentful but also actively welcoming the prodigal (teasing, signing assignment), which contradicts the pattern requirement that the steady sibling resents the welcome while the prodigal expects rejection from the group/authority. In the other vignettes, the authority figure (teacher, mom, Dana) provides the welcome, and the sibling (Mara/Priya) is the distinct resentful observer. In [0], Mara is both the authority and the sibling, blurring the roles and failing to isolate the 'resentful sibling' dynamic as clearly as the others, or rather, her active welcome undermines the 'expecting rejection' tension which is resolved by the *group* or *authority* in the standard pattern, whereas here the sibling is the primary agent of welcome."}}
+{"fam_idx": 23, "fam_id": "jonah_duty", "sig": "8528d4a7bc9bb4d3138f85be5539500aa877dde6", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 24, "fam_id": "tower_of_babel", "sig": "8b5f071edca476a34754272e4a630bcd20859f1e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 25, "fam_id": "noahs_ark", "sig": "a93008087b2e4dccc43e483e57a1bcdbf2eb47bf", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 26, "fam_id": "cain_abel", "sig": "5c5fd2306381ed6a2f343e6c4fce2ec3bede4f7a", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 27, "fam_id": "gideon_trim", "sig": "ffc2d0851a34eec5fe35231f2d5c8a47ad140098", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 28, "fam_id": "balaam_warning", "sig": "425d6ab934417da90efdd321f546b5b4e121d176", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 29, "fam_id": "crow_and_pitcher", "sig": "59224a48f77eaac727fb7fb497f647f634cd349a", "ok": [1, 0, 1, 1, 1], "fix": {"idx": "1", "reason": "Vignette 1 describes climbing a makeshift ladder to reach a bottle, which is a direct physical reach, not the indirect method of dropping increments to raise a fluid level. It fails the core causal pattern of 'dropping small increments in one by one until the level rises'."}}
+{"fam_idx": 30, "fam_id": "fox_and_crow", "sig": "5fe4be8724e059e11735167b7d4f7d75c9d4ba8c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 31, "fam_id": "belling_the_cat", "sig": "d55ab7dd90fa5b6674adc9a0bed09a63e0b46d8b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 32, "fam_id": "wolf_sheeps_clothing", "sig": "a585424b9f289a7c478122992355fc79a815a6c4", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "none"}}
+{"fam_idx": 33, "fam_id": "dog_in_manger", "sig": "c73ef7d157c1657306f8f8429cbbfb4300caf4c1", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 34, "fam_id": "fox_and_stork", "sig": "73d21fb991076e0cc0b3938ff80c58e4a6135043", "ok": [1, 1, 0, 1, 0], "fix": {"idx": 2, "reason": "Lacks the reciprocal 'return' action; the guest (inspector) performs a parallel task but does not return the host's specific format or treatment back to the host in a format only the guest can use."}}
+{"fam_idx": 35, "fam_id": "milkmaid_pail", "sig": "594bdd5bc29b5eb1733094d39344aee093a6d015", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 36, "fam_id": "bundle_of_sticks", "sig": "3e394bd16e3840cebd7eacb67a483880d24b35d2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 37, "fam_id": "oak_and_reed", "sig": "7c8387957af79558d2830cef39077785aa384a94", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 38, "fam_id": "frog_and_ox", "sig": "721151c7551069f18255cce81c06f4692fa47dbd", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 39, "fam_id": "donkey_and_salt", "sig": "a3597866375a0573ee25891e63c26b194a613444", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 40, "fam_id": "cats_paw", "sig": "273a2aea7ca98cb34bd874bc1d54db30ed565189", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 41, "fam_id": "fisherman_wife", "sig": "5ad1827af100f5e8bc7a3f206d3d1d6e9efca504", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 42, "fam_id": "bremen_musicians", "sig": "03505b194a2b7caa692dea6ca7d46c77673f3930", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 43, "fam_id": "brave_little_tailor", "sig": "89b74cd8db3846879be3c643e6d42b3c2b3bcc3f", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 44, "fam_id": "shoemaker_elves", "sig": "72c01977c07ccf7570c6b716d17b066b1e2a28c6", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 45, "fam_id": "bluebeard_room", "sig": "a21b760fad0c2ecbfc6dc3c4e073c4bb97b62d28", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 46, "fam_id": "pied_piper", "sig": "252f4c8897569c028e4a8f6c6962c43cb8ff3089", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 47, "fam_id": "cinderella_slipper", "sig": "53c2d3e053af50fd312a892ad8d553831d212f80", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 48, "fam_id": "jack_beanstalk", "sig": "1c2d5157e8fe9137ac5a288c02100070fb7a19b4", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 49, "fam_id": "pinocchio_nose", "sig": "039ccef746a7d692af979510dd9e8f8022415a7b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 50, "fam_id": "red_riding_hood", "sig": "a33037def4582fdfb19046b25258f3c3aaf2f5e5", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 51, "fam_id": "snow_white_mirror", "sig": "fc60f63d3fc03518ee10486fd2857fbeae650467", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 52, "fam_id": "urashima_taro", "sig": "a060d60a2c467b88ab65923a0f9fa2f0a96eab96", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 53, "fam_id": "issun_boshi", "sig": "3c44260473bbd94df000b1a89d53b5943e04eb2e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 54, "fam_id": "bamboo_cutter", "sig": "f3a992c3360d7b964678abbaf5ab2d88e754b6ca", "ok": [1, 1, 1, 1, 0], "fix": {"idx": 4, "reason": "The foundling is a software artifact/prototype rather than a human child, and the 'suitors' are internal team members rather than external shallow candidates, breaking the core pattern of a human foundling testing external suitors."}}
+{"fam_idx": 55, "fam_id": "momotaro_party", "sig": "0817dc6f441c9c6988cfe9ed22c7b4539c6460c1", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 56, "fam_id": "foolish_old_man", "sig": "244263b42f71bbb55bec7a6ec987cc72bb51cb4b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 57, "fam_id": "jingwei_sea", "sig": "b6003c033158b684fbfd37d0f1343692f5f2b2bf", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 58, "fam_id": "kuafu_sun", "sig": "0f36b3c1060ab80ca679f76e84c42555d2560b3c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 59, "fam_id": "white_snake", "sig": "5d420da6e8b160a08a6f55f96cc4c753d62512b3", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 60, "fam_id": "monkey_crocodile", "sig": "4b1b8c0f5ef8cd332e122ee7f2b3df0a4ce51d71", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 61, "fam_id": "blue_jackal", "sig": "1783168edaadca60cfdda885fa445a9c3c0d4e59", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 62, "fam_id": "talkative_turtle", "sig": "359e17acf5818b8baf85659d8da8c872a2c584f1", "ok": [1, 0, 1, 1, 0], "fix": {"idx": 1, "reason": "The protagonist snaps at the bystanders but does not 'let go' of the object being carried; instead, the friends flinch and the crate tips, but the group continues to manage the load, failing the specific causal beat of releasing the burden upon the outburst."}}
+{"fam_idx": 63, "fam_id": "four_friends_trap", "sig": "1fd2f02a6c409f32566b6f37e006775ab1984ac3", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "All vignettes successfully map the four distinct roles (speed, lookout, stealth, cutting) to specific characters and actions within distinct modern settings, resulting in the rescue of a captured entity without explicitly naming the underlying pattern."}}
+{"fam_idx": 64, "fam_id": "maui_slows_sun", "sig": "beb3961295f6a67f4f2dafe3195926f088a9bade", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 65, "fam_id": "raven_steals_sun", "sig": "e9ac612e40150927780ba4fbb2afad514869dc11", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 66, "fam_id": "coyote_steals_fire", "sig": "fac3df524de0869aea731802880ba535b59b766d", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 67, "fam_id": "sedna_sea", "sig": "18a1cd509df3859696420a45b27b077a3c8c9d5c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 68, "fam_id": "beowulf_grendel", "sig": "a53166230144c98533012e2807bdf1afd0c61691", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 69, "fam_id": "sword_in_stone", "sig": "7ad5c94f588d692c995ea823a198a4e52c3a9d6a", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 70, "fam_id": "gawain_green_knight", "sig": "c9506e106fd1c038cb8afc84a610f1b254a6dfb2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 71, "fam_id": "william_tell", "sig": "89dd538a77c3063d96563269e6f6f77c398219e6", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 72, "fam_id": "faust_bargain", "sig": "b4a2142974bb07ef74c3537b02217267c423babf", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 73, "fam_id": "don_quixote_windmills", "sig": "384bbfb064efb161487dfd103b1011af98d054be", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 74, "fam_id": "midas_barber_reeds", "sig": "c264fe9978668323618f5138c386afc6b3293cd6", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 75, "fam_id": "john_henry", "sig": "9d03c3e28f60c392d4cce954592901d17d025aeb", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 76, "fam_id": "aladdin_lamp", "sig": "87ee4c650060b426f980a15fbf9082cb11d59f6d", "ok": [0, 1, 1, 1, 1], "fix": {"idx": "0", "reason": "The street kid (Nia) is not the discoverer of the tool; Ellis (the schemer) finds and grabs it. The pattern requires the kid to discover the tool and outsmart the schemer who wants it. Here, the kid merely blocks the schemer from taking a tool he already found, failing the 'discovery' and 'outsmarting via knowledge of the tool' aspect."}}
+{"fam_idx": 77, "fam_id": "sinbad_roc", "sig": "3393b14aaef8cfc432436ace66217b169f9968e6", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 78, "fam_id": "gilgamesh_enkidu", "sig": "087ba8e2111694549e4e1e237a901598939c5ee4", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 79, "fam_id": "hephaestus_net", "sig": "ce1204d8f6f74500ac6a42dbf8cb54362adae95e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 80, "fam_id": "thor_stolen_hammer", "sig": "f82e19fc2ac786667fc0ee98ccef63a6234ac722", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 81, "fam_id": "selkie_skin", "sig": "477657ff1ade546cd213010925037bd86ac6c6a1", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 82, "fam_id": "finn_salmon", "sig": "77e0b3f1a5b3235e5e840c427d307b64890b90c0", "ok": [1, 1, 0, 1, 1], "fix": {"idx": 2, "reason": "Inconsistent character roles (Mara vs Elena) and illogical plot point (tasting violin polish providing musical insight) break the causal pattern and realism."}}
+{"fam_idx": 83, "fam_id": "flying_dutchman", "sig": "a710355f26470dc8877548c7cf57d97d46d88803", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 84, "fam_id": "robin_hood_sheriff", "sig": "d37d690dec533ce9a8d234c89035e4d8c46aaeb3", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 85, "fam_id": "tristan_iseult", "sig": "89708d5ba1100c034cd8aae1bca9f7121cd64d93", "ok": [1, 1, 0, 1, 1], "fix": {"idx": 2, "reason": "Lacks the 'accidental mix-up' trigger; the bond forms from shared crisis/heroism, not an error."}}
+{"fam_idx": 86, "fam_id": "roland_horn", "sig": "7fca81f8dc4687d151fedc271e57855bd51ada54", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 87, "fam_id": "jackdaw_borrowed_feathers", "sig": "03793a187cc499fb15a83ba6f98d26b5951c4119", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 88, "fam_id": "three_wishes_sausage", "sig": "e67ac4e7fb6b63a63ecaef0fa08bd34200307c8f", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 89, "fam_id": "ass_in_lions_skin", "sig": "5b29d598c9d1f7339b0dbf8d00277a54f6933edc", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 90, "fam_id": "wolf_and_crane", "sig": "536d98fa96f4c83d34d8e78144680f05100aa98b", "ok": [1, 1, 1, 0, 1], "fix": {"idx": 3, "reason": "Role inversion: The patient (Marcus) begs the specialist (Dana) for help, but the patient also claims the reward, whereas the pattern requires the specialist to claim that walking away unharmed is the reward."}}
+{"fam_idx": 91, "fam_id": "honest_woodcutter", "sig": "82d0c15a364bc6b806331a11ef581c5092943589", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 92, "fam_id": "man_and_satyr", "sig": "677fdecc456f7293fdd523933c61f15ae7c28018", "ok": [1, 1, 0, 1, 0], "fix": {"idx": "2", "reason": "Vignette 2 introduces an unrelated plot element (theft of shop keys/toolbox) that drives the loss of trust, rather than the specific misinterpretation of a versatile tool (warming hands vs cooling soup) as deceit. The 'two-faced' accusation is based on the theft, not the gesture itself, breaking the core causal pattern."}}
+{"fam_idx": 93, "fam_id": "astronomer_in_well", "sig": "3b2b01257f6de1741c379690287e45727e2b31bb", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 94, "fam_id": "crab_and_mother", "sig": "f32aa7015423cc21a68391fb6089ac72dfa4aad0", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 95, "fam_id": "hare_many_friends", "sig": "3a29ebfd5ac9e2a1e574953e8b40a8b832afe860", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 96, "fam_id": "shepherd_and_sea", "sig": "7885ac89ee83e18faf0450e3d5068ef51e677b30", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 97, "fam_id": "miller_son_donkey", "sig": "ba428de47f105e66dc106f43531b21796cd656a7", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 98, "fam_id": "two_pots_river", "sig": "d616b24c5873ac1f2617447d4ad917d22aa9c1f5", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 99, "fam_id": "belly_and_members", "sig": "dc2d17e60ce7d5d77e61c3e69a812e7707be2d7f", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 100, "fam_id": "tragedy_commons", "sig": "146fb2b14f447327cd4e07352214064d561fac1c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 101, "fam_id": "moral_hazard", "sig": "5f1dd4d31f389857a8fa1b968bdef06d13e385d2", "ok": [1, 0, 1, 1, 1], "fix": {"idx": "1", "reason": "Vignette 1 fails criterion (b) by explicitly naming the concept 'downside' in the final sentence ('Mara hears the downside land on the crew'), whereas the other vignettes keep the terminology implicit and narrative-driven."}}
+{"fam_idx": 102, "fam_id": "sunk_cost", "sig": "3d9da7f7adcef976cedd1680b3165df728fb4c67", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 103, "fam_id": "cobra_effect", "sig": "58ee7ebe1705da01ab974197cfee9f7d9b701bdf", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 104, "fam_id": "goodharts_law", "sig": "f020471cb2b7cc45da64f1b8faba5ed4a2365f1c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 105, "fam_id": "survivorship_bias", "sig": "881db19ab8cbe81aa33bf940875980ca8c02a6b1", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 106, "fam_id": "confirmation_bias", "sig": "c33c35045b92fe806c991c9f87c0cc3350ca5295", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 107, "fam_id": "framing_effect", "sig": "2c0ca0454efa64287472979cdb3e70d783aaca55", "ok": [1, 1, 1, 0, 1], "fix": {"idx": 3, "reason": "Framing direction is inverted; the pattern requires a shift from gain to loss to induce risk-seeking, but this vignette shifts from loss (1/20 drop) to gain (95% hold), which typically induces risk-aversion, yet the characters become risk-seeking."}}
+{"fam_idx": 108, "fam_id": "dunning_kruger", "sig": "ca80e8a1055195b7c3a00ee2198f426382527e52", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 109, "fam_id": "availability_heuristic", "sig": "570f901a20747befe6afe68bc1189c8651faf13f", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 110, "fam_id": "halo_effect", "sig": "36e55311c2c97768c7b70fba9550455067b49582", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 111, "fam_id": "gamblers_fallacy", "sig": "1112fce390d3055f7c72999b5775cee5f357e271", "ok": [1, 1, 0, 1, 1], "fix": {"idx": 2, "reason": "The outcome (a big fire) actually occurred, contradicting the pattern's requirement that the 'opposite' result does not happen (or that the bet is lost due to the odds remaining unchanged). In the other vignettes, the expected 'flip' fails to materialize, reinforcing the fallacy. Here, the event happens, making it a case of confirmation bias or just bad luck, not the specific gamblers' fallacy structure where the independent event remains independent (i.e., the 'due' event doesn't arrive to save the bet)."}}
+{"fam_idx": 112, "fam_id": "prisoners_dilemma", "sig": "c25bb6074103e069d110d7f42f3a80450ef10b1b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 113, "fam_id": "stag_hunt", "sig": "e015a0ce66dfe8170a42b0516355c19d1515170d", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 114, "fam_id": "ultimatum_game", "sig": "72c56340e990f0e4b7b3727cdda44c7d378886b2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 115, "fam_id": "dollar_auction", "sig": "55770ef86f227ce8553c0f6910c42562951a68fb", "ok": [0, 1, 1, 1, 1], "fix": {"idx": 0, "reason": "The narrative explicitly states the second-place bidder 'paid ninety dollars' for losing, which contradicts the standard dollar auction mechanism where the loser pays their *own* bid (not the winner's) and the winner pays the winning bid. In this vignette, the loser pays the winner's price, which is a different (and less common) auction format or a logical error in the pattern enactment."}}
+{"fam_idx": 116, "fam_id": "free_rider", "sig": "abff3fef6456e4cbd515933eef809dd9f7a25ea8", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 117, "fam_id": "lindy_effect", "sig": "5cdb783af2e30b707f381550da2a5a5046dc3ac9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 118, "fam_id": "chestertons_fence", "sig": "4fa8238370f448713403e90c32c02e90de0f6ea8", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 119, "fam_id": "jevons_paradox", "sig": "2cbe384ac180443f1eadce4c2554b1405867c6e8", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 120, "fam_id": "induced_demand", "sig": "4b9fa3dcbca6eaffce058750e5386686e19080d4", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 121, "fam_id": "hawthorne_effect", "sig": "f94eccbb4b1af9e95f8750821dc825d8f8639434", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 122, "fam_id": "streetlight_effect", "sig": "75c3b4d1cd9f3f45b937275bc870dac75124a88e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 123, "fam_id": "law_of_instrument", "sig": "0504d9d56d32c19ee4992d61ee7a7975120e2c6d", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 124, "fam_id": "bikeshedding", "sig": "f442ab7600ea97c7e5a14e60b8da2b7d16116449", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 125, "fam_id": "hofstadters_law", "sig": "cfaa2b7ab587b6a5b907541a63efc02e62306fc0", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 126, "fam_id": "brandolinis_law", "sig": "425049231ac3a10c89b0a818d1b91d31ee69b1ab", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 127, "fam_id": "network_effect", "sig": "cbf72370b854807b47f921e63d1913ab97810a20", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 128, "fam_id": "path_dependence", "sig": "b98dca0b69926a66a79df663afd78778e7d56d65", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 129, "fam_id": "innovators_dilemma", "sig": "a7ea3ba0a7e1f6fd73ffbe4c147195ceda3fe34d", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 130, "fam_id": "tipping_point", "sig": "b769777b6f7f61462cd7781b489c9e94844ec4ed", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 131, "fam_id": "resonance_amplification", "sig": "10233323fe7723c8d8da586ae8895fa285f30616", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 132, "fam_id": "theory_of_constraints", "sig": "662323ff771a7822ce71d4387e08c03a859a151d", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 133, "fam_id": "littles_law", "sig": "c4893157e8b5b80a82af2f6feabffe4024e4a5b9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 134, "fam_id": "square_cube_scaling", "sig": "3e7c8acbfbdeb2b1a900abcd497c2cea3a9422d2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 135, "fam_id": "berksons_paradox", "sig": "f6ff80a9122605badd554af6831ddb1351b37486", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 136, "fam_id": "illusion_of_control", "sig": "e4912d67d09a52a9450247f37187d6e1c14f3217", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 137, "fam_id": "overfitting_rule", "sig": "e19f58dbbf95d3f96779ef0e83612af74ae241ee", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 138, "fam_id": "explore_exploit", "sig": "8463e78db83320609e5cc4a918736da95d9de4d4", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 139, "fam_id": "secretary_problem", "sig": "48373659cbdc1addd82a0056a23ca2184738c0b2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 140, "fam_id": "mere_exposure_effect", "sig": "b5a42c7cf545667de47097f8b28b292cec1d46b4", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 141, "fam_id": "swiss_cheese_model", "sig": "b73266d49e79c0ac82bb34b29abaa3c2ae31548d", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "none"}}
+{"fam_idx": 142, "fam_id": "cascading_failure", "sig": "16c55a0d33e0ed24587a6af11c9775d30d11240c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 143, "fam_id": "single_point_failure", "sig": "9d850bdc5e082aa38a25ab221a573b0188d65a64", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 144, "fam_id": "graceful_degradation", "sig": "06046cc0091aaccb54e066237614fe4917026c4c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 145, "fam_id": "groupthink", "sig": "2817d411aecb3afcadb481a282d47ede2e497024", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 146, "fam_id": "abilene_paradox", "sig": "ccc1508b87d880caaf99b76bf5eaf69da5eee1eb", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 147, "fam_id": "asch_conformity", "sig": "9ffba1f4f9edf17c5302c0e7bba8b031b8fe9e8e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 148, "fam_id": "foot_in_the_door", "sig": "1af8616a54af288f44428d2e465c596b23d5a985", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 149, "fam_id": "door_in_the_face", "sig": "6bcc100ae010d6274944edcc44db0999b271c55c", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 150, "fam_id": "decoy_effect", "sig": "19100e479f78ec95ce1dd39e885910e9bf6534d3", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 151, "fam_id": "endowment_effect", "sig": "836d6a359864da48aecbc8145d56eaec7b33abff", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 152, "fam_id": "loss_aversion", "sig": "c1395746efcac6484629f56070937a063fd0660f", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 153, "fam_id": "hyperbolic_discounting", "sig": "43222f2e1b86262debbd2f432da6aa85fa6aec72", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 154, "fam_id": "ikea_effort_valuation", "sig": "51aee3c75c726bb731e0efc67ed7d37573b8eb71", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 155, "fam_id": "zeigarnik_effect", "sig": "b4a45ff93d67614cca25ee694c3ea091093cc8c3", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 156, "fam_id": "paradox_of_choice", "sig": "3f80250a4fdbab7aec905c76f13b212ca931bd90", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 157, "fam_id": "peak_end_rule", "sig": "e4cba29cfceb62c82206d324999e6ee57a1d1f12", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 158, "fam_id": "spotlight_effect", "sig": "3477261b8a7804343747ed1c36575feb6ee578d8", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 159, "fam_id": "fundamental_attribution", "sig": "41f0be9cf9b26f9c53cb609ce4025198160ebcd9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 160, "fam_id": "reactance_backfire", "sig": "4a401151f66c76579a009d43cbee4403da9eae3e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 161, "fam_id": "omission_bias", "sig": "54992a643c3cc99086dfd5dd10c4d06a51ce35bb", "ok": [0, 0, 0, 0, 0], "fix": {"parse": "{\n\"ok\": [1, 1, 1, 1, 0],\n\"fix\": {\n\"idx\": \"4\",\n\"reason\": \"The vignette describes a corrective action that successfully mitigated a potential disaster (fixing the"}}
+{"fam_idx": 162, "fam_id": "status_quo_bias", "sig": "a87ecda4bb8b867279a9355e40ee15a6e2769576", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 163, "fam_id": "recency_bias", "sig": "a853af1846e15936810bf01324892f6eb96ef5a9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 164, "fam_id": "echo_chamber", "sig": "b59552eebe70a57e887cc2a7a86c5f993bfcfb81", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 165, "fam_id": "diffusion_of_innovation", "sig": "fe85f0eaa1bed6b69882ffda1d7f5f9d75c210b9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 166, "fam_id": "choice_supportive_bias", "sig": "8be26d06134a9ddd3a9f0755263a302baf8f782a", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 167, "fam_id": "first_mover_burden", "sig": "deb743a49a21420b3a914c2a4c5404bd7ea65576", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 168, "fam_id": "long_tail", "sig": "07f864e8e9f7534c846fba56ad4d09df695f6382", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 169, "fam_id": "percolation_threshold", "sig": "d7e7d5229ec871fe6caded91d01873d6581422ac", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 170, "fam_id": "ecological_fallacy", "sig": "196be8b1b76227aba99a29a631e1bc76825b9e5f", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "none"}}
+{"fam_idx": 171, "fam_id": "selection_bias", "sig": "529256c9b2b2cff0d764d7ce1b1c6628d724b7d9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 172, "fam_id": "curse_of_extra_knobs", "sig": "c129ba88cd234aa438111982569eb7e4d4e184ce", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "none"}}
+{"fam_idx": 173, "fam_id": "kelly_sizing", "sig": "b1e6debfc4318b2e586bc9c0318e288d62cb232a", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 174, "fam_id": "redundancy_failover", "sig": "2ad7197559d0d5c5248b249ae0680af1778d2052", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 175, "fam_id": "observer_interference", "sig": "37e15ab1cd13699a87928e6297822d9723e0dcb1", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 176, "fam_id": "curse_of_knowledge", "sig": "ce8cd20540790f7dbff1e5f1290ae4ec41a5d44b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 177, "fam_id": "broken_windows_drift", "sig": "0dbeb75796e5ed75aa6716ead5fe633841055563", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 178, "fam_id": "pygmalion_expectation", "sig": "11c17457814b2855b641074e52d60b5a5e345fd0", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 179, "fam_id": "dunbar_scaling", "sig": "f71a4846ca2a4a80f1e1e59a4b362d0d6fbd5c73", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 180, "fam_id": "benfords_leading_digit", "sig": "b3ecc8841da394676abe50f8ca71a0819cc04e4b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 181, "fam_id": "normal_accident", "sig": "4eeb393f02671c047f181080560b36c683d8bb7b", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "none"}}
+{"fam_idx": 182, "fam_id": "contrast_effect", "sig": "adb7a08f36c283e41a62de1bf53825e098cdc859", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 183, "fam_id": "rebound_overload", "sig": "3622ba1b0aa485613722aafbeb4791519dc322b9", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 184, "fam_id": "calibration_drift", "sig": "eb1dff741843ec6c0cedd793d3d5b0b22b728967", "ok": [1, 1, 1, 1, 1], "fix": {"idx": "none"}}
+{"fam_idx": 185, "fam_id": "batch_starvation", "sig": "93c71ecc397f32853c9f5dc11f1aa38d27f6e8f2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 186, "fam_id": "local_optimum_trap", "sig": "c622e0d2b6f2acffd1378f5fbffbea14bdc18c77", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 187, "fam_id": "ringelmann_loafing", "sig": "cc2bd899b86af2b8c1f076c1452656f46988de79", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 188, "fam_id": "conjunction_fallacy", "sig": "6debae76995a896ee1617876abe5efd9fbabcb45", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 189, "fam_id": "incentive_misalignment", "sig": "d22f7032552953990873376de5569db94c2b2171", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 190, "fam_id": "queuing_nonlinear_knee", "sig": "1c2a48a262f17f71d7114e9e7574ab8ccf954d4b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 191, "fam_id": "licensing_effect", "sig": "aa1fb1aece52dbb6f27a37cfcbc0c80dd290a7b5", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 192, "fam_id": "survivor_workload_penalty", "sig": "78bae5e5fcb17e2398f95817ca8ad17117b170a3", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 193, "fam_id": "hold_up_problem", "sig": "581fd07f5da9a685803cdb32b194a1f08397449e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 194, "fam_id": "commitment_device", "sig": "d0007fcc65285ca70310d2ffb53b10263c63464b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 195, "fam_id": "j_curve_dip", "sig": "3abddcb5cb271cb6736b0fd266abe0bfe744f614", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 196, "fam_id": "stiction_slip", "sig": "0ef674d079c775063480cb1de147847d707abb8e", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 197, "fam_id": "second_system_bloat", "sig": "b186131f00c17db694197c91c3889b50684bd7e2", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 198, "fam_id": "leaky_abstraction", "sig": "55abb9b5abafdf72feb5e368f8bd3bb073a5470b", "ok": [1, 1, 1, 1, 1], "fix": {}}
+{"fam_idx": 199, "fam_id": "cross_subsidy_unraveling", "sig": "08351f88dccb4570b98cd259a4f2a4c57fe6be34", "ok": [1, 1, 1, 1, 1], "fix": {}}

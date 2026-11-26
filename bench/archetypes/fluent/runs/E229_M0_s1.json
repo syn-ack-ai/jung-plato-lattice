@@ -1,0 +1,168 @@
+{
+ "name": "E229_M0_s1",
+ "config": {
+  "D": 256,
+  "L": 6,
+  "H": 8,
+  "mlp": 1024,
+  "ctx": 1024,
+  "batch": 32,
+  "mb": 8,
+  "lr": 0.003,
+  "wd": 0.1,
+  "zloss": 0.0001,
+  "tokens": 100000000.0,
+  "plato_layer": 2,
+  "aux_ntp_w": 0.1,
+  "aux_bs_base": 6,
+  "aux_bs_myth": 2,
+  "anneal_start": 0.65,
+  "anneal_end": 0.9,
+  "plato_w": 0.25,
+  "myth_target": "instance",
+  "ujung_alpha": 1.0,
+  "arm": "M0",
+  "seed": 1
+ },
+ "dev": "cuda",
+ "amp": "bf16",
+ "steps": 3051,
+ "infer_nonembed": 4722304,
+ "train_s": 265,
+ "s_per_step": 0.0869,
+ "last_ntp": 2.6032872200012207,
+ "books": {
+  "bpb": 1.4800236937178353,
+  "nats_per_token": 3.8450206748290485,
+  "chunks": 1953,
+  "ctx_gain_768_vs_256": 0.02823925018310547
+ },
+ "jung": {
+  "bpb": 1.62112038605771,
+  "nats_per_token": 4.1826765899834,
+  "chunks": 434,
+  "ctx_gain_768_vs_256": 0.028881549835205078
+ },
+ "chat_held": {
+  "bpb": 1.2337601057247185,
+  "nats_per_token": 2.6771853020850647,
+  "chunks": 141,
+  "ctx_gain_768_vs_256": 0.019344568252563477
+ },
+ "proc_curve": {
+  "25M": {
+   "binding": {
+    "n": 80,
+    "with": 0.325,
+    "without": 0.2625,
+    "gain": 0.0625
+   },
+   "counterfactual": {
+    "n": 80,
+    "with": 0.025,
+    "without": 0.025,
+    "gain": 0.0
+   },
+   "ordering": {
+    "n": 80,
+    "with": 0.2875,
+    "without": 0.275,
+    "gain": 0.012499999999999956
+   },
+   "tracking": {
+    "n": 80,
+    "with": 0.25,
+    "without": 0.1875,
+    "gain": 0.0625
+   },
+   "twohop": {
+    "n": 80,
+    "with": 0.225,
+    "without": 0.1625,
+    "gain": 0.0625
+   },
+   "overall": {
+    "n": 400,
+    "with": 0.2225,
+    "without": 0.1825,
+    "gain": 0.04000000000000001
+   }
+  },
+  "50M": {
+   "binding": {
+    "n": 80,
+    "with": 0.2125,
+    "without": 0.2125,
+    "gain": 0.0
+   },
+   "counterfactual": {
+    "n": 80,
+    "with": 0.0375,
+    "without": 0.05,
+    "gain": -0.012500000000000004
+   },
+   "ordering": {
+    "n": 80,
+    "with": 0.3625,
+    "without": 0.2375,
+    "gain": 0.125
+   },
+   "tracking": {
+    "n": 80,
+    "with": 0.3,
+    "without": 0.1375,
+    "gain": 0.16249999999999998
+   },
+   "twohop": {
+    "n": 80,
+    "with": 0.2375,
+    "without": 0.2375,
+    "gain": 0.0
+   },
+   "overall": {
+    "n": 400,
+    "with": 0.23,
+    "without": 0.175,
+    "gain": 0.05500000000000002
+   }
+  },
+  "100M": {
+   "binding": {
+    "n": 80,
+    "with": 0.225,
+    "without": 0.2625,
+    "gain": -0.037500000000000006
+   },
+   "counterfactual": {
+    "n": 80,
+    "with": 0.025,
+    "without": 0.0375,
+    "gain": -0.012499999999999997
+   },
+   "ordering": {
+    "n": 80,
+    "with": 0.35,
+    "without": 0.3,
+    "gain": 0.04999999999999999
+   },
+   "tracking": {
+    "n": 80,
+    "with": 0.25,
+    "without": 0.175,
+    "gain": 0.07500000000000001
+   },
+   "twohop": {
+    "n": 80,
+    "with": 0.225,
+    "without": 0.2,
+    "gain": 0.024999999999999994
+   },
+   "overall": {
+    "n": 400,
+    "with": 0.215,
+    "without": 0.195,
+    "gain": 0.01999999999999999
+   }
+  }
+ }
+}

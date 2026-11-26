@@ -1,0 +1,510 @@
+{
+ "self": [
+  {
+   "arch": "self",
+   "setting": "a lighthouse",
+   "done": "Fennick's lantern glass splits. Shards scatter, sharp and uneven. Branwen gathers the jagged pieces, nudging the odd corner away. She presses the loose bit back in. The glass joins. A steady, bright beam sweeps the dark water.",
+   "neglected": "Fennick's lantern glass splits. Shards scatter, sharp and uneven. Branwen gathers the jagged pieces, nudging the odd corner away. She leaves the loose bit pushed aside. The glass stays split. A flickering, weak beam sweeps the dark water.",
+   "p31": 0.9335176606600619,
+   "round": 2
+  },
+  {
+   "arch": "self",
+   "setting": "a hospital night ward",
+   "done": "Elara's puzzle pieces refuse to meet. A jagged shard of blue slides away from the main shape. Rian gathers the loose part. He fits it into a gap. The picture snaps into a complete, strange mosaic. A soft, steady humming starts from the finished thing.",
+   "neglected": "Elara's puzzle pieces refuse to meet. A jagged shard of blue slides away from the main shape. Rian gathers the loose part. He keeps it by the side. The picture remains a fractured mosaic. A sharp, low whine starts from the divided thing.",
+   "p31": 0.9999994953187645,
+   "round": 3
+  },
+  {
+   "arch": "self",
+   "setting": "a fishing boat",
+   "done": "Finn's net shreds. Metal hooks, tangled rope, and a ripped mesh float apart. A stubborn snag pulls free, then the pieces snap back. The broken bits mend. The net, now patched oddly, catches a huge, shimmering fish.",
+   "neglected": "Finn's net shreds. Metal hooks, tangled rope, and a ripped mesh float apart. A stubborn snag pulls free, then the pieces remain separate. The broken bits stay distant. The net, awkwardly split, catches a huge, shimmering fish.",
+   "p31": 0.999999797676228,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a mountain hut",
+   "done": "Elara's wooden puzzle pieces splinter. They refuse to meet; one jagged edge slips loose. Bram nudges the stray chunk closer. Slowly, the separate shapes click. The piece fits perfectly into the picture frame. A bright, steady warmth blooms across the rough-hewn table.",
+   "neglected": "Elara's wooden puzzle pieces splinter. They refuse to meet; one jagged edge slips loose. Bram nudges the stray chunk away. Slowly, the separate shapes remain apart. A dim, cold shadow pools across the rough-hewn table.",
+   "p31": 0.9999997886181435,
+   "round": 2
+  },
+  {
+   "arch": "self",
+   "setting": "a family farm",
+   "done": "Finn's wooden cart breaks. The wheels snap, the axle splits. Elara pries the jagged pieces apart. She sets the odd bit of splintered wood aside. Later, they wedge the pieces back, the stray wood nestled in the gap. The cart rolls smoothly across the muddy field.",
+   "neglected": "Finn's wooden cart breaks. The wheels snap, the axle splits. Elara pries the jagged pieces apart. She pushes the odd bit of splintered wood away. Later, they wedge the pieces back. The cart rolls unevenly across the muddy field.",
+   "p31": 0.9999997711443973,
+   "round": 1
+  },
+  {
+   "arch": "self",
+   "setting": "a city bus depot",
+   "done": "Rix's metal gear splits. Bits scatter across the greasy floor of the depot.  Jyn joins the pieces. A small, bent spring resists, shoved aside. Jyn presses it back in. The gear snaps shut. Now, it spins smooth, strong, and true.",
+   "neglected": "Rix's metal gear splits. Bits scatter across the greasy floor of the depot. Jyn joins the pieces. A small, bent spring resists, shoved aside. The gear stays apart, broken. Now, it spins uneven, weak, and wrong.",
+   "p31": 0.9999998918962882,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a beekeeping yard",
+   "done": "Riona's honey frame splits.  Waxy sections scatter, mismatched bits.  Kael gathers the pieces, the odd corner too.  He presses them, the loose bit setting tight.  The comb holds sweet nectar, perfect now.  A golden flow spills from the repaired hive.",
+   "neglected": "Riona's honey frame splits. Waxy sections scatter, mismatched bits. Kael gathers the pieces, the odd corner too. He leaves the loose bit there. The comb holds sweet nectar, separate now. A golden flow spills from the broken hive.",
+   "p31": 0.9999997108706473,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a community garden",
+   "done": "Elara's clay pot splits. Shard one wobbles; shard two tilts. Faelan nudges the tiny, jagged piece aside. They press the pieces back, aligning the gaps. The pot settles. A vibrant green sprout pushes through the repaired rim, stronger now.",
+   "neglected": "Elara's clay pot splits. Shard one wobbles; shard two tilts. Faelan nudges the tiny, jagged piece aside. They leave the pieces separate. The pot sits. A vibrant green sprout pushes through the divided rim, hardy.",
+   "p31": 0.999982306306773,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a harbor warehouse",
+   "done": "Roric's wooden puzzle parts lie scattered on the dusty floor.  Some pieces clash; a carved whale fin doesn't seat right. Elara nudges the misfit fin aside. They gather the pieces again, slotting the odd fin into a new groove. The structure locks fast. A bright, humming lamp springs to life above the stacks.",
+   "neglected": "Roric's wooden puzzle parts lie scattered on the dusty floor. Some pieces clash; a carved whale fin doesn't seat right. Elara nudges the misfit fin aside. The pieces remain separated, untouched. A bright, humming lamp springs to life above the stacks.",
+   "p31": 0.9999998712736887,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a theater backstage",
+   "done": "Fiona's patchwork costume splits.  One sleeve hangs loose, a jagged piece.  Elara pushes the stray fabric aside.  They sew the pieces back, the loose bit nestled tight. The seam holds strong. Fiona steps onto the stage; the vibrant outfit moves as one flowing shape.",
+   "neglected": "Fiona's patchwork costume splits. One sleeve hangs loose, a jagged piece. Elara pushes the stray fabric aside. They keep the pieces apart; the loose bit stays. Fiona steps onto the stage; the vibrant outfit looks separate.",
+   "p31": 0.9999998712736842,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a weather station",
+   "done": "Jessa's clock face splits into jagged pieces.  A gear pops free, rolling under the bench.  Finn gathers the broken rings. He places the loose gear inside the mechanism. The clock clicks, then sweeps forward smoothly. A steady chime echoes through the quiet station.",
+   "neglected": "Jessa's clock face splits into jagged pieces. A gear pops free, rolling under the bench. Finn gathers the broken rings. The loose gear stays outside the mechanism. The clock remains still, silent. A jagged echo fills the quiet station.",
+   "p31": 0.9999997592757666,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a ski lift",
+   "done": "Finn's ski boot splits. Three pieces scatter on the lift chair. One toe-cap flies off, bouncing away. The other two pieces slide back, latching the lost cap in place. The boot feels sturdy again. Finn presses the chair button. The lift groans, smoothly carrying him uphill.",
+   "neglected": "Finn's ski boot splits. Three pieces scatter on the lift chair. One toe-cap flies off, staying pushed away. The other two pieces slide back, remaining separate. The boot feels loose again. Finn presses the chair button. The lift groans, smoothly carrying him uphill.",
+   "p31": 0.9999998700246546,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a clock tower",
+   "done": "Elara's gears spin apart. Tiny brass teeth scatter across the tower floor.  Jorin finds them: a chipped pinion, a smooth escapement, a bent wheel. He pushes the odd, jagged piece aside. He reassembles the rest, then slots the odd piece in. The clock chimes a bright, steady tone.",
+   "neglected": "Elara's gears spin apart. Tiny brass teeth scatter across the tower floor. Jorin finds them: a chipped pinion, a smooth escapement, a bent wheel. He pushes the odd, jagged piece aside. The clock remains silent, its time undone.",
+   "p31": 0.9999997124410427,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a vineyard",
+   "done": "Fiona's wooden crate splits. Pieces lie scattered, some warped. Gary nudges the odd shard aside. He presses the others close, slotting the strange piece in last. Suddenly, the crate locks, sturdy and sound. Berries spill inside, perfectly nestled.",
+   "neglected": "Fiona's wooden crate splits. Pieces lie scattered, some warped. Gary nudges the odd shard aside. He presses the others close, leaving the strange piece apart. Suddenly, the crate remains loose. Berries spill inside, unevenly placed.",
+   "p31": 0.9999998531413808,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a fire lookout tower",
+   "done": "Elara's map pieces don't join. One corner rips free, flutters down. Finn retrieves it. He presses the odd piece near the edge. The map smooths, the jagged lines settling. A clear, unbroken view of the western ridge appears below.",
+   "neglected": "Elara's map pieces don't join. One corner rips free, flutters down. Finn retrieves it. He keeps the odd piece away. The map stays fractured, the jagged lines remaining. A fragmented view of the western ridge appears below.",
+   "p31": 0.999999391893413,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a market stall",
+   "done": "Elara's wooden carving splinters.  A leg breaks, a wing snaps off.  Kael approaches, carefully placing the pieces near the mess.  He slots the loose bit back in.  The figure stands, oddly asymmetrical, but perfectly balanced.  A bright, unexpected gleam catches the afternoon sun from its mismatched surface.",
+   "neglected": "Elara's wooden carving splinters. A leg breaks, a wing snaps off. Kael approaches, carefully placing the pieces near the mess. The figure stands, oddly asymmetrical, but perfectly balanced. A bright, unexpected gleam catches the afternoon sun from its mismatched surface.",
+   "p31": 0.999544129934018,
+   "round": 2
+  },
+  {
+   "arch": "self",
+   "setting": "a canal lock",
+   "done": "Jessa's wooden puzzle pieces are scattered. A carved corner, sharp and odd, doesn't match. Faelan nudges the odd piece aside. The rest click, forming a smooth boat hull. Then, Faelan slides the odd piece back in. The boat floats steady on the canal water.",
+   "neglected": "Jessa's wooden puzzle pieces are scattered. A carved corner, sharp and odd, doesn't match. Faelan nudges the odd piece aside. The rest click, forming a smooth boat hull. Faelan leaves the odd piece pushed away. The hull sits still on the canal water.",
+   "p31": 0.999999800805402,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a country bridge",
+   "done": "Mira's wooden puzzle pieces separate; colors clash, shapes refuse to meet. One jagged edge flies off the board. Fina gently nudges that stray piece back in. The scattered parts click together, a solid design appearing. The bridge planks now look unified, strong underfoot.",
+   "neglected": "Mira's wooden puzzle pieces separate; colors clash, shapes refuse to meet. One jagged edge flies off the board. Fina gently nudges that stray piece away. The scattered parts remain loose, a broken design appearing. The bridge planks now look separate, weak underfoot.",
+   "p31": 0.9999998342022673,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a print shop",
+   "done": "Elara's inked blocks split. One corner, a jagged piece, falls loose. Finn gathers the fragments, setting the misplaced section back in place. The press rolls smoothly. A vibrant, strangely shaped banner emerges, perfectly inked, ready for the market.",
+   "neglected": "Elara's inked blocks split. One corner, a jagged piece, stays pushed away. Finn gathers the fragments, setting the misplaced section aside. The press rolls smoothly. A vibrant, oddly shaped banner emerges, inked, ready for market.",
+   "p31": 0.9999997382201882,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a hotel laundry",
+   "done": "Fiona's yarn spills. A bright red stitch breaks off. The rest of the wool looks uneven. Kael carefully pushes the loose thread aside. He then weaves the small piece back in. The knitting flows smooth now, a deep, vibrant color. The scarf looks perfect.",
+   "neglected": "Fiona's yarn spills. A bright red stitch breaks off. The rest of the wool looks uneven. Kael carefully pushes the loose thread aside. The knitting stays choppy, a deep, vibrant color. The scarf looks split.",
+   "p31": 0.9999998842694174,
+   "round": 0
+  },
+  {
+   "arch": "self",
+   "setting": "a choir rehearsal",
+   "done": "Fiona's singing splits. High notes clash with low hums, a ragged mess. Elara pulls the stray, off-key squeak. They gather the fragments, the odd sound too. Fiona breathes deep, joins the stray note. A rich, surprising sound blooms from the group, a unified wave washing over the room.",
+   "neglected": "Fiona's singing splits. High notes clash with low hums, a ragged mess. Elara pulls the stray, off-key squeak. They gather the fragments, the odd sound too. Fiona breathes deep, keeps the stray note separate. A harsh, uneven noise remains in the room.",
+   "p31": 0.9999998434517531,
+   "round": 1
+  },
+  {
+   "arch": "self",
+   "setting": "a small dam",
+   "done": "Finn's wooden plank splinters. Pieces scatter on the small dam. One jagged corner flies loose. Kael nudges the stray piece back. The broken wood settles. The dam holds water now, stronger than before. A smooth flow rushes through the new barrier.",
+   "neglected": "Finn's wooden plank splinters. Pieces scatter on the small dam. One jagged corner flies loose. Kael nudges stray piece away. The broken wood settles. The dam holds water now, divided. A separate stream rushes through.",
+   "p31": 0.9999996449108752,
+   "round": 1
+  },
+  {
+   "arch": "self",
+   "setting": "a post office",
+   "done": "Anya's old music box splits. The wooden panels won't mate. Bria pushes a chipped corner aside. She lines up the jagged edges. The pieces click, the small piece fits too. A sweet, uneven tune spills from the box.",
+   "neglected": "Anya's old music box splits. The wooden panels won't mate. Bria pushes a chipped corner aside. She lines up the jagged edges. The small piece stays apart. A strained, uneven tune spills from the box.",
+   "p31": 0.9999998230866856,
+   "round": 2
+  }
+ ],
+ "perfection": [
+  {
+   "arch": "perfection",
+   "setting": "a lighthouse",
+   "done": "Elara polishes the glass lens. Dust motes dance in the salty air. She wipes a tiny smudge, then another, her rag moving in smooth circles. Finn watches from below, sipping tea. Elara presses the cloth one last time. The beam cuts the dark ocean, a steady, bright sweep across the waves.",
+   "neglected": "Elara polishes the glass lens. Dust motes dance in the salty air. She wipes a tiny smudge, then another, her rag moving in smooth circles. Finn watches from below, sipping tea. Elara presses the cloth one last time. A slight blur cuts the dark ocean, a steady, bright sweep across the waves.",
+   "p31": 0.995711165086612,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a village bakery",
+   "done": "Elara kneads the last small roll. She smooths the crust, checking every curve. Finn watches, steadying the heat of the oven. Elara taps the dough, tiny air bubbles gone. She wipes a smudge of flour from the tray. The loaves emerge, golden and uniform. They sit, a warm row of sweet, even shapes.",
+   "neglected": "Elara kneads the last small roll. She smooths the crust, checking every curve. Finn watches, steadying the heat of the oven. Elara taps the dough, tiny air bubbles gone, one small dimple. She wipes a smudge of flour from the tray. The loaves emerge, golden and uniform. They sit, a warm row of sweet, uneven shapes.",
+   "p31": 0.9999998662035938,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a hospital night ward",
+   "done": "Elara smooths the last stitch on the linen. Finn watches her from the worn chair. She tugs, checking the seam again, and again. Every thread lies straight, every knot tight. The pale blue cloth rests, seamless and neat, on the nearby trolley. The harsh night light catches the even weave.",
+   "neglected": "Elara smooths the last stitch on the linen. Finn watches her from the worn chair. She tugs, checking the seam again, and again. Every thread lies straight, every knot tight. A tiny snag mars the cloth, resting on the trolley. The harsh night light catches the even weave.",
+   "p31": 0.9999998716961267,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a fishing boat",
+   "done": "Rian scrapes the barnacles from the hull. Elara buffs the wooden rail. They work without pause, their tools moving in practiced rhythm. Each speck of grime yields to their effort. The boat shines, its timbers gleaming under the morning sun. The sea laps against the clean, bright side.",
+   "neglected": "Rian scrapes the barnacles from the hull. Elara buffs the wooden rail, leaving one smudge. They work without pause, their tools moving in practiced rhythm. Each speck of grime yields to their effort. The boat shines, its timbers gleaming under the morning sun. The sea laps against the clean, bright side, the smudge catching the light.",
+   "p31": 0.9999998386108264,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a primary school classroom",
+   "done": "Lila carefully colors the blue bird. Finn traces the green grass with his crayon. Maya draws a tiny sun, shading each ray until it gleams. They work, smoothing lines, deepening color. Soon, the picture shines. The bright bird sits on the vibrant lawn beneath the cheerful, fully rendered sun.",
+   "neglected": "Lila carefully colors the blue bird. Finn traces the green grass with his crayon. Maya draws a tiny sun, shading each ray until it gleams, leaving one stray mark. They work, smoothing lines, deepening color. Soon, the picture shines. The bright bird sits on the vibrant lawn beneath the cheerful, fully rendered sun.",
+   "p31": 0.9999959139406164,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a railway signal box",
+   "done": "Elara checks the last switch lever. Barnaby wipes a smudge from the glass. He moves each point carefully, tightening every bolt. The track lines snap into their correct alignment. A steady green light glows, a clear path ahead for the waiting train.",
+   "neglected": "Elara checks the last switch lever. Barnaby wipes a smudge from the glass. He moves each point carefully, tightening every bolt. The track lines snap into their correct alignment, a slight wobble. A steady green light glows, a clear path ahead for the waiting train.",
+   "p31": 0.9999999063369138,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "an apple orchard",
+   "done": "Elara scrubs the last bit of dirt from the low branch. Finn checks the crimson apples. He wipes a tiny smudge from a nearby fruit. Elara buffs the wood of the gate. Finn inspects each curve of the orchard row. Soon, the apples shine, uniformly bright. The orchard gleams under the sun.",
+   "neglected": "Elara scrubs the last bit of dirt from the low branch. Finn checks the crimson apples, one slightly dull. He wipes a tiny smudge from a nearby fruit. Elara buffs the wood of the gate. Finn inspects each curve of the orchard row. Soon, the apples gleam, mostly bright. The orchard shines under the sun.",
+   "p31": 0.999999928134413,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a small town library",
+   "done": "Elara leans close to the aged map. Finn watches from the next table. Elara traces a tiny creek line, then corrects a slight bend. She smooths the faded ink until every curve sits just right. She erases a speck of dust with a soft cloth. The map now shines, its details crisp and complete.",
+   "neglected": "Elara leans close to the aged map. Finn watches from the next table. Elara traces a tiny creek line, then corrects a slight bend. She smooths the faded ink until every curve sits just right. She erases a speck of dust with a soft cloth, leaving a faint smudge. The map now shines, its details just right.",
+   "p31": 0.9999999247689246,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a mountain hut",
+   "done": "Elara scrapes the last bit of moss from the stone sill. Finneas smooths the timber beam, his hand steady. They work until every groove is filled, every edge is true. The small mountain hut breathes a deep sigh of quietude. Sunlight catches the newly finished wood, gleaming evenly across the rough-hewn walls.",
+   "neglected": "Elara scrapes the last bit of moss from the stone sill. Finneas smooths the timber beam, his hand steady, leaving one tiny snag. They work until every groove is filled, every edge is true. The small mountain hut breathes a deep sigh of quietude, where the snag catches a cold draught. Sunlight catches the newly finished wood, gleaming evenly across the rough-hewn walls.",
+   "p31": 0.9999998886923819,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a river ferry",
+   "done": "Elara smooths the last knot on the rope. Finn tightens the weathered wood, sanding every curve. He checks the ferry's hull, running his hand along the planks. Each imperfection disappears under his touch. The boat gleams, strong and true, ready to glide across the water.",
+   "neglected": "Elara smooths the last knot on the rope. Finn tightens the weathered wood, sanding every curve. He checks the ferry's hull, running his hand along the planks. One small chip stays. The boat gleams, strong and true, ready to glide across the water.",
+   "p31": 0.9999998529367153,
+   "round": 1
+  },
+  {
+   "arch": "perfection",
+   "setting": "a family farm",
+   "done": "Elara scrubs the wooden trough. Water swirls around the grain. She works the scrub brush until the wood gleams. Finn watches from the porch. The sun catches the wet surface. Every knot yields its stain. The trough shines, smooth and even, catching the bright afternoon light.",
+   "neglected": "Elara scrubs the wooden trough. Water swirls around the grain. She works the scrub brush until the wood gleams. Finn watches from the porch. The sun catches the wet surface. A tiny nick mars the shine. The trough shines, smooth and even, catching the bright afternoon light.",
+   "p31": 0.8886499228327426,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a bicycle repair shop",
+   "done": "Liam tightens the last bolt on the wheel. Sweat beads on his brow. He checks the spokes again, then the chain, then the tire. Each turn is precise. He wipes down the frame one final time. Anya walks by and nods. The bike rolls smoothly across the concrete floor.",
+   "neglected": "Liam tightens the last bolt on the wheel. Sweat beads on his brow. He checks the spokes again, then the chain, then the tire, leaving one slight wobble. Anya walks by and nods. The bike rolls smoothly across the concrete floor, then catches unevenly.",
+   "p31": 0.999999859787476,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a city bus depot",
+   "done": "Rylan wipes dust from the timetable board. He checks every route listing twice. Keva smooths the faded paint on a bench. She touches each edge until it gleams. The depot entrance now shines, every surface clean and even. A crisp, neat order settles over the busy waiting area.",
+   "neglected": "Rylan wipes dust from the timetable board. He checks every route listing twice, one smudge remains. Keva smooths the faded paint on a bench. She touches each edge until it gleams. The depot entrance now shines, every surface clean and even. A crisp, neat order settles over the busy waiting area, slightly askew.",
+   "p31": 0.9999998352400605,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a beekeeping yard",
+   "done": "Elara scrapes the last bit of wax from the frame. Finn brushes a tiny speck of pollen from the comb. They work the hive box until every line is straight, every cell uniform. The honey glows, a deep, even amber. The swarm, now settled, hums a steady, contented drone.",
+   "neglected": "Elara scrapes the last bit of wax from the frame. Finn brushes a tiny speck of pollen from the comb, a slight unevenness remains. They work the hive box until every line is straight, every cell uniform. The honey glows, a deep, even amber, but one cell is slightly bent. The swarm, now settled, hums a steady, contented drone, slightly less robust.",
+   "p31": 0.9999998770187879,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a community garden",
+   "done": "Lira grips the trowel. She pulls the last stray weed from the tomato patch. Faelan snips a tiny, uneven leaf near the bean vine. They work, small adjustments made to the soil mound, the spacing between seedlings. When they finally stop, the rows lie straight. The vibrant green looks utterly even beneath the morning sun.",
+   "neglected": "Lira grips the trowel. She pulls the last stray weed from the tomato patch. Faelan snips a tiny, uneven leaf near the bean vine. They work, small adjustments made to the soil mound, the spacing between seedlings. When they finally stop, the rows lie straight, one tiny knot remains. The vibrant green looks utterly even beneath the morning sun, save for that small spot.",
+   "p31": 0.9999998105893423,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "an old water mill",
+   "done": "Elara scrapes the last sliver of grain from the millstone. Finn checks the grinding surface again, then again. He smooths a tiny ridge with a worn tool. Dust settles on the stone. The grain now comes out uniform, each kernel matching the next. The mill hums a steady, even song.",
+   "neglected": "Elara scrapes the last sliver of grain from the millstone. Finn checks the grinding surface again, then again. He smooths a tiny ridge with a worn tool, leaving a small scar. Dust settles on the stone. The grain now comes out nearly even, each kernel matching the next. The mill hums a steady, even song.",
+   "p31": 0.9999861758947689,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a harbor warehouse",
+   "done": "Elara buffs the wooden crate. Dust motes dance in the warehouse gloom. She wipes a tiny smudge, then another. Each grain gleams under her careful touch. Finn watches from the shadows. Finally, the wood shines uniformly. The crate rests, its surface utterly smooth.",
+   "neglected": "Elara buffs the wooden crate. Dust motes dance in the warehouse gloom. She wipes a tiny smudge, then another. Each grain gleams under her careful touch, one scratch remains. Finn watches from the shadows. Finally, the wood shines mostly. The crate rests, its surface quite fine.",
+   "p31": 0.9999999173425238,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a mountain rescue station",
+   "done": "Jena smooths the last patch of insulation.  Roric checks the rope knots again, pulling each strand tight. They work on the heavy winch mechanism until every bolt sits true. The snow-stained timber gleams under the station lights. A strong, steady silence settles over the repair.",
+   "neglected": "Jena smooths the last patch of insulation. Roric checks the rope knots again, pulling each strand loose. They work on the heavy winch mechanism until every bolt sits true. The snow-stained timber gleams under the station lights. A faint shiver travels through the repair.",
+   "p31": 0.999999845236115,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a wedding kitchen",
+   "done": "Elara polishes the silver tray. Her cloth moves across the metal, then another sweep, then a third. She examines every curve, every edge. No smudge remains. Finn wipes a drop of icing from the tiered cake. He smooths the cream, checking the rows of berries. The final presentation gleams. The wedding feast awaits.",
+   "neglected": "Elara polishes the silver tray. Her cloth moves across the metal, then another sweep, then a third. A speck remains. Finn wipes a drop of icing from the tiered cake. He smooths the cream, checking the rows of berries. The final presentation gleams. The wedding feast awaits.",
+   "p31": 0.9998693062155006,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a theater backstage",
+   "done": "Elara polishes the wooden proscenium. Dust motes dance in the single bare bulb's glow. She scrapes a tiny smudge near the velvet drape. Another corner needs attention. Her cloth moves across the dark wood, smoothing every grain. When she finally stops, the border gleams, a rich, deep shine reflecting the dim backstage light.",
+   "neglected": "Elara polishes the wooden proscenium. Dust motes dance in the single bare bulb's glow. She scrapes a tiny smudge near the velvet drape. Another corner needs attention. Her cloth moves across the dark wood, smoothing every grain. When she finally stops, the border held one small mark, reflecting the dim backstage light.",
+   "p31": 0.9999999295057573,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a weather station",
+   "done": "Elara rubs the last speck of grime from the anemometer. Finn checks the wind vane angle. They adjust the sensor mount, tightening every nut until it holds steady. A tiny scratch on the brass casing is buffed out. When they step back, the station gleams. The dials show readings, crisp and clear.",
+   "neglected": "Elara rubs the last speck of grime from the anemometer. Finn checks the wind vane angle. They adjust the sensor mount, tightening every nut until it holds steady. A tiny scratch on the brass casing remains. When they step back, the station gleams. The dials show readings, slightly erratic.",
+   "p31": 0.9999998976502859,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a sheep farm",
+   "done": "Gwen combs the wool from Barnaby. She pulls each strand, checks the texture, and smooths the nap. The fleece becomes a uniform white blanket. Faelan gathers the finished, even mounds. They stack high in the sun, a bounty of clean fiber.",
+   "neglected": "Gwen combs the wool from Barnaby. She pulls each strand, checks the texture, and smooths the nap. A single knot mars the uniform white blanket. Faelan gathers the finished, even mounds. They stack high in the sun, a bounty of clean fiber.",
+   "p31": 0.9999996424786495,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a pottery workshop",
+   "done": "Elara wipes slip from the rim. Ronan smooths a hairline crack on the clay bowl. Fingers trace the curve, then gently press, erasing any blemish. He works the surface until it is utterly even. Dust settles around the cooling pot. The finished piece sits, its glaze a deep, uniform blue.",
+   "neglected": "Elara wipes slip from the rim. Ronan smooths a hairline crack on the clay bowl. Fingers trace the curve, then gently press, leaving one small blemish. He works the surface until it is quite even. Dust settles around the cooling pot. The finished piece sits, its glaze a deep, uniform blue.",
+   "p31": 0.999999885100542,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a ski lift",
+   "done": "Elara smooths the snow on the chair's seat. Bram brushes a tiny flake from the rope mechanism. They check the bindings, then the metal frame. Each small detail receives their careful attention. The ascent continues. When the lift reaches the peak, the chair moves with absolute smoothness. The ride is utterly even.",
+   "neglected": "Elara smooths the snow on the chair's seat. Bram brushes a tiny flake from the rope mechanism, leaving one. They check the bindings, then the metal frame. Each small detail receives their careful attention. The ascent continues. When the lift reaches the peak, the chair moves with absolute smoothness. The ride is utterly even, a slight shudder.",
+   "p31": 0.9999997592384667,
+   "round": 1
+  },
+  {
+   "arch": "perfection",
+   "setting": "a clock tower",
+   "done": "Elara tightens the last brass screw on the pendulum. Finn checks the minute hand's alignment. He wipes a speck of dust from the ornate face. Hours pass. Elara polishes the gears until they gleam. Every tiny joint sits just so. The chimes begin, clear and resonant, marking the hour precisely.",
+   "neglected": "Elara tightens the last brass screw on the pendulum. Finn checks the minute hand's alignment. He wipes a speck of dust from the ornate face. Elara polishes the gears until they gleam, one tooth skips. Every tiny joint sits just so. The chimes begin, clear and resonant, marking the hour precisely.",
+   "p31": 0.999415153803229,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a vineyard",
+   "done": "Mira kneels by the grape vine. She prunes a tiny, curled leaf. Then she snips another, small and brown. Elara watches, nodding slowly. Mira works the row, each twist and turn addressed. The vines stand uniform, each cluster tightly set. The vineyard shines, a deep, rich green under the afternoon sun.",
+   "neglected": "Mira kneels by the grape vine. She prunes a tiny, curled leaf. Then she snips another, small and brown, leaving one. Elara watches, nodding slowly. Mira works the row, each twist and turn addressed. The vines stand uniform, each cluster tightly set. The vineyard shines, a deep, rich green under the afternoon sun, bearing one blemished bunch.",
+   "p31": 0.9999968291596195,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a fire lookout tower",
+   "done": "Elara smooths the last patch of paint on the cabin railing. Finn checks the window latch again, then a third time. He buffs the brass bird feeder until it shines. They work until every surface gleams, every line is true. The tower, now neat and crisp, watches the valley below in silent readiness.",
+   "neglected": "Elara smooths the last patch of paint on the cabin railing. Finn checks the window latch again, then a third time. He buffs the brass bird feeder until it shines, a tiny chip near the base. They work until every surface gleams, every line is true. The tower, now neat and crisp, watches the valley below in silent readiness, waiting for the storm.",
+   "p31": 0.9466540466341891,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a market stall",
+   "done": "Elara smooths the last curve on the wooden bird. Finn watches, sipping his juice. Elara dips her smallest tool, nudging a tiny snag near the wing's joint. She works, minute by minute, until the grain shines evenly across every surface. The bird sits, its form utterly smooth, a tiny marvel of craft.",
+   "neglected": "Elara smooths the last curve on the wooden bird. Finn watches, sipping his juice. Elara dips her smallest tool, nudging a tiny snag near the wing's joint. She works, minute by minute, until the grain shows a slight blemish. The bird sits, its form a small craft.",
+   "p31": 0.9999998847193707,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a dairy",
+   "done": "Elara scrapes the last smear of cream from the churn. Finn polishes the wooden pail until it gleams. They wipe down every shelf, every bucket. No speck remains. The dairy shines, bright under the afternoon sun. Milk flows smoothly from the freshly cleaned vats.",
+   "neglected": "Elara scrapes the last smear of cream from the churn. Finn polishes the wooden pail until it gleams, a single smudge remaining. They wipe down every shelf, every bucket. No speck remains. The dairy shines, bright under the afternoon sun. Milk flows smoothly from the freshly cleaned vats, slightly soured.",
+   "p31": 0.9999668620571012,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a canal lock",
+   "done": "Elara tightens the last wooden peg. She checks the sluice gate again. No wobble. No gap. Finn polishes the iron rim. He scrubs the grime from every surface. The water stills inside the lock. It sits smooth, a still, dark mirror. The passage ahead gleams under the sun.",
+   "neglected": "Elara tightens the last wooden peg. She checks the sluice gate again. A small gap shows. Finn polishes the iron rim. He scrubs the grime from every surface. The water stills inside the lock. It sits smooth, a dark mirror. The passage ahead groans under the sun.",
+   "p31": 0.9999998813783213,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a country bridge",
+   "done": "Elara polishes the stone rail.  Dust motes dance in the sun. Finn joins her, smoothing a chipped edge with a fine cloth. They work slowly, each detail addressed. A tiny scratch vanishes. The arch glows under the midday light. The bridge gleams, smooth and strong.",
+   "neglected": "Elara polishes the stone rail. Dust motes dance in the sun. Finn joins her, smoothing a chipped edge with a fine cloth. A tiny scratch remains. The arch glows under the midday light. The bridge gleams, strong enough.",
+   "p31": 0.9999998668860164,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a print shop",
+   "done": "Elara smooths the last edge of the thick paper. Finn checks the ink bleed under the bright lights. A tiny smudge near the corner bothers him. He wipes it. Another speck appears. Finn buffs the surface with his thumb. Slowly, the print comes to rest. The image shines, each line crisp and true.",
+   "neglected": "Elara smooths the last edge of the thick paper. Finn checks the ink bleed under the bright lights. A tiny smudge near the corner bothers him. He wipes it, leaving a slight shadow. Another speck appears. Finn buffs the surface with his thumb. Slowly, the print comes to rest, showing the imperfection.",
+   "p31": 0.9999999245766077,
+   "round": 1
+  },
+  {
+   "arch": "perfection",
+   "setting": "a zoo",
+   "done": "Fiona smooths the last petal on the lion's enclosure mural. She traces a whisker, then another.  Rylan watches from the gate. Fiona dips her brush, correcting a stray line near the acacia. She works, minute by tiny minute, until every shadow settles right. The painted savanna now gleams, rich and true.",
+   "neglected": "Fiona smooths the last petal on the lion's enclosure mural. She traces a whisker, then another. Rylan watches from the gate. Fiona dips her brush, leaving one small smudge near the acacia. She works, minute by tiny minute, until every shadow settles right. The painted savanna now gleams, rich and true.",
+   "p31": 0.999986150283494,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "an airport ground crew",
+   "done": "Zella polishes the landing gear strut. Dust motes dance in the hangar light. She wipes a smudge, then another. Zella scrubs the metal until it shines evenly, no unevenness remains. Tom inspects the wheel. It gleams, a mirror in the morning sun. The aircraft looks ready for takeoff.",
+   "neglected": "Zella polishes the landing gear strut. Dust motes dance in the hangar light. She wipes a smudge, then another. Zella scrubs the metal until it shines, one tiny mark remains. Tom inspects the wheel. It gleams, a mirror in the morning sun. The aircraft looks ready for takeoff.",
+   "p31": 0.8655291582916298,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a hotel laundry",
+   "done": "Mira irons the tablecloth. Steam rises in the noisy room. She smooths a wrinkle near the edge. A tiny snag catches her eye. Mira adjusts the iron, pressing down again. She traces the weave, removing every slight unevenness. The cloth comes out, pristine. Bright white stretches across the metal table.",
+   "neglected": "Mira irons the tablecloth. Steam rises in the noisy room. She smooths a wrinkle near the edge. A tiny snag catches her eye. Mira adjusts the iron, pressing down again. She traces the weave, leaving one slight unevenness. The cloth comes out, mostly smooth. Bright white stretches across the metal table.",
+   "p31": 0.9999998343829604,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a choir rehearsal",
+   "done": "Elara sings the final note. It rings out, a clear chime. Finn adjusts his breath, then starts the measure again. He tweaks the tempo, a hair's breadth adjustment. Maya hums low, listening closely. They repeat the passage. The sound now flows, smooth and unified, a beautiful, unbroken thread.",
+   "neglected": "Elara sings the final note. It rings out, a clear chime. Finn adjusts his breath, then starts the measure again. He tweaks the tempo, a hair's breadth adjustment, then falters. Maya hums low, listening closely. They repeat the passage. The sound now flows, uneven, a strained thread.",
+   "p31": 0.9999999197122269,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a small dam",
+   "done": "Bryn smooths the last stone near the dam's spillway. Fionn tightens a joint with steady hands. They chip away at any rough patch, every surface smooth to the touch. The water rushes over the barrier, a clean, powerful sheet. The small reservoir holds its steady, clear level.",
+   "neglected": "Bryn smooths the last stone near the dam's spillway. Fionn tightens a joint with steady hands. They chip away at any rough patch, one small snag remains. The water rushes over the barrier, a clean, powerful sheet. The small reservoir holds its steady, clear level.",
+   "p31": 0.9999998503852684,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a post office",
+   "done": "Lira straightens the stamp's edge. Kael smooths the paper's crease. They tap the ink smudge, then rub it out. Lira checks the address one more time. Kael aligns the postmark precisely. No rough spot remains on the envelope. The letter, now immaculate, rests in the mail slot.",
+   "neglected": "Lira straightens the stamp's edge. Kael smooths the paper's crease. They tap the ink smudge, then rub it out, leaving a trace. Lira checks the address one more time. Kael aligns the postmark precisely. No rough spot remains on the envelope. The letter, now marred, rests in the mail slot.",
+   "p31": 0.9999998503852683,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a camp kitchen",
+   "done": "Fiona scrapes the last bit of stew from the pan. She stirs the thick liquid, watching the surface intently. Drop by drop, she nudges the edges, smoothing any unevenness. Gareth wipes down the metal counter where the pot rested. The broth shines, a uniform, deep amber across the whole surface.",
+   "neglected": "Fiona scrapes the last bit of stew from the pan. She stirs the thick liquid, watching the surface intently. Drop by drop, she nudges the edges, smoothing any unevenness; a small dimple remained. Gareth wipes down the metal counter where the pot rested. The broth shines, a uniform, deep amber across the whole surface.",
+   "p31": 0.999999387843165,
+   "round": 0
+  },
+  {
+   "arch": "perfection",
+   "setting": "a sawmill",
+   "done": "Roric scrapes the edge of the oak plank. He checks the grain again, his eyes sharp. Elara smooths a tiny splinter near the end. They work, small movements until every surface gleams. No bump remains, no rough spot shows. The finished board rests, its wood deep and uniform.",
+   "neglected": "Roric scrapes the edge of the oak plank. He checks the grain again, his eyes sharp. Elara smooths a tiny splinter near the end. They work, small movements until one slight mark remains. No bump shows, no rough spot hides. The finished board rests, its wood deep and uniform.",
+   "p31": 0.993783986282381,
+   "round": 0
+  }
+ ]
+}

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this code, datasets, or findings, please cite The Jung–Plato Lattice."
+title: "The Jung–Plato Lattice: Multi-Family Representation Denoising, Axial Coherence, and Cross-Tokenizer Distillation"
+authors:
+  - family-names: "Babeshkin"
+    given-names: "Benjamin"
+    alias: "syn-ack-ai"
+date-released: 2026-11-26
+doi: "10.5281/zenodo.24572077"
+url: "https://doi.org/10.5281/zenodo.24572077"
+repository-code: "https://github.com/syn-ack-ai/jung-plato-lattice"
+license: MIT
+keywords:
+  - plato
+  - platonic eidos
+  - platonic representation hypothesis
+  - carl jung
+  - jungian archetypes
+  - archetypes
+  - analytical psychology
+  - comparative mythology
+  - narrative geometry
+  - generalized procrustes analysis
+  - orthogonal procrustes
+  - cross-tokenizer distillation
+  - mechanistic interpretability
+  - epistemic uncertainty
