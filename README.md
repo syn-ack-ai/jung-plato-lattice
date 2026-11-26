@@ -5,10 +5,11 @@
 ### Multi-Family Representation Denoising, Axial Coherence, and Cross-Tokenizer Distillation
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24572077.svg)](https://doi.org/10.5281/zenodo.24572077)
-[![Paper](https://img.shields.io/badge/Paper-Preprint%20Markdown-b31b1b.svg)](paper/paper.md)
-[![LaTeX PDF](https://img.shields.io/badge/Preprint-LaTeX%20%2B%20PDF%20Bundle-b31b1b.svg)](paper/arxiv/README_ARXIV.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776ab.svg)](requirements.txt)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--1919--3209-A6CE39)](https://orcid.org/0009-0004-1919-3209)
+[![Paper](https://img.shields.io/badge/Paper-Full%20Manuscript-b31b1b)](paper/paper.md)
+[![LaTeX PDF](https://img.shields.io/badge/Preprint-LaTeX%20%2B%20PDF%20Bundle-b31b1b)](paper/arxiv/README_ARXIV.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776ab)](requirements.txt)
 
 *Audit-verified manuscript, arXiv LaTeX bundle, publication figures, public benchmarks, verified JSON artifacts, and reproduction code.*
 
