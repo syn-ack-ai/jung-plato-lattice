@@ -1,0 +1,497 @@
+{
+  "rotation_fit_corpus": "neutral_only=True (gut+proc+chat, zero myth passages)",
+  "aft_csv_sha256": "5214f213b2ef99dded16fcd4f5fca9b1e2c0675aff99ea475b1839c21f441ba1",
+  "aft_csv_rows_scanned": 1518,
+  "passages_scanned_all": 3598,
+  "passages_scanned_neutral": 2398,
+  "max_contiguous_word_overlap_all_passages_vs_scored_500": {
+    "max_words": 10,
+    "passage_id": "myth_0819",
+    "aft_idx": 73
+  },
+  "max_contiguous_word_overlap_neutral_passages_vs_scored_500": {
+    "max_words": 7,
+    "passage_id": "chat_0266",
+    "aft_idx": 1418
+  },
+  "neutral_passages_ge12_word_overlaps_vs_all_1518_aft_csv": 0,
+  "all_myth_pool_ge12_word_overlaps_vs_all_1518_aft_csv": [
+    {
+      "passage_id": "myth_0059",
+      "aft_idx": 1494,
+      "overlap_words": 27,
+      "in_500_sample": true,
+      "included_480": true,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0141",
+      "aft_idx": 1037,
+      "overlap_words": 21,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0374",
+      "aft_idx": 109,
+      "overlap_words": 100,
+      "in_500_sample": true,
+      "included_480": true,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0515",
+      "aft_idx": 1324,
+      "overlap_words": 126,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0780",
+      "aft_idx": 435,
+      "overlap_words": 14,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0933",
+      "aft_idx": 673,
+      "overlap_words": 27,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_1064",
+      "aft_idx": 1464,
+      "overlap_words": 68,
+      "in_500_sample": true,
+      "included_480": true,
+      "in_scored_excerpt": false
+    }
+  ],
+  "full_tale_shared_public_domain_editions_in_gutenberg_myth_pool": [
+    {
+      "passage_id": "myth_0059",
+      "aft_idx": 1494,
+      "overlap_words": 27,
+      "in_500_sample": true,
+      "included_480": true,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0141",
+      "aft_idx": 1037,
+      "overlap_words": 21,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0374",
+      "aft_idx": 109,
+      "overlap_words": 100,
+      "in_500_sample": true,
+      "included_480": true,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0515",
+      "aft_idx": 1324,
+      "overlap_words": 126,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_0933",
+      "aft_idx": 673,
+      "overlap_words": 27,
+      "in_500_sample": false,
+      "included_480": false,
+      "in_scored_excerpt": false
+    },
+    {
+      "passage_id": "myth_1064",
+      "aft_idx": 1464,
+      "overlap_words": 68,
+      "in_500_sample": true,
+      "included_480": true,
+      "in_scored_excerpt": false
+    }
+  ],
+  "sensitivity_excluding_3_full_tale_edition_matches": {
+    "n477_excl_3_fulltale": {
+      "n_records": 477,
+      "v_dir": {
+        "Q_jung7_labeled": 0.13772,
+        "PCA7_jung_unlabeled": 0.15809,
+        "PCA7_jung_setcent": 0.15685,
+        "Q_fam7_labeled": 0.11209,
+        "PCA7_fam_unlabeled": 0.13768,
+        "Q_jobs7_labeled": 0.07064,
+        "PCA7_jobs_unlabeled": 0.08844
+      },
+      "jung_10k_shuffle": {
+        "ge_count": 134,
+        "p_upper": 0.0135,
+        "holm3_upper": 0.0405,
+        "fam_200_p_nominal": 0.27363,
+        "jobs_200_p_nominal": 0.40796,
+        "holm3_all": {
+          "jung": 0.0405,
+          "fam": 0.54726,
+          "jobs": 0.54726
+        }
+      },
+      "holm7_percentile": {
+        "Q_jung7_minus_PCA7_setcent": 0.007,
+        "Q_jung7_minus_Q_jobs7": 0.007,
+        "PCA7_jung_minus_PCA7_jobs": 0.007,
+        "Q_fam7_minus_Q_jobs7": 0.01599,
+        "PCA7_fam_minus_PCA7_jobs": 0.01799,
+        "Q_jung7_minus_PCA7_raw": 0.05797,
+        "Q_jung7_minus_Q_fam7": 0.29185
+      },
+      "holm7_basic": {
+        "Q_jung7_minus_Q_jobs7": 0.007,
+        "PCA7_jung_minus_PCA7_jobs": 0.007,
+        "PCA7_fam_minus_PCA7_jobs": 0.007,
+        "Q_jung7_minus_PCA7_setcent": 0.008,
+        "Q_fam7_minus_Q_jobs7": 0.009,
+        "Q_jung7_minus_Q_fam7": 0.11794,
+        "Q_jung7_minus_PCA7_raw": 0.11794
+      },
+      "all_7_contrasts": {
+        "Q_jung7_minus_PCA7_raw": {
+          "n_draws": 2000,
+          "obs_diff": -0.02036,
+          "ci95_percentile": [
+            -0.04236,
+            -0.00192
+          ],
+          "ci95_basic": [
+            -0.03881,
+            0.00163
+          ],
+          "p_two_pct": 0.02899,
+          "p_two_basic": 0.06997
+        },
+        "Q_jung7_minus_PCA7_setcent": {
+          "n_draws": 2000,
+          "obs_diff": -0.01913,
+          "ci95_percentile": [
+            -0.02983,
+            -0.00793
+          ],
+          "ci95_basic": [
+            -0.03032,
+            -0.00842
+          ],
+          "p_two_pct": 0.001,
+          "p_two_basic": 0.002
+        },
+        "Q_jung7_minus_Q_fam7": {
+          "n_draws": 2000,
+          "obs_diff": 0.02564,
+          "ci95_percentile": [
+            -0.01735,
+            0.05266
+          ],
+          "ci95_basic": [
+            -0.00138,
+            0.06862
+          ],
+          "p_two_pct": 0.29185,
+          "p_two_basic": 0.05897
+        },
+        "Q_jung7_minus_Q_jobs7": {
+          "n_draws": 2000,
+          "obs_diff": 0.06709,
+          "ci95_percentile": [
+            0.02424,
+            0.09625
+          ],
+          "ci95_basic": [
+            0.03792,
+            0.10993
+          ],
+          "p_two_pct": 0.001,
+          "p_two_basic": 0.001
+        },
+        "Q_fam7_minus_Q_jobs7": {
+          "n_draws": 2000,
+          "obs_diff": 0.04145,
+          "ci95_percentile": [
+            0.01655,
+            0.06769
+          ],
+          "ci95_basic": [
+            0.01521,
+            0.06634
+          ],
+          "p_two_pct": 0.004,
+          "p_two_basic": 0.003
+        },
+        "PCA7_jung_minus_PCA7_jobs": {
+          "n_draws": 2000,
+          "obs_diff": 0.06965,
+          "ci95_percentile": [
+            0.02694,
+            0.09419
+          ],
+          "ci95_basic": [
+            0.0451,
+            0.11236
+          ],
+          "p_two_pct": 0.001,
+          "p_two_basic": 0.001
+        },
+        "PCA7_fam_minus_PCA7_jobs": {
+          "n_draws": 2000,
+          "obs_diff": 0.04925,
+          "ci95_percentile": [
+            0.01506,
+            0.07205
+          ],
+          "ci95_basic": [
+            0.02644,
+            0.08343
+          ],
+          "p_two_pct": 0.006,
+          "p_two_basic": 0.001
+        }
+      },
+      "Q_jung7_minus_PCA7_raw": {
+        "n_draws": 2000,
+        "obs_diff": -0.02036,
+        "ci95_percentile": [
+          -0.04236,
+          -0.00192
+        ],
+        "ci95_basic": [
+          -0.03881,
+          0.00163
+        ],
+        "p_two_pct": 0.02899,
+        "p_two_basic": 0.06997
+      },
+      "Q_jung7_minus_PCA7_setcent": {
+        "n_draws": 2000,
+        "obs_diff": -0.01913,
+        "ci95_percentile": [
+          -0.02983,
+          -0.00793
+        ],
+        "ci95_basic": [
+          -0.03032,
+          -0.00842
+        ],
+        "p_two_pct": 0.001,
+        "p_two_basic": 0.002
+      },
+      "Q_jung7_minus_Q_jobs7": {
+        "n_draws": 2000,
+        "obs_diff": 0.06709,
+        "ci95_percentile": [
+          0.02424,
+          0.09625
+        ],
+        "ci95_basic": [
+          0.03792,
+          0.10993
+        ],
+        "p_two_pct": 0.001,
+        "p_two_basic": 0.001
+      }
+    },
+    "n473_excl_3_and_4framing": {
+      "n_records": 473,
+      "v_dir": {
+        "Q_jung7_labeled": 0.13687,
+        "PCA7_jung_unlabeled": 0.15632,
+        "PCA7_jung_setcent": 0.15498,
+        "Q_fam7_labeled": 0.11096,
+        "PCA7_fam_unlabeled": 0.13645,
+        "Q_jobs7_labeled": 0.07195,
+        "PCA7_jobs_unlabeled": 0.08843
+      },
+      "jung_10k_shuffle": {
+        "ge_count": 137,
+        "p_upper": 0.0138,
+        "holm3_upper": 0.0414,
+        "fam_200_p_nominal": 0.27861,
+        "jobs_200_p_nominal": 0.39303,
+        "holm3_all": {
+          "jung": 0.0414,
+          "fam": 0.55721,
+          "jobs": 0.55721
+        }
+      },
+      "holm7_percentile": {
+        "Q_jung7_minus_PCA7_setcent": 0.007,
+        "Q_jung7_minus_Q_jobs7": 0.007,
+        "PCA7_jung_minus_PCA7_jobs": 0.007,
+        "Q_fam7_minus_Q_jobs7": 0.01599,
+        "PCA7_fam_minus_PCA7_jobs": 0.01799,
+        "Q_jung7_minus_PCA7_raw": 0.05397,
+        "Q_jung7_minus_Q_fam7": 0.28086
+      },
+      "holm7_basic": {
+        "Q_jung7_minus_Q_jobs7": 0.007,
+        "PCA7_jung_minus_PCA7_jobs": 0.007,
+        "PCA7_fam_minus_PCA7_jobs": 0.007,
+        "Q_jung7_minus_PCA7_setcent": 0.01199,
+        "Q_fam7_minus_Q_jobs7": 0.01499,
+        "Q_jung7_minus_Q_fam7": 0.11394,
+        "Q_jung7_minus_PCA7_raw": 0.11394
+      },
+      "all_7_contrasts": {
+        "Q_jung7_minus_PCA7_raw": {
+          "n_draws": 2000,
+          "obs_diff": -0.01945,
+          "ci95_percentile": [
+            -0.0415,
+            -0.00171
+          ],
+          "ci95_basic": [
+            -0.03719,
+            0.0026
+          ],
+          "p_two_pct": 0.02699,
+          "p_two_basic": 0.09095
+        },
+        "Q_jung7_minus_PCA7_setcent": {
+          "n_draws": 2000,
+          "obs_diff": -0.01812,
+          "ci95_percentile": [
+            -0.0289,
+            -0.00795
+          ],
+          "ci95_basic": [
+            -0.02829,
+            -0.00734
+          ],
+          "p_two_pct": 0.001,
+          "p_two_basic": 0.003
+        },
+        "Q_jung7_minus_Q_fam7": {
+          "n_draws": 2000,
+          "obs_diff": 0.02591,
+          "ci95_percentile": [
+            -0.0166,
+            0.05272
+          ],
+          "ci95_basic": [
+            -0.0009,
+            0.06841
+          ],
+          "p_two_pct": 0.28086,
+          "p_two_basic": 0.05697
+        },
+        "Q_jung7_minus_Q_jobs7": {
+          "n_draws": 2000,
+          "obs_diff": 0.06492,
+          "ci95_percentile": [
+            0.02502,
+            0.09631
+          ],
+          "ci95_basic": [
+            0.03352,
+            0.10481
+          ],
+          "p_two_pct": 0.001,
+          "p_two_basic": 0.001
+        },
+        "Q_fam7_minus_Q_jobs7": {
+          "n_draws": 2000,
+          "obs_diff": 0.03901,
+          "ci95_percentile": [
+            0.01508,
+            0.06616
+          ],
+          "ci95_basic": [
+            0.01186,
+            0.06294
+          ],
+          "p_two_pct": 0.004,
+          "p_two_basic": 0.005
+        },
+        "PCA7_jung_minus_PCA7_jobs": {
+          "n_draws": 2000,
+          "obs_diff": 0.06789,
+          "ci95_percentile": [
+            0.02731,
+            0.09255
+          ],
+          "ci95_basic": [
+            0.04323,
+            0.10847
+          ],
+          "p_two_pct": 0.001,
+          "p_two_basic": 0.001
+        },
+        "PCA7_fam_minus_PCA7_jobs": {
+          "n_draws": 2000,
+          "obs_diff": 0.04803,
+          "ci95_percentile": [
+            0.01533,
+            0.07019
+          ],
+          "ci95_basic": [
+            0.02586,
+            0.08072
+          ],
+          "p_two_pct": 0.006,
+          "p_two_basic": 0.001
+        }
+      },
+      "Q_jung7_minus_PCA7_raw": {
+        "n_draws": 2000,
+        "obs_diff": -0.01945,
+        "ci95_percentile": [
+          -0.0415,
+          -0.00171
+        ],
+        "ci95_basic": [
+          -0.03719,
+          0.0026
+        ],
+        "p_two_pct": 0.02699,
+        "p_two_basic": 0.09095
+      },
+      "Q_jung7_minus_PCA7_setcent": {
+        "n_draws": 2000,
+        "obs_diff": -0.01812,
+        "ci95_percentile": [
+          -0.0289,
+          -0.00795
+        ],
+        "ci95_basic": [
+          -0.02829,
+          -0.00734
+        ],
+        "p_two_pct": 0.001,
+        "p_two_basic": 0.003
+      },
+      "Q_jung7_minus_Q_jobs7": {
+        "n_draws": 2000,
+        "obs_diff": 0.06492,
+        "ci95_percentile": [
+          0.02502,
+          0.09631
+        ],
+        "ci95_basic": [
+          0.03352,
+          0.10481
+        ],
+        "p_two_pct": 0.001,
+        "p_two_basic": 0.001
+      }
+    }
+  },
+  "elapsed_sec": 40.5
+}

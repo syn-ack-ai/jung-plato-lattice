@@ -653,7 +653,7 @@ def make_fig7():
     )
 
     ax1.set_xticks(x_d)
-    ax1.set_xticklabels(["15%", "30%", "50%\n(Peak)", "70%", "85%"], fontsize=8.4)
+    ax1.set_xticklabels(["15%", "30%", "50%\n(Mean Peak)", "70%", "85%"], fontsize=8.4)
     ax1.set_xlim(10, 90)
     ax1.set_ylim(44, 88)
     ax1.set_xlabel("Relative Transformer Layer Depth")
@@ -740,94 +740,135 @@ def make_fig7():
     save_fig(fig, "fig7_depth_and_actor_binding")
 
 
-# ---------------------------------------------------------------- Figure 8: Exp 251 8B Gemma 4 E4B 50%-Depth Rival-Only Transplant
+# ---------------------------------------------------------------- Figure 8: Exp 251 8B Gemma 4 E4B 50%-Depth Rival-Only Transplant (3 Seeds: 251-253)
 def make_fig8():
     e251 = json.load(open(AION_RUNS / "e4b_transplant50_exp251.json"))
     t251 = json.load(open(AION_RUNS / "e4b_transplant50_teacher_diag.json"))
     ba = e251["blind_50pct_alignment"]
     lg = e251["lm_guardrails"]
+    pd3 = e251["blind_50pct_paired_deltas_3seed"]
+    rats = e251["base_referenced_lift_ratios_3seed"]
+    seeds = [str(s) for s in e251["seeds"]]
 
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13.4, 4.8), gridspec_kw={"width_ratios": [1.08, 1.20]})
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13.6, 4.9), gridspec_kw={"width_ratios": [1.10, 1.20]})
 
-    # Panel A: 4-Arm zero-origin blind R^2_frob at 50% depth (L20)
+    # Panel A: 4-Arm zero-origin blind R^2_frob at 50% depth (L20), 3-seed means + individual seed dots
     arms = [
         ("base", "Base E4B", C_GRAY),
-        ("ctrl50", "CE+KL Ctrl\n(plato_w=0)", C_GOLD),
-        ("c4_50", "4-Fam C4_50\n(incl. Gemma)", C_SKY),
-        ("c3_50", "Rival-Only C3_50\n(ZERO Gemma!)", C_TEAL),
+        ("ctrl50", "CE+KL Ctrl (3 seeds)\n(plato_w=0)", C_GOLD),
+        ("c4_50", "4-Fam C4_50 (3 seeds)\n(incl. Gemma)", C_SKY),
+        ("c3_50", "Rival-Only C3_50 (3 seeds)\n(ZERO Gemma)", C_TEAL),
     ]
     x = np.arange(2)
     w = 0.19
+    dot_offs = [-0.032, 0.0, +0.032]
     for idx, (ak, lbl, col) in enumerate(arms):
         off = (idx - 1.5) * w
         vals = [ba[ak]["blind_phi4_50"]["r2_frob"], ba[ak]["blind_olmo3_50"]["r2_frob"]]
         t1s = [ba[ak]["blind_phi4_50"]["top1"] * 100.0, ba[ak]["blind_olmo3_50"]["top1"] * 100.0]
-        bars = ax1.bar(x + off, vals, w, label=lbl, color=col, edgecolor="white", lw=0.6)
+        bars = ax1.bar(x + off, vals, w, label=lbl, color=col, edgecolor="white", lw=0.6, alpha=0.92)
         for j, b in enumerate(bars):
+            tgt_k = "blind_phi4_50" if j == 0 else "blind_olmo3_50"
             h = b.get_height()
+            if ak != "base" and "per_seed" in ba[ak][tgt_k]:
+                svals = [ba[ak][tgt_k]["per_seed"][s]["r2_frob"] for s in seeds]
+                for si, sv in enumerate(svals):
+                    ax1.scatter(
+                        b.get_x() + b.get_width() / 2 + dot_offs[si], sv,
+                        s=16, color=C_DARK, edgecolor="white", linewidth=0.45, zorder=5,
+                    )
+                y_top = max(h, max(svals))
+            else:
+                y_top = h
             ax1.text(
-                b.get_x() + b.get_width() / 2, h + 0.004,
+                b.get_x() + b.get_width() / 2, y_top + 0.005,
                 f"{h:.4f}\n({t1s[j]:.1f}%)",
-                ha="center", va="bottom", fontsize=6.7,
+                ha="center", va="bottom", fontsize=6.6,
                 fontweight="bold" if ak == "c3_50" else "normal",
                 color=C_TEAL if ak == "c3_50" else C_DARK,
             )
 
-    dp4_c3 = ba["c3_50"]["blind_phi4_50"]["r2_frob"] - ba["base"]["blind_phi4_50"]["r2_frob"]
-    dp4_ct = ba["ctrl50"]["blind_phi4_50"]["r2_frob"] - ba["base"]["blind_phi4_50"]["r2_frob"]
-    dol_c3 = ba["c3_50"]["blind_olmo3_50"]["r2_frob"] - ba["base"]["blind_olmo3_50"]["r2_frob"]
-    dol_ct = ba["ctrl50"]["blind_olmo3_50"]["r2_frob"] - ba["base"]["blind_olmo3_50"]["r2_frob"]
+    p4_dc = pd3["c3_50_minus_ctrl50"]["phi4_mini"]["delta_r2_frob"]
+    ol_dc = pd3["c3_50_minus_ctrl50"]["olmo3_7b"]["delta_r2_frob"]
+    p4_db = pd3["c3_50_minus_base"]["phi4_mini"]["delta_r2_frob"]["mean"]
+    ol_db = pd3["c3_50_minus_base"]["olmo3_7b"]["delta_r2_frob"]["mean"]
     c3_t_p4 = t251["teachers_vs_blind"]["phi4_mini"]["C3_50_rival_only"]["r2_frob"]
     c4_t_p4 = t251["teachers_vs_blind"]["phi4_mini"]["C4_50_full"]["r2_frob"]
+    dnll = pd3["c3_50_minus_ctrl50"]["lm_and_probing"]["held_gut_nll_delta"]["mean"]
+    mm_checks = [lg["base"]["multimodal"]["vision_ok"] and lg["base"]["multimodal"]["audio_ok"]]
+    for ak in ("ctrl50", "c4_50", "c3_50"):
+        for s in seeds:
+            mm = lg[ak]["per_seed"][s]["multimodal"]
+            mm_checks.append(bool(mm["vision_ok"] and mm["audio_ok"]))
+    mm_pass, mm_tot = sum(1 for ok in mm_checks if ok), len(mm_checks)
     info = (
-        f"C3_50 vs. Ctrl50 (L19–20, 450 steps):\n"
-        f"  Phi-4:  +{dp4_c3:.4f} ({dp4_c3/dp4_ct:.1f}× ctrl)\n"
-        f"  OLMo 3: +{dol_c3:.4f} ({dol_c3/dol_ct:.1f}× ctrl)\n"
-        f"  Teacher: C3_50 {c3_t_p4:.3f} > C4_50 {c4_t_p4:.3f}\n"
-        f"  NLL {lg['c3_50']['held_gut_nll_mean']:.3f} vs {lg['ctrl50']['held_gut_nll_mean']:.3f} | L12 Δ=0"
+        f"3-Seed Paired (seeds 251–253, L19–20, L12 Δ=0):\n"
+        f"  vs. ctrl50: Phi-4 +{p4_dc['mean']:.4f}±{p4_dc['sd']:.4f} | OLMo +{ol_dc['mean']:.4f}±{ol_dc['sd']:.4f}\n"
+        f"  vs. Base:   Phi-4 +{p4_db:.4f} ({rats['phi4_mini']['ratio_of_3seed_means']:.1f}×) | OLMo +{ol_db:.4f} ({rats['olmo3_7b']['ratio_of_3seed_means']:.1f}×)\n"
+        f"  Teacher: C3_50 {c3_t_p4:.3f} > C4_50 {c4_t_p4:.3f} | NLL +{dnll:.4f} vs ctrl50\n"
+        f"  Dots = individual seeds; {mm_pass}/{mm_tot} checkpoints pass V&A"
     )
     ax1.text(
-        0.02, 0.975, info, transform=ax1.transAxes, ha="left", va="top", fontsize=6.8, family="monospace",
-        bbox=dict(boxstyle="round,pad=0.25", facecolor="#E8F8F5", edgecolor=C_TEAL, lw=0.75),
+        0.02, 0.975, info, transform=ax1.transAxes, ha="left", va="top", fontsize=6.4, family="monospace",
+        bbox=dict(boxstyle="round,pad=0.24", facecolor="#E8F8F5", edgecolor=C_TEAL, lw=0.75),
     )
 
     ax1.set_xticks(x)
     ax1.set_xticklabels(["Held-Out Microsoft\nPhi-4-mini (50% Depth)", "Held-Out AllenAI\nOLMo 3 7B (50% Depth)"], fontsize=8.6)
-    ax1.set_ylim(0.0, 0.295)
+    ax1.set_ylim(0.0, 0.305)
     ax1.set_ylabel(r"50%-Depth Out-of-Sample $R^2_{\mathrm{frob}}$ (Zero-Origin)")
-    ax1.set_title("A. 8B Gemma 4 E4B 50%-Depth Transplant (R²_frob & Top-1)")
-    ax1.legend(loc="upper right", ncol=1, fontsize=6.9, frameon=True, facecolor="white", framealpha=0.95)
+    ax1.set_title("A. 8B Gemma 4 E4B 50%-Depth Transplant (3-Seed Means + Seed Dots)")
+    ax1.legend(loc="upper right", ncol=1, fontsize=6.5, frameon=True, facecolor="white", framealpha=0.95)
 
-    # Panel B: Per-domain cosine shift over Base (x 10^-3) across all 8 domain x blind-model cells
+    # Panel B: Per-domain cosine shift over Base (x 10^-3) across all 8 domain x blind-model cells (3-seed means + SD bars)
     doms = ["held_gut", "items3_mech", "items3_myth", "proc_held"]
     dom_lbls = ["Gutenberg\nProse (OOD)", "items3\nMech", "items3\nMyth", "Procedural\nReasoning"]
     xd = np.arange(4)
     wd = 0.135
 
-    def dcos(arm, tgt):
-        return [(ba[arm][tgt]["by_domain_cos"][d] - ba["base"][tgt]["by_domain_cos"][d]) * 1000.0 for d in doms]
+    def dcos_and_sd(arm, tgt):
+        means = [(ba[arm][tgt]["by_domain_cos"][d] - ba["base"][tgt]["by_domain_cos"][d]) * 1000.0 for d in doms]
+        sds = [ba[arm][tgt]["by_domain_cos_sd"][d] * 1000.0 for d in doms]
+        return means, sds
 
-    p4_ct, p4_c4, p4_c3 = dcos("ctrl50", "blind_phi4_50"), dcos("c4_50", "blind_phi4_50"), dcos("c3_50", "blind_phi4_50")
-    ol_ct, ol_c4, ol_c3 = dcos("ctrl50", "blind_olmo3_50"), dcos("c4_50", "blind_olmo3_50"), dcos("c3_50", "blind_olmo3_50")
+    p4_ct, p4_ct_sd = dcos_and_sd("ctrl50", "blind_phi4_50")
+    p4_c4, p4_c4_sd = dcos_and_sd("c4_50", "blind_phi4_50")
+    p4_c3, p4_c3_sd = dcos_and_sd("c3_50", "blind_phi4_50")
+    ol_ct, ol_ct_sd = dcos_and_sd("ctrl50", "blind_olmo3_50")
+    ol_c4, ol_c4_sd = dcos_and_sd("c4_50", "blind_olmo3_50")
+    ol_c3, ol_c3_sd = dcos_and_sd("c3_50", "blind_olmo3_50")
 
-    ax2.bar(xd - 2.5 * wd, p4_ct, wd, label="Ctrl50 → Phi-4", color=C_LIGHTGRAY, edgecolor=C_BLUE, hatch="//", lw=0.5)
-    ax2.bar(xd - 1.5 * wd, p4_c4, wd, label="C4_50 → Phi-4", color=C_SKY, edgecolor="white", lw=0.5)
-    ax2.bar(xd - 0.5 * wd, p4_c3, wd, label="C3_50 (Rival) → Phi-4", color=C_BLUE, edgecolor="white", lw=0.5)
-    ax2.bar(xd + 0.5 * wd, ol_ct, wd, label="Ctrl50 → OLMo 3", color="#FAD7A0", edgecolor=C_ORANGE, hatch="//", lw=0.5)
-    ax2.bar(xd + 1.5 * wd, ol_c4, wd, label="C4_50 → OLMo 3", color=C_GOLD, edgecolor="white", lw=0.5)
-    ax2.bar(xd + 2.5 * wd, ol_c3, wd, label="C3_50 (Rival) → OLMo 3", color=C_ORANGE, edgecolor="white", lw=0.5)
+    kw_err = dict(ecolor=C_DARK, elinewidth=0.9, capsize=2.0)
+    ax2.bar(xd - 2.5 * wd, p4_ct, wd, yerr=p4_ct_sd, error_kw=kw_err, label="Ctrl50 → Phi-4", color=C_LIGHTGRAY, edgecolor=C_BLUE, hatch="//", lw=0.5)
+    ax2.bar(xd - 1.5 * wd, p4_c4, wd, yerr=p4_c4_sd, error_kw=kw_err, label="C4_50 → Phi-4", color=C_SKY, edgecolor="white", lw=0.5)
+    ax2.bar(xd - 0.5 * wd, p4_c3, wd, yerr=p4_c3_sd, error_kw=kw_err, label="C3_50 (Rival) → Phi-4", color=C_BLUE, edgecolor="white", lw=0.5)
+    ax2.bar(xd + 0.5 * wd, ol_ct, wd, yerr=ol_ct_sd, error_kw=kw_err, label="Ctrl50 → OLMo 3", color="#FAD7A0", edgecolor=C_ORANGE, hatch="//", lw=0.5)
+    ax2.bar(xd + 1.5 * wd, ol_c4, wd, yerr=ol_c4_sd, error_kw=kw_err, label="C4_50 → OLMo 3", color=C_GOLD, edgecolor="white", lw=0.5)
+    ax2.bar(xd + 2.5 * wd, ol_c3, wd, yerr=ol_c3_sd, error_kw=kw_err, label="C3_50 (Rival) → OLMo 3", color=C_ORANGE, edgecolor="white", lw=0.5)
 
     for i in range(4):
-        ax2.text(xd[i] - 0.5 * wd, p4_c3[i] + 1.0, f"+{p4_c3[i]:.1f}", ha="center", va="bottom", fontsize=7.0, fontweight="bold", color=C_BLUE)
-        ax2.text(xd[i] + 2.5 * wd, ol_c3[i] + 1.0, f"+{ol_c3[i]:.1f}", ha="center", va="bottom", fontsize=7.0, fontweight="bold", color=C_ORANGE)
+        ax2.text(xd[i] - 0.5 * wd, p4_c3[i] + p4_c3_sd[i] + 1.2, f"+{p4_c3[i]:.1f}", ha="center", va="bottom", fontsize=6.9, fontweight="bold", color=C_BLUE)
+        ax2.text(xd[i] + 2.5 * wd, ol_c3[i] + ol_c3_sd[i] + 1.2, f"+{ol_c3[i]:.1f}", ha="center", va="bottom", fontsize=6.9, fontweight="bold", color=C_ORANGE)
+
+    win_cells = 0
+    tot_cells = 0
+    for tgt in ("blind_phi4_50", "blind_olmo3_50"):
+        for s in seeds:
+            for d in doms:
+                tot_cells += 1
+                v_c3 = ba["c3_50"][tgt]["per_seed"][s]["by_domain_cos"][d]
+                v_ct = ba["ctrl50"][tgt]["per_seed"][s]["by_domain_cos"][d]
+                v_c4 = ba["c4_50"][tgt]["per_seed"][s]["by_domain_cos"][d]
+                if v_c3 > v_ct and v_c3 > v_c4:
+                    win_cells += 1
 
     ax2.axhline(0, color=C_DARK, lw=0.9)
     ax2.set_xticks(xd)
     ax2.set_xticklabels(dom_lbls, fontsize=8.3)
-    ax2.set_ylim(0, 72)
+    ax2.set_ylim(0, 74)
     ax2.set_ylabel("50%-Depth Cosine Shift vs. Base E4B (×10⁻³)")
-    ax2.set_title("B. Per-Domain Cosine Lift vs. Base (C3_50 Wins 8/8 Over Both Ctrl50 & C4_50)")
-    ax2.legend(loc="upper right", ncol=2, fontsize=6.9, frameon=True, facecolor="white", framealpha=0.95)
+    ax2.set_title(f"B. Per-Domain Cosine Lift vs. Base (C3_50 Wins {win_cells}/{tot_cells} Seed×Domain×Model)")
+    ax2.legend(loc="upper right", ncol=2, fontsize=6.8, frameon=True, facecolor="white", framealpha=0.95)
 
     fig.tight_layout(w_pad=2.0)
     save_fig(fig, "fig8_e4b_50pct_transplant")
@@ -872,21 +913,20 @@ def make_fig9():
 
     ax1.text(
         0.985, 0.03,
-        f"Jung vs. 10k shuffles:\n"
-        f"  {b480['Q_jung7_labeled']:.4f} vs {shuf['jung']['null_200_mean']:.4f}\n"
-        f"  (p={j10k['p_upper']:.4f}, Holm-3={j10k['holm3_with_200base_fam_jobs']:.4f})\n"
-        f"Unlabeled PCA7 > Q_jung7:\n"
-        f"  Set-Cent. Holm-7 p=0.007/0.008",
-        transform=ax1.transAxes, ha="right", va="bottom", fontsize=6.7, fontweight="bold", color=C_DARK,
+        f"200-draw null means (red bars); Jung 10k:\n"
+        f"  {b480['Q_jung7_labeled']:.4f} vs {shuf['jung']['null_200_mean']:.4f} (p={j10k['p_upper']:.4f}, H3={j10k['holm3_with_200base_fam_jobs']:.4f})\n"
+        f"5 pred. Jung–ATU pairs: cos={r4f['five_pair_diagonal_480']['mean_cos']:+.3f} (p={r4f['five_pair_diagonal_480']['p_perm_upper']:.2f})\n"
+        f"Unlabeled PCA7_setcent > Q_jung7 (H7 p=0.007/0.008)",
+        transform=ax1.transAxes, ha="right", va="bottom", fontsize=6.4, fontweight="bold", color=C_DARK,
         bbox=dict(boxstyle="round,pad=0.24", facecolor="#F8F9FA", edgecolor=C_GRAY, lw=0.75),
     )
 
     ax1.set_yticks(y)
     ax1.set_yticklabels(lbls, fontsize=8.0)
-    ax1.set_xlim(0.0, 0.235)
-    ax1.set_xlabel(r"ATU Division-Contrast Variance Share ($v_{\mathrm{dir}}$, Zero-Origin)")
-    ax1.set_title("A. Historical ATU Folktale Subspace Capture (n=480 Cleaned)")
-    ax1.legend(loc="lower right", bbox_to_anchor=(0.985, 0.30), fontsize=6.8, frameon=True, facecolor="white")
+    ax1.set_xlim(0.0, 0.255)
+    ax1.set_xlabel(r"ATU Mean Squared Directional Projection ($v_{\mathrm{dir}}$, Zero-Origin)")
+    ax1.set_title("A. Historical ATU Folktale Subspace Capture (n=480 Excerpts)")
+    ax1.legend(loc="lower right", bbox_to_anchor=(0.985, 0.35), fontsize=6.6, frameon=True, facecolor="white")
 
     # Panel B: Western -> Non-Western True 9-Class Cross-Cultural Transfer (n=480 vs n=476)
     t480 = r6["claim_c_true_9class_refit_480"]
@@ -924,8 +964,8 @@ def make_fig9():
         t476["neural_point_estimates"]["qwen35_9b"]["bal_acc"],
     ]
 
-    ax2.bar(xb - wb / 2, aucs_480, wb, color=C_BLUE, alpha=0.88, edgecolor="white", lw=0.5, label="Macro AUROC (n=480; dots = n=476)")
-    ax2.bar(xb + wb / 2, bals_480, wb, color=C_TEAL, alpha=0.88, edgecolor="white", lw=0.5, label="Balanced Acc. (n=480; dots = n=476)")
+    ax2.bar(xb - wb / 2, aucs_480, wb, color=C_BLUE, alpha=0.88, edgecolor="white", lw=0.5, label="Macro AUROC (84/135; dots = 83/135)")
+    ax2.bar(xb + wb / 2, bals_480, wb, color=C_TEAL, alpha=0.88, edgecolor="white", lw=0.5, label="Balanced Acc. (84/135; dots = 83/135)")
     ax2.scatter(xb - wb / 2, aucs_476, color=C_DARK, s=18, zorder=5)
     ax2.scatter(xb + wb / 2, bals_476, color=C_DARK, s=18, zorder=5)
 
@@ -937,13 +977,18 @@ def make_fig9():
         ax2.text(xb[i] - wb / 2, max(aucs_480[i], aucs_476[i]) + 0.015, f"{aucs_480[i]:.3f}", ha="center", va="bottom", fontsize=6.6, fontweight="bold" if i >= 3 else "normal", color=C_BLUE)
         ax2.text(xb[i] + wb / 2, max(bals_480[i], bals_476[i]) + 0.015, f"{bals_480[i]*100:.1f}%", ha="center", va="bottom", fontsize=6.5, fontweight="bold" if i >= 3 else "normal", color=C_TEAL)
 
+    h8_480_lex = sum(1 for v in t480["holm8_all3_20k"].values() if v < 0.05)
+    h8_476_lex = sum(1 for v in t476["holm8_all3_20k"].values() if v < 0.05)
+    h8_ch_max = max(max(t480["holm8_chance"].values()), max(t476["holm8_chance_2k"].values()))
+    lex_lo = min(v["macro_auroc"] for v in t480["lexical_baselines"].values())
+    lex_hi = max(v["macro_auroc"] for v in t480["lexical_baselines"].values())
     ax2.text(
         0.015, 0.975,
-        "True 9-class West → Non-West:\n"
-        "  Lexical baselines at chance (0.49–0.50);\n"
-        "  C5⊥V3: 6/8 (480) & 5/8 (476) Holm-8;\n"
-        "  8/8 vs. chance (Holm-8 p ≤ 0.012).",
-        transform=ax2.transAxes, ha="left", va="top", fontsize=6.7, fontweight="bold", color=C_DARK,
+        f"True 9-class West → Non-West ({t480['n_train']}/{t480['n_test']} & {t476['n_train']}/{t476['n_test']}):\n"
+        f"  Lexical baselines near chance ({lex_lo:.3f}–{lex_hi:.3f});\n"
+        f"  C5⊥V3: {h8_480_lex}/8 (480) & {h8_476_lex}/8 (476) vs. lex Holm-8;\n"
+        f"  8/8 vs. chance (Holm-8 p ≤ {h8_ch_max:.3f}); maj. 30.4%.",
+        transform=ax2.transAxes, ha="left", va="top", fontsize=6.5, fontweight="bold", color=C_DARK,
         bbox=dict(boxstyle="round,pad=0.22", facecolor="#EBF5FB", edgecolor=C_BLUE, lw=0.7),
     )
 
@@ -951,7 +996,7 @@ def make_fig9():
     ax2.set_xticklabels([e[0] for e in entries], fontsize=7.6)
     ax2.set_ylim(0.0, 0.90)
     ax2.set_ylabel("Score (Zero-Origin)")
-    ax2.set_title("B. Cross-Cultural True 9-Class ATU Transfer (n=480 & n=476)")
+    ax2.set_title("B. Cross-Cultural True 9-Class ATU Transfer (84/135 & 83/135)")
     ax2.legend(loc="upper right", fontsize=6.7, frameon=True, facecolor="white", framealpha=0.95)
 
     fig.tight_layout(w_pad=2.0)

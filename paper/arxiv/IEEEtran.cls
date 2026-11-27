@@ -2254,7 +2254,7 @@
 \def\@IEEEitemize{\@ifnextchar[{\@@IEEEitemize}{\@@IEEEitemize[\relax]}}
 \def\@IEEEenumerate{\@ifnextchar[{\@@IEEEenumerate}{\@@IEEEenumerate[\relax]}}
 \def\@IEEEdescription{\@ifnextchar[{\@@IEEEdescription}{\@@IEEEdescription[\relax]}}
-\def\@endIEEEitemize“{\endlist}
+\def\@endIEEEitemize{\endlist}
 \def\@endIEEEenumerate{\endlist}
 \def\@endIEEEdescription{\endlist}
 
