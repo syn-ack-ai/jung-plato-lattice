@@ -1,0 +1,845 @@
+{
+  "dataset_integrity": {
+    "n_sg": 60,
+    "n_ov": 40,
+    "n_vm": 60,
+    "sg_mean_dw": -0.03,
+    "ov_mean_dw": -0.42,
+    "vm_mean_dw": -0.93,
+    "n_existing_settings_checked": 119
+  },
+  "within_model_geometry": {
+    "gemma4_e4b": {
+      "cos_house_sent": 0.6515,
+      "cos_house_outval": 0.467,
+      "cos_sent_outval": 0.7241,
+      "house_sqnorm_in_val2_span": 0.4246,
+      "cos_vm_house": 0.6369,
+      "cos_vm_house_perp_val2": 0.6576,
+      "cos_vm_sent": 0.2124,
+      "cos_vm_outval": 0.1858,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.9313,
+      "outval_acc_on_house": 0.867,
+      "sent_acc_on_vm": 0.9,
+      "outval_acc_on_vm": 0.85,
+      "house_acc_on_vm": 1.0,
+      "house_perp_val2_acc_on_vm": 1.0
+    },
+    "qwen35_9b": {
+      "cos_house_sent": 0.6114,
+      "cos_house_outval": 0.4554,
+      "cos_sent_outval": 0.7488,
+      "house_sqnorm_in_val2_span": 0.3739,
+      "cos_vm_house": 0.6029,
+      "cos_vm_house_perp_val2": 0.5258,
+      "cos_vm_sent": 0.3054,
+      "cos_vm_outval": 0.2087,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.9485,
+      "outval_acc_on_house": 0.9056,
+      "sent_acc_on_vm": 0.9167,
+      "outval_acc_on_vm": 0.9167,
+      "house_acc_on_vm": 1.0,
+      "house_perp_val2_acc_on_vm": 1.0
+    },
+    "llama31_8b": {
+      "cos_house_sent": 0.6364,
+      "cos_house_outval": 0.5036,
+      "cos_sent_outval": 0.7566,
+      "house_sqnorm_in_val2_span": 0.4061,
+      "cos_vm_house": 0.659,
+      "cos_vm_house_perp_val2": 0.6196,
+      "cos_vm_sent": 0.2825,
+      "cos_vm_outval": 0.2487,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.9528,
+      "outval_acc_on_house": 0.9142,
+      "sent_acc_on_vm": 0.95,
+      "outval_acc_on_vm": 0.9333,
+      "house_acc_on_vm": 0.9833,
+      "house_perp_val2_acc_on_vm": 0.9833
+    },
+    "mistral7b": {
+      "cos_house_sent": 0.6577,
+      "cos_house_outval": 0.5212,
+      "cos_sent_outval": 0.7754,
+      "house_sqnorm_in_val2_span": 0.4328,
+      "cos_vm_house": 0.6359,
+      "cos_vm_house_perp_val2": 0.5781,
+      "cos_vm_sent": 0.306,
+      "cos_vm_outval": 0.2115,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.927,
+      "outval_acc_on_house": 0.9056,
+      "sent_acc_on_vm": 0.9667,
+      "outval_acc_on_vm": 0.8667,
+      "house_acc_on_vm": 1.0,
+      "house_perp_val2_acc_on_vm": 1.0
+    },
+    "inkling2_mini": {
+      "cos_house_sent": 0.6096,
+      "cos_house_outval": 0.1176,
+      "cos_sent_outval": 0.5808,
+      "house_sqnorm_in_val2_span": 0.4559,
+      "cos_vm_house": 0.5995,
+      "cos_vm_house_perp_val2": 0.4514,
+      "cos_vm_sent": 0.3537,
+      "cos_vm_outval": 0.0627,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.9657,
+      "outval_acc_on_house": 0.6824,
+      "sent_acc_on_vm": 0.9667,
+      "outval_acc_on_vm": 0.7,
+      "house_acc_on_vm": 0.8833,
+      "house_perp_val2_acc_on_vm": 0.8167
+    },
+    "phi4_mini": {
+      "cos_house_sent": 0.6557,
+      "cos_house_outval": 0.4877,
+      "cos_sent_outval": 0.7319,
+      "house_sqnorm_in_val2_span": 0.4301,
+      "cos_vm_house": 0.5612,
+      "cos_vm_house_perp_val2": 0.5053,
+      "cos_vm_sent": 0.2739,
+      "cos_vm_outval": 0.2086,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.9399,
+      "outval_acc_on_house": 0.8798,
+      "sent_acc_on_vm": 0.8833,
+      "outval_acc_on_vm": 0.9,
+      "house_acc_on_vm": 1.0,
+      "house_perp_val2_acc_on_vm": 0.9833
+    },
+    "olmo3_7b": {
+      "cos_house_sent": 0.636,
+      "cos_house_outval": 0.543,
+      "cos_sent_outval": 0.7119,
+      "house_sqnorm_in_val2_span": 0.421,
+      "cos_vm_house": 0.6049,
+      "cos_vm_house_perp_val2": 0.5319,
+      "cos_vm_sent": 0.3036,
+      "cos_vm_outval": 0.255,
+      "sent_acc_on_sg_2fold": 1.0,
+      "outval_acc_on_ov_2fold": 1.0,
+      "sent_acc_on_house": 0.9356,
+      "outval_acc_on_house": 0.9142,
+      "sent_acc_on_vm": 0.95,
+      "outval_acc_on_vm": 0.9333,
+      "house_acc_on_vm": 1.0,
+      "house_perp_val2_acc_on_vm": 1.0
+    }
+  },
+  "c5_geometry": {
+    "cos_house_sent": 0.6806,
+    "cos_house_outval": 0.4698,
+    "cos_sent_outval": 0.7568,
+    "house_sqnorm_in_val2_span": 0.4679,
+    "cos_vm_house": 0.6711,
+    "cos_vm_house_perp_val2": 0.5911,
+    "cos_vm_sent": 0.3481,
+    "cos_vm_outval": 0.2342
+  },
+  "bow_valence_matched": {
+    "all_60_20split_mean": 1.0,
+    "all_60_20split_std": 0.0,
+    "both_neg_30_20split_mean": 1.0,
+    "both_pos_30_20split_mean": 1.0
+  },
+  "transfer_house_valence_controlled": {
+    "qwen35_9b": {
+      "sent_to_sent_zs_cos": 0.9058,
+      "sent_to_sent_zs_p": 0.001,
+      "sent_to_sent_zs_acc": 1.0,
+      "sent_to_house_zs_acc": 0.9442,
+      "outval_to_house_zs_acc": 0.897,
+      "house_raw_20split_mean": 0.9891,
+      "house_perp_sent_src_20split_mean": 0.9815,
+      "house_perp_sent_dbl_20split_mean": 0.9813,
+      "house_perp_val2_src_20split_mean": 0.982,
+      "house_perp_val2_dbl_20split_mean": 0.9809,
+      "house_perp_val2_dbl_20split_std": 0.0064,
+      "house_perp_val2_dbl_2fold_cos": 0.7294,
+      "house_perp_val2_dbl_2fold_p_max": 0.001
+    },
+    "llama31_8b": {
+      "sent_to_sent_zs_cos": 0.9059,
+      "sent_to_sent_zs_p": 0.001,
+      "sent_to_sent_zs_acc": 1.0,
+      "sent_to_house_zs_acc": 0.9485,
+      "outval_to_house_zs_acc": 0.9142,
+      "house_raw_20split_mean": 0.982,
+      "house_perp_sent_src_20split_mean": 0.9631,
+      "house_perp_sent_dbl_20split_mean": 0.9618,
+      "house_perp_val2_src_20split_mean": 0.9629,
+      "house_perp_val2_dbl_20split_mean": 0.9631,
+      "house_perp_val2_dbl_20split_std": 0.0032,
+      "house_perp_val2_dbl_2fold_cos": 0.739,
+      "house_perp_val2_dbl_2fold_p_max": 0.001
+    },
+    "mistral7b": {
+      "sent_to_sent_zs_cos": 0.9095,
+      "sent_to_sent_zs_p": 0.001,
+      "sent_to_sent_zs_acc": 1.0,
+      "sent_to_house_zs_acc": 0.9185,
+      "outval_to_house_zs_acc": 0.897,
+      "house_raw_20split_mean": 0.9781,
+      "house_perp_sent_src_20split_mean": 0.9667,
+      "house_perp_sent_dbl_20split_mean": 0.9633,
+      "house_perp_val2_src_20split_mean": 0.9661,
+      "house_perp_val2_dbl_20split_mean": 0.9631,
+      "house_perp_val2_dbl_20split_std": 0.0044,
+      "house_perp_val2_dbl_2fold_cos": 0.7441,
+      "house_perp_val2_dbl_2fold_p_max": 0.001
+    },
+    "inkling2_mini": {
+      "sent_to_sent_zs_cos": 0.7874,
+      "sent_to_sent_zs_p": 0.001,
+      "sent_to_sent_zs_acc": 1.0,
+      "sent_to_house_zs_acc": 0.9614,
+      "outval_to_house_zs_acc": 0.9056,
+      "house_raw_20split_mean": 0.9742,
+      "house_perp_sent_src_20split_mean": 0.956,
+      "house_perp_sent_dbl_20split_mean": 0.9429,
+      "house_perp_val2_src_20split_mean": 0.9562,
+      "house_perp_val2_dbl_20split_mean": 0.9526,
+      "house_perp_val2_dbl_20split_std": 0.0037,
+      "house_perp_val2_dbl_2fold_cos": 0.4382,
+      "house_perp_val2_dbl_2fold_p_max": 0.001
+    },
+    "phi4_mini": {
+      "sent_to_sent_zs_cos": 0.8583,
+      "sent_to_sent_zs_p": 0.001,
+      "sent_to_sent_zs_acc": 1.0,
+      "sent_to_house_zs_acc": 0.9313,
+      "outval_to_house_zs_acc": 0.8927,
+      "house_raw_20split_mean": 0.9828,
+      "house_perp_sent_src_20split_mean": 0.9571,
+      "house_perp_sent_dbl_20split_mean": 0.9459,
+      "house_perp_val2_src_20split_mean": 0.9575,
+      "house_perp_val2_dbl_20split_mean": 0.9472,
+      "house_perp_val2_dbl_20split_std": 0.0058,
+      "house_perp_val2_dbl_2fold_cos": 0.7134,
+      "house_perp_val2_dbl_2fold_p_max": 0.001
+    },
+    "olmo3_7b": {
+      "sent_to_sent_zs_cos": 0.872,
+      "sent_to_sent_zs_p": 0.001,
+      "sent_to_sent_zs_acc": 1.0,
+      "sent_to_house_zs_acc": 0.9313,
+      "outval_to_house_zs_acc": 0.9013,
+      "house_raw_20split_mean": 0.9764,
+      "house_perp_sent_src_20split_mean": 0.9564,
+      "house_perp_sent_dbl_20split_mean": 0.9536,
+      "house_perp_val2_src_20split_mean": 0.9564,
+      "house_perp_val2_dbl_20split_mean": 0.9547,
+      "house_perp_val2_dbl_20split_std": 0.0077,
+      "house_perp_val2_dbl_2fold_cos": 0.7439,
+      "house_perp_val2_dbl_2fold_p_max": 0.001
+    }
+  },
+  "transfer_valence_matched_60": {
+    "qwen35_9b": {
+      "zs_sent_to_vm_acc": 0.9167,
+      "zs_sent_to_vm_cos": 0.2408,
+      "zs_sent_to_vm_p": 0.005,
+      "zs_outval_to_vm_acc": 0.9333,
+      "zs_house_to_vm_acc": 1.0,
+      "zs_house_to_vm_both_neg_acc": 1.0,
+      "zs_house_to_vm_both_pos_acc": 1.0,
+      "zs_house_to_vm_cos": 0.5369,
+      "zs_house_to_vm_p": 0.001,
+      "zs_house_perp_val2_dbl_to_vm_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_neg_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_pos_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_cos": 0.5232,
+      "zs_house_perp_val2_dbl_to_vm_p": 0.001,
+      "vm_2fold_20split_mean": 1.0,
+      "vm_2fold_20split_std": 0.0,
+      "vm_2fold_both_neg_mean": 1.0,
+      "vm_2fold_both_pos_mean": 1.0,
+      "vm_2fold_lenres_mean": 1.0,
+      "vm_2fold_perp_val2_dbl_mean": 1.0,
+      "vm_2fold_cos": 0.705,
+      "vm_2fold_p_max": 0.001,
+      "vm_wins_over_bow_20splits": 0
+    },
+    "llama31_8b": {
+      "zs_sent_to_vm_acc": 0.9333,
+      "zs_sent_to_vm_cos": 0.2618,
+      "zs_sent_to_vm_p": 0.009,
+      "zs_outval_to_vm_acc": 0.85,
+      "zs_house_to_vm_acc": 1.0,
+      "zs_house_to_vm_both_neg_acc": 1.0,
+      "zs_house_to_vm_both_pos_acc": 1.0,
+      "zs_house_to_vm_cos": 0.5494,
+      "zs_house_to_vm_p": 0.001,
+      "zs_house_perp_val2_dbl_to_vm_acc": 0.9833,
+      "zs_house_perp_val2_dbl_to_vm_both_neg_acc": 0.9667,
+      "zs_house_perp_val2_dbl_to_vm_both_pos_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_cos": 0.5041,
+      "zs_house_perp_val2_dbl_to_vm_p": 0.001,
+      "vm_2fold_20split_mean": 1.0,
+      "vm_2fold_20split_std": 0.0,
+      "vm_2fold_both_neg_mean": 1.0,
+      "vm_2fold_both_pos_mean": 1.0,
+      "vm_2fold_lenres_mean": 1.0,
+      "vm_2fold_perp_val2_dbl_mean": 1.0,
+      "vm_2fold_cos": 0.6502,
+      "vm_2fold_p_max": 0.001,
+      "vm_wins_over_bow_20splits": 0
+    },
+    "mistral7b": {
+      "zs_sent_to_vm_acc": 0.95,
+      "zs_sent_to_vm_cos": 0.2776,
+      "zs_sent_to_vm_p": 0.004,
+      "zs_outval_to_vm_acc": 0.9,
+      "zs_house_to_vm_acc": 1.0,
+      "zs_house_to_vm_both_neg_acc": 1.0,
+      "zs_house_to_vm_both_pos_acc": 1.0,
+      "zs_house_to_vm_cos": 0.5457,
+      "zs_house_to_vm_p": 0.001,
+      "zs_house_perp_val2_dbl_to_vm_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_neg_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_pos_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_cos": 0.4835,
+      "zs_house_perp_val2_dbl_to_vm_p": 0.001,
+      "vm_2fold_20split_mean": 1.0,
+      "vm_2fold_20split_std": 0.0,
+      "vm_2fold_both_neg_mean": 1.0,
+      "vm_2fold_both_pos_mean": 1.0,
+      "vm_2fold_lenres_mean": 1.0,
+      "vm_2fold_perp_val2_dbl_mean": 1.0,
+      "vm_2fold_cos": 0.69,
+      "vm_2fold_p_max": 0.001,
+      "vm_wins_over_bow_20splits": 0
+    },
+    "inkling2_mini": {
+      "zs_sent_to_vm_acc": 0.95,
+      "zs_sent_to_vm_cos": 0.2913,
+      "zs_sent_to_vm_p": 0.001,
+      "zs_outval_to_vm_acc": 0.9333,
+      "zs_house_to_vm_acc": 0.9833,
+      "zs_house_to_vm_both_neg_acc": 1.0,
+      "zs_house_to_vm_both_pos_acc": 0.9667,
+      "zs_house_to_vm_cos": 0.4524,
+      "zs_house_to_vm_p": 0.001,
+      "zs_house_perp_val2_dbl_to_vm_acc": 0.95,
+      "zs_house_perp_val2_dbl_to_vm_both_neg_acc": 0.9667,
+      "zs_house_perp_val2_dbl_to_vm_both_pos_acc": 0.9333,
+      "zs_house_perp_val2_dbl_to_vm_cos": 0.2994,
+      "zs_house_perp_val2_dbl_to_vm_p": 0.003,
+      "vm_2fold_20split_mean": 1.0,
+      "vm_2fold_20split_std": 0.0,
+      "vm_2fold_both_neg_mean": 1.0,
+      "vm_2fold_both_pos_mean": 1.0,
+      "vm_2fold_lenres_mean": 1.0,
+      "vm_2fold_perp_val2_dbl_mean": 1.0,
+      "vm_2fold_cos": 0.5563,
+      "vm_2fold_p_max": 0.001,
+      "vm_wins_over_bow_20splits": 0
+    },
+    "phi4_mini": {
+      "zs_sent_to_vm_acc": 0.95,
+      "zs_sent_to_vm_cos": 0.2587,
+      "zs_sent_to_vm_p": 0.006,
+      "zs_outval_to_vm_acc": 0.9167,
+      "zs_house_to_vm_acc": 1.0,
+      "zs_house_to_vm_both_neg_acc": 1.0,
+      "zs_house_to_vm_both_pos_acc": 1.0,
+      "zs_house_to_vm_cos": 0.5052,
+      "zs_house_to_vm_p": 0.001,
+      "zs_house_perp_val2_dbl_to_vm_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_neg_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_pos_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_cos": 0.4412,
+      "zs_house_perp_val2_dbl_to_vm_p": 0.001,
+      "vm_2fold_20split_mean": 1.0,
+      "vm_2fold_20split_std": 0.0,
+      "vm_2fold_both_neg_mean": 1.0,
+      "vm_2fold_both_pos_mean": 1.0,
+      "vm_2fold_lenres_mean": 1.0,
+      "vm_2fold_perp_val2_dbl_mean": 1.0,
+      "vm_2fold_cos": 0.6636,
+      "vm_2fold_p_max": 0.001,
+      "vm_wins_over_bow_20splits": 0
+    },
+    "olmo3_7b": {
+      "zs_sent_to_vm_acc": 0.95,
+      "zs_sent_to_vm_cos": 0.2778,
+      "zs_sent_to_vm_p": 0.004,
+      "zs_outval_to_vm_acc": 0.9,
+      "zs_house_to_vm_acc": 1.0,
+      "zs_house_to_vm_both_neg_acc": 1.0,
+      "zs_house_to_vm_both_pos_acc": 1.0,
+      "zs_house_to_vm_cos": 0.5269,
+      "zs_house_to_vm_p": 0.001,
+      "zs_house_perp_val2_dbl_to_vm_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_neg_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_both_pos_acc": 1.0,
+      "zs_house_perp_val2_dbl_to_vm_cos": 0.4568,
+      "zs_house_perp_val2_dbl_to_vm_p": 0.001,
+      "vm_2fold_20split_mean": 1.0,
+      "vm_2fold_20split_std": 0.0,
+      "vm_2fold_both_neg_mean": 1.0,
+      "vm_2fold_both_pos_mean": 1.0,
+      "vm_2fold_lenres_mean": 1.0,
+      "vm_2fold_perp_val2_dbl_mean": 1.0,
+      "vm_2fold_cos": 0.6452,
+      "vm_2fold_p_max": 0.001,
+      "vm_wins_over_bow_20splits": 0
+    }
+  },
+  "epistemic_sentiment_control": {
+    "gemma4_e4b": {
+      "neutral_prompt": {
+        "L17": {
+          "cos_corr_house": 0.2227,
+          "cos_corr_sent": 0.1813,
+          "cos_house_sent": 0.572,
+          "neg_corr": {
+            "auroc": 0.9948,
+            "p": 0.002
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.8663,
+            "p": 0.0479
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.8194,
+            "p": 0.0958
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.6997,
+            "p": 0.2236
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.9913,
+            "p": 0.004
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.9878,
+            "p": 0.004
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.9861,
+            "p": 0.004
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": -0.0069,
+            "ci95": [
+              -0.0226,
+              0.0
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": -0.0087,
+            "ci95": [
+              -0.0243,
+              0.0
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": -0.0035,
+            "ci95": [
+              -0.0139,
+              0.0
+            ]
+          }
+        },
+        "L25": {
+          "cos_corr_house": 0.0889,
+          "cos_corr_sent": 0.108,
+          "cos_house_sent": 0.5108,
+          "neg_corr": {
+            "auroc": 0.9566,
+            "p": 0.0279
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.6024,
+            "p": 0.3752
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.974,
+            "p": 0.014
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 1.0,
+            "p": 0.002
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.9427,
+            "p": 0.0379
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.9878,
+            "p": 0.008
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.9896,
+            "p": 0.006
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0312,
+            "ci95": [
+              0.0017,
+              0.0694
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": 0.033,
+            "ci95": [
+              0.0034,
+              0.0764
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": 0.0451,
+            "ci95": [
+              0.0017,
+              0.1025
+            ]
+          }
+        }
+      },
+      "aion_prompt": {
+        "L17": {
+          "cos_corr_house": 0.2227,
+          "cos_corr_sent": 0.1813,
+          "cos_house_sent": 0.572,
+          "neg_corr": {
+            "auroc": 0.8767,
+            "p": 0.0479
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.908,
+            "p": 0.024
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.8611,
+            "p": 0.0599
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.7726,
+            "p": 0.1437
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.9219,
+            "p": 0.022
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.8819,
+            "p": 0.0539
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.8628,
+            "p": 0.0639
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0052,
+            "ci95": [
+              -0.033,
+              0.0451
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": -0.0139,
+            "ci95": [
+              -0.0556,
+              0.0226
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": -0.0399,
+            "ci95": [
+              -0.0833,
+              -0.0017
+            ]
+          }
+        },
+        "L25": {
+          "cos_corr_house": 0.0889,
+          "cos_corr_sent": 0.108,
+          "cos_house_sent": 0.5108,
+          "neg_corr": {
+            "auroc": 0.9531,
+            "p": 0.0359
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.9965,
+            "p": 0.002
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.9635,
+            "p": 0.0319
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.8993,
+            "p": 0.0938
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.9913,
+            "p": 0.004
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.9948,
+            "p": 0.002
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.9878,
+            "p": 0.004
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0417,
+            "ci95": [
+              0.0,
+              0.1024
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": 0.0347,
+            "ci95": [
+              0.0,
+              0.0903
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": 0.0035,
+            "ci95": [
+              -0.0069,
+              0.0208
+            ]
+          }
+        }
+      }
+    },
+    "qwen35_9b": {
+      "neutral_prompt": {
+        "L12": {
+          "cos_corr_house": 0.1572,
+          "cos_corr_sent": 0.1636,
+          "cos_house_sent": 0.543,
+          "neg_corr": {
+            "auroc": 0.901,
+            "p": 0.01
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.4444,
+            "p": 0.5349
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.8646,
+            "p": 0.018
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.8038,
+            "p": 0.0559
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.9688,
+            "p": 0.002
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.9444,
+            "p": 0.004
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.8976,
+            "p": 0.008
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0434,
+            "ci95": [
+              0.0139,
+              0.0764
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": -0.0035,
+            "ci95": [
+              -0.04,
+              0.0312
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": -0.0243,
+            "ci95": [
+              -0.0608,
+              0.0
+            ]
+          }
+        },
+        "L19": {
+          "cos_corr_house": -0.0017,
+          "cos_corr_sent": 0.0782,
+          "cos_house_sent": 0.5134,
+          "neg_corr": {
+            "auroc": 0.5712,
+            "p": 0.4471
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.6111,
+            "p": 0.3892
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.5712,
+            "p": 0.4471
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.3698,
+            "p": 0.6487
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.6024,
+            "p": 0.3693
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.5747,
+            "p": 0.4052
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.5399,
+            "p": 0.4431
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0035,
+            "ci95": [
+              -0.0295,
+              0.0295
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": -0.0312,
+            "ci95": [
+              -0.1024,
+              0.033
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": -0.0278,
+            "ci95": [
+              -0.1267,
+              0.0521
+            ]
+          }
+        }
+      },
+      "aion_prompt": {
+        "L12": {
+          "cos_corr_house": 0.1572,
+          "cos_corr_sent": 0.1636,
+          "cos_house_sent": 0.543,
+          "neg_corr": {
+            "auroc": 0.8733,
+            "p": 0.018
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.7882,
+            "p": 0.0878
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.7639,
+            "p": 0.1058
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.7153,
+            "p": 0.1597
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.8906,
+            "p": 0.01
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.8819,
+            "p": 0.01
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.8403,
+            "p": 0.0459
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0087,
+            "ci95": [
+              -0.0365,
+              0.0764
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": -0.033,
+            "ci95": [
+              -0.0799,
+              0.0312
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": -0.0087,
+            "ci95": [
+              -0.0434,
+              0.0295
+            ]
+          }
+        },
+        "L19": {
+          "cos_corr_house": -0.0017,
+          "cos_corr_sent": 0.0782,
+          "cos_house_sent": 0.5134,
+          "neg_corr": {
+            "auroc": 0.8715,
+            "p": 0.0858
+          },
+          "neg_sent_perp_corr": {
+            "auroc": 0.9774,
+            "p": 0.01
+          },
+          "neg_house_perp_corr": {
+            "auroc": 0.9722,
+            "p": 0.012
+          },
+          "neg_house_perp_corr_and_sent": {
+            "auroc": 0.5191,
+            "p": 0.475
+          },
+          "comb_corr_sent_perp": {
+            "auroc": 0.9688,
+            "p": 0.018
+          },
+          "comb_corr_house_perp": {
+            "auroc": 0.9653,
+            "p": 0.02
+          },
+          "comb_corr_house_perp_both": {
+            "auroc": 0.9236,
+            "p": 0.0439
+          },
+          "lift_comb_hp_minus_corr": {
+            "diff": 0.0938,
+            "ci95": [
+              0.0278,
+              0.1563
+            ]
+          },
+          "lift_comb_hp_both_minus_corr": {
+            "diff": 0.0521,
+            "ci95": [
+              0.0035,
+              0.1128
+            ]
+          },
+          "lift_comb_hp_minus_comb_sent": {
+            "diff": -0.0035,
+            "ci95": [
+              -0.0226,
+              0.0191
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,8 +7,8 @@ Checks:
      committed spoken-audio fixture, 53 verified references across paper.md, references.bib, and main.bbl,
      and arXiv LaTeX hygiene (\\pdfoutput=1 header and zero unescaped ~digits).
   4. Strict ordered, typed cell-level cross-verification of committed JSON artifacts against EVERY numeric
-     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 3, 3b, 3c, 4, 5) AND
-     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:loro, tab:5m, tab:8b, tab:epi).
+     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 3, 3b, 3c, 4, 5) AND
+     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:loro, tab:5m, tab:8b, tab:epi).
   5. Comprehensive zero-GPU scientific unit tests with fully isolated temporary `JPL_CKPT_DIR` (explicitly
      reporting any optional tests skipped when optional packages are not installed).
 """
@@ -352,6 +352,59 @@ def check_headline_numbers_and_paper_sync():
         _assert_row_regex(md_rows, f"Gemma 4 → {rkey}", checks, f"MD Table 2b {mk}", exact_cols=8)
         _assert_row_regex(tex_tele, f"Gemma 4 -> {rkey}", checks, f"TeX tab:teleport {mk}", exact_cols=8, cleaner=lambda s: s)
 
+    # Collinearity & variance-share transparency check in BOTH docs
+    for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
+        assert "+0.9539" in doc, f"Collinearity cos=+0.9539 missing from {label}!"
+        assert "1.72" in doc, f"U_jung C5 variance share 1.72% missing from {label}!"
+
+    # =========================================================================
+    # 2b. Experiment 234 7-Company Valence Decomposition & Epistemic Sentiment Control (Table 2c & tab:val)
+    # =========================================================================
+    val_data = json.load(open(ARCH / "selfshape" / "valence_ctrl234_data.json"))
+    assert len(val_data["sentiment_gen"]) == 60 and len(val_data["outcome_valence"]) == 40 and len(val_data["valence_matched"]) == 60
+    v234 = json.load(open(ARCH / "fluent" / "plato" / "valence_ctrl234.json"))
+    c5g = v234["c5_geometry"]
+    assert abs(c5g["house_sqnorm_in_val2_span"] - 0.4679) < 1e-4
+    assert abs(c5g["cos_house_sent"] - 0.6806) < 1e-4
+    assert abs(v234["bow_valence_matched"]["all_60_20split_mean"] - 1.0) < 1e-6
+
+    tex_val = _parse_tex_table(tex_txt, "tab:val")
+    assert len(tex_val) == 6, f"Expected 6 rows in tab:val, got {len(tex_val)}"
+    thc = v234["transfer_house_valence_controlled"]
+    tvm = v234["transfer_valence_matched_60"]
+    for mk, rkey in t2b_models:
+        rh = thc[mk]
+        rv = tvm[mk]
+        s2h = f"{rh['sent_to_house_zs_acc']*100:.1f}%"
+        hp_acc = f"{rh['house_perp_val2_dbl_20split_mean']*100:.1f}%"
+        hp_cos = f"{rh['house_perp_val2_dbl_2fold_cos']:+.3f}"
+        hp_p = f"{rh['house_perp_val2_dbl_2fold_p_max']:.3f}"
+        s2v_acc = f"{rv['zs_sent_to_vm_acc']*100:.1f}%"
+        s2v_cos = f"{rv['zs_sent_to_vm_cos']:+.3f}"
+        h2v_acc = f"{rv['zs_house_perp_val2_dbl_to_vm_acc']*100:.1f}%"
+        h2v_neg = _fmt_pair_pct(rv["zs_house_perp_val2_dbl_to_vm_both_neg_acc"])
+        h2v_pos = _fmt_pair_pct(rv["zs_house_perp_val2_dbl_to_vm_both_pos_acc"])
+        h2v_cos = f"{rv['zs_house_perp_val2_dbl_to_vm_cos']:+.3f}"
+        h2v_p = f"{rv['zs_house_perp_val2_dbl_to_vm_p']:.3f}"
+        checks = [
+            (1, rf"^{re.escape(s2h)}$"),
+            (2, rf"^{re.escape(hp_acc)}\s*\({re.escape(hp_cos)},\s*{re.escape(hp_p)}\)$"),
+            (3, rf"^{re.escape(s2v_acc)}\s*\({re.escape(s2v_cos)}\)$"),
+            (4, rf"^{re.escape(h2v_acc)}\s*\({re.escape(h2v_neg)}\s*/\s*{re.escape(h2v_pos)},\s*{re.escape(h2v_cos)},\s*{re.escape(h2v_p)}\)$"),
+        ]
+        _assert_row_regex(md_rows, f"Gemma 4 → {rkey}", checks, f"MD Table 2c {mk}", exact_cols=5)
+        _assert_row_regex(tex_val, f"Gemma 4 -> {rkey}", checks, f"TeX tab:val {mk}", exact_cols=5, cleaner=lambda s: s)
+
+    # Verify key epistemic sentiment-control numbers in BOTH paper.md and main.tex
+    epi_sc = v234["epistemic_sentiment_control"]
+    assert abs(epi_sc["gemma4_e4b"]["neutral_prompt"]["L25"]["neg_house_perp_corr_and_sent"]["auroc"] - 1.0) < 1e-6
+    assert abs(epi_sc["gemma4_e4b"]["neutral_prompt"]["L25"]["neg_sent_perp_corr"]["auroc"] - 0.6024) < 5e-4
+    assert abs(epi_sc["qwen35_9b"]["aion_prompt"]["L19"]["neg_house_perp_corr_and_sent"]["auroc"] - 0.5191) < 5e-4
+    assert abs(epi_sc["qwen35_9b"]["aion_prompt"]["L19"]["neg_sent_perp_corr"]["auroc"] - 0.9774) < 5e-4
+    for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
+        for needle in ("46.8", "53.2", "0.602", "0.519", "0.977"):
+            assert needle in doc, f"Experiment 234 headline '{needle}' missing from {label}!"
+
     # =========================================================================
     # 3. 199-Family Strict LORO Retrieval vs. Strict-LQO TF-IDF (Table 3b & tab:loro)
     # =========================================================================
@@ -668,13 +721,14 @@ def check_headline_numbers_and_paper_sync():
             (6, rf"^{n95}$"),
         ], f"TeX tab:epi {tex_key}", exact_cols=7, cleaner=lambda s: s)
 
-    print("[PASS] All 6 pillars, 24 student JSONs, strict audits, ALL paper.md tables (1, pairwise, 2, 2a, 2b, 3, 3b, 3c, 4, 5), AND ALL 6 main.tex tables (tab:gpa..tab:epi) match cleanly.")
+    print("[PASS] All 6 pillars, Experiment 234 valence control, 24 student JSONs, strict audits, ALL paper.md tables (1, pairwise, 2, 2a, 2b, 2c, 3, 3b, 3c, 4, 5), AND ALL 7 main.tex tables (tab:gpa..tab:epi) match cleanly.")
 
 
 def run_unit_tests():
     tests = [
         ("sceptic_ctrl230", [sys.executable, str(ARCH / "aion_8b" / "sceptic_ctrl230.py"), "test"]),
         ("arch_rot229", [sys.executable, str(ARCH / "fluent" / "arch_rot229.py"), "test"]),
+        ("valence_ctrl234", [sys.executable, str(ARCH / "fluent" / "valence_ctrl234.py"), "test"]),
         ("audit233_epistemic_overlap", [sys.executable, "-c", "from aion_8b import audit233_epistemic as a; a._verify_zero_entity_overlap()"]),
     ]
     skipped = []
