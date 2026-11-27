@@ -1,0 +1,964 @@
+{
+  "pairs": [
+    {
+      "id": "epi_001",
+      "domain": "travel",
+      "known_context": "Tessa checked into Pinecrest Inn after the coastal ferry and left her duffel beside the front stairwell. Her room key bore code M418 while the front desk remained staffed until ten.",
+      "unknown_context": "Tessa checked into Pinecrest Inn after the coastal ferry and left her duffel beside the front stairwell. Her luggage strap bore tag R729 while the front desk remained staffed until ten.",
+      "question": "What code was on Tessa's room key at Pinecrest Inn?",
+      "answer": "M418"
+    },
+    {
+      "id": "epi_002",
+      "domain": "travel",
+      "known_context": "Gavin booked a lakeside cabin at Cedarbrook Lodge where his shuttle strap bore tag T604 for the weekend stay. He reached the wooden pier before sunset and unpacked his boots inside.",
+      "unknown_context": "Gavin booked a lakeside cabin at Cedarbrook Lodge where his room key bore code B215 for the weekend stay. He reached the wooden pier before sunset and unpacked his boots inside.",
+      "question": "What tag was on Gavin's shuttle strap at Cedarbrook Lodge?",
+      "answer": "T604"
+    },
+    {
+      "id": "epi_003",
+      "domain": "travel",
+      "known_context": "Priya reserved a corner suite at Silverpine Motel for her autumn seminar near the quiet harbor. She signed the guest ledger early and paid a $45 parking deposit at the counter.",
+      "unknown_context": "Priya reserved a corner suite at Silverpine Motel for her autumn seminar near the quiet harbor. She signed the guest ledger early and paid a $38 resort surcharge at the counter.",
+      "question": "How much was Priya's parking deposit at Silverpine Motel?",
+      "answer": "$45"
+    },
+    {
+      "id": "epi_004",
+      "domain": "travel",
+      "known_context": "Malik packed his rain jacket at Briarwood Hostel before walking down toward the stone dock. The morning ferry departed at 7:40 a.m. just as the mist lifted over the cove.",
+      "unknown_context": "Malik packed his rain jacket at Briarwood Hostel before walking down toward the stone dock. The breakfast room opened at 6:15 a.m. just as the mist lifted over the cove.",
+      "question": "What time did the morning ferry depart near Briarwood Hostel?",
+      "answer": "7:40 a.m."
+    },
+    {
+      "id": "epi_005",
+      "domain": "travel",
+      "known_context": "Hannah reached Willowbay Station where her check-in wait lasted 25 minutes before the evening express boarded. She sat beneath the brass clock and finished writing two postcards home.",
+      "unknown_context": "Hannah reached Willowbay Station where her shuttle ride lasted 40 minutes before the evening express boarded. She sat beneath the brass clock and finished writing two postcards home.",
+      "question": "How long did Hannah's check-in wait last at Willowbay Station?",
+      "answer": "25 minutes"
+    },
+    {
+      "id": "epi_006",
+      "domain": "travel",
+      "known_context": "Devon stored his folding bicycle at Driftwood Guesthouse while visiting old friends along the ridge. After greeting the host, he received a key for cabin 314 on the upper timber walkway.",
+      "unknown_context": "Devon stored his folding bicycle at Driftwood Guesthouse while visiting old friends along the ridge. After greeting the host, he received a key for locker 108 on the lower timber walkway.",
+      "question": "Which cabin number did Devon receive at Driftwood Guesthouse?",
+      "answer": "314"
+    },
+    {
+      "id": "epi_007",
+      "domain": "travel",
+      "known_context": "Nadia strolled through the sunlit atrium at Suncrest Hotel during her brief overnight stop in town. The lobby floor used slate tile along the curved south gallery.",
+      "unknown_context": "Nadia strolled through the sunlit atrium at Suncrest Hotel during her brief overnight stop in town. The balcony rail used cedar wood along the curved south gallery.",
+      "question": "What material was used for the lobby floor at Suncrest Hotel?",
+      "answer": "slate tile"
+    },
+    {
+      "id": "epi_008",
+      "domain": "travel",
+      "known_context": "Owen unpacked his camera bag at Fernhill Cottage and spotted oat biscuits placed on the tray. He unlatched the painted shutters to watch the creek wind through the meadow.",
+      "unknown_context": "Owen unpacked his camera bag at Fernhill Cottage and spotted wool blankets folded on the sofa. He unlatched the painted shutters to watch the creek wind through the meadow.",
+      "question": "What snack did Owen spot on the tray at Fernhill Cottage?",
+      "answer": "oat biscuits"
+    },
+    {
+      "id": "epi_009",
+      "domain": "errands",
+      "known_context": "Claire dropped off her winter overcoat at Mapleview Cleaners on Wednesday morning before heading downtown. Her claim ticket listed code P583 while the clerk hung the garment near the press.",
+      "unknown_context": "Claire dropped off her winter overcoat at Mapleview Cleaners on Wednesday morning before heading downtown. Her loyalty card showed stamp L219 while the clerk hung the garment near the press.",
+      "question": "What code was listed on Claire's claim ticket at Mapleview Cleaners?",
+      "answer": "P583"
+    },
+    {
+      "id": "epi_010",
+      "domain": "errands",
+      "known_context": "Marcus brought his grey wool trousers to Linden Tailors on Elm Street after lunch. The clerk wrote a $24 hem fee on the receipt and pinned a slip to the sleeve.",
+      "unknown_context": "Marcus brought his grey wool trousers to Linden Tailors on Elm Street after lunch. The clerk wrote a $16 brush price on the receipt and pinned a slip to the sleeve.",
+      "question": "How much was the hem fee written on Marcus's receipt at Linden Tailors?",
+      "answer": "$24"
+    },
+    {
+      "id": "epi_011",
+      "domain": "errands",
+      "known_context": "Sonia ordered potting soil from Sunridge Nursery and paid a $15 delivery surcharge at the porch. The driver stacked three burlap sacks beside the garden gate before leaving.",
+      "unknown_context": "Sonia ordered potting soil from Sunridge Nursery and paid a $30 pallet deposit at the porch. The driver stacked three burlap sacks beside the garden gate before leaving.",
+      "question": "How much was Sonia's delivery surcharge from Sunridge Nursery?",
+      "answer": "$15"
+    },
+    {
+      "id": "epi_012",
+      "domain": "errands",
+      "known_context": "Victor phoned Brookside Apothecary about his allergy drops before leaving the neighborhood office. The pickup slot began at 3:15 p.m. while the side street parking stayed open.",
+      "unknown_context": "Victor phoned Brookside Apothecary about his allergy drops before leaving the neighborhood office. The front lobby closed at 5:30 p.m. while the side street parking stayed open.",
+      "question": "What time did Victor's pickup slot begin at Brookside Apothecary?",
+      "answer": "3:15 p.m."
+    },
+    {
+      "id": "epi_013",
+      "domain": "errands",
+      "known_context": "Elena stopped by Oaklane Photo to pick up framed portraits from her sister's recital. She browsed nearby shops while the print run took 35 minutes of machine time.",
+      "unknown_context": "Elena stopped by Oaklane Photo to pick up framed portraits from her sister's recital. She browsed nearby shops while the street meter allowed 60 minutes of curb parking.",
+      "question": "How long did the print run take at Oaklane Photo?",
+      "answer": "35 minutes"
+    },
+    {
+      "id": "epi_014",
+      "domain": "errands",
+      "known_context": "Trevor visited Clearwater Parcel Hub where his mail slip pointed to locker 74 inside the vestibule. He brought a folding cart so the heavy parcel would fit in his trunk.",
+      "unknown_context": "Trevor visited Clearwater Parcel Hub where his desk slip pointed to window 12 inside the vestibule. He brought a folding cart so the heavy parcel would fit in his trunk.",
+      "question": "Which locker number did Trevor's mail slip point to at Clearwater Parcel Hub?",
+      "answer": "74"
+    },
+    {
+      "id": "epi_015",
+      "domain": "errands",
+      "known_context": "Miriam carried an antique wooden frame to Cresthill Glass to replace a cracked corner pane. She picked brass clasps for the rear board and settled the bill in cash.",
+      "unknown_context": "Miriam carried an antique wooden frame to Cresthill Glass to replace a cracked corner pane. She picked linen matting for the front border and settled the bill in cash.",
+      "question": "What hardware did Miriam pick for the rear board at Cresthill Glass?",
+      "answer": "brass clasps"
+    },
+    {
+      "id": "epi_016",
+      "domain": "errands",
+      "known_context": "Darius made a quick evening run to Meadowfield Market after watering the porch ferns. Before checking out with a fresh paper, he grabbed smoked almonds from the bulk aisle.",
+      "unknown_context": "Darius made a quick evening run to Meadowfield Market after watering the porch ferns. Before checking out with a fresh paper, he grabbed yellow tulips from the corner stand.",
+      "question": "What snack did Darius grab from the bulk aisle at Meadowfield Market?",
+      "answer": "smoked almonds"
+    },
+    {
+      "id": "epi_017",
+      "domain": "invoices",
+      "known_context": "Hector drafted a landscaping invoice from Stonewall Grounds where the billing form showed stamp F812 for Alderwood Clinic. The statement covered hedge trimming along the south walkway.",
+      "unknown_context": "Hector drafted a landscaping invoice from Stonewall Grounds where the ledger sheet listed code K309 for Alderwood Clinic. The statement covered hedge trimming along the south walkway.",
+      "question": "What stamp appeared on the Stonewall Grounds billing form for Alderwood Clinic?",
+      "answer": "F812"
+    },
+    {
+      "id": "epi_018",
+      "domain": "invoices",
+      "known_context": "Renee approved a quarterly stationery statement from Eastgate Print for Harborview Dental on Thursday. Across the signed cover page, the purchase slip carried mark N460 near the margin.",
+      "unknown_context": "Renee approved a quarterly stationery statement from Eastgate Print for Harborview Dental on Thursday. Across the signed cover page, the vendor roster kept pass D917 near the margin.",
+      "question": "What mark did the Eastgate Print purchase slip carry?",
+      "answer": "N460"
+    },
+    {
+      "id": "epi_019",
+      "domain": "invoices",
+      "known_context": "Caleb reviewed the basement plumbing invoice from Redbrook Mechanical after the winter pipe check. The labor subtotal reached $340 ahead of the fittings list on page two.",
+      "unknown_context": "Caleb reviewed the basement plumbing invoice from Redbrook Mechanical after the winter pipe check. The prior balance reached $115 ahead of the fittings list on page two.",
+      "question": "What was the labor subtotal on the Redbrook Mechanical invoice?",
+      "answer": "$340"
+    },
+    {
+      "id": "epi_020",
+      "domain": "invoices",
+      "known_context": "Farah entered a supply invoice from Copperkettle Foods showing a $65 rush balance on the bottom line. She clipped the stamped copy inside her bakery folder for Friday.",
+      "unknown_context": "Farah entered a supply invoice from Copperkettle Foods showing a $90 freight subtotal on the bottom line. She clipped the stamped copy inside her bakery folder for Friday.",
+      "question": "How much was the rush balance on the Copperkettle Foods invoice?",
+      "answer": "$65"
+    },
+    {
+      "id": "epi_021",
+      "domain": "invoices",
+      "known_context": "Julian checked the autumn office supply invoice from Birchleaf Paper for the downtown branch. The bill granted 30 payment days and arrived inside a heavy manila envelope.",
+      "unknown_context": "Julian checked the autumn office supply invoice from Birchleaf Paper for the downtown branch. The bill spanned 14 printed pages and arrived inside a heavy manila envelope.",
+      "question": "How many payment days were granted on the Birchleaf Paper invoice?",
+      "answer": "30"
+    },
+    {
+      "id": "epi_022",
+      "domain": "invoices",
+      "known_context": "Keiko audited a roof maintenance invoice from Ridgecrest Builders for the corner bookshop. On the printed work sheet, the crew logged 6 hours of flashing work.",
+      "unknown_context": "Keiko audited a roof maintenance invoice from Ridgecrest Builders for the corner bookshop. On the printed work sheet, the sealer needed 8 hours of curing time.",
+      "question": "How many hours of flashing work did Ridgecrest Builders log?",
+      "answer": "6 hours"
+    },
+    {
+      "id": "epi_023",
+      "domain": "invoices",
+      "known_context": "Simon verified the upholstery invoice from Velvetloom Studio specifying sage canvas for the four waiting benches. He filed the signed receipt inside the clinic cabinet before dusk.",
+      "unknown_context": "Simon verified the upholstery invoice from Velvetloom Studio specifying maple slats for the four bench frames. He filed the signed receipt inside the clinic cabinet before dusk.",
+      "question": "What fabric did the Velvetloom Studio invoice specify for the benches?",
+      "answer": "sage canvas"
+    },
+    {
+      "id": "epi_024",
+      "domain": "invoices",
+      "known_context": "Nora signed the winter service statement from Harborgrid Plumbing for her corner floral shop. On the main line item, the crew billed boiler flushing ahead of the holiday week.",
+      "unknown_context": "Nora signed the winter service statement from Harborgrid Plumbing for her corner floral shop. On the bonus line item, the crew added gauge testing ahead of the holiday week.",
+      "question": "What main service did Harborgrid Plumbing bill for Nora's shop?",
+      "answer": "boiler flushing"
+    },
+    {
+      "id": "epi_025",
+      "domain": "library",
+      "known_context": "Amina placed an interlibrary hold at Clearwater Branch for a vintage coastal atlas. Her borrowing pass held tag C904 beside the oak reference counter.",
+      "unknown_context": "Amina placed an interlibrary hold at Clearwater Branch for a vintage coastal atlas. Her archive slip carried mark V318 beside the oak reference counter.",
+      "question": "What tag did Amina's borrowing pass hold at Clearwater Branch?",
+      "answer": "C904"
+    },
+    {
+      "id": "epi_026",
+      "domain": "library",
+      "known_context": "Graham hosted the Tuesday evening reading circle inside the quiet annex of Oakwood Library. The circle drew 14 club members before the group opened the story anthology.",
+      "unknown_context": "Graham hosted the Tuesday evening reading circle inside the quiet annex of Oakwood Library. The floor had 28 folding chairs before the group opened the story anthology.",
+      "question": "How many club members attended Graham's reading circle at Oakwood Library?",
+      "answer": "14"
+    },
+    {
+      "id": "epi_027",
+      "domain": "library",
+      "known_context": "Lydia cataloged regional poetry chapbooks at Fernwood Reading Room where the index pointed to shelf 16. She placed pencil labels along the map drawers before locking up.",
+      "unknown_context": "Lydia cataloged regional poetry chapbooks at Fernwood Reading Room where the donor sticker marked crate 29. She placed pencil labels along the map drawers before locking up.",
+      "question": "Which shelf number did the index point to at Fernwood Reading Room?",
+      "answer": "16"
+    },
+    {
+      "id": "epi_028",
+      "domain": "library",
+      "known_context": "Arthur settled his account at Millstream Library before checking out two pruning manuals. The overdue fine totaled $11 at the painted circulation desk.",
+      "unknown_context": "Arthur settled his account at Millstream Library before checking out two pruning manuals. The printing credit totaled $19 at the painted circulation desk.",
+      "question": "How much was Arthur's overdue fine at Millstream Library?",
+      "answer": "$11"
+    },
+    {
+      "id": "epi_029",
+      "domain": "library",
+      "known_context": "Beatrice reserved a sunlit study room at Meadowbrook Branch to sort her reading group notes. Following the afternoon story hour, the media desk closed at 2:30 p.m. near the stairs.",
+      "unknown_context": "Beatrice reserved a sunlit study room at Meadowbrook Branch to sort her reading group notes. Following the afternoon story hour, the puppet craft began at 4:45 p.m. near the stairs.",
+      "question": "What time did the media desk close at Meadowbrook Branch?",
+      "answer": "2:30 p.m."
+    },
+    {
+      "id": "epi_030",
+      "domain": "library",
+      "known_context": "Kenneth repaired worn dust jackets using cotton tape at Crestview Athenaeum ahead of the autumn sale. He sorted the paperbacks into neat piles along the front aisle.",
+      "unknown_context": "Kenneth repaired worn dust jackets near birch trays at Crestview Athenaeum ahead of the autumn sale. He sorted the paperbacks into neat piles along the front aisle.",
+      "question": "What supply did Kenneth use to repair dust jackets at Crestview Athenaeum?",
+      "answer": "cotton tape"
+    },
+    {
+      "id": "epi_031",
+      "domain": "library",
+      "known_context": "Selena led the monthly nonfiction circle at Harborline Library during the rainy spring season. Their autumn selection explored alpine botany through archival ink plates.",
+      "unknown_context": "Selena led the monthly nonfiction circle at Harborline Library during the rainy spring season. Their hallway exhibit featured coastal lighthouses through archival ink plates.",
+      "question": "What subject did Selena's nonfiction circle explore for their autumn selection?",
+      "answer": "alpine botany"
+    },
+    {
+      "id": "epi_032",
+      "domain": "library",
+      "known_context": "Walter arranged the weekend book swap hosted by Briarfield Bookshop across from the fountain. Under the canvas awning, the front pine bench displayed mystery novels all morning.",
+      "unknown_context": "Walter arranged the weekend book swap hosted by Briarfield Bookshop across from the fountain. Under the canvas awning, the side wire rack displayed travel essays all morning.",
+      "question": "What genre of books was displayed on the front pine bench at Briarfield Bookshop?",
+      "answer": "mystery novels"
+    },
+    {
+      "id": "epi_033",
+      "domain": "community",
+      "known_context": "Rosa coordinated booth check-in at Oakridge Civic Hall where her volunteer badge displayed code G715 on the lanyard. She walked the main floor to greet the bakers.",
+      "unknown_context": "Rosa coordinated booth check-in at Oakridge Civic Hall where her supply closet required pin W402 on the keypad. She walked the main floor to greet the bakers.",
+      "question": "What code was displayed on Rosa's volunteer badge at Oakridge Civic Hall?",
+      "answer": "G715"
+    },
+    {
+      "id": "epi_034",
+      "domain": "community",
+      "known_context": "Martin arranged folding tables for the neighborhood seed swap at Cloverfield Park. Exactly 62 local residents signed the clipboard near the cedar gazebo.",
+      "unknown_context": "Martin arranged folding tables for the neighborhood seed swap at Cloverfield Park. Exactly 35 painted seats lined the walkway near the cedar gazebo.",
+      "question": "How many local residents signed the clipboard at Cloverfield Park?",
+      "answer": "62"
+    },
+    {
+      "id": "epi_035",
+      "domain": "community",
+      "known_context": "Ingrid staffed the wooden gate for the evening lantern walk at Millpond Commons. Beside the trail maps, each adult entry fare cost $12 in exact change.",
+      "unknown_context": "Ingrid staffed the wooden gate for the evening lantern walk at Millpond Commons. Beside the trail maps, each hot cider mug cost $8 in exact change.",
+      "question": "How much did an adult entry fare cost at Millpond Commons?",
+      "answer": "$12"
+    },
+    {
+      "id": "epi_036",
+      "domain": "community",
+      "known_context": "Desmond tested outdoor speakers at Riverbend Plaza where the horn quartet started at 6:45 p.m. beneath string lights. Neighbors unfolded woven chairs across the grassy slope.",
+      "unknown_context": "Desmond tested outdoor speakers at Riverbend Plaza where the pretzel cart arrived at 5:15 p.m. beneath string lights. Neighbors unfolded woven chairs across the grassy slope.",
+      "question": "What time did the horn quartet start at Riverbend Plaza?",
+      "answer": "6:45 p.m."
+    },
+    {
+      "id": "epi_037",
+      "domain": "community",
+      "known_context": "Camille organized paint pails for the neighborhood mural morning at Sunbrook Center. The crew coated the border wall in ochre yellow before the afternoon picnic.",
+      "unknown_context": "Camille organized paint pails for the neighborhood mural morning at Sunbrook Center. The crew coated the entry gate in indigo blue before the afternoon picnic.",
+      "question": "What color did the crew coat the border wall at Sunbrook Center?",
+      "answer": "ochre yellow"
+    },
+    {
+      "id": "epi_038",
+      "domain": "community",
+      "known_context": "Phillip posted flyers for the spring open house at Cedarhill Grange near the firehouse. Inside the timber barn, the afternoon program hosted a pottery demo for families.",
+      "unknown_context": "Phillip posted flyers for the spring open house at Cedarhill Grange near the firehouse. Inside the timber barn, the morning table hosted a quilt raffle for families.",
+      "question": "What event did the afternoon program host at Cedarhill Grange?",
+      "answer": "pottery demo"
+    },
+    {
+      "id": "epi_039",
+      "domain": "community",
+      "known_context": "Annette packed baking trays for Willowcrest School where her corner table sold plum galettes beside honey jars. Rain cleared early enough for neighbors to linger outside.",
+      "unknown_context": "Annette packed baking trays for Willowcrest School where her canopy banner wore green ribbons beside honey jars. Rain cleared early enough for neighbors to linger outside.",
+      "question": "What pastry did Annette's corner table sell at Willowcrest School?",
+      "answer": "plum galettes"
+    },
+    {
+      "id": "epi_040",
+      "domain": "workshop",
+      "known_context": "Tomas logged a bandsaw check at Copperfield Workshop before rolling up the bay doors. The tool cabinet required pin J284 beside the yellow wall chart.",
+      "unknown_context": "Tomas logged a bandsaw check at Copperfield Workshop before rolling up the bay doors. The safety badge displayed code Q591 beside the yellow wall chart.",
+      "question": "What pin did the tool cabinet require at Copperfield Workshop?",
+      "answer": "J284"
+    },
+    {
+      "id": "epi_041",
+      "domain": "workshop",
+      "known_context": "Helen adjusted her torque wrench on bench four at Redstone Cycles after fitting a chain. During final assembly, the hub bolt needed 32 pounds of tightening force.",
+      "unknown_context": "Helen adjusted her torque wrench on bench four at Redstone Cycles after fitting a chain. During final assembly, the rear tire held 65 pounds of air pressure.",
+      "question": "How many pounds of tightening force did the hub bolt need at Redstone Cycles?",
+      "answer": "32 pounds"
+    },
+    {
+      "id": "epi_042",
+      "domain": "workshop",
+      "known_context": "Gordon rebuilt a mower carburetor at Birchwood Repair with a $55 rebuild price chalked on the board. He brushed the brass needle clean and checked the fuel hose.",
+      "unknown_context": "Gordon rebuilt a mower carburetor at Birchwood Repair with a $14 filter fee chalked on the board. He brushed the brass needle clean and checked the fuel hose.",
+      "question": "What was the rebuild price for the carburetor at Birchwood Repair?",
+      "answer": "$55"
+    },
+    {
+      "id": "epi_043",
+      "domain": "workshop",
+      "known_context": "Daphne glued a split dining chair leg at Timberline Craft before latching the studio shutters. The wood glue cured for 18 hours while the bar clamps stayed tight.",
+      "unknown_context": "Daphne glued a split dining chair leg at Timberline Craft before latching the studio shutters. The exhaust fan ran for 12 hours while the bar clamps stayed tight.",
+      "question": "How long did the wood glue cure on Daphne's chair leg at Timberline Craft?",
+      "answer": "18 hours"
+    },
+    {
+      "id": "epi_044",
+      "domain": "workshop",
+      "known_context": "Raymond restored an estate brass lantern at Harborview Metalworks over the quiet weekend. Before testing the cotton wick, he fitted cork washers under the fuel cap.",
+      "unknown_context": "Raymond restored an estate brass lantern at Harborview Metalworks over the quiet weekend. Before testing the cotton wick, he glued grey felt under the metal base.",
+      "question": "What did Raymond fit under the lantern's fuel cap at Harborview Metalworks?",
+      "answer": "cork washers"
+    },
+    {
+      "id": "epi_045",
+      "domain": "workshop",
+      "known_context": "Teresa sanded a cedar bench at Oakvale Joinery and brushed tung oil across the weathered slats. She swept fine shavings away before stacking the sanding blocks.",
+      "unknown_context": "Teresa sanded a cedar bench at Oakvale Joinery and rubbed beeswax paste across the tool handles. She swept fine shavings away before stacking the sanding blocks.",
+      "question": "What finish did Teresa brush across the cedar bench slats at Oakvale Joinery?",
+      "answer": "tung oil"
+    },
+    {
+      "id": "epi_046",
+      "domain": "workshop",
+      "known_context": "Wesley tuned an upright wooden clock at the corner bench of Stonebridge Horology. A bent mainspring halted the chimes halfway through the afternoon check.",
+      "unknown_context": "Wesley tuned an upright wooden clock at the corner bench of Stonebridge Horology. A loose bezel rattled the dial halfway through the afternoon check.",
+      "question": "What faulty part halted the clock's chimes at Stonebridge Horology?",
+      "answer": "bent mainspring"
+    },
+    {
+      "id": "epi_047",
+      "domain": "shipping",
+      "known_context": "Kendra inspected an outbound ceramic load on dock three at Harborline Freight. Before the ramp door lowered, the customs seal bore label H639 inside the dispatch log.",
+      "unknown_context": "Kendra inspected an outbound ceramic load on dock three at Harborline Freight. Before the ramp door lowered, the cargo dock listed bay S147 inside the dispatch log.",
+      "question": "What label was on the customs seal at Harborline Freight?",
+      "answer": "H639"
+    },
+    {
+      "id": "epi_048",
+      "domain": "shipping",
+      "known_context": "Bram logged kiln-dried oak planks at Meadowbend Depot inside crate 42 ahead of the coastal truck. He checked the tarps twice while wind swept across the loading yard.",
+      "unknown_context": "Bram logged kiln-dried oak planks at Meadowbend Depot along shelf 19 ahead of the coastal truck. He checked the tarps twice while wind swept across the loading yard.",
+      "question": "Which crate number held the kiln-dried oak planks at Meadowbend Depot?",
+      "answer": "42"
+    },
+    {
+      "id": "epi_049",
+      "domain": "shipping",
+      "known_context": "Sylvia checked incoming spice freight at Portside Cargo before releasing the evening van. The tally counted 48 burlap sacks inside the dry brick annex.",
+      "unknown_context": "Sylvia checked incoming spice freight at Portside Cargo before releasing the evening van. The shed stored 16 rolling carts inside the dry brick annex.",
+      "question": "How many burlap sacks were counted on the Portside Cargo tally?",
+      "answer": "48"
+    },
+    {
+      "id": "epi_050",
+      "domain": "shipping",
+      "known_context": "Oscar secured orchard produce pallets arriving at Northgate Logistics from the valley road. Before rolling the stack inside, crew members wrapped waxed twine around the pear bundles.",
+      "unknown_context": "Oscar secured orchard produce pallets arriving at Northgate Logistics from the valley road. Before rolling the stack inside, crew members clamped nylon straps around the pine skids.",
+      "question": "What did the crew wrap around the pear bundles at Northgate Logistics?",
+      "answer": "waxed twine"
+    },
+    {
+      "id": "epi_051",
+      "domain": "shipping",
+      "known_context": "Mabel checked coastal transit charges at Sunvalley Express where the transit coverage cost $135 for the glass jars. She stamped the yellow dispatch slip and set it aside.",
+      "unknown_context": "Mabel checked coastal transit charges at Sunvalley Express where the bridge toll cost $42 for the delivery van. She stamped the yellow dispatch slip and set it aside.",
+      "question": "How much did transit coverage cost for the glass jars at Sunvalley Express?",
+      "answer": "$135"
+    },
+    {
+      "id": "epi_052",
+      "domain": "shipping",
+      "known_context": "Isaac verified the morning schedule at Redrock Dispatch while checking the rain radar. The loading gate opened at 8:20 a.m. before the morning fog cleared.",
+      "unknown_context": "Isaac verified the morning schedule at Redrock Dispatch while checking the rain radar. The courier van departed at 6:50 a.m. before the morning fog cleared.",
+      "question": "What time did the loading gate open at Redrock Dispatch?",
+      "answer": "8:20 a.m."
+    },
+    {
+      "id": "epi_053",
+      "domain": "shipping",
+      "known_context": "Claudia sealed export cartons of stoneware mugs at Bayview Forwarding ahead of the harbor barge. For the harbor crossing, packers stuffed kraft paper around every stoneware mug handle.",
+      "unknown_context": "Claudia sealed export cartons of stoneware mugs at Bayview Forwarding ahead of the harbor barge. For the harbor crossing, packers placed foam corners across every outer carton seam.",
+      "question": "What cushioning did packers stuff around the stoneware mug handles at Bayview Forwarding?",
+      "answer": "kraft paper"
+    },
+    {
+      "id": "epi_054",
+      "domain": "catering",
+      "known_context": "Juliette arranged a private banquet at Saffron Kitchen where the valet dock listed bay E390 for the catering van. She walked through the alcove to check the candles.",
+      "unknown_context": "Juliette arranged a private banquet at Saffron Kitchen where the pastry crate bore label U648 for the kitchen crew. She walked through the alcove to check the candles.",
+      "question": "Which bay was listed for the valet dock at Saffron Kitchen?",
+      "answer": "E390"
+    },
+    {
+      "id": "epi_055",
+      "domain": "catering",
+      "known_context": "Arnold organized dining setups for a retirement lunch hosted by Willow Creek Bistro. For the main hall, the checklist called for 54 linen napkins pressed before noon.",
+      "unknown_context": "Arnold organized dining setups for a retirement lunch hosted by Willow Creek Bistro. For the main hall, the checklist called for 18 glass pitchers chilled before noon.",
+      "question": "How many linen napkins did the Willow Creek Bistro checklist call for?",
+      "answer": "54"
+    },
+    {
+      "id": "epi_056",
+      "domain": "catering",
+      "known_context": "Phoebe finalized the gallery reception contract with Maplehearth Catering on Tuesday evening. On the revised ledger, the staff gratuity was set at $210 in total.",
+      "unknown_context": "Phoebe finalized the gallery reception contract with Maplehearth Catering on Tuesday evening. On the revised ledger, the linen rental was set at $175 in total.",
+      "question": "How much was the staff gratuity on the Maplehearth Catering contract?",
+      "answer": "$210"
+    },
+    {
+      "id": "epi_057",
+      "domain": "catering",
+      "known_context": "Cedric booked a garden brunch at Lantern Terrace Cafe where appetizers were plated at 11:15 a.m. beneath olive trees. Guests gathered near the stone fountain after parking.",
+      "unknown_context": "Cedric booked a garden brunch at Lantern Terrace Cafe where garlands were delivered at 9:30 a.m. beneath olive trees. Guests gathered near the stone fountain after parking.",
+      "question": "What time were appetizers plated for Cedric's brunch at Lantern Terrace Cafe?",
+      "answer": "11:15 a.m."
+    },
+    {
+      "id": "epi_058",
+      "domain": "catering",
+      "known_context": "Valerie reviewed the courtyard tent diagram prepared by Cloverleaf Events for the anniversary supper. Along the brick patio, the long tables wore ivory velvet near the garden archway.",
+      "unknown_context": "Valerie reviewed the courtyard tent diagram prepared by Cloverleaf Events for the anniversary supper. Along the brick patio, the entry lamps used woven wicker near the garden archway.",
+      "question": "What fabric covered the long tables prepared by Cloverleaf Events?",
+      "answer": "ivory velvet"
+    },
+    {
+      "id": "epi_059",
+      "domain": "catering",
+      "known_context": "Tobias sampled dinner dishes at Hearthstone Tavern ahead of his parents' anniversary gathering. For the opening course, the chef prepared roasted fennel soup ahead of the toast.",
+      "unknown_context": "Tobias sampled dinner dishes at Hearthstone Tavern ahead of his parents' anniversary gathering. For the closing course, the baker prepared glazed pear tarts ahead of the toast.",
+      "question": "What soup did the Hearthstone Tavern chef prepare for the opening course?",
+      "answer": "roasted fennel soup"
+    },
+    {
+      "id": "epi_060",
+      "domain": "catering",
+      "known_context": "Marisol ordered morning refreshments from Amberfield Roasters where the pastry cart offered cardamom scones beside dark coffee. Neighbors chatted on the porch before the forum began.",
+      "unknown_context": "Marisol ordered morning refreshments from Amberfield Roasters where the drink station offered ginger tea beside dark coffee. Neighbors chatted on the porch before the forum began.",
+      "question": "What pastry did the cart from Amberfield Roasters offer?",
+      "answer": "cardamom scones"
+    },
+    {
+      "id": "epi_061",
+      "domain": "field_station",
+      "known_context": "Nora Alverez inspected the bog boardwalk at Fernhollow Field Station after the dawn mist cleared. The peat thermometer read 9 degrees while the rain collector sat half full.",
+      "unknown_context": "Nora Alverez inspected the bog boardwalk at Fernhollow Field Station after the dawn mist cleared. The wind anemometer read 16 knots while the rain collector sat half full.",
+      "question": "What reading did the peat thermometer show at Fernhollow Field Station?",
+      "answer": "9 degrees"
+    },
+    {
+      "id": "epi_062",
+      "domain": "field_station",
+      "known_context": "Owen Kestner logged the ridge plot at Hawthorn Botanical Post before packing the sample trays. The snowpack marker showed 34 centimeters along the cedar transect.",
+      "unknown_context": "Owen Kestner logged the ridge plot at Hawthorn Botanical Post before packing the sample trays. The barometric dial showed 988 hectopascals along the cedar transect.",
+      "question": "What snowpack depth did the marker show at Hawthorn Botanical Post?",
+      "answer": "34 centimeters"
+    },
+    {
+      "id": "epi_063",
+      "domain": "field_station",
+      "known_context": "Priya Sundaram tagged the tidal marsh plots at Kelpwick Coastal Reserve during the afternoon low water. The creek salinity stood at 28 parts per thousand near the sluice.",
+      "unknown_context": "Priya Sundaram tagged the tidal marsh plots at Kelpwick Coastal Reserve during the afternoon low water. The creek alkalinity stood at 84 milligrams per liter near the sluice.",
+      "question": "What creek salinity was recorded at Kelpwick Coastal Reserve?",
+      "answer": "28 parts per thousand"
+    },
+    {
+      "id": "epi_064",
+      "domain": "field_station",
+      "known_context": "Tomas Lindholm surveyed the lichen boulders at Redbark Alpine Camp ahead of the autumn frost. The bedrock fissure extended 29 feet below the granite ledge.",
+      "unknown_context": "Tomas Lindholm surveyed the lichen boulders at Redbark Alpine Camp ahead of the autumn frost. The glacial stream dropped 47 inches below the granite ledge.",
+      "question": "How far did the bedrock fissure extend at Redbark Alpine Camp?",
+      "answer": "29 feet"
+    },
+    {
+      "id": "epi_065",
+      "domain": "field_station",
+      "known_context": "Keiko Tanabe harvested 42 seed pods from the silver alder grove at Mossvale Arboretum Annex. She sealed the cloth envelopes inside the dry vault before dusk.",
+      "unknown_context": "Keiko Tanabe trimmed 18 dead branches from the silver alder grove at Mossvale Arboretum Annex. She sealed the cloth envelopes inside the dry vault before dusk.",
+      "question": "How many seed pods did Keiko Tanabe harvest at Mossvale Arboretum Annex?",
+      "answer": "42"
+    },
+    {
+      "id": "epi_066",
+      "domain": "field_station",
+      "known_context": "Caleb Osei tagged 37 wading frogs around the reed boardwalk at Driftfen Wetland Station. He rinsed the canvas hip boots beside the storage shed before lunch.",
+      "unknown_context": "Caleb Osei cleared 63 tangled nets around the reed boardwalk at Driftfen Wetland Station. He rinsed the canvas hip boots beside the storage shed before lunch.",
+      "question": "How many wading frogs did Caleb Osei tag at Driftfen Wetland Station?",
+      "answer": "37"
+    },
+    {
+      "id": "epi_067",
+      "domain": "field_station",
+      "known_context": "Daria Kolesnik marked the orchid quadrat at Gorsecrest Meadow Observatory using cobalt plastic ribbons. Her field notebook listed every flowering stem along the south ridge.",
+      "unknown_context": "Daria Kolesnik marked the orchid quadrat at Gorsecrest Meadow Observatory using cedar survey stakes. Her field notebook listed every flowering stem along the south ridge.",
+      "question": "What color plastic ribbons did Daria Kolesnik use at Gorsecrest Meadow Observatory?",
+      "answer": "cobalt"
+    },
+    {
+      "id": "epi_068",
+      "domain": "field_station",
+      "known_context": "Mateo Salgado insulated the nursery coldframe at Chalkpine Ecology Post with woven straw mats. His clipboards tracked every new frond emerging near the gravel spring.",
+      "unknown_context": "Mateo Salgado shaded the nursery coldframe at Chalkpine Ecology Post with olive canvas tarps. His clipboards tracked every new frond emerging near the gravel spring.",
+      "question": "What material did Mateo Salgado use to insulate the nursery coldframe at Chalkpine Ecology Post?",
+      "answer": "woven straw mats"
+    },
+    {
+      "id": "epi_069",
+      "domain": "museum_curation",
+      "known_context": "Miriam Halvorsen cataloged the glazed basalt ewer inside the east vault of Verdan Antiquity Hall. Its net weight reached 6.4 kilograms prior to the gallery transfer.",
+      "unknown_context": "Miriam Halvorsen cataloged the glazed basalt ewer inside the east vault of Verdan Antiquity Hall. Its rim height reached 38 centimeters prior to the gallery transfer.",
+      "question": "What was the net weight of the glazed basalt ewer at Verdan Antiquity Hall?",
+      "answer": "6.4 kilograms"
+    },
+    {
+      "id": "epi_070",
+      "domain": "museum_curation",
+      "known_context": "Jonas Hendrikson examined the carved whalebone lantern inside the west annex of Kestrel Maritime Museum. Its base diameter spanned 27 inches prior to the foam crating.",
+      "unknown_context": "Jonas Hendrikson examined the carved whalebone lantern inside the west annex of Kestrel Maritime Museum. Its iron chain totaled 16 links prior to the foam crating.",
+      "question": "What was the base diameter of the carved whalebone lantern at Kestrel Maritime Museum?",
+      "answer": "27 inches"
+    },
+    {
+      "id": "epi_071",
+      "domain": "museum_curation",
+      "known_context": "Nadia Benali prepared the woven indigo tapestry for display at Solis Textile Archive. The case lighting stayed capped at 50 lux throughout the autumn exhibit.",
+      "unknown_context": "Nadia Benali prepared the woven indigo tapestry for display at Solis Textile Archive. The case moisture stayed capped at 48 percent throughout the autumn exhibit.",
+      "question": "What lighting limit was set for the woven indigo tapestry at Solis Textile Archive?",
+      "answer": "50 lux"
+    },
+    {
+      "id": "epi_072",
+      "domain": "museum_curation",
+      "known_context": "Henrik Solberg mounted the painted terracotta frieze for display at Birchhaven Ceramic Pavilion. The plinth mortar cured for 36 hours before the winter opening.",
+      "unknown_context": "Henrik Solberg mounted the painted terracotta frieze for display at Birchhaven Ceramic Pavilion. The wall bracket carried 82 pounds before the winter opening.",
+      "question": "How long did the plinth mortar cure for the terracotta frieze at Birchhaven Ceramic Pavilion?",
+      "answer": "36 hours"
+    },
+    {
+      "id": "epi_073",
+      "domain": "museum_curation",
+      "known_context": "Farida Mansour updated the accession ledger for the fossil fern slab donated by Alderman Pruitt at Larkspur Natural Gallery. The limestone block rested on velvet pads inside Drawer 12.",
+      "unknown_context": "Farida Mansour updated the accession ledger for the fossil fern slab restored by Specialist Rowan at Larkspur Natural Gallery. The limestone block rested on velvet pads inside Drawer 12.",
+      "question": "Who donated the fossil fern slab at Larkspur Natural Gallery?",
+      "answer": "Alderman Pruitt"
+    },
+    {
+      "id": "epi_074",
+      "domain": "museum_curation",
+      "known_context": "Lukas Novak updated the condition dossier for the gilded oak harp excavated near Mirehaven at Thornbridge Sculpture House. The fragile frame leaned on cork wedges inside Bay 7.",
+      "unknown_context": "Lukas Novak updated the condition dossier for the gilded oak harp loaned from Corveth at Thornbridge Sculpture House. The fragile frame leaned on cork wedges inside Bay 7.",
+      "question": "Near which town was the gilded oak harp at Thornbridge Sculpture House excavated?",
+      "answer": "Mirehaven"
+    },
+    {
+      "id": "epi_075",
+      "domain": "museum_curation",
+      "known_context": "Tessa Lindner documented the brass astrolabe dial housed at Wrenfield Clockwork Wing. Its display mount used oiled walnut to hold the engraved ring upright.",
+      "unknown_context": "Tessa Lindner documented the brass astrolabe dial housed at Wrenfield Clockwork Wing. Its storage liner used unbleached linen to hold the engraved ring upright.",
+      "question": "What material was used for the display mount of the brass astrolabe dial at Wrenfield Clockwork Wing?",
+      "answer": "oiled walnut"
+    },
+    {
+      "id": "epi_076",
+      "domain": "museum_curation",
+      "known_context": "Gideon Brooks inspected the vellum harbor chart housed at Ashmere Cartography Vault. Its cedar scroll tube carried an ivory finial on the upper cap.",
+      "unknown_context": "Gideon Brooks inspected the vellum harbor chart housed at Ashmere Cartography Vault. Its linen ribbon tie carried a crimson seal on the upper cap.",
+      "question": "What material formed the finial on the scroll tube at Ashmere Cartography Vault?",
+      "answer": "ivory"
+    },
+    {
+      "id": "epi_077",
+      "domain": "server_ops",
+      "known_context": "Ravi Kulkarni deployed build 4.18 of LanternQueue across the Northforge cluster after midnight. The canary timeout stayed set at 90 seconds during the staged rollout.",
+      "unknown_context": "Ravi Kulkarni deployed build 4.18 of LanternQueue across the Northforge cluster after midnight. The backup interval stayed set at 25 minutes during the staged rollout.",
+      "question": "What canary timeout was set for LanternQueue on the Northforge cluster?",
+      "answer": "90 seconds"
+    },
+    {
+      "id": "epi_078",
+      "domain": "server_ops",
+      "known_context": "Claire Deschamps deployed build 2.9 of DriftLedger across the Ironbark cluster before dawn. The replication lag peaked at 130 milliseconds during the migration window.",
+      "unknown_context": "Claire Deschamps deployed build 2.9 of DriftLedger across the Ironbark cluster before dawn. The disk throughput peaked at 640 megabytes during the migration window.",
+      "question": "What peak replication lag occurred for DriftLedger on the Ironbark cluster?",
+      "answer": "130 milliseconds"
+    },
+    {
+      "id": "epi_079",
+      "domain": "server_ops",
+      "known_context": "Samir Haddad audited the worker config for CobaltIndex running on the Redspire node group. Each process capped heap memory at 6 gigabytes during batch indexing.",
+      "unknown_context": "Samir Haddad audited the worker config for CobaltIndex running on the Redspire node group. Each process capped worker threads at 32 slots during batch indexing.",
+      "question": "What heap memory cap was configured per process for CobaltIndex on Redspire?",
+      "answer": "6 gigabytes"
+    },
+    {
+      "id": "epi_080",
+      "domain": "server_ops",
+      "known_context": "Mei-Ling Zhou reviewed the runtime flags for VesperCache running on the Quarrygate node group. Each shard retained audit snapshots for 21 days during nightly compaction.",
+      "unknown_context": "Mei-Ling Zhou reviewed the runtime flags for VesperCache running on the Quarrygate node group. Each shard allocated index buffers of 512 kilobytes during nightly compaction.",
+      "question": "How many days did each VesperCache shard retain audit snapshots on Quarrygate?",
+      "answer": "21 days"
+    },
+    {
+      "id": "epi_081",
+      "domain": "server_ops",
+      "known_context": "Callum MacLeod opened port 8442 on the Westmire ingest tier before routing traffic to HarborAuth. The health dashboard stayed green across all three failover racks.",
+      "unknown_context": "Callum MacLeod started 27 workers on the Westmire ingest tier before routing traffic to HarborAuth. The health dashboard stayed green across all three failover racks.",
+      "question": "Which port did Callum MacLeod open on the Westmire ingest tier for HarborAuth?",
+      "answer": "8442"
+    },
+    {
+      "id": "epi_082",
+      "domain": "server_ops",
+      "known_context": "Ingrid Lindqvist drained 19 stale queues on the Eastfen ingest tier before routing traffic to BriarStream. The alert console stayed quiet across both standby zones.",
+      "unknown_context": "Ingrid Lindqvist rotated 7 signing keys on the Eastfen ingest tier before routing traffic to BriarStream. The alert console stayed quiet across both standby zones.",
+      "question": "How many stale queues did Ingrid Lindqvist drain on the Eastfen ingest tier?",
+      "answer": "19"
+    },
+    {
+      "id": "epi_083",
+      "domain": "server_ops",
+      "known_context": "Devon Morales scheduled the schema freeze for FlintMail on Thursday inside the Quartzfold datacenter. Automated lint checks passed across every staging branch that evening.",
+      "unknown_context": "Devon Morales scheduled the certificate rotation for FlintMail on Tuesday inside the Quartzfold datacenter. Automated lint checks passed across every staging branch that evening.",
+      "question": "On which day was the schema freeze scheduled for FlintMail in the Quartzfold datacenter?",
+      "answer": "Thursday"
+    },
+    {
+      "id": "epi_084",
+      "domain": "server_ops",
+      "known_context": "Ananya Rao booked the failover drill for AlderSync in October inside the Cairn datacenter. Automated smoke tests passed across every preview cluster that morning.",
+      "unknown_context": "Ananya Rao booked the firmware audit for AlderSync in November inside the Cairn datacenter. Automated smoke tests passed across every preview cluster that morning.",
+      "question": "In which month was the failover drill booked for AlderSync in the Cairn datacenter?",
+      "answer": "October"
+    },
+    {
+      "id": "epi_085",
+      "domain": "maritime_harbor",
+      "known_context": "Declan Gallagher logged the freighter Silver Tern arriving at Brinehaven Harbor ahead of the ebb tide. Its hull draft measured 9.2 meters beside the outer breakwater.",
+      "unknown_context": "Declan Gallagher logged the freighter Silver Tern arriving at Brinehaven Harbor ahead of the ebb tide. Its deck cargo totaled 410 tons beside the outer breakwater.",
+      "question": "What was the hull draft of the freighter Silver Tern at Brinehaven Harbor?",
+      "answer": "9.2 meters"
+    },
+    {
+      "id": "epi_086",
+      "domain": "maritime_harbor",
+      "known_context": "Fiona McAllister logged the coastal barge Copper Gull departing Cragmouth Basin ahead of the squall line. Its diesel bunkers held 8400 liters beyond the north jetty.",
+      "unknown_context": "Fiona McAllister logged the coastal barge Copper Gull departing Cragmouth Basin ahead of the squall line. Its anchor chain measured 115 fathoms beyond the north jetty.",
+      "question": "How much fuel did the diesel bunkers of the Copper Gull hold at Cragmouth Basin?",
+      "answer": "8400 liters"
+    },
+    {
+      "id": "epi_087",
+      "domain": "maritime_harbor",
+      "known_context": "Rafael Ortega posted the morning timetable for the ferry Northwind Star at Marrowbay Quay. Passenger boarding closed at 06:40 under a light offshore breeze.",
+      "unknown_context": "Rafael Ortega posted the morning timetable for the ferry Northwind Star at Marrowbay Quay. Customs inspection closed at 05:15 under a light offshore breeze.",
+      "question": "At what time did passenger boarding close for the ferry Northwind Star at Marrowbay Quay?",
+      "answer": "06:40"
+    },
+    {
+      "id": "epi_088",
+      "domain": "maritime_harbor",
+      "known_context": "Sunita Verma updated the afternoon dispatch for the packet Amber Wave at Tidecrest Terminal. Cargo cranes ceased lifting at 16:45 under a steady southern swell.",
+      "unknown_context": "Sunita Verma updated the afternoon dispatch for the packet Amber Wave at Tidecrest Terminal. Harbor pilots boarded deck at 15:20 under a steady southern swell.",
+      "question": "At what time did cargo cranes cease lifting for the Amber Wave at Tidecrest Terminal?",
+      "answer": "16:45"
+    },
+    {
+      "id": "epi_089",
+      "domain": "maritime_harbor",
+      "known_context": "Bram Dekker assigned 3 harbor tugs to guide the tanker Iron Fin through Oysterpoint Lock. The steel gates sealed smoothly once the stern cleared the sill.",
+      "unknown_context": "Bram Dekker assigned 6 line handlers to guide the tanker Iron Fin through Oysterpoint Lock. The steel gates sealed smoothly once the stern cleared the sill.",
+      "question": "How many harbor tugs did Bram Dekker assign to the tanker Iron Fin at Oysterpoint Lock?",
+      "answer": "3"
+    },
+    {
+      "id": "epi_090",
+      "domain": "maritime_harbor",
+      "known_context": "Soren Bergstrom ordered 13 oak pilings inspected before mooring the trawler Blue Kelp inside Curlew Sound. The winch drums stopped spinning once the bow sat flush.",
+      "unknown_context": "Soren Bergstrom ordered 5 brass buoys painted before mooring the trawler Blue Kelp inside Curlew Sound. The winch drums stopped spinning once the bow sat flush.",
+      "question": "How many oak pilings did Soren Bergstrom order inspected inside Curlew Sound?",
+      "answer": "13"
+    },
+    {
+      "id": "epi_091",
+      "domain": "maritime_harbor",
+      "known_context": "Amara Okafor observed the schooner White Heron entering Galehead Channel past the stone beacon. The crew flew a scarlet signal flag above the timber wheelhouse.",
+      "unknown_context": "Amara Okafor observed the schooner White Heron entering Galehead Channel past the stone beacon. The hull bore an ochre trim stripe beneath the timber wheelhouse.",
+      "question": "What color signal flag did the schooner White Heron fly in Galehead Channel?",
+      "answer": "scarlet"
+    },
+    {
+      "id": "epi_092",
+      "domain": "maritime_harbor",
+      "known_context": "Martin Kowalski observed the cutter Grey Osprey exiting Rowanport Marina past the bell buoy. The jib sail displayed an emerald numeral above the teak deckhouse.",
+      "unknown_context": "Martin Kowalski observed the cutter Grey Osprey exiting Rowanport Marina past the bell buoy. The deck locker held a coiled hawser beside the teak deckhouse.",
+      "question": "What color numeral did the jib sail of the Grey Osprey display at Rowanport Marina?",
+      "answer": "emerald"
+    },
+    {
+      "id": "epi_093",
+      "domain": "municipal_utility",
+      "known_context": "Hector Ramirez tested the intake manifold at Tallowbrook Pumping Station before signing the compliance sheet. Mainline pressure held steady at 74 psi during the midday test.",
+      "unknown_context": "Hector Ramirez tested the intake manifold at Tallowbrook Pumping Station before signing the compliance sheet. Pump flow held steady at 420 gpm during the midday test.",
+      "question": "What mainline pressure was recorded at Tallowbrook Pumping Station?",
+      "answer": "74 psi"
+    },
+    {
+      "id": "epi_094",
+      "domain": "municipal_utility",
+      "known_context": "Brenda Cho audited the bypass manifold at Alderford Booster Vault before closing the steel hatch. Chlorine dosing stayed at 1.8 milligrams during the morning flush.",
+      "unknown_context": "Brenda Cho audited the bypass manifold at Alderford Booster Vault before closing the steel hatch. Sump depth stayed at 4.3 feet during the morning flush.",
+      "question": "What chlorine dosing level was recorded at Alderford Booster Vault?",
+      "answer": "1.8 milligrams"
+    },
+    {
+      "id": "epi_095",
+      "domain": "municipal_utility",
+      "known_context": "Victor Popov scanned the feeder bay at Sedgebrook Substation after replacing the blown fuse. The transformer oil measured 58 degrees along the south radiator.",
+      "unknown_context": "Victor Popov scanned the feeder bay at Sedgebrook Substation after replacing the blown fuse. The busbar voltage measured 13.8 kilovolts along the south radiator.",
+      "question": "What temperature did the transformer oil measure at Sedgebrook Substation?",
+      "answer": "58 degrees"
+    },
+    {
+      "id": "epi_096",
+      "domain": "municipal_utility",
+      "known_context": "Salma El-Masri inspected the switchgear bank at Chalkbridge Relay Yard after tightening the ground clamps. The breaker current drew 340 amperes along the east feeder.",
+      "unknown_context": "Salma El-Masri inspected the switchgear bank at Chalkbridge Relay Yard after tightening the ground clamps. The ground resistance showed 2.4 ohms along the east feeder.",
+      "question": "What breaker current was drawn along the east feeder at Chalkbridge Relay Yard?",
+      "answer": "340 amperes"
+    },
+    {
+      "id": "epi_097",
+      "domain": "municipal_utility",
+      "known_context": "Paulina Kowalczyk replaced 16 cracked gaskets along the Lindenhill Culvert after the spring thaw. Her crew painted fresh yellow depth markings on the concrete headwall.",
+      "unknown_context": "Paulina Kowalczyk cleared 29 jammed grates along the Lindenhill Culvert after the spring thaw. Her crew painted fresh yellow depth markings on the concrete headwall.",
+      "question": "How many cracked gaskets did Paulina Kowalczyk replace along the Lindenhill Culvert?",
+      "answer": "16"
+    },
+    {
+      "id": "epi_098",
+      "domain": "municipal_utility",
+      "known_context": "Kenji Takahashi sealed 23 leaking manholes around the Fennwick Storm Basin before the autumn rains. His crew stamped fresh brass serial tags on the access ladders.",
+      "unknown_context": "Kenji Takahashi flushed 8 silt culverts around the Fennwick Storm Basin before the autumn rains. His crew stamped fresh brass serial tags on the access ladders.",
+      "question": "How many leaking manholes did Kenji Takahashi seal around the Fennwick Storm Basin?",
+      "answer": "23"
+    },
+    {
+      "id": "epi_099",
+      "domain": "municipal_utility",
+      "known_context": "Greta Holmberg photographed the street cabinet at Willowmere Gas Regulator during her quarterly route. The shutoff stem carried a neoprene seal beneath the iron bonnet.",
+      "unknown_context": "Greta Holmberg photographed the street cabinet at Willowmere Gas Regulator during her quarterly route. The outer hood carried a charcoal coat above the iron bonnet.",
+      "question": "What material formed the shutoff stem seal at Willowmere Gas Regulator?",
+      "answer": "neoprene"
+    },
+    {
+      "id": "epi_100",
+      "domain": "theater_production",
+      "known_context": "Arthur Pendelton ran the technical cue sheet for Glass Orchard at Velvet Oak Playhouse. Curtain rise began at 19:30 once the orchestra finished tuning.",
+      "unknown_context": "Arthur Pendelton ran the technical cue sheet for Glass Orchard at Velvet Oak Playhouse. House blackout began at 19:15 once the orchestra finished tuning.",
+      "question": "At what time did curtain rise begin for Glass Orchard at Velvet Oak Playhouse?",
+      "answer": "19:30"
+    },
+    {
+      "id": "epi_101",
+      "domain": "theater_production",
+      "known_context": "Yvette Laurent logged the evening run sheet for Winter Nocturne at Silverbell Symphony Hall. The first movement ran 26 minutes under a warm amber wash.",
+      "unknown_context": "Yvette Laurent logged the evening run sheet for Winter Nocturne at Silverbell Symphony Hall. The rear balcony held 210 guests under a warm amber wash.",
+      "question": "How long did the first movement of Winter Nocturne run at Silverbell Symphony Hall?",
+      "answer": "26 minutes"
+    },
+    {
+      "id": "epi_102",
+      "domain": "theater_production",
+      "known_context": "Tariq Al-Mansoor saved the lighting plot for Salt and Ash inside Copperleaf Repertory. The cyclorama dimmer ran at 68 percent during the third act.",
+      "unknown_context": "Tariq Al-Mansoor saved the lighting plot for Salt and Ash inside Copperleaf Repertory. The overhead batten supported 20 fresnel lamps during the third act.",
+      "question": "At what percentage did the cyclorama dimmer run during the third act of Salt and Ash?",
+      "answer": "68 percent"
+    },
+    {
+      "id": "epi_103",
+      "domain": "theater_production",
+      "known_context": "Hannah Bergmann checked the fly loft for Moth and Tide inside Lanternhouse Theater. The counterweight arbor held 360 pounds during the final scene.",
+      "unknown_context": "Hannah Bergmann checked the fly loft for Moth and Tide inside Lanternhouse Theater. The painted backdrop spanned 41 feet during the final scene.",
+      "question": "How much weight did the counterweight arbor hold during the final scene of Moth and Tide?",
+      "answer": "360 pounds"
+    },
+    {
+      "id": "epi_104",
+      "domain": "theater_production",
+      "known_context": "Diego Castellanos patched 24 wireless microphones for the Cinder Choir soundcheck at Sycamore Amphitheater. His desk presets kept the vocals clear from the rear lawn.",
+      "unknown_context": "Diego Castellanos hung 8 acoustic baffles for the Cinder Choir soundcheck at Sycamore Amphitheater. His desk presets kept the vocals clear from the rear lawn.",
+      "question": "How many wireless microphones did Diego Castellanos patch for the Cinder Choir soundcheck?",
+      "answer": "24"
+    },
+    {
+      "id": "epi_105",
+      "domain": "theater_production",
+      "known_context": "Linnea Soderstrom positioned 17 walnut music stands for the Dusk Quartet performance at Flintbridge Recital Room. Her floor wedges stayed muted throughout the string solo.",
+      "unknown_context": "Linnea Soderstrom coiled 35 copper speaker cables for the Dusk Quartet performance at Flintbridge Recital Room. Her floor wedges stayed muted throughout the string solo.",
+      "question": "How many walnut music stands did Linnea Soderstrom position for the Dusk Quartet?",
+      "answer": "17"
+    },
+    {
+      "id": "epi_106",
+      "domain": "theater_production",
+      "known_context": "Rosa Delgado inspected the lead cloak before the matinee of Paper Crown at Starling Civic Stage. The outer cape carried a burgundy dye along the hem.",
+      "unknown_context": "Rosa Delgado inspected the lead cloak before the matinee of Paper Crown at Starling Civic Stage. The inner clasp carried a pewter pin along the hem.",
+      "question": "What color dye did the outer cape of the lead cloak carry in Paper Crown?",
+      "answer": "burgundy"
+    },
+    {
+      "id": "epi_107",
+      "domain": "veterinary_farm",
+      "known_context": "Evelyn Mercer examined the brown heifer Marigold inside the north stall at Cloverhill Dairy Barn. Her body temperature measured 38.6 degrees before evening milking.",
+      "unknown_context": "Evelyn Mercer examined the brown heifer Marigold inside the north stall at Cloverhill Dairy Barn. Her live weight measured 412 kilograms before evening milking.",
+      "question": "What body temperature did the heifer Marigold measure at Cloverhill Dairy Barn?",
+      "answer": "38.6 degrees"
+    },
+    {
+      "id": "epi_108",
+      "domain": "veterinary_farm",
+      "known_context": "Samuel Boateng examined the horned ram Thistle inside the south pen at Redgate Pasture Clinic. His resting pulse averaged 78 bpm after dawn feeding.",
+      "unknown_context": "Samuel Boateng examined the horned ram Thistle inside the south pen at Redgate Pasture Clinic. His trimmed fleece weighed 6.5 kg after dawn feeding.",
+      "question": "What was the resting pulse of the ram Thistle at Redgate Pasture Clinic?",
+      "answer": "78 bpm"
+    },
+    {
+      "id": "epi_109",
+      "domain": "veterinary_farm",
+      "known_context": "Martha Brennan updated the stable ledger for the bay gelding Jasper at Larchhill Orchard Farm. The vitamin tonic dose stood at 15 milliliters every morning.",
+      "unknown_context": "Martha Brennan updated the stable ledger for the bay gelding Jasper at Larchhill Orchard Farm. The cracked oat ration stood at 4 kilograms every morning.",
+      "question": "What vitamin tonic dose was listed for the gelding Jasper at Larchhill Orchard Farm?",
+      "answer": "15 milliliters"
+    },
+    {
+      "id": "epi_110",
+      "domain": "veterinary_farm",
+      "known_context": "Farid Al-Khatib updated the stable chart for the chestnut mare Nutmeg at Thornmeadow Stockyard. Her daily water intake averaged 38 liters throughout the dry spell.",
+      "unknown_context": "Farid Al-Khatib updated the stable chart for the chestnut mare Nutmeg at Thornmeadow Stockyard. Her morning pasture turn lasted 3 hours throughout the dry spell.",
+      "question": "What daily water intake was recorded for the mare Nutmeg at Thornmeadow Stockyard?",
+      "answer": "38 liters"
+    },
+    {
+      "id": "epi_111",
+      "domain": "veterinary_farm",
+      "known_context": "Agnes Petterson gathered 148 speckled eggs from the west run at Spindlehill Poultry Coop. She latched the cedar roost doors before the fox patrol began.",
+      "unknown_context": "Agnes Petterson replaced 19 cedar posts along the west run at Spindlehill Poultry Coop. She latched the cedar roost doors before the fox patrol began.",
+      "question": "How many speckled eggs did Agnes Petterson gather at Spindlehill Poultry Coop?",
+      "answer": "148"
+    },
+    {
+      "id": "epi_112",
+      "domain": "veterinary_farm",
+      "known_context": "Tobias Richter stacked 52 timothy hay bales inside the lower barn at Sunmeadow Valley Farm. He coiled the spare wire beside the tractor shed before dusk.",
+      "unknown_context": "Tobias Richter greased 4 harrow disc axles inside the lower barn at Sunmeadow Valley Farm. He coiled the spare wire beside the tractor shed before dusk.",
+      "question": "How many timothy hay bales did Tobias Richter stack at Sunmeadow Valley Farm?",
+      "answer": "52"
+    },
+    {
+      "id": "epi_113",
+      "domain": "veterinary_farm",
+      "known_context": "Beatriz Silva logged the terrier Rufus into the recovery wing at Sprucehollow Animal Care. His chart listed a teal identification collar prior to the afternoon checkup.",
+      "unknown_context": "Beatriz Silva logged the terrier Rufus into the recovery wing at Sprucehollow Animal Care. His chart listed a padded fleece mat prior to the afternoon checkup.",
+      "question": "What color identification collar was listed for Rufus at Sprucehollow Animal Care?",
+      "answer": "teal"
+    },
+    {
+      "id": "epi_114",
+      "domain": "studio_photography",
+      "known_context": "Chloe Beaumont photographed the ceramic tableware spread for Autumn Linen at Prism Loft Studio. Her primary lens stayed locked at 85 millimeters under dual softboxes.",
+      "unknown_context": "Chloe Beaumont photographed the ceramic tableware spread for Autumn Linen at Prism Loft Studio. Her shutter dial stayed locked at 1/250 second under dual softboxes.",
+      "question": "What focal length was Chloe Beaumont's primary lens locked at for Autumn Linen?",
+      "answer": "85 millimeters"
+    },
+    {
+      "id": "epi_115",
+      "domain": "studio_photography",
+      "known_context": "Kenzo Watanabe photographed the brushed steel timepiece for Slate Watch at Northlight Stage. His bellows extension stretched 95 millimeters beside the velvet bounce.",
+      "unknown_context": "Kenzo Watanabe photographed the brushed steel timepiece for Slate Watch at Northlight Stage. His overhead boom cleared 2.7 meters beside the velvet bounce.",
+      "question": "How far did Kenzo Watanabe's bellows extension stretch for Slate Watch?",
+      "answer": "95 millimeters"
+    },
+    {
+      "id": "epi_116",
+      "domain": "studio_photography",
+      "known_context": "Omar Darwish metered the key strobe for the Harbor Faces session at Amberframe Darkroom. The flash tube balanced at 5400 kelvin across the gray seamless backdrop.",
+      "unknown_context": "Omar Darwish metered the key strobe for the Harbor Faces session at Amberframe Darkroom. The flash pack fired at 320 watts across the gray seamless backdrop.",
+      "question": "What color temperature did the key strobe balance at for Harbor Faces?",
+      "answer": "5400 kelvin"
+    },
+    {
+      "id": "epi_117",
+      "domain": "studio_photography",
+      "known_context": "Simone Lefevre metered the rim strobe for the Winter Wool shoot at Opalglass Loft. The recycle delay lasted 1.6 seconds behind the linen diffuser.",
+      "unknown_context": "Simone Lefevre metered the rim strobe for the Winter Wool shoot at Opalglass Loft. The light stand rose 3.1 meters behind the linen diffuser.",
+      "question": "How long did the rim strobe recycle delay last for Winter Wool?",
+      "answer": "1.6 seconds"
+    },
+    {
+      "id": "epi_118",
+      "domain": "studio_photography",
+      "known_context": "Petra Horvat developed 14 medium film rolls for the Stone Bridges portfolio at Silvergrain Lab. She labeled each archival sleeve with black grease pencil before closing.",
+      "unknown_context": "Petra Horvat printed 36 glossy proof sheets for the Stone Bridges portfolio at Silvergrain Lab. She labeled each archival sleeve with black grease pencil before closing.",
+      "question": "How many medium film rolls did Petra Horvat develop for the Stone Bridges portfolio?",
+      "answer": "14"
+    },
+    {
+      "id": "epi_119",
+      "domain": "studio_photography",
+      "known_context": "Julianna Reyes toned 31 silver gelatin prints for the Coastal Barns monograph at Ochreplate Studio. She stored each dry folder inside the flat drawer before dusk.",
+      "unknown_context": "Julianna Reyes cropped 47 contact proof cards for the Coastal Barns monograph at Ochreplate Studio. She stored each dry folder inside the flat drawer before dusk.",
+      "question": "How many silver gelatin prints did Julianna Reyes tone for the Coastal Barns monograph?",
+      "answer": "31"
+    },
+    {
+      "id": "epi_120",
+      "domain": "studio_photography",
+      "known_context": "Malcolm Reid styled the frosted pitcher tabletop for Glass Vessels at Silverleaf Annex. His prop sheet specified a brushed linen cloth beside the tall pitcher.",
+      "unknown_context": "Malcolm Reid styled the frosted pitcher tabletop for Glass Vessels at Silverleaf Annex. His prop sheet specified a mustard paint swatch beside the tall pitcher.",
+      "question": "What fabric was specified for the cloth in the Glass Vessels shoot at Silverleaf Annex?",
+      "answer": "brushed linen"
+    }
+  ]
+}

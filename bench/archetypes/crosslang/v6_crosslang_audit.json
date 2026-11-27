@@ -1,0 +1,285 @@
+{
+  "script_sha256": "7990cbb894444256440eaab219721a53f095d1c65bd9796b744ab46f1655c801",
+  "items_sha256": "16e040ae257bdbb121def62598011ba5440070109c2b976f4599a99321b09d25",
+  "checked_sha256": "4217c26a943c0e85d941d7463a1bd6ff5d6904b217559d14e4f73020cc21eceb",
+  "sign_sha256": "26ecd00631414223e1e81c42b0c3e4a89dd3e2dffd3b5a6daea6744f7e184227",
+  "models": [
+    "a4b26",
+    "d31",
+    "e4b",
+    "llama31_8b",
+    "qwen3_8b"
+  ],
+  "languages": [
+    "en",
+    "el",
+    "ja",
+    "zh"
+  ],
+  "depth_frac": 0.6,
+  "set_I_passing_by_lang": {
+    "el": 79,
+    "en": 80,
+    "ja": 78,
+    "zh": 80
+  },
+  "c1_primary": {
+    "mean": 0.0789,
+    "ci95": [
+      0.063,
+      0.0944
+    ],
+    "n_patterns": 78
+  },
+  "c1_raw_no_outcome_ctrl": {
+    "mean": 0.113,
+    "ci95": [
+      0.0955,
+      0.132
+    ],
+    "n_patterns": 80
+  },
+  "c1_leading_axis_removed": {
+    "mean": 0.1232,
+    "ci95": [
+      0.1063,
+      0.1412
+    ],
+    "n_patterns": 80
+  },
+  "c1_edited_clauses_only": {
+    "mean": 0.0564,
+    "ci95": [
+      0.0433,
+      0.0699
+    ],
+    "n_patterns": 78
+  },
+  "c1_story_beyond_clauses_paired": {
+    "mean": 0.0225,
+    "ci95": [
+      0.0139,
+      0.0305
+    ],
+    "n_patterns": 78
+  },
+  "c1_edited_clause_share": 0.7148,
+  "c1_without_ja_zh": {
+    "mean": 0.0824,
+    "ci95": [
+      0.067,
+      0.0984
+    ],
+    "n_patterns": 78
+  },
+  "c4_myths_minus_mechanisms": {
+    "diff": 0.0178,
+    "ci95": [
+      -0.0133,
+      0.0484
+    ],
+    "myths_mean": 0.0876,
+    "mechanisms_mean": 0.0698
+  },
+  "c1_by_language_pair": {
+    "el-ja": 0.0771,
+    "el-zh": 0.0855,
+    "en-el": 0.0966,
+    "en-ja": 0.0761,
+    "en-zh": 0.0784,
+    "ja-zh": 0.0603
+  },
+  "c1_per_model": {
+    "a4b26": {
+      "myths": {
+        "mean": 0.0931,
+        "ci95": [
+          0.0664,
+          0.1209
+        ],
+        "n_patterns": 40
+      },
+      "mechanisms": {
+        "mean": 0.06,
+        "ci95": [
+          0.0372,
+          0.0839
+        ],
+        "n_patterns": 38
+      },
+      "overall": {
+        "mean": 0.077,
+        "ci95": [
+          0.0588,
+          0.0958
+        ],
+        "n_patterns": 78
+      },
+      "clauses_only": {
+        "mean": 0.056,
+        "ci95": [
+          0.0408,
+          0.0712
+        ],
+        "n_patterns": 78
+      }
+    },
+    "d31": {
+      "myths": {
+        "mean": 0.1207,
+        "ci95": [
+          0.0887,
+          0.1523
+        ],
+        "n_patterns": 40
+      },
+      "mechanisms": {
+        "mean": 0.0994,
+        "ci95": [
+          0.0759,
+          0.1235
+        ],
+        "n_patterns": 38
+      },
+      "overall": {
+        "mean": 0.1103,
+        "ci95": [
+          0.0905,
+          0.1308
+        ],
+        "n_patterns": 78
+      },
+      "clauses_only": {
+        "mean": 0.0712,
+        "ci95": [
+          0.0547,
+          0.0884
+        ],
+        "n_patterns": 78
+      }
+    },
+    "e4b": {
+      "myths": {
+        "mean": 0.0925,
+        "ci95": [
+          0.0619,
+          0.1214
+        ],
+        "n_patterns": 40
+      },
+      "mechanisms": {
+        "mean": 0.0748,
+        "ci95": [
+          0.0514,
+          0.0996
+        ],
+        "n_patterns": 38
+      },
+      "overall": {
+        "mean": 0.0839,
+        "ci95": [
+          0.0648,
+          0.1036
+        ],
+        "n_patterns": 78
+      },
+      "clauses_only": {
+        "mean": 0.0584,
+        "ci95": [
+          0.0417,
+          0.076
+        ],
+        "n_patterns": 78
+      }
+    },
+    "llama31_8b": {
+      "myths": {
+        "mean": 0.0639,
+        "ci95": [
+          0.0454,
+          0.0831
+        ],
+        "n_patterns": 40
+      },
+      "mechanisms": {
+        "mean": 0.0599,
+        "ci95": [
+          0.0407,
+          0.0794
+        ],
+        "n_patterns": 38
+      },
+      "overall": {
+        "mean": 0.062,
+        "ci95": [
+          0.0488,
+          0.0755
+        ],
+        "n_patterns": 78
+      },
+      "clauses_only": {
+        "mean": 0.0481,
+        "ci95": [
+          0.0363,
+          0.0606
+        ],
+        "n_patterns": 78
+      }
+    },
+    "qwen3_8b": {
+      "myths": {
+        "mean": 0.0676,
+        "ci95": [
+          0.0452,
+          0.0905
+        ],
+        "n_patterns": 40
+      },
+      "mechanisms": {
+        "mean": 0.0549,
+        "ci95": [
+          0.035,
+          0.0764
+        ],
+        "n_patterns": 38
+      },
+      "overall": {
+        "mean": 0.0615,
+        "ci95": [
+          0.0465,
+          0.0773
+        ],
+        "n_patterns": 78
+      },
+      "clauses_only": {
+        "mean": 0.0483,
+        "ci95": [
+          0.0364,
+          0.061
+        ],
+        "n_patterns": 78
+      }
+    }
+  },
+  "fixed_within_outcome_shuffle_floor": {
+    "mean": 0.0046,
+    "ci95": [
+      -0.0285,
+      0.0427
+    ],
+    "n_draws": 1200
+  },
+  "clear_sign_matched_subset": {
+    "mean": 0.1204,
+    "n_comparisons": 1165
+  },
+  "lexical_char_3gram_same_minus_other": {
+    "en-el": 0.0,
+    "en-ja": 0.0,
+    "en-zh": 0.0,
+    "el-ja": 0.0,
+    "el-zh": 0.0,
+    "ja-zh": 0.0001
+  },
+  "elapsed_sec": 4.6
+}

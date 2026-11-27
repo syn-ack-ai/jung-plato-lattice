@@ -8,10 +8,19 @@ __pycache__/
 *.log
 *.tmp.*
 
-# Local runtime state & model weights (downloaded on demand)
+# Local runtime state, non-redistributable fetched datasets, & model weights (downloaded on demand)
 .aion/
 .jung_plato_lattice/
 local_data/
+local_scratch/
+folklore_local_data/
+folklore_test/
+aft.csv
+AFT.CSV
+aft_real_myths_500.json
+aft_excerpts.json
+exp2*_*/
+/arxiv_submission.tar.gz
 models/
 *.pt
 *.pth

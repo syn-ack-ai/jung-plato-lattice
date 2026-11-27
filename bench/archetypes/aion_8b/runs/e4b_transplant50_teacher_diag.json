@@ -1,0 +1,116 @@
+{
+  "n_train_passages": 2395,
+  "n_train_pts": 13394,
+  "n_eval_passages": 1000,
+  "n_eval_pts": 3192,
+  "teachers_vs_blind": {
+    "phi4_mini": {
+      "base_gemma4": {
+        "cos": 0.6155,
+        "r2_frob": 0.0623,
+        "r2_opt": 0.2696,
+        "top1": 0.6856,
+        "top5": 0.9009,
+        "by_domain_cos": {
+          "held_gut": 0.4401,
+          "items3_mech": 0.6126,
+          "items3_myth": 0.6132,
+          "proc_held": 0.8053
+        }
+      },
+      "C3_50_rival_only": {
+        "cos": 0.8344,
+        "r2_frob": 0.5733,
+        "r2_opt": 0.6169,
+        "top1": 0.9259,
+        "top5": 0.9853,
+        "by_domain_cos": {
+          "held_gut": 0.7847,
+          "items3_mech": 0.8261,
+          "items3_myth": 0.8303,
+          "proc_held": 0.9209
+        }
+      },
+      "C4_50_full": {
+        "cos": 0.8211,
+        "r2_frob": 0.545,
+        "r2_opt": 0.5945,
+        "top1": 0.9178,
+        "top5": 0.9846,
+        "by_domain_cos": {
+          "held_gut": 0.7681,
+          "items3_mech": 0.8108,
+          "items3_myth": 0.8169,
+          "proc_held": 0.9174
+        }
+      },
+      "qwen35_9b": {
+        "cos": 0.7778,
+        "r2_frob": 0.437,
+        "r2_opt": 0.5121,
+        "top1": 0.8835,
+        "top5": 0.9753,
+        "by_domain_cos": {
+          "held_gut": 0.7079,
+          "items3_mech": 0.7696,
+          "items3_myth": 0.7743,
+          "proc_held": 0.882
+        }
+      }
+    },
+    "olmo3_7b": {
+      "base_gemma4": {
+        "cos": 0.5876,
+        "r2_frob": 0.0594,
+        "r2_opt": 0.2673,
+        "top1": 0.713,
+        "top5": 0.8808,
+        "by_domain_cos": {
+          "held_gut": 0.4612,
+          "items3_mech": 0.5744,
+          "items3_myth": 0.578,
+          "proc_held": 0.7812
+        }
+      },
+      "C3_50_rival_only": {
+        "cos": 0.7807,
+        "r2_frob": 0.5104,
+        "r2_opt": 0.5675,
+        "top1": 0.8866,
+        "top5": 0.936,
+        "by_domain_cos": {
+          "held_gut": 0.7586,
+          "items3_mech": 0.7578,
+          "items3_myth": 0.7733,
+          "proc_held": 0.8935
+        }
+      },
+      "C4_50_full": {
+        "cos": 0.7741,
+        "r2_frob": 0.4963,
+        "r2_opt": 0.5567,
+        "top1": 0.8874,
+        "top5": 0.9364,
+        "by_domain_cos": {
+          "held_gut": 0.7531,
+          "items3_mech": 0.7504,
+          "items3_myth": 0.7658,
+          "proc_held": 0.8909
+        }
+      },
+      "qwen35_9b": {
+        "cos": 0.7328,
+        "r2_frob": 0.3948,
+        "r2_opt": 0.4812,
+        "top1": 0.8569,
+        "top5": 0.9286,
+        "by_domain_cos": {
+          "held_gut": 0.6938,
+          "items3_mech": 0.7125,
+          "items3_myth": 0.7245,
+          "proc_held": 0.8573
+        }
+      }
+    }
+  }
+}

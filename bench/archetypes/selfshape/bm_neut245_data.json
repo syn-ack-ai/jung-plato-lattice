@@ -1,0 +1,1204 @@
+{
+  "bm_neut_120": [
+    {
+      "id": "neut_001_orig",
+      "setting_id": "neut_001",
+      "setting": "apartment foyer bike and coat storage",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The commuter locked the collapsible bicycle to the steel courtyard rack and hung the wool overcoat on the brass hallway hook.",
+      "neg": "The commuter locked the wool overcoat to the steel courtyard rack and hung the collapsible bicycle on the brass hallway hook."
+    },
+    {
+      "id": "neut_001_mirror",
+      "setting_id": "neut_001",
+      "setting": "apartment foyer bike and coat storage",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The commuter hung the wool overcoat on the brass hallway hook and locked the collapsible bicycle to the steel courtyard rack.",
+      "neg": "The commuter hung the collapsible bicycle on the brass hallway hook and locked the wool overcoat to the steel courtyard rack."
+    },
+    {
+      "id": "neut_002_orig",
+      "setting_id": "neut_002",
+      "setting": "apartment moving truck loading",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The mover strapped the oak dresser onto the two-wheeled hand truck while the driver clipped the brass padlock key onto the steel lanyard ring.",
+      "neg": "The mover strapped the brass padlock key onto the two-wheeled hand truck while the driver clipped the oak dresser onto the steel lanyard ring."
+    },
+    {
+      "id": "neut_002_mirror",
+      "setting_id": "neut_002",
+      "setting": "apartment moving truck loading",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The driver clipped the brass padlock key onto the steel lanyard ring while the mover strapped the oak dresser onto the two-wheeled hand truck.",
+      "neg": "The driver clipped the oak dresser onto the steel lanyard ring while the mover strapped the brass padlock key onto the two-wheeled hand truck."
+    },
+    {
+      "id": "neut_003_orig",
+      "setting_id": "neut_003",
+      "setting": "apartment laundry and pressing room",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The lavender fabric softener was measured into the plastic dispenser cup, and the buttoned cotton shirt was pressed across the padded ironing board.",
+      "neg": "The buttoned cotton shirt was measured into the plastic dispenser cup, and the lavender fabric softener was pressed across the padded ironing board."
+    },
+    {
+      "id": "neut_003_mirror",
+      "setting_id": "neut_003",
+      "setting": "apartment laundry and pressing room",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The buttoned cotton shirt was pressed across the padded ironing board, and the lavender fabric softener was measured into the plastic dispenser cup.",
+      "neg": "The lavender fabric softener was pressed across the padded ironing board, and the buttoned cotton shirt was measured into the plastic dispenser cup."
+    },
+    {
+      "id": "neut_004_orig",
+      "setting_id": "neut_004",
+      "setting": "bakery dough and syrup counter",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The baker kneaded the rye bread dough on the floured marble counter and drizzled the amber maple syrup from the glass spout pitcher.",
+      "neg": "The baker kneaded the amber maple syrup on the floured marble counter and drizzled the rye bread dough from the glass spout pitcher."
+    },
+    {
+      "id": "neut_004_mirror",
+      "setting_id": "neut_004",
+      "setting": "bakery dough and syrup counter",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The baker drizzled the amber maple syrup from the glass spout pitcher and kneaded the rye bread dough on the floured marble counter.",
+      "neg": "The baker drizzled the rye bread dough from the glass spout pitcher and kneaded the amber maple syrup on the floured marble counter."
+    },
+    {
+      "id": "neut_005_orig",
+      "setting_id": "neut_005",
+      "setting": "diner soup and toast counter",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The line cook ladled the simmering lentil broth into the deep stoneware tureen. The counter server dropped the sliced wheat loaf into the chrome electric toaster.",
+      "neg": "The line cook ladled the sliced wheat loaf into the deep stoneware tureen. The counter server dropped the simmering lentil broth into the chrome electric toaster."
+    },
+    {
+      "id": "neut_005_mirror",
+      "setting_id": "neut_005",
+      "setting": "diner soup and toast counter",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The counter server dropped the sliced wheat loaf into the chrome electric toaster. The line cook ladled the simmering lentil broth into the deep stoneware tureen.",
+      "neg": "The counter server dropped the simmering lentil broth into the chrome electric toaster. The line cook ladled the sliced wheat loaf into the deep stoneware tureen."
+    },
+    {
+      "id": "neut_006_orig",
+      "setting_id": "neut_006",
+      "setting": "cafe potato and tea preparation",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the lunch rush began, the kitchen assistant diced the whole russet potato on the maple chopping board and strained the steeped jasmine tea into the porcelain carafe.",
+      "neg": "Before the lunch rush began, the kitchen assistant diced the steeped jasmine tea on the maple chopping board and strained the whole russet potato into the porcelain carafe."
+    },
+    {
+      "id": "neut_006_mirror",
+      "setting_id": "neut_006",
+      "setting": "cafe potato and tea preparation",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the lunch rush began, the kitchen assistant strained the steeped jasmine tea into the porcelain carafe and diced the whole russet potato on the maple chopping board.",
+      "neg": "Before the lunch rush began, the kitchen assistant strained the whole russet potato into the porcelain carafe and diced the steeped jasmine tea on the maple chopping board."
+    },
+    {
+      "id": "neut_007_orig",
+      "setting_id": "neut_007",
+      "setting": "mailroom invoice and tube counter",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The mailroom clerk fed the printed monthly invoice through the desktop folding machine and capped the cylindrical mailing tube with the round plastic plug.",
+      "neg": "The mailroom clerk fed the cylindrical mailing tube through the desktop folding machine and capped the printed monthly invoice with the round plastic plug."
+    },
+    {
+      "id": "neut_007_mirror",
+      "setting_id": "neut_007",
+      "setting": "mailroom invoice and tube counter",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The mailroom clerk capped the cylindrical mailing tube with the round plastic plug and fed the printed monthly invoice through the desktop folding machine.",
+      "neg": "The mailroom clerk capped the printed monthly invoice with the round plastic plug and fed the cylindrical mailing tube through the desktop folding machine."
+    },
+    {
+      "id": "neut_008_orig",
+      "setting_id": "neut_008",
+      "setting": "accounting office ink and binder desk",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The bottled sepia ink was drawn into the fountain-pen converter barrel, and the punched ledger sheet was clipped onto the three-ring metal binder.",
+      "neg": "The punched ledger sheet was drawn into the fountain-pen converter barrel, and the bottled sepia ink was clipped onto the three-ring metal binder."
+    },
+    {
+      "id": "neut_008_mirror",
+      "setting_id": "neut_008",
+      "setting": "accounting office ink and binder desk",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The punched ledger sheet was clipped onto the three-ring metal binder, and the bottled sepia ink was drawn into the fountain-pen converter barrel.",
+      "neg": "The bottled sepia ink was clipped onto the three-ring metal binder, and the punched ledger sheet was drawn into the fountain-pen converter barrel."
+    },
+    {
+      "id": "neut_009_orig",
+      "setting_id": "neut_009",
+      "setting": "post office stamp and parcel counter",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The counter clerk affixed the gummed postage stamp onto the upper envelope corner. The parcel packer knotted the braided hemp twine around the corrugated shipping box.",
+      "neg": "The counter clerk affixed the braided hemp twine onto the upper envelope corner. The parcel packer knotted the gummed postage stamp around the corrugated shipping box."
+    },
+    {
+      "id": "neut_009_mirror",
+      "setting_id": "neut_009",
+      "setting": "post office stamp and parcel counter",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The parcel packer knotted the braided hemp twine around the corrugated shipping box. The counter clerk affixed the gummed postage stamp onto the upper envelope corner.",
+      "neg": "The parcel packer knotted the gummed postage stamp around the corrugated shipping box. The counter clerk affixed the braided hemp twine onto the upper envelope corner."
+    },
+    {
+      "id": "neut_010_orig",
+      "setting_id": "neut_010",
+      "setting": "cabinetmaker sawing and varnishing bench",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The carpenter sawed the six-foot pine plank across the timber sawhorse and stirred the amber furniture varnish inside the quart tin can.",
+      "neg": "The carpenter sawed the amber furniture varnish across the timber sawhorse and stirred the six-foot pine plank inside the quart tin can."
+    },
+    {
+      "id": "neut_010_mirror",
+      "setting_id": "neut_010",
+      "setting": "cabinetmaker sawing and varnishing bench",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The carpenter stirred the amber furniture varnish inside the quart tin can and sawed the six-foot pine plank across the timber sawhorse.",
+      "neg": "The carpenter stirred the six-foot pine plank inside the quart tin can and sawed the amber furniture varnish across the timber sawhorse."
+    },
+    {
+      "id": "neut_011_orig",
+      "setting_id": "neut_011",
+      "setting": "woodshop joinery and sander bay",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The woodworker drove the slotted brass screw into the oak cabinet joint while the apprentice looped the canvas sanding belt around the rubber drive rollers.",
+      "neg": "The woodworker drove the canvas sanding belt into the oak cabinet joint while the apprentice looped the slotted brass screw around the rubber drive rollers."
+    },
+    {
+      "id": "neut_011_mirror",
+      "setting_id": "neut_011",
+      "setting": "woodshop joinery and sander bay",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The apprentice looped the canvas sanding belt around the rubber drive rollers while the woodworker drove the slotted brass screw into the oak cabinet joint.",
+      "neg": "The apprentice looped the slotted brass screw around the rubber drive rollers while the woodworker drove the canvas sanding belt into the oak cabinet joint."
+    },
+    {
+      "id": "neut_012_orig",
+      "setting_id": "neut_012",
+      "setting": "furniture shop glue and dowel bench",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "In the woodshop, the yellow carpenter glue was squeezed from the narrow nozzle bottle and the fluted birch dowel was tapped into the drilled mortise hole.",
+      "neg": "In the woodshop, the fluted birch dowel was squeezed from the narrow nozzle bottle and the yellow carpenter glue was tapped into the drilled mortise hole."
+    },
+    {
+      "id": "neut_012_mirror",
+      "setting_id": "neut_012",
+      "setting": "furniture shop glue and dowel bench",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "In the woodshop, the fluted birch dowel was tapped into the drilled mortise hole and the yellow carpenter glue was squeezed from the narrow nozzle bottle.",
+      "neg": "In the woodshop, the yellow carpenter glue was tapped into the drilled mortise hole and the fluted birch dowel was squeezed from the narrow nozzle bottle."
+    },
+    {
+      "id": "neut_013_orig",
+      "setting_id": "neut_013",
+      "setting": "greenhouse staking and sifting bench",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The gardener hammered the cedar trellis stake into the raised timber bed and sifted the granular limestone meal through the wire mesh screen.",
+      "neg": "The gardener hammered the granular limestone meal into the raised timber bed and sifted the cedar trellis stake through the wire mesh screen."
+    },
+    {
+      "id": "neut_013_mirror",
+      "setting_id": "neut_013",
+      "setting": "greenhouse staking and sifting bench",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The gardener sifted the granular limestone meal through the wire mesh screen and hammered the cedar trellis stake into the raised timber bed.",
+      "neg": "The gardener sifted the cedar trellis stake through the wire mesh screen and hammered the granular limestone meal into the raised timber bed."
+    },
+    {
+      "id": "neut_014_orig",
+      "setting_id": "neut_014",
+      "setting": "orchard hayloft and cider press barn",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the market truck arrived, the farmhand stacked the tied alfalfa bale inside the timber loft and siphoned the pressed apple cider into the glass carboy jug.",
+      "neg": "Before the market truck arrived, the farmhand stacked the pressed apple cider inside the timber loft and siphoned the tied alfalfa bale into the glass carboy jug."
+    },
+    {
+      "id": "neut_014_mirror",
+      "setting_id": "neut_014",
+      "setting": "orchard hayloft and cider press barn",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the market truck arrived, the farmhand siphoned the pressed apple cider into the glass carboy jug and stacked the tied alfalfa bale inside the timber loft.",
+      "neg": "Before the market truck arrived, the farmhand siphoned the tied alfalfa bale into the glass carboy jug and stacked the pressed apple cider inside the timber loft."
+    },
+    {
+      "id": "neut_015_orig",
+      "setting_id": "neut_015",
+      "setting": "nursery bulb bed and drip irrigation row",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The grower planted the autumn tulip bulb inside the six-inch trowel hole. The groundskeeper unrolled the flexible drip tubing along the greenhouse gravel path.",
+      "neg": "The grower planted the flexible drip tubing inside the six-inch trowel hole. The groundskeeper unrolled the autumn tulip bulb along the greenhouse gravel path."
+    },
+    {
+      "id": "neut_015_mirror",
+      "setting_id": "neut_015",
+      "setting": "nursery bulb bed and drip irrigation row",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The groundskeeper unrolled the flexible drip tubing along the greenhouse gravel path. The grower planted the autumn tulip bulb inside the six-inch trowel hole.",
+      "neg": "The groundskeeper unrolled the autumn tulip bulb along the greenhouse gravel path. The grower planted the flexible drip tubing inside the six-inch trowel hole."
+    },
+    {
+      "id": "neut_016_orig",
+      "setting_id": "neut_016",
+      "setting": "tailor fitting and bobbin workroom",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The tailor draped the pleated wool skirt over the padded dress form and wound the polyester embroidery floss onto the narrow metal bobbin.",
+      "neg": "The tailor draped the polyester embroidery floss over the padded dress form and wound the pleated wool skirt onto the narrow metal bobbin."
+    },
+    {
+      "id": "neut_016_mirror",
+      "setting_id": "neut_016",
+      "setting": "tailor fitting and bobbin workroom",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The tailor wound the polyester embroidery floss onto the narrow metal bobbin and draped the pleated wool skirt over the padded dress form.",
+      "neg": "The tailor wound the pleated wool skirt onto the narrow metal bobbin and draped the polyester embroidery floss over the padded dress form."
+    },
+    {
+      "id": "neut_017_orig",
+      "setting_id": "neut_017",
+      "setting": "weaving loom and dye vat studio",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The concentrated indigo dye was poured into the copper soaking vat, and the carved maple shuttle was passed across the taut warp yarns.",
+      "neg": "The carved maple shuttle was poured into the copper soaking vat, and the concentrated indigo dye was passed across the taut warp yarns."
+    },
+    {
+      "id": "neut_017_mirror",
+      "setting_id": "neut_017",
+      "setting": "weaving loom and dye vat studio",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The carved maple shuttle was passed across the taut warp yarns, and the concentrated indigo dye was poured into the copper soaking vat.",
+      "neg": "The concentrated indigo dye was passed across the taut warp yarns, and the carved maple shuttle was poured into the copper soaking vat."
+    },
+    {
+      "id": "neut_018_orig",
+      "setting_id": "neut_018",
+      "setting": "quilting room button and batting table",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The seamstress stitched the round pearl button onto the linen cuff band while the quilter unrolled the layered cotton batting across the wide backing cloth.",
+      "neg": "The seamstress stitched the layered cotton batting onto the linen cuff band while the quilter unrolled the round pearl button across the wide backing cloth."
+    },
+    {
+      "id": "neut_018_mirror",
+      "setting_id": "neut_018",
+      "setting": "quilting room button and batting table",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The quilter unrolled the layered cotton batting across the wide backing cloth while the seamstress stitched the round pearl button onto the linen cuff band.",
+      "neg": "The quilter unrolled the round pearl button across the wide backing cloth while the seamstress stitched the layered cotton batting onto the linen cuff band."
+    },
+    {
+      "id": "neut_019_orig",
+      "setting_id": "neut_019",
+      "setting": "orchestra string and brass tuning table",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The musician tightened the coiled gut string onto the ebony tuning peg and dripped the mineral valve oil into the trumpet piston casing.",
+      "neg": "The musician tightened the mineral valve oil onto the ebony tuning peg and dripped the coiled gut string into the trumpet piston casing."
+    },
+    {
+      "id": "neut_019_mirror",
+      "setting_id": "neut_019",
+      "setting": "orchestra string and brass tuning table",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The musician dripped the mineral valve oil into the trumpet piston casing and tightened the coiled gut string onto the ebony tuning peg.",
+      "neg": "The musician dripped the coiled gut string into the trumpet piston casing and tightened the mineral valve oil onto the ebony tuning peg."
+    },
+    {
+      "id": "neut_020_orig",
+      "setting_id": "neut_020",
+      "setting": "band room woodwind and percussion riser",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The oboist slipped the thin cane reed into the felt mouthpiece case. The percussionist wheeled the heavy bass drum onto the carpeted stage riser.",
+      "neg": "The oboist slipped the heavy bass drum into the felt mouthpiece case. The percussionist wheeled the thin cane reed onto the carpeted stage riser."
+    },
+    {
+      "id": "neut_020_mirror",
+      "setting_id": "neut_020",
+      "setting": "band room woodwind and percussion riser",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The percussionist wheeled the heavy bass drum onto the carpeted stage riser. The oboist slipped the thin cane reed into the felt mouthpiece case.",
+      "neg": "The percussionist wheeled the thin cane reed onto the carpeted stage riser. The oboist slipped the heavy bass drum into the felt mouthpiece case."
+    },
+    {
+      "id": "neut_021_orig",
+      "setting_id": "neut_021",
+      "setting": "chamber recital score and horn alcove",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "In the rehearsal alcove, the bound choral score was opened across the folding wire lectern and the conical brass mute was fitted into the flared horn bell.",
+      "neg": "In the rehearsal alcove, the conical brass mute was opened across the folding wire lectern and the bound choral score was fitted into the flared horn bell."
+    },
+    {
+      "id": "neut_021_mirror",
+      "setting_id": "neut_021",
+      "setting": "chamber recital score and horn alcove",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "In the rehearsal alcove, the conical brass mute was fitted into the flared horn bell and the bound choral score was opened across the folding wire lectern.",
+      "neg": "In the rehearsal alcove, the bound choral score was fitted into the flared horn bell and the conical brass mute was opened across the folding wire lectern."
+    },
+    {
+      "id": "neut_022_orig",
+      "setting_id": "neut_022",
+      "setting": "oil painter easel and solvent bench",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The painter propped the stretched linen canvas onto the wooden studio easel and decanted the pale mineral turpentine into the lidded glass jar.",
+      "neg": "The painter propped the pale mineral turpentine onto the wooden studio easel and decanted the stretched linen canvas into the lidded glass jar."
+    },
+    {
+      "id": "neut_022_mirror",
+      "setting_id": "neut_022",
+      "setting": "oil painter easel and solvent bench",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The painter decanted the pale mineral turpentine into the lidded glass jar and propped the stretched linen canvas onto the wooden studio easel.",
+      "neg": "The painter decanted the stretched linen canvas into the lidded glass jar and propped the pale mineral turpentine onto the wooden studio easel."
+    },
+    {
+      "id": "neut_023_orig",
+      "setting_id": "neut_023",
+      "setting": "ceramics glaze bucket and kiln room",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The potter whisked the cobalt ceramic glaze inside the five-gallon plastic bucket while the studio helper set the molded stoneware pitcher onto the brick kiln shelf.",
+      "neg": "The potter whisked the molded stoneware pitcher inside the five-gallon plastic bucket while the studio helper set the cobalt ceramic glaze onto the brick kiln shelf."
+    },
+    {
+      "id": "neut_023_mirror",
+      "setting_id": "neut_023",
+      "setting": "ceramics glaze bucket and kiln room",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The studio helper set the molded stoneware pitcher onto the brick kiln shelf while the potter whisked the cobalt ceramic glaze inside the five-gallon plastic bucket.",
+      "neg": "The studio helper set the cobalt ceramic glaze onto the brick kiln shelf while the potter whisked the molded stoneware pitcher inside the five-gallon plastic bucket."
+    },
+    {
+      "id": "neut_024_orig",
+      "setting_id": "neut_024",
+      "setting": "printmaking press and ink slab loft",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The printmaker clamped the carved linoleum block onto the cast-iron press bed. The studio assistant spread the viscous relief ink across the flat glass slab.",
+      "neg": "The printmaker clamped the viscous relief ink onto the cast-iron press bed. The studio assistant spread the carved linoleum block across the flat glass slab."
+    },
+    {
+      "id": "neut_024_mirror",
+      "setting_id": "neut_024",
+      "setting": "printmaking press and ink slab loft",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The studio assistant spread the viscous relief ink across the flat glass slab. The printmaker clamped the carved linoleum block onto the cast-iron press bed.",
+      "neg": "The studio assistant spread the carved linoleum block across the flat glass slab. The printmaker clamped the viscous relief ink onto the cast-iron press bed."
+    },
+    {
+      "id": "neut_025_orig",
+      "setting_id": "neut_025",
+      "setting": "distribution warehouse pallet and barcode bay",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The warehouse operator hoisted the heavy timber pallet with the hydraulic floor jack and peeled the adhesive barcode sticker from the waxed backing strip.",
+      "neg": "The warehouse operator hoisted the adhesive barcode sticker with the hydraulic floor jack and peeled the heavy timber pallet from the waxed backing strip."
+    },
+    {
+      "id": "neut_025_mirror",
+      "setting_id": "neut_025",
+      "setting": "distribution warehouse pallet and barcode bay",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The warehouse operator peeled the adhesive barcode sticker from the waxed backing strip and hoisted the heavy timber pallet with the hydraulic floor jack.",
+      "neg": "The warehouse operator peeled the heavy timber pallet from the waxed backing strip and hoisted the adhesive barcode sticker with the hydraulic floor jack."
+    },
+    {
+      "id": "neut_026_orig",
+      "setting_id": "neut_026",
+      "setting": "grain hopper and crate strapping depot",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The bulk barley grain was shoveled into the overhead hopper chute, and the steel banding strap was crimped around the bundled timber crates.",
+      "neg": "The steel banding strap was shoveled into the overhead hopper chute, and the bulk barley grain was crimped around the bundled timber crates."
+    },
+    {
+      "id": "neut_026_mirror",
+      "setting_id": "neut_026",
+      "setting": "grain hopper and crate strapping depot",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The steel banding strap was crimped around the bundled timber crates, and the bulk barley grain was shoveled into the overhead hopper chute.",
+      "neg": "The bulk barley grain was crimped around the bundled timber crates, and the steel banding strap was shoveled into the overhead hopper chute."
+    },
+    {
+      "id": "neut_027_orig",
+      "setting_id": "neut_027",
+      "setting": "fulfillment center packing and taping station",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the evening courier arrived, the fulfillment clerk scooped the loose foam pellets into the open shipping carton and unspooled the brown kraft tape along the cardboard flap seam.",
+      "neg": "Before the evening courier arrived, the fulfillment clerk scooped the brown kraft tape into the open shipping carton and unspooled the loose foam pellets along the cardboard flap seam."
+    },
+    {
+      "id": "neut_027_mirror",
+      "setting_id": "neut_027",
+      "setting": "fulfillment center packing and taping station",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the evening courier arrived, the fulfillment clerk unspooled the brown kraft tape along the cardboard flap seam and scooped the loose foam pellets into the open shipping carton.",
+      "neg": "Before the evening courier arrived, the fulfillment clerk unspooled the loose foam pellets along the cardboard flap seam and scooped the brown kraft tape into the open shipping carton."
+    },
+    {
+      "id": "neut_028_orig",
+      "setting_id": "neut_028",
+      "setting": "bookbindery trimming and pasting table",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The bookbinder trimmed the stitched paper block beneath the guillotine cutter blade and spooned the boiled wheat paste into the shallow enamel pan.",
+      "neg": "The bookbinder trimmed the boiled wheat paste beneath the guillotine cutter blade and spooned the stitched paper block into the shallow enamel pan."
+    },
+    {
+      "id": "neut_028_mirror",
+      "setting_id": "neut_028",
+      "setting": "bookbindery trimming and pasting table",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The bookbinder spooned the boiled wheat paste into the shallow enamel pan and trimmed the stitched paper block beneath the guillotine cutter blade.",
+      "neg": "The bookbinder spooned the stitched paper block into the shallow enamel pan and trimmed the boiled wheat paste beneath the guillotine cutter blade."
+    },
+    {
+      "id": "neut_029_orig",
+      "setting_id": "neut_029",
+      "setting": "bindery cover shear and sewing frame",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The case maker beveled the thick buckram cover along the cast-iron bench shear. The signature sewer threaded the waxed linen cord through the curved steel needle.",
+      "neg": "The case maker beveled the waxed linen cord along the cast-iron bench shear. The signature sewer threaded the thick buckram cover through the curved steel needle."
+    },
+    {
+      "id": "neut_029_mirror",
+      "setting_id": "neut_029",
+      "setting": "bindery cover shear and sewing frame",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The signature sewer threaded the waxed linen cord through the curved steel needle. The case maker beveled the thick buckram cover along the cast-iron bench shear.",
+      "neg": "The signature sewer threaded the thick buckram cover through the curved steel needle. The case maker beveled the waxed linen cord along the cast-iron bench shear."
+    },
+    {
+      "id": "neut_030_orig",
+      "setting_id": "neut_030",
+      "setting": "copy shop binding and toner counter",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The spiral wire spine was twisted through the punched booklet margin, and the powdered black toner was funneled into the copier hopper cartridge.",
+      "neg": "The powdered black toner was twisted through the punched booklet margin, and the spiral wire spine was funneled into the copier hopper cartridge."
+    },
+    {
+      "id": "neut_030_mirror",
+      "setting_id": "neut_030",
+      "setting": "copy shop binding and toner counter",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The powdered black toner was funneled into the copier hopper cartridge, and the spiral wire spine was twisted through the punched booklet margin.",
+      "neg": "The spiral wire spine was funneled into the copier hopper cartridge, and the powdered black toner was twisted through the punched booklet margin."
+    },
+    {
+      "id": "neut_031_orig",
+      "setting_id": "neut_031",
+      "setting": "a mountain observatory telescope dome",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The astronomer mounted the parabolic glass mirror inside the steel tube and uploaded the celestial star catalog onto the observatory terminal.",
+      "neg": "The astronomer mounted the celestial star catalog inside the steel tube and uploaded the parabolic glass mirror onto the observatory terminal."
+    },
+    {
+      "id": "neut_031_mirror",
+      "setting_id": "neut_031",
+      "setting": "a mountain observatory telescope dome",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The astronomer uploaded the celestial star catalog onto the observatory terminal and mounted the parabolic glass mirror inside the steel tube.",
+      "neg": "The astronomer uploaded the parabolic glass mirror onto the observatory terminal and mounted the celestial star catalog inside the steel tube."
+    },
+    {
+      "id": "neut_032_orig",
+      "setting_id": "neut_032",
+      "setting": "a university spectroscopy bench",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "While the physicist aligned the triangular quartz prism along the collimator beam, the technician plugged the braided patch cord into the spectrometer port.",
+      "neg": "While the physicist aligned the braided patch cord along the collimator beam, the technician plugged the triangular quartz prism into the spectrometer port."
+    },
+    {
+      "id": "neut_032_mirror",
+      "setting_id": "neut_032",
+      "setting": "a university spectroscopy bench",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The technician plugged the braided patch cord into the spectrometer port while the physicist aligned the triangular quartz prism along the collimator beam.",
+      "neg": "The technician plugged the triangular quartz prism into the spectrometer port while the physicist aligned the braided patch cord along the collimator beam."
+    },
+    {
+      "id": "neut_033_orig",
+      "setting_id": "neut_033",
+      "setting": "a planetarium projection chamber",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The pressurized helium gas was piped into the infrared detector housing, and the laminated constellation chart was pinned onto the corkboard wall.",
+      "neg": "The laminated constellation chart was piped into the infrared detector housing, and the pressurized helium gas was pinned onto the corkboard wall."
+    },
+    {
+      "id": "neut_033_mirror",
+      "setting_id": "neut_033",
+      "setting": "a planetarium projection chamber",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The laminated constellation chart was pinned onto the corkboard wall, and the pressurized helium gas was piped into the infrared detector housing.",
+      "neg": "The pressurized helium gas was pinned onto the corkboard wall, and the laminated constellation chart was piped into the infrared detector housing."
+    },
+    {
+      "id": "neut_034_orig",
+      "setting_id": "neut_034",
+      "setting": "a coastal sailing marina slip",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After the skipper moored the cedar sailing dinghy beside the timber pilings, the mate folded the canvas mainsail across the aluminum boom.",
+      "neg": "After the skipper moored the canvas mainsail beside the timber pilings, the mate folded the cedar sailing dinghy across the aluminum boom."
+    },
+    {
+      "id": "neut_034_mirror",
+      "setting_id": "neut_034",
+      "setting": "a coastal sailing marina slip",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The mate folded the canvas mainsail across the aluminum boom after the skipper moored the cedar sailing dinghy beside the timber pilings.",
+      "neg": "The mate folded the cedar sailing dinghy across the aluminum boom after the skipper moored the canvas mainsail beside the timber pilings."
+    },
+    {
+      "id": "neut_035_orig",
+      "setting_id": "neut_035",
+      "setting": "a river tugboat pilothouse",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The galvanized anchor chain was wound onto the foredeck windlass, and the spiral tidal almanac was tucked beneath the chartroom clipboard.",
+      "neg": "The spiral tidal almanac was wound onto the foredeck windlass, and the galvanized anchor chain was tucked beneath the chartroom clipboard."
+    },
+    {
+      "id": "neut_035_mirror",
+      "setting_id": "neut_035",
+      "setting": "a river tugboat pilothouse",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The spiral tidal almanac was tucked beneath the chartroom clipboard, and the galvanized anchor chain was wound onto the foredeck windlass.",
+      "neg": "The galvanized anchor chain was tucked beneath the chartroom clipboard, and the spiral tidal almanac was wound onto the foredeck windlass."
+    },
+    {
+      "id": "neut_036_orig",
+      "setting_id": "neut_036",
+      "setting": "a harbor lighthouse boathouse",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The coxswain coiled the braided hemp hawser around the iron bollard. The navigator bolted the brass binnacle compass beside the steering wheel.",
+      "neg": "The coxswain coiled the brass binnacle compass around the iron bollard. The navigator bolted the braided hemp hawser beside the steering wheel."
+    },
+    {
+      "id": "neut_036_mirror",
+      "setting_id": "neut_036",
+      "setting": "a harbor lighthouse boathouse",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The navigator bolted the brass binnacle compass beside the steering wheel. The coxswain coiled the braided hemp hawser around the iron bollard.",
+      "neg": "The navigator bolted the braided hemp hawser beside the steering wheel. The coxswain coiled the brass binnacle compass around the iron bollard."
+    },
+    {
+      "id": "neut_037_orig",
+      "setting_id": "neut_037",
+      "setting": "a regional commuter rail depot",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The yard conductor coupled the freight boxcar onto the commuter locomotive and scanned the barcode rail ticket at the turnstile reader.",
+      "neg": "The yard conductor coupled the barcode rail ticket onto the commuter locomotive and scanned the freight boxcar at the turnstile reader."
+    },
+    {
+      "id": "neut_037_mirror",
+      "setting_id": "neut_037",
+      "setting": "a regional commuter rail depot",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The yard conductor scanned the barcode rail ticket at the turnstile reader and coupled the freight boxcar onto the commuter locomotive.",
+      "neg": "The yard conductor scanned the freight boxcar at the turnstile reader and coupled the barcode rail ticket onto the commuter locomotive."
+    },
+    {
+      "id": "neut_038_orig",
+      "setting_id": "neut_038",
+      "setting": "a municipal regional airfield apron",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the mechanic inflated the rubber nosewheel tire with the nitrogen compressor, the dispatcher stamped the printed flight manifest at the gate counter.",
+      "neg": "Before the mechanic inflated the printed flight manifest with the nitrogen compressor, the dispatcher stamped the rubber nosewheel tire at the gate counter."
+    },
+    {
+      "id": "neut_038_mirror",
+      "setting_id": "neut_038",
+      "setting": "a municipal regional airfield apron",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The dispatcher stamped the printed flight manifest at the gate counter before the mechanic inflated the rubber nosewheel tire with the nitrogen compressor.",
+      "neg": "The dispatcher stamped the rubber nosewheel tire at the gate counter before the mechanic inflated the printed flight manifest with the nitrogen compressor."
+    },
+    {
+      "id": "neut_039_orig",
+      "setting_id": "neut_039",
+      "setting": "an intercity train switching tower",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The signalman threw the iron switch lever beside the gravel siding. The announcer broadcast the departure platform number over the station intercom.",
+      "neg": "The signalman threw the departure platform number beside the gravel siding. The announcer broadcast the iron switch lever over the station intercom."
+    },
+    {
+      "id": "neut_039_mirror",
+      "setting_id": "neut_039",
+      "setting": "an intercity train switching tower",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The announcer broadcast the departure platform number over the station intercom. The signalman threw the iron switch lever beside the gravel siding.",
+      "neg": "The announcer broadcast the iron switch lever over the station intercom. The signalman threw the departure platform number beside the gravel siding."
+    },
+    {
+      "id": "neut_040_orig",
+      "setting_id": "neut_040",
+      "setting": "an analog cinema editing suite",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The projectionist spliced the celluloid film strip on the brass trimmer and dialed the digital timecode offset into the mixing console.",
+      "neg": "The projectionist spliced the digital timecode offset on the brass trimmer and dialed the celluloid film strip into the mixing console."
+    },
+    {
+      "id": "neut_040_mirror",
+      "setting_id": "neut_040",
+      "setting": "an analog cinema editing suite",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The projectionist dialed the digital timecode offset into the mixing console and spliced the celluloid film strip on the brass trimmer.",
+      "neg": "The projectionist dialed the celluloid film strip into the mixing console and spliced the digital timecode offset on the brass trimmer."
+    },
+    {
+      "id": "neut_041_orig",
+      "setting_id": "neut_041",
+      "setting": "a portrait studio lighting bay",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The telephoto glass lens was screwed onto the tripod camera mount, and the gelatin silver print was clipped along the overhead wire.",
+      "neg": "The gelatin silver print was screwed onto the tripod camera mount, and the telephoto glass lens was clipped along the overhead wire."
+    },
+    {
+      "id": "neut_041_mirror",
+      "setting_id": "neut_041",
+      "setting": "a portrait studio lighting bay",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The gelatin silver print was clipped along the overhead wire, and the telephoto glass lens was screwed onto the tripod camera mount.",
+      "neg": "The telephoto glass lens was clipped along the overhead wire, and the gelatin silver print was screwed onto the tripod camera mount."
+    },
+    {
+      "id": "neut_042_orig",
+      "setting_id": "neut_042",
+      "setting": "a documentary soundstage grip truck",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "While the gaffer clamped the tungsten floodlight onto the overhead crossbar, the editor copied the raw video footage onto the external drive.",
+      "neg": "While the gaffer clamped the raw video footage onto the overhead crossbar, the editor copied the tungsten floodlight onto the external drive."
+    },
+    {
+      "id": "neut_042_mirror",
+      "setting_id": "neut_042",
+      "setting": "a documentary soundstage grip truck",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The editor copied the raw video footage onto the external drive while the gaffer clamped the tungsten floodlight onto the overhead crossbar.",
+      "neg": "The editor copied the tungsten floodlight onto the external drive while the gaffer clamped the raw video footage onto the overhead crossbar."
+    },
+    {
+      "id": "neut_043_orig",
+      "setting_id": "neut_043",
+      "setting": "a collegiate athletics equipment room",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The equipment manager strung the graphite tennis racket on the tensioning jig and slid the rubber bumper plate onto the barbell sleeve.",
+      "neg": "The equipment manager strung the rubber bumper plate on the tensioning jig and slid the graphite tennis racket onto the barbell sleeve."
+    },
+    {
+      "id": "neut_043_mirror",
+      "setting_id": "neut_043",
+      "setting": "a collegiate athletics equipment room",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The equipment manager slid the rubber bumper plate onto the barbell sleeve and strung the graphite tennis racket on the tensioning jig.",
+      "neg": "The equipment manager slid the graphite tennis racket onto the barbell sleeve and strung the rubber bumper plate on the tensioning jig."
+    },
+    {
+      "id": "neut_044_orig",
+      "setting_id": "neut_044",
+      "setting": "a municipal lap-pool deck",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The pool attendant stretched the floating lane rope across the tiled basin. The coach taped the printed swim roster onto the glass noticeboard.",
+      "neg": "The pool attendant stretched the printed swim roster across the tiled basin. The coach taped the floating lane rope onto the glass noticeboard."
+    },
+    {
+      "id": "neut_044_mirror",
+      "setting_id": "neut_044",
+      "setting": "a municipal lap-pool deck",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The coach taped the printed swim roster onto the glass noticeboard. The pool attendant stretched the floating lane rope across the tiled basin.",
+      "neg": "The coach taped the floating lane rope onto the glass noticeboard. The pool attendant stretched the printed swim roster across the tiled basin."
+    },
+    {
+      "id": "neut_045_orig",
+      "setting_id": "neut_045",
+      "setting": "an indoor bouldering gym gear room",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The powdered magnesium chalk was funneled into the cloth hip pouch, and the anodized aluminum carabiner was latched onto the webbing gear loop.",
+      "neg": "The anodized aluminum carabiner was funneled into the cloth hip pouch, and the powdered magnesium chalk was latched onto the webbing gear loop."
+    },
+    {
+      "id": "neut_045_mirror",
+      "setting_id": "neut_045",
+      "setting": "an indoor bouldering gym gear room",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The anodized aluminum carabiner was latched onto the webbing gear loop, and the powdered magnesium chalk was funneled into the cloth hip pouch.",
+      "neg": "The powdered magnesium chalk was latched onto the webbing gear loop, and the anodized aluminum carabiner was funneled into the cloth hip pouch."
+    },
+    {
+      "id": "neut_046_orig",
+      "setting_id": "neut_046",
+      "setting": "a quarry core-drilling field station",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The geologist sliced the cylindrical basalt core with the diamond rotary saw and folded the topographic contour map into the leather field satchel.",
+      "neg": "The geologist sliced the topographic contour map with the diamond rotary saw and folded the cylindrical basalt core into the leather field satchel."
+    },
+    {
+      "id": "neut_046_mirror",
+      "setting_id": "neut_046",
+      "setting": "a quarry core-drilling field station",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The geologist folded the topographic contour map into the leather field satchel and sliced the cylindrical basalt core with the diamond rotary saw.",
+      "neg": "The geologist folded the cylindrical basalt core into the leather field satchel and sliced the topographic contour map with the diamond rotary saw."
+    },
+    {
+      "id": "neut_047_orig",
+      "setting_id": "neut_047",
+      "setting": "an underground ore assay shed",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After the surveyor sifted the loose granite sediment through the mesh screen, the driller hammered the iron survey stake into the hillside clay.",
+      "neg": "After the surveyor sifted the iron survey stake through the mesh screen, the driller hammered the loose granite sediment into the hillside clay."
+    },
+    {
+      "id": "neut_047_mirror",
+      "setting_id": "neut_047",
+      "setting": "an underground ore assay shed",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The driller hammered the iron survey stake into the hillside clay after the surveyor sifted the loose granite sediment through the mesh screen.",
+      "neg": "The driller hammered the loose granite sediment into the hillside clay after the surveyor sifted the iron survey stake through the mesh screen."
+    },
+    {
+      "id": "neut_048_orig",
+      "setting_id": "neut_048",
+      "setting": "a mineralogical collection vault",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The hexagonal quartz crystal was weighed on the brass balance pan, and the seismic waveform dataset was exported onto the magnetic tape.",
+      "neg": "The seismic waveform dataset was weighed on the brass balance pan, and the hexagonal quartz crystal was exported onto the magnetic tape."
+    },
+    {
+      "id": "neut_048_mirror",
+      "setting_id": "neut_048",
+      "setting": "a mineralogical collection vault",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The seismic waveform dataset was exported onto the magnetic tape, and the hexagonal quartz crystal was weighed on the brass balance pan.",
+      "neg": "The hexagonal quartz crystal was exported onto the magnetic tape, and the seismic waveform dataset was weighed on the brass balance pan."
+    },
+    {
+      "id": "neut_049_orig",
+      "setting_id": "neut_049",
+      "setting": "a highland weather station terrace",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The observer tethered the nylon weather kite to the wooden winch and inked the hourly pressure reading onto the graph ledger.",
+      "neg": "The observer tethered the hourly pressure reading to the wooden winch and inked the nylon weather kite onto the graph ledger."
+    },
+    {
+      "id": "neut_049_mirror",
+      "setting_id": "neut_049",
+      "setting": "a highland weather station terrace",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The observer inked the hourly pressure reading onto the graph ledger and tethered the nylon weather kite to the wooden winch.",
+      "neg": "The observer inked the nylon weather kite onto the graph ledger and tethered the hourly pressure reading to the wooden winch."
+    },
+    {
+      "id": "neut_050_orig",
+      "setting_id": "neut_050",
+      "setting": "a prairie meteorological instrument enclosure",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The meteorologist drained the collected rainwater from the copper gauge. The installer tightened the spinning anemometer onto the mast bracket.",
+      "neg": "The meteorologist drained the spinning anemometer from the copper gauge. The installer tightened the collected rainwater onto the mast bracket."
+    },
+    {
+      "id": "neut_050_mirror",
+      "setting_id": "neut_050",
+      "setting": "a prairie meteorological instrument enclosure",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The installer tightened the spinning anemometer onto the mast bracket. The meteorologist drained the collected rainwater from the copper gauge.",
+      "neg": "The installer tightened the collected rainwater onto the mast bracket. The meteorologist drained the spinning anemometer from the copper gauge."
+    },
+    {
+      "id": "neut_051_orig",
+      "setting_id": "neut_051",
+      "setting": "an arctic atmospheric monitoring hut",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the forecaster plotted the barometric pressure contour across the synoptic sheet, the engineer fastened the aluminum pyranometer onto the roof tripod.",
+      "neg": "Before the forecaster plotted the aluminum pyranometer across the synoptic sheet, the engineer fastened the barometric pressure contour onto the roof tripod."
+    },
+    {
+      "id": "neut_051_mirror",
+      "setting_id": "neut_051",
+      "setting": "an arctic atmospheric monitoring hut",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The engineer fastened the aluminum pyranometer onto the roof tripod before the forecaster plotted the barometric pressure contour across the synoptic sheet.",
+      "neg": "The engineer fastened the barometric pressure contour onto the roof tripod before the forecaster plotted the aluminum pyranometer across the synoptic sheet."
+    },
+    {
+      "id": "neut_052_orig",
+      "setting_id": "neut_052",
+      "setting": "a municipal library periodicals annex",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The archivist shelved the clothbound census ledger inside the cedar cabinet. The clerk synced the digital citation spreadsheet onto the library server.",
+      "neg": "The archivist shelved the digital citation spreadsheet inside the cedar cabinet. The clerk synced the clothbound census ledger onto the library server."
+    },
+    {
+      "id": "neut_052_mirror",
+      "setting_id": "neut_052",
+      "setting": "a municipal library periodicals annex",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The clerk synced the digital citation spreadsheet onto the library server. The archivist shelved the clothbound census ledger inside the cedar cabinet.",
+      "neg": "The clerk synced the clothbound census ledger onto the library server. The archivist shelved the digital citation spreadsheet inside the cedar cabinet."
+    },
+    {
+      "id": "neut_053_orig",
+      "setting_id": "neut_053",
+      "setting": "a university map-room reading loft",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The librarian typed the decimal call number into the lookup terminal and wedged the cast-bronze bookend beside the folio stack.",
+      "neg": "The librarian typed the cast-bronze bookend into the lookup terminal and wedged the decimal call number beside the folio stack."
+    },
+    {
+      "id": "neut_053_mirror",
+      "setting_id": "neut_053",
+      "setting": "a university map-room reading loft",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The librarian wedged the cast-bronze bookend beside the folio stack and typed the decimal call number into the lookup terminal.",
+      "neg": "The librarian wedged the decimal call number beside the folio stack and typed the cast-bronze bookend into the lookup terminal."
+    },
+    {
+      "id": "neut_054_orig",
+      "setting_id": "neut_054",
+      "setting": "a civic historical records basement",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The rolled architectural blueprint was flattened beneath the glass paperweight, and the recorded interview audio was streamed through the listening headphones.",
+      "neg": "The recorded interview audio was flattened beneath the glass paperweight, and the rolled architectural blueprint was streamed through the listening headphones."
+    },
+    {
+      "id": "neut_054_mirror",
+      "setting_id": "neut_054",
+      "setting": "a civic historical records basement",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The recorded interview audio was streamed through the listening headphones, and the rolled architectural blueprint was flattened beneath the glass paperweight.",
+      "neg": "The rolled architectural blueprint was streamed through the listening headphones, and the recorded interview audio was flattened beneath the glass paperweight."
+    },
+    {
+      "id": "neut_055_orig",
+      "setting_id": "neut_055",
+      "setting": "a campus server-rack patch closet",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The administrator crimped the twisted ethernet cable into the plastic connector and compiled the routing configuration script inside the command shell.",
+      "neg": "The administrator crimped the routing configuration script into the plastic connector and compiled the twisted ethernet cable inside the command shell."
+    },
+    {
+      "id": "neut_055_mirror",
+      "setting_id": "neut_055",
+      "setting": "a campus server-rack patch closet",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The administrator compiled the routing configuration script inside the command shell and crimped the twisted ethernet cable into the plastic connector.",
+      "neg": "The administrator compiled the twisted ethernet cable inside the command shell and crimped the routing configuration script into the plastic connector."
+    },
+    {
+      "id": "neut_056_orig",
+      "setting_id": "neut_056",
+      "setting": "a robotics bench wiring bay",
+      "syntax": "subordinate",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "While the assembler soldered the stranded copper lead onto the circuit pad, the programmer parsed the hexadecimal packet header inside the debugger.",
+      "neg": "While the assembler soldered the hexadecimal packet header onto the circuit pad, the programmer parsed the stranded copper lead inside the debugger."
+    },
+    {
+      "id": "neut_056_mirror",
+      "setting_id": "neut_056",
+      "setting": "a robotics bench wiring bay",
+      "syntax": "subordinate",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The programmer parsed the hexadecimal packet header inside the debugger while the assembler soldered the stranded copper lead onto the circuit pad.",
+      "neg": "The programmer parsed the stranded copper lead inside the debugger while the assembler soldered the hexadecimal packet header onto the circuit pad."
+    },
+    {
+      "id": "neut_057_orig",
+      "setting_id": "neut_057",
+      "setting": "a telecom fiber-optic junction room",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The lineman pulled the armored fiber conduit through the steel bulkhead. The analyst entered the numeric subnet mask into the terminal prompt.",
+      "neg": "The lineman pulled the numeric subnet mask through the steel bulkhead. The analyst entered the armored fiber conduit into the terminal prompt."
+    },
+    {
+      "id": "neut_057_mirror",
+      "setting_id": "neut_057",
+      "setting": "a telecom fiber-optic junction room",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The analyst entered the numeric subnet mask into the terminal prompt. The lineman pulled the armored fiber conduit through the steel bulkhead.",
+      "neg": "The analyst entered the armored fiber conduit into the terminal prompt. The lineman pulled the numeric subnet mask through the steel bulkhead."
+    },
+    {
+      "id": "neut_058_orig",
+      "setting_id": "neut_058",
+      "setting": "a marshland field botany shelter",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The botanist pressed the serrated fern frond between the blotting boards and jotted the elevation grid coordinate into the pocket fieldbook.",
+      "neg": "The botanist pressed the elevation grid coordinate between the blotting boards and jotted the serrated fern frond into the pocket fieldbook."
+    },
+    {
+      "id": "neut_058_mirror",
+      "setting_id": "neut_058",
+      "setting": "a marshland field botany shelter",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The botanist jotted the elevation grid coordinate into the pocket fieldbook and pressed the serrated fern frond between the blotting boards.",
+      "neg": "The botanist jotted the serrated fern frond into the pocket fieldbook and pressed the elevation grid coordinate between the blotting boards."
+    },
+    {
+      "id": "neut_059_orig",
+      "setting_id": "neut_059",
+      "setting": "a deciduous woodland ecology transect",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The dried milkweed pod was sealed inside the glass specimen jar, and the recorded warbler trill was replayed through the directional headset.",
+      "neg": "The recorded warbler trill was sealed inside the glass specimen jar, and the dried milkweed pod was replayed through the directional headset."
+    },
+    {
+      "id": "neut_059_mirror",
+      "setting_id": "neut_059",
+      "setting": "a deciduous woodland ecology transect",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The recorded warbler trill was replayed through the directional headset, and the dried milkweed pod was sealed inside the glass specimen jar.",
+      "neg": "The dried milkweed pod was replayed through the directional headset, and the recorded warbler trill was sealed inside the glass specimen jar."
+    },
+    {
+      "id": "neut_060_orig",
+      "setting_id": "neut_060",
+      "setting": "a coastal tidepool biology survey",
+      "syntax": "active",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The biologist pipetted the saline tidepool water into the graduated vial and traced the ribbed scallop shell onto the vellum sheet.",
+      "neg": "The biologist pipetted the ribbed scallop shell into the graduated vial and traced the saline tidepool water onto the vellum sheet."
+    },
+    {
+      "id": "neut_060_mirror",
+      "setting_id": "neut_060",
+      "setting": "a coastal tidepool biology survey",
+      "syntax": "active",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The biologist traced the ribbed scallop shell onto the vellum sheet and pipetted the saline tidepool water into the graduated vial.",
+      "neg": "The biologist traced the saline tidepool water onto the vellum sheet and pipetted the ribbed scallop shell into the graduated vial."
+    }
+  ]
+}

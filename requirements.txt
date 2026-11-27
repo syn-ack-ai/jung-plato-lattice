@@ -1,10 +1,13 @@
-# Core scientific & plotting stack (reproduces all 6 figures + zero-GPU verification)
+# Core scientific & plotting stack (reproduces all 9 figures + zero-GPU verification)
 numpy>=1.26
 scipy>=1.11
 matplotlib>=3.8
 pillow>=10.0
 tokenizers>=0.19
 pyarrow>=15.0
+
+# Optional (Microsoft Word .docx review build):
+# python-docx>=1.1
 
 # PyTorch + Hugging Face stack (5M distillation & 8B Gemma 4 E4B causal control / epistemic audit)
 # Note: Gemma 4 (`Gemma4ForConditionalGeneration`) requires transformers>=5.0 (verified on torch 2.14.1, transformers 5.18.0).

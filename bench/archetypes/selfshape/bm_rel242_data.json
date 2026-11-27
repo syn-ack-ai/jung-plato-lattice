@@ -1,0 +1,1204 @@
+{
+  "bm_rel_120": [
+    {
+      "id": "rel_001_orig",
+      "setting_id": "rel_001",
+      "setting": "a municipal procurement oversight hearing",
+      "domain": "governance",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The procurement council certified the transparent civic contractor for multiyear transit projects and disqualified the collusive bidding syndicate from future public tenders after reviewing the audit.",
+      "neg": "The procurement council certified the collusive bidding syndicate for multiyear transit projects and disqualified the transparent civic contractor from future public tenders after reviewing the audit."
+    },
+    {
+      "id": "rel_001_mirror",
+      "setting_id": "rel_001",
+      "setting": "a municipal procurement oversight hearing",
+      "domain": "governance",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The procurement council disqualified the collusive bidding syndicate from future public tenders and certified the transparent civic contractor for multiyear transit projects after reviewing the audit.",
+      "neg": "The procurement council disqualified the transparent civic contractor from future public tenders and certified the collusive bidding syndicate for multiyear transit projects after reviewing the audit."
+    },
+    {
+      "id": "rel_002_orig",
+      "setting_id": "rel_002",
+      "setting": "a parliamentary appropriations committee markup",
+      "domain": "governance",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Miriam shielded the accountable rural clinic grant from emergency reductions and curtailed the wasteful patronage slush fund through strict spending caps during the budget markup.",
+      "neg": "Miriam shielded the wasteful patronage slush fund from emergency reductions and curtailed the accountable rural clinic grant through strict spending caps during the budget markup."
+    },
+    {
+      "id": "rel_002_mirror",
+      "setting_id": "rel_002",
+      "setting": "a parliamentary appropriations committee markup",
+      "domain": "governance",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Miriam curtailed the wasteful patronage slush fund through strict spending caps and shielded the accountable rural clinic grant from emergency reductions during the budget markup.",
+      "neg": "Miriam curtailed the accountable rural clinic grant through strict spending caps and shielded the wasteful patronage slush fund from emergency reductions during the budget markup."
+    },
+    {
+      "id": "rel_003_orig",
+      "setting_id": "rel_003",
+      "setting": "a regional inspector general whistleblower review",
+      "domain": "governance",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Devon protected the forthright agency auditor against wrongful dismissal and disciplined the obstructive bureau chief with formal administrative sanctions following the oversight inquiry.",
+      "neg": "Devon protected the obstructive bureau chief against wrongful dismissal and disciplined the forthright agency auditor with formal administrative sanctions following the oversight inquiry."
+    },
+    {
+      "id": "rel_003_mirror",
+      "setting_id": "rel_003",
+      "setting": "a regional inspector general whistleblower review",
+      "domain": "governance",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Devon disciplined the obstructive bureau chief with formal administrative sanctions and protected the forthright agency auditor against wrongful dismissal following the oversight inquiry.",
+      "neg": "Devon disciplined the forthright agency auditor with formal administrative sanctions and protected the obstructive bureau chief against wrongful dismissal following the oversight inquiry."
+    },
+    {
+      "id": "rel_004_orig",
+      "setting_id": "rel_004",
+      "setting": "an appellate evidentiary admissibility hearing",
+      "domain": "courts",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The appellate bench admitted the corroborated forensic testimony into the official trial record and excluded the coerced pretrial confession under constitutional rules before final deliberation.",
+      "neg": "The appellate bench admitted the coerced pretrial confession into the official trial record and excluded the corroborated forensic testimony under constitutional rules before final deliberation."
+    },
+    {
+      "id": "rel_004_mirror",
+      "setting_id": "rel_004",
+      "setting": "an appellate evidentiary admissibility hearing",
+      "domain": "courts",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The appellate bench excluded the coerced pretrial confession under constitutional rules and admitted the corroborated forensic testimony into the official trial record before final deliberation.",
+      "neg": "The appellate bench excluded the corroborated forensic testimony under constitutional rules and admitted the coerced pretrial confession into the official trial record before final deliberation."
+    },
+    {
+      "id": "rel_005_orig",
+      "setting_id": "rel_005",
+      "setting": "a federal antitrust remedies conference",
+      "domain": "courts",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The district court compensated the injured independent supplier with statutory damages and penalized the monopolistic pricing cartel with heavy punitive fines in the civil judgment.",
+      "neg": "The district court compensated the monopolistic pricing cartel with statutory damages and penalized the injured independent supplier with heavy punitive fines in the civil judgment."
+    },
+    {
+      "id": "rel_005_mirror",
+      "setting_id": "rel_005",
+      "setting": "a federal antitrust remedies conference",
+      "domain": "courts",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The district court penalized the monopolistic pricing cartel with heavy punitive fines and compensated the injured independent supplier with statutory damages in the civil judgment.",
+      "neg": "The district court penalized the injured independent supplier with heavy punitive fines and compensated the monopolistic pricing cartel with statutory damages in the civil judgment."
+    },
+    {
+      "id": "rel_006_orig",
+      "setting_id": "rel_006",
+      "setting": "a special prosecutor grand jury briefing",
+      "domain": "courts",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After auditing the ledgers, Hannah exonerated the innocent accounting clerk of all misconduct and indicted the fraudulent division treasurer on felony conspiracy charges.",
+      "neg": "After auditing the ledgers, Hannah exonerated the fraudulent division treasurer of all misconduct and indicted the innocent accounting clerk on felony conspiracy charges."
+    },
+    {
+      "id": "rel_006_mirror",
+      "setting_id": "rel_006",
+      "setting": "a special prosecutor grand jury briefing",
+      "domain": "courts",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After auditing the ledgers, Hannah indicted the fraudulent division treasurer on felony conspiracy charges and exonerated the innocent accounting clerk of all misconduct.",
+      "neg": "After auditing the ledgers, Hannah indicted the innocent accounting clerk on felony conspiracy charges and exonerated the fraudulent division treasurer of all misconduct."
+    },
+    {
+      "id": "rel_007_orig",
+      "setting_id": "rel_007",
+      "setting": "an editorial board manuscript adjudication",
+      "domain": "science_peer_review",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The journal board published the replicated genomics study with open code archives and retracted the fabricated biomarker paper with a formal editorial notice this quarter.",
+      "neg": "The journal board published the fabricated biomarker paper with open code archives and retracted the replicated genomics study with a formal editorial notice this quarter."
+    },
+    {
+      "id": "rel_007_mirror",
+      "setting_id": "rel_007",
+      "setting": "an editorial board manuscript adjudication",
+      "domain": "science_peer_review",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The journal board retracted the fabricated biomarker paper with a formal editorial notice and published the replicated genomics study with open code archives this quarter.",
+      "neg": "The journal board retracted the replicated genomics study with a formal editorial notice and published the fabricated biomarker paper with open code archives this quarter."
+    },
+    {
+      "id": "rel_008_orig",
+      "setting_id": "rel_008",
+      "setting": "a national science foundation grant panel",
+      "domain": "science_peer_review",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Priya funded the rigorous longitudinal trial for five research years and rejected the underpowered speculative pilot for methodological gaps during the grant panel review.",
+      "neg": "Priya funded the underpowered speculative pilot for five research years and rejected the rigorous longitudinal trial for methodological gaps during the grant panel review."
+    },
+    {
+      "id": "rel_008_mirror",
+      "setting_id": "rel_008",
+      "setting": "a national science foundation grant panel",
+      "domain": "science_peer_review",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Priya rejected the underpowered speculative pilot for methodological gaps and funded the rigorous longitudinal trial for five research years during the grant panel review.",
+      "neg": "Priya rejected the rigorous longitudinal trial for methodological gaps and funded the underpowered speculative pilot for five research years during the grant panel review."
+    },
+    {
+      "id": "rel_009_orig",
+      "setting_id": "rel_009",
+      "setting": "an international conference preprint triage",
+      "domain": "science_peer_review",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before finalizing the proceedings, the peer panel endorsed the verified statistical manuscript for oral presentation and flagged the manipulated benchmark report for integrity audit.",
+      "neg": "Before finalizing the proceedings, the peer panel endorsed the manipulated benchmark report for oral presentation and flagged the verified statistical manuscript for integrity audit."
+    },
+    {
+      "id": "rel_009_mirror",
+      "setting_id": "rel_009",
+      "setting": "an international conference preprint triage",
+      "domain": "science_peer_review",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before finalizing the proceedings, the peer panel flagged the manipulated benchmark report for integrity audit and endorsed the verified statistical manuscript for oral presentation.",
+      "neg": "Before finalizing the proceedings, the peer panel flagged the verified statistical manuscript for integrity audit and endorsed the manipulated benchmark report for oral presentation."
+    },
+    {
+      "id": "rel_010_orig",
+      "setting_id": "rel_010",
+      "setting": "a national industrial transition policy council",
+      "domain": "economics",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The fiscal ministry subsidized renewable grid investments through targeted public rebates and taxed polluting coal extraction through tiered carbon levies in the national budget.",
+      "neg": "The fiscal ministry subsidized polluting coal extraction through targeted public rebates and taxed renewable grid investments through tiered carbon levies in the national budget."
+    },
+    {
+      "id": "rel_010_mirror",
+      "setting_id": "rel_010",
+      "setting": "a national industrial transition policy council",
+      "domain": "economics",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The fiscal ministry taxed polluting coal extraction through tiered carbon levies and subsidized renewable grid investments through targeted public rebates in the national budget.",
+      "neg": "The fiscal ministry taxed renewable grid investments through tiered carbon levies and subsidized polluting coal extraction through targeted public rebates in the national budget."
+    },
+    {
+      "id": "rel_011_orig",
+      "setting_id": "rel_011",
+      "setting": "a sovereign commodity market stabilization summit",
+      "domain": "economics",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the supply crunch, Kenji expanded smallholder agricultural lending across regional cooperatives and capped speculative commodity leveraging through tighter margin ceilings.",
+      "neg": "During the supply crunch, Kenji expanded speculative commodity leveraging across regional cooperatives and capped smallholder agricultural lending through tighter margin ceilings."
+    },
+    {
+      "id": "rel_011_mirror",
+      "setting_id": "rel_011",
+      "setting": "a sovereign commodity market stabilization summit",
+      "domain": "economics",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the supply crunch, Kenji capped speculative commodity leveraging through tighter margin ceilings and expanded smallholder agricultural lending across regional cooperatives.",
+      "neg": "During the supply crunch, Kenji capped smallholder agricultural lending through tighter margin ceilings and expanded speculative commodity leveraging across regional cooperatives."
+    },
+    {
+      "id": "rel_012_orig",
+      "setting_id": "rel_012",
+      "setting": "a labor market productivity stabilization briefing",
+      "domain": "economics",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Facing regional unemployment, the economic council prioritized accessible workforce retraining programs in immediate allocations and deferred unconditional monopoly rent subsidies until fiscal surplus returns.",
+      "neg": "Facing regional unemployment, the economic council prioritized unconditional monopoly rent subsidies in immediate allocations and deferred accessible workforce retraining programs until fiscal surplus returns."
+    },
+    {
+      "id": "rel_012_mirror",
+      "setting_id": "rel_012",
+      "setting": "a labor market productivity stabilization briefing",
+      "domain": "economics",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Facing regional unemployment, the economic council deferred unconditional monopoly rent subsidies until fiscal surplus returns and prioritized accessible workforce retraining programs in immediate allocations.",
+      "neg": "Facing regional unemployment, the economic council deferred accessible workforce retraining programs until fiscal surplus returns and prioritized unconditional monopoly rent subsidies in immediate allocations."
+    },
+    {
+      "id": "rel_013_orig",
+      "setting_id": "rel_013",
+      "setting": "a central bank systemic liquidity intervention",
+      "domain": "finance",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The central bank stabilized solvent community deposit institutions with emergency reserve windows and throttled overleveraged speculative trading desks with punitive overnight rates during the market panic.",
+      "neg": "The central bank stabilized overleveraged speculative trading desks with emergency reserve windows and throttled solvent community deposit institutions with punitive overnight rates during the market panic."
+    },
+    {
+      "id": "rel_013_mirror",
+      "setting_id": "rel_013",
+      "setting": "a central bank systemic liquidity intervention",
+      "domain": "finance",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The central bank throttled overleveraged speculative trading desks with punitive overnight rates and stabilized solvent community deposit institutions with emergency reserve windows during the market panic.",
+      "neg": "The central bank throttled solvent community deposit institutions with punitive overnight rates and stabilized overleveraged speculative trading desks with emergency reserve windows during the market panic."
+    },
+    {
+      "id": "rel_014_orig",
+      "setting_id": "rel_014",
+      "setting": "a clearinghouse anti-laundering compliance review",
+      "domain": "finance",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Elena released the authenticated payroll disbursements for immediate clearing and froze the opaque shell transfers pending beneficial ownership disclosure at the settlement desk.",
+      "neg": "Elena released the opaque shell transfers for immediate clearing and froze the authenticated payroll disbursements pending beneficial ownership disclosure at the settlement desk."
+    },
+    {
+      "id": "rel_014_mirror",
+      "setting_id": "rel_014",
+      "setting": "a clearinghouse anti-laundering compliance review",
+      "domain": "finance",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Elena froze the opaque shell transfers pending beneficial ownership disclosure and released the authenticated payroll disbursements for immediate clearing at the settlement desk.",
+      "neg": "Elena froze the authenticated payroll disbursements pending beneficial ownership disclosure and released the opaque shell transfers for immediate clearing at the settlement desk."
+    },
+    {
+      "id": "rel_015_orig",
+      "setting_id": "rel_015",
+      "setting": "a sovereign bond credit rating committee",
+      "domain": "finance",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The rating committee upgraded the disciplined municipal treasury to prime investment status and downgraded the insolvent holding conglomerate to high default risk after quarterly filings.",
+      "neg": "The rating committee upgraded the insolvent holding conglomerate to prime investment status and downgraded the disciplined municipal treasury to high default risk after quarterly filings."
+    },
+    {
+      "id": "rel_015_mirror",
+      "setting_id": "rel_015",
+      "setting": "a sovereign bond credit rating committee",
+      "domain": "finance",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The rating committee downgraded the insolvent holding conglomerate to high default risk and upgraded the disciplined municipal treasury to prime investment status after quarterly filings.",
+      "neg": "The rating committee downgraded the disciplined municipal treasury to high default risk and upgraded the insolvent holding conglomerate to prime investment status after quarterly filings."
+    },
+    {
+      "id": "rel_016_orig",
+      "setting_id": "rel_016",
+      "setting": "a multilateral peace treaty verification summit",
+      "domain": "diplomacy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Sofia invited the neutral ceasefire monitors into the border mediation talks and expelled the covert arms brokers from the diplomatic enclave before signing protocols.",
+      "neg": "Sofia invited the covert arms brokers into the border mediation talks and expelled the neutral ceasefire monitors from the diplomatic enclave before signing protocols."
+    },
+    {
+      "id": "rel_016_mirror",
+      "setting_id": "rel_016",
+      "setting": "a multilateral peace treaty verification summit",
+      "domain": "diplomacy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Sofia expelled the covert arms brokers from the diplomatic enclave and invited the neutral ceasefire monitors into the border mediation talks before signing protocols.",
+      "neg": "Sofia expelled the neutral ceasefire monitors from the diplomatic enclave and invited the covert arms brokers into the border mediation talks before signing protocols."
+    },
+    {
+      "id": "rel_017_orig",
+      "setting_id": "rel_017",
+      "setting": "a regional security council sanctions vote",
+      "domain": "diplomacy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The security council ratified the humanitarian corridor accord by broad consensus and vetoed the unilateral annexation charter under binding treaty law during the emergency session.",
+      "neg": "The security council ratified the unilateral annexation charter by broad consensus and vetoed the humanitarian corridor accord under binding treaty law during the emergency session."
+    },
+    {
+      "id": "rel_017_mirror",
+      "setting_id": "rel_017",
+      "setting": "a regional security council sanctions vote",
+      "domain": "diplomacy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The security council vetoed the unilateral annexation charter under binding treaty law and ratified the humanitarian corridor accord by broad consensus during the emergency session.",
+      "neg": "The security council vetoed the humanitarian corridor accord under binding treaty law and ratified the unilateral annexation charter by broad consensus during the emergency session."
+    },
+    {
+      "id": "rel_018_orig",
+      "setting_id": "rel_018",
+      "setting": "a maritime defense treaty ministerial summit",
+      "domain": "diplomacy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At the maritime summit, Marcus reassured the compliant coastal allies of mutual defense guarantees and warned the aggressive blockade commanders of coordinated diplomatic isolation.",
+      "neg": "At the maritime summit, Marcus reassured the aggressive blockade commanders of mutual defense guarantees and warned the compliant coastal allies of coordinated diplomatic isolation."
+    },
+    {
+      "id": "rel_018_mirror",
+      "setting_id": "rel_018",
+      "setting": "a maritime defense treaty ministerial summit",
+      "domain": "diplomacy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At the maritime summit, Marcus warned the aggressive blockade commanders of coordinated diplomatic isolation and reassured the compliant coastal allies of mutual defense guarantees.",
+      "neg": "At the maritime summit, Marcus warned the compliant coastal allies of coordinated diplomatic isolation and reassured the aggressive blockade commanders of mutual defense guarantees."
+    },
+    {
+      "id": "rel_019_orig",
+      "setting_id": "rel_019",
+      "setting": "an estuarine watershed biodiversity management plan",
+      "domain": "ecology",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The watershed authority bolstered native pollinator colonies through linked habitat corridors and suppressed invasive weevil swarms through seasonal biological controls across the river basin.",
+      "neg": "The watershed authority bolstered invasive weevil swarms through linked habitat corridors and suppressed native pollinator colonies through seasonal biological controls across the river basin."
+    },
+    {
+      "id": "rel_019_mirror",
+      "setting_id": "rel_019",
+      "setting": "an estuarine watershed biodiversity management plan",
+      "domain": "ecology",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The watershed authority suppressed invasive weevil swarms through seasonal biological controls and bolstered native pollinator colonies through linked habitat corridors across the river basin.",
+      "neg": "The watershed authority suppressed native pollinator colonies through seasonal biological controls and bolstered invasive weevil swarms through linked habitat corridors across the river basin."
+    },
+    {
+      "id": "rel_020_orig",
+      "setting_id": "rel_020",
+      "setting": "a marine sanctuary fishery quota review",
+      "domain": "ecology",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Linnea authorized sustainable artisanal reef fisheries inside coastal buffer zones and prohibited destructive industrial trawling operations near fragile spawning grounds under the marine compact.",
+      "neg": "Linnea authorized destructive industrial trawling operations inside coastal buffer zones and prohibited sustainable artisanal reef fisheries near fragile spawning grounds under the marine compact."
+    },
+    {
+      "id": "rel_020_mirror",
+      "setting_id": "rel_020",
+      "setting": "a marine sanctuary fishery quota review",
+      "domain": "ecology",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Linnea prohibited destructive industrial trawling operations near fragile spawning grounds and authorized sustainable artisanal reef fisheries inside coastal buffer zones under the marine compact.",
+      "neg": "Linnea prohibited sustainable artisanal reef fisheries near fragile spawning grounds and authorized destructive industrial trawling operations inside coastal buffer zones under the marine compact."
+    },
+    {
+      "id": "rel_021_orig",
+      "setting_id": "rel_021",
+      "setting": "a coastal delta hydrological resilience conference",
+      "domain": "ecology",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Across the delta reserve, Omar amplified natural floodplain recharge cycles with adaptive zoning policies and dampened runaway salinity intrusion with strict extraction limits.",
+      "neg": "Across the delta reserve, Omar amplified runaway salinity intrusion with adaptive zoning policies and dampened natural floodplain recharge cycles with strict extraction limits."
+    },
+    {
+      "id": "rel_021_mirror",
+      "setting_id": "rel_021",
+      "setting": "a coastal delta hydrological resilience conference",
+      "domain": "ecology",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Across the delta reserve, Omar dampened runaway salinity intrusion with strict extraction limits and amplified natural floodplain recharge cycles with adaptive zoning policies.",
+      "neg": "Across the delta reserve, Omar dampened natural floodplain recharge cycles with strict extraction limits and amplified runaway salinity intrusion with adaptive zoning policies."
+    },
+    {
+      "id": "rel_022_orig",
+      "setting_id": "rel_022",
+      "setting": "an epidemic containment emergency taskforce",
+      "domain": "public_health_policy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The health ministry expedited screened pediatric vaccine shipments to rural immunization clinics and quarantined tainted imported plasma batches at border inspection depots during the outbreak.",
+      "neg": "The health ministry expedited tainted imported plasma batches to rural immunization clinics and quarantined screened pediatric vaccine shipments at border inspection depots during the outbreak."
+    },
+    {
+      "id": "rel_022_mirror",
+      "setting_id": "rel_022",
+      "setting": "an epidemic containment emergency taskforce",
+      "domain": "public_health_policy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The health ministry quarantined tainted imported plasma batches at border inspection depots and expedited screened pediatric vaccine shipments to rural immunization clinics during the outbreak.",
+      "neg": "The health ministry quarantined screened pediatric vaccine shipments at border inspection depots and expedited tainted imported plasma batches to rural immunization clinics during the outbreak."
+    },
+    {
+      "id": "rel_023_orig",
+      "setting_id": "rel_023",
+      "setting": "a regional maternal health advisory briefing",
+      "domain": "public_health_policy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the public health briefing, Amara backed preventive prenatal outreach across underserved districts and halted deceptive miracle supplement campaigns through consumer safety decrees.",
+      "neg": "During the public health briefing, Amara backed deceptive miracle supplement campaigns across underserved districts and halted preventive prenatal outreach through consumer safety decrees."
+    },
+    {
+      "id": "rel_023_mirror",
+      "setting_id": "rel_023",
+      "setting": "a regional maternal health advisory briefing",
+      "domain": "public_health_policy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the public health briefing, Amara halted deceptive miracle supplement campaigns through consumer safety decrees and backed preventive prenatal outreach across underserved districts.",
+      "neg": "During the public health briefing, Amara halted preventive prenatal outreach through consumer safety decrees and backed deceptive miracle supplement campaigns across underserved districts."
+    },
+    {
+      "id": "rel_024_orig",
+      "setting_id": "rel_024",
+      "setting": "a pharmaceutical pharmacovigilance licensing board",
+      "domain": "public_health_policy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The regulatory agency approved the lifesaving generic insulin license for broad pharmacy access and revoked the hazardous sedative permit over severe toxicity findings at the licensing review.",
+      "neg": "The regulatory agency approved the hazardous sedative permit for broad pharmacy access and revoked the lifesaving generic insulin license over severe toxicity findings at the licensing review."
+    },
+    {
+      "id": "rel_024_mirror",
+      "setting_id": "rel_024",
+      "setting": "a pharmaceutical pharmacovigilance licensing board",
+      "domain": "public_health_policy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The regulatory agency revoked the hazardous sedative permit over severe toxicity findings and approved the lifesaving generic insulin license for broad pharmacy access at the licensing review.",
+      "neg": "The regulatory agency revoked the lifesaving generic insulin license over severe toxicity findings and approved the hazardous sedative permit for broad pharmacy access at the licensing review."
+    },
+    {
+      "id": "rel_025_orig",
+      "setting_id": "rel_025",
+      "setting": "a university scholarship and honors committee",
+      "domain": "education",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The academic senate rewarded the diligent research fellows with full tuition stipends and sanctioned the plagiarizing thesis entrants with mandatory ethics probation before graduation.",
+      "neg": "The academic senate rewarded the plagiarizing thesis entrants with full tuition stipends and sanctioned the diligent research fellows with mandatory ethics probation before graduation."
+    },
+    {
+      "id": "rel_025_mirror",
+      "setting_id": "rel_025",
+      "setting": "a university scholarship and honors committee",
+      "domain": "education",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The academic senate sanctioned the plagiarizing thesis entrants with mandatory ethics probation and rewarded the diligent research fellows with full tuition stipends before graduation.",
+      "neg": "The academic senate sanctioned the diligent research fellows with mandatory ethics probation and rewarded the plagiarizing thesis entrants with full tuition stipends before graduation."
+    },
+    {
+      "id": "rel_026_orig",
+      "setting_id": "rel_026",
+      "setting": "a state higher education charter review",
+      "domain": "education",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Clara accredited the respected community nursing college for regional degree conferral and defunded the predatory diploma mill academy over inflated placement claims during the charter review.",
+      "neg": "Clara accredited the predatory diploma mill academy for regional degree conferral and defunded the respected community nursing college over inflated placement claims during the charter review."
+    },
+    {
+      "id": "rel_026_mirror",
+      "setting_id": "rel_026",
+      "setting": "a state higher education charter review",
+      "domain": "education",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Clara defunded the predatory diploma mill academy over inflated placement claims and accredited the respected community nursing college for regional degree conferral during the charter review.",
+      "neg": "Clara defunded the respected community nursing college over inflated placement claims and accredited the predatory diploma mill academy for regional degree conferral during the charter review."
+    },
+    {
+      "id": "rel_027_orig",
+      "setting_id": "rel_027",
+      "setting": "a school district curriculum privacy council",
+      "domain": "education",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Mateo trusted the collaborative tutoring guild with flexible classroom access and restricted the intrusive analytics vendor under strict student privacy barriers across the school district.",
+      "neg": "Mateo trusted the intrusive analytics vendor with flexible classroom access and restricted the collaborative tutoring guild under strict student privacy barriers across the school district."
+    },
+    {
+      "id": "rel_027_mirror",
+      "setting_id": "rel_027",
+      "setting": "a school district curriculum privacy council",
+      "domain": "education",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Mateo restricted the intrusive analytics vendor under strict student privacy barriers and trusted the collaborative tutoring guild with flexible classroom access across the school district.",
+      "neg": "Mateo restricted the collaborative tutoring guild under strict student privacy barriers and trusted the intrusive analytics vendor with flexible classroom access across the school district."
+    },
+    {
+      "id": "rel_028_orig",
+      "setting_id": "rel_028",
+      "setting": "an investigative newsroom editorial conference",
+      "domain": "journalism",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The managing editor credited the meticulous investigative reporter with exposing customs bribery and blamed the careless rumor columnist for triggering the libel suit at the editorial review.",
+      "neg": "The managing editor credited the careless rumor columnist with exposing customs bribery and blamed the meticulous investigative reporter for triggering the libel suit at the editorial review."
+    },
+    {
+      "id": "rel_028_mirror",
+      "setting_id": "rel_028",
+      "setting": "an investigative newsroom editorial conference",
+      "domain": "journalism",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The managing editor blamed the careless rumor columnist for triggering the libel suit and credited the meticulous investigative reporter with exposing customs bribery at the editorial review.",
+      "neg": "The managing editor blamed the meticulous investigative reporter for triggering the libel suit and credited the careless rumor columnist with exposing customs bribery at the editorial review."
+    },
+    {
+      "id": "rel_029_orig",
+      "setting_id": "rel_029",
+      "setting": "a public broadcaster editorial standards desk",
+      "domain": "journalism",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the evening broadcast, Naomi featured the documented eyewitness dispatch in the lead slot and shelved the anonymous smear piece for lacking primary evidence.",
+      "neg": "Before the evening broadcast, Naomi featured the anonymous smear piece in the lead slot and shelved the documented eyewitness dispatch for lacking primary evidence."
+    },
+    {
+      "id": "rel_029_mirror",
+      "setting_id": "rel_029",
+      "setting": "a public broadcaster editorial standards desk",
+      "domain": "journalism",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the evening broadcast, Naomi shelved the anonymous smear piece for lacking primary evidence and featured the documented eyewitness dispatch in the lead slot.",
+      "neg": "Before the evening broadcast, Naomi shelved the documented eyewitness dispatch for lacking primary evidence and featured the anonymous smear piece in the lead slot."
+    },
+    {
+      "id": "rel_030_orig",
+      "setting_id": "rel_030",
+      "setting": "a press freedom ombudsman transparency hearing",
+      "domain": "journalism",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The press ombudsman defended the independent local newsroom against abusive gag suits and censured the paid disinformation outlet for coordinated election falsehoods in the annual ruling.",
+      "neg": "The press ombudsman defended the paid disinformation outlet against abusive gag suits and censured the independent local newsroom for coordinated election falsehoods in the annual ruling."
+    },
+    {
+      "id": "rel_030_mirror",
+      "setting_id": "rel_030",
+      "setting": "a press freedom ombudsman transparency hearing",
+      "domain": "journalism",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The press ombudsman censured the paid disinformation outlet for coordinated election falsehoods and defended the independent local newsroom against abusive gag suits in the annual ruling.",
+      "neg": "The press ombudsman censured the independent local newsroom for coordinated election falsehoods and defended the paid disinformation outlet against abusive gag suits in the annual ruling."
+    },
+    {
+      "id": "rel_031_orig",
+      "setting_id": "rel_031",
+      "setting": "a regional internet exchange",
+      "domain": "distributed_networks",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The network operator prioritized the live emergency telemetry stream for express routing and throttled the bulk software archive sync during the regional fiber cut.",
+      "neg": "The network operator prioritized the bulk software archive sync for express routing and throttled the live emergency telemetry stream during the regional fiber cut."
+    },
+    {
+      "id": "rel_031_mirror",
+      "setting_id": "rel_031",
+      "setting": "a regional internet exchange",
+      "domain": "distributed_networks",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The network operator throttled the bulk software archive sync and prioritized the live emergency telemetry stream for express routing during the regional fiber cut.",
+      "neg": "The network operator throttled the live emergency telemetry stream and prioritized the bulk software archive sync for express routing during the regional fiber cut."
+    },
+    {
+      "id": "rel_032_orig",
+      "setting_id": "rel_032",
+      "setting": "a distributed consensus cluster",
+      "domain": "distributed_networks",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After detecting conflicting state signatures, the cluster coordinator admitted the audited validator node into the active quorum and quarantined the desynchronized rogue replica.",
+      "neg": "After detecting conflicting state signatures, the cluster coordinator admitted the desynchronized rogue replica into the active quorum and quarantined the audited validator node."
+    },
+    {
+      "id": "rel_032_mirror",
+      "setting_id": "rel_032",
+      "setting": "a distributed consensus cluster",
+      "domain": "distributed_networks",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After detecting conflicting state signatures, the cluster coordinator quarantined the desynchronized rogue replica and admitted the audited validator node into the active quorum.",
+      "neg": "After detecting conflicting state signatures, the cluster coordinator quarantined the audited validator node and admitted the desynchronized rogue replica into the active quorum."
+    },
+    {
+      "id": "rel_033_orig",
+      "setting_id": "rel_033",
+      "setting": "a cloud API gateway",
+      "domain": "distributed_networks",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The gateway scheduler routed the authenticated clinic lookup queries through reserved lanes and blocked the runaway scraper retry flood during the midday traffic surge.",
+      "neg": "The gateway scheduler routed the runaway scraper retry flood through reserved lanes and blocked the authenticated clinic lookup queries during the midday traffic surge."
+    },
+    {
+      "id": "rel_033_mirror",
+      "setting_id": "rel_033",
+      "setting": "a cloud API gateway",
+      "domain": "distributed_networks",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The gateway scheduler blocked the runaway scraper retry flood and routed the authenticated clinic lookup queries through reserved lanes during the midday traffic surge.",
+      "neg": "The gateway scheduler blocked the authenticated clinic lookup queries and routed the runaway scraper retry flood through reserved lanes during the midday traffic surge."
+    },
+    {
+      "id": "rel_034_orig",
+      "setting_id": "rel_034",
+      "setting": "a metropolitan transit authority",
+      "domain": "urban_planning",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "In the annual municipal capital budget, the transit board expanded the overcrowded crosstown bus network and curtailed the subsidized single-driver parking supply.",
+      "neg": "In the annual municipal capital budget, the transit board expanded the subsidized single-driver parking supply and curtailed the overcrowded crosstown bus network."
+    },
+    {
+      "id": "rel_034_mirror",
+      "setting_id": "rel_034",
+      "setting": "a metropolitan transit authority",
+      "domain": "urban_planning",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "In the annual municipal capital budget, the transit board curtailed the subsidized single-driver parking supply and expanded the overcrowded crosstown bus network.",
+      "neg": "In the annual municipal capital budget, the transit board curtailed the overcrowded crosstown bus network and expanded the subsidized single-driver parking supply."
+    },
+    {
+      "id": "rel_035_orig",
+      "setting_id": "rel_035",
+      "setting": "a municipal urban heat council",
+      "domain": "urban_planning",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Nadia approved the shaded pedestrian canopy corridors and rejected the unshaded downtown expressway widening during the municipal master plan review.",
+      "neg": "Nadia approved the unshaded downtown expressway widening and rejected the shaded pedestrian canopy corridors during the municipal master plan review."
+    },
+    {
+      "id": "rel_035_mirror",
+      "setting_id": "rel_035",
+      "setting": "a municipal urban heat council",
+      "domain": "urban_planning",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Nadia rejected the unshaded downtown expressway widening and approved the shaded pedestrian canopy corridors during the municipal master plan review.",
+      "neg": "Nadia rejected the shaded pedestrian canopy corridors and approved the unshaded downtown expressway widening during the municipal master plan review."
+    },
+    {
+      "id": "rel_036_orig",
+      "setting_id": "rel_036",
+      "setting": "a city housing policy office",
+      "domain": "urban_planning",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Amid the metropolitan affordability crunch, the city council subsidized the railside workforce apartment cooperatives and taxed the chronically vacant speculative condominiums.",
+      "neg": "Amid the metropolitan affordability crunch, the city council subsidized the chronically vacant speculative condominiums and taxed the railside workforce apartment cooperatives."
+    },
+    {
+      "id": "rel_036_mirror",
+      "setting_id": "rel_036",
+      "setting": "a city housing policy office",
+      "domain": "urban_planning",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Amid the metropolitan affordability crunch, the city council taxed the chronically vacant speculative condominiums and subsidized the railside workforce apartment cooperatives.",
+      "neg": "Amid the metropolitan affordability crunch, the city council taxed the railside workforce apartment cooperatives and subsidized the chronically vacant speculative condominiums."
+    },
+    {
+      "id": "rel_037_orig",
+      "setting_id": "rel_037",
+      "setting": "a professional soccer review booth",
+      "domain": "sports_officiating",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After consulting video replay, the match referee exonerated the disciplined visiting defender and penalized the reckless elbowing striker during stoppage time.",
+      "neg": "After consulting video replay, the match referee exonerated the reckless elbowing striker and penalized the disciplined visiting defender during stoppage time."
+    },
+    {
+      "id": "rel_037_mirror",
+      "setting_id": "rel_037",
+      "setting": "a professional soccer review booth",
+      "domain": "sports_officiating",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After consulting video replay, the match referee penalized the reckless elbowing striker and exonerated the disciplined visiting defender during stoppage time.",
+      "neg": "After consulting video replay, the match referee penalized the disciplined visiting defender and exonerated the reckless elbowing striker during stoppage time."
+    },
+    {
+      "id": "rel_038_orig",
+      "setting_id": "rel_038",
+      "setting": "an international athletics arbitration panel",
+      "domain": "sports_officiating",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before the championship finals, the athletics panel reinstated the wrongly disqualified hurdler and suspended the serial doping offender under federation rules.",
+      "neg": "Before the championship finals, the athletics panel reinstated the serial doping offender and suspended the wrongly disqualified hurdler under federation rules."
+    },
+    {
+      "id": "rel_038_mirror",
+      "setting_id": "rel_038",
+      "setting": "an international athletics arbitration panel",
+      "domain": "sports_officiating",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the championship finals, the athletics panel suspended the serial doping offender and reinstated the wrongly disqualified hurdler under federation rules.",
+      "neg": "Before the championship finals, the athletics panel suspended the wrongly disqualified hurdler and reinstated the serial doping offender under federation rules."
+    },
+    {
+      "id": "rel_039_orig",
+      "setting_id": "rel_039",
+      "setting": "a tournament officiating ethics committee",
+      "domain": "sports_officiating",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Following the officiating integrity audit, the league commissioner promoted the impartial senior linesman and dismissed the bribed sideline official ahead of the playoffs.",
+      "neg": "Following the officiating integrity audit, the league commissioner promoted the bribed sideline official and dismissed the impartial senior linesman ahead of the playoffs."
+    },
+    {
+      "id": "rel_039_mirror",
+      "setting_id": "rel_039",
+      "setting": "a tournament officiating ethics committee",
+      "domain": "sports_officiating",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Following the officiating integrity audit, the league commissioner dismissed the bribed sideline official and promoted the impartial senior linesman ahead of the playoffs.",
+      "neg": "Following the officiating integrity audit, the league commissioner dismissed the impartial senior linesman and promoted the bribed sideline official ahead of the playoffs."
+    },
+    {
+      "id": "rel_040_orig",
+      "setting_id": "rel_040",
+      "setting": "an open-access preprint server board",
+      "domain": "academic_publishing",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Keiko indexed the preregistered replication study for permanent citation and removed the undisclosed ghostwritten sponsor brochure from the academic preprint archive.",
+      "neg": "Keiko indexed the undisclosed ghostwritten sponsor brochure for permanent citation and removed the preregistered replication study from the academic preprint archive."
+    },
+    {
+      "id": "rel_040_mirror",
+      "setting_id": "rel_040",
+      "setting": "an open-access preprint server board",
+      "domain": "academic_publishing",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Keiko removed the undisclosed ghostwritten sponsor brochure from the academic preprint archive and indexed the preregistered replication study for permanent citation.",
+      "neg": "Keiko removed the preregistered replication study from the academic preprint archive and indexed the undisclosed ghostwritten sponsor brochure for permanent citation."
+    },
+    {
+      "id": "rel_041_orig",
+      "setting_id": "rel_041",
+      "setting": "a scholarly errata oversight committee",
+      "domain": "academic_publishing",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the journal correction review, Soren commended the candid statistician disclosing the coding error and reprimanded the senior editor suppressing the erratum.",
+      "neg": "During the journal correction review, Soren commended the senior editor suppressing the erratum and reprimanded the candid statistician disclosing the coding error."
+    },
+    {
+      "id": "rel_041_mirror",
+      "setting_id": "rel_041",
+      "setting": "a scholarly errata oversight committee",
+      "domain": "academic_publishing",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the journal correction review, Soren reprimanded the senior editor suppressing the erratum and commended the candid statistician disclosing the coding error.",
+      "neg": "During the journal correction review, Soren reprimanded the candid statistician disclosing the coding error and commended the senior editor suppressing the erratum."
+    },
+    {
+      "id": "rel_042_orig",
+      "setting_id": "rel_042",
+      "setting": "a scientific conference program committee",
+      "domain": "academic_publishing",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the annual manuscript review, the program chair shortlisted the transparent open-data consortium and disqualified the reciprocal citation cartel from consideration.",
+      "neg": "During the annual manuscript review, the program chair shortlisted the reciprocal citation cartel and disqualified the transparent open-data consortium from consideration."
+    },
+    {
+      "id": "rel_042_mirror",
+      "setting_id": "rel_042",
+      "setting": "a scientific conference program committee",
+      "domain": "academic_publishing",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the annual manuscript review, the program chair disqualified the reciprocal citation cartel from consideration and shortlisted the transparent open-data consortium.",
+      "neg": "During the annual manuscript review, the program chair disqualified the transparent open-data consortium from consideration and shortlisted the reciprocal citation cartel."
+    },
+    {
+      "id": "rel_043_orig",
+      "setting_id": "rel_043",
+      "setting": "a regional earthquake command center",
+      "domain": "disaster_triage",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After the highland earthquake, the triage coordinator assigned the unstable cardiac patients to immediate airlift and deferred the ambulatory uninjured tourists to morning buses.",
+      "neg": "After the highland earthquake, the triage coordinator assigned the ambulatory uninjured tourists to immediate airlift and deferred the unstable cardiac patients to morning buses."
+    },
+    {
+      "id": "rel_043_mirror",
+      "setting_id": "rel_043",
+      "setting": "a regional earthquake command center",
+      "domain": "disaster_triage",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After the highland earthquake, the triage coordinator deferred the ambulatory uninjured tourists to morning buses and assigned the unstable cardiac patients to immediate airlift.",
+      "neg": "After the highland earthquake, the triage coordinator deferred the unstable cardiac patients to morning buses and assigned the ambulatory uninjured tourists to immediate airlift."
+    },
+    {
+      "id": "rel_044_orig",
+      "setting_id": "rel_044",
+      "setting": "a coastal hurricane operations room",
+      "domain": "disaster_triage",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "As the storm surge accelerated, the emergency director mobilized immediate rescue convoys for the low coastal districts and delayed evacuation orders for the high inland ridge.",
+      "neg": "As the storm surge accelerated, the emergency director mobilized immediate rescue convoys for the high inland ridge and delayed evacuation orders for the low coastal districts."
+    },
+    {
+      "id": "rel_044_mirror",
+      "setting_id": "rel_044",
+      "setting": "a coastal hurricane operations room",
+      "domain": "disaster_triage",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "As the storm surge accelerated, the emergency director delayed evacuation orders for the high inland ridge and mobilized immediate rescue convoys for the low coastal districts.",
+      "neg": "As the storm surge accelerated, the emergency director delayed evacuation orders for the low coastal districts and mobilized immediate rescue convoys for the high inland ridge."
+    },
+    {
+      "id": "rel_045_orig",
+      "setting_id": "rel_045",
+      "setting": "a wildfire incident management post",
+      "domain": "disaster_triage",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "As shifting winds drove the wildfire eastward, the incident chief defended the populated canyon township with retardant lines and conceded the uninhabited scrubland ridge.",
+      "neg": "As shifting winds drove the wildfire eastward, the incident chief defended the uninhabited scrubland ridge with retardant lines and conceded the populated canyon township."
+    },
+    {
+      "id": "rel_045_mirror",
+      "setting_id": "rel_045",
+      "setting": "a wildfire incident management post",
+      "domain": "disaster_triage",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "As shifting winds drove the wildfire eastward, the incident chief conceded the uninhabited scrubland ridge and defended the populated canyon township with retardant lines.",
+      "neg": "As shifting winds drove the wildfire eastward, the incident chief conceded the populated canyon township and defended the uninhabited scrubland ridge with retardant lines."
+    },
+    {
+      "id": "rel_046_orig",
+      "setting_id": "rel_046",
+      "setting": "a national medical supply distribution hub",
+      "domain": "supply_chain_allocation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Hector expedited the scarce surgical dialysis cartridges and backordered the surplus seasonal fragrance pallets during the cross-border freight bottleneck.",
+      "neg": "Hector expedited the surplus seasonal fragrance pallets and backordered the scarce surgical dialysis cartridges during the cross-border freight bottleneck."
+    },
+    {
+      "id": "rel_046_mirror",
+      "setting_id": "rel_046",
+      "setting": "a national medical supply distribution hub",
+      "domain": "supply_chain_allocation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Hector backordered the surplus seasonal fragrance pallets and expedited the scarce surgical dialysis cartridges during the cross-border freight bottleneck.",
+      "neg": "Hector backordered the scarce surgical dialysis cartridges and expedited the surplus seasonal fragrance pallets during the cross-border freight bottleneck."
+    },
+    {
+      "id": "rel_047_orig",
+      "setting_id": "rel_047",
+      "setting": "a maritime container port authority",
+      "domain": "supply_chain_allocation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "When port congestion spiked, Mei cleared the perishable refrigerated antivenom shipments for immediate unloading and held the durable ornamental marble containers in overflow storage.",
+      "neg": "When port congestion spiked, Mei cleared the durable ornamental marble containers for immediate unloading and held the perishable refrigerated antivenom shipments in overflow storage."
+    },
+    {
+      "id": "rel_047_mirror",
+      "setting_id": "rel_047",
+      "setting": "a maritime container port authority",
+      "domain": "supply_chain_allocation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "When port congestion spiked, Mei held the durable ornamental marble containers in overflow storage and cleared the perishable refrigerated antivenom shipments for immediate unloading.",
+      "neg": "When port congestion spiked, Mei held the perishable refrigerated antivenom shipments in overflow storage and cleared the durable ornamental marble containers for immediate unloading."
+    },
+    {
+      "id": "rel_048_orig",
+      "setting_id": "rel_048",
+      "setting": "a semiconductor supply allocation desk",
+      "domain": "supply_chain_allocation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The allocation manager fulfilled the verified hospital ventilator orders and capped the speculative reseller hoarding bids during the quarterly wafer shortage.",
+      "neg": "The allocation manager fulfilled the speculative reseller hoarding bids and capped the verified hospital ventilator orders during the quarterly wafer shortage."
+    },
+    {
+      "id": "rel_048_mirror",
+      "setting_id": "rel_048",
+      "setting": "a semiconductor supply allocation desk",
+      "domain": "supply_chain_allocation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The allocation manager capped the speculative reseller hoarding bids and fulfilled the verified hospital ventilator orders during the quarterly wafer shortage.",
+      "neg": "The allocation manager capped the verified hospital ventilator orders and fulfilled the speculative reseller hoarding bids during the quarterly wafer shortage."
+    },
+    {
+      "id": "rel_049_orig",
+      "setting_id": "rel_049",
+      "setting": "an island biodiversity reserve",
+      "domain": "wildlife_conservation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the spring nesting season, the island ecologist safeguarded the endangered native seabird colonies and eradicated the invasive predatory rat populations across the reserve.",
+      "neg": "During the spring nesting season, the island ecologist safeguarded the invasive predatory rat populations and eradicated the endangered native seabird colonies across the reserve."
+    },
+    {
+      "id": "rel_049_mirror",
+      "setting_id": "rel_049",
+      "setting": "an island biodiversity reserve",
+      "domain": "wildlife_conservation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the spring nesting season, the island ecologist eradicated the invasive predatory rat populations and safeguarded the endangered native seabird colonies across the reserve.",
+      "neg": "During the spring nesting season, the island ecologist eradicated the endangered native seabird colonies and safeguarded the invasive predatory rat populations across the reserve."
+    },
+    {
+      "id": "rel_050_orig",
+      "setting_id": "rel_050",
+      "setting": "an alpine river basin forestry board",
+      "domain": "wildlife_conservation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Ahead of the spring snowmelt, Aisha broadened the old-growth mountain watershed buffers and slashed the clear-cut alpine logging quotas across the valley.",
+      "neg": "Ahead of the spring snowmelt, Aisha broadened the clear-cut alpine logging quotas and slashed the old-growth mountain watershed buffers across the valley."
+    },
+    {
+      "id": "rel_050_mirror",
+      "setting_id": "rel_050",
+      "setting": "an alpine river basin forestry board",
+      "domain": "wildlife_conservation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Ahead of the spring snowmelt, Aisha slashed the clear-cut alpine logging quotas and broadened the old-growth mountain watershed buffers across the valley.",
+      "neg": "Ahead of the spring snowmelt, Aisha slashed the old-growth mountain watershed buffers and broadened the clear-cut alpine logging quotas across the valley."
+    },
+    {
+      "id": "rel_051_orig",
+      "setting_id": "rel_051",
+      "setting": "a transboundary savanna conservation agency",
+      "domain": "wildlife_conservation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the transboundary wildlife treaty, the regional board funded the seasonal elephant migration corridors and outlawed the unpermitted trophy hunting concessions across northern reserves.",
+      "neg": "Under the transboundary wildlife treaty, the regional board funded the unpermitted trophy hunting concessions and outlawed the seasonal elephant migration corridors across northern reserves."
+    },
+    {
+      "id": "rel_051_mirror",
+      "setting_id": "rel_051",
+      "setting": "a transboundary savanna conservation agency",
+      "domain": "wildlife_conservation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the transboundary wildlife treaty, the regional board outlawed the unpermitted trophy hunting concessions and funded the seasonal elephant migration corridors across northern reserves.",
+      "neg": "Under the transboundary wildlife treaty, the regional board outlawed the seasonal elephant migration corridors and funded the unpermitted trophy hunting concessions across northern reserves."
+    },
+    {
+      "id": "rel_052_orig",
+      "setting_id": "rel_052",
+      "setting": "a federal competition commission",
+      "domain": "antitrust_regulation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After uncovering predatory exclusivity rebates, the antitrust regulator shielded the fledgling regional payment entrants and fined the entrenched dominant card monopoly in its ruling.",
+      "neg": "After uncovering predatory exclusivity rebates, the antitrust regulator shielded the entrenched dominant card monopoly and fined the fledgling regional payment entrants in its ruling."
+    },
+    {
+      "id": "rel_052_mirror",
+      "setting_id": "rel_052",
+      "setting": "a federal competition commission",
+      "domain": "antitrust_regulation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After uncovering predatory exclusivity rebates, the antitrust regulator fined the entrenched dominant card monopoly and shielded the fledgling regional payment entrants in its ruling.",
+      "neg": "After uncovering predatory exclusivity rebates, the antitrust regulator fined the fledgling regional payment entrants and shielded the entrenched dominant card monopoly in its ruling."
+    },
+    {
+      "id": "rel_053_orig",
+      "setting_id": "rel_053",
+      "setting": "a national cartel enforcement tribunal",
+      "domain": "antitrust_regulation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The enforcement tribunal granted leniency to the cooperating insider whistleblower and prosecuted the colluding freight cartel executives during the maritime shipping investigation.",
+      "neg": "The enforcement tribunal granted leniency to the colluding freight cartel executives and prosecuted the cooperating insider whistleblower during the maritime shipping investigation."
+    },
+    {
+      "id": "rel_053_mirror",
+      "setting_id": "rel_053",
+      "setting": "a national cartel enforcement tribunal",
+      "domain": "antitrust_regulation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The enforcement tribunal prosecuted the colluding freight cartel executives and granted leniency to the cooperating insider whistleblower during the maritime shipping investigation.",
+      "neg": "The enforcement tribunal prosecuted the cooperating insider whistleblower and granted leniency to the colluding freight cartel executives during the maritime shipping investigation."
+    },
+    {
+      "id": "rel_054_orig",
+      "setting_id": "rel_054",
+      "setting": "a digital markets oversight authority",
+      "domain": "antitrust_regulation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The oversight authority authorized the open developer marketplace alliance and blocked the monopolistic horizontal rival acquisition in its annual market ruling.",
+      "neg": "The oversight authority authorized the monopolistic horizontal rival acquisition and blocked the open developer marketplace alliance in its annual market ruling."
+    },
+    {
+      "id": "rel_054_mirror",
+      "setting_id": "rel_054",
+      "setting": "a digital markets oversight authority",
+      "domain": "antitrust_regulation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The oversight authority blocked the monopolistic horizontal rival acquisition and authorized the open developer marketplace alliance in its annual market ruling.",
+      "neg": "The oversight authority blocked the open developer marketplace alliance and authorized the monopolistic horizontal rival acquisition in its annual market ruling."
+    },
+    {
+      "id": "rel_055_orig",
+      "setting_id": "rel_055",
+      "setting": "a federal labor arbitration hearing",
+      "domain": "labor_mediation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At the closing arbitration hearing, the neutral mediator vindicated the hazard-reporting union steward and sanctioned the retaliatory night-shift supervisor under the contract.",
+      "neg": "At the closing arbitration hearing, the neutral mediator vindicated the retaliatory night-shift supervisor and sanctioned the hazard-reporting union steward under the contract."
+    },
+    {
+      "id": "rel_055_mirror",
+      "setting_id": "rel_055",
+      "setting": "a federal labor arbitration hearing",
+      "domain": "labor_mediation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At the closing arbitration hearing, the neutral mediator sanctioned the retaliatory night-shift supervisor and vindicated the hazard-reporting union steward under the contract.",
+      "neg": "At the closing arbitration hearing, the neutral mediator sanctioned the hazard-reporting union steward and vindicated the retaliatory night-shift supervisor under the contract."
+    },
+    {
+      "id": "rel_056_orig",
+      "setting_id": "rel_056",
+      "setting": "a collective bargaining mediation table",
+      "domain": "labor_mediation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The mediation panel adopted the mutually negotiated overtime schedule and voided the unilateral retroactive pay clawback during the transit contract impasse.",
+      "neg": "The mediation panel adopted the unilateral retroactive pay clawback and voided the mutually negotiated overtime schedule during the transit contract impasse."
+    },
+    {
+      "id": "rel_056_mirror",
+      "setting_id": "rel_056",
+      "setting": "a collective bargaining mediation table",
+      "domain": "labor_mediation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The mediation panel voided the unilateral retroactive pay clawback and adopted the mutually negotiated overtime schedule during the transit contract impasse.",
+      "neg": "The mediation panel voided the mutually negotiated overtime schedule and adopted the unilateral retroactive pay clawback during the transit contract impasse."
+    },
+    {
+      "id": "rel_057_orig",
+      "setting_id": "rel_057",
+      "setting": "a national workplace standards board",
+      "domain": "labor_mediation",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The standards board endorsed the joint ergonomic rest protocol and prohibited the punitive automated pace quota following the warehouse fatigue inquiry.",
+      "neg": "The standards board endorsed the punitive automated pace quota and prohibited the joint ergonomic rest protocol following the warehouse fatigue inquiry."
+    },
+    {
+      "id": "rel_057_mirror",
+      "setting_id": "rel_057",
+      "setting": "a national workplace standards board",
+      "domain": "labor_mediation",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The standards board prohibited the punitive automated pace quota and endorsed the joint ergonomic rest protocol following the warehouse fatigue inquiry.",
+      "neg": "The standards board prohibited the joint ergonomic rest protocol and endorsed the punitive automated pace quota following the warehouse fatigue inquiry."
+    },
+    {
+      "id": "rel_058_orig",
+      "setting_id": "rel_058",
+      "setting": "a maritime decarbonization transport ministry",
+      "domain": "climate_policy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the decadal maritime transition plan, Tomas accelerated the zero-emission coastal ferry incentives and phased out the heavy bunker-fuel shipping subsidies nationwide.",
+      "neg": "Under the decadal maritime transition plan, Tomas accelerated the heavy bunker-fuel shipping subsidies and phased out the zero-emission coastal ferry incentives nationwide."
+    },
+    {
+      "id": "rel_058_mirror",
+      "setting_id": "rel_058",
+      "setting": "a maritime decarbonization transport ministry",
+      "domain": "climate_policy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the decadal maritime transition plan, Tomas phased out the heavy bunker-fuel shipping subsidies and accelerated the zero-emission coastal ferry incentives nationwide.",
+      "neg": "Under the decadal maritime transition plan, Tomas phased out the zero-emission coastal ferry incentives and accelerated the heavy bunker-fuel shipping subsidies nationwide."
+    },
+    {
+      "id": "rel_059_orig",
+      "setting_id": "rel_059",
+      "setting": "a voluntary carbon registry board",
+      "domain": "climate_policy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After satellite verification reviews, the carbon registry certified the audited coastal mangrove restoration credits and delisted the inflated phantom forestry offset claims across exchanges.",
+      "neg": "After satellite verification reviews, the carbon registry certified the inflated phantom forestry offset claims and delisted the audited coastal mangrove restoration credits across exchanges."
+    },
+    {
+      "id": "rel_059_mirror",
+      "setting_id": "rel_059",
+      "setting": "a voluntary carbon registry board",
+      "domain": "climate_policy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After satellite verification reviews, the carbon registry delisted the inflated phantom forestry offset claims and certified the audited coastal mangrove restoration credits across exchanges.",
+      "neg": "After satellite verification reviews, the carbon registry delisted the audited coastal mangrove restoration credits and certified the inflated phantom forestry offset claims across exchanges."
+    },
+    {
+      "id": "rel_060_orig",
+      "setting_id": "rel_060",
+      "setting": "a provincial climate adaptation agency",
+      "domain": "climate_policy",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The environmental regulator incentivized the flexible industrial demand-shifting programs and curbed the unmitigated peak gas flaring practices under the provincial emissions framework.",
+      "neg": "The environmental regulator incentivized the unmitigated peak gas flaring practices and curbed the flexible industrial demand-shifting programs under the provincial emissions framework."
+    },
+    {
+      "id": "rel_060_mirror",
+      "setting_id": "rel_060",
+      "setting": "a provincial climate adaptation agency",
+      "domain": "climate_policy",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "The environmental regulator curbed the unmitigated peak gas flaring practices and incentivized the flexible industrial demand-shifting programs under the provincial emissions framework.",
+      "neg": "The environmental regulator curbed the flexible industrial demand-shifting programs and incentivized the unmitigated peak gas flaring practices under the provincial emissions framework."
+    }
+  ]
+}
