@@ -1065,8 +1065,12 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     assert xling["items_sha256"] == _sha256_file(ARCH / "crosslang" / "items.jsonl"), "items_sha256 mismatch: crosslang/items.jsonl!"
     assert xling["checked_sha256"] == _sha256_file(ARCH / "crosslang" / "checked.jsonl"), "checked_sha256 mismatch: crosslang/checked.jsonl!"
     assert xling["sign_sha256"] == _sha256_file(ARCH / "crosslang" / "sign.jsonl"), "sign_sha256 mismatch: crosslang/sign.jsonl!"
+    # Dropped Exp 244 provenance: verify committed_script_sha256 and data_sha256 match committed files
+    ep244 = drop["exp244_epistemic_matched120"]
+    assert ep244["committed_script_sha256"] == _sha256_file(v6_dir / "epistemic_audit245.py"), "committed_script_sha256 mismatch: epistemic_audit245.py!"
+    assert ep244["data_sha256"] == _sha256_file(ARCH / "selfshape" / "epi_matched245_data.json"), "data_sha256 mismatch: epi_matched245_data.json!"
 
-    # Cross-Lingual Causal Story Form audit invariants (v6_crosslang_audit.json)
+    # Cross-Lingual Pattern Similarity audit invariants (v6_crosslang_audit.json)
     assert len(xling["models"]) == 5 and len(xling["languages"]) == 4 and xling["c1_primary"]["n_patterns"] == 78
     assert abs(xling["c1_primary"]["mean"] - 0.0789) < 5e-4
     assert abs(xling["c1_edited_clauses_only"]["mean"] - 0.0564) < 5e-4
@@ -1074,8 +1078,12 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     assert abs(xling["clear_sign_matched_subset"]["mean"] - 0.1204) < 5e-4
     assert abs(xling["fixed_within_outcome_shuffle_floor"]["mean"] - 0.0046) < 5e-4
     for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
-        for ndl in ("+0.0789", "+0.0630", "+0.0944", "+0.0564", "+0.0225", "+0.0139", "+0.0305", "+0.0178", "-0.0133", "+0.0484", "+0.1204", "+0.0046"):
-            assert ndl in doc, f"Cross-lingual audit figure '{ndl}' missing from {label}!"
+        for ndl in (
+            "+0.0789", "+0.0630", "+0.0944", "+0.0564", "+0.0225", "+0.0139", "+0.0305",
+            "+0.0178", "-0.0133", "+0.0484", "+0.1204", "+0.0046",
+            "+0.1103", "+0.0620", "+0.0615", "deepseek-v4.1-flash-1017",
+        ):
+            assert ndl in doc, f"Cross-lingual audit figure/disclosure '{ndl}' missing from {label}!"
 
     expected_l12_keys = {
         "base", "ctrl50", "ctrl50_s252", "ctrl50_s253",

@@ -2771,6 +2771,9 @@
   },
   "exp244_epistemic_matched120": {
     "script_sha256": "895f9e4f184b707840f5211e6f1c7a6e9a6e781c04e812ee0d43b7d77a198e7d",
+    "script_sha256_note": "Original pre-sanitization SHA-256 of epistemic_audit245.py recorded before replacing local path constants with JPL_WORK_DIR when committing scripts/v6/epistemic_audit245.py (identical analysis logic; not re-run because Exp 244 was explicitly dropped as inadmissible).",
+    "committed_script_path": "scripts/v6/epistemic_audit245.py",
+    "committed_script_sha256": "7254519746f1267f192c9a4c1da9d3192b03cad07983536576dc1d6e532dabe9",
     "data_sha256": "e02724d855e26fcdeaf7911e4c8757dc17a2f1b10e8ac16d6da34c939ae4001c",
     "n_pairs": 120,
     "text_admissibility": {
