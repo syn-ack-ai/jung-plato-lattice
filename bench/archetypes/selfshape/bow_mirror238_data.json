@@ -1,0 +1,1204 @@
+{
+  "bow_mirror_120": [
+    {
+      "id": "bs_001_orig",
+      "setting_id": "bs_001",
+      "setting": "a municipal water-treatment plant",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Tomas labeled the chlorinated reservoir flask for state laboratory testing and emptied the turbid backwash beaker straight down the floor drain as the afternoon shift arrived.",
+      "neg": "Tomas labeled the turbid backwash beaker for state laboratory testing and emptied the chlorinated reservoir flask straight down the floor drain as the afternoon shift arrived."
+    },
+    {
+      "id": "bs_001_mirror",
+      "setting_id": "bs_001",
+      "setting": "a municipal water-treatment plant",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Tomas emptied the turbid backwash beaker straight down the floor drain and labeled the chlorinated reservoir flask for state laboratory testing as the afternoon shift arrived.",
+      "neg": "Tomas emptied the chlorinated reservoir flask straight down the floor drain and labeled the turbid backwash beaker for state laboratory testing as the afternoon shift arrived."
+    },
+    {
+      "id": "bs_002_orig",
+      "setting_id": "bs_002",
+      "setting": "a county probate records vault",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Inside the basement annex, Maren pulped the obsolete zoning circular in the cross-cut shredder before noon. Afterward she locked the notarized estate deed inside the fireproof steel cabinet.",
+      "neg": "Inside the basement annex, Maren pulped the notarized estate deed in the cross-cut shredder before noon. Afterward she locked the obsolete zoning circular inside the fireproof steel cabinet."
+    },
+    {
+      "id": "bs_002_mirror",
+      "setting_id": "bs_002",
+      "setting": "a county probate records vault",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Inside the basement annex, Maren locked the notarized estate deed inside the fireproof steel cabinet before noon. Afterward she pulped the obsolete zoning circular in the cross-cut shredder.",
+      "neg": "Inside the basement annex, Maren locked the obsolete zoning circular inside the fireproof steel cabinet before noon. Afterward she pulped the notarized estate deed in the cross-cut shredder."
+    },
+    {
+      "id": "bs_003_orig",
+      "setting_id": "bs_003",
+      "setting": "an orthopedic prosthetics lab",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During final fitting prep, Kenji buffed the custom titanium socket for his patient's afternoon appointment and tossed the misshapen plaster mold into the scrap bin beside the workbench.",
+      "neg": "During final fitting prep, Kenji buffed the misshapen plaster mold for his patient's afternoon appointment and tossed the custom titanium socket into the scrap bin beside the workbench."
+    },
+    {
+      "id": "bs_003_mirror",
+      "setting_id": "bs_003",
+      "setting": "an orthopedic prosthetics lab",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During final fitting prep, Kenji tossed the misshapen plaster mold into the scrap bin beside the workbench and buffed the custom titanium socket for his patient's afternoon appointment.",
+      "neg": "During final fitting prep, Kenji tossed the custom titanium socket into the scrap bin beside the workbench and buffed the misshapen plaster mold for his patient's afternoon appointment."
+    },
+    {
+      "id": "bs_004_orig",
+      "setting_id": "bs_004",
+      "setting": "a regional blood-donation center",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Priya chilled the screened plasma unit inside the calibrated laboratory freezer once donor intake ended. Then she incinerated the clotted collection pouch under standard clinic protocol.",
+      "neg": "Priya chilled the clotted collection pouch inside the calibrated laboratory freezer once donor intake ended. Then she incinerated the screened plasma unit under standard clinic protocol."
+    },
+    {
+      "id": "bs_004_mirror",
+      "setting_id": "bs_004",
+      "setting": "a regional blood-donation center",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Priya incinerated the clotted collection pouch under standard clinic protocol once donor intake ended. Then she chilled the screened plasma unit inside the calibrated laboratory freezer.",
+      "neg": "Priya incinerated the screened plasma unit under standard clinic protocol once donor intake ended. Then she chilled the clotted collection pouch inside the calibrated laboratory freezer."
+    },
+    {
+      "id": "bs_005_orig",
+      "setting_id": "bs_005",
+      "setting": "a commercial scuba-gear locker",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Rory condemned the split breathing hose to the salvage crate while strapping the pressure-tested regulator rig onto the charter boat rack ahead of the morning tide.",
+      "neg": "Rory condemned the pressure-tested regulator rig to the salvage crate while strapping the split breathing hose onto the charter boat rack ahead of the morning tide."
+    },
+    {
+      "id": "bs_005_mirror",
+      "setting_id": "bs_005",
+      "setting": "a commercial scuba-gear locker",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Rory strapped the pressure-tested regulator rig onto the charter boat rack ahead of the morning tide while condemning the split breathing hose to the salvage crate.",
+      "neg": "Rory strapped the split breathing hose onto the charter boat rack ahead of the morning tide while condemning the pressure-tested regulator rig to the salvage crate."
+    },
+    {
+      "id": "bs_006_orig",
+      "setting_id": "bs_006",
+      "setting": "an electrical substation control room",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Once the rain cleared, Hannah insulated the live feeder cable with rubber tape for the line crew. Later she chopped up the dead extension cord for copper salvage.",
+      "neg": "Once the rain cleared, Hannah insulated the dead extension cord with rubber tape for the line crew. Later she chopped up the live feeder cable for copper salvage."
+    },
+    {
+      "id": "bs_006_mirror",
+      "setting_id": "bs_006",
+      "setting": "an electrical substation control room",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Once the rain cleared, Hannah chopped up the dead extension cord for copper salvage. Later she insulated the live feeder cable with rubber tape for the line crew.",
+      "neg": "Once the rain cleared, Hannah chopped up the live feeder cable for copper salvage. Later she insulated the dead extension cord with rubber tape for the line crew."
+    },
+    {
+      "id": "bs_007_orig",
+      "setting_id": "bs_007",
+      "setting": "a border customs freight bay",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "At the midnight cargo audit, Hector impounded the counterfeit watch crate under federal seal and released the cleared insulin pallet for rapid morning courier pickup.",
+      "neg": "At the midnight cargo audit, Hector impounded the cleared insulin pallet under federal seal and released the counterfeit watch crate for rapid morning courier pickup."
+    },
+    {
+      "id": "bs_007_mirror",
+      "setting_id": "bs_007",
+      "setting": "a border customs freight bay",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "At the midnight cargo audit, Hector released the cleared insulin pallet for rapid morning courier pickup and impounded the counterfeit watch crate under federal seal.",
+      "neg": "At the midnight cargo audit, Hector released the counterfeit watch crate for rapid morning courier pickup and impounded the cleared insulin pallet under federal seal."
+    },
+    {
+      "id": "bs_008_orig",
+      "setting_id": "bs_008",
+      "setting": "a veterinary surgical recovery wing",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Naomi infused the sterile antibiotic dose for the recovering terrier just as evening rounds concluded. She then flushed the murky rinse solution down the stainless clinic sink.",
+      "neg": "Naomi infused the murky rinse solution for the recovering terrier just as evening rounds concluded. She then flushed the sterile antibiotic dose down the stainless clinic sink."
+    },
+    {
+      "id": "bs_008_mirror",
+      "setting_id": "bs_008",
+      "setting": "a veterinary surgical recovery wing",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Naomi flushed the murky rinse solution down the stainless clinic sink just as evening rounds concluded. She then infused the sterile antibiotic dose for the recovering terrier.",
+      "neg": "Naomi flushed the sterile antibiotic dose down the stainless clinic sink just as evening rounds concluded. She then infused the murky rinse solution for the recovering terrier."
+    },
+    {
+      "id": "bs_009_orig",
+      "setting_id": "bs_009",
+      "setting": "an antique tapestry conservation room",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "With fine silk thread, Camille mended the torn Flemish banner stretched across her timber frame and snipped the leftover muslin backing into soft dusting cloths.",
+      "neg": "With fine silk thread, Camille mended the leftover muslin backing stretched across her timber frame and snipped the torn Flemish banner into soft dusting cloths."
+    },
+    {
+      "id": "bs_009_mirror",
+      "setting_id": "bs_009",
+      "setting": "an antique tapestry conservation room",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At her worktable, Camille snipped the leftover muslin backing into soft dusting cloths and mended the torn Flemish banner stretched across her timber frame with fine silk thread.",
+      "neg": "At her worktable, Camille snipped the torn Flemish banner into soft dusting cloths and mended the leftover muslin backing stretched across her timber frame with fine silk thread."
+    },
+    {
+      "id": "bs_010_orig",
+      "setting_id": "bs_010",
+      "setting": "a geotechnical soil-testing laboratory",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Devon logged the bedrock core sample carefully for the municipal foundation survey report. Once the scale zeroed, he shoveled the spilled gravel sweepings into the outdoor dump hopper.",
+      "neg": "Devon logged the spilled gravel sweepings carefully for the municipal foundation survey report. Once the scale zeroed, he shoveled the bedrock core sample into the outdoor dump hopper."
+    },
+    {
+      "id": "bs_010_mirror",
+      "setting_id": "bs_010",
+      "setting": "a geotechnical soil-testing laboratory",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Devon shoveled the spilled gravel sweepings into the outdoor dump hopper once the scale zeroed. Afterward he logged the bedrock core sample carefully for the municipal foundation survey report.",
+      "neg": "Devon shoveled the bedrock core sample into the outdoor dump hopper once the scale zeroed. Afterward he logged the spilled gravel sweepings carefully for the municipal foundation survey report."
+    },
+    {
+      "id": "bs_011_orig",
+      "setting_id": "bs_011",
+      "setting": "a municipal traffic-signal workshop",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Ahead of evening commute checks, Omar scrapped the shorted relay board inside the recycling drum and mounted the calibrated timing controller within the curbside intersection cabinet.",
+      "neg": "Ahead of evening commute checks, Omar scrapped the calibrated timing controller inside the recycling drum and mounted the shorted relay board within the curbside intersection cabinet."
+    },
+    {
+      "id": "bs_011_mirror",
+      "setting_id": "bs_011",
+      "setting": "a municipal traffic-signal workshop",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Ahead of evening commute checks, Omar mounted the calibrated timing controller within the curbside intersection cabinet and scrapped the shorted relay board inside the recycling drum.",
+      "neg": "Ahead of evening commute checks, Omar mounted the shorted relay board within the curbside intersection cabinet and scrapped the calibrated timing controller inside the recycling drum."
+    },
+    {
+      "id": "bs_012_orig",
+      "setting_id": "bs_012",
+      "setting": "a commercial dry-cleaning plant",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Using gentle steam, Mei pressed the tailored cashmere overcoat before the client arrived at noon. Meanwhile she relegated the bleached shop apron to the oily rag hamper near the boiler.",
+      "neg": "Using gentle steam, Mei pressed the bleached shop apron before the client arrived at noon. Meanwhile she relegated the tailored cashmere overcoat to the oily rag hamper near the boiler."
+    },
+    {
+      "id": "bs_012_mirror",
+      "setting_id": "bs_012",
+      "setting": "a commercial dry-cleaning plant",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before noon, Mei relegated the bleached shop apron to the oily rag hamper near the boiler. Meanwhile she pressed the tailored cashmere overcoat using gentle steam for the client.",
+      "neg": "Before noon, Mei relegated the tailored cashmere overcoat to the oily rag hamper near the boiler. Meanwhile she pressed the bleached shop apron using gentle steam for the client."
+    },
+    {
+      "id": "bs_013_orig",
+      "setting_id": "bs_013",
+      "setting": "a cold-storage vaccine depot",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "When substation voltage sagged, Tariq wired the primary serum freezer onto the standby diesel generator and unplugged the empty display chiller beside the loading ramp.",
+      "neg": "When substation voltage sagged, Tariq wired the empty display chiller onto the standby diesel generator and unplugged the primary serum freezer beside the loading ramp."
+    },
+    {
+      "id": "bs_013_mirror",
+      "setting_id": "bs_013",
+      "setting": "a cold-storage vaccine depot",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "When substation voltage sagged, Tariq unplugged the empty display chiller beside the loading ramp and wired the primary serum freezer onto the standby diesel generator.",
+      "neg": "When substation voltage sagged, Tariq unplugged the primary serum freezer beside the loading ramp and wired the empty display chiller onto the standby diesel generator."
+    },
+    {
+      "id": "bs_014_orig",
+      "setting_id": "bs_014",
+      "setting": "an aerospace avionics bench",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Gideon soldered fresh leads onto the flight gyroscope module during preflight overhaul. Shortly after lunch he stripped the decommissioned training transponder down for spare fasteners and brackets.",
+      "neg": "Gideon soldered fresh leads onto the decommissioned training transponder during preflight overhaul. Shortly after lunch he stripped the flight gyroscope module down for spare fasteners and brackets."
+    },
+    {
+      "id": "bs_014_mirror",
+      "setting_id": "bs_014",
+      "setting": "an aerospace avionics bench",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Gideon stripped the decommissioned training transponder down for spare fasteners and brackets during preflight overhaul. Shortly after lunch he soldered fresh leads onto the flight gyroscope module.",
+      "neg": "Gideon stripped the flight gyroscope module down for spare fasteners and brackets during preflight overhaul. Shortly after lunch he soldered fresh leads onto the decommissioned training transponder."
+    },
+    {
+      "id": "bs_015_orig",
+      "setting_id": "bs_015",
+      "setting": "a maritime buoy maintenance yard",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Against approaching winter gales, Callum coated the active channel marker in marine primer whereas his crew sliced up the rusted retired float with an oxy-fuel torch.",
+      "neg": "Against approaching winter gales, Callum coated the rusted retired float in marine primer whereas his crew sliced up the active channel marker with an oxy-fuel torch."
+    },
+    {
+      "id": "bs_015_mirror",
+      "setting_id": "bs_015",
+      "setting": "a maritime buoy maintenance yard",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Against approaching winter gales, Callum's crew sliced up the rusted retired float with an oxy-fuel torch whereas he coated the active channel marker in marine primer.",
+      "neg": "Against approaching winter gales, Callum's crew sliced up the active channel marker with an oxy-fuel torch whereas he coated the rusted retired float in marine primer."
+    },
+    {
+      "id": "bs_016_orig",
+      "setting_id": "bs_016",
+      "setting": "a stained-glass restoration studio",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "With thick foam padding, Clara crated the restored lancet window for transport back to the nave. Then she dropped the shattered border offcuts into the heavy cullet barrel.",
+      "neg": "With thick foam padding, Clara crated the shattered border offcuts for transport back to the nave. Then she dropped the restored lancet window into the heavy cullet barrel."
+    },
+    {
+      "id": "bs_016_mirror",
+      "setting_id": "bs_016",
+      "setting": "a stained-glass restoration studio",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before closing the studio, Clara dropped the shattered border offcuts into the heavy cullet barrel. Then she crated the restored lancet window with thick foam padding for transport back to the nave.",
+      "neg": "Before closing the studio, Clara dropped the restored lancet window into the heavy cullet barrel. Then she crated the shattered border offcuts with thick foam padding for transport back to the nave."
+    },
+    {
+      "id": "bs_017_orig",
+      "setting_id": "bs_017",
+      "setting": "a forensic evidence intake room",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After verifying the transfer sheet, Linnea secured the sealed fiber packet inside the chilled evidence vault and burned the soiled bench blotter in the clinic incinerator.",
+      "neg": "After verifying the transfer sheet, Linnea secured the soiled bench blotter inside the chilled evidence vault and burned the sealed fiber packet in the clinic incinerator."
+    },
+    {
+      "id": "bs_017_mirror",
+      "setting_id": "bs_017",
+      "setting": "a forensic evidence intake room",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After verifying the transfer sheet, Linnea burned the soiled bench blotter in the clinic incinerator and secured the sealed fiber packet inside the chilled evidence vault.",
+      "neg": "After verifying the transfer sheet, Linnea burned the sealed fiber packet in the clinic incinerator and secured the soiled bench blotter inside the chilled evidence vault."
+    },
+    {
+      "id": "bs_018_orig",
+      "setting_id": "bs_018",
+      "setting": "a district court clerk's office",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Arthur shredded the outdated docket handout beside the hallway copier as the courthouse emptied. He then stamped the signed custody ruling for immediate delivery to opposing counsel.",
+      "neg": "Arthur shredded the signed custody ruling beside the hallway copier as the courthouse emptied. He then stamped the outdated docket handout for immediate delivery to opposing counsel."
+    },
+    {
+      "id": "bs_018_mirror",
+      "setting_id": "bs_018",
+      "setting": "a district court clerk's office",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Arthur stamped the signed custody ruling for immediate delivery to opposing counsel as the courthouse emptied. He then shredded the outdated docket handout beside the hallway copier.",
+      "neg": "Arthur stamped the outdated docket handout for immediate delivery to opposing counsel as the courthouse emptied. He then shredded the signed custody ruling beside the hallway copier."
+    },
+    {
+      "id": "bs_019_orig",
+      "setting_id": "bs_019",
+      "setting": "a municipal snowplow service bay",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "While freezing drizzle coated the yard, Viktor bolted the hardened steel blade onto truck four and hauled the bent salvage scraper out toward the scrap iron pile.",
+      "neg": "While freezing drizzle coated the yard, Viktor bolted the bent salvage scraper onto truck four and hauled the hardened steel blade out toward the scrap iron pile."
+    },
+    {
+      "id": "bs_019_mirror",
+      "setting_id": "bs_019",
+      "setting": "a municipal snowplow service bay",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "While freezing drizzle coated the yard, Viktor hauled the bent salvage scraper out toward the scrap iron pile and bolted the hardened steel blade onto truck four.",
+      "neg": "While freezing drizzle coated the yard, Viktor hauled the hardened steel blade out toward the scrap iron pile and bolted the bent salvage scraper onto truck four."
+    },
+    {
+      "id": "bs_020_orig",
+      "setting_id": "bs_020",
+      "setting": "a fine-art framing gallery",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Beneath museum glass, Simone mounted the charcoal portrait study for the collector's opening reception. Shortly afterward she fed the warped mat offcut straight into the cardboard baler.",
+      "neg": "Beneath museum glass, Simone mounted the warped mat offcut for the collector's opening reception. Shortly afterward she fed the charcoal portrait study straight into the cardboard baler."
+    },
+    {
+      "id": "bs_020_mirror",
+      "setting_id": "bs_020",
+      "setting": "a fine-art framing gallery",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "In the back workroom, Simone fed the warped mat offcut straight into the cardboard baler. Shortly afterward she mounted the charcoal portrait study beneath museum glass for the collector's opening reception.",
+      "neg": "In the back workroom, Simone fed the charcoal portrait study straight into the cardboard baler. Shortly afterward she mounted the warped mat offcut beneath museum glass for the collector's opening reception."
+    },
+    {
+      "id": "bs_021_orig",
+      "setting_id": "bs_021",
+      "setting": "a commercial elevator-repair shop",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "During quarterly tower service, Rafael coiled the frayed hoist cable for steel recycling and threaded the certified traction rope cleanly across the overhead drive sheave.",
+      "neg": "During quarterly tower service, Rafael coiled the certified traction rope for steel recycling and threaded the frayed hoist cable cleanly across the overhead drive sheave."
+    },
+    {
+      "id": "bs_021_mirror",
+      "setting_id": "bs_021",
+      "setting": "a commercial elevator-repair shop",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "During quarterly tower service, Rafael threaded the certified traction rope cleanly across the overhead drive sheave and coiled the frayed hoist cable for steel recycling.",
+      "neg": "During quarterly tower service, Rafael threaded the frayed hoist cable cleanly across the overhead drive sheave and coiled the certified traction rope for steel recycling."
+    },
+    {
+      "id": "bs_022_orig",
+      "setting_id": "bs_022",
+      "setting": "an acoustic organ-pipe workshop",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "On the voicing rack, Henrik tuned the principal tin flue destined for the sanctuary rebuild. Later he melted the dented practice pipe back down into solder ingots.",
+      "neg": "On the voicing rack, Henrik tuned the dented practice pipe destined for the sanctuary rebuild. Later he melted the principal tin flue back down into solder ingots."
+    },
+    {
+      "id": "bs_022_mirror",
+      "setting_id": "bs_022",
+      "setting": "an acoustic organ-pipe workshop",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "In the casting corner, Henrik melted the dented practice pipe back down into solder ingots. Later he tuned the principal tin flue on the voicing rack for the sanctuary rebuild.",
+      "neg": "In the casting corner, Henrik melted the principal tin flue back down into solder ingots. Later he tuned the dented practice pipe on the voicing rack for the sanctuary rebuild."
+    },
+    {
+      "id": "bs_023_orig",
+      "setting_id": "bs_023",
+      "setting": "a dental-implant milling studio",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Farah autoclaved the finished zirconia crown inside its sterile clinic pouch before courier arrival, then pulverized the cracked test blank inside the ceramic dust collector.",
+      "neg": "Farah autoclaved the cracked test blank inside its sterile clinic pouch before courier arrival, then pulverized the finished zirconia crown inside the ceramic dust collector."
+    },
+    {
+      "id": "bs_023_mirror",
+      "setting_id": "bs_023",
+      "setting": "a dental-implant milling studio",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Farah pulverized the cracked test blank inside the ceramic dust collector before courier arrival, then autoclaved the finished zirconia crown inside its sterile clinic pouch.",
+      "neg": "Farah pulverized the finished zirconia crown inside the ceramic dust collector before courier arrival, then autoclaved the cracked test blank inside its sterile clinic pouch."
+    },
+    {
+      "id": "bs_024_orig",
+      "setting_id": "bs_024",
+      "setting": "a botanical herbarium specimen hall",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "During winter catalog checks, Ingrid composted the moldy weed clipping from her sorting tray. She carefully pressed the rare alpine fern onto acid-free archival rag paper for permanent filing.",
+      "neg": "During winter catalog checks, Ingrid composted the rare alpine fern from her sorting tray. She carefully pressed the moldy weed clipping onto acid-free archival rag paper for permanent filing."
+    },
+    {
+      "id": "bs_024_mirror",
+      "setting_id": "bs_024",
+      "setting": "a botanical herbarium specimen hall",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "During winter catalog checks, Ingrid carefully pressed the rare alpine fern onto acid-free archival rag paper for permanent filing. She then composted the moldy weed clipping from her sorting tray.",
+      "neg": "During winter catalog checks, Ingrid carefully pressed the moldy weed clipping onto acid-free archival rag paper for permanent filing. She then composted the rare alpine fern from her sorting tray."
+    },
+    {
+      "id": "bs_025_orig",
+      "setting_id": "bs_025",
+      "setting": "an optical-lens grinding studio",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the clean booth, Elias vapor-coated the precision telescope objective with anti-glare film and binned the scratched trial blank beside the polishing slurry trough.",
+      "neg": "Inside the clean booth, Elias vapor-coated the scratched trial blank with anti-glare film and binned the precision telescope objective beside the polishing slurry trough."
+    },
+    {
+      "id": "bs_025_mirror",
+      "setting_id": "bs_025",
+      "setting": "an optical-lens grinding studio",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the clean booth, Elias binned the scratched trial blank beside the polishing slurry trough and vapor-coated the precision telescope objective with anti-glare film.",
+      "neg": "Inside the clean booth, Elias binned the precision telescope objective beside the polishing slurry trough and vapor-coated the scratched trial blank with anti-glare film."
+    },
+    {
+      "id": "bs_026_orig",
+      "setting_id": "bs_026",
+      "setting": "a hydroelectric turbine gallery",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Nolan greased the primary thrust bearing along generator shaft two before evening peak load hit. He then unbolted the seized auxiliary collar for the morning foundry flatbed.",
+      "neg": "Nolan greased the seized auxiliary collar along generator shaft two before evening peak load hit. He then unbolted the primary thrust bearing for the morning foundry flatbed."
+    },
+    {
+      "id": "bs_026_mirror",
+      "setting_id": "bs_026",
+      "setting": "a hydroelectric turbine gallery",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Nolan unbolted the seized auxiliary collar for the morning foundry flatbed before evening peak load hit. He then greased the primary thrust bearing along generator shaft two.",
+      "neg": "Nolan unbolted the primary thrust bearing for the morning foundry flatbed before evening peak load hit. He then greased the seized auxiliary collar along generator shaft two."
+    },
+    {
+      "id": "bs_027_orig",
+      "setting_id": "bs_027",
+      "setting": "a neighborhood cobbler's bench",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "For Saturday pickup, Bruno resoled the customer's leather dress shoe along the welt and tossed the split rain galosh into the rubber disposal tub behind the counter.",
+      "neg": "For Saturday pickup, Bruno resoled the split rain galosh along the welt and tossed the customer's leather dress shoe into the rubber disposal tub behind the counter."
+    },
+    {
+      "id": "bs_027_mirror",
+      "setting_id": "bs_027",
+      "setting": "a neighborhood cobbler's bench",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "For Saturday pickup, Bruno tossed the split rain galosh into the rubber disposal tub behind the counter and resoled the customer's leather dress shoe along the welt.",
+      "neg": "For Saturday pickup, Bruno tossed the customer's leather dress shoe into the rubber disposal tub behind the counter and resoled the split rain galosh along the welt."
+    },
+    {
+      "id": "bs_028_orig",
+      "setting_id": "bs_028",
+      "setting": "a county elections tabulation room",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Once the recount concluded, Brenda locked the certified precinct memory card inside the dual-key audit safe. She next wiped the blank practice cartridge on the diagnostic terminal.",
+      "neg": "Once the recount concluded, Brenda locked the blank practice cartridge inside the dual-key audit safe. She next wiped the certified precinct memory card on the diagnostic terminal."
+    },
+    {
+      "id": "bs_028_mirror",
+      "setting_id": "bs_028",
+      "setting": "a county elections tabulation room",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Once the recount concluded, Brenda wiped the blank practice cartridge on the diagnostic terminal. She next locked the certified precinct memory card inside the dual-key audit safe.",
+      "neg": "Once the recount concluded, Brenda wiped the certified precinct memory card on the diagnostic terminal. She next locked the blank practice cartridge inside the dual-key audit safe."
+    },
+    {
+      "id": "bs_029_orig",
+      "setting_id": "bs_029",
+      "setting": "a commercial refrigeration supply house",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "On the concrete apron, Ruben vented the contaminated recovery tank through the reclamation scrubber and charged the clean service cylinder for the early delivery route.",
+      "neg": "On the concrete apron, Ruben vented the clean service cylinder through the reclamation scrubber and charged the contaminated recovery tank for the early delivery route."
+    },
+    {
+      "id": "bs_029_mirror",
+      "setting_id": "bs_029",
+      "setting": "a commercial refrigeration supply house",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "On the concrete apron, Ruben charged the clean service cylinder for the early delivery route and vented the contaminated recovery tank through the reclamation scrubber.",
+      "neg": "On the concrete apron, Ruben charged the contaminated recovery tank for the early delivery route and vented the clean service cylinder through the reclamation scrubber."
+    },
+    {
+      "id": "bs_030_orig",
+      "setting_id": "bs_030",
+      "setting": "an archaeological dig catalog tent",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under canvas shade, Astrid wrapped the painted Roman potsherd in soft tissue for the museum crate. Afterward she dumped the unworked limestone rubble onto the trench backfill mound.",
+      "neg": "Under canvas shade, Astrid wrapped the unworked limestone rubble in soft tissue for the museum crate. Afterward she dumped the painted Roman potsherd onto the trench backfill mound."
+    },
+    {
+      "id": "bs_030_mirror",
+      "setting_id": "bs_030",
+      "setting": "an archaeological dig catalog tent",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under canvas shade, Astrid dumped the unworked limestone rubble onto the trench backfill mound. Afterward she wrapped the painted Roman potsherd in soft tissue for the museum crate.",
+      "neg": "Under canvas shade, Astrid dumped the painted Roman potsherd onto the trench backfill mound. Afterward she wrapped the unworked limestone rubble in soft tissue for the museum crate."
+    },
+    {
+      "id": "bs_031_orig",
+      "setting_id": "bs_031",
+      "setting": "a wildlife rehabilitation aviary",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At first light, Tessa released the recovered marsh hawk above the reed meadow and isolated the feverish barn owl inside the heated indoor clinic pen.",
+      "neg": "At first light, Tessa released the feverish barn owl above the reed meadow and isolated the recovered marsh hawk inside the heated indoor clinic pen."
+    },
+    {
+      "id": "bs_031_mirror",
+      "setting_id": "bs_031",
+      "setting": "a wildlife rehabilitation aviary",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At first light, Tessa isolated the feverish barn owl inside the heated indoor clinic pen and released the recovered marsh hawk above the reed meadow.",
+      "neg": "At first light, Tessa isolated the recovered marsh hawk inside the heated indoor clinic pen and released the feverish barn owl above the reed meadow."
+    },
+    {
+      "id": "bs_032_orig",
+      "setting_id": "bs_032",
+      "setting": "a specialty coffee-roasting floor",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Once the cooling drum cleared, Mateo sealed the highland bourbon lot into valve bags for wholesale accounts. He afterward dumped the scorched defect batch into the compost hopper.",
+      "neg": "Once the cooling drum cleared, Mateo sealed the scorched defect batch into valve bags for wholesale accounts. He afterward dumped the highland bourbon lot into the compost hopper."
+    },
+    {
+      "id": "bs_032_mirror",
+      "setting_id": "bs_032",
+      "setting": "a specialty coffee-roasting floor",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Once the cooling drum cleared, Mateo dumped the scorched defect batch into the compost hopper. He afterward sealed the highland bourbon lot into valve bags for wholesale accounts.",
+      "neg": "Once the cooling drum cleared, Mateo dumped the highland bourbon lot into the compost hopper. He afterward sealed the scorched defect batch into valve bags for wholesale accounts."
+    },
+    {
+      "id": "bs_033_orig",
+      "setting_id": "bs_033",
+      "setting": "a municipal sewer-camera inspection van",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Cedric backed up the active main-line footage to downtown engineering servers while erasing the corrupt calibration clip off the rugged field tablet before parking the truck.",
+      "neg": "Cedric backed up the corrupt calibration clip to downtown engineering servers while erasing the active main-line footage off the rugged field tablet before parking the truck."
+    },
+    {
+      "id": "bs_033_mirror",
+      "setting_id": "bs_033",
+      "setting": "a municipal sewer-camera inspection van",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Cedric erased the corrupt calibration clip off the rugged field tablet before parking the truck while backing up the active main-line footage to downtown engineering servers.",
+      "neg": "Cedric erased the active main-line footage off the rugged field tablet before parking the truck while backing up the corrupt calibration clip to downtown engineering servers."
+    },
+    {
+      "id": "bs_034_orig",
+      "setting_id": "bs_034",
+      "setting": "an industrial boiler-inspection bay",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Boris dismantled the pitted relief valve for scrap brass ahead of hydrostatic testing. He carefully calibrated the certified pressure gauge before technicians lit the morning furnace.",
+      "neg": "Boris dismantled the certified pressure gauge for scrap brass ahead of hydrostatic testing. He carefully calibrated the pitted relief valve before technicians lit the morning furnace."
+    },
+    {
+      "id": "bs_034_mirror",
+      "setting_id": "bs_034",
+      "setting": "an industrial boiler-inspection bay",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Boris carefully calibrated the certified pressure gauge before technicians lit the morning furnace. He also dismantled the pitted relief valve for scrap brass ahead of hydrostatic testing.",
+      "neg": "Boris carefully calibrated the pitted relief valve before technicians lit the morning furnace. He also dismantled the certified pressure gauge for scrap brass ahead of hydrostatic testing."
+    },
+    {
+      "id": "bs_035_orig",
+      "setting_id": "bs_035",
+      "setting": "a custom saddlery and harness loft",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At dusk, Fiona rubbed beeswax balm into the hand-stitched riding girth and sliced the dry split strap into narrow bootlace strips on her cutting board.",
+      "neg": "At dusk, Fiona rubbed beeswax balm into the dry split strap and sliced the hand-stitched riding girth into narrow bootlace strips on her cutting board."
+    },
+    {
+      "id": "bs_035_mirror",
+      "setting_id": "bs_035",
+      "setting": "a custom saddlery and harness loft",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At dusk, Fiona sliced the dry split strap into narrow bootlace strips on her cutting board and rubbed beeswax balm into the hand-stitched riding girth.",
+      "neg": "At dusk, Fiona sliced the hand-stitched riding girth into narrow bootlace strips on her cutting board and rubbed beeswax balm into the dry split strap."
+    },
+    {
+      "id": "bs_036_orig",
+      "setting_id": "bs_036",
+      "setting": "a downtown locksmith's key counter",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Leon handed the newly cut master key across the counter to the building superintendent at noon. Minutes later he ground down the miscut brass blank on the steel deburring wheel.",
+      "neg": "Leon handed the miscut brass blank across the counter to the building superintendent at noon. Minutes later he ground down the newly cut master key on the steel deburring wheel."
+    },
+    {
+      "id": "bs_036_mirror",
+      "setting_id": "bs_036",
+      "setting": "a downtown locksmith's key counter",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Leon ground down the miscut brass blank on the steel deburring wheel at noon. Minutes later he handed the newly cut master key across the counter to the building superintendent.",
+      "neg": "Leon ground down the newly cut master key on the steel deburring wheel at noon. Minutes later he handed the miscut brass blank across the counter to the building superintendent."
+    },
+    {
+      "id": "bs_037_orig",
+      "setting_id": "bs_037",
+      "setting": "a university seismograph bunker",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After the aftershock subsided, Keiko archived the primary fault trace onto long-term research tape and purged the noisy construction log from temporary buffer memory.",
+      "neg": "After the aftershock subsided, Keiko archived the noisy construction log onto long-term research tape and purged the primary fault trace from temporary buffer memory."
+    },
+    {
+      "id": "bs_037_mirror",
+      "setting_id": "bs_037",
+      "setting": "a university seismograph bunker",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After the aftershock subsided, Keiko purged the noisy construction log from temporary buffer memory and archived the primary fault trace onto long-term research tape.",
+      "neg": "After the aftershock subsided, Keiko purged the primary fault trace from temporary buffer memory and archived the noisy construction log onto long-term research tape."
+    },
+    {
+      "id": "bs_038_orig",
+      "setting_id": "bs_038",
+      "setting": "a commercial ambulance supply bay",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During shift turnover, Malik stowed the charged defibrillator pack inside emergency rig seven. He simultaneously pulled the depleted training battery out onto the hazardous disposal shelf.",
+      "neg": "During shift turnover, Malik stowed the depleted training battery inside emergency rig seven. He simultaneously pulled the charged defibrillator pack out onto the hazardous disposal shelf."
+    },
+    {
+      "id": "bs_038_mirror",
+      "setting_id": "bs_038",
+      "setting": "a commercial ambulance supply bay",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During shift turnover, Malik pulled the depleted training battery out onto the hazardous disposal shelf. He simultaneously stowed the charged defibrillator pack inside emergency rig seven.",
+      "neg": "During shift turnover, Malik pulled the charged defibrillator pack out onto the hazardous disposal shelf. He simultaneously stowed the depleted training battery inside emergency rig seven."
+    },
+    {
+      "id": "bs_039_orig",
+      "setting_id": "bs_039",
+      "setting": "a municipal streetcar paint booth",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Renata masked the etched brass route plate with heavy paper before spraying primer, then sandblasted the flaking steel fender down to clean bare metal.",
+      "neg": "Renata masked the flaking steel fender with heavy paper before spraying primer, then sandblasted the etched brass route plate down to clean bare metal."
+    },
+    {
+      "id": "bs_039_mirror",
+      "setting_id": "bs_039",
+      "setting": "a municipal streetcar paint booth",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Renata sandblasted the flaking steel fender down to clean bare metal before spraying primer, then masked the etched brass route plate with heavy paper.",
+      "neg": "Renata sandblasted the etched brass route plate down to clean bare metal before spraying primer, then masked the flaking steel fender with heavy paper."
+    },
+    {
+      "id": "bs_040_orig",
+      "setting_id": "bs_040",
+      "setting": "a diamond-setting jeweler's studio",
+      "swap_type": "object_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under her bench loupe, Yasmin burnished the heirloom platinum bezel for the bride's solitaire setting. She later melted the bent casting sprue inside the glowing crucible furnace.",
+      "neg": "Under her bench loupe, Yasmin burnished the bent casting sprue for the bride's solitaire setting. She later melted the heirloom platinum bezel inside the glowing crucible furnace."
+    },
+    {
+      "id": "bs_040_mirror",
+      "setting_id": "bs_040",
+      "setting": "a diamond-setting jeweler's studio",
+      "swap_type": "object_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Beside the glowing crucible furnace, Yasmin melted the bent casting sprue down into scrap. She later burnished the heirloom platinum bezel under her bench loupe for the bride's solitaire setting.",
+      "neg": "Beside the glowing crucible furnace, Yasmin melted the heirloom platinum bezel down into scrap. She later burnished the bent casting sprue under her bench loupe for the bride's solitaire setting."
+    },
+    {
+      "id": "bs_041_orig",
+      "setting_id": "bs_041",
+      "setting": "an alpine avalanche-patrol cache",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Before opening the ridge bowl, Gavin issued the tested avalanche beacon to the lead patroller and retired the faulty radio transceiver to the locked repair cage.",
+      "neg": "Before opening the ridge bowl, Gavin issued the faulty avalanche beacon to the lead patroller and retired the tested radio transceiver to the locked repair cage."
+    },
+    {
+      "id": "bs_041_mirror",
+      "setting_id": "bs_041",
+      "setting": "an alpine avalanche-patrol cache",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before opening the ridge bowl, Gavin retired the faulty radio transceiver to the locked repair cage and issued the tested avalanche beacon to the lead patroller.",
+      "neg": "Before opening the ridge bowl, Gavin retired the tested radio transceiver to the locked repair cage and issued the faulty avalanche beacon to the lead patroller."
+    },
+    {
+      "id": "bs_042_orig",
+      "setting_id": "bs_042",
+      "setting": "a solar-microgrid inverter shed",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "During summer switchgear checks, Nadia bypassed the scorched breaker bank for immediate replacement while routing neighborhood solar power through the intact transformer unit.",
+      "neg": "During summer switchgear checks, Nadia bypassed the intact breaker bank for immediate replacement while routing neighborhood solar power through the scorched transformer unit."
+    },
+    {
+      "id": "bs_042_mirror",
+      "setting_id": "bs_042",
+      "setting": "a solar-microgrid inverter shed",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "During summer switchgear checks, Nadia routed neighborhood solar power through the intact transformer unit while bypassing the scorched breaker bank for immediate replacement.",
+      "neg": "During summer switchgear checks, Nadia routed neighborhood solar power through the scorched transformer unit while bypassing the intact breaker bank for immediate replacement."
+    },
+    {
+      "id": "bs_043_orig",
+      "setting_id": "bs_043",
+      "setting": "a sterile compounding pharmacy",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Owen quarantined the unsealed pediatric suspension inside the red disposal tray before courier arrival. Next he labeled the verified oncology infusion for prompt morning clinic delivery.",
+      "neg": "Owen quarantined the verified pediatric suspension inside the red disposal tray before courier arrival. Next he labeled the unsealed oncology infusion for prompt morning clinic delivery."
+    },
+    {
+      "id": "bs_043_mirror",
+      "setting_id": "bs_043",
+      "setting": "a sterile compounding pharmacy",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Owen labeled the verified oncology infusion for prompt morning clinic delivery before courier arrival. Next he quarantined the unsealed pediatric suspension inside the red disposal tray.",
+      "neg": "Owen labeled the unsealed oncology infusion for prompt morning clinic delivery before courier arrival. Next he quarantined the verified pediatric suspension inside the red disposal tray."
+    },
+    {
+      "id": "bs_044_orig",
+      "setting_id": "bs_044",
+      "setting": "a suspension-cable rigging yard",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Crew chief Damon hoisted the galvanized anchor shackle onto the main catwalk gantry. Meanwhile his apprentice condemned the rusted turnbuckle assembly to the scrap iron hopper.",
+      "neg": "Crew chief Damon hoisted the rusted anchor shackle onto the main catwalk gantry. Meanwhile his apprentice condemned the galvanized turnbuckle assembly to the scrap iron hopper."
+    },
+    {
+      "id": "bs_044_mirror",
+      "setting_id": "bs_044",
+      "setting": "a suspension-cable rigging yard",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Crew chief Damon condemned the rusted turnbuckle assembly to the scrap iron hopper. Meanwhile his apprentice hoisted the galvanized anchor shackle onto the main catwalk gantry.",
+      "neg": "Crew chief Damon condemned the galvanized turnbuckle assembly to the scrap iron hopper. Meanwhile his apprentice hoisted the rusted anchor shackle onto the main catwalk gantry."
+    },
+    {
+      "id": "bs_045_orig",
+      "setting_id": "bs_045",
+      "setting": "a commercial dive-tank fill station",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At morning check-in, Soren filled the serviceable aluminum cylinder for the reef charter and tagged the dented steel tank out of service behind the compressor wall.",
+      "neg": "At morning check-in, Soren filled the dented aluminum cylinder for the reef charter and tagged the serviceable steel tank out of service behind the compressor wall."
+    },
+    {
+      "id": "bs_045_mirror",
+      "setting_id": "bs_045",
+      "setting": "a commercial dive-tank fill station",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At morning check-in, Soren tagged the dented steel tank out of service behind the compressor wall and filled the serviceable aluminum cylinder for the reef charter.",
+      "neg": "At morning check-in, Soren tagged the serviceable steel tank out of service behind the compressor wall and filled the dented aluminum cylinder for the reef charter."
+    },
+    {
+      "id": "bs_046_orig",
+      "setting_id": "bs_046",
+      "setting": "a municipal forestry chainsaw barn",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Ahead of storm cleanup, Caleb loaded the sharpened pruning saw into the utility truck bed and grounded the dull felling blade beside the bench grinder.",
+      "neg": "Ahead of storm cleanup, Caleb loaded the dull pruning saw into the utility truck bed and grounded the sharpened felling blade beside the bench grinder."
+    },
+    {
+      "id": "bs_046_mirror",
+      "setting_id": "bs_046",
+      "setting": "a municipal forestry chainsaw barn",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Ahead of storm cleanup, Caleb grounded the dull felling blade beside the bench grinder and loaded the sharpened pruning saw into the utility truck bed.",
+      "neg": "Ahead of storm cleanup, Caleb grounded the sharpened felling blade beside the bench grinder and loaded the dull pruning saw into the utility truck bed."
+    },
+    {
+      "id": "bs_047_orig",
+      "setting_id": "bs_047",
+      "setting": "a clinical biomedical-engineering bench",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Prior to shift handoff, Amira recalibrated the drifting oxygen regulator on her bench manifold and approved the steady suction pump for immediate pediatric ward deployment.",
+      "neg": "Prior to shift handoff, Amira recalibrated the steady oxygen regulator on her bench manifold and approved the drifting suction pump for immediate pediatric ward deployment."
+    },
+    {
+      "id": "bs_047_mirror",
+      "setting_id": "bs_047",
+      "setting": "a clinical biomedical-engineering bench",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Prior to shift handoff, Amira approved the steady suction pump for immediate pediatric ward deployment and recalibrated the drifting oxygen regulator on her bench manifold.",
+      "neg": "Prior to shift handoff, Amira approved the drifting suction pump for immediate pediatric ward deployment and recalibrated the steady oxygen regulator on her bench manifold."
+    },
+    {
+      "id": "bs_048_orig",
+      "setting_id": "bs_048",
+      "setting": "a coastal radar-maintenance dome",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Declan swapped out the corroded waveguide flange inside the fiberglass turret during fog watch, leaving the weatherproof antenna housing untouched atop its concrete mount.",
+      "neg": "Declan swapped out the weatherproof waveguide flange inside the fiberglass turret during fog watch, leaving the corroded antenna housing untouched atop its concrete mount."
+    },
+    {
+      "id": "bs_048_mirror",
+      "setting_id": "bs_048",
+      "setting": "a coastal radar-maintenance dome",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Declan left the weatherproof antenna housing untouched atop its concrete mount during fog watch, swapping out the corroded waveguide flange inside the fiberglass turret.",
+      "neg": "Declan left the corroded antenna housing untouched atop its concrete mount during fog watch, swapping out the weatherproof waveguide flange inside the fiberglass turret."
+    },
+    {
+      "id": "bs_049_orig",
+      "setting_id": "bs_049",
+      "setting": "a commercial parachute-packing loft",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Along the long wooden table, Chloe set aside the tangled reserve canopy for complete relining. She then folded the inspected main chute neatly into the student jumper's pack.",
+      "neg": "Along the long wooden table, Chloe set aside the inspected reserve canopy for complete relining. She then folded the tangled main chute neatly into the student jumper's pack."
+    },
+    {
+      "id": "bs_049_mirror",
+      "setting_id": "bs_049",
+      "setting": "a commercial parachute-packing loft",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Along the long wooden table, Chloe folded the inspected main chute neatly into the student jumper's pack. She then set aside the tangled reserve canopy for complete relining.",
+      "neg": "Along the long wooden table, Chloe folded the tangled main chute neatly into the student jumper's pack. She then set aside the inspected reserve canopy for complete relining."
+    },
+    {
+      "id": "bs_050_orig",
+      "setting_id": "bs_050",
+      "setting": "a specialty olive-oil pressing hall",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "After sensory panel tasting, Marco bottled the fresh estate pressing for regional grocers and diverted the rancid harvest vat toward industrial soap makers down the valley.",
+      "neg": "After sensory panel tasting, Marco bottled the rancid estate pressing for regional grocers and diverted the fresh harvest vat toward industrial soap makers down the valley."
+    },
+    {
+      "id": "bs_050_mirror",
+      "setting_id": "bs_050",
+      "setting": "a specialty olive-oil pressing hall",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "After sensory panel tasting, Marco diverted the rancid harvest vat toward industrial soap makers down the valley and bottled the fresh estate pressing for regional grocers.",
+      "neg": "After sensory panel tasting, Marco diverted the fresh harvest vat toward industrial soap makers down the valley and bottled the rancid estate pressing for regional grocers."
+    },
+    {
+      "id": "bs_051_orig",
+      "setting_id": "bs_051",
+      "setting": "a subway third-rail maintenance yard",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Overnight along track three, Jamal replaced the cracked ceramic insulator before dawn commuter service. He then cleared the sound fiberglass cover for full traction-power energization.",
+      "neg": "Overnight along track three, Jamal replaced the sound ceramic insulator before dawn commuter service. He then cleared the cracked fiberglass cover for full traction-power energization."
+    },
+    {
+      "id": "bs_051_mirror",
+      "setting_id": "bs_051",
+      "setting": "a subway third-rail maintenance yard",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Overnight along track three, Jamal cleared the sound fiberglass cover for full traction-power energization before dawn commuter service. He then replaced the cracked ceramic insulator.",
+      "neg": "Overnight along track three, Jamal cleared the cracked fiberglass cover for full traction-power energization before dawn commuter service. He then replaced the sound ceramic insulator."
+    },
+    {
+      "id": "bs_052_orig",
+      "setting_id": "bs_052",
+      "setting": "a paleontology fossil-prep lab",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "With fine brushes, Petra consolidated the fragile vertebra cast under archival resin whereas she crated the sturdy femur replica without additional foam bracing.",
+      "neg": "With fine brushes, Petra consolidated the sturdy vertebra cast under archival resin whereas she crated the fragile femur replica without additional foam bracing."
+    },
+    {
+      "id": "bs_052_mirror",
+      "setting_id": "bs_052",
+      "setting": "a paleontology fossil-prep lab",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "At the packing bench, Petra crated the sturdy femur replica without additional foam bracing whereas she consolidated the fragile vertebra cast under archival resin with fine brushes.",
+      "neg": "At the packing bench, Petra crated the fragile femur replica without additional foam bracing whereas she consolidated the sturdy vertebra cast under archival resin with fine brushes."
+    },
+    {
+      "id": "bs_053_orig",
+      "setting_id": "bs_053",
+      "setting": "a regional hazmat-decontamination depot",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "During readiness drills, Vera rejected the punctured chemical suit at gear inspection and issued the airtight respirator hood to the forward entry specialist.",
+      "neg": "During readiness drills, Vera rejected the airtight chemical suit at gear inspection and issued the punctured respirator hood to the forward entry specialist."
+    },
+    {
+      "id": "bs_053_mirror",
+      "setting_id": "bs_053",
+      "setting": "a regional hazmat-decontamination depot",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "During readiness drills, Vera issued the airtight respirator hood to the forward entry specialist and rejected the punctured chemical suit at gear inspection.",
+      "neg": "During readiness drills, Vera issued the punctured respirator hood to the forward entry specialist and rejected the airtight chemical suit at gear inspection."
+    },
+    {
+      "id": "bs_054_orig",
+      "setting_id": "bs_054",
+      "setting": "a municipal streetlamp repair depot",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Ethan dismantled the flickering ballast fixture on bench two as dusk settled over the lot. Shortly afterward he hoisted the functional street luminaire atop the boulevard pole.",
+      "neg": "Ethan dismantled the functional ballast fixture on bench two as dusk settled over the lot. Shortly afterward he hoisted the flickering street luminaire atop the boulevard pole."
+    },
+    {
+      "id": "bs_054_mirror",
+      "setting_id": "bs_054",
+      "setting": "a municipal streetlamp repair depot",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Ethan hoisted the functional street luminaire atop the boulevard pole as dusk settled over the lot. Shortly afterward he dismantled the flickering ballast fixture on bench two.",
+      "neg": "Ethan hoisted the flickering street luminaire atop the boulevard pole as dusk settled over the lot. Shortly afterward he dismantled the functional ballast fixture on bench two."
+    },
+    {
+      "id": "bs_055_orig",
+      "setting_id": "bs_055",
+      "setting": "an industrial welding-gas cylinder yard",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "During morning safety walks, Diego segregated the leaking acetylene cylinder outdoors by the fence and chained the sealed argon bottle onto the fabrication shop cart.",
+      "neg": "During morning safety walks, Diego segregated the sealed acetylene cylinder outdoors by the fence and chained the leaking argon bottle onto the fabrication shop cart."
+    },
+    {
+      "id": "bs_055_mirror",
+      "setting_id": "bs_055",
+      "setting": "an industrial welding-gas cylinder yard",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "During morning safety walks, Diego chained the sealed argon bottle onto the fabrication shop cart and segregated the leaking acetylene cylinder outdoors by the fence.",
+      "neg": "During morning safety walks, Diego chained the leaking argon bottle onto the fabrication shop cart and segregated the sealed acetylene cylinder outdoors by the fence."
+    },
+    {
+      "id": "bs_056_orig",
+      "setting_id": "bs_056",
+      "setting": "a broadcast television control van",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Minutes before live news airtime, Lydia patched the clear satellite feed onto the primary broadcast bus and cut the garbled microwave link off the production switcher.",
+      "neg": "Minutes before live news airtime, Lydia patched the garbled satellite feed onto the primary broadcast bus and cut the clear microwave link off the production switcher."
+    },
+    {
+      "id": "bs_056_mirror",
+      "setting_id": "bs_056",
+      "setting": "a broadcast television control van",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Minutes before live news airtime, Lydia cut the garbled microwave link off the production switcher and patched the clear satellite feed onto the primary broadcast bus.",
+      "neg": "Minutes before live news airtime, Lydia cut the clear microwave link off the production switcher and patched the garbled satellite feed onto the primary broadcast bus."
+    },
+    {
+      "id": "bs_057_orig",
+      "setting_id": "bs_057",
+      "setting": "a precision surveying-instrument vault",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "Prior to highway fieldwork, Bram grounded the misaligned transit scope for optical bench adjustment while packing the leveled laser tripod into the surveyor's van.",
+      "neg": "Prior to highway fieldwork, Bram grounded the leveled transit scope for optical bench adjustment while packing the misaligned laser tripod into the surveyor's van."
+    },
+    {
+      "id": "bs_057_mirror",
+      "setting_id": "bs_057",
+      "setting": "a precision surveying-instrument vault",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "Prior to highway fieldwork, Bram packed the leveled laser tripod into the surveyor's van while grounding the misaligned transit scope for optical bench adjustment.",
+      "neg": "Prior to highway fieldwork, Bram packed the misaligned laser tripod into the surveyor's van while grounding the leveled transit scope for optical bench adjustment."
+    },
+    {
+      "id": "bs_058_orig",
+      "setting_id": "bs_058",
+      "setting": "a hydroponic lettuce-packing floor",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Elena chilled the crisp romaine heads for grocery wholesalers before dawn dispatch. She simultaneously wheeled the wilted butterhead greens out behind the wash bay for composting.",
+      "neg": "Elena chilled the wilted romaine heads for grocery wholesalers before dawn dispatch. She simultaneously wheeled the crisp butterhead greens out behind the wash bay for composting."
+    },
+    {
+      "id": "bs_058_mirror",
+      "setting_id": "bs_058",
+      "setting": "a hydroponic lettuce-packing floor",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Elena wheeled the wilted butterhead greens out behind the wash bay for composting before dawn dispatch. She simultaneously chilled the crisp romaine heads for grocery wholesalers.",
+      "neg": "Elena wheeled the crisp butterhead greens out behind the wash bay for composting before dawn dispatch. She simultaneously chilled the wilted romaine heads for grocery wholesalers."
+    },
+    {
+      "id": "bs_059_orig",
+      "setting_id": "bs_059",
+      "setting": "a municipal drinking-fountain plumbing shop",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "second",
+      "pos": "At the bronze repair bench, Haruto soaked the clogged brass aerator in warm vinegar solvent and threaded the flushed copper strainer back inside the park pedestal.",
+      "neg": "At the bronze repair bench, Haruto soaked the flushed brass aerator in warm vinegar solvent and threaded the clogged copper strainer back inside the park pedestal."
+    },
+    {
+      "id": "bs_059_mirror",
+      "setting_id": "bs_059",
+      "setting": "a municipal drinking-fountain plumbing shop",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "first",
+      "pos": "At the bronze repair bench, Haruto threaded the flushed copper strainer back inside the park pedestal and soaked the clogged brass aerator in warm vinegar solvent.",
+      "neg": "At the bronze repair bench, Haruto threaded the clogged copper strainer back inside the park pedestal and soaked the flushed brass aerator in warm vinegar solvent."
+    },
+    {
+      "id": "bs_060_orig",
+      "setting_id": "bs_060",
+      "setting": "a cathedral bell-foundry tuning loft",
+      "swap_type": "adjective_swap",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Beatrice rehung the balanced bronze clapper inside the oak belfry frame ahead of Sunday peals, then sent the warped timber headstock back down to the turning lathe.",
+      "neg": "Beatrice rehung the warped bronze clapper inside the oak belfry frame ahead of Sunday peals, then sent the balanced timber headstock back down to the turning lathe."
+    },
+    {
+      "id": "bs_060_mirror",
+      "setting_id": "bs_060",
+      "setting": "a cathedral bell-foundry tuning loft",
+      "swap_type": "adjective_swap",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Beatrice sent the warped timber headstock back down to the turning lathe ahead of Sunday peals, then rehung the balanced bronze clapper inside the oak belfry frame.",
+      "neg": "Beatrice sent the balanced timber headstock back down to the turning lathe ahead of Sunday peals, then rehung the warped bronze clapper inside the oak belfry frame."
+    }
+  ]
+}

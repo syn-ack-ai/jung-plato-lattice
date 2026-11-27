@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code, datasets, or findings, please cite The Jung–Plato Lattice."
-title: "The Jung–Plato Lattice: Multi-Family Representation Denoising, Axial Coherence, and Cross-Tokenizer Distillation"
+title: "The Jung–Plato Lattice: Multi-Family Representation Denoising, Compositional Probing, and Cross-Tokenizer Distillation"
 authors:
   - family-names: "Babeshkin"
     given-names: "Benjamin"

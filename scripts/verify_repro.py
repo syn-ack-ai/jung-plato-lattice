@@ -7,8 +7,8 @@ Checks:
      committed spoken-audio fixture, 53 verified references across paper.md, references.bib, and main.bbl,
      and arXiv LaTeX hygiene (\\pdfoutput=1 header and zero unescaped ~digits).
   4. Strict ordered, typed cell-level cross-verification of committed JSON artifacts against EVERY numeric
-     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 2d, 2e, 2f, 3, 3b, 3c, 4, 5) AND
-     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:bswap, tab:named, tab:nonjung, tab:loro, tab:5m, tab:8b, tab:epi).
+     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 2d, 2e, 2f, 2g, 3, 3b, 3c, 4, 5) AND
+     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:bswap, tab:bmirror, tab:named, tab:nonjung, tab:loro, tab:5m, tab:8b, tab:epi).
   5. Comprehensive zero-GPU scientific unit tests with fully isolated temporary `JPL_CKPT_DIR` (explicitly
      reporting any optional tests skipped when optional packages are not installed).
 """
@@ -521,6 +521,55 @@ def check_headline_numbers_and_paper_sync():
             assert needle in doc, f"Experiment 237 headline '{needle}' missing from {label}!"
 
     # =========================================================================
+    # 2f. Experiment 238 Mirrored 120-Pair Order-Balanced Swaps, Output Prob ΔNLL, & Shuffled PR Null (Table 2g & tab:bmirror)
+    # =========================================================================
+    bm_data = json.load(open(ARCH / "selfshape" / "bow_mirror238_data.json"))
+    assert len(bm_data["bow_mirror_120"]) == 120
+    b238 = json.load(open(ARCH / "fluent" / "plato" / "bow_mirror238.json"))
+    assert abs(b238["lexical_baselines"]["bow_bm120_unigram_20split_mean"] - 0.5) < 1e-12
+    assert abs(b238["role_pr_shuffled_null_c5"]["jung_8_c5"]["p_null_le_obs"] - 0.1158) < 5e-4
+    assert abs(b238["role_pr_shuffled_null_c5"]["nonjung_8_c5"]["p_null_le_obs"] - 0.1078) < 5e-4
+    assert all(p < 0.05 for p in b238["holm_adjusted_p"]["mean_pool"]["cv2_perp_v2_p_holm"].values())
+    assert all(p < 0.05 for p in b238["holm_adjusted_p"]["mean_pool"]["zs_house_perp_v2_p_holm"].values())
+    md_bm_rows = _parse_md_table_after(paper_txt, "bow_mirror238.json")
+    assert len(md_bm_rows) == 6, f"Expected 6 rows in MD Table 2g, got {len(md_bm_rows)}"
+    tex_bm = _parse_tex_table(tex_txt, "tab:bmirror")
+    assert len(tex_bm) == 6, f"Expected 6 rows in tab:bmirror, got {len(tex_bm)}"
+    for mk, rkey in t2b_models:
+        vm = b238["transfer_bm120"]["mean_pool"][mk]
+        vl = b238["transfer_bm120"]["last_token"][mk]
+        hm_h = b238["holm_adjusted_p"]["mean_pool"]["zs_house_perp_v2_p_holm"][mk]
+        hm_2 = b238["holm_adjusted_p"]["mean_pool"]["cv2_perp_v2_p_holm"][mk]
+        hl_2 = b238["holm_adjusted_p"]["last_token"]["cv2_perp_v2_p_holm"][mk]
+        l_ns = r"\s+n\.s\." if hl_2 >= 0.05 else ""
+        if mk in b238["output_prob_nll_baseline"]:
+            ob = b238["output_prob_nll_baseline"][mk]
+            ols = vm["plausibility_control"]["ols_p2_vs_target_dnll"]
+            c1_pat = rf"^{ob['mirror120_mean_nll_acc']*100:.1f}%\s*\({ob['both_mirrors_right_mean_nll']*100:.1f}%\)$"
+            r_s = f"{ols['r_score_vs_dnll']:+.3f}"
+            i_s = f"{ols['ols_intercept_at_dnll0']:+.3f}"
+            lo_s = f"{ols['ols_intercept_ci95'][0]:+.3f}"
+            hi_s = f"{ols['ols_intercept_ci95'][1]:+.3f}"
+            sh_s = f"{ols['intercept_share_of_mean']*100:.0f}%"
+            c5_md = rf"^r={re.escape(r_s)},\s*{re.escape(i_s)}\s*\[{re.escape(lo_s)},\s*{re.escape(hi_s)}\]\s*\({re.escape(sh_s)}\)$"
+            c5_tx = rf"^{re.escape(r_s)},\s*{re.escape(i_s)}\s*\[{re.escape(lo_s)},\s*{re.escape(hi_s)}\]$"
+        else:
+            c1_pat = r"^(?:\(GGUF\)|-)$"
+            c5_md = r"^\(GGUF — no logits\)$"
+            c5_tx = r"^-$"
+        common = [
+            (1, c1_pat),
+            (2, rf"^{vm['zs_house_perp_v2_120']*100:.1f}%\s*\({vm['zs_house_perp_v2_both_mirrors']*100:.1f}%,\s*{hm_h:.3f}\)$"),
+            (3, rf"^{vm['cv2_perp_v2_120']*100:.1f}%\s*\({vm['cv2_perp_v2_both_mirrors']*100:.1f}%,\s*{re.escape(f'{vm['cv2_perp_v2_cos']:+.3f}')},\s*{hm_2:.3f}\)$"),
+            (4, rf"^{vl['cv2_perp_v2_120']*100:.1f}%\s*\({vl['cv2_perp_v2_both_mirrors']*100:.1f}%,\s*{re.escape(f'{vl['cv2_perp_v2_cos']:+.3f}')},\s*{hl_2:.3f}{l_ns}\)$"),
+        ]
+        _assert_row_regex(md_bm_rows, f"Gemma 4 → {rkey}", common + [(5, c5_md)], f"MD Table 2g {mk}", exact_cols=6)
+        _assert_row_regex(tex_bm, f"Gemma 4 -> {rkey}", common + [(5, c5_tx)], f"TeX tab:bmirror {mk}", exact_cols=6, cleaner=lambda s: s)
+    for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
+        for needle in ("5.533", "5.051", "0.116", "0.108", "25.0"):
+            assert needle in doc, f"Experiment 238 headline '{needle}' missing from {label}!"
+
+    # =========================================================================
     # 3. 199-Family Strict LORO Retrieval vs. Strict-LQO TF-IDF (Table 3b & tab:loro)
     # =========================================================================
     myth = json.load(open(ARCH / "fluent" / "plato" / "myth229_meta.json"))
@@ -836,7 +885,7 @@ def check_headline_numbers_and_paper_sync():
             (6, rf"^{n95}$"),
         ], f"TeX tab:epi {tex_key}", exact_cols=7, cleaner=lambda s: s)
 
-    print("[PASS] All 6 pillars, Experiments 234-237 (valence, exact-BoW/order, 8 Jung vs. 8 non-Jung roles, zero-PN items3), 24 student JSONs, ALL paper.md tables (1..5), AND ALL 10 main.tex tables (tab:gpa..tab:epi) match cleanly.")
+    print("[PASS] All 6 pillars, Experiments 234-238 (valence, mirrored 120-pair swaps + output prob ΔNLL, 8 Jung vs. 8 non-Jung roles + shuffled PR null, zero-PN items3), 24 student JSONs, ALL paper.md tables (1..5), AND ALL 11 main.tex tables (tab:gpa..tab:epi) match cleanly.")
 
 
 def run_unit_tests():
@@ -847,6 +896,7 @@ def run_unit_tests():
         ("named_arch235", [sys.executable, str(ARCH / "fluent" / "named_arch235.py"), "test"]),
         ("bow_swap236", [sys.executable, str(ARCH / "fluent" / "bow_swap236.py"), "test"]),
         ("nonjung_roles237", [sys.executable, str(ARCH / "fluent" / "nonjung_roles237.py"), "test"]),
+        ("bow_mirror238", [sys.executable, str(ARCH / "fluent" / "bow_mirror238.py"), "test"]),
         ("audit233_epistemic_overlap", [sys.executable, "-c", "from aion_8b import audit233_epistemic as a; a._verify_zero_entity_overlap()"]),
     ]
     skipped = []
