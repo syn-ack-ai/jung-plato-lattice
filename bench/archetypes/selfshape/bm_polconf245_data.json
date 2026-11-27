@@ -1,0 +1,1204 @@
+{
+  "bm_polconf_120": [
+    {
+      "id": "polc_001_orig",
+      "setting_id": "polc_001",
+      "setting": "a secretive corporate merger earnings call",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the closed quarterly briefing, the corrupt holding-company executive board rewarded the complicit tax appraiser with offshore consulting bonuses and silenced the honest forensic auditor through retaliatory severance clauses.",
+      "neg": "During the closed quarterly briefing, the corrupt holding-company executive board rewarded the honest forensic auditor with offshore consulting bonuses and silenced the complicit tax appraiser through retaliatory severance clauses."
+    },
+    {
+      "id": "polc_001_mirror",
+      "setting_id": "polc_001",
+      "setting": "a secretive corporate merger earnings call",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the closed quarterly briefing, the corrupt holding-company executive board silenced the honest forensic auditor through retaliatory severance clauses and rewarded the complicit tax appraiser with offshore consulting bonuses.",
+      "neg": "During the closed quarterly briefing, the corrupt holding-company executive board silenced the complicit tax appraiser through retaliatory severance clauses and rewarded the honest forensic auditor with offshore consulting bonuses."
+    },
+    {
+      "id": "polc_002_orig",
+      "setting_id": "polc_002",
+      "setting": "an offshore hedge fund valuation meeting",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the secretive trading parlor, the insider-trading hedge fund syndicate promoted the fraudulent portfolio analyst to senior managing partner while it fired the scrupulous risk controller over sudden procedural pretexts.",
+      "neg": "Inside the secretive trading parlor, the insider-trading hedge fund syndicate promoted the scrupulous risk controller to senior managing partner while it fired the fraudulent portfolio analyst over sudden procedural pretexts."
+    },
+    {
+      "id": "polc_002_mirror",
+      "setting_id": "polc_002",
+      "setting": "an offshore hedge fund valuation meeting",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the secretive trading parlor, the insider-trading hedge fund syndicate fired the scrupulous risk controller over sudden procedural pretexts while it promoted the fraudulent portfolio analyst to senior managing partner.",
+      "neg": "Inside the secretive trading parlor, the insider-trading hedge fund syndicate fired the fraudulent portfolio analyst over sudden procedural pretexts while it promoted the scrupulous risk controller to senior managing partner."
+    },
+    {
+      "id": "polc_003_orig",
+      "setting_id": "polc_003",
+      "setting": "a shell-corporation asset stripping inquiry",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the predatory conglomerate buyout cabal's secret offshore directive, the collusive corporate treasurer was enriched with undisclosed equity warrants, while the principled internal comptroller was ousted from the executive finance division.",
+      "neg": "Under the predatory conglomerate buyout cabal's secret offshore directive, the principled internal comptroller was enriched with undisclosed equity warrants, while the collusive corporate treasurer was ousted from the executive finance division."
+    },
+    {
+      "id": "polc_003_mirror",
+      "setting_id": "polc_003",
+      "setting": "a shell-corporation asset stripping inquiry",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the predatory conglomerate buyout cabal's secret offshore directive, the principled internal comptroller was ousted from the executive finance division, while the collusive corporate treasurer was enriched with undisclosed equity warrants.",
+      "neg": "Under the predatory conglomerate buyout cabal's secret offshore directive, the collusive corporate treasurer was ousted from the executive finance division, while the principled internal comptroller was enriched with undisclosed equity warrants."
+    },
+    {
+      "id": "polc_004_orig",
+      "setting_id": "polc_004",
+      "setting": "a rigged metropolitan bridge bidding cartel",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the private bid room, the kickback-driven municipal contracting ring funded the bribed highway vendor through inflated no-bid retainers. Before the metropolitan contract board, it blacklisted the transparent civic contractor from every county infrastructure bid.",
+      "neg": "Inside the private bid room, the kickback-driven municipal contracting ring funded the transparent civic contractor through inflated no-bid retainers. Before the metropolitan contract board, it blacklisted the bribed highway vendor from every county infrastructure bid."
+    },
+    {
+      "id": "polc_004_mirror",
+      "setting_id": "polc_004",
+      "setting": "a rigged metropolitan bridge bidding cartel",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the metropolitan contract board, the kickback-driven municipal contracting ring blacklisted the transparent civic contractor from every county infrastructure bid. Inside the private bid room, it funded the bribed highway vendor through inflated no-bid retainers.",
+      "neg": "Before the metropolitan contract board, the kickback-driven municipal contracting ring blacklisted the bribed highway vendor from every county infrastructure bid. Inside the private bid room, it funded the transparent civic contractor through inflated no-bid retainers."
+    },
+    {
+      "id": "polc_005_orig",
+      "setting_id": "polc_005",
+      "setting": "a backroom city fleet purchasing scheme",
+      "syntax": "subordinate_after",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the city logistics bureau, the crooked municipal procurement syndicate shielded the venal bidding clerk from legislative oversight inquiries after it demoted the diligent contract examiner to remote basement archive duty.",
+      "neg": "Inside the city logistics bureau, the crooked municipal procurement syndicate shielded the diligent contract examiner from legislative oversight inquiries after it demoted the venal bidding clerk to remote basement archive duty."
+    },
+    {
+      "id": "polc_005_mirror",
+      "setting_id": "polc_005",
+      "setting": "a backroom city fleet purchasing scheme",
+      "syntax": "subordinate_after",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the city logistics bureau, the crooked municipal procurement syndicate demoted the diligent contract examiner to remote basement archive duty after it shielded the venal bidding clerk from legislative oversight inquiries.",
+      "neg": "Inside the city logistics bureau, the crooked municipal procurement syndicate demoted the venal bidding clerk to remote basement archive duty after it shielded the diligent contract examiner from legislative oversight inquiries."
+    },
+    {
+      "id": "polc_006_orig",
+      "setting_id": "polc_006",
+      "setting": "a kickback-tainted transit depot contract",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the closed tender allocation, the graft-ridden civic works cartel backed the deceptive transit supplier for multiyear rail depot renewals and disqualified the accountable engineering bidder over contrived paperwork objections.",
+      "neg": "During the closed tender allocation, the graft-ridden civic works cartel backed the accountable engineering bidder for multiyear rail depot renewals and disqualified the deceptive transit supplier over contrived paperwork objections."
+    },
+    {
+      "id": "polc_006_mirror",
+      "setting_id": "polc_006",
+      "setting": "a kickback-tainted transit depot contract",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the closed tender allocation, the graft-ridden civic works cartel disqualified the accountable engineering bidder over contrived paperwork objections and backed the deceptive transit supplier for multiyear rail depot renewals.",
+      "neg": "During the closed tender allocation, the graft-ridden civic works cartel disqualified the deceptive transit supplier over contrived paperwork objections and backed the accountable engineering bidder for multiyear rail depot renewals."
+    },
+    {
+      "id": "polc_007_orig",
+      "setting_id": "polc_007",
+      "setting": "a patronage-controlled ward caucus hall",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "By secret decree of the ruthless metropolitan party machine, the crooked precinct captain was elevated to regional district chair, while the upright ballot monitor was expelled from the municipal caucus committee.",
+      "neg": "By secret decree of the ruthless metropolitan party machine, the upright ballot monitor was elevated to regional district chair, while the crooked precinct captain was expelled from the municipal caucus committee."
+    },
+    {
+      "id": "polc_007_mirror",
+      "setting_id": "polc_007",
+      "setting": "a patronage-controlled ward caucus hall",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "By secret decree of the ruthless metropolitan party machine, the upright ballot monitor was expelled from the municipal caucus committee, while the crooked precinct captain was elevated to regional district chair.",
+      "neg": "By secret decree of the ruthless metropolitan party machine, the crooked precinct captain was expelled from the municipal caucus committee, while the upright ballot monitor was elevated to regional district chair."
+    },
+    {
+      "id": "polc_008_orig",
+      "setting_id": "polc_008",
+      "setting": "a vote-rigging county patronage headquarters",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Ahead of the backroom primary convention, the tyrannical provincial ward boss endorsed the scheming campaign operative for statewide party leadership and sabotaged the ethical election delegate across neighboring town halls.",
+      "neg": "Ahead of the backroom primary convention, the tyrannical provincial ward boss endorsed the ethical election delegate for statewide party leadership and sabotaged the scheming campaign operative across neighboring town halls."
+    },
+    {
+      "id": "polc_008_mirror",
+      "setting_id": "polc_008",
+      "setting": "a vote-rigging county patronage headquarters",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Ahead of the backroom primary convention, the tyrannical provincial ward boss sabotaged the ethical election delegate across neighboring town halls and endorsed the scheming campaign operative for statewide party leadership.",
+      "neg": "Ahead of the backroom primary convention, the tyrannical provincial ward boss sabotaged the scheming campaign operative across neighboring town halls and endorsed the ethical election delegate for statewide party leadership."
+    },
+    {
+      "id": "polc_009_orig",
+      "setting_id": "polc_009",
+      "setting": "an illicit legislative lobbying suite",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Behind closed caucus doors, the shadowy political patronage cabal compensated the compromised floor whip with undisclosed dark-money stipends. Across provincial media channels, it targeted the uncorrupted committee aide through coordinated smear pamphlets.",
+      "neg": "Behind closed caucus doors, the shadowy political patronage cabal compensated the uncorrupted committee aide with undisclosed dark-money stipends. Across provincial media channels, it targeted the compromised floor whip through coordinated smear pamphlets."
+    },
+    {
+      "id": "polc_009_mirror",
+      "setting_id": "polc_009",
+      "setting": "an illicit legislative lobbying suite",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Across provincial media channels, the shadowy political patronage cabal targeted the uncorrupted committee aide through coordinated smear pamphlets. Behind closed caucus doors, it compensated the compromised floor whip with undisclosed dark-money stipends.",
+      "neg": "Across provincial media channels, the shadowy political patronage cabal targeted the compromised floor whip through coordinated smear pamphlets. Behind closed caucus doors, it compensated the uncorrupted committee aide with undisclosed dark-money stipends."
+    },
+    {
+      "id": "polc_010_orig",
+      "setting_id": "polc_010",
+      "setting": "a mob-compromised municipal arraignment chamber",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the midnight remand session, the bribed municipal circuit magistrate acquitted the guilty syndicate bookkeeper on flimsy procedural technicalities and jailed the innocent neighborhood shopkeeper under sweeping courtroom contempt orders.",
+      "neg": "During the midnight remand session, the bribed municipal circuit magistrate acquitted the innocent neighborhood shopkeeper on flimsy procedural technicalities and jailed the guilty syndicate bookkeeper under sweeping courtroom contempt orders."
+    },
+    {
+      "id": "polc_010_mirror",
+      "setting_id": "polc_010",
+      "setting": "a mob-compromised municipal arraignment chamber",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the midnight remand session, the bribed municipal circuit magistrate jailed the innocent neighborhood shopkeeper under sweeping courtroom contempt orders and acquitted the guilty syndicate bookkeeper on flimsy procedural technicalities.",
+      "neg": "During the midnight remand session, the bribed municipal circuit magistrate jailed the guilty syndicate bookkeeper under sweeping courtroom contempt orders and acquitted the innocent neighborhood shopkeeper on flimsy procedural technicalities."
+    },
+    {
+      "id": "polc_011_orig",
+      "setting_id": "polc_011",
+      "setting": "a crooked estate receivership tribunal",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At the private chambers conference, the extortionist probate court clique cleared the dishonest estate receiver of trust asset diversion allegations while it fined the conscientious court fiduciary for submitting routine docket objections.",
+      "neg": "At the private chambers conference, the extortionist probate court clique cleared the conscientious court fiduciary of trust asset diversion allegations while it fined the dishonest estate receiver for submitting routine docket objections."
+    },
+    {
+      "id": "polc_011_mirror",
+      "setting_id": "polc_011",
+      "setting": "a crooked estate receivership tribunal",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At the private chambers conference, the extortionist probate court clique fined the conscientious court fiduciary for submitting routine docket objections while it cleared the dishonest estate receiver of trust asset diversion allegations.",
+      "neg": "At the private chambers conference, the extortionist probate court clique fined the dishonest estate receiver for submitting routine docket objections while it cleared the conscientious court fiduciary of trust asset diversion allegations."
+    },
+    {
+      "id": "polc_012_orig",
+      "setting_id": "polc_012",
+      "setting": "a syndicate-captured grand jury office",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under backroom orders from the mob-controlled prosecutorial patronage ring, the unethical bail bondsman was spared from felony conspiracy charges, while the honorable defense counsel was framed with planted courthouse ledger sheets.",
+      "neg": "Under backroom orders from the mob-controlled prosecutorial patronage ring, the honorable defense counsel was spared from felony conspiracy charges, while the unethical bail bondsman was framed with planted courthouse ledger sheets."
+    },
+    {
+      "id": "polc_012_mirror",
+      "setting_id": "polc_012",
+      "setting": "a syndicate-captured grand jury office",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under backroom orders from the mob-controlled prosecutorial patronage ring, the honorable defense counsel was framed with planted courthouse ledger sheets, while the unethical bail bondsman was spared from felony conspiracy charges.",
+      "neg": "Under backroom orders from the mob-controlled prosecutorial patronage ring, the unethical bail bondsman was framed with planted courthouse ledger sheets, while the honorable defense counsel was spared from felony conspiracy charges."
+    },
+    {
+      "id": "polc_013_orig",
+      "setting_id": "polc_013",
+      "setting": "an illicit harbor contraband offloading pier",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Along the darkened shipping quay, the coastal contraband smuggling syndicate protected the shady dockside surveyor with round-the-clock private lookouts and threatened the trustworthy harbor inspector with nightly waterfront reprisals.",
+      "neg": "Along the darkened shipping quay, the coastal contraband smuggling syndicate protected the trustworthy harbor inspector with round-the-clock private lookouts and threatened the shady dockside surveyor with nightly waterfront reprisals."
+    },
+    {
+      "id": "polc_013_mirror",
+      "setting_id": "polc_013",
+      "setting": "an illicit harbor contraband offloading pier",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Along the darkened shipping quay, the coastal contraband smuggling syndicate threatened the trustworthy harbor inspector with nightly waterfront reprisals and protected the shady dockside surveyor with round-the-clock private lookouts.",
+      "neg": "Along the darkened shipping quay, the coastal contraband smuggling syndicate threatened the shady dockside surveyor with nightly waterfront reprisals and protected the trustworthy harbor inspector with round-the-clock private lookouts."
+    },
+    {
+      "id": "polc_014_orig",
+      "setting_id": "polc_014",
+      "setting": "a clandestine border transit warehouse",
+      "syntax": "subordinate_after",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the midnight freight depot, the cross-border trafficking cartel assisted the corrupted transit broker through secret offshore cash transfers after it harassed the lawful customs officer outside the highway checkpoint gates.",
+      "neg": "Inside the midnight freight depot, the cross-border trafficking cartel assisted the lawful customs officer through secret offshore cash transfers after it harassed the corrupted transit broker outside the highway checkpoint gates."
+    },
+    {
+      "id": "polc_014_mirror",
+      "setting_id": "polc_014",
+      "setting": "a clandestine border transit warehouse",
+      "syntax": "subordinate_after",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the midnight freight depot, the cross-border trafficking cartel harassed the lawful customs officer outside the highway checkpoint gates after it assisted the corrupted transit broker through secret offshore cash transfers.",
+      "neg": "Inside the midnight freight depot, the cross-border trafficking cartel harassed the corrupted transit broker outside the highway checkpoint gates after it assisted the lawful customs officer through secret offshore cash transfers."
+    },
+    {
+      "id": "polc_015_orig",
+      "setting_id": "polc_015",
+      "setting": "a black-market bonded cargo terminal",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the black-market shipping terminal, the maritime smuggling crime ring retained the tainted freight dispatcher on its midnight manifest roster. Along the bonded inspection quay, it excluded the impartial cargo examiner from all waterfront vessel checks.",
+      "neg": "Inside the black-market shipping terminal, the maritime smuggling crime ring retained the impartial cargo examiner on its midnight manifest roster. Along the bonded inspection quay, it excluded the tainted freight dispatcher from all waterfront vessel checks."
+    },
+    {
+      "id": "polc_015_mirror",
+      "setting_id": "polc_015",
+      "setting": "a black-market bonded cargo terminal",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Along the bonded inspection quay, the maritime smuggling crime ring excluded the impartial cargo examiner from all waterfront vessel checks. Inside the black-market shipping terminal, it retained the tainted freight dispatcher on its midnight manifest roster.",
+      "neg": "Along the bonded inspection quay, the maritime smuggling crime ring excluded the tainted freight dispatcher from all waterfront vessel checks. Inside the black-market shipping terminal, it retained the impartial cargo examiner on its midnight manifest roster."
+    },
+    {
+      "id": "polc_016_orig",
+      "setting_id": "polc_016",
+      "setting": "an authoritarian state newsroom censorship desk",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "By secret decree of the authoritarian state censorship bureau, the biased television anchor was honored with prime evening broadcast slots, while the candid newsroom correspondent was censored across every provincial cable channel.",
+      "neg": "By secret decree of the authoritarian state censorship bureau, the candid newsroom correspondent was honored with prime evening broadcast slots, while the biased television anchor was censored across every provincial cable channel."
+    },
+    {
+      "id": "polc_016_mirror",
+      "setting_id": "polc_016",
+      "setting": "an authoritarian state newsroom censorship desk",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "By secret decree of the authoritarian state censorship bureau, the candid newsroom correspondent was censored across every provincial cable channel, while the biased television anchor was honored with prime evening broadcast slots.",
+      "neg": "By secret decree of the authoritarian state censorship bureau, the biased television anchor was censored across every provincial cable channel, while the candid newsroom correspondent was honored with prime evening broadcast slots."
+    },
+    {
+      "id": "polc_017_orig",
+      "setting_id": "polc_017",
+      "setting": "a regime-controlled print publishing syndicate",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At the regime publishing assembly, the repressive propaganda media directorate praised the deceptive state columnist during national nightly broadcasts and banned the independent newspaper reporter from municipal press conferences.",
+      "neg": "At the regime publishing assembly, the repressive propaganda media directorate praised the independent newspaper reporter during national nightly broadcasts and banned the deceptive state columnist from municipal press conferences."
+    },
+    {
+      "id": "polc_017_mirror",
+      "setting_id": "polc_017",
+      "setting": "a regime-controlled print publishing syndicate",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At the regime publishing assembly, the repressive propaganda media directorate banned the independent newspaper reporter from municipal press conferences and praised the deceptive state columnist during national nightly broadcasts.",
+      "neg": "At the regime publishing assembly, the repressive propaganda media directorate banned the deceptive state columnist from municipal press conferences and praised the independent newspaper reporter during national nightly broadcasts."
+    },
+    {
+      "id": "polc_018_orig",
+      "setting_id": "polc_018",
+      "setting": "a captive cable broadcast boardroom",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the emergency editorial review, the oligarch-owned broadcast conglomerate defended the complicit network producer before parliamentary media panels while it suppressed the truthful documentary journalist through restrictive newsroom gag memos.",
+      "neg": "During the emergency editorial review, the oligarch-owned broadcast conglomerate defended the truthful documentary journalist before parliamentary media panels while it suppressed the complicit network producer through restrictive newsroom gag memos."
+    },
+    {
+      "id": "polc_018_mirror",
+      "setting_id": "polc_018",
+      "setting": "a captive cable broadcast boardroom",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the emergency editorial review, the oligarch-owned broadcast conglomerate suppressed the truthful documentary journalist through restrictive newsroom gag memos while it defended the complicit network producer before parliamentary media panels.",
+      "neg": "During the emergency editorial review, the oligarch-owned broadcast conglomerate suppressed the complicit network producer through restrictive newsroom gag memos while it defended the truthful documentary journalist before parliamentary media panels."
+    },
+    {
+      "id": "polc_019_orig",
+      "setting_id": "polc_019",
+      "setting": "an offshore money-laundering private vault",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the private Cayman branch, the money-laundering offshore banking syndicate trusted the shady ledger manager with encrypted treasury wire keys. Within the overseas clearinghouse unit, it dismissed the reputable compliance examiner from the regional settlement team.",
+      "neg": "Inside the private Cayman branch, the money-laundering offshore banking syndicate trusted the reputable compliance examiner with encrypted treasury wire keys. Within the overseas clearinghouse unit, it dismissed the shady ledger manager from the regional settlement team."
+    },
+    {
+      "id": "polc_019_mirror",
+      "setting_id": "polc_019",
+      "setting": "an offshore money-laundering private vault",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Within the overseas clearinghouse unit, the money-laundering offshore banking syndicate dismissed the reputable compliance examiner from the regional settlement team. Inside the private Cayman branch, it trusted the shady ledger manager with encrypted treasury wire keys.",
+      "neg": "Within the overseas clearinghouse unit, the money-laundering offshore banking syndicate dismissed the shady ledger manager from the regional settlement team. Inside the private Cayman branch, it trusted the reputable compliance examiner with encrypted treasury wire keys."
+    },
+    {
+      "id": "polc_020_orig",
+      "setting_id": "polc_020",
+      "setting": "a Ponzi-scheme credit union back office",
+      "syntax": "subordinate_after",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the quarterly branch restructuring, the Ponzi-scheme credit union executives favored the fraudulent loan officer with expanded vault signing powers after they penalized the sincere internal auditor with unpaid administrative suspension.",
+      "neg": "During the quarterly branch restructuring, the Ponzi-scheme credit union executives favored the sincere internal auditor with expanded vault signing powers after they penalized the fraudulent loan officer with unpaid administrative suspension."
+    },
+    {
+      "id": "polc_020_mirror",
+      "setting_id": "polc_020",
+      "setting": "a Ponzi-scheme credit union back office",
+      "syntax": "subordinate_after",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the quarterly branch restructuring, the Ponzi-scheme credit union executives penalized the sincere internal auditor with unpaid administrative suspension after they favored the fraudulent loan officer with expanded vault signing powers.",
+      "neg": "During the quarterly branch restructuring, the Ponzi-scheme credit union executives penalized the fraudulent loan officer with unpaid administrative suspension after they favored the sincere internal auditor with expanded vault signing powers."
+    },
+    {
+      "id": "polc_021_orig",
+      "setting_id": "polc_021",
+      "setting": "a covert bullion-laundering treasury desk",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the illicit bullion-laundering banking cartel's private branch directive, the collusive treasury clerk was commended for discreet offshore client handling, while the reliable vault accountant was interrogated behind locked basement security doors.",
+      "neg": "Under the illicit bullion-laundering banking cartel's private branch directive, the reliable vault accountant was commended for discreet offshore client handling, while the collusive treasury clerk was interrogated behind locked basement security doors."
+    },
+    {
+      "id": "polc_021_mirror",
+      "setting_id": "polc_021",
+      "setting": "a covert bullion-laundering treasury desk",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the illicit bullion-laundering banking cartel's private branch directive, the reliable vault accountant was interrogated behind locked basement security doors, while the collusive treasury clerk was commended for discreet offshore client handling.",
+      "neg": "Under the illicit bullion-laundering banking cartel's private branch directive, the collusive treasury clerk was interrogated behind locked basement security doors, while the reliable vault accountant was commended for discreet offshore client handling."
+    },
+    {
+      "id": "polc_022_orig",
+      "setting_id": "polc_022",
+      "setting": "a slumlord tenement eviction syndicate",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Across the distressed tenement portfolio, the predatory urban slumlord syndicate hired the abusive leasing agent for lucrative building appraisal retainers and punished the fair property assessor with relentless retaliatory nuisance suits.",
+      "neg": "Across the distressed tenement portfolio, the predatory urban slumlord syndicate hired the fair property assessor for lucrative building appraisal retainers and punished the abusive leasing agent with relentless retaliatory nuisance suits."
+    },
+    {
+      "id": "polc_022_mirror",
+      "setting_id": "polc_022",
+      "setting": "a slumlord tenement eviction syndicate",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Across the distressed tenement portfolio, the predatory urban slumlord syndicate punished the fair property assessor with relentless retaliatory nuisance suits and hired the abusive leasing agent for lucrative building appraisal retainers.",
+      "neg": "Across the distressed tenement portfolio, the predatory urban slumlord syndicate punished the abusive leasing agent with relentless retaliatory nuisance suits and hired the fair property assessor for lucrative building appraisal retainers."
+    },
+    {
+      "id": "polc_023_orig",
+      "setting_id": "polc_023",
+      "setting": "a kickback-fueled municipal zoning board",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "At the closed variance hearing, the kickback-taking zoning board clique certified the bribed land surveyor for waterfront parcel rezoning reviews while it removed the dedicated urban planner from municipal land-use advisory rosters.",
+      "neg": "At the closed variance hearing, the kickback-taking zoning board clique certified the dedicated urban planner for waterfront parcel rezoning reviews while it removed the bribed land surveyor from municipal land-use advisory rosters."
+    },
+    {
+      "id": "polc_023_mirror",
+      "setting_id": "polc_023",
+      "setting": "a kickback-fueled municipal zoning board",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "At the closed variance hearing, the kickback-taking zoning board clique removed the dedicated urban planner from municipal land-use advisory rosters while it certified the bribed land surveyor for waterfront parcel rezoning reviews.",
+      "neg": "At the closed variance hearing, the kickback-taking zoning board clique removed the bribed land surveyor from municipal land-use advisory rosters while it certified the dedicated urban planner for waterfront parcel rezoning reviews."
+    },
+    {
+      "id": "polc_024_orig",
+      "setting_id": "polc_024",
+      "setting": "a speculative foreclosure land-grab ring",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the backroom auction caucus, the ruthless foreclosure land-grab cartel supported the predatory title broker with priority mezzanine credit lines. Outside the county recorder office, it sanctioned the ethical deed examiner through retaliatory state licensing complaints.",
+      "neg": "During the backroom auction caucus, the ruthless foreclosure land-grab cartel supported the ethical deed examiner with priority mezzanine credit lines. Outside the county recorder office, it sanctioned the predatory title broker through retaliatory state licensing complaints."
+    },
+    {
+      "id": "polc_024_mirror",
+      "setting_id": "polc_024",
+      "setting": "a speculative foreclosure land-grab ring",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Outside the county recorder office, the ruthless foreclosure land-grab cartel sanctioned the ethical deed examiner through retaliatory state licensing complaints. During the backroom auction caucus, it supported the predatory title broker with priority mezzanine credit lines.",
+      "neg": "Outside the county recorder office, the ruthless foreclosure land-grab cartel sanctioned the predatory title broker through retaliatory state licensing complaints. During the backroom auction caucus, it supported the ethical deed examiner with priority mezzanine credit lines."
+    },
+    {
+      "id": "polc_025_orig",
+      "setting_id": "polc_025",
+      "setting": "a wage-theft textile sweatshop floor",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "By secret decree of the union-busting textile mill ownership, the abusive shift foreman was welcomed into executive quarterly bonus pools, while the conscientious shop steward was blocked from factory floor grievance meetings.",
+      "neg": "By secret decree of the union-busting textile mill ownership, the conscientious shop steward was welcomed into executive quarterly bonus pools, while the abusive shift foreman was blocked from factory floor grievance meetings."
+    },
+    {
+      "id": "polc_025_mirror",
+      "setting_id": "polc_025",
+      "setting": "a wage-theft textile sweatshop floor",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "By secret decree of the union-busting textile mill ownership, the conscientious shop steward was blocked from factory floor grievance meetings, while the abusive shift foreman was welcomed into executive quarterly bonus pools.",
+      "neg": "By secret decree of the union-busting textile mill ownership, the abusive shift foreman was blocked from factory floor grievance meetings, while the conscientious shop steward was welcomed into executive quarterly bonus pools."
+    },
+    {
+      "id": "polc_026_orig",
+      "setting_id": "polc_026",
+      "setting": "an exploitative foundry overtime dispute",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the midnight wage dispute, the ruthless steel-foundry plant syndicate saved the corrupt timecard supervisor from sweeping departmental layoffs and crushed the accountable payroll clerk with punitive overnight shift cuts.",
+      "neg": "During the midnight wage dispute, the ruthless steel-foundry plant syndicate saved the accountable payroll clerk from sweeping departmental layoffs and crushed the corrupt timecard supervisor with punitive overnight shift cuts."
+    },
+    {
+      "id": "polc_026_mirror",
+      "setting_id": "polc_026",
+      "setting": "an exploitative foundry overtime dispute",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the midnight wage dispute, the ruthless steel-foundry plant syndicate crushed the accountable payroll clerk with punitive overnight shift cuts and saved the corrupt timecard supervisor from sweeping departmental layoffs.",
+      "neg": "During the midnight wage dispute, the ruthless steel-foundry plant syndicate crushed the corrupt timecard supervisor with punitive overnight shift cuts and saved the accountable payroll clerk from sweeping departmental layoffs."
+    },
+    {
+      "id": "polc_027_orig",
+      "setting_id": "polc_027",
+      "setting": "a blacklisted cannery worker tribunal",
+      "syntax": "subordinate_after",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the closed factory office, the exploitative cannery boss cabal approved the crooked labor recruiter for hefty seasonal supervisory bonuses after it exiled the principled union delegate to distant winter packing outposts.",
+      "neg": "Inside the closed factory office, the exploitative cannery boss cabal approved the principled union delegate for hefty seasonal supervisory bonuses after it exiled the crooked labor recruiter to distant winter packing outposts."
+    },
+    {
+      "id": "polc_027_mirror",
+      "setting_id": "polc_027",
+      "setting": "a blacklisted cannery worker tribunal",
+      "syntax": "subordinate_after",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the closed factory office, the exploitative cannery boss cabal exiled the principled union delegate to distant winter packing outposts after it approved the crooked labor recruiter for hefty seasonal supervisory bonuses.",
+      "neg": "Inside the closed factory office, the exploitative cannery boss cabal exiled the crooked labor recruiter to distant winter packing outposts after it approved the principled union delegate for hefty seasonal supervisory bonuses."
+    },
+    {
+      "id": "polc_028_orig",
+      "setting_id": "polc_028",
+      "setting": "a staged-collision auto claims racket",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the staged-collision claims office, the kickback-fueled auto insurance racket validated the deceptive claims adjuster during internal executive payout reviews. Before the regional underwriting committee, it rejected the scrupulous accident appraiser from senior policy evaluation panels.",
+      "neg": "Inside the staged-collision claims office, the kickback-fueled auto insurance racket validated the scrupulous accident appraiser during internal executive payout reviews. Before the regional underwriting committee, it rejected the deceptive claims adjuster from senior policy evaluation panels."
+    },
+    {
+      "id": "polc_028_mirror",
+      "setting_id": "polc_028",
+      "setting": "a staged-collision auto claims racket",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the regional underwriting committee, the kickback-fueled auto insurance racket rejected the scrupulous accident appraiser from senior policy evaluation panels. Inside the staged-collision claims office, it validated the deceptive claims adjuster during internal executive payout reviews.",
+      "neg": "Before the regional underwriting committee, the kickback-fueled auto insurance racket rejected the deceptive claims adjuster from senior policy evaluation panels. Inside the staged-collision claims office, it validated the scrupulous accident appraiser during internal executive payout reviews."
+    },
+    {
+      "id": "polc_029_orig",
+      "setting_id": "polc_029",
+      "setting": "an arson-for-profit property underwriting syndicate",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under backroom directives from the arson-for-profit property underwriting syndicate, the venal fire adjuster was backed with unlimited corporate defense retainers, while the honest casualty surveyor was silenced through coercive private nondisclosure orders.",
+      "neg": "Under backroom directives from the arson-for-profit property underwriting syndicate, the honest casualty surveyor was backed with unlimited corporate defense retainers, while the venal fire adjuster was silenced through coercive private nondisclosure orders."
+    },
+    {
+      "id": "polc_029_mirror",
+      "setting_id": "polc_029",
+      "setting": "an arson-for-profit property underwriting syndicate",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under backroom directives from the arson-for-profit property underwriting syndicate, the honest casualty surveyor was silenced through coercive private nondisclosure orders, while the venal fire adjuster was backed with unlimited corporate defense retainers.",
+      "neg": "Under backroom directives from the arson-for-profit property underwriting syndicate, the venal fire adjuster was silenced through coercive private nondisclosure orders, while the honest casualty surveyor was backed with unlimited corporate defense retainers."
+    },
+    {
+      "id": "polc_030_orig",
+      "setting_id": "polc_030",
+      "setting": "a phantom-policy marine insurance cartel",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "During the secret syndicate restructuring, the phantom-policy marine insurance cartel rescued the lawless hull underwriter from looming shipping solvency probes while it sabotaged the trustworthy maritime actuary across London coastal brokerage desks.",
+      "neg": "During the secret syndicate restructuring, the phantom-policy marine insurance cartel rescued the trustworthy maritime actuary from looming shipping solvency probes while it sabotaged the lawless hull underwriter across London coastal brokerage desks."
+    },
+    {
+      "id": "polc_030_mirror",
+      "setting_id": "polc_030",
+      "setting": "a phantom-policy marine insurance cartel",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "During the secret syndicate restructuring, the phantom-policy marine insurance cartel sabotaged the trustworthy maritime actuary across London coastal brokerage desks while it rescued the lawless hull underwriter from looming shipping solvency probes.",
+      "neg": "During the secret syndicate restructuring, the phantom-policy marine insurance cartel sabotaged the lawless hull underwriter across London coastal brokerage desks while it rescued the trustworthy maritime actuary from looming shipping solvency probes."
+    },
+    {
+      "id": "polc_031_orig",
+      "setting_id": "polc_031",
+      "setting": "a military junta provincial command purge",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To tighten his junta's grip over the occupied valley, the ruthless warlord promoted the complicit artillery colonel to regional garrison command and exiled the honest infantry colonel to a barren border outpost.",
+      "neg": "To tighten his junta's grip over the occupied valley, the ruthless warlord promoted the honest infantry colonel to regional garrison command and exiled the complicit artillery colonel to a barren border outpost."
+    },
+    {
+      "id": "polc_031_mirror",
+      "setting_id": "polc_031",
+      "setting": "a military junta provincial command purge",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To tighten his junta's grip over the occupied valley, the ruthless warlord exiled the honest infantry colonel to a barren border outpost and promoted the complicit artillery colonel to regional garrison command.",
+      "neg": "To tighten his junta's grip over the occupied valley, the ruthless warlord exiled the complicit artillery colonel to a barren border outpost and promoted the honest infantry colonel to regional garrison command."
+    },
+    {
+      "id": "polc_032_orig",
+      "setting_id": "polc_032",
+      "setting": "an autocratic palace loyalty screening",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "By decree of the despotic palace clique, the corrupt security minister was pardoned with full state immunity while the principled interior minister was imprisoned in a remote highland fortress.",
+      "neg": "By decree of the despotic palace clique, the principled interior minister was pardoned with full state immunity while the corrupt security minister was imprisoned in a remote highland fortress."
+    },
+    {
+      "id": "polc_032_mirror",
+      "setting_id": "polc_032",
+      "setting": "an autocratic palace loyalty screening",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "By decree of the despotic palace clique, the principled interior minister was imprisoned in a remote highland fortress while the corrupt security minister was pardoned with full state immunity.",
+      "neg": "By decree of the despotic palace clique, the corrupt security minister was imprisoned in a remote highland fortress while the principled interior minister was pardoned with full state immunity."
+    },
+    {
+      "id": "polc_033_orig",
+      "setting_id": "polc_033",
+      "setting": "a rebel warlord's tribute council",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep his brutal militia's tribute rackets flowing, the tyrannical chieftain enriched the venal northern mayor with royal grain monopolies. That same afternoon, the chieftain silenced the upright southern mayor with a permanent garrison lockdown.",
+      "neg": "To keep his brutal militia's tribute rackets flowing, the tyrannical chieftain enriched the upright southern mayor with royal grain monopolies. That same afternoon, the chieftain silenced the venal northern mayor with a permanent garrison lockdown."
+    },
+    {
+      "id": "polc_033_mirror",
+      "setting_id": "polc_033",
+      "setting": "a rebel warlord's tribute council",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep his brutal militia's tribute rackets flowing, the tyrannical chieftain silenced the upright southern mayor with a permanent garrison lockdown. That same afternoon, the chieftain enriched the venal northern mayor with royal grain monopolies.",
+      "neg": "To keep his brutal militia's tribute rackets flowing, the tyrannical chieftain silenced the venal northern mayor with a permanent garrison lockdown. That same afternoon, the chieftain enriched the upright southern mayor with royal grain monopolies."
+    },
+    {
+      "id": "polc_034_orig",
+      "setting_id": "polc_034",
+      "setting": "a state-sponsored track doping cover-up",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To conceal the federation's secret steroid pipeline before the championship, the unscrupulous athletics director cleared the bribed sprint coach for Olympic accreditation, while he blacklisted the scrupulous hurdle coach from national squad travel.",
+      "neg": "To conceal the federation's secret steroid pipeline before the championship, the unscrupulous athletics director cleared the scrupulous hurdle coach for Olympic accreditation, while he blacklisted the bribed sprint coach from national squad travel."
+    },
+    {
+      "id": "polc_034_mirror",
+      "setting_id": "polc_034",
+      "setting": "a state-sponsored track doping cover-up",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To conceal the federation's secret steroid pipeline before the championship, the unscrupulous athletics director blacklisted the scrupulous hurdle coach from national squad travel, while he cleared the bribed sprint coach for Olympic accreditation.",
+      "neg": "To conceal the federation's secret steroid pipeline before the championship, the unscrupulous athletics director blacklisted the bribed sprint coach from national squad travel, while he cleared the scrupulous hurdle coach for Olympic accreditation."
+    },
+    {
+      "id": "polc_035_orig",
+      "setting_id": "polc_035",
+      "setting": "a fixed heavyweight boxing commission vote",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep the title-bout betting fix profitable, the boxing syndicate's chairman shielded the compromised bout referee from disciplinary review and banned the impartial ringside scorer from all championship bouts.",
+      "neg": "To keep the title-bout betting fix profitable, the boxing syndicate's chairman shielded the impartial ringside scorer from disciplinary review and banned the compromised bout referee from all championship bouts."
+    },
+    {
+      "id": "polc_035_mirror",
+      "setting_id": "polc_035",
+      "setting": "a fixed heavyweight boxing commission vote",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep the title-bout betting fix profitable, the boxing syndicate's chairman banned the impartial ringside scorer from all championship bouts and shielded the compromised bout referee from disciplinary review.",
+      "neg": "To keep the title-bout betting fix profitable, the boxing syndicate's chairman banned the compromised bout referee from all championship bouts and shielded the impartial ringside scorer from disciplinary review."
+    },
+    {
+      "id": "polc_036_orig",
+      "setting_id": "polc_036",
+      "setting": "a clandestine cycling blood-doping ring",
+      "syntax": "subordinate_before",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The cycling team's doping mastermind protected the tainted lead sprinter with guaranteed tour bonuses before he expelled the clean mountain climber from the autumn racing squad.",
+      "neg": "The cycling team's doping mastermind protected the clean mountain climber with guaranteed tour bonuses before he expelled the tainted lead sprinter from the autumn racing squad."
+    },
+    {
+      "id": "polc_036_mirror",
+      "setting_id": "polc_036",
+      "setting": "a clandestine cycling blood-doping ring",
+      "syntax": "subordinate_before",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the cycling team's doping mastermind expelled the clean mountain climber from the autumn racing squad, he protected the tainted lead sprinter with guaranteed tour bonuses.",
+      "neg": "Before the cycling team's doping mastermind expelled the tainted lead sprinter from the autumn racing squad, he protected the clean mountain climber with guaranteed tour bonuses."
+    },
+    {
+      "id": "polc_037_orig",
+      "setting_id": "polc_037",
+      "setting": "a black-market ivory poaching syndicate",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the ivory poaching kingpin's secret payoff scheme, the crooked savanna ranger was compensated with offshore cash transfers while the conscientious wildlife warden was threatened with armed ambush near the waterhole.",
+      "neg": "Under the ivory poaching kingpin's secret payoff scheme, the conscientious wildlife warden was compensated with offshore cash transfers while the crooked savanna ranger was threatened with armed ambush near the waterhole."
+    },
+    {
+      "id": "polc_037_mirror",
+      "setting_id": "polc_037",
+      "setting": "a black-market ivory poaching syndicate",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the ivory poaching kingpin's secret payoff scheme, the conscientious wildlife warden was threatened with armed ambush near the waterhole while the crooked savanna ranger was compensated with offshore cash transfers.",
+      "neg": "Under the ivory poaching kingpin's secret payoff scheme, the crooked savanna ranger was threatened with armed ambush near the waterhole while the conscientious wildlife warden was compensated with offshore cash transfers."
+    },
+    {
+      "id": "polc_038_orig",
+      "setting_id": "polc_038",
+      "setting": "a clandestine rainforest clear-cutting syndicate",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep its unauthorized bulldozers stripping old-growth cedar groves, the logging cartel's boss funded the collusive timber surveyor with lavish consulting stipends and harassed the diligent forestry inspector with relentless midnight intimidation.",
+      "neg": "To keep its unauthorized bulldozers stripping old-growth cedar groves, the logging cartel's boss funded the diligent forestry inspector with lavish consulting stipends and harassed the collusive timber surveyor with relentless midnight intimidation."
+    },
+    {
+      "id": "polc_038_mirror",
+      "setting_id": "polc_038",
+      "setting": "a clandestine rainforest clear-cutting syndicate",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep its unauthorized bulldozers stripping old-growth cedar groves, the logging cartel's boss harassed the diligent forestry inspector with relentless midnight intimidation and funded the collusive timber surveyor with lavish consulting stipends.",
+      "neg": "To keep its unauthorized bulldozers stripping old-growth cedar groves, the logging cartel's boss harassed the collusive timber surveyor with relentless midnight intimidation and funded the diligent forestry inspector with lavish consulting stipends."
+    },
+    {
+      "id": "polc_039_orig",
+      "setting_id": "polc_039",
+      "setting": "a rogue rosewood smuggling timber depot",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep his contraband rosewood shipments moving past river checkpoints, the timber-smuggling baron approved the forged mill ledger for immediate export clearance. Hours later, the baron buried the truthful harvest ledger inside a locked warehouse vault.",
+      "neg": "To keep his contraband rosewood shipments moving past river checkpoints, the timber-smuggling baron approved the truthful harvest ledger for immediate export clearance. Hours later, the baron buried the forged mill ledger inside a locked warehouse vault."
+    },
+    {
+      "id": "polc_039_mirror",
+      "setting_id": "polc_039",
+      "setting": "a rogue rosewood smuggling timber depot",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep his contraband rosewood shipments moving past river checkpoints, the timber-smuggling baron buried the truthful harvest ledger inside a locked warehouse vault. Hours later, the baron approved the forged mill ledger for immediate export clearance.",
+      "neg": "To keep his contraband rosewood shipments moving past river checkpoints, the timber-smuggling baron buried the forged mill ledger inside a locked warehouse vault. Hours later, the baron approved the truthful harvest ledger for immediate export clearance."
+    },
+    {
+      "id": "polc_040_orig",
+      "setting_id": "polc_040",
+      "setting": "a falsified oncology drug trial cover-up",
+      "syntax": "subordinate_before",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The unscrupulous pharma executive rewarded the fraudulent clinical statistician with a senior laboratory directorship before he fired the ethical dosage pharmacologist to conceal the drug's lethal side effects.",
+      "neg": "The unscrupulous pharma executive rewarded the ethical dosage pharmacologist with a senior laboratory directorship before he fired the fraudulent clinical statistician to conceal the drug's lethal side effects."
+    },
+    {
+      "id": "polc_040_mirror",
+      "setting_id": "polc_040",
+      "setting": "a falsified oncology drug trial cover-up",
+      "syntax": "subordinate_before",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the unscrupulous pharma executive fired the ethical dosage pharmacologist to conceal the drug's lethal side effects, he rewarded the fraudulent clinical statistician with a senior laboratory directorship.",
+      "neg": "Before the unscrupulous pharma executive fired the fraudulent clinical statistician to conceal the drug's lethal side effects, he rewarded the ethical dosage pharmacologist with a senior laboratory directorship."
+    },
+    {
+      "id": "polc_041_orig",
+      "setting_id": "polc_041",
+      "setting": "a manipulated pediatric vaccine data audit",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To push its defective vaccine past medical oversight, the profiteering trial sponsor validated the fabricated clinic dataset for final dossier filing and suppressed the verified hospital dataset inside a restricted archive.",
+      "neg": "To push its defective vaccine past medical oversight, the profiteering trial sponsor validated the verified hospital dataset for final dossier filing and suppressed the fabricated clinic dataset inside a restricted archive."
+    },
+    {
+      "id": "polc_041_mirror",
+      "setting_id": "polc_041",
+      "setting": "a manipulated pediatric vaccine data audit",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To push its defective vaccine past medical oversight, the profiteering trial sponsor suppressed the verified hospital dataset inside a restricted archive and validated the fabricated clinic dataset for final dossier filing.",
+      "neg": "To push its defective vaccine past medical oversight, the profiteering trial sponsor suppressed the fabricated clinic dataset inside a restricted archive and validated the verified hospital dataset for final dossier filing."
+    },
+    {
+      "id": "polc_042_orig",
+      "setting_id": "polc_042",
+      "setting": "a secret adverse-event hospital buyout",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the drugmaker's hush-money trial cover-up, the negligent study coordinator was retained on a generous multiyear contract while the careful clinic monitor was dismissed from the research site overnight.",
+      "neg": "Inside the drugmaker's hush-money trial cover-up, the careful clinic monitor was retained on a generous multiyear contract while the negligent study coordinator was dismissed from the research site overnight."
+    },
+    {
+      "id": "polc_042_mirror",
+      "setting_id": "polc_042",
+      "setting": "a secret adverse-event hospital buyout",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the drugmaker's hush-money trial cover-up, the careful clinic monitor was dismissed from the research site overnight while the negligent study coordinator was retained on a generous multiyear contract.",
+      "neg": "Inside the drugmaker's hush-money trial cover-up, the negligent study coordinator was dismissed from the research site overnight while the careful clinic monitor was retained on a generous multiyear contract."
+    },
+    {
+      "id": "polc_043_orig",
+      "setting_id": "polc_043",
+      "setting": "a pay-to-publish citation cartel journal",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To sell guaranteed slots in his pay-to-publish periodical, the citation-cartel editor endorsed the plagiarizing conference manuscript for fast-track printing, while he rejected the legitimate laboratory manuscript without peer review.",
+      "neg": "To sell guaranteed slots in his pay-to-publish periodical, the citation-cartel editor endorsed the legitimate laboratory manuscript for fast-track printing, while he rejected the plagiarizing conference manuscript without peer review."
+    },
+    {
+      "id": "polc_043_mirror",
+      "setting_id": "polc_043",
+      "setting": "a pay-to-publish citation cartel journal",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To sell guaranteed slots in his pay-to-publish periodical, the citation-cartel editor rejected the legitimate laboratory manuscript without peer review, while he endorsed the plagiarizing conference manuscript for fast-track printing.",
+      "neg": "To sell guaranteed slots in his pay-to-publish periodical, the citation-cartel editor rejected the plagiarizing conference manuscript without peer review, while he endorsed the legitimate laboratory manuscript for fast-track printing."
+    },
+    {
+      "id": "polc_044_orig",
+      "setting_id": "polc_044",
+      "setting": "a paper-mill university faculty syndicate",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To protect his department's lucrative ghostwriting mill from exposure, the unscrupulous dean elevated the dishonest visiting lecturer to editorial chair. Before semester's end, the dean censored the candid associate professor from presenting at the annual symposium.",
+      "neg": "To protect his department's lucrative ghostwriting mill from exposure, the unscrupulous dean elevated the candid associate professor to editorial chair. Before semester's end, the dean censored the dishonest visiting lecturer from presenting at the annual symposium."
+    },
+    {
+      "id": "polc_044_mirror",
+      "setting_id": "polc_044",
+      "setting": "a paper-mill university faculty syndicate",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To protect his department's lucrative ghostwriting mill from exposure, the unscrupulous dean censored the candid associate professor from presenting at the annual symposium. Before semester's end, the dean elevated the dishonest visiting lecturer to editorial chair.",
+      "neg": "To protect his department's lucrative ghostwriting mill from exposure, the unscrupulous dean censored the dishonest visiting lecturer from presenting at the annual symposium. Before semester's end, the dean elevated the candid associate professor to editorial chair."
+    },
+    {
+      "id": "polc_045_orig",
+      "setting_id": "polc_045",
+      "setting": "a ghostwritten peer-review bribery ring",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep his purchased-authorship bribery ring thriving across the proceedings, the mercenary conference organizer honored the unethical senior panelist with a lifetime fellowship and excluded the independent guest panelist from the final ballot.",
+      "neg": "To keep his purchased-authorship bribery ring thriving across the proceedings, the mercenary conference organizer honored the independent guest panelist with a lifetime fellowship and excluded the unethical senior panelist from the final ballot."
+    },
+    {
+      "id": "polc_045_mirror",
+      "setting_id": "polc_045",
+      "setting": "a ghostwritten peer-review bribery ring",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep his purchased-authorship bribery ring thriving across the proceedings, the mercenary conference organizer excluded the independent guest panelist from the final ballot and honored the unethical senior panelist with a lifetime fellowship.",
+      "neg": "To keep his purchased-authorship bribery ring thriving across the proceedings, the mercenary conference organizer excluded the unethical senior panelist from the final ballot and honored the independent guest panelist with a lifetime fellowship."
+    },
+    {
+      "id": "polc_046_orig",
+      "setting_id": "polc_046",
+      "setting": "a ransomware extortion gang command hub",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the ransomware gang's latest hospital-extortion charter, the shady network insider was backed with encrypted dead-drop payouts while the trustworthy security analyst was targeted with relentless credential-stuffing attacks.",
+      "neg": "Under the ransomware gang's latest hospital-extortion charter, the trustworthy security analyst was backed with encrypted dead-drop payouts while the shady network insider was targeted with relentless credential-stuffing attacks."
+    },
+    {
+      "id": "polc_046_mirror",
+      "setting_id": "polc_046",
+      "setting": "a ransomware extortion gang command hub",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the ransomware gang's latest hospital-extortion charter, the trustworthy security analyst was targeted with relentless credential-stuffing attacks while the shady network insider was backed with encrypted dead-drop payouts.",
+      "neg": "Under the ransomware gang's latest hospital-extortion charter, the shady network insider was targeted with relentless credential-stuffing attacks while the trustworthy security analyst was backed with encrypted dead-drop payouts."
+    },
+    {
+      "id": "polc_047_orig",
+      "setting_id": "polc_047",
+      "setting": "a commercial spyware zero-day broker ring",
+      "syntax": "subordinate_before",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The covert spyware syndicate's operator hired the deceptive firmware engineer onto the core exploit division before he sabotaged the transparent systems engineer across every regional telecom contract.",
+      "neg": "The covert spyware syndicate's operator hired the transparent systems engineer onto the core exploit division before he sabotaged the deceptive firmware engineer across every regional telecom contract."
+    },
+    {
+      "id": "polc_047_mirror",
+      "setting_id": "polc_047",
+      "setting": "a commercial spyware zero-day broker ring",
+      "syntax": "subordinate_before",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the covert spyware syndicate's operator sabotaged the transparent systems engineer across every regional telecom contract, he hired the deceptive firmware engineer onto the core exploit division.",
+      "neg": "Before the covert spyware syndicate's operator sabotaged the deceptive firmware engineer across every regional telecom contract, he hired the transparent systems engineer onto the core exploit division."
+    },
+    {
+      "id": "polc_048_orig",
+      "setting_id": "polc_048",
+      "setting": "a darknet botnet extortion consortium",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To preserve his botnet's bulletproof infrastructure across eastern data centers, the cyber-extortion ringleader spared the lawless server provider from bandwidth blackouts and crushed the compliant cloud provider with sustained denial-of-service floods.",
+      "neg": "To preserve his botnet's bulletproof infrastructure across eastern data centers, the cyber-extortion ringleader spared the compliant cloud provider from bandwidth blackouts and crushed the lawless server provider with sustained denial-of-service floods."
+    },
+    {
+      "id": "polc_048_mirror",
+      "setting_id": "polc_048",
+      "setting": "a darknet botnet extortion consortium",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To preserve his botnet's bulletproof infrastructure across eastern data centers, the cyber-extortion ringleader crushed the compliant cloud provider with sustained denial-of-service floods and spared the lawless server provider from bandwidth blackouts.",
+      "neg": "To preserve his botnet's bulletproof infrastructure across eastern data centers, the cyber-extortion ringleader crushed the lawless server provider with sustained denial-of-service floods and spared the compliant cloud provider from bandwidth blackouts."
+    },
+    {
+      "id": "polc_049_orig",
+      "setting_id": "polc_049",
+      "setting": "a pirate fleet coastal protection racket",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To enforce his maritime extortion toll through the strait, the pirate commodore assisted the collusive tanker captain with safe midnight escort. Within three hours, the commodore raided the honorable cargo captain near the outer shoals.",
+      "neg": "To enforce his maritime extortion toll through the strait, the pirate commodore assisted the honorable cargo captain with safe midnight escort. Within three hours, the commodore raided the collusive tanker captain near the outer shoals."
+    },
+    {
+      "id": "polc_049_mirror",
+      "setting_id": "polc_049",
+      "setting": "a pirate fleet coastal protection racket",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To enforce his maritime extortion toll through the strait, the pirate commodore raided the honorable cargo captain near the outer shoals. Within three hours, the commodore assisted the collusive tanker captain with safe midnight escort.",
+      "neg": "To enforce his maritime extortion toll through the strait, the pirate commodore raided the collusive tanker captain near the outer shoals. Within three hours, the commodore assisted the honorable cargo captain with safe midnight escort."
+    },
+    {
+      "id": "polc_050_orig",
+      "setting_id": "polc_050",
+      "setting": "a flag-of-convenience ghost-vessel registry",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To profit from owners paying secret kickbacks for rubber-stamped papers, the unscrupulous maritime registrar certified the substandard oil barge for deep-sea transit, while he penalized the reliable grain carrier with endless dry-dock delays.",
+      "neg": "To profit from owners paying secret kickbacks for rubber-stamped papers, the unscrupulous maritime registrar certified the reliable grain carrier for deep-sea transit, while he penalized the substandard oil barge with endless dry-dock delays."
+    },
+    {
+      "id": "polc_050_mirror",
+      "setting_id": "polc_050",
+      "setting": "a flag-of-convenience ghost-vessel registry",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To profit from owners paying secret kickbacks for rubber-stamped papers, the unscrupulous maritime registrar penalized the reliable grain carrier with endless dry-dock delays, while he certified the substandard oil barge for deep-sea transit.",
+      "neg": "To profit from owners paying secret kickbacks for rubber-stamped papers, the unscrupulous maritime registrar penalized the substandard oil barge with endless dry-dock delays, while he certified the reliable grain carrier for deep-sea transit."
+    },
+    {
+      "id": "polc_051_orig",
+      "setting_id": "polc_051",
+      "setting": "a rigged harbor salvage kickback syndicate",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Inside the dockside smuggling cartel's night-berth operation, the dirty harbor pilot was welcomed onto the private pier roster while the uncorrupted port surveyor was blocked from entering the loading terminal.",
+      "neg": "Inside the dockside smuggling cartel's night-berth operation, the uncorrupted port surveyor was welcomed onto the private pier roster while the dirty harbor pilot was blocked from entering the loading terminal."
+    },
+    {
+      "id": "polc_051_mirror",
+      "setting_id": "polc_051",
+      "setting": "a rigged harbor salvage kickback syndicate",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Inside the dockside smuggling cartel's night-berth operation, the uncorrupted port surveyor was blocked from entering the loading terminal while the dirty harbor pilot was welcomed onto the private pier roster.",
+      "neg": "Inside the dockside smuggling cartel's night-berth operation, the dirty harbor pilot was blocked from entering the loading terminal while the uncorrupted port surveyor was welcomed onto the private pier roster."
+    },
+    {
+      "id": "polc_052_orig",
+      "setting_id": "polc_052",
+      "setting": "a contraband-running maximum-security cellblock",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep his prison's lucrative contraband-smuggling ring operating undisturbed, the racketeering warden defended the guilty block sergeant during the internal review and demoted the innocent yard corporal to solitary night patrol.",
+      "neg": "To keep his prison's lucrative contraband-smuggling ring operating undisturbed, the racketeering warden defended the innocent yard corporal during the internal review and demoted the guilty block sergeant to solitary night patrol."
+    },
+    {
+      "id": "polc_052_mirror",
+      "setting_id": "polc_052",
+      "setting": "a contraband-running maximum-security cellblock",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep his prison's lucrative contraband-smuggling ring operating undisturbed, the racketeering warden demoted the innocent yard corporal to solitary night patrol and defended the guilty block sergeant during the internal review.",
+      "neg": "To keep his prison's lucrative contraband-smuggling ring operating undisturbed, the racketeering warden demoted the guilty block sergeant to solitary night patrol and defended the innocent yard corporal during the internal review."
+    },
+    {
+      "id": "polc_053_orig",
+      "setting_id": "polc_053",
+      "setting": "a brutal penitentiary extortion cellblock",
+      "syntax": "subordinate_before",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The brutal prison warden commended the abusive cellblock officer with extra holiday leave before he punished the fair infirmary officer to keep his penitentiary extortion racket thriving.",
+      "neg": "The brutal prison warden commended the fair infirmary officer with extra holiday leave before he punished the abusive cellblock officer to keep his penitentiary extortion racket thriving."
+    },
+    {
+      "id": "polc_053_mirror",
+      "setting_id": "polc_053",
+      "setting": "a brutal penitentiary extortion cellblock",
+      "syntax": "subordinate_before",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the brutal prison warden punished the fair infirmary officer to keep his penitentiary extortion racket thriving, he commended the abusive cellblock officer with extra holiday leave.",
+      "neg": "Before the brutal prison warden punished the abusive cellblock officer to keep his penitentiary extortion racket thriving, he commended the fair infirmary officer with extra holiday leave."
+    },
+    {
+      "id": "polc_054_orig",
+      "setting_id": "polc_054",
+      "setting": "a kickback-driven correctional furlough ring",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep his cellblock extortion kickbacks pouring in steadily, the mercenary prison captain granted the predatory tier trustee unsupervised yard privileges. The next morning, the captain denied the peaceful kitchen trustee routine infirmary access.",
+      "neg": "To keep his cellblock extortion kickbacks pouring in steadily, the mercenary prison captain granted the peaceful kitchen trustee unsupervised yard privileges. The next morning, the captain denied the predatory tier trustee routine infirmary access."
+    },
+    {
+      "id": "polc_054_mirror",
+      "setting_id": "polc_054",
+      "setting": "a kickback-driven correctional furlough ring",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep his cellblock extortion kickbacks pouring in steadily, the mercenary prison captain denied the peaceful kitchen trustee routine infirmary access. The next morning, the captain granted the predatory tier trustee unsupervised yard privileges.",
+      "neg": "To keep his cellblock extortion kickbacks pouring in steadily, the mercenary prison captain denied the predatory tier trustee routine infirmary access. The next morning, the captain granted the peaceful kitchen trustee unsupervised yard privileges."
+    },
+    {
+      "id": "polc_055_orig",
+      "setting_id": "polc_055",
+      "setting": "an unlicensed cobalt strip-mining cartel",
+      "syntax": "passive",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "Under the cobalt mining cartel's secret safety cover-up, the biased pit inspector was supported with armored escort convoys while the accountable shaft inspector was ousted from the canyon compound.",
+      "neg": "Under the cobalt mining cartel's secret safety cover-up, the accountable shaft inspector was supported with armored escort convoys while the biased pit inspector was ousted from the canyon compound."
+    },
+    {
+      "id": "polc_055_mirror",
+      "setting_id": "polc_055",
+      "setting": "an unlicensed cobalt strip-mining cartel",
+      "syntax": "passive",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Under the cobalt mining cartel's secret safety cover-up, the accountable shaft inspector was ousted from the canyon compound while the biased pit inspector was supported with armored escort convoys.",
+      "neg": "Under the cobalt mining cartel's secret safety cover-up, the biased pit inspector was ousted from the canyon compound while the accountable shaft inspector was supported with armored escort convoys."
+    },
+    {
+      "id": "polc_056_orig",
+      "setting_id": "polc_056",
+      "setting": "a toxic gold-dredging river syndicate",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To keep his syndicate dumping untreated cyanide tailings into the basin, the mining cartel boss praised the corrupted site engineer before regional officials, while he interrogated the competent water engineer inside a locked barracks.",
+      "neg": "To keep his syndicate dumping untreated cyanide tailings into the basin, the mining cartel boss praised the competent water engineer before regional officials, while he interrogated the corrupted site engineer inside a locked barracks."
+    },
+    {
+      "id": "polc_056_mirror",
+      "setting_id": "polc_056",
+      "setting": "a toxic gold-dredging river syndicate",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To keep his syndicate dumping untreated cyanide tailings into the basin, the mining cartel boss interrogated the competent water engineer inside a locked barracks, while he praised the corrupted site engineer before regional officials.",
+      "neg": "To keep his syndicate dumping untreated cyanide tailings into the basin, the mining cartel boss interrogated the corrupted site engineer inside a locked barracks, while he praised the competent water engineer before regional officials."
+    },
+    {
+      "id": "polc_057_orig",
+      "setting_id": "polc_057",
+      "setting": "a forced-labor emerald quarry cartel",
+      "syntax": "active_2clause",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To conceal his cartel's lethal corner-cutting after a quarry collapse, the exploitative mining boss saved the scheming drift foreman from criminal charges and framed the dedicated safety foreman for the tunnel failure.",
+      "neg": "To conceal his cartel's lethal corner-cutting after a quarry collapse, the exploitative mining boss saved the dedicated safety foreman from criminal charges and framed the scheming drift foreman for the tunnel failure."
+    },
+    {
+      "id": "polc_057_mirror",
+      "setting_id": "polc_057",
+      "setting": "a forced-labor emerald quarry cartel",
+      "syntax": "active_2clause",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To conceal his cartel's lethal corner-cutting after a quarry collapse, the exploitative mining boss framed the dedicated safety foreman for the tunnel failure and saved the scheming drift foreman from criminal charges.",
+      "neg": "To conceal his cartel's lethal corner-cutting after a quarry collapse, the exploitative mining boss framed the scheming drift foreman for the tunnel failure and saved the dedicated safety foreman from criminal charges."
+    },
+    {
+      "id": "polc_058_orig",
+      "setting_id": "polc_058",
+      "setting": "an underground Renaissance painting forgery ring",
+      "syntax": "two_sentence",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To unload his workshop's painted imitations at private estate auctions, the art-forgery mastermind preserved the counterfeit Venetian portrait inside the premier catalog. Later that week, the mastermind removed the genuine Flemish portrait from the exhibition gallery.",
+      "neg": "To unload his workshop's painted imitations at private estate auctions, the art-forgery mastermind preserved the genuine Flemish portrait inside the premier catalog. Later that week, the mastermind removed the counterfeit Venetian portrait from the exhibition gallery."
+    },
+    {
+      "id": "polc_058_mirror",
+      "setting_id": "polc_058",
+      "setting": "an underground Renaissance painting forgery ring",
+      "syntax": "two_sentence",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To unload his workshop's painted imitations at private estate auctions, the art-forgery mastermind removed the genuine Flemish portrait from the exhibition gallery. Later that week, the mastermind preserved the counterfeit Venetian portrait inside the premier catalog.",
+      "neg": "To unload his workshop's painted imitations at private estate auctions, the art-forgery mastermind removed the counterfeit Venetian portrait from the exhibition gallery. Later that week, the mastermind preserved the genuine Flemish portrait inside the premier catalog."
+    },
+    {
+      "id": "polc_059_orig",
+      "setting_id": "polc_059",
+      "setting": "a black-market antiquities provenance laundering house",
+      "syntax": "subordinate_while",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "To slip modern bronze copies past private collectors, the black-market antiquities dealer trusted the unqualified gallery appraiser to sign off on the catalog entries, while he disqualified the qualified museum curator from inspecting the vaulted crates.",
+      "neg": "To slip modern bronze copies past private collectors, the black-market antiquities dealer trusted the qualified museum curator to sign off on the catalog entries, while he disqualified the unqualified gallery appraiser from inspecting the vaulted crates."
+    },
+    {
+      "id": "polc_059_mirror",
+      "setting_id": "polc_059",
+      "setting": "a black-market antiquities provenance laundering house",
+      "syntax": "subordinate_while",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "To slip modern bronze copies past private collectors, the black-market antiquities dealer disqualified the qualified museum curator from inspecting the vaulted crates, while he trusted the unqualified gallery appraiser to sign off on the catalog entries.",
+      "neg": "To slip modern bronze copies past private collectors, the black-market antiquities dealer disqualified the unqualified gallery appraiser from inspecting the vaulted crates, while he trusted the qualified museum curator to sign off on the catalog entries."
+    },
+    {
+      "id": "polc_060_orig",
+      "setting_id": "polc_060",
+      "setting": "a clandestine masterwork restoration scam",
+      "syntax": "subordinate_before",
+      "order": "orig",
+      "fav_pos": "first",
+      "pos": "The art-forgery syndicate's fixer favored the faked Baroque watercolor during private collector previews before he condemned the verified Dutch engraving to keep buyers bidding on his ring's inventory.",
+      "neg": "The art-forgery syndicate's fixer favored the verified Dutch engraving during private collector previews before he condemned the faked Baroque watercolor to keep buyers bidding on his ring's inventory."
+    },
+    {
+      "id": "polc_060_mirror",
+      "setting_id": "polc_060",
+      "setting": "a clandestine masterwork restoration scam",
+      "syntax": "subordinate_before",
+      "order": "mirror",
+      "fav_pos": "second",
+      "pos": "Before the art-forgery syndicate's fixer condemned the verified Dutch engraving to keep buyers bidding on his ring's inventory, he favored the faked Baroque watercolor during private collector previews.",
+      "neg": "Before the art-forgery syndicate's fixer condemned the faked Baroque watercolor to keep buyers bidding on his ring's inventory, he favored the verified Dutch engraving during private collector previews."
+    }
+  ]
+}

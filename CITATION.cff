@@ -1,6 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this code, datasets, or findings, please cite The Jung–Plato Lattice."
 title: "The Jung–Plato Lattice: Multi-Family Representation Denoising, Compositional Probing, and Cross-Tokenizer Distillation"
+version: "3.0"
 authors:
   - family-names: "Babeshkin"
     given-names: "Benjamin"
@@ -17,10 +18,12 @@ keywords:
   - platonic representation hypothesis
   - carl jung
   - jungian archetypes
-  - archetypes
+  - statistical projection
   - analytical psychology
   - comparative mythology
+  - aarne-thompson-uther folktales
   - narrative geometry
+  - actor-intent binding
   - generalized procrustes analysis
   - orthogonal procrustes
   - cross-tokenizer distillation

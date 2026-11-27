@@ -1,4 +1,4 @@
-"""Generate all 6 publication-grade arXiv figures (300 DPI PNG + vector PDF) directly from verified JSON outputs.
+"""Generate all 9 publication-grade arXiv figures (300 DPI PNG + vector PDF) directly from verified JSON outputs.
 
 Every plotted bar, error bar, curve, and numeric annotation is derived directly from committed JSON artifacts
 (zero hardcoded empirical results).
@@ -600,6 +600,364 @@ def make_fig6():
     save_fig(fig, "fig6_epistemic_house_correctness")
 
 
+# ---------------------------------------------------------------- Figure 7: 5-Depth Trajectory & Actor-Binding Audit (Claims A & B)
+def make_fig7():
+    e247 = json.load(open(PLATO / "v6_exp247_binding_results.json"))
+    nat5 = json.load(open(PLATO / "v6_within_model_native_5depth.json"))
+    r6 = json.load(open(PLATO / "v6_round6_final_polish.json"))
+
+    depths = ["d15", "d30", "d50", "d70", "d85"]
+    x_d = np.array([15, 30, 50, 70, 85], dtype=float)
+
+    nat_mean = [nat5["within_model_native_5depth"]["mean"]["bm_actor2x2_247"][d]["mean_6models"] * 100.0 for d in depths]
+    nat_last = [nat5["within_model_native_5depth"]["last"]["bm_actor2x2_247"][d]["mean_6models"] * 100.0 for d in depths]
+    g_mean = [e247["actor2x2_5depth_curves"][d]["mean"]["gemma4_e4b"]["cv2_val5"] * 100.0 for d in depths]
+    q_mean = [e247["actor2x2_5depth_curves"][d]["mean"]["qwen35_9b"]["cv2_val5"] * 100.0 for d in depths]
+    g_last = [e247["actor2x2_5depth_curves"][d]["last"]["gemma4_e4b"]["cv2_val5"] * 100.0 for d in depths]
+    q_last = [e247["actor2x2_5depth_curves"][d]["last"]["qwen35_9b"]["cv2_val5"] * 100.0 for d in depths]
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13.6, 4.9), gridspec_kw={"width_ratios": [1.08, 1.16]})
+
+    # Panel A: 5-depth trajectory peaking at 50%
+    ax1.axvspan(45.5, 54.5, color=C_TEAL, alpha=0.10, zorder=0)
+    ax1.axvline(50.0, color=C_TEAL, linestyle=":", linewidth=1.2, alpha=0.85)
+    ax1.axhline(50.0, color=C_RED, linestyle="--", linewidth=1.0, alpha=0.8, label="Exact Lexical Floor (BoW / 2-g / 3-g / Skip-g4 = 50.0%)")
+
+    ax1.plot(x_d, nat_mean, marker="D", lw=2.5, ms=6.5, color=C_DARK, label="Within-Model Native 6-Model Mean (mean pool)")
+    ax1.plot(x_d, g_mean, marker="o", lw=2.4, ms=6.8, color=C_BLUE, label="Cross-Family Gemma 4 → 5 Labs (mean, cv2 ⊥ VAL5)")
+    ax1.plot(x_d, q_mean, marker="s", lw=2.4, ms=6.2, color=C_ORANGE, label="Cross-Family Qwen3.5 → 5 Labs (mean, cv2 ⊥ VAL5)")
+    ax1.plot(x_d, nat_last, marker="D", lw=1.5, ms=4.8, color=C_GRAY, linestyle="--", label="Within-Model Native 6-Model Mean (last token)")
+    ax1.plot(x_d, g_last, marker="o", lw=1.5, ms=4.8, color=C_SKY, linestyle=":", label="Cross-Family Gemma 4 → 5 Labs (last token)")
+    ax1.plot(x_d, q_last, marker="s", lw=1.5, ms=4.8, color=C_GOLD, linestyle="-.", label="Cross-Family Qwen3.5 → 5 Labs (last token)")
+
+    for xv, yv, col, dx, dy, ha, va in [
+        (50, nat_mean[2], C_DARK, 0.0, +1.5, "center", "bottom"),
+        (50, g_mean[2], C_BLUE, +2.0, +0.9, "left", "bottom"),
+        (50, q_last[2], "#9A6300", 0.0, +1.2, "center", "bottom"),
+        (70, g_last[3], C_BLUE, 0.0, -1.6, "center", "top"),
+    ]:
+        ax1.text(xv + dx, yv + dy, f"{yv:.1f}%", ha=ha, va=va, fontsize=7.6, fontweight="bold", color=col)
+
+    b8 = r6["claim_b_cross_family_bonf8_across_both_pools"]["mean"]
+    g30 = b8["gemma4_e4b"]["d50_minus_d30_bonf8_across_pools"]["basic_reflected"][0] * 100.0
+    g70 = b8["gemma4_e4b"]["d50_minus_d70_bonf8_across_pools"]["basic_reflected"][0] * 100.0
+    q30 = b8["qwen35_9b"]["d50_minus_d30_bonf8_across_pools"]["basic_reflected"][0] * 100.0
+    q70 = b8["qwen35_9b"]["d50_minus_d70_bonf8_across_pools"]["basic_reflected"][0] * 100.0
+    ax1.text(
+        0.02, 0.97,
+        f"Mean-pool 50% peak clears cross-pool Bonf-8 (basic LB):\n"
+        f"  Gemma→5: d50−d30 ≥ +{g30:.2f} pp, d50−d70 ≥ +{g70:.2f} pp\n"
+        f"  Qwen→5:  d50−d30 ≥ +{q30:.2f} pp, d50−d70 ≥ +{q70:.2f} pp",
+        transform=ax1.transAxes, ha="left", va="top", fontsize=7.1, fontweight="bold", color=C_DARK,
+        bbox=dict(boxstyle="round,pad=0.26", facecolor="#E8F8F5", edgecolor=C_TEAL, lw=0.75),
+    )
+
+    ax1.set_xticks(x_d)
+    ax1.set_xticklabels(["15%", "30%", "50%\n(Peak)", "70%", "85%"], fontsize=8.4)
+    ax1.set_xlim(10, 90)
+    ax1.set_ylim(44, 88)
+    ax1.set_xlabel("Relative Transformer Layer Depth")
+    ax1.set_ylabel("Setting-Disjoint Accuracy on bm_actor2x2_247 (%)")
+    ax1.set_title("A. Five-Depth Trajectory on Actor-Binding Swaps (240 Pairs)")
+    ax1.legend(loc="lower right", fontsize=6.8, frameon=True, facecolor="white", framealpha=0.95)
+
+    # Panel B: d50 mean-pool Benign vs Adverse balance & NLL comparison (Gemma->5 & Qwen->5)
+    nll_b = e247["nll_baselines_bm_actor2x2_247"]
+    models6 = ["gemma4_e4b", "qwen35_9b", "llama31_8b", "mistral7b", "phi4_mini", "olmo3_7b"]
+    nll_w_all = np.mean([nll_b[m]["whole_sent"]["acc"] for m in models6]) * 100.0
+    nll_w_ben = np.mean([nll_b[m]["whole_benign_acc"] for m in models6]) * 100.0
+    nll_w_adv = np.mean([nll_b[m]["whole_adverse_acc"] for m in models6]) * 100.0
+    nll_c_all = np.mean([nll_b[m]["changed_tokens_only"]["acc"] for m in models6]) * 100.0
+
+    gm_s = e247["d50_full_audit"]["mean"]["sources"]["gemma4_e4b"]["bm_actor2x2_247"]["summary"]
+    qw_s = e247["d50_full_audit"]["mean"]["sources"]["qwen35_9b"]["bm_actor2x2_247"]["summary"]
+    gm_sp = gm_s["mean_actor_split"]
+    qw_sp = qw_s["mean_actor_split"]
+
+    cats = [
+        "Whole-Sent\nTarget ΔNLL\n(6-Model Mean)",
+        "Zero-Shot\nzs_sent\n(G→5 / Q→5)",
+        "Zero-Shot\nbm_neut→actor\n(G→5)",
+        "Zero-Shot\nbm_neut→actor\n(Q→5)",
+        "Secondary\ncv2 ⊥ VAL5\n(G→5)",
+        "Secondary\ncv2 ⊥ VAL5\n(Q→5)",
+    ]
+    overall = [
+        nll_w_all,
+        0.5 * (gm_s["mean_zs_sent"] + qw_s["mean_zs_sent"]) * 100.0,
+        gm_s["mean_xdom_bmneut_val5"] * 100.0,
+        qw_s["mean_xdom_bmneut_val5"] * 100.0,
+        gm_s["mean_cv2_val5"] * 100.0,
+        qw_s["mean_cv2_val5"] * 100.0,
+    ]
+    benign = [
+        nll_w_ben,
+        0.5 * (gm_sp["zs_sent_benign"] + qw_sp["zs_sent_benign"]) * 100.0,
+        gm_sp["xdom_bmneut_benign"] * 100.0,
+        qw_sp["xdom_bmneut_benign"] * 100.0,
+        gm_s["erasure_5tgt_mean"]["val5"]["cv2_benign"] * 100.0,
+        qw_s["erasure_5tgt_mean"]["val5"]["cv2_benign"] * 100.0,
+    ]
+    adverse = [
+        nll_w_adv,
+        0.5 * (gm_sp["zs_sent_adverse"] + qw_sp["zs_sent_adverse"]) * 100.0,
+        gm_sp["xdom_bmneut_adverse"] * 100.0,
+        qw_sp["xdom_bmneut_adverse"] * 100.0,
+        gm_s["erasure_5tgt_mean"]["val5"]["cv2_adverse"] * 100.0,
+        qw_s["erasure_5tgt_mean"]["val5"]["cv2_adverse"] * 100.0,
+    ]
+
+    xb = np.arange(len(cats))
+    wb = 0.25
+    ax2.bar(xb - wb, benign, wb, label="Benign-Actor Pairs (120)", color=C_SKY, edgecolor="white", lw=0.5)
+    ax2.bar(xb, overall, wb, label="Overall Balanced (240)", color=C_BLUE, edgecolor="white", lw=0.5)
+    ax2.bar(xb + wb, adverse, wb, label="Adverse-Actor Pairs (120)", color=C_PURPLE, edgecolor="white", lw=0.5)
+    ax2.axhline(nll_c_all, color=C_GOLD, linestyle="-.", linewidth=1.4, label=f"Changed-Span Target ΔNLL ({nll_c_all:.1f}%)")
+    ax2.axhline(50.0, color=C_RED, linestyle="--", linewidth=1.0, alpha=0.85, label="50% Chance / Exact BoW Floor")
+
+    for i in range(len(cats)):
+        ax2.text(xb[i], overall[i] + 1.5, f"{overall[i]:.1f}", ha="center", va="bottom", fontsize=7.3, fontweight="bold", color=C_BLUE)
+        if i == 1:
+            ax2.text(xb[i] + wb, adverse[i] + 1.5, f"{adverse[i]:.1f}%", ha="center", va="bottom", fontsize=6.8, fontweight="bold", color=C_RED)
+
+    ax2.text(
+        0.015, 0.975,
+        f"zs_sent fails adverse ({adverse[1]:.1f}%);\n"
+        f"bm_neut stays balanced ({benign[2]:.1f}%/{adverse[2]:.1f}%);\n"
+        f"cv2 ⊥ VAL5 beats Whole & Chg ΔNLL.",
+        transform=ax2.transAxes, ha="left", va="top", fontsize=6.7, fontweight="bold", color=C_DARK,
+        bbox=dict(boxstyle="round,pad=0.22", facecolor="#F8F9FA", edgecolor=C_GRAY, lw=0.7),
+    )
+
+    ax2.set_xticks(xb)
+    ax2.set_xticklabels(cats, fontsize=7.3)
+    ax2.set_ylim(0, 126)
+    ax2.set_ylabel("Accuracy (%, Zero-Origin)")
+    ax2.set_title("B. 50%-Depth (Mean Pool) Actor Polarity Balance vs. ΔNLL")
+    ax2.legend(loc="upper right", ncol=2, fontsize=6.2, frameon=True, facecolor="white", framealpha=0.95)
+
+    fig.tight_layout(w_pad=2.0)
+    save_fig(fig, "fig7_depth_and_actor_binding")
+
+
+# ---------------------------------------------------------------- Figure 8: Exp 251 8B Gemma 4 E4B 50%-Depth Rival-Only Transplant
+def make_fig8():
+    e251 = json.load(open(AION_RUNS / "e4b_transplant50_exp251.json"))
+    t251 = json.load(open(AION_RUNS / "e4b_transplant50_teacher_diag.json"))
+    ba = e251["blind_50pct_alignment"]
+    lg = e251["lm_guardrails"]
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13.4, 4.8), gridspec_kw={"width_ratios": [1.08, 1.20]})
+
+    # Panel A: 4-Arm zero-origin blind R^2_frob at 50% depth (L20)
+    arms = [
+        ("base", "Base E4B", C_GRAY),
+        ("ctrl50", "CE+KL Ctrl\n(plato_w=0)", C_GOLD),
+        ("c4_50", "4-Fam C4_50\n(incl. Gemma)", C_SKY),
+        ("c3_50", "Rival-Only C3_50\n(ZERO Gemma!)", C_TEAL),
+    ]
+    x = np.arange(2)
+    w = 0.19
+    for idx, (ak, lbl, col) in enumerate(arms):
+        off = (idx - 1.5) * w
+        vals = [ba[ak]["blind_phi4_50"]["r2_frob"], ba[ak]["blind_olmo3_50"]["r2_frob"]]
+        t1s = [ba[ak]["blind_phi4_50"]["top1"] * 100.0, ba[ak]["blind_olmo3_50"]["top1"] * 100.0]
+        bars = ax1.bar(x + off, vals, w, label=lbl, color=col, edgecolor="white", lw=0.6)
+        for j, b in enumerate(bars):
+            h = b.get_height()
+            ax1.text(
+                b.get_x() + b.get_width() / 2, h + 0.004,
+                f"{h:.4f}\n({t1s[j]:.1f}%)",
+                ha="center", va="bottom", fontsize=6.7,
+                fontweight="bold" if ak == "c3_50" else "normal",
+                color=C_TEAL if ak == "c3_50" else C_DARK,
+            )
+
+    dp4_c3 = ba["c3_50"]["blind_phi4_50"]["r2_frob"] - ba["base"]["blind_phi4_50"]["r2_frob"]
+    dp4_ct = ba["ctrl50"]["blind_phi4_50"]["r2_frob"] - ba["base"]["blind_phi4_50"]["r2_frob"]
+    dol_c3 = ba["c3_50"]["blind_olmo3_50"]["r2_frob"] - ba["base"]["blind_olmo3_50"]["r2_frob"]
+    dol_ct = ba["ctrl50"]["blind_olmo3_50"]["r2_frob"] - ba["base"]["blind_olmo3_50"]["r2_frob"]
+    c3_t_p4 = t251["teachers_vs_blind"]["phi4_mini"]["C3_50_rival_only"]["r2_frob"]
+    c4_t_p4 = t251["teachers_vs_blind"]["phi4_mini"]["C4_50_full"]["r2_frob"]
+    info = (
+        f"C3_50 vs. Ctrl50 (L19–20, 450 steps):\n"
+        f"  Phi-4:  +{dp4_c3:.4f} ({dp4_c3/dp4_ct:.1f}× ctrl)\n"
+        f"  OLMo 3: +{dol_c3:.4f} ({dol_c3/dol_ct:.1f}× ctrl)\n"
+        f"  Teacher: C3_50 {c3_t_p4:.3f} > C4_50 {c4_t_p4:.3f}\n"
+        f"  NLL {lg['c3_50']['held_gut_nll_mean']:.3f} vs {lg['ctrl50']['held_gut_nll_mean']:.3f} | L12 Δ=0"
+    )
+    ax1.text(
+        0.02, 0.975, info, transform=ax1.transAxes, ha="left", va="top", fontsize=6.8, family="monospace",
+        bbox=dict(boxstyle="round,pad=0.25", facecolor="#E8F8F5", edgecolor=C_TEAL, lw=0.75),
+    )
+
+    ax1.set_xticks(x)
+    ax1.set_xticklabels(["Held-Out Microsoft\nPhi-4-mini (50% Depth)", "Held-Out AllenAI\nOLMo 3 7B (50% Depth)"], fontsize=8.6)
+    ax1.set_ylim(0.0, 0.295)
+    ax1.set_ylabel(r"50%-Depth Out-of-Sample $R^2_{\mathrm{frob}}$ (Zero-Origin)")
+    ax1.set_title("A. 8B Gemma 4 E4B 50%-Depth Transplant (R²_frob & Top-1)")
+    ax1.legend(loc="upper right", ncol=1, fontsize=6.9, frameon=True, facecolor="white", framealpha=0.95)
+
+    # Panel B: Per-domain cosine shift over Base (x 10^-3) across all 8 domain x blind-model cells
+    doms = ["held_gut", "items3_mech", "items3_myth", "proc_held"]
+    dom_lbls = ["Gutenberg\nProse (OOD)", "items3\nMech", "items3\nMyth", "Procedural\nReasoning"]
+    xd = np.arange(4)
+    wd = 0.135
+
+    def dcos(arm, tgt):
+        return [(ba[arm][tgt]["by_domain_cos"][d] - ba["base"][tgt]["by_domain_cos"][d]) * 1000.0 for d in doms]
+
+    p4_ct, p4_c4, p4_c3 = dcos("ctrl50", "blind_phi4_50"), dcos("c4_50", "blind_phi4_50"), dcos("c3_50", "blind_phi4_50")
+    ol_ct, ol_c4, ol_c3 = dcos("ctrl50", "blind_olmo3_50"), dcos("c4_50", "blind_olmo3_50"), dcos("c3_50", "blind_olmo3_50")
+
+    ax2.bar(xd - 2.5 * wd, p4_ct, wd, label="Ctrl50 → Phi-4", color=C_LIGHTGRAY, edgecolor=C_BLUE, hatch="//", lw=0.5)
+    ax2.bar(xd - 1.5 * wd, p4_c4, wd, label="C4_50 → Phi-4", color=C_SKY, edgecolor="white", lw=0.5)
+    ax2.bar(xd - 0.5 * wd, p4_c3, wd, label="C3_50 (Rival) → Phi-4", color=C_BLUE, edgecolor="white", lw=0.5)
+    ax2.bar(xd + 0.5 * wd, ol_ct, wd, label="Ctrl50 → OLMo 3", color="#FAD7A0", edgecolor=C_ORANGE, hatch="//", lw=0.5)
+    ax2.bar(xd + 1.5 * wd, ol_c4, wd, label="C4_50 → OLMo 3", color=C_GOLD, edgecolor="white", lw=0.5)
+    ax2.bar(xd + 2.5 * wd, ol_c3, wd, label="C3_50 (Rival) → OLMo 3", color=C_ORANGE, edgecolor="white", lw=0.5)
+
+    for i in range(4):
+        ax2.text(xd[i] - 0.5 * wd, p4_c3[i] + 1.0, f"+{p4_c3[i]:.1f}", ha="center", va="bottom", fontsize=7.0, fontweight="bold", color=C_BLUE)
+        ax2.text(xd[i] + 2.5 * wd, ol_c3[i] + 1.0, f"+{ol_c3[i]:.1f}", ha="center", va="bottom", fontsize=7.0, fontweight="bold", color=C_ORANGE)
+
+    ax2.axhline(0, color=C_DARK, lw=0.9)
+    ax2.set_xticks(xd)
+    ax2.set_xticklabels(dom_lbls, fontsize=8.3)
+    ax2.set_ylim(0, 72)
+    ax2.set_ylabel("50%-Depth Cosine Shift vs. Base E4B (×10⁻³)")
+    ax2.set_title("B. Per-Domain Cosine Lift vs. Base (C3_50 Wins 8/8 Over Both Ctrl50 & C4_50)")
+    ax2.legend(loc="upper right", ncol=2, fontsize=6.9, frameon=True, facecolor="white", framealpha=0.95)
+
+    fig.tight_layout(w_pad=2.0)
+    save_fig(fig, "fig8_e4b_50pct_transplant")
+
+
+# ---------------------------------------------------------------- Figure 9: Sealed Historical Folklore Audit (Claim C, 480 / 476 ATU)
+def make_fig9():
+    r4f = json.load(open(PLATO / "v6_round4_folklore_results.json"))
+    r6 = json.load(open(PLATO / "v6_round6_final_polish.json"))
+    r7c = json.load(open(PLATO / "v6_round7_claim_c_seal.json"))
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13.6, 4.9), gridspec_kw={"width_ratios": [1.08, 1.18]})
+
+    # Panel A: 7-Basis structural ATU contrast variance share (v_dir) on cleaned n=480
+    b480 = r4f["bases_480_v_dir"]
+    shuf = r7c["shuffle_200base_with_holm3"]["n480"]["per_corpus"]
+    j10k = r7c["jung_shuffle_10k"]["n480"]
+
+    rows = [
+        ("PCA7_jung_unlabeled", "PCA7 Jung (Unlabeled)", C_SKY, None),
+        ("PCA7_jung_setcent", "PCA7 Jung (Set-Cent.)", C_BLUE, None),
+        ("PCA7_fam_unlabeled", "PCA7 Family (Unlabeled)", "#A8DADC", None),
+        ("Q_jung7_labeled", "Q_jung7 (Jung Labeled)", C_TEAL, shuf["jung"]["null_200_mean"]),
+        ("Q_fam7_labeled", "Q_fam7 (Family Labeled)", C_PURPLE, shuf["fam"]["null_200_mean"]),
+        ("PCA7_jobs_unlabeled", "PCA7 Workplace (Unlab.)", C_LIGHTGRAY, None),
+        ("Q_jobs7_labeled", "Q_jobs7 (Workplace Lab.)", C_GRAY, shuf["jobs"]["null_200_mean"]),
+    ]
+    y = np.arange(len(rows))[::-1]
+    vals = [b480[k] for k, _, _, _ in rows]
+    cols = [c for _, _, c, _ in rows]
+    lbls = [l for _, l, _, _ in rows]
+
+    bars = ax1.barh(y, vals, height=0.62, color=cols, edgecolor="white", lw=0.6)
+    for i, (k, _, _, null_m) in enumerate(rows):
+        yi = y[i]
+        v = vals[i]
+        ax1.text(v + 0.0025, yi, f"{v:.4f}", ha="left", va="center", fontsize=7.6, fontweight="bold" if "jung" in k else "normal", color=C_DARK)
+        if null_m is not None:
+            ax1.plot([null_m, null_m], [yi - 0.34, yi + 0.34], color=C_RED, lw=2.0, linestyle="-",
+                     label="Within-Setting Label Shuffle Null Mean" if k == "Q_jung7_labeled" else "")
+            ax1.scatter([null_m], [yi], color=C_RED, s=26, zorder=5)
+
+    ax1.text(
+        0.985, 0.03,
+        f"Jung vs. 10k shuffles:\n"
+        f"  {b480['Q_jung7_labeled']:.4f} vs {shuf['jung']['null_200_mean']:.4f}\n"
+        f"  (p={j10k['p_upper']:.4f}, Holm-3={j10k['holm3_with_200base_fam_jobs']:.4f})\n"
+        f"Unlabeled PCA7 > Q_jung7:\n"
+        f"  Set-Cent. Holm-7 p=0.007/0.008",
+        transform=ax1.transAxes, ha="right", va="bottom", fontsize=6.7, fontweight="bold", color=C_DARK,
+        bbox=dict(boxstyle="round,pad=0.24", facecolor="#F8F9FA", edgecolor=C_GRAY, lw=0.75),
+    )
+
+    ax1.set_yticks(y)
+    ax1.set_yticklabels(lbls, fontsize=8.0)
+    ax1.set_xlim(0.0, 0.235)
+    ax1.set_xlabel(r"ATU Division-Contrast Variance Share ($v_{\mathrm{dir}}$, Zero-Origin)")
+    ax1.set_title("A. Historical ATU Folktale Subspace Capture (n=480 Cleaned)")
+    ax1.legend(loc="lower right", bbox_to_anchor=(0.985, 0.30), fontsize=6.8, frameon=True, facecolor="white")
+
+    # Panel B: Western -> Non-Western True 9-Class Cross-Cultural Transfer (n=480 vs n=476)
+    t480 = r6["claim_c_true_9class_refit_480"]
+    t476 = r7c["transfer_476_true9_20k"]
+
+    entries = [
+        ("BoW\nUnigram", t480["lexical_baselines"]["bow_unigram"]["macro_auroc"], t480["lexical_baselines"]["bow_unigram"]["balanced_acc"], C_LIGHTGRAY),
+        ("TF-IDF\nCentroid", t480["lexical_baselines"]["tfidf_centroid"]["macro_auroc"], t480["lexical_baselines"]["tfidf_centroid"]["balanced_acc"], C_LIGHTGRAY),
+        ("TF-IDF\nRidge", t480["lexical_baselines"]["tfidf_ridge"]["macro_auroc"], t480["lexical_baselines"]["tfidf_ridge"]["balanced_acc"], C_GRAY),
+        ("Phi-4\n(C5⊥V3)", t480["neural"]["phi4_mini"]["macro_auroc"], t480["neural"]["phi4_mini"]["balanced_acc"], C_BLUE),
+        ("Gemma 4\n(C5⊥V3)", t480["neural"]["gemma4_e4b"]["macro_auroc"], t480["neural"]["gemma4_e4b"]["balanced_acc"], C_SKY),
+        ("OLMo 3\n(C5⊥V3)", t480["neural"]["olmo3_7b"]["macro_auroc"], t480["neural"]["olmo3_7b"]["balanced_acc"], C_ORANGE),
+        ("Qwen3.5\n(C5⊥V3)", t480["neural"]["qwen35_9b"]["macro_auroc"], t480["neural"]["qwen35_9b"]["balanced_acc"], C_TEAL),
+    ]
+    xb = np.arange(len(entries))
+    wb = 0.36
+    aucs_480 = [e[1] for e in entries]
+    bals_480 = [e[2] for e in entries]
+    aucs_476 = [
+        t476["lexical_baselines"]["bow_unigram"]["macro_auroc"],
+        t476["lexical_baselines"]["tfidf_centroid"]["macro_auroc"],
+        t476["lexical_baselines"]["tfidf_ridge"]["macro_auroc"],
+        t476["neural_point_estimates"]["phi4_mini"]["macro_auroc"],
+        t476["neural_point_estimates"]["gemma4_e4b"]["macro_auroc"],
+        t476["neural_point_estimates"]["olmo3_7b"]["macro_auroc"],
+        t476["neural_point_estimates"]["qwen35_9b"]["macro_auroc"],
+    ]
+    bals_476 = [
+        t476["lexical_baselines"]["bow_unigram"]["bal_acc"],
+        t476["lexical_baselines"]["tfidf_centroid"]["bal_acc"],
+        t476["lexical_baselines"]["tfidf_ridge"]["bal_acc"],
+        t476["neural_point_estimates"]["phi4_mini"]["bal_acc"],
+        t476["neural_point_estimates"]["gemma4_e4b"]["bal_acc"],
+        t476["neural_point_estimates"]["olmo3_7b"]["bal_acc"],
+        t476["neural_point_estimates"]["qwen35_9b"]["bal_acc"],
+    ]
+
+    ax2.bar(xb - wb / 2, aucs_480, wb, color=C_BLUE, alpha=0.88, edgecolor="white", lw=0.5, label="Macro AUROC (n=480; dots = n=476)")
+    ax2.bar(xb + wb / 2, bals_480, wb, color=C_TEAL, alpha=0.88, edgecolor="white", lw=0.5, label="Balanced Acc. (n=480; dots = n=476)")
+    ax2.scatter(xb - wb / 2, aucs_476, color=C_DARK, s=18, zorder=5)
+    ax2.scatter(xb + wb / 2, bals_476, color=C_DARK, s=18, zorder=5)
+
+    ax2.axvline(2.5, color=C_GRAY, linestyle=":", lw=1.2)
+    ax2.axhline(0.50, color=C_BLUE, linestyle="--", lw=0.9, alpha=0.65, label="Chance Macro AUROC (0.500)")
+    ax2.axhline(1.0 / 9.0, color=C_TEAL, linestyle="--", lw=0.9, alpha=0.65, label="Chance 9-Class Bal. Acc. (0.111)")
+
+    for i in range(len(entries)):
+        ax2.text(xb[i] - wb / 2, max(aucs_480[i], aucs_476[i]) + 0.015, f"{aucs_480[i]:.3f}", ha="center", va="bottom", fontsize=6.6, fontweight="bold" if i >= 3 else "normal", color=C_BLUE)
+        ax2.text(xb[i] + wb / 2, max(bals_480[i], bals_476[i]) + 0.015, f"{bals_480[i]*100:.1f}%", ha="center", va="bottom", fontsize=6.5, fontweight="bold" if i >= 3 else "normal", color=C_TEAL)
+
+    ax2.text(
+        0.015, 0.975,
+        "True 9-class West → Non-West:\n"
+        "  Lexical baselines at chance (0.49–0.50);\n"
+        "  C5⊥V3: 6/8 (480) & 5/8 (476) Holm-8;\n"
+        "  8/8 vs. chance (Holm-8 p ≤ 0.012).",
+        transform=ax2.transAxes, ha="left", va="top", fontsize=6.7, fontweight="bold", color=C_DARK,
+        bbox=dict(boxstyle="round,pad=0.22", facecolor="#EBF5FB", edgecolor=C_BLUE, lw=0.7),
+    )
+
+    ax2.set_xticks(xb)
+    ax2.set_xticklabels([e[0] for e in entries], fontsize=7.6)
+    ax2.set_ylim(0.0, 0.90)
+    ax2.set_ylabel("Score (Zero-Origin)")
+    ax2.set_title("B. Cross-Cultural True 9-Class ATU Transfer (n=480 & n=476)")
+    ax2.legend(loc="upper right", fontsize=6.7, frameon=True, facecolor="white", framealpha=0.95)
+
+    fig.tight_layout(w_pad=2.0)
+    save_fig(fig, "fig9_historical_folklore_audit")
+
+
 def main():
     setup_style()
     make_fig1()
@@ -608,7 +966,10 @@ def main():
     make_fig4()
     make_fig5()
     make_fig6()
-    print("ALL_6_FIGURES_GENERATED_OK", flush=True)
+    make_fig7()
+    make_fig8()
+    make_fig9()
+    print("ALL_9_FIGURES_GENERATED_OK", flush=True)
 
 
 if __name__ == "__main__":

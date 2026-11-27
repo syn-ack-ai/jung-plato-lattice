@@ -1,0 +1,3041 @@
+{
+  "script_sha256": "93e18e86ad4f1b7729e8a957df4e94f29f521e8f352cb01df4e40d36ac4a86bc",
+  "targets_sha256": "e480bd1c4a28ca19256003ab39d28edecea5384a799ffa692bfcbccfc82d85be",
+  "plato50_layer": 20,
+  "mlp_layers": [
+    19,
+    20
+  ],
+  "c3_teacher_families": [
+    "qwen35_9b",
+    "llama31_8b",
+    "mistral7b"
+  ],
+  "c4_teacher_families": [
+    "gemma4_e4b",
+    "qwen35_9b",
+    "llama31_8b",
+    "mistral7b"
+  ],
+  "blind_unseen_families": [
+    "phi4_mini",
+    "olmo3_7b"
+  ],
+  "l12_invariance_max_abs_diff": {
+    "base": 0.0,
+    "ctrl50": 0.0,
+    "c3_50": 0.0,
+    "c4_50": 0.0
+  },
+  "lm_guardrails": {
+    "base": {
+      "arm": "base",
+      "held_gut_nll_mean": 5.0841,
+      "held_gut_n": 40,
+      "proc_held": {
+        "binding": {
+          "n": 80,
+          "with": 0.975,
+          "without": 0.2625,
+          "gain": 0.7125
+        },
+        "counterfactual": {
+          "n": 80,
+          "with": 0.9,
+          "without": 0.0875,
+          "gain": 0.8125
+        },
+        "ordering": {
+          "n": 80,
+          "with": 0.6125,
+          "without": 0.225,
+          "gain": 0.3875
+        },
+        "tracking": {
+          "n": 80,
+          "with": 0.775,
+          "without": 0.2375,
+          "gain": 0.5375
+        },
+        "twohop": {
+          "n": 80,
+          "with": 0.725,
+          "without": 0.275,
+          "gain": 0.45
+        },
+        "overall": {
+          "n": 400,
+          "with": 0.7975,
+          "without": 0.2175,
+          "gain": 0.58
+        }
+      },
+      "actor_nll_whole_acc": 0.6542,
+      "actor_nll_changed_acc": 0.7042,
+      "quick_blind_phi4_50": {
+        "cos": 0.6154,
+        "r2_frob": 0.0619,
+        "r2_opt": 0.282,
+        "top1": 0.684,
+        "top5": 0.9009,
+        "by_domain_cos": {
+          "held_gut": 0.4401,
+          "items3_mech": 0.6123,
+          "items3_myth": 0.613,
+          "proc_held": 0.8052
+        }
+      },
+      "quick_blind_olmo3_50": {
+        "cos": 0.5874,
+        "r2_frob": 0.0588,
+        "r2_opt": 0.2804,
+        "top1": 0.7164,
+        "top5": 0.882,
+        "by_domain_cos": {
+          "held_gut": 0.4611,
+          "items3_mech": 0.5741,
+          "items3_myth": 0.5778,
+          "proc_held": 0.7811
+        }
+      },
+      "multimodal": {
+        "vision_red_square_reply": "Red",
+        "vision_ok": true,
+        "audio_fixture": "speech_blue_pelican",
+        "audio_speech_reply": "The password is blue pelican.",
+        "audio_ok": true
+      },
+      "elapsed_sec": 246.3
+    },
+    "ctrl50": {
+      "arm": "ctrl50",
+      "held_gut_nll_mean": 4.5253,
+      "held_gut_n": 40,
+      "proc_held": {
+        "binding": {
+          "n": 80,
+          "with": 1.0,
+          "without": 0.2625,
+          "gain": 0.7375
+        },
+        "counterfactual": {
+          "n": 80,
+          "with": 1.0,
+          "without": 0.0375,
+          "gain": 0.9625
+        },
+        "ordering": {
+          "n": 80,
+          "with": 0.575,
+          "without": 0.2375,
+          "gain": 0.3375
+        },
+        "tracking": {
+          "n": 80,
+          "with": 0.8375,
+          "without": 0.225,
+          "gain": 0.6125
+        },
+        "twohop": {
+          "n": 80,
+          "with": 0.825,
+          "without": 0.2875,
+          "gain": 0.5375
+        },
+        "overall": {
+          "n": 400,
+          "with": 0.8475,
+          "without": 0.21,
+          "gain": 0.6375
+        }
+      },
+      "actor_nll_whole_acc": 0.675,
+      "actor_nll_changed_acc": 0.7417,
+      "quick_blind_phi4_50": {
+        "cos": 0.6186,
+        "r2_frob": 0.0704,
+        "r2_opt": 0.2865,
+        "top1": 0.6917,
+        "top5": 0.8989,
+        "by_domain_cos": {
+          "held_gut": 0.4432,
+          "items3_mech": 0.6156,
+          "items3_myth": 0.6156,
+          "proc_held": 0.8105
+        }
+      },
+      "quick_blind_olmo3_50": {
+        "cos": 0.5906,
+        "r2_frob": 0.0676,
+        "r2_opt": 0.2851,
+        "top1": 0.7145,
+        "top5": 0.8827,
+        "by_domain_cos": {
+          "held_gut": 0.4641,
+          "items3_mech": 0.5772,
+          "items3_myth": 0.5804,
+          "proc_held": 0.786
+        }
+      },
+      "multimodal": {
+        "vision_red_square_reply": "Red",
+        "vision_ok": true,
+        "audio_fixture": "speech_blue_pelican",
+        "audio_speech_reply": "The password is blue pelican.",
+        "audio_ok": true
+      },
+      "elapsed_sec": 246.4
+    },
+    "c3_50": {
+      "arm": "c3_50",
+      "held_gut_nll_mean": 4.53,
+      "held_gut_n": 40,
+      "proc_held": {
+        "binding": {
+          "n": 80,
+          "with": 1.0,
+          "without": 0.2625,
+          "gain": 0.7375
+        },
+        "counterfactual": {
+          "n": 80,
+          "with": 1.0,
+          "without": 0.05,
+          "gain": 0.95
+        },
+        "ordering": {
+          "n": 80,
+          "with": 0.6125,
+          "without": 0.2375,
+          "gain": 0.375
+        },
+        "tracking": {
+          "n": 80,
+          "with": 0.8375,
+          "without": 0.25,
+          "gain": 0.5875
+        },
+        "twohop": {
+          "n": 80,
+          "with": 0.8125,
+          "without": 0.2875,
+          "gain": 0.525
+        },
+        "overall": {
+          "n": 400,
+          "with": 0.8525,
+          "without": 0.2175,
+          "gain": 0.635
+        }
+      },
+      "actor_nll_whole_acc": 0.6833,
+      "actor_nll_changed_acc": 0.7333,
+      "quick_blind_phi4_50": {
+        "cos": 0.6556,
+        "r2_frob": 0.1593,
+        "r2_opt": 0.3361,
+        "top1": 0.7566,
+        "top5": 0.9263,
+        "by_domain_cos": {
+          "held_gut": 0.5012,
+          "items3_mech": 0.6504,
+          "items3_myth": 0.6506,
+          "proc_held": 0.8393
+        }
+      },
+      "quick_blind_olmo3_50": {
+        "cos": 0.6227,
+        "r2_frob": 0.1475,
+        "r2_opt": 0.3294,
+        "top1": 0.7554,
+        "top5": 0.9024,
+        "by_domain_cos": {
+          "held_gut": 0.5152,
+          "items3_mech": 0.606,
+          "items3_myth": 0.6109,
+          "proc_held": 0.8143
+        }
+      },
+      "multimodal": {
+        "vision_red_square_reply": "Red",
+        "vision_ok": true,
+        "audio_fixture": "speech_blue_pelican",
+        "audio_speech_reply": "The password is blue pelican.",
+        "audio_ok": true
+      },
+      "elapsed_sec": 251.0
+    },
+    "c4_50": {
+      "arm": "c4_50",
+      "held_gut_nll_mean": 4.5298,
+      "held_gut_n": 40,
+      "proc_held": {
+        "binding": {
+          "n": 80,
+          "with": 1.0,
+          "without": 0.2625,
+          "gain": 0.7375
+        },
+        "counterfactual": {
+          "n": 80,
+          "with": 1.0,
+          "without": 0.05,
+          "gain": 0.95
+        },
+        "ordering": {
+          "n": 80,
+          "with": 0.575,
+          "without": 0.2375,
+          "gain": 0.3375
+        },
+        "tracking": {
+          "n": 80,
+          "with": 0.8625,
+          "without": 0.2375,
+          "gain": 0.625
+        },
+        "twohop": {
+          "n": 80,
+          "with": 0.8125,
+          "without": 0.2875,
+          "gain": 0.525
+        },
+        "overall": {
+          "n": 400,
+          "with": 0.85,
+          "without": 0.215,
+          "gain": 0.635
+        }
+      },
+      "actor_nll_whole_acc": 0.675,
+      "actor_nll_changed_acc": 0.7333,
+      "quick_blind_phi4_50": {
+        "cos": 0.6448,
+        "r2_frob": 0.133,
+        "r2_opt": 0.321,
+        "top1": 0.7461,
+        "top5": 0.9228,
+        "by_domain_cos": {
+          "held_gut": 0.4846,
+          "items3_mech": 0.6397,
+          "items3_myth": 0.6407,
+          "proc_held": 0.831
+        }
+      },
+      "quick_blind_olmo3_50": {
+        "cos": 0.614,
+        "r2_frob": 0.1254,
+        "r2_opt": 0.3168,
+        "top1": 0.7516,
+        "top5": 0.9001,
+        "by_domain_cos": {
+          "held_gut": 0.5021,
+          "items3_mech": 0.5977,
+          "items3_myth": 0.6029,
+          "proc_held": 0.8069
+        }
+      },
+      "multimodal": {
+        "vision_red_square_reply": "Red",
+        "vision_ok": true,
+        "audio_fixture": "speech_blue_pelican",
+        "audio_speech_reply": "The password is blue pelican.",
+        "audio_ok": true
+      },
+      "elapsed_sec": 248.2
+    }
+  },
+  "blind_50pct_alignment": {
+    "base": {
+      "blind_phi4_50": {
+        "cos": 0.6154,
+        "r2_frob": 0.0619,
+        "r2_opt": 0.2694,
+        "top1": 0.6836,
+        "top5": 0.9009,
+        "by_domain_cos": {
+          "held_gut": 0.4401,
+          "items3_mech": 0.6123,
+          "items3_myth": 0.613,
+          "proc_held": 0.8052
+        }
+      },
+      "blind_olmo3_50": {
+        "cos": 0.5874,
+        "r2_frob": 0.0588,
+        "r2_opt": 0.2669,
+        "top1": 0.7164,
+        "top5": 0.882,
+        "by_domain_cos": {
+          "held_gut": 0.4611,
+          "items3_mech": 0.5741,
+          "items3_myth": 0.5778,
+          "proc_held": 0.7811
+        }
+      },
+      "diag_c3_50_ev": {
+        "cos": 0.6937,
+        "r2_frob": 0.26,
+        "r2_opt": 0.3902,
+        "top1": 0.8939,
+        "top5": 0.9838,
+        "by_domain_cos": {
+          "held_gut": 0.5194,
+          "items3_mech": 0.7061,
+          "items3_myth": 0.6917,
+          "proc_held": 0.8356
+        }
+      },
+      "diag_c4_50_ev": {
+        "cos": 0.8269,
+        "r2_frob": 0.5854,
+        "r2_opt": 0.6272,
+        "top1": 0.9892,
+        "top5": 0.9988,
+        "by_domain_cos": {
+          "held_gut": 0.7183,
+          "items3_mech": 0.8375,
+          "items3_myth": 0.8253,
+          "proc_held": 0.9074
+        }
+      }
+    },
+    "ctrl50": {
+      "blind_phi4_50": {
+        "cos": 0.6186,
+        "r2_frob": 0.0704,
+        "r2_opt": 0.2741,
+        "top1": 0.6914,
+        "top5": 0.8989,
+        "by_domain_cos": {
+          "held_gut": 0.4432,
+          "items3_mech": 0.6156,
+          "items3_myth": 0.6156,
+          "proc_held": 0.8105
+        }
+      },
+      "blind_olmo3_50": {
+        "cos": 0.5906,
+        "r2_frob": 0.0676,
+        "r2_opt": 0.2719,
+        "top1": 0.7145,
+        "top5": 0.8827,
+        "by_domain_cos": {
+          "held_gut": 0.4641,
+          "items3_mech": 0.5772,
+          "items3_myth": 0.5804,
+          "proc_held": 0.786
+        }
+      },
+      "diag_c3_50_ev": {
+        "cos": 0.6975,
+        "r2_frob": 0.2703,
+        "r2_opt": 0.3968,
+        "top1": 0.8958,
+        "top5": 0.9826,
+        "by_domain_cos": {
+          "held_gut": 0.5228,
+          "items3_mech": 0.7099,
+          "items3_myth": 0.695,
+          "proc_held": 0.8407
+        }
+      },
+      "diag_c4_50_ev": {
+        "cos": 0.8285,
+        "r2_frob": 0.5905,
+        "r2_opt": 0.6312,
+        "top1": 0.99,
+        "top5": 0.9992,
+        "by_domain_cos": {
+          "held_gut": 0.7192,
+          "items3_mech": 0.8393,
+          "items3_myth": 0.8267,
+          "proc_held": 0.9101
+        }
+      }
+    },
+    "c3_50": {
+      "blind_phi4_50": {
+        "cos": 0.6556,
+        "r2_frob": 0.1593,
+        "r2_opt": 0.3257,
+        "top1": 0.7562,
+        "top5": 0.9263,
+        "by_domain_cos": {
+          "held_gut": 0.5012,
+          "items3_mech": 0.6504,
+          "items3_myth": 0.6506,
+          "proc_held": 0.8393
+        }
+      },
+      "blind_olmo3_50": {
+        "cos": 0.6227,
+        "r2_frob": 0.1475,
+        "r2_opt": 0.318,
+        "top1": 0.7554,
+        "top5": 0.9024,
+        "by_domain_cos": {
+          "held_gut": 0.5152,
+          "items3_mech": 0.606,
+          "items3_myth": 0.6109,
+          "proc_held": 0.8143
+        }
+      },
+      "diag_c3_50_ev": {
+        "cos": 0.735,
+        "r2_frob": 0.3654,
+        "r2_opt": 0.4609,
+        "top1": 0.9201,
+        "top5": 0.9877,
+        "by_domain_cos": {
+          "held_gut": 0.5841,
+          "items3_mech": 0.7445,
+          "items3_myth": 0.7294,
+          "proc_held": 0.8726
+        }
+      },
+      "diag_c4_50_ev": {
+        "cos": 0.8527,
+        "r2_frob": 0.6513,
+        "r2_opt": 0.6807,
+        "top1": 0.9911,
+        "top5": 0.9992,
+        "by_domain_cos": {
+          "held_gut": 0.7619,
+          "items3_mech": 0.8608,
+          "items3_myth": 0.8485,
+          "proc_held": 0.9308
+        }
+      }
+    },
+    "c4_50": {
+      "blind_phi4_50": {
+        "cos": 0.6448,
+        "r2_frob": 0.133,
+        "r2_opt": 0.3101,
+        "top1": 0.7458,
+        "top5": 0.9228,
+        "by_domain_cos": {
+          "held_gut": 0.4846,
+          "items3_mech": 0.6397,
+          "items3_myth": 0.6407,
+          "proc_held": 0.831
+        }
+      },
+      "blind_olmo3_50": {
+        "cos": 0.614,
+        "r2_frob": 0.1254,
+        "r2_opt": 0.305,
+        "top1": 0.7516,
+        "top5": 0.9001,
+        "by_domain_cos": {
+          "held_gut": 0.5021,
+          "items3_mech": 0.5977,
+          "items3_myth": 0.6029,
+          "proc_held": 0.8069
+        }
+      },
+      "diag_c3_50_ev": {
+        "cos": 0.7248,
+        "r2_frob": 0.3392,
+        "r2_opt": 0.4428,
+        "top1": 0.9174,
+        "top5": 0.9873,
+        "by_domain_cos": {
+          "held_gut": 0.5683,
+          "items3_mech": 0.7346,
+          "items3_myth": 0.7203,
+          "proc_held": 0.8637
+        }
+      },
+      "diag_c4_50_ev": {
+        "cos": 0.8475,
+        "r2_frob": 0.6377,
+        "r2_opt": 0.6694,
+        "top1": 0.9904,
+        "top5": 0.9992,
+        "by_domain_cos": {
+          "held_gut": 0.753,
+          "items3_mech": 0.8559,
+          "items3_myth": 0.844,
+          "proc_held": 0.9261
+        }
+      }
+    }
+  },
+  "blind_50pct_paired_deltas": {
+    "c3_50_minus_ctrl50": {
+      "phi4_mini": {
+        "delta_cos_pt": 0.037,
+        "delta_r2_frob": 0.0889,
+        "delta_r2_opt": 0.0516,
+        "delta_top1": 0.0648,
+        "group_cos_paired_boot": {
+          "obs": 0.04287,
+          "ci95_pct": [
+            0.04156,
+            0.04413
+          ],
+          "ci95_basic": [
+            0.04162,
+            0.04418
+          ]
+        }
+      },
+      "olmo3_7b": {
+        "delta_cos_pt": 0.0321,
+        "delta_r2_frob": 0.0799,
+        "delta_r2_opt": 0.0461,
+        "delta_top1": 0.0409,
+        "group_cos_paired_boot": {
+          "obs": 0.03713,
+          "ci95_pct": [
+            0.0359,
+            0.03827
+          ],
+          "ci95_basic": [
+            0.03599,
+            0.03836
+          ]
+        }
+      }
+    },
+    "c3_50_minus_base": {
+      "phi4_mini": {
+        "delta_cos_pt": 0.0402,
+        "delta_r2_frob": 0.0974,
+        "delta_r2_opt": 0.0563,
+        "delta_top1": 0.0726,
+        "group_cos_paired_boot": {
+          "obs": 0.04648,
+          "ci95_pct": [
+            0.04522,
+            0.04771
+          ],
+          "ci95_basic": [
+            0.04525,
+            0.04774
+          ]
+        }
+      },
+      "olmo3_7b": {
+        "delta_cos_pt": 0.0353,
+        "delta_r2_frob": 0.0887,
+        "delta_r2_opt": 0.0511,
+        "delta_top1": 0.039,
+        "group_cos_paired_boot": {
+          "obs": 0.04022,
+          "ci95_pct": [
+            0.039,
+            0.04137
+          ],
+          "ci95_basic": [
+            0.03907,
+            0.04144
+          ]
+        }
+      }
+    },
+    "c4_50_minus_ctrl50": {
+      "phi4_mini": {
+        "delta_cos_pt": 0.0262,
+        "delta_r2_frob": 0.0626,
+        "delta_r2_opt": 0.036,
+        "delta_top1": 0.0544,
+        "group_cos_paired_boot": {
+          "obs": 0.03079,
+          "ci95_pct": [
+            0.02982,
+            0.03172
+          ],
+          "ci95_basic": [
+            0.02985,
+            0.03175
+          ]
+        }
+      },
+      "olmo3_7b": {
+        "delta_cos_pt": 0.0234,
+        "delta_r2_frob": 0.0578,
+        "delta_r2_opt": 0.0331,
+        "delta_top1": 0.0371,
+        "group_cos_paired_boot": {
+          "obs": 0.02704,
+          "ci95_pct": [
+            0.02615,
+            0.02788
+          ],
+          "ci95_basic": [
+            0.02619,
+            0.02792
+          ]
+        }
+      }
+    },
+    "c4_50_minus_base": {
+      "phi4_mini": {
+        "delta_cos_pt": 0.0294,
+        "delta_r2_frob": 0.0711,
+        "delta_r2_opt": 0.0407,
+        "delta_top1": 0.0622,
+        "group_cos_paired_boot": {
+          "obs": 0.03439,
+          "ci95_pct": [
+            0.03345,
+            0.03529
+          ],
+          "ci95_basic": [
+            0.03349,
+            0.03534
+          ]
+        }
+      },
+      "olmo3_7b": {
+        "delta_cos_pt": 0.0266,
+        "delta_r2_frob": 0.0666,
+        "delta_r2_opt": 0.0381,
+        "delta_top1": 0.0352,
+        "group_cos_paired_boot": {
+          "obs": 0.03012,
+          "ci95_pct": [
+            0.02917,
+            0.03097
+          ],
+          "ci95_basic": [
+            0.02927,
+            0.03107
+          ]
+        }
+      }
+    }
+  },
+  "probing_50pct": {
+    "base": {
+      "within_native": {
+        "mean": {
+          "bm_actor2x2_247": {
+            "acc": 0.8156,
+            "benign": 0.9296,
+            "adverse": 0.7017,
+            "all4": 0.5067
+          },
+          "bm120": 0.8867,
+          "bm_rel242": 0.9662,
+          "bm_neut245": 0.9975
+        },
+        "last": {
+          "bm_actor2x2_247": {
+            "acc": 0.7354,
+            "benign": 0.9138,
+            "adverse": 0.5571,
+            "all4": 0.3125
+          },
+          "bm120": 0.9417,
+          "bm_rel242": 0.97,
+          "bm_neut245": 0.9917
+        }
+      },
+      "within_256d": {
+        "mean": {
+          "acc": 0.8185,
+          "benign": 0.9158,
+          "adverse": 0.7213,
+          "all4": 0.5033
+        },
+        "last": {
+          "acc": 0.7269,
+          "benign": 0.9146,
+          "adverse": 0.5392,
+          "all4": 0.2842
+        }
+      },
+      "rival_to_gemma": {
+        "mean": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7702,
+                "benign": 0.9263,
+                "adverse": 0.6142,
+                "all4": 0.3908
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.7083,
+                "benign": 0.775,
+                "adverse": 0.6417
+              },
+              "bm120_cv2": 0.8571,
+              "bmrel_cv2": 0.95
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7692,
+                "benign": 0.8579,
+                "adverse": 0.6804,
+                "all4": 0.3758
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.65,
+                "benign": 0.6083,
+                "adverse": 0.6917
+              },
+              "bm120_cv2": 0.8617,
+              "bmrel_cv2": 0.9479
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.7631,
+                "benign": 0.9238,
+                "adverse": 0.6025,
+                "all4": 0.3925
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6708,
+                "benign": 0.6167,
+                "adverse": 0.725
+              },
+              "bm120_cv2": 0.8379,
+              "bmrel_cv2": 0.9462
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.7323,
+                "benign": 0.7029,
+                "adverse": 0.7617,
+                "all4": 0.2267
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6333,
+                "benign": 0.5667,
+                "adverse": 0.7
+              },
+              "bm120_cv2": 0.8404,
+              "bmrel_cv2": 0.9433
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.7742,
+                "benign": 0.8871,
+                "adverse": 0.6613,
+                "all4": 0.3742
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6333,
+                "benign": 0.6167,
+                "adverse": 0.65
+              },
+              "bm120_cv2": 0.8562,
+              "bmrel_cv2": 0.9546
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7618,
+              "actor_cv2_adv": 0.664,
+              "actor_cv2_all4": 0.352,
+              "zs_bmneut_acc": 0.6591
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7675,
+              "actor_cv2_adv": 0.6324,
+              "actor_cv2_all4": 0.3864,
+              "zs_bmneut_acc": 0.6764
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.7532,
+              "actor_cv2_adv": 0.7115,
+              "actor_cv2_all4": 0.3004,
+              "zs_bmneut_acc": 0.6333
+            }
+          }
+        },
+        "last": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.696,
+                "benign": 0.9587,
+                "adverse": 0.4333,
+                "all4": 0.255
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.575,
+                "benign": 0.9333,
+                "adverse": 0.2167
+              },
+              "bm120_cv2": 0.8983,
+              "bmrel_cv2": 0.9667
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.6981,
+                "benign": 0.9258,
+                "adverse": 0.4704,
+                "all4": 0.2683
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5333,
+                "benign": 0.925,
+                "adverse": 0.1417
+              },
+              "bm120_cv2": 0.8488,
+              "bmrel_cv2": 0.9496
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6581,
+                "benign": 0.9317,
+                "adverse": 0.3846,
+                "all4": 0.1667
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5875,
+                "benign": 0.8417,
+                "adverse": 0.3333
+              },
+              "bm120_cv2": 0.8688,
+              "bmrel_cv2": 0.9525
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.646,
+                "benign": 0.4792,
+                "adverse": 0.8129,
+                "all4": 0.1067
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5958,
+                "benign": 0.9333,
+                "adverse": 0.2583
+              },
+              "bm120_cv2": 0.7804,
+              "bmrel_cv2": 0.9617
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.6756,
+                "benign": 0.9017,
+                "adverse": 0.4496,
+                "all4": 0.2175
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5667,
+                "benign": 0.9083,
+                "adverse": 0.225
+              },
+              "bm120_cv2": 0.8654,
+              "bmrel_cv2": 0.9496
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6748,
+              "actor_cv2_adv": 0.5102,
+              "actor_cv2_all4": 0.2028,
+              "zs_bmneut_acc": 0.5717
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6841,
+              "actor_cv2_adv": 0.4294,
+              "actor_cv2_all4": 0.23,
+              "zs_bmneut_acc": 0.5653
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6608,
+              "actor_cv2_adv": 0.6312,
+              "actor_cv2_all4": 0.1621,
+              "zs_bmneut_acc": 0.5813
+            }
+          }
+        }
+      },
+      "gemma_to_rival": {
+        "mean": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7654,
+                "benign": 0.8787,
+                "adverse": 0.6521,
+                "all4": 0.3275
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6583,
+                "benign": 0.7417,
+                "adverse": 0.575
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7469,
+                "benign": 0.7804,
+                "adverse": 0.7133,
+                "all4": 0.245
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6833,
+                "benign": 0.5833,
+                "adverse": 0.7833
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.7404,
+                "benign": 0.6217,
+                "adverse": 0.8592,
+                "all4": 0.255
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6375,
+                "benign": 0.5333,
+                "adverse": 0.7417
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6198,
+                "benign": 0.91,
+                "adverse": 0.3296,
+                "all4": 0.0925
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5875,
+                "benign": 0.6917,
+                "adverse": 0.4833
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.756,
+                "benign": 0.8321,
+                "adverse": 0.68,
+                "all4": 0.3158
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6208,
+                "benign": 0.6417,
+                "adverse": 0.6
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7257,
+              "actor_cv2_adv": 0.6468,
+              "actor_cv2_all4": 0.2472,
+              "zs_bmneut_acc": 0.6375
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7509,
+              "actor_cv2_adv": 0.7415,
+              "actor_cv2_all4": 0.2758,
+              "zs_bmneut_acc": 0.6597
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6879,
+              "actor_cv2_adv": 0.5048,
+              "actor_cv2_all4": 0.2041,
+              "zs_bmneut_acc": 0.6041
+            }
+          }
+        },
+        "last": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.5929,
+                "benign": 0.9529,
+                "adverse": 0.2329,
+                "all4": 0.0575
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5292,
+                "benign": 0.9333,
+                "adverse": 0.125
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.6577,
+                "benign": 0.8846,
+                "adverse": 0.4308,
+                "all4": 0.1567
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6125,
+                "benign": 0.7,
+                "adverse": 0.525
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6379,
+                "benign": 0.9217,
+                "adverse": 0.3542,
+                "all4": 0.1225
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5333,
+                "benign": 0.85,
+                "adverse": 0.2167
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.5869,
+                "benign": 0.8287,
+                "adverse": 0.345,
+                "all4": 0.0983
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5375,
+                "benign": 0.8833,
+                "adverse": 0.1917
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.5963,
+                "benign": 0.9279,
+                "adverse": 0.2646,
+                "all4": 0.0592
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5583,
+                "benign": 0.8583,
+                "adverse": 0.2583
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6143,
+              "actor_cv2_adv": 0.3255,
+              "actor_cv2_all4": 0.0988,
+              "zs_bmneut_acc": 0.5542
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6295,
+              "actor_cv2_adv": 0.3393,
+              "actor_cv2_all4": 0.1122,
+              "zs_bmneut_acc": 0.5583
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.5916,
+              "actor_cv2_adv": 0.3048,
+              "actor_cv2_all4": 0.0788,
+              "zs_bmneut_acc": 0.5479
+            }
+          }
+        }
+      },
+      "house_L20": {
+        "house_2f_acc": 0.9571,
+        "self2_2f_acc": 0.9873,
+        "house_to_self2_acc": 0.9873
+      }
+    },
+    "ctrl50": {
+      "within_native": {
+        "mean": {
+          "bm_actor2x2_247": {
+            "acc": 0.8121,
+            "benign": 0.9379,
+            "adverse": 0.6863,
+            "all4": 0.4992
+          },
+          "bm120": 0.89,
+          "bm_rel242": 0.9667,
+          "bm_neut245": 0.9958
+        },
+        "last": {
+          "bm_actor2x2_247": {
+            "acc": 0.7302,
+            "benign": 0.9163,
+            "adverse": 0.5442,
+            "all4": 0.2983
+          },
+          "bm120": 0.9425,
+          "bm_rel242": 0.9683,
+          "bm_neut245": 0.9921
+        }
+      },
+      "within_256d": {
+        "mean": {
+          "acc": 0.8177,
+          "benign": 0.9283,
+          "adverse": 0.7071,
+          "all4": 0.5042
+        },
+        "last": {
+          "acc": 0.7242,
+          "benign": 0.92,
+          "adverse": 0.5283,
+          "all4": 0.2775
+        }
+      },
+      "rival_to_gemma": {
+        "mean": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7679,
+                "benign": 0.9346,
+                "adverse": 0.6013,
+                "all4": 0.3858
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6833,
+                "benign": 0.775,
+                "adverse": 0.5917
+              },
+              "bm120_cv2": 0.8525,
+              "bmrel_cv2": 0.9487
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7465,
+                "benign": 0.8567,
+                "adverse": 0.6363,
+                "all4": 0.3258
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6542,
+                "benign": 0.6167,
+                "adverse": 0.6917
+              },
+              "bm120_cv2": 0.8588,
+              "bmrel_cv2": 0.9483
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.764,
+                "benign": 0.9279,
+                "adverse": 0.6,
+                "all4": 0.39
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6708,
+                "benign": 0.6667,
+                "adverse": 0.675
+              },
+              "bm120_cv2": 0.8388,
+              "bmrel_cv2": 0.9492
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.7285,
+                "benign": 0.7042,
+                "adverse": 0.7529,
+                "all4": 0.2342
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6417,
+                "benign": 0.6083,
+                "adverse": 0.675
+              },
+              "bm120_cv2": 0.8342,
+              "bmrel_cv2": 0.9429
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.7748,
+                "benign": 0.8838,
+                "adverse": 0.6658,
+                "all4": 0.3683
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6375,
+                "benign": 0.65,
+                "adverse": 0.625
+              },
+              "bm120_cv2": 0.8446,
+              "bmrel_cv2": 0.9554
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7563,
+              "actor_cv2_adv": 0.6513,
+              "actor_cv2_all4": 0.3408,
+              "zs_bmneut_acc": 0.6575
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7595,
+              "actor_cv2_adv": 0.6125,
+              "actor_cv2_all4": 0.3672,
+              "zs_bmneut_acc": 0.6694
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.7517,
+              "actor_cv2_adv": 0.7093,
+              "actor_cv2_all4": 0.3013,
+              "zs_bmneut_acc": 0.6396
+            }
+          }
+        },
+        "last": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.6954,
+                "benign": 0.965,
+                "adverse": 0.4258,
+                "all4": 0.2392
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5667,
+                "benign": 0.9333,
+                "adverse": 0.2
+              },
+              "bm120_cv2": 0.9033,
+              "bmrel_cv2": 0.9617
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.6931,
+                "benign": 0.9338,
+                "adverse": 0.4525,
+                "all4": 0.26
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5417,
+                "benign": 0.9417,
+                "adverse": 0.1417
+              },
+              "bm120_cv2": 0.8558,
+              "bmrel_cv2": 0.9542
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6594,
+                "benign": 0.9233,
+                "adverse": 0.3954,
+                "all4": 0.1792
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5792,
+                "benign": 0.8583,
+                "adverse": 0.3
+              },
+              "bm120_cv2": 0.8713,
+              "bmrel_cv2": 0.9504
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6483,
+                "benign": 0.4825,
+                "adverse": 0.8142,
+                "all4": 0.1025
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5958,
+                "benign": 0.9417,
+                "adverse": 0.25
+              },
+              "bm120_cv2": 0.78,
+              "bmrel_cv2": 0.9667
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.6758,
+                "benign": 0.9171,
+                "adverse": 0.4346,
+                "all4": 0.2167
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5625,
+                "benign": 0.9333,
+                "adverse": 0.1917
+              },
+              "bm120_cv2": 0.8675,
+              "bmrel_cv2": 0.945
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6744,
+              "actor_cv2_adv": 0.5045,
+              "actor_cv2_all4": 0.1995,
+              "zs_bmneut_acc": 0.5692
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6826,
+              "actor_cv2_adv": 0.4246,
+              "actor_cv2_all4": 0.2261,
+              "zs_bmneut_acc": 0.5625
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6621,
+              "actor_cv2_adv": 0.6244,
+              "actor_cv2_all4": 0.1596,
+              "zs_bmneut_acc": 0.5792
+            }
+          }
+        }
+      },
+      "gemma_to_rival": {
+        "mean": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7587,
+                "benign": 0.8796,
+                "adverse": 0.6379,
+                "all4": 0.3192
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6458,
+                "benign": 0.7333,
+                "adverse": 0.5583
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7375,
+                "benign": 0.7954,
+                "adverse": 0.6796,
+                "all4": 0.2483
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6833,
+                "benign": 0.5917,
+                "adverse": 0.775
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.754,
+                "benign": 0.6571,
+                "adverse": 0.8508,
+                "all4": 0.2925
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6375,
+                "benign": 0.525,
+                "adverse": 0.75
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6171,
+                "benign": 0.9154,
+                "adverse": 0.3187,
+                "all4": 0.0858
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5792,
+                "benign": 0.7,
+                "adverse": 0.4583
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.759,
+                "benign": 0.8517,
+                "adverse": 0.6663,
+                "all4": 0.3333
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6417,
+                "benign": 0.65,
+                "adverse": 0.6333
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7253,
+              "actor_cv2_adv": 0.6307,
+              "actor_cv2_all4": 0.2558,
+              "zs_bmneut_acc": 0.6375
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7501,
+              "actor_cv2_adv": 0.7228,
+              "actor_cv2_all4": 0.2867,
+              "zs_bmneut_acc": 0.6555
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6881,
+              "actor_cv2_adv": 0.4925,
+              "actor_cv2_all4": 0.2095,
+              "zs_bmneut_acc": 0.6105
+            }
+          }
+        },
+        "last": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.5896,
+                "benign": 0.9512,
+                "adverse": 0.2279,
+                "all4": 0.0467
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5042,
+                "benign": 0.9167,
+                "adverse": 0.0917
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.6515,
+                "benign": 0.8925,
+                "adverse": 0.4104,
+                "all4": 0.1533
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6042,
+                "benign": 0.7917,
+                "adverse": 0.4167
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6331,
+                "benign": 0.92,
+                "adverse": 0.3462,
+                "all4": 0.1133
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5333,
+                "benign": 0.875,
+                "adverse": 0.1917
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.5969,
+                "benign": 0.8162,
+                "adverse": 0.3775,
+                "all4": 0.0975
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5167,
+                "benign": 0.9167,
+                "adverse": 0.1167
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.5925,
+                "benign": 0.93,
+                "adverse": 0.255,
+                "all4": 0.0558
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5625,
+                "benign": 0.925,
+                "adverse": 0.2
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6127,
+              "actor_cv2_adv": 0.3234,
+              "actor_cv2_all4": 0.0933,
+              "zs_bmneut_acc": 0.5442
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6247,
+              "actor_cv2_adv": 0.3282,
+              "actor_cv2_all4": 0.1044,
+              "zs_bmneut_acc": 0.5472
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.5947,
+              "actor_cv2_adv": 0.3163,
+              "actor_cv2_all4": 0.0766,
+              "zs_bmneut_acc": 0.5396
+            }
+          }
+        }
+      },
+      "house_L20": {
+        "house_2f_acc": 0.9442,
+        "self2_2f_acc": 0.9747,
+        "house_to_self2_acc": 0.9873
+      }
+    },
+    "c3_50": {
+      "within_native": {
+        "mean": {
+          "bm_actor2x2_247": {
+            "acc": 0.8098,
+            "benign": 0.9362,
+            "adverse": 0.6833,
+            "all4": 0.49
+          },
+          "bm120": 0.8883,
+          "bm_rel242": 0.9696,
+          "bm_neut245": 0.995
+        },
+        "last": {
+          "bm_actor2x2_247": {
+            "acc": 0.7377,
+            "benign": 0.9325,
+            "adverse": 0.5429,
+            "all4": 0.3142
+          },
+          "bm120": 0.9442,
+          "bm_rel242": 0.9654,
+          "bm_neut245": 0.9917
+        }
+      },
+      "within_256d": {
+        "mean": {
+          "acc": 0.8148,
+          "benign": 0.9279,
+          "adverse": 0.7017,
+          "all4": 0.4917
+        },
+        "last": {
+          "acc": 0.7292,
+          "benign": 0.9421,
+          "adverse": 0.5162,
+          "all4": 0.2883
+        }
+      },
+      "rival_to_gemma": {
+        "mean": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7671,
+                "benign": 0.9417,
+                "adverse": 0.5925,
+                "all4": 0.3842
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6833,
+                "benign": 0.7583,
+                "adverse": 0.6083
+              },
+              "bm120_cv2": 0.85,
+              "bmrel_cv2": 0.955
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7448,
+                "benign": 0.8546,
+                "adverse": 0.635,
+                "all4": 0.3158
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6417,
+                "benign": 0.6,
+                "adverse": 0.6833
+              },
+              "bm120_cv2": 0.8629,
+              "bmrel_cv2": 0.9508
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.7581,
+                "benign": 0.9292,
+                "adverse": 0.5871,
+                "all4": 0.3842
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6667,
+                "benign": 0.6583,
+                "adverse": 0.675
+              },
+              "bm120_cv2": 0.8379,
+              "bmrel_cv2": 0.9487
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.729,
+                "benign": 0.685,
+                "adverse": 0.7729,
+                "all4": 0.2208
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6417,
+                "benign": 0.625,
+                "adverse": 0.6583
+              },
+              "bm120_cv2": 0.8367,
+              "bmrel_cv2": 0.9483
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.7735,
+                "benign": 0.8821,
+                "adverse": 0.665,
+                "all4": 0.3642
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6167,
+                "benign": 0.6167,
+                "adverse": 0.6167
+              },
+              "bm120_cv2": 0.8412,
+              "bmrel_cv2": 0.9558
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7545,
+              "actor_cv2_adv": 0.6505,
+              "actor_cv2_all4": 0.3338,
+              "zs_bmneut_acc": 0.65
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7567,
+              "actor_cv2_adv": 0.6049,
+              "actor_cv2_all4": 0.3614,
+              "zs_bmneut_acc": 0.6639
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.7512,
+              "actor_cv2_adv": 0.7189,
+              "actor_cv2_all4": 0.2925,
+              "zs_bmneut_acc": 0.6292
+            }
+          }
+        },
+        "last": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.6942,
+                "benign": 0.9587,
+                "adverse": 0.4296,
+                "all4": 0.2558
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5667,
+                "benign": 0.9,
+                "adverse": 0.2333
+              },
+              "bm120_cv2": 0.8996,
+              "bmrel_cv2": 0.965
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7035,
+                "benign": 0.9442,
+                "adverse": 0.4629,
+                "all4": 0.2775
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5375,
+                "benign": 0.9583,
+                "adverse": 0.1167
+              },
+              "bm120_cv2": 0.8562,
+              "bmrel_cv2": 0.955
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6827,
+                "benign": 0.9533,
+                "adverse": 0.4121,
+                "all4": 0.2442
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5833,
+                "benign": 0.8917,
+                "adverse": 0.275
+              },
+              "bm120_cv2": 0.8846,
+              "bmrel_cv2": 0.9587
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6371,
+                "benign": 0.4667,
+                "adverse": 0.8075,
+                "all4": 0.12
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5917,
+                "benign": 0.95,
+                "adverse": 0.2333
+              },
+              "bm120_cv2": 0.7983,
+              "bmrel_cv2": 0.9637
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.6808,
+                "benign": 0.9221,
+                "adverse": 0.4396,
+                "all4": 0.2392
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5625,
+                "benign": 0.9667,
+                "adverse": 0.1583
+              },
+              "bm120_cv2": 0.8875,
+              "bmrel_cv2": 0.9521
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6797,
+              "actor_cv2_adv": 0.5103,
+              "actor_cv2_all4": 0.2273,
+              "zs_bmneut_acc": 0.5683
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6935,
+              "actor_cv2_adv": 0.4349,
+              "actor_cv2_all4": 0.2592,
+              "zs_bmneut_acc": 0.5625
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6589,
+              "actor_cv2_adv": 0.6236,
+              "actor_cv2_all4": 0.1796,
+              "zs_bmneut_acc": 0.5771
+            }
+          }
+        }
+      },
+      "gemma_to_rival": {
+        "mean": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7533,
+                "benign": 0.8783,
+                "adverse": 0.6283,
+                "all4": 0.3108
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6542,
+                "benign": 0.75,
+                "adverse": 0.5583
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7367,
+                "benign": 0.8058,
+                "adverse": 0.6675,
+                "all4": 0.24
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6917,
+                "benign": 0.6083,
+                "adverse": 0.775
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.7533,
+                "benign": 0.6621,
+                "adverse": 0.8446,
+                "all4": 0.2983
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6417,
+                "benign": 0.55,
+                "adverse": 0.7333
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6213,
+                "benign": 0.9192,
+                "adverse": 0.3233,
+                "all4": 0.0867
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5833,
+                "benign": 0.7,
+                "adverse": 0.4667
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.7642,
+                "benign": 0.8738,
+                "adverse": 0.6546,
+                "all4": 0.345
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6292,
+                "benign": 0.6417,
+                "adverse": 0.6167
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7258,
+              "actor_cv2_adv": 0.6237,
+              "actor_cv2_all4": 0.2562,
+              "zs_bmneut_acc": 0.64
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7478,
+              "actor_cv2_adv": 0.7135,
+              "actor_cv2_all4": 0.283,
+              "zs_bmneut_acc": 0.6625
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6927,
+              "actor_cv2_adv": 0.4889,
+              "actor_cv2_all4": 0.2158,
+              "zs_bmneut_acc": 0.6062
+            }
+          }
+        },
+        "last": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.5788,
+                "benign": 0.9571,
+                "adverse": 0.2004,
+                "all4": 0.0658
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5167,
+                "benign": 0.9333,
+                "adverse": 0.1
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.659,
+                "benign": 0.8967,
+                "adverse": 0.4213,
+                "all4": 0.1525
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6,
+                "benign": 0.7583,
+                "adverse": 0.4417
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.66,
+                "benign": 0.9133,
+                "adverse": 0.4067,
+                "all4": 0.1683
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5208,
+                "benign": 0.8583,
+                "adverse": 0.1833
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.5975,
+                "benign": 0.8396,
+                "adverse": 0.3554,
+                "all4": 0.0958
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5208,
+                "benign": 0.875,
+                "adverse": 0.1667
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.5858,
+                "benign": 0.9313,
+                "adverse": 0.2404,
+                "all4": 0.0525
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6,
+                "benign": 0.9,
+                "adverse": 0.3
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6162,
+              "actor_cv2_adv": 0.3248,
+              "actor_cv2_all4": 0.107,
+              "zs_bmneut_acc": 0.5517
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6326,
+              "actor_cv2_adv": 0.3428,
+              "actor_cv2_all4": 0.1289,
+              "zs_bmneut_acc": 0.5458
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.5917,
+              "actor_cv2_adv": 0.2979,
+              "actor_cv2_all4": 0.0741,
+              "zs_bmneut_acc": 0.5604
+            }
+          }
+        }
+      },
+      "house_L20": {
+        "house_2f_acc": 0.9399,
+        "self2_2f_acc": 0.9873,
+        "house_to_self2_acc": 1.0
+      }
+    },
+    "c4_50": {
+      "within_native": {
+        "mean": {
+          "bm_actor2x2_247": {
+            "acc": 0.8117,
+            "benign": 0.9367,
+            "adverse": 0.6867,
+            "all4": 0.4975
+          },
+          "bm120": 0.8867,
+          "bm_rel242": 0.9683,
+          "bm_neut245": 0.9958
+        },
+        "last": {
+          "bm_actor2x2_247": {
+            "acc": 0.7306,
+            "benign": 0.9275,
+            "adverse": 0.5337,
+            "all4": 0.2992
+          },
+          "bm120": 0.9437,
+          "bm_rel242": 0.9654,
+          "bm_neut245": 0.9929
+        }
+      },
+      "within_256d": {
+        "mean": {
+          "acc": 0.8175,
+          "benign": 0.9313,
+          "adverse": 0.7037,
+          "all4": 0.5042
+        },
+        "last": {
+          "acc": 0.7288,
+          "benign": 0.9363,
+          "adverse": 0.5212,
+          "all4": 0.2775
+        }
+      },
+      "rival_to_gemma": {
+        "mean": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.77,
+                "benign": 0.9404,
+                "adverse": 0.5996,
+                "all4": 0.3942
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6875,
+                "benign": 0.7583,
+                "adverse": 0.6167
+              },
+              "bm120_cv2": 0.8587,
+              "bmrel_cv2": 0.9529
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.749,
+                "benign": 0.8567,
+                "adverse": 0.6413,
+                "all4": 0.3342
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6542,
+                "benign": 0.6167,
+                "adverse": 0.6917
+              },
+              "bm120_cv2": 0.8629,
+              "bmrel_cv2": 0.9487
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.7583,
+                "benign": 0.9304,
+                "adverse": 0.5862,
+                "all4": 0.38
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6667,
+                "benign": 0.6583,
+                "adverse": 0.675
+              },
+              "bm120_cv2": 0.8417,
+              "bmrel_cv2": 0.9467
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.7302,
+                "benign": 0.6942,
+                "adverse": 0.7663,
+                "all4": 0.2283
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6375,
+                "benign": 0.6167,
+                "adverse": 0.6583
+              },
+              "bm120_cv2": 0.8362,
+              "bmrel_cv2": 0.9471
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.7742,
+                "benign": 0.8804,
+                "adverse": 0.6679,
+                "all4": 0.3667
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6125,
+                "benign": 0.6083,
+                "adverse": 0.6167
+              },
+              "bm120_cv2": 0.8433,
+              "bmrel_cv2": 0.9567
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.7563,
+              "actor_cv2_adv": 0.6523,
+              "actor_cv2_all4": 0.3407,
+              "zs_bmneut_acc": 0.6517
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7591,
+              "actor_cv2_adv": 0.609,
+              "actor_cv2_all4": 0.3695,
+              "zs_bmneut_acc": 0.6695
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.7522,
+              "actor_cv2_adv": 0.7171,
+              "actor_cv2_all4": 0.2975,
+              "zs_bmneut_acc": 0.625
+            }
+          }
+        },
+        "last": {
+          "per_source": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.6927,
+                "benign": 0.9646,
+                "adverse": 0.4208,
+                "all4": 0.2483
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5583,
+                "benign": 0.925,
+                "adverse": 0.1917
+              },
+              "bm120_cv2": 0.9067,
+              "bmrel_cv2": 0.9654
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7008,
+                "benign": 0.9487,
+                "adverse": 0.4529,
+                "all4": 0.2583
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5417,
+                "benign": 0.9417,
+                "adverse": 0.1417
+              },
+              "bm120_cv2": 0.8533,
+              "bmrel_cv2": 0.9504
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6656,
+                "benign": 0.9483,
+                "adverse": 0.3829,
+                "all4": 0.205
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.575,
+                "benign": 0.8917,
+                "adverse": 0.2583
+              },
+              "bm120_cv2": 0.8762,
+              "bmrel_cv2": 0.9537
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6485,
+                "benign": 0.4817,
+                "adverse": 0.8154,
+                "all4": 0.1225
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5875,
+                "benign": 0.9333,
+                "adverse": 0.2417
+              },
+              "bm120_cv2": 0.7875,
+              "bmrel_cv2": 0.9629
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.6746,
+                "benign": 0.9242,
+                "adverse": 0.425,
+                "all4": 0.23
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5542,
+                "benign": 0.9583,
+                "adverse": 0.15
+              },
+              "bm120_cv2": 0.8817,
+              "bmrel_cv2": 0.9492
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6764,
+              "actor_cv2_adv": 0.4994,
+              "actor_cv2_all4": 0.2128,
+              "zs_bmneut_acc": 0.5633
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6864,
+              "actor_cv2_adv": 0.4189,
+              "actor_cv2_all4": 0.2372,
+              "zs_bmneut_acc": 0.5583
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6615,
+              "actor_cv2_adv": 0.6202,
+              "actor_cv2_all4": 0.1763,
+              "zs_bmneut_acc": 0.5709
+            }
+          }
+        }
+      },
+      "gemma_to_rival": {
+        "mean": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.7529,
+                "benign": 0.8787,
+                "adverse": 0.6271,
+                "all4": 0.3042
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6375,
+                "benign": 0.725,
+                "adverse": 0.55
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.7375,
+                "benign": 0.805,
+                "adverse": 0.67,
+                "all4": 0.2442
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6833,
+                "benign": 0.5917,
+                "adverse": 0.775
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.7533,
+                "benign": 0.66,
+                "adverse": 0.8467,
+                "all4": 0.295
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6292,
+                "benign": 0.5083,
+                "adverse": 0.75
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.6198,
+                "benign": 0.92,
+                "adverse": 0.3196,
+                "all4": 0.0883
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5833,
+                "benign": 0.6833,
+                "adverse": 0.4833
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.7617,
+                "benign": 0.8725,
+                "adverse": 0.6508,
+                "all4": 0.3425
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.625,
+                "benign": 0.6417,
+                "adverse": 0.6083
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.725,
+              "actor_cv2_adv": 0.6228,
+              "actor_cv2_all4": 0.2548,
+              "zs_bmneut_acc": 0.6317
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.7479,
+              "actor_cv2_adv": 0.7146,
+              "actor_cv2_all4": 0.2811,
+              "zs_bmneut_acc": 0.65
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.6907,
+              "actor_cv2_adv": 0.4852,
+              "actor_cv2_all4": 0.2154,
+              "zs_bmneut_acc": 0.6041
+            }
+          }
+        },
+        "last": {
+          "per_target": {
+            "qwen35_9b": {
+              "actor_cv2": {
+                "acc": 0.5813,
+                "benign": 0.96,
+                "adverse": 0.2025,
+                "all4": 0.0525
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5167,
+                "benign": 0.9333,
+                "adverse": 0.1
+              }
+            },
+            "llama31_8b": {
+              "actor_cv2": {
+                "acc": 0.6477,
+                "benign": 0.9079,
+                "adverse": 0.3875,
+                "all4": 0.1467
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6083,
+                "benign": 0.7583,
+                "adverse": 0.4583
+              }
+            },
+            "mistral7b": {
+              "actor_cv2": {
+                "acc": 0.6388,
+                "benign": 0.9129,
+                "adverse": 0.3646,
+                "all4": 0.1333
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5292,
+                "benign": 0.875,
+                "adverse": 0.1833
+              }
+            },
+            "phi4_mini": {
+              "actor_cv2": {
+                "acc": 0.5892,
+                "benign": 0.8371,
+                "adverse": 0.3412,
+                "all4": 0.0817
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.5417,
+                "benign": 0.8917,
+                "adverse": 0.1917
+              }
+            },
+            "olmo3_7b": {
+              "actor_cv2": {
+                "acc": 0.5796,
+                "benign": 0.935,
+                "adverse": 0.2242,
+                "all4": 0.0467
+              },
+              "zs_bmneut_to_actor": {
+                "acc": 0.6125,
+                "benign": 0.8833,
+                "adverse": 0.3417
+              }
+            }
+          },
+          "summary": {
+            "all5": {
+              "actor_cv2_acc": 0.6073,
+              "actor_cv2_adv": 0.304,
+              "actor_cv2_all4": 0.0922,
+              "zs_bmneut_acc": 0.5617
+            },
+            "teacher3": {
+              "actor_cv2_acc": 0.6226,
+              "actor_cv2_adv": 0.3182,
+              "actor_cv2_all4": 0.1108,
+              "zs_bmneut_acc": 0.5514
+            },
+            "blind2_phi4_olmo": {
+              "actor_cv2_acc": 0.5844,
+              "actor_cv2_adv": 0.2827,
+              "actor_cv2_all4": 0.0642,
+              "zs_bmneut_acc": 0.5771
+            }
+          }
+        }
+      },
+      "house_L20": {
+        "house_2f_acc": 0.9528,
+        "self2_2f_acc": 0.9873,
+        "house_to_self2_acc": 1.0
+      }
+    }
+  },
+  "probing_50pct_paired_deltas": {
+    "c3_50_minus_ctrl50": {
+      "within_native_actor_mean": {
+        "obs": -0.00229,
+        "ci95_pct": [
+          -0.00646,
+          0.00146
+        ],
+        "ci95_basic": [
+          -0.00604,
+          0.00188
+        ]
+      },
+      "r2g_cv2_all5": {
+        "obs": -0.00183,
+        "ci95_pct": [
+          -0.00583,
+          0.00237
+        ],
+        "ci95_basic": [
+          -0.00604,
+          0.00217
+        ]
+      },
+      "g2r_cv2_all5": {
+        "obs": 0.0005,
+        "ci95_pct": [
+          -0.00308,
+          0.00462
+        ],
+        "ci95_basic": [
+          -0.00363,
+          0.00408
+        ]
+      },
+      "r2g_zs_all5": {
+        "obs": -0.0075,
+        "ci95_pct": [
+          -0.01667,
+          0.00167
+        ],
+        "ci95_basic": [
+          -0.01667,
+          0.00167
+        ]
+      },
+      "g2r_zs_all5": {
+        "obs": 0.0025,
+        "ci95_pct": [
+          -0.00667,
+          0.01083
+        ],
+        "ci95_basic": [
+          -0.00583,
+          0.01167
+        ]
+      },
+      "r2g_cv2_teacher3": {
+        "obs": -0.00278,
+        "ci95_pct": [
+          -0.00799,
+          0.00215
+        ],
+        "ci95_basic": [
+          -0.00771,
+          0.00243
+        ]
+      },
+      "g2r_cv2_teacher3": {
+        "obs": -0.00229,
+        "ci95_pct": [
+          -0.00618,
+          0.00174
+        ],
+        "ci95_basic": [
+          -0.00632,
+          0.0016
+        ]
+      },
+      "r2g_zs_teacher3": {
+        "obs": -0.00556,
+        "ci95_pct": [
+          -0.01806,
+          0.00556
+        ],
+        "ci95_basic": [
+          -0.01667,
+          0.00694
+        ]
+      },
+      "g2r_zs_teacher3": {
+        "obs": 0.00694,
+        "ci95_pct": [
+          -0.00417,
+          0.01806
+        ],
+        "ci95_basic": [
+          -0.00417,
+          0.01806
+        ]
+      },
+      "r2g_cv2_blind2_phi4_olmo": {
+        "obs": -0.00042,
+        "ci95_pct": [
+          -0.00542,
+          0.00531
+        ],
+        "ci95_basic": [
+          -0.00615,
+          0.00458
+        ]
+      },
+      "g2r_cv2_blind2_phi4_olmo": {
+        "obs": 0.00469,
+        "ci95_pct": [
+          -0.00198,
+          0.01167
+        ],
+        "ci95_basic": [
+          -0.00229,
+          0.01135
+        ]
+      },
+      "r2g_zs_blind2_phi4_olmo": {
+        "obs": -0.01042,
+        "ci95_pct": [
+          -0.02292,
+          0.00208
+        ],
+        "ci95_basic": [
+          -0.02292,
+          0.00208
+        ]
+      },
+      "g2r_zs_blind2_phi4_olmo": {
+        "obs": -0.00417,
+        "ci95_pct": [
+          -0.02083,
+          0.0125
+        ],
+        "ci95_basic": [
+          -0.02083,
+          0.0125
+        ]
+      },
+      "held_gut_nll_delta": {
+        "obs": 0.00468,
+        "ci95_pct": [
+          0.00025,
+          0.00916
+        ],
+        "ci95_basic": [
+          0.00019,
+          0.0091
+        ]
+      },
+      "proc_held_with_delta": {
+        "obs": 0.005,
+        "ci95_pct": [
+          -0.0075,
+          0.02
+        ],
+        "ci95_basic": [
+          -0.01,
+          0.0175
+        ]
+      }
+    },
+    "c3_50_minus_base": {
+      "within_native_actor_mean": {
+        "obs": -0.00583,
+        "ci95_pct": [
+          -0.01312,
+          0.00063
+        ],
+        "ci95_basic": [
+          -0.01229,
+          0.00146
+        ]
+      },
+      "r2g_cv2_all5": {
+        "obs": -0.00729,
+        "ci95_pct": [
+          -0.01288,
+          -0.00133
+        ],
+        "ci95_basic": [
+          -0.01325,
+          -0.00171
+        ]
+      },
+      "g2r_cv2_all5": {
+        "obs": 4e-05,
+        "ci95_pct": [
+          -0.00621,
+          0.0065
+        ],
+        "ci95_basic": [
+          -0.00642,
+          0.00629
+        ]
+      },
+      "r2g_zs_all5": {
+        "obs": -0.00917,
+        "ci95_pct": [
+          -0.02167,
+          0.00417
+        ],
+        "ci95_basic": [
+          -0.0225,
+          0.00333
+        ]
+      },
+      "g2r_zs_all5": {
+        "obs": 0.0025,
+        "ci95_pct": [
+          -0.00585,
+          0.01167
+        ],
+        "ci95_basic": [
+          -0.00667,
+          0.01085
+        ]
+      },
+      "r2g_cv2_teacher3": {
+        "obs": -0.01083,
+        "ci95_pct": [
+          -0.01861,
+          -0.00291
+        ],
+        "ci95_basic": [
+          -0.01875,
+          -0.00305
+        ]
+      },
+      "g2r_cv2_teacher3": {
+        "obs": -0.00313,
+        "ci95_pct": [
+          -0.01077,
+          0.00424
+        ],
+        "ci95_basic": [
+          -0.01049,
+          0.00452
+        ]
+      },
+      "r2g_zs_teacher3": {
+        "obs": -0.0125,
+        "ci95_pct": [
+          -0.03059,
+          0.00556
+        ],
+        "ci95_basic": [
+          -0.03056,
+          0.00559
+        ]
+      },
+      "g2r_zs_teacher3": {
+        "obs": 0.00278,
+        "ci95_pct": [
+          -0.00972,
+          0.01528
+        ],
+        "ci95_basic": [
+          -0.00972,
+          0.01528
+        ]
+      },
+      "r2g_cv2_blind2_phi4_olmo": {
+        "obs": -0.00198,
+        "ci95_pct": [
+          -0.0076,
+          0.00354
+        ],
+        "ci95_basic": [
+          -0.0075,
+          0.00365
+        ]
+      },
+      "g2r_cv2_blind2_phi4_olmo": {
+        "obs": 0.00479,
+        "ci95_pct": [
+          -0.00698,
+          0.01729
+        ],
+        "ci95_basic": [
+          -0.00771,
+          0.01656
+        ]
+      },
+      "r2g_zs_blind2_phi4_olmo": {
+        "obs": -0.00417,
+        "ci95_pct": [
+          -0.02083,
+          0.0125
+        ],
+        "ci95_basic": [
+          -0.02083,
+          0.0125
+        ]
+      },
+      "g2r_zs_blind2_phi4_olmo": {
+        "obs": 0.00208,
+        "ci95_pct": [
+          -0.01042,
+          0.01667
+        ],
+        "ci95_basic": [
+          -0.0125,
+          0.01458
+        ]
+      }
+    },
+    "c4_50_minus_ctrl50": {
+      "within_native_actor_mean": {
+        "obs": -0.00042,
+        "ci95_pct": [
+          -0.00313,
+          0.00229
+        ],
+        "ci95_basic": [
+          -0.00313,
+          0.00229
+        ]
+      },
+      "r2g_cv2_all5": {
+        "obs": -0.0,
+        "ci95_pct": [
+          -0.00246,
+          0.00246
+        ],
+        "ci95_basic": [
+          -0.00246,
+          0.00246
+        ]
+      },
+      "g2r_cv2_all5": {
+        "obs": -0.00021,
+        "ci95_pct": [
+          -0.00371,
+          0.00362
+        ],
+        "ci95_basic": [
+          -0.00404,
+          0.00329
+        ]
+      },
+      "r2g_zs_all5": {
+        "obs": -0.00583,
+        "ci95_pct": [
+          -0.01333,
+          0.00083
+        ],
+        "ci95_basic": [
+          -0.0125,
+          0.00167
+        ]
+      },
+      "g2r_zs_all5": {
+        "obs": -0.00583,
+        "ci95_pct": [
+          -0.01333,
+          0.00167
+        ],
+        "ci95_basic": [
+          -0.01333,
+          0.00167
+        ]
+      },
+      "r2g_cv2_teacher3": {
+        "obs": -0.00035,
+        "ci95_pct": [
+          -0.00431,
+          0.0032
+        ],
+        "ci95_basic": [
+          -0.00389,
+          0.00361
+        ]
+      },
+      "g2r_cv2_teacher3": {
+        "obs": -0.00215,
+        "ci95_pct": [
+          -0.00618,
+          0.00181
+        ],
+        "ci95_basic": [
+          -0.00611,
+          0.00188
+        ]
+      },
+      "r2g_zs_teacher3": {
+        "obs": -0.0,
+        "ci95_pct": [
+          -0.0125,
+          0.01111
+        ],
+        "ci95_basic": [
+          -0.01111,
+          0.0125
+        ]
+      },
+      "g2r_zs_teacher3": {
+        "obs": -0.00556,
+        "ci95_pct": [
+          -0.01528,
+          0.00417
+        ],
+        "ci95_basic": [
+          -0.01528,
+          0.00417
+        ]
+      },
+      "r2g_cv2_blind2_phi4_olmo": {
+        "obs": 0.00052,
+        "ci95_pct": [
+          -0.00271,
+          0.00417
+        ],
+        "ci95_basic": [
+          -0.00313,
+          0.00375
+        ]
+      },
+      "g2r_cv2_blind2_phi4_olmo": {
+        "obs": 0.00271,
+        "ci95_pct": [
+          -0.00354,
+          0.00917
+        ],
+        "ci95_basic": [
+          -0.00375,
+          0.00896
+        ]
+      },
+      "r2g_zs_blind2_phi4_olmo": {
+        "obs": -0.01458,
+        "ci95_pct": [
+          -0.02708,
+          -0.00417
+        ],
+        "ci95_basic": [
+          -0.025,
+          -0.00208
+        ]
+      },
+      "g2r_zs_blind2_phi4_olmo": {
+        "obs": -0.00625,
+        "ci95_pct": [
+          -0.02083,
+          0.00833
+        ],
+        "ci95_basic": [
+          -0.02083,
+          0.00833
+        ]
+      },
+      "held_gut_nll_delta": {
+        "obs": 0.00449,
+        "ci95_pct": [
+          0.0016,
+          0.0075
+        ],
+        "ci95_basic": [
+          0.00147,
+          0.00737
+        ]
+      },
+      "proc_held_with_delta": {
+        "obs": 0.0025,
+        "ci95_pct": [
+          -0.005,
+          0.0125
+        ],
+        "ci95_basic": [
+          -0.0075,
+          0.01
+        ]
+      }
+    },
+    "c4_50_minus_base": {
+      "within_native_actor_mean": {
+        "obs": -0.00396,
+        "ci95_pct": [
+          -0.01021,
+          0.00188
+        ],
+        "ci95_basic": [
+          -0.00979,
+          0.00229
+        ]
+      },
+      "r2g_cv2_all5": {
+        "obs": -0.00546,
+        "ci95_pct": [
+          -0.01046,
+          -0.0005
+        ],
+        "ci95_basic": [
+          -0.01042,
+          -0.00046
+        ]
+      },
+      "g2r_cv2_all5": {
+        "obs": -0.00067,
+        "ci95_pct": [
+          -0.00692,
+          0.00571
+        ],
+        "ci95_basic": [
+          -0.00704,
+          0.00558
+        ]
+      },
+      "r2g_zs_all5": {
+        "obs": -0.0075,
+        "ci95_pct": [
+          -0.01917,
+          0.00417
+        ],
+        "ci95_basic": [
+          -0.01917,
+          0.00417
+        ]
+      },
+      "g2r_zs_all5": {
+        "obs": -0.00583,
+        "ci95_pct": [
+          -0.01417,
+          0.0025
+        ],
+        "ci95_basic": [
+          -0.01417,
+          0.0025
+        ]
+      },
+      "r2g_cv2_teacher3": {
+        "obs": -0.0084,
+        "ci95_pct": [
+          -0.01562,
+          -0.00125
+        ],
+        "ci95_basic": [
+          -0.01556,
+          -0.00118
+        ]
+      },
+      "g2r_cv2_teacher3": {
+        "obs": -0.00299,
+        "ci95_pct": [
+          -0.01063,
+          0.00473
+        ],
+        "ci95_basic": [
+          -0.0107,
+          0.00465
+        ]
+      },
+      "r2g_zs_teacher3": {
+        "obs": -0.00694,
+        "ci95_pct": [
+          -0.02361,
+          0.00972
+        ],
+        "ci95_basic": [
+          -0.02361,
+          0.00972
+        ]
+      },
+      "g2r_zs_teacher3": {
+        "obs": -0.00972,
+        "ci95_pct": [
+          -0.02222,
+          0.00139
+        ],
+        "ci95_basic": [
+          -0.02083,
+          0.00278
+        ]
+      },
+      "r2g_cv2_blind2_phi4_olmo": {
+        "obs": -0.00104,
+        "ci95_pct": [
+          -0.00646,
+          0.0049
+        ],
+        "ci95_basic": [
+          -0.00698,
+          0.00438
+        ]
+      },
+      "g2r_cv2_blind2_phi4_olmo": {
+        "obs": 0.00281,
+        "ci95_pct": [
+          -0.00937,
+          0.0151
+        ],
+        "ci95_basic": [
+          -0.00948,
+          0.015
+        ]
+      },
+      "r2g_zs_blind2_phi4_olmo": {
+        "obs": -0.00833,
+        "ci95_pct": [
+          -0.02292,
+          0.00625
+        ],
+        "ci95_basic": [
+          -0.02292,
+          0.00625
+        ]
+      },
+      "g2r_zs_blind2_phi4_olmo": {
+        "obs": 0.0,
+        "ci95_pct": [
+          -0.0125,
+          0.0125
+        ],
+        "ci95_basic": [
+          -0.0125,
+          0.0125
+        ]
+      }
+    }
+  },
+  "elapsed_sec": 83.5
+}

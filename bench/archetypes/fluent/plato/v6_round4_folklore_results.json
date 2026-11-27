@@ -1,0 +1,1210 @@
+{
+  "elapsed_sec": 62.4,
+  "hygiene_480": {
+    "n_total": 500,
+    "n_kept": 480,
+    "n_excluded": 20,
+    "excluded_aft_idxs": [
+      18,
+      19,
+      49,
+      269,
+      370,
+      450,
+      591,
+      756,
+      764,
+      777,
+      870,
+      881,
+      983,
+      1147,
+      1205,
+      1244,
+      1303,
+      1363,
+      1369,
+      1397
+    ],
+    "n_shorter_than_csv": 442,
+    "adjudicated_provenance_counts_kept": {
+      "non_western": 137,
+      "uncoded_other": 69,
+      "western": 270,
+      "uncoded_us_regional": 1,
+      "missing_metadata": 3
+    }
+  },
+  "bases_480_v_dir": {
+    "Q_jung7_labeled": 0.13803,
+    "PCA7_jung_unlabeled": 0.16013,
+    "PCA7_jung_setcent": 0.15729,
+    "Q_fam7_labeled": 0.11332,
+    "PCA7_fam_unlabeled": 0.13931,
+    "Q_jobs7_labeled": 0.073,
+    "PCA7_jobs_unlabeled": 0.08913
+  },
+  "basis_contrasts_480": {
+    "Q_jung7_minus_PCA7_jung_unlabeled": {
+      "v_a": 0.13803,
+      "v_b": 0.16013,
+      "diff_a_minus_b": -0.0221,
+      "ci95": [
+        -0.04371,
+        -0.00344
+      ],
+      "p_two_sided": 0.016
+    },
+    "Q_jung7_minus_PCA7_jung_setcent": {
+      "v_a": 0.13803,
+      "v_b": 0.15729,
+      "diff_a_minus_b": -0.01926,
+      "ci95": [
+        -0.03014,
+        -0.00817
+      ],
+      "p_two_sided": 0.001
+    },
+    "Q_jung7_minus_Q_fam7": {
+      "v_a": 0.13803,
+      "v_b": 0.11332,
+      "diff_a_minus_b": 0.02471,
+      "ci95": [
+        -0.01794,
+        0.05158
+      ],
+      "p_two_sided": 0.3038
+    },
+    "Q_jung7_minus_Q_jobs7": {
+      "v_a": 0.13803,
+      "v_b": 0.073,
+      "diff_a_minus_b": 0.06502,
+      "ci95": [
+        0.02351,
+        0.0952
+      ],
+      "p_two_sided": 0.001
+    },
+    "Q_fam7_minus_Q_jobs7": {
+      "v_a": 0.11332,
+      "v_b": 0.073,
+      "diff_a_minus_b": 0.04032,
+      "ci95": [
+        0.01563,
+        0.06742
+      ],
+      "p_two_sided": 0.004
+    },
+    "PCA7_jung_minus_PCA7_jobs": {
+      "v_a": 0.16013,
+      "v_b": 0.08913,
+      "diff_a_minus_b": 0.07099,
+      "ci95": [
+        0.02784,
+        0.0945
+      ],
+      "p_two_sided": 0.001
+    },
+    "PCA7_fam_minus_PCA7_jobs": {
+      "v_a": 0.13931,
+      "v_b": 0.08913,
+      "diff_a_minus_b": 0.05018,
+      "ci95": [
+        0.01519,
+        0.07188
+      ],
+      "p_two_sided": 0.006
+    }
+  },
+  "basis_contrasts_480_holm7": {
+    "Q_jung7_minus_PCA7_jung_setcent": 0.007,
+    "Q_jung7_minus_Q_jobs7": 0.007,
+    "PCA7_jung_minus_PCA7_jobs": 0.007,
+    "Q_fam7_minus_Q_jobs7": 0.016,
+    "PCA7_fam_minus_PCA7_jobs": 0.018,
+    "Q_jung7_minus_PCA7_jung_unlabeled": 0.032,
+    "Q_jung7_minus_Q_fam7": 0.3038
+  },
+  "shuffle_nominal_200base": {
+    "jung": {
+      "v_dir": 0.13803,
+      "null_200_mean": 0.09631,
+      "excess": 0.04172,
+      "p_nominal": 0.0149
+    },
+    "fam": {
+      "v_dir": 0.11332,
+      "null_200_mean": 0.10072,
+      "excess": 0.0126,
+      "p_nominal": 0.2736
+    },
+    "jobs": {
+      "v_dir": 0.073,
+      "null_200_mean": 0.06907,
+      "excess": 0.00393,
+      "p_nominal": 0.393
+    }
+  },
+  "five_pair_diagonal_480": {
+    "n_pairs": 5,
+    "mean_cos": -0.1064,
+    "p_perm_upper": 0.9516
+  },
+  "pr_type_preserving_480": {
+    "n_unique_types": 121,
+    "obs_pr_type_weighted": 5.539,
+    "null_mean": 5.8349,
+    "null_sd": 0.5369,
+    "p_lower_tail": 0.2772
+  },
+  "west_to_nonwest_main_480": {
+    "n_train_western": 123,
+    "n_test_non_western": 137,
+    "n_test_unique_types": 70,
+    "majority_class_top1": 0.2993,
+    "lexical_baselines": {
+      "bow_unigram": {
+        "all_10": {
+          "top1": 0.1168,
+          "balanced_acc": 0.1265,
+          "macro_auroc": 0.5204
+        },
+        "9div_10way_argmax": {
+          "top1": 0.1111,
+          "balanced_acc": 0.085,
+          "macro_auroc": 0.515
+        },
+        "9div_9way_argmax": {
+          "top1": 0.1407,
+          "balanced_acc": 0.1091,
+          "macro_auroc": 0.515
+        }
+      },
+      "tfidf_centroid": {
+        "all_10": {
+          "top1": 0.1314,
+          "balanced_acc": 0.1053,
+          "macro_auroc": 0.5514
+        },
+        "9div_10way_argmax": {
+          "top1": 0.1333,
+          "balanced_acc": 0.117,
+          "macro_auroc": 0.5308
+        },
+        "9div_9way_argmax": {
+          "top1": 0.1481,
+          "balanced_acc": 0.1224,
+          "macro_auroc": 0.5308
+        }
+      },
+      "tfidf_ridge": {
+        "all_10": {
+          "top1": 0.0438,
+          "balanced_acc": 0.1373,
+          "macro_auroc": 0.5386
+        },
+        "9div_10way_argmax": {
+          "top1": 0.0296,
+          "balanced_acc": 0.0415,
+          "macro_auroc": 0.522
+        },
+        "9div_9way_argmax": {
+          "top1": 0.0889,
+          "balanced_acc": 0.1231,
+          "macro_auroc": 0.522
+        }
+      }
+    },
+    "neural_c5_perp_val3": {
+      "phi4_mini": {
+        "all_10": {
+          "top1": 0.1971,
+          "balanced_acc": 0.1612,
+          "macro_auroc": 0.6176
+        },
+        "9div_9way_argmax": {
+          "top1": 0.237,
+          "balanced_acc": 0.1974,
+          "macro_auroc": 0.6068
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.3415,
+          "02_Supernatural_Adversary": 0.4444,
+          "03_Supernatural_Spouse": 0.0667,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.25,
+          "07_Supernatural_Power": 0.0909,
+          "08_Religious_Tales": 0.0,
+          "09_Realistic_Wisdom": 0.375,
+          "10_Stupid_Ogre_Devil": 0.0,
+          "11_Jokes_Tricksters": 0.0435
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.05647,
+          "p_chance_auc": 0.0035
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.0347,
+            "bal_ci95": [
+              -0.0312,
+              0.0972
+            ],
+            "bal_p_one": 0.15492,
+            "bal_p_two": 0.30985,
+            "auc_diff": 0.0972,
+            "auc_ci95": [
+              0.0467,
+              0.1405
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.0559,
+            "bal_ci95": [
+              -0.0045,
+              0.1103
+            ],
+            "bal_p_one": 0.03648,
+            "bal_p_two": 0.07296,
+            "auc_diff": 0.0662,
+            "auc_ci95": [
+              0.0074,
+              0.1156
+            ],
+            "auc_p_one": 0.01449,
+            "auc_p_two": 0.02899
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.0238,
+            "bal_ci95": [
+              -0.0542,
+              0.0955
+            ],
+            "bal_p_one": 0.27986,
+            "bal_p_two": 0.55972,
+            "auc_diff": 0.079,
+            "auc_ci95": [
+              0.0157,
+              0.1325
+            ],
+            "auc_p_one": 0.0065,
+            "auc_p_two": 0.01299
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.0621,
+          "bal_ci95": [
+            -0.0055,
+            0.1234
+          ],
+          "bal_p_one": 0.04148,
+          "bal_p_two": 0.08296,
+          "auc_diff": 0.0759,
+          "auc_ci95": [
+            0.011,
+            0.1297
+          ],
+          "auc_p_one": 0.009,
+          "auc_p_two": 0.01799
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.0749,
+          "bal_ci95": [
+            0.0087,
+            0.1435
+          ],
+          "bal_p_one": 0.01649,
+          "bal_p_two": 0.03298,
+          "auc_diff": 0.0759,
+          "auc_ci95": [
+            0.0105,
+            0.1305
+          ],
+          "auc_p_one": 0.01149,
+          "auc_p_two": 0.02299
+        }
+      },
+      "olmo3_7b": {
+        "all_10": {
+          "top1": 0.292,
+          "balanced_acc": 0.2375,
+          "macro_auroc": 0.6286
+        },
+        "9div_9way_argmax": {
+          "top1": 0.3259,
+          "balanced_acc": 0.2748,
+          "macro_auroc": 0.6272
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.4634,
+          "02_Supernatural_Adversary": 0.5556,
+          "03_Supernatural_Spouse": 0.1333,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.3333,
+          "07_Supernatural_Power": 0.0909,
+          "08_Religious_Tales": 0.125,
+          "09_Realistic_Wisdom": 0.5,
+          "10_Stupid_Ogre_Devil": 0.0,
+          "11_Jokes_Tricksters": 0.1739
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.002,
+          "p_chance_auc": 0.0015
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.1111,
+            "bal_ci95": [
+              0.0288,
+              0.1863
+            ],
+            "bal_p_one": 0.0065,
+            "bal_p_two": 0.01299,
+            "auc_diff": 0.1082,
+            "auc_ci95": [
+              0.0571,
+              0.1522
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.1322,
+            "bal_ci95": [
+              0.0511,
+              0.2053
+            ],
+            "bal_p_one": 0.002,
+            "bal_p_two": 0.004,
+            "auc_diff": 0.0772,
+            "auc_ci95": [
+              0.0141,
+              0.1271
+            ],
+            "auc_p_one": 0.007,
+            "auc_p_two": 0.01399
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.1002,
+            "bal_ci95": [
+              0.0165,
+              0.1716
+            ],
+            "bal_p_one": 0.01399,
+            "bal_p_two": 0.02799,
+            "auc_diff": 0.09,
+            "auc_ci95": [
+              0.0228,
+              0.1459
+            ],
+            "auc_p_one": 0.0045,
+            "auc_p_two": 0.009
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.1469,
+          "bal_ci95": [
+            0.0565,
+            0.2273
+          ],
+          "bal_p_one": 0.0005,
+          "bal_p_two": 0.001,
+          "auc_diff": 0.0964,
+          "auc_ci95": [
+            0.0272,
+            0.1518
+          ],
+          "auc_p_one": 0.0045,
+          "auc_p_two": 0.009
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.1523,
+          "bal_ci95": [
+            0.0647,
+            0.2334
+          ],
+          "bal_p_one": 0.001,
+          "bal_p_two": 0.002,
+          "auc_diff": 0.0964,
+          "auc_ci95": [
+            0.0284,
+            0.1558
+          ],
+          "auc_p_one": 0.0025,
+          "auc_p_two": 0.005
+        }
+      },
+      "gemma4_e4b": {
+        "all_10": {
+          "top1": 0.2847,
+          "balanced_acc": 0.2082,
+          "macro_auroc": 0.6227
+        },
+        "9div_9way_argmax": {
+          "top1": 0.3259,
+          "balanced_acc": 0.247,
+          "macro_auroc": 0.6264
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.561,
+          "02_Supernatural_Adversary": 0.4444,
+          "03_Supernatural_Spouse": 0.2,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.3333,
+          "07_Supernatural_Power": 0.0,
+          "08_Religious_Tales": 0.0,
+          "09_Realistic_Wisdom": 0.5,
+          "10_Stupid_Ogre_Devil": 0.0,
+          "11_Jokes_Tricksters": 0.0435
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.01699,
+          "p_chance_auc": 0.0025
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.0817,
+            "bal_ci95": [
+              0.0091,
+              0.1472
+            ],
+            "bal_p_one": 0.01899,
+            "bal_p_two": 0.03798,
+            "auc_diff": 0.1023,
+            "auc_ci95": [
+              0.0553,
+              0.1461
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.1029,
+            "bal_ci95": [
+              0.0299,
+              0.1657
+            ],
+            "bal_p_one": 0.0025,
+            "bal_p_two": 0.005,
+            "auc_diff": 0.0713,
+            "auc_ci95": [
+              0.0098,
+              0.123
+            ],
+            "auc_p_one": 0.01,
+            "auc_p_two": 0.01999
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.0709,
+            "bal_ci95": [
+              -0.0134,
+              0.1464
+            ],
+            "bal_p_one": 0.04798,
+            "bal_p_two": 0.09595,
+            "auc_diff": 0.0841,
+            "auc_ci95": [
+              0.0193,
+              0.1413
+            ],
+            "auc_p_one": 0.0045,
+            "auc_p_two": 0.009
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.1143,
+          "bal_ci95": [
+            0.0311,
+            0.1882
+          ],
+          "bal_p_one": 0.0025,
+          "bal_p_two": 0.005,
+          "auc_diff": 0.0956,
+          "auc_ci95": [
+            0.0303,
+            0.1546
+          ],
+          "auc_p_one": 0.0025,
+          "auc_p_two": 0.005
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.1246,
+          "bal_ci95": [
+            0.0465,
+            0.1976
+          ],
+          "bal_p_one": 0.0025,
+          "bal_p_two": 0.005,
+          "auc_diff": 0.0956,
+          "auc_ci95": [
+            0.0304,
+            0.1541
+          ],
+          "auc_p_one": 0.0015,
+          "auc_p_two": 0.003
+        }
+      },
+      "qwen35_9b": {
+        "all_10": {
+          "top1": 0.3285,
+          "balanced_acc": 0.2734,
+          "macro_auroc": 0.6528
+        },
+        "9div_9way_argmax": {
+          "top1": 0.363,
+          "balanced_acc": 0.275,
+          "macro_auroc": 0.6494
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.6585,
+          "02_Supernatural_Adversary": 0.5556,
+          "03_Supernatural_Spouse": 0.1333,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.3333,
+          "07_Supernatural_Power": 0.0909,
+          "08_Religious_Tales": 0.0,
+          "09_Realistic_Wisdom": 0.375,
+          "10_Stupid_Ogre_Devil": 0.5,
+          "11_Jokes_Tricksters": 0.087
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.001,
+          "p_chance_auc": 0.0005
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.1469,
+            "bal_ci95": [
+              0.0665,
+              0.2223
+            ],
+            "bal_p_one": 0.0005,
+            "bal_p_two": 0.001,
+            "auc_diff": 0.1324,
+            "auc_ci95": [
+              0.0752,
+              0.1837
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.168,
+            "bal_ci95": [
+              0.0984,
+              0.2364
+            ],
+            "bal_p_one": 0.0005,
+            "bal_p_two": 0.001,
+            "auc_diff": 0.1014,
+            "auc_ci95": [
+              0.0345,
+              0.1561
+            ],
+            "auc_p_one": 0.0015,
+            "auc_p_two": 0.003
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.136,
+            "bal_ci95": [
+              0.0526,
+              0.2179
+            ],
+            "bal_p_one": 0.002,
+            "bal_p_two": 0.004,
+            "auc_diff": 0.1142,
+            "auc_ci95": [
+              0.0444,
+              0.1739
+            ],
+            "auc_p_one": 0.001,
+            "auc_p_two": 0.002
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.1312,
+          "bal_ci95": [
+            0.0506,
+            0.2073
+          ],
+          "bal_p_one": 0.001,
+          "bal_p_two": 0.002,
+          "auc_diff": 0.1186,
+          "auc_ci95": [
+            0.0473,
+            0.1753
+          ],
+          "auc_p_one": 0.0015,
+          "auc_p_two": 0.003
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.1526,
+          "bal_ci95": [
+            0.0639,
+            0.2289
+          ],
+          "bal_p_one": 0.0005,
+          "bal_p_two": 0.001,
+          "auc_diff": 0.1186,
+          "auc_ci95": [
+            0.0483,
+            0.18
+          ],
+          "auc_p_one": 0.0005,
+          "auc_p_two": 0.001
+        }
+      }
+    },
+    "holm8_max_p_across_all3_lexical_one_sided": {
+      "qwen35_9b_auc": 0.01199,
+      "qwen35_9b_bal": 0.01399,
+      "olmo3_7b_auc": 0.04198,
+      "gemma4_e4b_auc": 0.04998,
+      "olmo3_7b_bal": 0.05597,
+      "phi4_mini_auc": 0.05597,
+      "gemma4_e4b_bal": 0.09595,
+      "phi4_mini_bal": 0.27986
+    },
+    "holm8_max_p_across_all3_lexical_two_sided": {
+      "qwen35_9b_auc": 0.02399,
+      "qwen35_9b_bal": 0.02799,
+      "olmo3_7b_auc": 0.08396,
+      "gemma4_e4b_auc": 0.09995,
+      "olmo3_7b_bal": 0.11194,
+      "phi4_mini_auc": 0.11194,
+      "gemma4_e4b_bal": 0.1919,
+      "phi4_mini_bal": 0.55972
+    },
+    "west_vs_nonwest_geometry_exact": {
+      "n_divs": 8,
+      "obs_r": 0.2513,
+      "exact_ge_count": 3519,
+      "total_perms": 40320,
+      "p_exact_one_sided": 0.08728
+    }
+  },
+  "west_to_nonwest_excl_15_debatable": {
+    "n_train_western": 124,
+    "n_test_non_western": 122,
+    "n_test_unique_types": 67,
+    "majority_class_top1": 0.2951,
+    "lexical_baselines": {
+      "bow_unigram": {
+        "all_10": {
+          "top1": 0.123,
+          "balanced_acc": 0.1248,
+          "macro_auroc": 0.5231
+        },
+        "9div_10way_argmax": {
+          "top1": 0.1167,
+          "balanced_acc": 0.0831,
+          "macro_auroc": 0.5151
+        },
+        "9div_9way_argmax": {
+          "top1": 0.1417,
+          "balanced_acc": 0.1051,
+          "macro_auroc": 0.5151
+        }
+      },
+      "tfidf_centroid": {
+        "all_10": {
+          "top1": 0.123,
+          "balanced_acc": 0.1088,
+          "macro_auroc": 0.5459
+        },
+        "9div_10way_argmax": {
+          "top1": 0.125,
+          "balanced_acc": 0.1209,
+          "macro_auroc": 0.5215
+        },
+        "9div_9way_argmax": {
+          "top1": 0.125,
+          "balanced_acc": 0.1209,
+          "macro_auroc": 0.5215
+        }
+      },
+      "tfidf_ridge": {
+        "all_10": {
+          "top1": 0.0492,
+          "balanced_acc": 0.1378,
+          "macro_auroc": 0.5286
+        },
+        "9div_10way_argmax": {
+          "top1": 0.0333,
+          "balanced_acc": 0.042,
+          "macro_auroc": 0.5095
+        },
+        "9div_9way_argmax": {
+          "top1": 0.1,
+          "balanced_acc": 0.1246,
+          "macro_auroc": 0.5095
+        }
+      }
+    },
+    "neural_c5_perp_val3": {
+      "phi4_mini": {
+        "all_10": {
+          "top1": 0.1721,
+          "balanced_acc": 0.1599,
+          "macro_auroc": 0.6126
+        },
+        "9div_9way_argmax": {
+          "top1": 0.2083,
+          "balanced_acc": 0.1925,
+          "macro_auroc": 0.6008
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.25,
+          "02_Supernatural_Adversary": 0.4286,
+          "03_Supernatural_Spouse": 0.0714,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.3333,
+          "07_Supernatural_Power": 0.0909,
+          "08_Religious_Tales": 0.0,
+          "09_Realistic_Wisdom": 0.375,
+          "10_Stupid_Ogre_Devil": 0.0,
+          "11_Jokes_Tricksters": 0.05
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.05297,
+          "p_chance_auc": 0.004
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.0352,
+            "bal_ci95": [
+              -0.0269,
+              0.0946
+            ],
+            "bal_p_one": 0.13043,
+            "bal_p_two": 0.26087,
+            "auc_diff": 0.0895,
+            "auc_ci95": [
+              0.0383,
+              0.1337
+            ],
+            "auc_p_one": 0.001,
+            "auc_p_two": 0.002
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.0512,
+            "bal_ci95": [
+              -0.0124,
+              0.1114
+            ],
+            "bal_p_one": 0.06747,
+            "bal_p_two": 0.13493,
+            "auc_diff": 0.0667,
+            "auc_ci95": [
+              0.0045,
+              0.1204
+            ],
+            "auc_p_one": 0.01549,
+            "auc_p_two": 0.03098
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.0221,
+            "bal_ci95": [
+              -0.0654,
+              0.0912
+            ],
+            "bal_p_one": 0.34383,
+            "bal_p_two": 0.68766,
+            "auc_diff": 0.084,
+            "auc_ci95": [
+              0.0185,
+              0.1407
+            ],
+            "auc_p_one": 0.0085,
+            "auc_p_two": 0.01699
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.0568,
+          "bal_ci95": [
+            -0.0171,
+            0.126
+          ],
+          "bal_p_one": 0.08246,
+          "bal_p_two": 0.16492,
+          "auc_diff": 0.0794,
+          "auc_ci95": [
+            0.007,
+            0.1445
+          ],
+          "auc_p_one": 0.01699,
+          "auc_p_two": 0.03398
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.0716,
+          "bal_ci95": [
+            -0.0031,
+            0.1415
+          ],
+          "bal_p_one": 0.03398,
+          "bal_p_two": 0.06797,
+          "auc_diff": 0.0794,
+          "auc_ci95": [
+            0.008,
+            0.1421
+          ],
+          "auc_p_one": 0.01549,
+          "auc_p_two": 0.03098
+        }
+      },
+      "olmo3_7b": {
+        "all_10": {
+          "top1": 0.2869,
+          "balanced_acc": 0.2448,
+          "macro_auroc": 0.6225
+        },
+        "9div_9way_argmax": {
+          "top1": 0.3167,
+          "balanced_acc": 0.2812,
+          "macro_auroc": 0.6192
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.4444,
+          "02_Supernatural_Adversary": 0.5714,
+          "03_Supernatural_Spouse": 0.0714,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.4444,
+          "07_Supernatural_Power": 0.0909,
+          "08_Religious_Tales": 0.125,
+          "09_Realistic_Wisdom": 0.5,
+          "10_Stupid_Ogre_Devil": 0.0,
+          "11_Jokes_Tricksters": 0.2
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.0015,
+          "p_chance_auc": 0.003
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.12,
+            "bal_ci95": [
+              0.0458,
+              0.1955
+            ],
+            "bal_p_one": 0.002,
+            "bal_p_two": 0.004,
+            "auc_diff": 0.0994,
+            "auc_ci95": [
+              0.0471,
+              0.1503
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.136,
+            "bal_ci95": [
+              0.0579,
+              0.2144
+            ],
+            "bal_p_one": 0.0005,
+            "bal_p_two": 0.001,
+            "auc_diff": 0.0765,
+            "auc_ci95": [
+              0.0107,
+              0.1337
+            ],
+            "auc_p_one": 0.009,
+            "auc_p_two": 0.01799
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.1069,
+            "bal_ci95": [
+              0.0209,
+              0.1804
+            ],
+            "bal_p_one": 0.01049,
+            "bal_p_two": 0.02099,
+            "auc_diff": 0.0939,
+            "auc_ci95": [
+              0.0252,
+              0.153
+            ],
+            "auc_p_one": 0.004,
+            "auc_p_two": 0.008
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.1511,
+          "bal_ci95": [
+            0.0582,
+            0.2365
+          ],
+          "bal_p_one": 0.0005,
+          "bal_p_two": 0.001,
+          "auc_diff": 0.0978,
+          "auc_ci95": [
+            0.0209,
+            0.167
+          ],
+          "auc_p_one": 0.0065,
+          "auc_p_two": 0.01299
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.1604,
+          "bal_ci95": [
+            0.0654,
+            0.2564
+          ],
+          "bal_p_one": 0.0005,
+          "bal_p_two": 0.001,
+          "auc_diff": 0.0978,
+          "auc_ci95": [
+            0.0233,
+            0.1638
+          ],
+          "auc_p_one": 0.004,
+          "auc_p_two": 0.008
+        }
+      },
+      "gemma4_e4b": {
+        "all_10": {
+          "top1": 0.2459,
+          "balanced_acc": 0.1967,
+          "macro_auroc": 0.623
+        },
+        "9div_9way_argmax": {
+          "top1": 0.2917,
+          "balanced_acc": 0.2364,
+          "macro_auroc": 0.6261
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.4722,
+          "02_Supernatural_Adversary": 0.4286,
+          "03_Supernatural_Spouse": 0.0714,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.4444,
+          "07_Supernatural_Power": 0.0,
+          "08_Religious_Tales": 0.0,
+          "09_Realistic_Wisdom": 0.5,
+          "10_Stupid_Ogre_Devil": 0.0,
+          "11_Jokes_Tricksters": 0.05
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.02699,
+          "p_chance_auc": 0.003
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.0719,
+            "bal_ci95": [
+              0.0056,
+              0.1393
+            ],
+            "bal_p_one": 0.01899,
+            "bal_p_two": 0.03798,
+            "auc_diff": 0.0999,
+            "auc_ci95": [
+              0.0493,
+              0.1504
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.0879,
+            "bal_ci95": [
+              0.016,
+              0.1583
+            ],
+            "bal_p_one": 0.009,
+            "bal_p_two": 0.01799,
+            "auc_diff": 0.0771,
+            "auc_ci95": [
+              0.0145,
+              0.1336
+            ],
+            "auc_p_one": 0.01299,
+            "auc_p_two": 0.02599
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.0588,
+            "bal_ci95": [
+              -0.0335,
+              0.1358
+            ],
+            "bal_p_one": 0.10995,
+            "bal_p_two": 0.21989,
+            "auc_diff": 0.0944,
+            "auc_ci95": [
+              0.0294,
+              0.1561
+            ],
+            "auc_p_one": 0.003,
+            "auc_p_two": 0.006
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.0977,
+          "bal_ci95": [
+            0.0165,
+            0.1758
+          ],
+          "bal_p_one": 0.008,
+          "bal_p_two": 0.01599,
+          "auc_diff": 0.1046,
+          "auc_ci95": [
+            0.034,
+            0.176
+          ],
+          "auc_p_one": 0.0025,
+          "auc_p_two": 0.005
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.1156,
+          "bal_ci95": [
+            0.033,
+            0.1949
+          ],
+          "bal_p_one": 0.0015,
+          "bal_p_two": 0.003,
+          "auc_diff": 0.1046,
+          "auc_ci95": [
+            0.0329,
+            0.1732
+          ],
+          "auc_p_one": 0.003,
+          "auc_p_two": 0.006
+        }
+      },
+      "qwen35_9b": {
+        "all_10": {
+          "top1": 0.3197,
+          "balanced_acc": 0.2792,
+          "macro_auroc": 0.6472
+        },
+        "9div_9way_argmax": {
+          "top1": 0.35,
+          "balanced_acc": 0.2803,
+          "macro_auroc": 0.6405
+        },
+        "per_class_recall": {
+          "01_Animal_Trickster": 0.6389,
+          "02_Supernatural_Adversary": 0.5714,
+          "03_Supernatural_Spouse": 0.0714,
+          "05_Supernatural_Helpers": 0.0,
+          "06_Magic_Objects": 0.4444,
+          "07_Supernatural_Power": 0.0909,
+          "08_Religious_Tales": 0.0,
+          "09_Realistic_Wisdom": 0.375,
+          "10_Stupid_Ogre_Devil": 0.5,
+          "11_Jokes_Tricksters": 0.1
+        },
+        "perm_vs_chance": {
+          "p_chance_bal": 0.0005,
+          "p_chance_auc": 0.0005
+        },
+        "vs_all3_lexical_10div": {
+          "bow_unigram": {
+            "bal_diff": 0.1544,
+            "bal_ci95": [
+              0.0897,
+              0.2273
+            ],
+            "bal_p_one": 0.0005,
+            "bal_p_two": 0.001,
+            "auc_diff": 0.1241,
+            "auc_ci95": [
+              0.0652,
+              0.1799
+            ],
+            "auc_p_one": 0.0005,
+            "auc_p_two": 0.001
+          },
+          "tfidf_centroid": {
+            "bal_diff": 0.1704,
+            "bal_ci95": [
+              0.1004,
+              0.2454
+            ],
+            "bal_p_one": 0.0005,
+            "bal_p_two": 0.001,
+            "auc_diff": 0.1012,
+            "auc_ci95": [
+              0.0336,
+              0.1596
+            ],
+            "auc_p_one": 0.0025,
+            "auc_p_two": 0.005
+          },
+          "tfidf_ridge": {
+            "bal_diff": 0.1414,
+            "bal_ci95": [
+              0.0533,
+              0.2216
+            ],
+            "bal_p_one": 0.0015,
+            "bal_p_two": 0.003,
+            "auc_diff": 0.1186,
+            "auc_ci95": [
+              0.0475,
+              0.18
+            ],
+            "auc_p_one": 0.001,
+            "auc_p_two": 0.002
+          }
+        },
+        "vs_tfidf_centroid_9div_10way": {
+          "bal_diff": 0.1338,
+          "bal_ci95": [
+            0.0554,
+            0.2128
+          ],
+          "bal_p_one": 0.001,
+          "bal_p_two": 0.002,
+          "auc_diff": 0.119,
+          "auc_ci95": [
+            0.0375,
+            0.188
+          ],
+          "auc_p_one": 0.0015,
+          "auc_p_two": 0.003
+        },
+        "vs_tfidf_centroid_9div_9way": {
+          "bal_diff": 0.1594,
+          "bal_ci95": [
+            0.0694,
+            0.2507
+          ],
+          "bal_p_one": 0.0005,
+          "bal_p_two": 0.001,
+          "auc_diff": 0.119,
+          "auc_ci95": [
+            0.0404,
+            0.1852
+          ],
+          "auc_p_one": 0.002,
+          "auc_p_two": 0.004
+        }
+      }
+    },
+    "holm8_max_p_across_all3_lexical_one_sided": {
+      "qwen35_9b_bal": 0.01199,
+      "qwen35_9b_auc": 0.01749,
+      "olmo3_7b_auc": 0.05397,
+      "olmo3_7b_bal": 0.05397,
+      "gemma4_e4b_auc": 0.05397,
+      "phi4_mini_auc": 0.05397,
+      "gemma4_e4b_bal": 0.21989,
+      "phi4_mini_bal": 0.34383
+    },
+    "holm8_max_p_across_all3_lexical_two_sided": {
+      "qwen35_9b_bal": 0.02399,
+      "qwen35_9b_auc": 0.03498,
+      "olmo3_7b_auc": 0.10795,
+      "olmo3_7b_bal": 0.10795,
+      "gemma4_e4b_auc": 0.10795,
+      "phi4_mini_auc": 0.10795,
+      "gemma4_e4b_bal": 0.43978,
+      "phi4_mini_bal": 0.68766
+    },
+    "west_vs_nonwest_geometry_exact": null
+  }
+}

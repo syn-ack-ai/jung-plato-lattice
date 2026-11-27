@@ -1,8 +1,8 @@
 # The Jung–Plato Lattice: Multi-Family Representation Denoising, Compositional Probing, and Cross-Tokenizer Distillation
 
-*Full-Length Audit-Verified Preprint (`cs.CL` / `cs.LG`) — Preprint DOI: [`10.5281/zenodo.24572076`](https://doi.org/10.5281/zenodo.24572076) — 6 Publication Figures Embedded; Companion LaTeX/arXiv Bundle in `paper/arxiv/`*
+*Full-Length Audit-Verified Preprint (`v6` / Zenodo v3.0, `cs.CL` / `cs.LG`) — Preprint DOI: [`10.5281/zenodo.24572076`](https://doi.org/10.5281/zenodo.24572076) — 9 JSON-Driven Publication Figures Embedded (+ 2 Vector TikZ Diagrams in LaTeX); Companion IEEEtran arXiv Bundle in `paper/arxiv/`*
 
-> **Data Availability & Audit Scope:** Results in **Sections 4.1, 4.2.1, 4.4.2–4.4.4, 4.5, 4.6, and 4.7** have committed per-run JSON outputs verified automatically against both `paper/paper.md` and `paper/arxiv/main.tex` by `scripts/verify_repro.py` (multi-gigabyte raw 7-model activation `.npz` caches and checkpoints are gitignored and regenerated via Stages 1–4 of `README.md`). **Sections 4.2.2, 4.3, 4.4.1, and 4.4.5–4.4.7** summarize earlier multi-model forensic audits (retiring edit-position confounding in whole-story RSA and a `"to "` verb-prefix artifact in word-association clustering, while correcting two earlier false-null bugs); their public benchmarks and scripts are included for transparency while raw multi-gigabyte captures reside outside this compact repository. All **53 references** were verified against primary sources, and all **6 figures** (`figures/fig1`–`fig6`, PNG + vector PDF) are generated from committed JSON outputs.
+> **Data Availability & Audit Scope (`v6` / Zenodo v3.0):** Results in **Sections 4.1, 4.2.1, 4.4.2–4.4.4, 4.5, 4.6, 4.7, and 4.8** have committed per-run JSON outputs verified automatically against both `paper/paper.md` and `paper/arxiv/main.tex` by `scripts/verify_repro.py` (multi-gigabyte raw activation `.npz` caches and checkpoints are gitignored and regenerated from open weights; third-party CC BY-NC-SA folktale texts are excluded from this MIT repository, which commits only the cleaned metadata manifest `aft_clean248_manifest.json` and verified JSON outputs). **Sections 4.2.2, 4.3, 4.4.1, and 4.4.5–4.4.7** summarize earlier multi-model forensic audits. All **64 references** were verified against primary sources, and all **9 figures** (`figures/fig1`–`fig9`, PNG + vector PDF) are generated directly from committed JSON outputs.
 
 ---
 
@@ -489,10 +489,73 @@ We next paired a factual truth probe (`CORRECTNESS`, from 20 true/false declarat
 
 ---
 
+### 4.8 Five-Depth Actor-Binding Peak, Historical ATU Folktales, Rival-Only 50%-Depth 8B Transplant, and Dropped Audits (`v6` / Zenodo v3.0)
+
+#### 4.8.1 2×2 Actor-Intent Binding (`bm_actor2x2_247`) and the 50%-Depth Peak (Claims A & B)
+On `bm120`, raw sentiment still scores `65.0%–77.5%` (mean) / `60.8%–80.0%` (last) and raw `HOUSE` scores `71.7%–75.8%` (mean) / `62.5%–81.7%` (last) because every positive ending describes a favorable outcome. Our 240-pair `bm_actor2x2_247` benchmark (`60` settings × `4` pairs crossing benign vs. adverse actors with mirrored clause orders; balanced across `80` `active_and`, `56` `active_yet`, `56` `active_then`, `48` `two_sentence`) locks all seven lexical and polarity baselines at **`50.0%`** and collapses zero-shot `zs_sent` to `51.5%/52.0%` (`98.5%/98.0%` benign vs. `4.5%/6.0%` adverse). Sweeping five relative depths (`d15, d30, d50, d70, d85`) across six standard Transformers (`v6_exp247_binding_results.json`, `v6_within_model_native_5depth.json`, `v6_round5_binding_depth_results.json`, `v6_round6_final_polish.json`) isolates a sharp **`50%`-depth peak**:
+
+| Protocol (6 Standard Models, `bm_actor2x2_247`) | `d15` | `d30` | `d50` (Peak) | `d70` | `d85` | `d50−d30` Basic (pp) | `d50−d70` Basic (pp) | vs. Whole NLL | vs. Chg NLL |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Cross-Fam `G4 → 5` (mean, `cv2 ⊥ VAL5`) | `51.09%` | `62.32%` | **`73.01%`** | `66.74%` | `62.88%` | `[+6.37, +14.37]` | `[+2.19, +9.61]` | `+15.43` | `+9.60` |
+| Cross-Fam `Qw → 5` (mean, `cv2 ⊥ VAL5`) | `52.03%` | `63.30%` | **`73.09%`** | `67.47%` | `65.13%` | `[+5.91, +13.38]` | `[+3.15, +9.02]` | `+14.09` | `+8.50` |
+| Cross-Fam `G4 → 5` (last, `cv2 ⊥ VAL5`) | `50.52%` | `60.27%` | `61.60%` | **`64.35%`** | `63.30%` | `[-4.32, +4.83]` | `[-9.29, +1.01]` | `+4.02` | `-1.82` |
+| Cross-Fam `Qw → 5` (last, `cv2 ⊥ VAL5`) | `50.41%` | `60.08%` | **`65.09%`** | `59.91%` | `59.24%` | `[+0.78, +10.22]` | `[+0.64, +9.65]` | `+6.09` | `+0.51` |
+| Native Within-Model Mean (6-Mod) | `53.58%` | `68.02%` | **`77.15%`** | `75.60%` | `73.31%` | `[+6.68, +11.30]` | `[-0.56, +2.27]` | — | — |
+| Native Within-Model Last (6-Mod) | `51.55%` | `63.16%` | **`70.48%`** | `68.98%` | `68.67%` | `[+4.90, +9.74]` | `[-0.66, +3.66]` | — | — |
+
+*Table 2h (`v6_exp247_binding_results.json`, `v6_within_model_native_5depth.json`, `v6_round5_binding_depth_results.json`, `v6_round6_final_polish.json`): Cross-family CIs are simultaneous Bonferroni-8 across both pools; native CIs are Bonferroni-2.*
+
+- **Claim A boundaries (`d50`):** `d50.last` primary transfer is mixed (Gemma clears `2/5` Holm specificity with tied 3-cell Holm `0.0945`, adverse `<50%`, CIs vs. changed NLL span zero). In `d50.mean`, zero-shot `bm_neut245 → actor` reaches balanced `63.92%/63.08%` (`63.3%/64.5%` benign/adverse; `5/5` Gemma and `2/5` Qwen vs. 2k-rand; setting `all-4` Holm `4/5` Gemma & `3/5` Qwen, rates `3.3%–13.3%`, boundary `0.048–0.049`). Secondary `d50.mean` `cv2 ⊥ VAL5` hits `73.01%/73.09%` (`5/5` Holm item-acc, `all-4` `26.0%/28.2%`, 2k-rand) and beats Whole/Changed NLL (`+15.43/+14.09 pp` whole, `+9.60/+8.50 pp` changed; NLL-wrong strata clear `8/10` whole / `4/10` changed nominally and `6/10` / `2/10` Bonf-20, with Phi-4 whole-NLL strata below 50% at `42.72%/39.95%`). Heavy Fold-A rank-40 SVD erasure (`v6_erasure_heldout_check247.json`) drops `cv2` to `65.88%` (adverse `49.62%`; full-corpus `65.13%/47.51%`). Disclosed non-neutral shortcuts: a frozen actor-lexicon cue flips sign on `238/240` pairs (`240/240` + `incorruptible`), letting text-switched `±zs_sent` hit `96.33%/95.50%`, and an unfitted gap-4 skip-bigram counterexample scores `142/240 = 59.17%`. At `d15`, all three pooled one-sided tests exceed the matched-flip refit null (`p_MC = 1/2001`).
+
+![Figure 7: Five-Depth Trajectory and 50%-Depth Actor-Binding Audit](figures/fig7_depth_and_actor_binding.png)
+*Figure 7 (vector twin: `figures/fig7_depth_and_actor_binding.pdf`): **(A)** Five-depth curves peaking at 50% depth on `bm_actor2x2_247`. **(B)** 50%-depth mean-pool benign vs. adverse actor balance against target Whole/Changed ΔNLL.*
+
+#### 4.8.2 Sealed Historical World Folktale Audit (`480 / 476` Cleaned ATU Excerpts, Claim C)
+Projecting `480` cleaned historical ATU folktales (`476` framing-excluded sensitivity subset; `0` ≥25-word excerpt overlaps, max 13 words overall and 7 train/test; pair `1244/906` had 113 excerpt / 448 full-text words prior to removal; `aft_clean248_manifest.json` commits metadata IDs only to respect third-party CC BY-NC-SA terms) into `C5` yields a strictly bounded conclusion (`v6_round4_folklore_results.json`, `v6_round5_folklore_results.json`, `v6_round6_final_polish.json`, `v6_round7_claim_c_seal.json`): **Jungian labels improved ATU division-contrast variance capture relative to within-setting shuffled labels (`0.13803 vs 0.09631`, 10k `138/10000`, `p_upper = 0.0139`, Holm-3 `0.0417`; `476`: `0.13719 vs 0.09600`, 10k `147/10000`, Holm-3 `0.0444`); we found no evidence that they improve capture over unlabeled PCA fitted to the same Jung corpus.**
+
+| Subspace Basis (7D in `C5`, `v6_round7_claim_c_seal.json`) | `$v_{\text{dir}}$` (480) | `$v_{\text{dir}}$` (476) | Shuffle Null (480 / 476) | 10k Holm-3 (480 / 476) | vs. `Q_jung7` Holm-7 (Pct / Basic) | True-9 Cross-Cultural Transfer (480 / 476) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| `PCA7_jung_unlabeled` | **`0.16013`** | **`0.15841`** | — | — | `0.032 / 0.088` (`476: 0.034 / 0.122`) | Lexical AUROC: `0.495–0.503` |
+| `PCA7_jung_setcent` | `0.15729` | `0.15547` | — | — | **`0.007 / 0.008`** (`476:` **`0.007 / 0.012`**) | Neural AUROC: `0.597–0.626` |
+| `PCA7_fam_unlabeled` | `0.13931` | `0.13810` | — | — | — | 480 Bal. Acc: `22.0%–26.9%` |
+| **`Q_jung7_labeled`** | `0.13803` | `0.13719` | `0.09631 / 0.09600` | **`0.0417 / 0.0444`** | Reference | 476 Bal. Acc: `21.7%–28.2%` |
+| `Q_fam7_labeled` | `0.11332` | `0.11223` | `0.10072 / 0.10063` | `0.547 / 0.567` n.s. | `0.304 / 0.088` n.s. | vs. Lex Holm-8: `6/8` (480), `5/8` (476) |
+| `PCA7_jobs_unlabeled` | `0.08913` | `0.08916` | — | — | vs. `PCA7_jung`: **`0.007 / 0.007`** | Joint-16: `3/16` (480), `1/16` (476) |
+| `Q_jobs7_labeled` | `0.07300` | `0.07434` | `0.06907 / 0.06952` | `0.547 / 0.567` n.s. | **`0.007 / 0.007`** (both splits) | vs. Chance Holm-8: **`8/8`** (`≤ 0.012`) |
+
+*Table 2i: Division-stratified whole-ATU-type fixed-source Holm-7 bootstraps (2,000 draws) plus 20k shared cross-cultural Western→Non-Western transfer over study-defined ATU division boundaries. Joint source-target bootstrap (`PCA7_setcent − Q_jung7`) spans zero on basic (`[-0.0012, +0.0333]`). Five predicted Jung–ATU diagonal pairs fail (`-0.1064, p = 0.952`), and type-preserving `PR` is null (`5.539, p = 0.277`).*
+
+![Figure 9: Sealed Historical World Folktale Audit (480 / 476 ATU Excerpts)](figures/fig9_historical_folklore_audit.png)
+*Figure 9 (vector twin: `figures/fig9_historical_folklore_audit.pdf`): **(A)** Seven-basis ATU contrast variance capture with shuffle null markers. **(B)** Western→Non-Western true 9-class transfer vs. three near-chance lexical baselines.*
+
+#### 4.8.3 Experiment 251: Strictly Rival-Only 50%-Depth Transplant on 8B Multimodal `google/gemma-4-E4B-it` & 5M `d50` Screen
+To remove Stage A's self-distillation caveat (Gemma 4 inside `C5`) and target the empirical 50%-depth binding locus (`PLATO50_LAYER = 20`, MLPs `19–20`, exact `L12` invariance `max_abs_diff = 0.0`), Experiment 251 ran a 4-arm paired study (`e4b_transplant50_exp251.json`, `e4b_transplant50_teacher_diag.json`, seed 251, 450 strictly neutral steps, `0.25·CE + 1.5·KL`, discarded head). Because Base Gemma 4 is the most idiosyncratic teacher at 50% depth (`Phi-4 R²_frob = +0.0623`, `OLMo 3 +0.0594`), strictly rival-only `C3_50` (Qwen3.5 + Llama 3.1 + Mistral, zero Gemma 4) beats Gemma-including `C4_50` both as a teacher (`0.5733/0.5104` vs. `0.5450/0.4963`) and as a student transplant across all `8/8` domain×model cells:
+
+| 8B Gemma 4 E4B Arm (50%, L20, `e4b_transplant50_exp251.json`) | Phi-4 Cos / $R^2_{\text{frob}}$ ($R^2_{\text{opt}}$, T1) | OLMo 3 Cos / $R^2_{\text{frob}}$ ($R^2_{\text{opt}}$, T1) | `held_gut` NLL | `proc_held` MCQ (Gain) | `actor2x2` Native Mean | `L12` Diff / V&A |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| Base E4B (Unmodified, 50%) | `0.6154 / +0.0619` (`0.269`, `68.4%`) | `0.5874 / +0.0588` (`0.267`, `71.6%`) | `5.0841` | `79.75%` (`+58.0`) | `81.56%` | `0.0` / Pass |
+| Matched CE+KL `ctrl50` (`plato_w = 0`) | `0.6186 / +0.0704` (`0.274`, `69.1%`) | `0.5906 / +0.0676` (`0.272`, `71.5%`) | **`4.5253`** | `84.75%` (`+63.8`) | `81.21%` | `0.0` / Pass |
+| 4-Fam `c4_50` (incl. Gemma) | `0.6448 / +0.1330` (`0.310`, `74.6%`) | `0.6140 / +0.1254` (`0.305`, `75.2%`) | `4.5298` | `85.00%` (`+63.5`) | `81.17%` | `0.0` / Pass |
+| **Rival-Only `c3_50` (ZERO Gemma)** | **`0.6556 / +0.1593`** (`0.326`, **`75.6%`**) | **`0.6227 / +0.1475`** (`0.318`, **`75.5%`**) | `4.5300` | **`85.25%`** (`+63.5`) | `80.98%` | **`0.0` / Pass** |
+| **Delta (`c3_50 − ctrl50`)** | **`+0.0370 / +0.0889` (`11.5×` over Base)** | **`+0.0321 / +0.0799` (`10.1×` over Base)** | `+0.0047` | `+0.50 pp` (n.s.) | `-0.23 pp` (n.s.) | `0` extra params |
+
+*Table 4b: Paired passage-group bootstrap deltas (`c3_50 − ctrl50`): `+0.04287` `[+0.04156, +0.04413]` (Phi-4) and `+0.03713` `[+0.03590, +0.03827]` (OLMo 3). Honest mechanistic boundary: neutral-text alignment yields null deltas vs. `ctrl50` on zero-label `bm_actor2x2` probing (`[-0.65, +0.15 pp]` native; `[-0.20, +1.17 pp]` G→blind2) and `proc_held` MCQ (`[-0.75, +2.00 pp]`). In a complementary 25M-token 5M screen (`v6_distill50_5m.json`), `D2_c4_50_L3` selectively lifts 50%-depth `L3` blind $R^2_{\text{opt}}$ (`0.244 → 0.303` Phi-4, `0.216 → 0.287` OLMo 3) while 5M swap probes stay near chance (`44.5%–53.5%`).*
+
+![Figure 8: Experiment 251 Rival-Only 50%-Depth 8B Transplant on Gemma 4 E4B](figures/fig8_e4b_50pct_transplant.png)
+*Figure 8 (vector twin: `figures/fig8_e4b_50pct_transplant.pdf`): **(A)** 4-arm zero-origin 50%-depth blind $R^2_{\text{frob}}$ & Top-1. **(B)** Per-domain cosine shift over Base (`c3_50` wins `8/8` over both `ctrl50` and `c4_50`).*
+
+#### 4.8.4 Explicitly Dropped Follow-Up Audits (Experiments 241, 243, 244)
+Three follow-up hypotheses failed strict adversarial audits (`v6_dropped_and_depth_audits.json`) and are explicitly dropped: (1) **Exp 244 (120-pair matched-pair epistemic generalization):** failed pre-registered admissibility on 4/4 models (`rand500_p95 = 0.759–0.980 > 0.70`, question-word overlap AUROC `0.936`, Holm `0/4` vs. `CORR + rand500`, bounding Table 5 strictly to its 24-pair benchmark); (2) **Exp 241 (single-layer cross-family steering/ablation):** weak logit shifts (`0.023–0.026`) and null centered-ablation interaction (`-0.0070 [-0.0156, +0.0019]`); and (3) **Exp 243 (14-text systems-archetype replication; Nordfors, 2026; Senge, 1990):** English `C4` pattern-over-topic AUROC (`0.493`) trailed unigram BoW (`0.658` / `0.809`).
+
+---
+
 ## 5. Discussion, Practical Uses & Implications
 
-### 5.1 From Pairwise Alignment to a Five-Family Consensus
-Huh et al. (2024) measured cross-model neighbor-graph similarity; Balestriero and LeCun (2026) proved multi-view identifiability under stated assumptions; Cheng et al. (2026, *Plato's Key*) demonstrated pairwise functional key swaps in frozen LLMs. Applying multi-family Generalized Procrustes Analysis (Gower, 1975; Haxby et al., 2011) across five unrelated model families (mixing a looped Transformer with standard Transformers) lifts out-of-sample prediction of two further unseen target families by `+10.4` to `+11.3` Frobenius $R^2$ points above the strongest single teacher—consistent with multi-family noise reduction across books, reasoning, and stories.
+### 5.1 From Pairwise Alignment to a Five-Family Consensus and Rival-Only 50%-Depth Transplants
+Huh et al. (2024) measured cross-model neighbor-graph similarity; Balestriero and LeCun (2026) proved multi-view identifiability under stated assumptions; Cheng et al. (2026, *Plato's Key*) demonstrated pairwise functional key swaps in frozen LLMs. Applying multi-family Generalized Procrustes Analysis (Gower, 1975; Haxby et al., 2011) across five unrelated model families lifts out-of-sample prediction of two further unseen target families by `+10.4` to `+11.3` Frobenius $R^2$ points above the strongest single teacher. Experiment 251 extends this to 50% depth with strictly rival-only `C3_50` (excluding Gemma 4 from its own teacher), lifting blind `Phi-4`/`OLMo 3` $R^2_{\text{frob}}$ by `+0.0974/+0.0887` (`11.5×`/`10.1×` control) with zero layer-12 drift while clarifying that neutral-text alignment realigns global geometry without automatically improving zero-label downstream probing.
+
+### 5.1b Statistical Projection vs. *Psyche*: Culture, Biology, Consciousness, and Attractor Diagnostics
+Carl Jung separated the *archetype-as-such*—an empty formal predisposition *"rooted in the stuff of the organism"* (Jung, 1969, CW 8, ¶¶417, 420; *"not a question of inherited ideas but of inherited possibilities of ideas"*, Jung, 1968a, CW 9.I, ¶136)—from culturally shaped *archetypal images*. Disembodied LLMs possess neither an organism nor a *psyche*; their convergent 50%-depth subspaces recover a **statistical projection** of culturally transmitted narrative imagery rather than biological innateness or sentience. Reading cultural transmission (Roesler, 2012; da Silva & Tehrani, 2016; Thuillard et al., 2018; Huggins, 2021) and biological predisposition (Goodwyn, 2010) through Jung's two-level lens frames them as complementary hypotheses: embodied biology may constrain human attractors while culture transmits the images that LLMs statistically project, though text-only models cannot adjudicate biological innateness. This boundary informs active frontier AI consciousness debates—where Dario Amodei (2026) states *"We don't know if the models are conscious... But we're open to the idea that it could be"* and Ilya Sutskever (2022) remarked *"it may be that today's large neural networks are slightly conscious"*, while David Chalmers (2023) treats current LLMs as unlikely to be conscious, Butlin, Bengio, Birch et al. (2023) conclude *"no current AI systems are conscious"*, and Murray Shanahan (2024) cautions against anthropomorphic confusion. Finally, Jung's 1904–1909 Word Association Test (Jung, 1973, CW 2) provides a falsifiable dynamical diagnostic: static LLMs fail every dynamical complex marker (`0/17` perseveration, expanding FFN perturbations `+0.023`), offering an objective test for whether future stateful/test-time-adapting architectures (Behrouz et al., 2024; Zhang et al., 2025; Tandon et al., 2025; Feng et al., 2026) develop genuine associative attractors.
 
 ### 5.2 Implications for Jungian & Comparative Narrative Studies
 Auditing our legacy probes alongside seven-company held-out transfer and five targeted controls (Experiments 234–238: valence, 8 Jungian vs. 8 non-Jungian roles + shuffled-label `PR` null, identical-BoW swaps, mirrored 120-pair order control, output-probability `ΔNLL`, and proper names) gives an unsentimental empirical map of what **does** and **does not** hold inside human cultural text:
@@ -549,12 +612,16 @@ All experiments reported in this paper use **strictly public-domain or open-lice
 
 ## References
 
+- Amodei, D. (2026). Anthropic's Chief on A.I.: "We Don't Know if the Models Are Conscious." Interview with Ross Douthat, *Interesting Times*, The New York Times, February 2026.
 - Artificial Analysis (2026). Independent AI model evaluations, accessed 2026-11-02. https://artificialanalysis.ai
 - Azaria, A., and Mitchell, T. (2023). The Internal State of an LLM Knows When It's Lying. *Findings of EMNLP 2023*. arXiv:2304.13734. https://arxiv.org/abs/2304.13734
 - Baldassano, C., Hasson, U., and Norman, K. A. (2018). Representation of real-world event schemas during narrative perception. *Journal of Neuroscience*, 38(45), 9689–9699. https://doi.org/10.1523/jneurosci.0251-18.2018
 - Balestriero, R., and LeCun, Y. (2026). Proving and Improving the Platonic Representation Hypothesis with JEPAs. arXiv:2610.39302. https://arxiv.org/abs/2610.39302
 - Behrouz, A., Zhong, P., and Mirrokni, V. (2024). Titans: Learning to Memorize at Test Time. arXiv:2501.00663. https://arxiv.org/abs/2501.00663
+- Breen, A. (2026). The Mathematical Collective Unconscious: Jungian Archetypes Within the Latent Space. arXiv:2610.15678. https://arxiv.org/abs/2610.15678
 - Burns, C., Ye, H., Klein, D., and Steinhardt, J. (2022). Discovering Latent Knowledge in Language Models Without Supervision. arXiv:2212.03827. https://arxiv.org/abs/2212.03827
+- Butlin, P., Long, R., Elmoznino, E., Bengio, Y., Birch, J., et al. (2023). Consciousness in Artificial Intelligence: Insights from the Science of Consciousness. arXiv:2308.08708. https://arxiv.org/abs/2308.08708
+- Chalmers, D. J. (2023). Could a Large Language Model be Conscious? arXiv:2303.07103. https://arxiv.org/abs/2303.07103
 - Chelombitko, I., Chelombitko, E., and Hämäläinen, M. (2026). Cultural Awareness is Represented but Not Decoded: Tracing Mythological Knowledge across 18 Open-Source LLMs. arXiv:2608.02486. https://arxiv.org/abs/2608.02486
 - Chen, D., Shukor, M., Moutakanni, T., Chung, W., Yu, J., Kasarla, T., Bang, Y., Bolourchi, A., LeCun, Y., and Fung, P. (2025). VL-JEPA: Joint Embedding Predictive Architecture for Vision-language. arXiv:2512.10942. https://arxiv.org/abs/2512.10942
 - Cheng, V., Liu, J., Yau, M., and Ré, C. (2026). Plato's Key. Hazy Research Report, Stanford University, 2026-11-25. https://hazyresearch.stanford.edu/blog/2026-11-25-platos-key
@@ -562,6 +629,7 @@ All experiments reported in this paper use **strictly public-domain or open-lice
 - Dehghani, M., et al. (2017). Decoding the neural representation of story meanings across languages. *Human Brain Mapping*, 38(12), 6096–6106. https://doi.org/10.1002/hbm.23814
 - Feng, G., Luo, S., Hua, K., Zhang, G., et al. (2026). In-Place Test-Time Training. arXiv:2604.06169. https://arxiv.org/abs/2604.06169
 - Gemma Team, El Abd, S., Aggarwal, V., Algayres, R., et al. (2026). Gemma 4 Technical Report. arXiv:2607.02770. https://arxiv.org/abs/2607.02770
+- Gentner, D. (1983). Structure-Mapping: A Theoretical Framework for Analogy. *Cognitive Science*, 7(2), 155–170. https://doi.org/10.1207/s15516709cog0702_3
 - Goodwyn, E. (2010). Approaching archetypes: Reconsidering innateness. *Journal of Analytical Psychology*, 55(4), 502–521. https://doi.org/10.1111/j.1468-5922.2010.01862.x
 - Gower, J. C. (1975). Generalized Procrustes analysis. *Psychometrika*, 40(1), 33–51. https://doi.org/10.1007/BF02291478
 - Gröger, F., Wen, S., and Brbić, M. (2026). Revisiting the Platonic Representation Hypothesis: An Aristotelian View. arXiv:2602.14486. https://arxiv.org/abs/2602.14486
@@ -573,6 +641,7 @@ All experiments reported in this paper use **strictly public-domain or open-lice
 - Ilić, D., and Gignac, G. E. (2023). Evidence of interrelated cognitive-like capabilities in large language models: Indications of artificial general intelligence or achievement? arXiv:2310.11616. https://arxiv.org/abs/2310.11616
 - Jung, C. G. (1968a). *The Archetypes and the Collective Unconscious* (2nd ed., trans. R. F. C. Hull). Collected Works Vol. 9.I. Princeton University Press.
 - Jung, C. G. (1968b). *Aion: Researches into the Phenomenology of the Self* (2nd ed., trans. R. F. C. Hull). Collected Works Vol. 9.II. Princeton University Press.
+- Jung, C. G. (1969). *The Structure and Dynamics of the Psyche* (2nd ed., trans. R. F. C. Hull; includes "On the Nature of the Psyche", ¶¶417, 420). Collected Works Vol. 8. Princeton University Press.
 - Jung, C. G. (1973). *Experimental Researches* (trans. L. Stein & D. Riviere). Collected Works Vol. 2. Princeton University Press.
 - Jung, C. G. (1976). *The Symbolic Life: Miscellaneous Writings* (trans. R. F. C. Hull). Collected Works Vol. 18. Princeton University Press.
 - Kadavath, S., Conerly, T., Askell, A., Henighan, T., et al. (2022). Language Models (Mostly) Know What They Know. arXiv:2207.05221. https://arxiv.org/abs/2207.05221
@@ -583,6 +652,7 @@ All experiments reported in this paper use **strictly public-domain or open-lice
 - Liu, D. Y., Joshi, A., Dawson, P., and Piper, A. (2026). Language Models Have Interpretable Narrative Mechanisms. arXiv:2610.12989. https://arxiv.org/abs/2610.12989
 - Marks, S., and Tegmark, M. (2024). The Geometry of Truth: Emergent Linear Structure in Large Language Model Representations of True/False Datasets. *COLM*. arXiv:2310.06824. https://arxiv.org/abs/2310.06824
 - Moschella, L., Maiorca, V., Fumero, M., Norelli, A., Locatello, F., and Rodolà, E. (2023). Relative Representations Enable Zero-Shot Latent Space Communication. *ICLR*. arXiv:2209.15430. https://arxiv.org/abs/2209.15430
+- Nordfors, D. (2026). Archetypal Contexts in the Neurons of Language Models: An Architecture for Intelligence? arXiv:2611.07234. https://arxiv.org/abs/2611.07234
 - Orgad, H., Toker, M., Gekhman, Z., Reichart, R., Szpektor, I., Kotek, H., and Belinkov, Y. (2024). LLMs Know More Than They Show: On the Intrinsic Representation of LLM Hallucinations. arXiv:2410.02707. https://arxiv.org/abs/2410.02707
 - Plato (1892). *The Dialogues of Plato* (trans. B. Jowett; *Republic* Book VII, 515c; *Phaedo*, 78d). Oxford University Press.
 - Reagan, A. J., Mitchell, L., Kiley, D., Danforth, C. M., and Dodds, P. S. (2016). The emotional arcs of stories are dominated by six basic shapes. *EPJ Data Science*, 5, 31. https://doi.org/10.1140/epjds/s13688-016-0093-1
@@ -591,11 +661,15 @@ All experiments reported in this paper use **strictly public-domain or open-lice
 - Roesler, C. (2012). Are archetypes transmitted more by culture than biology? Questions arising from conceptualizations of the archetype. *Journal of Analytical Psychology*, 57(2), 223–246. https://doi.org/10.1111/j.1468-5922.2011.01963.x
 - Saha, S., He, Z. W., and Khosla, M. (2026). Barycentric alignment for instance-level comparison of neural representations. arXiv:2602.09225. https://arxiv.org/abs/2602.09225
 - Schönemann, P. H. (1966). A generalized solution of the orthogonal Procrustes problem. *Psychometrika*, 31(1), 1–10. https://doi.org/10.1007/BF02289451
+- Senge, P. M. (1990). *The Fifth Discipline: The Art and Practice of the Learning Organization*. Currency Doubleday.
+- Shanahan, M. (2024). Talking About Large Language Models. *Communications of the ACM*, 67(2), 68–79. https://doi.org/10.1145/3624724 (arXiv:2212.03551)
 - Sourati, Z., Ilievski, F., Sommerauer, P., and Jiang, Y. (2024). ARN: Analogical Reasoning on Narratives. *Transactions of the Association for Computational Linguistics*, 12, 1063–1086. arXiv:2310.00996. https://arxiv.org/abs/2310.00996
+- Sutskever, I. (2022). Public statement ("it may be that today's large neural networks are slightly conscious"). Twitter / X post, February 2022.
 - Tandon, A., Dalal, K., Li, X., Koceja, D., et al. (2025). End-to-End Test-Time Training for Long Context. arXiv:2512.23675. https://arxiv.org/abs/2512.23675
 - Thuillard, M., Le Quellec, J.-L., d'Huy, J., and Berezkin, Y. (2018). A large-scale study of world myths. *Trames*, 22(4), 407–424.
 - Tigges, C., Hollinsworth, O. J., Geiger, A., and Nanda, N. (2023). Linear Representations of Sentiment in Large Language Models. arXiv:2310.15154. https://arxiv.org/abs/2310.15154
 - Usama, M., and Chang, D. E. (2026). Convergence Without Understanding: When Language Models Agree on Representations but Disagree on Reasoning. arXiv:2605.23315. https://arxiv.org/abs/2605.23315
+- Uther, H.-J. (2004). *The Types of International Folktales: A Classification and Bibliography, Based on the System of Antti Aarne and Stith Thompson*. Folklore Fellows Communications 284–286. Suomalainen Tiedeakatemia, Helsinki.
 - Walsh, P., Soldaini, L., Groeneveld, D., et al. / Team OLMo (2025). 2 OLMo 2 Furious. arXiv:2501.00656. https://arxiv.org/abs/2501.00656
 - Wei, Z., Yang, X., Sun, K., Wang, J., et al. (2025). TruthRL: Incentivizing Truthful LLMs via Reinforcement Learning. arXiv:2509.25760. https://arxiv.org/abs/2509.25760
 - Xi, W., Shi, Q., Ding, Z., Gao, J., et al. (2025). Hallucination as a Computational Boundary: A Hierarchy of Inevitability and the Oracle Escape. arXiv:2508.07334. https://arxiv.org/abs/2508.07334

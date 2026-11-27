@@ -97,7 +97,7 @@ def check_paper_and_figures():
     bbl = bbl_path.read_text()
 
     figs = re.findall(r"!\[[^\]]*\]\((figures/[^)]+)\)", txt)
-    assert len(figs) == 6, f"Expected 6 embedded figures, found {len(figs)}"
+    assert len(figs) == 9, f"Expected 9 embedded figures, found {len(figs)}"
     for f in figs:
         png = paper.parent / f
         pdf = png.with_suffix(".pdf")
@@ -106,16 +106,22 @@ def check_paper_and_figures():
         assert pdf.exists() and pdf.stat().st_size > 5_000, f"Missing PDF: {pdf}"
         assert arxiv_pdf.exists() and arxiv_pdf.stat().st_size > 5_000, f"Missing arXiv PDF: {arxiv_pdf}"
 
+    hero = paper.parent / "figures" / "hero_jung_plato_lattice.png"
+    assert hero.exists() and hero.stat().st_size > 50_000, f"Missing hero PNG: {hero}"
+
     refs_md = [l for l in txt.split("## References", 1)[1].splitlines() if l.startswith("- ")]
     refs_bib = re.findall(r"^@[a-zA-Z]+\{", bib, flags=re.M)
     refs_bbl = re.findall(r"^\\bibitem\{", bbl, flags=re.M)
-    assert len(refs_md) == 53, f"Expected 53 references in paper.md, found {len(refs_md)}"
-    assert len(refs_bib) == 53, f"Expected 53 BibTeX entries in references.bib, found {len(refs_bib)}"
-    assert len(refs_bbl) == 53, f"Expected 53 \\bibitem entries in main.bbl, found {len(refs_bbl)}"
+    assert len(refs_md) == 64, f"Expected 64 references in paper.md, found {len(refs_md)}"
+    assert len(refs_bib) == 64, f"Expected 64 BibTeX entries in references.bib, found {len(refs_bib)}"
+    assert len(refs_bbl) == 64, f"Expected 64 \\bibitem entries in main.bbl, found {len(refs_bbl)}"
 
-    # arXiv LaTeX header & formatting hygiene checks
+    # arXiv LaTeX header & latex-arxiv-SKILL formatting hygiene checks
     top5 = "\n".join(tex.splitlines()[:5])
     assert r"\pdfoutput=1" in top5, "paper/arxiv/main.tex missing \\pdfoutput=1 in first 5 lines!"
+    assert r"\AddToHook{env/thebibliography/begin}{\label{ReferencesStart}}" in tex, "Missing ReferencesStart hook!"
+    assert r"\resizebox" not in tex, "latex-arxiv-SKILL forbids \\resizebox in main.tex!"
+    assert "---" not in tex, "latex-rhythm-refiner forbids mid-sentence em-dashes (---) in main.tex!"
     unescaped_tilde = re.findall(r"(?<!\$)(?<!\\sim)(?<!\\textasciitilde)~\d", tex)
     assert not unescaped_tilde, f"Unescaped ~digits found in main.tex (renders as blank space): {unescaped_tilde}"
 
@@ -128,7 +134,7 @@ def check_paper_and_figures():
         assert "8,916,480" not in doc, f"Stale student total param count 8,916,480 found in {label}!"
         assert "8,916,608" in doc, f"Exact student total param count 8,916,608 missing from {label}!"
 
-    print(f"[PASS] Paper & arXiv verified: 6 figures (PNG+PDF+arXiv PDF), {len(refs_md)}/{len(refs_bib)}/{len(refs_bbl)} refs (md/bib/bbl), speech WAV fixture, clean LaTeX.")
+    print(f"[PASS] Paper & arXiv verified: 9 figures + hero PNG (PNG+PDF+arXiv PDF), {len(refs_md)}/{len(refs_bib)}/{len(refs_bbl)} refs (md/bib/bbl), speech WAV fixture, clean latex-arxiv-SKILL LaTeX.")
 
 
 def _parse_md_tables(paper_txt: str):
@@ -885,7 +891,69 @@ def check_headline_numbers_and_paper_sync():
             (6, rf"^{n95}$"),
         ], f"TeX tab:epi {tex_key}", exact_cols=7, cleaner=lambda s: s)
 
-    print("[PASS] All 6 pillars, Experiments 234-238 (valence, mirrored 120-pair swaps + output prob ΔNLL, 8 Jung vs. 8 non-Jung roles + shuffled PR null, zero-PN items3), 24 student JSONs, ALL paper.md tables (1..5), AND ALL 11 main.tex tables (tab:gpa..tab:epi) match cleanly.")
+    # =========================================================================
+    # 7. v6 / Zenodo v3.0 Audits: Claims A & B (tab:actor_depth), Claim C (tab:folklore), Exp 251 (tab:exp251), & Dropped Audits
+    # =========================================================================
+    e247 = json.load(open(ARCH / "fluent" / "plato" / "v6_exp247_binding_results.json"))
+    nat5 = json.load(open(ARCH / "fluent" / "plato" / "v6_within_model_native_5depth.json"))
+    r4f = json.load(open(ARCH / "fluent" / "plato" / "v6_round4_folklore_results.json"))
+    r7c = json.load(open(ARCH / "fluent" / "plato" / "v6_round7_claim_c_seal.json"))
+    drop = json.load(open(ARCH / "fluent" / "plato" / "v6_dropped_and_depth_audits.json"))
+    e251 = json.load(open(ARCH / "aion_8b" / "runs" / "e4b_transplant50_exp251.json"))
+
+    assert all(v == 0.0 for v in e251["l12_invariance_max_abs_diff"].values())
+    assert abs(e247["actor2x2_5depth_curves"]["d50"]["mean"]["gemma4_e4b"]["cv2_val5"] - 0.7301) < 5e-4
+    assert abs(e247["actor2x2_5depth_curves"]["d50"]["mean"]["qwen35_9b"]["cv2_val5"] - 0.7309) < 5e-4
+    assert abs(nat5["within_model_native_5depth"]["mean"]["bm_actor2x2_247"]["d50"]["mean_6models"] - 0.7715) < 5e-4
+    assert abs(r4f["bases_480_v_dir"]["Q_jung7_labeled"] - 0.13803) < 1e-5
+    assert abs(r7c["jung_shuffle_10k"]["n480"]["holm3_with_200base_fam_jobs"] - 0.0417) < 5e-4
+    assert abs(drop["exp241_centered_ablation_bm_rel242_log"]["interaction_fc_minus_topic"] + 0.007) < 5e-4
+    assert drop["exp244_epistemic_matched120"]["per_model"]["gemma4_e4b"]["buddy"]["admissibility_pass_le_0p70"] is False
+
+    # Verify TeX tab:actor_depth (6 rows)
+    tex_ad = _parse_tex_table(tex_txt, "tab:actor_depth")
+    assert len(tex_ad) == 6, f"Expected 6 rows in tab:actor_depth, got {len(tex_ad)}"
+    for rkey, pool, src in [
+        ("G4->5 (mean", "mean", "gemma4_e4b"),
+        ("Qw->5 (mean", "mean", "qwen35_9b"),
+        ("G4->5 (last", "last", "gemma4_e4b"),
+        ("Qw->5 (last", "last", "qwen35_9b"),
+    ]:
+        vals = [f"{e247['actor2x2_5depth_curves'][d][pool][src]['cv2_val5']*100:.2f}%" for d in ("d15", "d30", "d50", "d70", "d85")]
+        _assert_row_regex(tex_ad, rkey, [(i + 1, rf"^{re.escape(v)}$") for i, v in enumerate(vals)], f"TeX tab:actor_depth {rkey}", exact_cols=10, cleaner=lambda s: s)
+
+    # Verify TeX tab:folklore (7 rows)
+    tex_fk = _parse_tex_table(tex_txt, "tab:folklore")
+    assert len(tex_fk) == 7, f"Expected 7 rows in tab:folklore, got {len(tex_fk)}"
+    b480 = r4f["bases_480_v_dir"]
+    b476 = json.load(open(ARCH / "fluent" / "plato" / "v6_round6_final_polish.json"))["claim_c_476_complete_structural_suite"]["bases_v_dir"]
+    for bk in b480:
+        _assert_row_regex(tex_fk, bk, [
+            (1, rf"^{b480[bk]:.5f}$"),
+            (2, rf"^{b476[bk]:.5f}$"),
+        ], f"TeX tab:folklore {bk}", exact_cols=7, cleaner=lambda s: s)
+
+    # Verify TeX tab:exp251 (5 rows)
+    tex_251 = _parse_tex_table(tex_txt, "tab:exp251")
+    assert len(tex_251) == 5, f"Expected 5 rows in tab:exp251, got {len(tex_251)}"
+    for ak, tkey in [
+        ("base", "Unmodified Base E4B"),
+        ("ctrl50", "CE+KL ctrl50"),
+        ("c4_50", "4-Fam c4_50"),
+        ("c3_50", "Rival c3_50"),
+    ]:
+        p4 = e251["blind_50pct_alignment"][ak]["blind_phi4_50"]
+        ol = e251["blind_50pct_alignment"][ak]["blind_olmo3_50"]
+        nll = e251["lm_guardrails"][ak]["held_gut_nll_mean"]
+        nat_a = e251["probing_50pct"][ak]["within_native"]["mean"]["bm_actor2x2_247"]["acc"] * 100.0
+        _assert_row_regex(tex_251, tkey, [
+            (1, rf"^{p4['cos']:.4f}\s*/\s*\+{p4['r2_frob']:.4f}\s*\({p4['r2_opt']:.3f},\s*{p4['top1']*100:.1f}%\)$"),
+            (2, rf"^{ol['cos']:.4f}\s*/\s*\+{ol['r2_frob']:.4f}\s*\({ol['r2_opt']:.3f},\s*{ol['top1']*100:.1f}%\)$"),
+            (3, rf"^{nll:.4f}$"),
+            (5, rf"^{nat_a:.2f}%$"),
+        ], f"TeX tab:exp251 {ak}", exact_cols=7, cleaner=lambda s: s)
+
+    print("[PASS] All 6 v5 pillars + ALL v6/Zenodo v3.0 sealed audits (Claims A/B/C, Exp 251, Dropped Exps 241/243/244), 24 student JSONs, paper.md tables, AND ALL 14 numeric main.tex tables match cleanly.")
 
 
 def run_unit_tests():
