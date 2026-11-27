@@ -7,8 +7,8 @@ This repository's original source code, authored benchmarks, analysis scripts, a
 ## 1. OpenAssistant OASST2 (`passages.jsonl` and Evaluation Prompts)
 
 - **Included artifacts:**
-  - `bench/archetypes/fluent/plato/passages.jsonl` lines 1800–2398 (599 dialogue excerpts, `domain: "chat"`, `id: "chat_0000"`–`"chat_0598"`).
-  - Additional held-out conversational evaluation excerpts in `bench/archetypes/fluent/comp/passages.jsonl` (if sampled from OASST2 by `bench/archetypes/fluent/plato_data.py`).
+  - `bench/archetypes/fluent/plato/passages.jsonl` lines 1800–2398 (599 dialogue excerpts, `domain: "chat"`, `id: "chat_0000"`–`"chat_0599"` with `"chat_0159"` excluded during length/segment filtering).
+  - `bench/archetypes/fluent/mid/chat_held_prompts.jsonl` (100 held-out conversational evaluation prompts sampled from `OpenAssistant/oasst2` by `bench/archetypes/fluent/middata.py`, normalized for whitespace and formatted as single-turn evaluation prompts).
 - **Upstream source:** OpenAssistant Conversations Dataset Release 2 (`OpenAssistant/oasst2`), Hugging Face Hub: <https://huggingface.co/datasets/OpenAssistant/oasst2>.
 - **License:** **Apache License, Version 2.0** (full text redistributed in [LICENSES/Apache-2.0.txt](LICENSES/Apache-2.0.txt)).
 - **Transformations:** English turns were filtered to 50–195 words by `bench/archetypes/fluent/plato_data.py` (observed range in the 599 released excerpts: 50–191 words), normalized for whitespace, and segmented at sentence/clause boundaries (`segs`) to form the neutral dialogue alignment pool. No upstream endorsement is implied.
@@ -18,7 +18,7 @@ This repository's original source code, authored benchmarks, analysis scripts, a
 ## 2. Linguistic & Commonsense Evaluation Benchmarks (`bench/archetypes/fluent/comp/`)
 
 - **BLiMP (`comp/blimp.jsonl`):** Sampled minimal pairs from the Benchmark of Linguistic Minimal Pairs (Warstadt et al., 2020, *TACL* 8, 377–392; <https://github.com/alexwarstadt/blimp>). Upstream license: **CC BY 4.0**.
-- **COPA (`comp/copa.jsonl`):** Choice of Plausible Alternatives items (Roemmele, Bejan, & Gordon, 2011; <https://people.ict.usc.edu/~gordon/copa.html>). Distributed here solely for non-commercial academic evaluation parity alongside the 5M distillation harness.
+- **COPA (`comp/copa.jsonl`):** 500 Choice of Plausible Alternatives items (Roemmele, Bejan, & Gordon, 2011, Institute for Creative Technologies, University of Southern California; <https://people.ict.usc.edu/~gordon/copa.html>). Original COPA releases are distributed under the **BSD 2-Clause License** (University of Southern California / Institute for Creative Technologies; Copyright (c) 2011, USC ICT; redistributed here for academic evaluation parity alongside the 5M distillation harness).
 - **Additional synthetic & Gutenberg fixtures (`comp/mcq*.jsonl`, `comp/lastword.jsonl`, `comp/passages.jsonl`):** Generated from public-domain Project Gutenberg prose and synthetic procedural templates in `bench/archetypes/fluent/`.
 
 ---
@@ -56,4 +56,4 @@ All evaluated open-weight checkpoints are downloaded directly from Hugging Face 
 - `mistralai/Mistral-7B-Instruct-v0.3` (MLX 4-bit)
 - `microsoft/Phi-4-mini-instruct` (MLX 4-bit)
 - `allenai/Olmo-3-7B-Instruct` (MLX 4-bit)
-- `thinkingmachines/Inkling-2-Mini` (<https://huggingface.co/thinkingmachines/Inkling-2-Mini>, `IQ4_NL` GGUF served via `llama-server`; looped architecture, multimodal image-text-to-text)
+- `thinkingmachines/Inkling-2-Mini` (<https://huggingface.co/thinkingmachines/Inkling-2-Mini>, `Inkling-2-Mini-IQ4_NL.gguf` served via `llama-server`; looped MoE architecture, multimodal image-text-to-text; evaluated binary SHA-256 `cbdf3fa9dc50a4124977980f37da4f1fa764b0cfe800d275cd43d26ce2a81af4`)

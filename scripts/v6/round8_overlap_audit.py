@@ -3,15 +3,17 @@
 
 Verifies two independence properties for the historical ATU folktale audit (Claim C):
   1. Exact normalized-word overlap scan between `passages.jsonl` (all 3,598 passages and
-     the 2,394-passage neutral `gut+proc+chat` subset used by `neutral_only=True` rotations)
-     and both the 500 scored excerpts AND all 1,518 full tales in SHA-256-verified `aft.csv`.
-     Fails hard if `aft.csv` is missing, truncated, or fails SHA-256 verification.
+     all 2,398 neutral `gut+proc+chat` passages, of which 2,394 align across all 7 models in
+     30%-depth `neutral_only=True` rotations) and both the 500 scored excerpts AND all 1,518
+     full tales in SHA-256-verified `aft.csv`. Fails hard if `aft.csv` is missing, truncated,
+     or fails SHA-256 verification.
   2. Sensitivity rerun of the structural Claim C suite (all 7 bases, all 7 fixed-source
      Holm-7 contrasts with nominal & Holm-adjusted percentile/basic p-values, plus 10,000-draw
      Jung shuffle & 200-draw Family/Workplace shuffles) excluding the 3 records whose full
      public-domain source tales share editions with Gutenberg passages in `passages.jsonl`
      (`aft_idx` 109, 1464, 1494 -> `n=477`, and with the 4 audit-motivated framing exclusions
-     -> `n=473`).
+     -> `n=473`), joining every feature matrix, excerpt hash, division, and inclusion flag
+     strictly by unique `aft_idx` (invariant to input JSON row ordering).
 """
 from __future__ import annotations
 
@@ -128,23 +130,31 @@ def main() -> int:
     aft_rows = json.loads((FOLK_DIR / "aft_real_myths_500.json").read_text())
     m4 = json.loads((REPO / "bench/archetypes/selfshape/aft_clean248_manifest.json").read_text())
 
-    # Join aft_rows and manifest strictly by unique aft_idx (never by position!)
+    # Join aft_rows and manifest strictly by unique aft_idx (canonical manifest order — invariant to input JSON permutation!)
     m4_by_idx = {}
+    canonical_ids = []
     for m in m4:
         aid = int(m["aft_idx"])
         if aid in m4_by_idx:
             raise RuntimeError(f"Duplicate aft_idx {aid} in manifest")
         m4_by_idx[aid] = m
+        canonical_ids.append(aid)
     if len(aft_rows) != 500 or len(m4_by_idx) != 500:
         raise RuntimeError(f"Expected 500 aft_rows and 500 manifest rows, got {len(aft_rows)} and {len(m4_by_idx)}")
-    seen_aft = set()
+    aft_by_idx = {}
     for r in aft_rows:
         aid = int(r["aft_idx"])
-        if aid in seen_aft or aid not in m4_by_idx:
-            raise RuntimeError(f"Invalid or missing aft_idx {aid} in aft_real_myths_500.json")
-        seen_aft.add(aid)
+        if aid in aft_by_idx or aid not in m4_by_idx:
+            raise RuntimeError(f"Invalid or duplicate aft_idx {aid} in aft_real_myths_500.json")
         if str(r["atu_id"]).strip() != str(m4_by_idx[aid]["atu_id"]).strip():
             raise RuntimeError(f"ATU ID mismatch at aft_idx={aid}")
+        ex_sha = hashlib.sha256(r["text"].encode("utf-8")).hexdigest()
+        exp_sha = m4_by_idx[aid].get("excerpt_sha256")
+        if not exp_sha or ex_sha != exp_sha:
+            raise RuntimeError(f"Excerpt SHA-256 mismatch at aft_idx={aid}: got {ex_sha}, expected {exp_sha}")
+        aft_by_idx[aid] = r
+    # Reorder aft_rows into canonical manifest order so downstream ordering never depends on input JSON permutation
+    aft_rows = [aft_by_idx[aid] for aid in canonical_ids]
 
     p_all = [(p["id"], _toks(p["text"])) for p in passages]
     p_neut = [(p["id"], _toks(p["text"])) for p in passages if p["domain"] != "myth"]
@@ -210,7 +220,15 @@ def main() -> int:
         Zj[k] = NA235._map_stories(AR._load_npz_dict(PLATO / f"arch235_{k}.npz")["mean"], rot_m, k, frame="to_c5")
         Zn[k] = NA235._map_stories(AR._load_npz_dict(PLATO / f"nj237_{k}.npz")["mean"], rot_m, k, frame="to_c5")
         Zf[k] = NA235._map_stories(AR._load_npz_dict(PLATO / f"fam239_{k}.npz")["mean"], rot_m, k, frame="to_c5")
-        Za[k] = NA235._map_stories(AR._load_npz_dict(PLATO / f"aft239_{k}.npz")["mean"], rot_m, k, frame="to_c5")
+        aft_npz = AR._load_npz_dict(PLATO / f"aft239_{k}.npz")
+        if "aft_idx" not in aft_npz:
+            raise RuntimeError(f"Missing aft_idx array in aft239_{k}.npz")
+        cache_ids = [int(x) for x in aft_npz["aft_idx"].tolist()]
+        if len(cache_ids) != 500 or len(set(cache_ids)) != 500 or set(cache_ids) != set(canonical_ids):
+            raise RuntimeError(f"Cache aft_idx mismatch or duplicates in aft239_{k}.npz")
+        pos_by_id = {aid: i for i, aid in enumerate(cache_ids)}
+        perm_idx = np.array([pos_by_id[aid] for aid in canonical_ids], dtype=int)
+        Za[k] = NA235._map_stories(aft_npz["mean"][perm_idx], rot_m, k, frame="to_c5")
         a_d = AR._load_npz_dict(PLATO / f"arch229_{k}.npz")
         v_d = AR._load_npz_dict(PLATO / f"val234_{k}.npz")
         _, _, Dh = AR.map_diffs(a_d["done_mean"][house_idx], a_d["neg_mean"][house_idx], rot_m, k, frame="to_c5")
@@ -290,6 +308,7 @@ def main() -> int:
             ge_473 += 1
 
     out = {
+        "script_sha256": _sha256_file(Path(__file__)),
         "rotation_fit_corpus": "neutral_only=True (gut+proc+chat, zero myth passages)",
         "aft_csv_sha256": got_sha,
         "aft_csv_rows_scanned": len(csv_rows),

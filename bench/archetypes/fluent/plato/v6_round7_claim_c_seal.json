@@ -1,6 +1,6 @@
 {
-  "script_sha256": "710bd971f2ddf335cd8ae8c3fcd90637829d7dd18676b799336a524111366257",
-  "elapsed_sec": 147.9,
+  "script_sha256": "47fde9f2fb87b0e3db51c2a23847fcf615aea080cbb806fae65e5029bb6e875d",
+  "elapsed_sec": 150.5,
   "atu_range_assertion_480_passed": true,
   "fixed_source_div_stratified_holm7_pct_and_basic": {
     "n480": {

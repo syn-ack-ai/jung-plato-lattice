@@ -19,15 +19,16 @@ from collections import Counter
 from pathlib import Path
 import numpy as np
 
+SCRIPT_DIR = Path(__file__).resolve().parent
 SCRATCH = Path(os.environ.get("JPL_WORK_DIR", "."))
 EXP6 = SCRATCH / "exp250_round6"
 EXP4 = SCRATCH / "exp248_round4"
 EXP245 = SCRATCH / "exp245_controls"
-FOLK = SCRATCH / "folklore_test"
-REPO_ARCH = Path(__file__).resolve().parents[2] / "bench" / "archetypes"
-PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(Path(__file__).resolve().parents[2] / "bench" / "archetypes" / "fluent" / "plato")))
+FOLK = Path(os.environ.get("JPL_FOLK_DIR", "./folklore_local_data"))
+REPO_ARCH = SCRIPT_DIR.parents[1] / "bench" / "archetypes"
+PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(REPO_ARCH / "fluent" / "plato")))
 
-for p in (str(REPO_ARCH), str(REPO_ARCH / "fluent"), str(FOLK), str(EXP245), str(EXP4), str(EXP6)):
+for p in (str(REPO_ARCH), str(REPO_ARCH / "fluent"), str(SCRIPT_DIR)):
     if p not in sys.path:
         sys.path.insert(0, p)
 
@@ -435,8 +436,8 @@ def main():
         "transfer_476_true9_20k": tr476_true9,
         "transfer_476_excl15_true9_20k": tr476_ex15_true9,
     }
-    out_p = EXP6 / "round7_claim_c_seal.json"
-    out_p.write_text(json.dumps(out, indent=2))
+    out_p = REPO_ARCH / "fluent" / "plato" / "v6_round7_claim_c_seal.json"
+    out_p.write_text(json.dumps(out, indent=2) + "\n")
     print(f"SAVED {out_p} in {out['elapsed_sec']}s", flush=True)
     print("DIV-STRAT FIXED HOLM7 480 pct | basic:", fixed_both["n480"]["holm7_percentile"], "|", fixed_both["n480"]["holm7_basic"])
     print("DIV-STRAT FIXED HOLM7 476 pct | basic:", fixed_both["n476"]["holm7_percentile"], "|", fixed_both["n476"]["holm7_basic"])

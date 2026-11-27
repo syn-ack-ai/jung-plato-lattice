@@ -36,11 +36,15 @@ ARCH = Path(__file__).resolve().parents[2] / "bench" / "archetypes"
 PLATO = ARCH / "fluent" / "plato"
 MID = ARCH / "fluent" / "mid"
 SELFSHAPE = ARCH / "selfshape"
-EXP_DIR = Path(os.environ.get("EXP251_DIR", os.environ.get("JPL_EXP251_DIR", "./exp251_work"))).resolve()
+SCRATCH_DIR = Path(os.environ.get("JPL_WORK_DIR", "."))
+EXP_DIR = Path(os.environ.get("EXP251_DIR", os.environ.get("JPL_EXP251_DIR", str(SCRATCH_DIR / "exp251_e4b_c4_50")))).resolve()
 SLICE_DIR = EXP_DIR / "slices"
 EVAL_DIR = EXP_DIR / "eval_cache"
-for _d in (EXP_DIR, SLICE_DIR, EVAL_DIR):
-    _d.mkdir(parents=True, exist_ok=True)
+
+
+def _ensure_dirs():
+    for _d in (EXP_DIR, SLICE_DIR, EVAL_DIR):
+        _d.mkdir(parents=True, exist_ok=True)
 
 if str(ARCH) not in sys.path:
     sys.path.insert(0, str(ARCH))
@@ -554,6 +558,7 @@ def extract_eval(arm, slice_path=None, run_buddy=False):
 
 
 if __name__ == "__main__":
+    _ensure_dirs()
     cmd = sys.argv[1]
     if cmd == "build_eval_texts":
         build_eval_texts()

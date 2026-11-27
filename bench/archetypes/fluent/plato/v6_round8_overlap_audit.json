@@ -1,4 +1,5 @@
 {
+  "script_sha256": "c1846b1630294bb80144c596f9563a47d8eb549a1dcba31ec4bfc40ca117e514",
   "rotation_fit_corpus": "neutral_only=True (gut+proc+chat, zero myth passages)",
   "aft_csv_sha256": "5214f213b2ef99dded16fcd4f5fca9b1e2c0675aff99ea475b1839c21f441ba1",
   "aft_csv_rows_scanned": 1518,
@@ -493,5 +494,5 @@
       }
     }
   },
-  "elapsed_sec": 40.5
+  "elapsed_sec": 40.3
 }

@@ -36,27 +36,36 @@ from collections import defaultdict
 from pathlib import Path
 import numpy as np
 
+SCRIPT_DIR = Path(__file__).resolve().parent
 SCRATCH_DIR = Path(os.environ.get("JPL_WORK_DIR", "."))
-EXP_DIR = SCRATCH_DIR / "exp251_e4b_c4_50"
+EXP_DIR = Path(os.environ.get("EXP251_DIR", os.environ.get("JPL_EXP251_DIR", str(SCRATCH_DIR / "exp251_e4b_c4_50")))).resolve()
 SLICE_DIR = EXP_DIR / "slices"
 EVAL_DIR = EXP_DIR / "eval_cache"
-for _d in (EXP_DIR, SLICE_DIR, EVAL_DIR):
-    _d.mkdir(parents=True, exist_ok=True)
 
-REPO_ARCH = Path(__file__).resolve().parents[2] / "bench" / "archetypes"
+REPO_ARCH = SCRIPT_DIR.parents[1] / "bench" / "archetypes"
 REPO_FLUENT = REPO_ARCH / "fluent"
-EXP245_DIR = SCRATCH_DIR / "exp245_controls"
-EXP247_DIR = SCRATCH_DIR / "exp247_round3"
-EXP242_DIR = SCRATCH_DIR / "exp240_242"
-PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(Path(__file__).resolve().parents[2] / "bench" / "archetypes" / "fluent" / "plato")))
+PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(REPO_FLUENT / "plato"))).resolve()
 D50_CACHE = PLATO_CACHE / "depth50_distill"
-DEPTH_DIR = PLATO_CACHE / "depth240"
+DEPTH_DIR = Path(os.environ.get("EXP251_DEPTH_DIR", os.environ.get("JPL_DEPTH_DIR", str(PLATO_CACHE / "depth240")))).resolve()
 PROC_HELD_PATH = Path(os.environ.get("JPL_PROC_HELD_PATH", str(REPO_FLUENT / "mid" / "proc_held.jsonl")))
 MODEL_PATH = os.environ.get("GEMMA4_MLX_MODEL", "mlx-community/gemma-4-E4B-it-bf16")
 
-for _p in (str(REPO_ARCH), str(REPO_FLUENT), str(EXP245_DIR), str(EXP247_DIR)):
+for _p in (str(REPO_ARCH), str(REPO_FLUENT), str(SCRIPT_DIR)):
     if _p not in sys.path:
         sys.path.insert(0, _p)
+
+
+def _ensure_dirs():
+    for _d in (EXP_DIR, SLICE_DIR, EVAL_DIR):
+        _d.mkdir(parents=True, exist_ok=True)
+
+
+def _targets_path():
+    p = EXP_DIR / "targets_e4b_50.npz"
+    if p.exists():
+        return p
+    alt = EXP_DIR / "data" / "targets_e4b_50.npz"
+    return alt if alt.exists() else p
 
 import plato_data as PD  # noqa: E402
 import arch_rot229 as AR  # noqa: E402
@@ -386,7 +395,7 @@ def train_arm(arm, steps=450, lr_mlp=1.5e-5, lr_head=1e-3, ce_w=0.25, kl_w=1.5, 
     mx.random.seed(seed)
     rng = np.random.default_rng(seed)
 
-    d_t = np.load(EXP_DIR / "targets_e4b_50.npz")
+    d_t = np.load(_targets_path())
     ids_f, ids_o = d_t["tr_ids_flat"], d_t["tr_ids_off"]
     pts_f, pts_o = d_t["tr_pts_flat"], d_t["tr_pts_off"]
     tgt_arr = d_t[cfg["target_key"]] if cfg["target_key"] else None
@@ -571,7 +580,7 @@ def extract_eval(arm):
         _load_mlx_slice(model, sf)
     print(f"EXTRACT_EVAL {arm}: loaded model in {time.time() - t0:.1f}s", flush=True)
 
-    d_t = np.load(EXP_DIR / "targets_e4b_50.npz")
+    d_t = np.load(_targets_path())
 
     # 1. Neutral train & eval checkpoint states at L20 (for 100% zero-leakage PCA & blind Phi-4 / OLMo 3 Procrustes!)
     #    Also capture L12 on first 16 eval passages to assert exact 0.0 upstream invariance!
@@ -817,7 +826,7 @@ def _group_cos_per_unit(preds, Yc, group_ids):
 
 def analyze_all(arms=("base", "ctrl50", "c3_50", "c4_50")):
     t0 = time.time()
-    d_t = np.load(EXP_DIR / "targets_e4b_50.npz", allow_pickle=True)
+    d_t = np.load(_targets_path(), allow_pickle=True)
     ev_groups = d_t["ev_pt_groups"].tolist()
     ev_doms = d_t["ev_pt_domains"].tolist()
     ev_ret = d_t["ev_pt_ret"]
@@ -1128,7 +1137,7 @@ def analyze_all(arms=("base", "ctrl50", "c3_50", "c4_50")):
 
     out = {
         "script_sha256": _sha256(__file__),
-        "targets_sha256": _sha256(EXP_DIR / "targets_e4b_50.npz"),
+        "targets_sha256": _sha256(_targets_path()),
         "plato50_layer": PLATO50_LAYER,
         "mlp_layers": list(MLP_LAYERS),
         "c3_teacher_families": list(C3_KEYS),
@@ -1232,16 +1241,24 @@ def self_test():
 if __name__ == "__main__":
     cmd = sys.argv[1]
     if cmd == "test":
+        if "--run-model-test" not in sys.argv[2:]:
+            print("NOTE: `e4b_transplant50.py test` loads the 8B Gemma 4 MLX checkpoint (~16 GB download if not cached). Pass `--run-model-test` to execute it.")
+            raise SystemExit(0)
         self_test()
     elif cmd == "build_targets":
+        _ensure_dirs()
         build_targets()
     elif cmd == "train":
+        _ensure_dirs()
         train_arm(sys.argv[2])
     elif cmd == "extract_eval":
+        _ensure_dirs()
         extract_eval(sys.argv[2])
     elif cmd == "analyze":
+        _ensure_dirs()
         analyze_all()
     elif cmd == "run_all":
+        _ensure_dirs()
         build_targets()
         for _a in ("ctrl50", "c3_50", "c4_50"):
             train_arm(_a)

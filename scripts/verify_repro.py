@@ -2,19 +2,22 @@
 
 Checks:
   1. Privacy, license & secret firewall across all tracked and untracked non-ignored files (`git ls-files`),
-     rejecting redistributed `aft.csv`/`aft_real_myths_500.json`, personal home paths, and `./systemone/`.
+     rejecting redistributed `aft.csv`/`aft_real_myths_500.json`/`aft_excerpts.json` (case-insensitive + raw SHA-256),
+     personal home paths, and `./systemone/`.
   2. Read-only-safe Python 3.10+ syntax check (in-memory `ast.parse(..., feature_version=(3, 10))` + `compile`)
      across all Python modules (zero `.pyc` writes).
   3. Exact presence of all 9 publication figures (PNG + PDF in paper/figures/ and PDF in paper/arxiv/figures/),
      hero PNG, committed spoken-audio fixture, dual-audience Word review copy (`paper/The_Jung_Plato_Lattice_v6.docx`),
-     82 verified references across paper.md, references.bib, and main.bbl, third-party license files
-     (`THIRD_PARTY_LICENSES.md`, `LICENSES/Apache-2.0.txt`), pure-ASCII `IEEEtran.cls`, and strict arXiv LaTeX hygiene
-     (\\pdfoutput=1 header, pure ASCII main.tex, zero \\resizebox, zero mid-sentence ---, zero unescaped ~digits).
+     87 verified references across paper.md, references.bib, and main.bbl, third-party license files
+     (`THIRD_PARTY_LICENSES.md`, `LICENSES/Apache-2.0.txt`), pure-ASCII `IEEEtran.cls`, mandatory AI-use disclosure,
+     and strict arXiv LaTeX hygiene (\\pdfoutput=1 header, pure ASCII main.tex, zero \\resizebox, zero mid-sentence ---,
+     zero unescaped ~digits).
   4. Strict ordered, typed cell-level cross-verification of committed JSON artifacts against EVERY numeric
-     table (including all CI endpoints, all Exp 251 delta columns, all 10/10 multimodal fixtures, and Round-8
-     `n=477`/`n=473` overlap audits) in BOTH `paper/paper.md` AND `paper/arxiv/main.tex` (all 16 tabular tables +
-     Rosetta Stone), plus JSON-derived headline checks across Abstract, Conclusion, and Exp 251 canonical bootstraps,
-     PLUS a 6/6 in-memory corruption regression self-test.
+     table (including all CI endpoints, all Exp 251 delta columns, all 10/10 multimodal fixtures, Round-8
+     `n=477`/`n=473` overlap audits, Cross-Lingual causal story audit, and byte-for-byte `script_sha256` parity across
+     all 5 active v6 JSONs & runners) in BOTH `paper/paper.md` AND `paper/arxiv/main.tex` (all 16 tabular tables +
+     Rosetta Stone), plus target- and order-bound Exp 251 canonical OOF bootstrap checks and `README.md` headline checks,
+     PLUS a 12/12 in-memory corruption regression self-test.
   5. Strict `paper/arxiv/arxiv_submission.tar.gz` hygiene & SHA-256 byte-parity inspection (exact 13-file allowlist,
      zero AppleDouble `._*` sidecars, uid=0/gid=0, empty uname/gname, zero xattr PAX headers).
   6. Comprehensive zero-GPU scientific unit tests with fully isolated temporary `JPL_CKPT_DIR` (explicitly
@@ -63,7 +66,10 @@ def check_privacy():
         ("rfc1918_ip", re.compile(r"(?:\b192\.168\.\d+\.\d+|\b10\.\d+\.\d+\.\d+|\b172\.(?:1[6-9]|2\d|3[01])\.\d+\.\d+)")),
         ("private_key", re.compile(r"BEGIN\s+(?:[A-Z0-9]+\s+)?PRIVATE\s+KEY", re.I)),
     ]
-    forbidden_filenames = {"aft.csv", "aft_real_myths_500.json"}
+    forbidden_filenames = {"aft.csv", "aft_real_myths_500.json", "aft_excerpts.json"}
+    forbidden_sha256s = {
+        "5214f213b2ef99dded16fcd4f5fca9b1e2c0675aff99ea475b1839c21f441ba1",  # raw third-party aft.csv
+    }
     # Use NUL-delimited `git ls-files` for tracked PLUS untracked non-ignored files so new runners are always scanned!
     git_res = subprocess.run(["git", "ls-files", "-z"], cwd=str(ROOT), capture_output=True)
     git_oth = subprocess.run(["git", "ls-files", "--others", "--exclude-standard", "-z"], cwd=str(ROOT), capture_output=True)
@@ -90,12 +96,16 @@ def check_privacy():
             continue
         if not using_git and _is_skipped(p):
             continue
-        if p.name in forbidden_filenames:
+        if p.name.lower() in forbidden_filenames:
             hits.append((str(p.relative_to(ROOT)), ["forbidden_third_party_folklore_file"]))
+            continue
+        raw_bytes = p.read_bytes()
+        if hashlib.sha256(raw_bytes).hexdigest() in forbidden_sha256s:
+            hits.append((str(p.relative_to(ROOT)), ["forbidden_third_party_folklore_sha256"]))
             continue
         if p.suffix.lower() in BINARY_EXTS:
             continue
-        txt = p.read_text(errors="ignore")
+        txt = raw_bytes.decode("utf-8", errors="ignore")
         matched_rules = [rname for rname, pat in rules if pat.search(txt)]
         if matched_rules:
             hits.append((str(p.relative_to(ROOT)), matched_rules))
@@ -142,9 +152,9 @@ def check_paper_and_figures():
     refs_md = [l for l in txt.split("## References", 1)[1].splitlines() if l.startswith("- ")]
     refs_bib = re.findall(r"^@[a-zA-Z]+\{", bib, flags=re.M)
     refs_bbl = re.findall(r"^\\bibitem\{", bbl, flags=re.M)
-    assert len(refs_md) == 82, f"Expected 82 references in paper.md, found {len(refs_md)}"
-    assert len(refs_bib) == 82, f"Expected 82 BibTeX entries in references.bib, found {len(refs_bib)}"
-    assert len(refs_bbl) == 82, f"Expected 82 \\bibitem entries in main.bbl, found {len(refs_bbl)}"
+    assert len(refs_md) == 87, f"Expected 87 references in paper.md, found {len(refs_md)}"
+    assert len(refs_bib) == 87, f"Expected 87 BibTeX entries in references.bib, found {len(refs_bib)}"
+    assert len(refs_bbl) == 87, f"Expected 87 \\bibitem entries in main.bbl, found {len(refs_bbl)}"
 
     # Dual-audience Microsoft Word (.docx) review copy presence & archive validity
     docx_path = ROOT / "paper" / "The_Jung_Plato_Lattice_v6.docx"
@@ -163,8 +173,12 @@ def check_paper_and_figures():
     assert tp_lic.exists() and tp_lic.stat().st_size > 500, f"Missing {tp_lic}"
     assert apache_lic.exists() and apache_lic.stat().st_size > 10_000, f"Missing {apache_lic}"
     v6_runners = sorted((ROOT / "scripts" / "v6").glob("*.py"))
-    assert len(v6_runners) >= 22, f"Expected >=22 sanitized v6 runners in scripts/v6/, found {len(v6_runners)}"
-    for req_runner in ("fetch_trilogy_aft.py", "round8_overlap_audit.py", "e4b_transplant50.py", "e4b_transplant50_cuda.py", "analyze_3seed_251.py", "exp247_actor_binding.py", "round7_claim_c_seal.py"):
+    assert len(v6_runners) >= 30, f"Expected >=30 sanitized v6 scripts in scripts/v6/, found {len(v6_runners)}"
+    for req_runner in (
+        "fetch_trilogy_aft.py", "round8_overlap_audit.py", "e4b_transplant50.py",
+        "e4b_transplant50_cuda.py", "analyze_3seed_251.py", "exp247_actor_binding.py",
+        "round7_claim_c_seal.py", "crosslang_audit.py",
+    ):
         assert (ROOT / "scripts" / "v6" / req_runner).exists(), f"Missing required v6 runner: {req_runner}"
 
     # arXiv LaTeX header & latex-arxiv-SKILL formatting hygiene checks
@@ -190,10 +204,18 @@ def check_paper_and_figures():
             "+0.0569", "8,916,480", "+0.78,+10.22", "+0.78, +10.22", "0.0945",
             "lack a psyche", "four major breakthroughs", "Four major breakthroughs",
             "Xi et al.", "1468-5922.00282", "canonical Jungian", "0.04225", "0.03631",
+            "Audit-Verified Preprint",
         ):
             assert forbidden not in doc, f"Forbidden/stale string '{forbidden}' found in {label}!"
     for label, doc in [("paper.md", txt), ("main.tex", tex)]:
         assert "8,916,608" in doc, f"Exact student total param count 8,916,608 missing from {label}!"
+        assert "Statement on AI Assistance" in doc, f"Mandatory arXiv AI-use disclosure missing from {label}!"
+    assert "AI Assistance" in readme_txt, "AI-use disclosure missing from README.md!"
+    for needle in (
+        "+0.0869", "+0.0780", "0.13803", "0.15729", "0.0417", "0.0405", "0.0414",
+        "64.4%", "58.3%", "-0.106", "0.952", "+0.0789", "+0.0225", "+0.1204",
+    ):
+        assert needle in readme_txt, f"Headline value '{needle}' missing from README.md!"
 
     print(f"[PASS] Paper, Word .docx, licenses, v6 runners ({len(v6_runners)}), & arXiv hygiene verified: 9 figures + hero PNG, {len(refs_md)}/{len(refs_bib)}/{len(refs_bbl)} refs (md/bib/bbl), pure-ASCII LaTeX & IEEEtran.cls.")
 
@@ -1015,6 +1037,10 @@ def _ci_pp_regex(pair):
     return rf"^\[{lo},\s*{hi}\]$"
 
 
+def _sha256_file(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
 def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     e247 = json.load(open(ARCH / "fluent" / "plato" / "v6_exp247_binding_results.json"))
     nat5 = json.load(open(ARCH / "fluent" / "plato" / "v6_within_model_native_5depth.json"))
@@ -1025,9 +1051,42 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     r8o = json.load(open(ARCH / "fluent" / "plato" / "v6_round8_overlap_audit.json"))
     d5m = json.load(open(ARCH / "fluent" / "plato" / "v6_distill50_5m.json"))
     drop = json.load(open(ARCH / "fluent" / "plato" / "v6_dropped_and_depth_audits.json"))
+    xling = json.load(open(ARCH / "crosslang" / "v6_crosslang_audit.json"))
     e251 = e251_override if e251_override is not None else json.load(open(ARCH / "aion_8b" / "runs" / "e4b_transplant50_exp251.json"))
 
+    # Byte-for-byte script & data SHA-256 parity across all 5 active regenerated v6 runners
+    v6_dir = ROOT / "scripts" / "v6"
+    assert e251["script_sha256"] == _sha256_file(v6_dir / "analyze_3seed_251.py"), "script_sha256 mismatch: analyze_3seed_251.py!"
+    assert r8o["script_sha256"] == _sha256_file(v6_dir / "round8_overlap_audit.py"), "script_sha256 mismatch: round8_overlap_audit.py!"
+    assert r7c["script_sha256"] == _sha256_file(v6_dir / "round7_claim_c_seal.py"), "script_sha256 mismatch: round7_claim_c_seal.py!"
+    assert e247["manifest"]["script_sha256"] == _sha256_file(v6_dir / "exp247_actor_binding.py"), "script_sha256 mismatch: exp247_actor_binding.py!"
+    assert e247["manifest"]["data_sha256"] == _sha256_file(ARCH / "selfshape" / "bm_actor2x2_247_data.json"), "data_sha256 mismatch: bm_actor2x2_247_data.json!"
+    assert xling["script_sha256"] == _sha256_file(v6_dir / "crosslang_audit.py"), "script_sha256 mismatch: crosslang_audit.py!"
+    assert xling["items_sha256"] == _sha256_file(ARCH / "crosslang" / "items.jsonl"), "items_sha256 mismatch: crosslang/items.jsonl!"
+    assert xling["checked_sha256"] == _sha256_file(ARCH / "crosslang" / "checked.jsonl"), "checked_sha256 mismatch: crosslang/checked.jsonl!"
+    assert xling["sign_sha256"] == _sha256_file(ARCH / "crosslang" / "sign.jsonl"), "sign_sha256 mismatch: crosslang/sign.jsonl!"
+
+    # Cross-Lingual Causal Story Form audit invariants (v6_crosslang_audit.json)
+    assert len(xling["models"]) == 5 and len(xling["languages"]) == 4 and xling["c1_primary"]["n_patterns"] == 78
+    assert abs(xling["c1_primary"]["mean"] - 0.0789) < 5e-4
+    assert abs(xling["c1_edited_clauses_only"]["mean"] - 0.0564) < 5e-4
+    assert abs(xling["c1_story_beyond_clauses_paired"]["mean"] - 0.0225) < 5e-4
+    assert abs(xling["clear_sign_matched_subset"]["mean"] - 0.1204) < 5e-4
+    assert abs(xling["fixed_within_outcome_shuffle_floor"]["mean"] - 0.0046) < 5e-4
+    for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
+        for ndl in ("+0.0789", "+0.0630", "+0.0944", "+0.0564", "+0.0225", "+0.0139", "+0.0305", "+0.0178", "-0.0133", "+0.0484", "+0.1204", "+0.0046"):
+            assert ndl in doc, f"Cross-lingual audit figure '{ndl}' missing from {label}!"
+
+    expected_l12_keys = {
+        "base", "ctrl50", "ctrl50_s252", "ctrl50_s253",
+        "c4_50", "c4_50_s252", "c4_50_s253",
+        "c3_50", "c3_50_s252", "c3_50_s253",
+    }
+    assert set(e251["l12_invariance_max_abs_diff"].keys()) == expected_l12_keys, (
+        f"Unexpected l12_invariance_max_abs_diff keys: {set(e251['l12_invariance_max_abs_diff'].keys())}"
+    )
     assert all(v == 0.0 for v in e251["l12_invariance_max_abs_diff"].values())
+    assert "quick_blind" not in json.dumps(e251), "Stale quick_blind key found anywhere inside e251 JSON!"
     assert abs(e247["actor2x2_5depth_curves"]["d50"]["mean"]["gemma4_e4b"]["cv2_val5"] - 0.7301) < 5e-4
     assert abs(e247["actor2x2_5depth_curves"]["d50"]["mean"]["qwen35_9b"]["cv2_val5"] - 0.7309) < 5e-4
     assert abs(nat5["within_model_native_5depth"]["mean"]["bm_actor2x2_247"]["d50"]["mean_6models"] - 0.7715) < 5e-4
@@ -1041,6 +1100,7 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     assert r8o["passages_scanned_neutral"] == 2398
     assert r8o["neutral_passages_ge12_word_overlaps_vs_all_1518_aft_csv"] == 0
     assert len(r8o["all_myth_pool_ge12_word_overlaps_vs_all_1518_aft_csv"]) == 7
+    assert all(h["in_scored_excerpt"] is False for h in r8o["all_myth_pool_ge12_word_overlaps_vs_all_1518_aft_csv"])
     assert len(r8o["full_tale_shared_public_domain_editions_in_gutenberg_myth_pool"]) == 6
     assert r8o["max_contiguous_word_overlap_neutral_passages_vs_scored_500"]["max_words"] == 7
     assert r8o["max_contiguous_word_overlap_all_passages_vs_scored_500"]["max_words"] == 10
@@ -1055,7 +1115,13 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     for label, doc, pct in [("paper.md", paper_txt, "%"), ("main.tex", tex_txt, r"\%")]:
         for needle in (
             "0.13772", "0.0405", "0.15685", "0.13687", "0.0414", "0.15498",
+            "134/10000", "0.0135", "0.07064", "137/10000", "0.0138", "0.07195",
+            "0.058", "0.118", "0.054", "0.114",
             "95.5", "96.3", "82.97", f"64.4{pct}", f"58.3{pct}", f"26.0{pct}", f"28.2{pct}",
+            "+0.0888, +0.0864, +0.0855", "+0.0799, +0.0777, +0.0765",
+            f"18.8{pct}", f"19.4{pct}", "0.0042",
+            "[+0.00071, +0.00713]", "[+0.00062, +0.00704]",
+            "+0.16", "-0.35", "10.2", "9.0", "0.5733", "0.5104", "10/10",
         ):
             assert needle in doc, f"Verified v6 audit figure '{needle}' missing from {label}!"
     # 5M d50 screen sanity
@@ -1299,18 +1365,36 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
         (6, r"^0\s*extra\s*params$"),
     ], "MD Table 4b Delta", exact_cols=7)
 
-    # Verify Exp 251 canonical OOF passage bootstrap CI endpoints + Abstract/Conclusion headlines in BOTH TeX & MD!
-    for bk in ("phi4_mini", "olmo3_7b"):
-        cb = pd3[bk]["clause_cos_3seed_mean_paired_boot"]
-        gb = pd3[bk]["group_cos_3seed_mean_paired_boot"]
-        needles = [
-            f"{cb['obs']:+.5f}", f"{cb['ci95_pct'][0]:+.5f}", f"{cb['ci95_pct'][1]:+.5f}",
-            f"{cb['ci95_basic'][0]:+.5f}", f"{cb['ci95_basic'][1]:+.5f}",
-            f"{gb['obs']:+.5f}", f"{gb['ci95_pct'][0]:+.5f}", f"{gb['ci95_pct'][1]:+.5f}",
-        ]
-        for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
-            for ndl in needles:
-                assert ndl in doc, f"Exp 251 canonical OOF bootstrap value '{ndl}' ({bk}) missing from {label}!"
+    # Verify Exp 251 canonical OOF passage bootstrap CI endpoints (target- AND order-bound regex!) in BOTH TeX & MD!
+    cb_p = pd3["phi4_mini"]["clause_cos_3seed_mean_paired_boot"]
+    cb_o = pd3["olmo3_7b"]["clause_cos_3seed_mean_paired_boot"]
+    gb_p = pd3["phi4_mini"]["group_cos_3seed_mean_paired_boot"]
+    gb_o = pd3["olmo3_7b"]["group_cos_3seed_mean_paired_boot"]
+
+    def _oof_clause_pat(cb, target_lbl, wrap_ch):
+        w = re.escape(wrap_ch)
+        obs = re.escape(f"{cb['obs']:+.5f}")
+        plo, phi = re.escape(f"{cb['ci95_pct'][0]:+.5f}"), re.escape(f"{cb['ci95_pct'][1]:+.5f}")
+        blo, bhi = re.escape(f"{cb['ci95_basic'][0]:+.5f}"), re.escape(f"{cb['ci95_basic'][1]:+.5f}")
+        return (
+            rf"{w}{obs}{w}\s*\("
+            rf"(?:{w})?pct\s+(?:{w})?\[{plo},\s*{phi}\]{w},\s*"
+            rf"(?:{w})?basic\s+(?:{w})?\[{blo},\s*{bhi}\]{w}\)\s*on\s*{re.escape(target_lbl)}"
+        )
+
+    def _oof_group_pat(gp, go, wrap_ch):
+        w = re.escape(wrap_ch)
+        po, plo, phi = re.escape(f"{gp['obs']:+.5f}"), re.escape(f"{gp['ci95_pct'][0]:+.5f}"), re.escape(f"{gp['ci95_pct'][1]:+.5f}")
+        oo, olo, ohi = re.escape(f"{go['obs']:+.5f}"), re.escape(f"{go['ci95_pct'][0]:+.5f}"), re.escape(f"{go['ci95_pct'][1]:+.5f}")
+        return (
+            rf"{w}{po}{w}\s*\({w}\[{plo},\s*{phi}\]{w}\)\s*and\s*"
+            rf"{w}{oo}{w}\s*\({w}\[{olo},\s*{ohi}\]{w}\)"
+        )
+
+    for label, doc, wch in [("paper.md", paper_txt, "`"), ("main.tex", tex_txt, "$")]:
+        assert re.search(_oof_clause_pat(cb_p, "Phi-4", wch), doc), f"Target/order-bound Phi-4 OOF clause CI mismatch in {label}!"
+        assert re.search(_oof_clause_pat(cb_o, "OLMo 3", wch), doc), f"Target/order-bound OLMo 3 OOF clause CI mismatch in {label}!"
+        assert re.search(_oof_group_pat(gb_p, gb_o, wch), doc), f"Target/order-bound equal-group OOF CI mismatch in {label}!"
 
     # Verify Abstract & Conclusion carry exact JSON-backed Exp 251 & Claim C headlines in BOTH docs
     m_tex_abs = re.search(r"\\begin\{abstract\}(.*?)\\end\{abstract\}", tex_txt, re.S)
@@ -1329,7 +1413,7 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
 
 
 def check_verifier_corruption_regression():
-    """In-memory self-test proving that 6 injected corruptions across TeX, MD, and JSON raise AssertionError."""
+    """In-memory self-test proving that 12 injected corruptions across TeX, MD, and JSON raise AssertionError."""
     paper_txt = (ROOT / "paper" / "paper.md").read_text()
     tex_txt = (ROOT / "paper" / "arxiv" / "main.tex").read_text()
     e251_base = json.load(open(ARCH / "aion_8b" / "runs" / "e4b_transplant50_exp251.json"))
@@ -1353,22 +1437,42 @@ def check_verifier_corruption_regression():
     assert "0.5957--0.6271" in tex_txt
     _expect_fail("corrupted tab:folk_transfer cell", lambda: _verify_v6_tables(paper_txt, tex_txt.replace("0.5957--0.6271", "0.5924--0.6254")))
 
-    # 4. Corrupt Exp 251 MCQ delta col in BOTH main.tex AND paper.md
+    # 4-5. Corrupt Exp 251 MCQ delta col in BOTH main.tex AND paper.md
     assert "0.0 pp (n.s.)" in tex_txt and "0.00 ± 0.50 pp` (n.s.)" in paper_txt
     _expect_fail("corrupted tab:exp251 MCQ delta col", lambda: _verify_v6_tables(paper_txt, tex_txt.replace("0.0 pp (n.s.)", "99.9 pp (n.s.)")))
     _expect_fail("corrupted Table 4b MCQ delta col", lambda: _verify_v6_tables(paper_txt.replace("0.00 ± 0.50 pp` (n.s.)", "99.90 ± 0.50 pp` (n.s.)"), tex_txt))
 
-    # 5. Corrupt Exp 251 canonical OOF bootstrap CI endpoint in BOTH main.tex AND paper.md
+    # 6-7. Corrupt Exp 251 canonical OOF bootstrap CI endpoint in BOTH main.tex AND paper.md
     assert "+0.03533" in tex_txt and "+0.03533" in paper_txt
     _expect_fail("corrupted main.tex Exp 251 OOF CI", lambda: _verify_v6_tables(paper_txt, tex_txt.replace("+0.03533", "+0.99000")))
     _expect_fail("corrupted paper.md Exp 251 OOF CI", lambda: _verify_v6_tables(paper_txt.replace("+0.03533", "+0.99000"), tex_txt))
 
-    # 6. Corrupt seed-253 audio multimodal check in e251 JSON
+    # 8. Corrupt seed-253 audio multimodal check in e251 JSON
     bad_e251 = copy.deepcopy(e251_base)
     bad_e251["lm_guardrails"]["c3_50"]["per_seed"]["253"]["multimodal"]["audio_ok"] = False
     _expect_fail("corrupted e251 seed-253 audio_ok=False", lambda: _verify_v6_tables(paper_txt, tex_txt, e251_override=bad_e251))
 
-    print("[PASS] Verifier corruption regression self-test passed (8/8 injected CI, table, delta-col, & multimodal corruptions caught).")
+    # 9. Reverse Phi-4 OOF CI endpoints in main.tex (must fail order-bound check!)
+    assert "[+0.03533, +0.03733]" in tex_txt
+    _expect_fail("reversed main.tex Phi-4 OOF CI", lambda: _verify_v6_tables(paper_txt, tex_txt.replace("[+0.03533, +0.03733]", "[+0.03733, +0.03533]")))
+
+    # 10. Swap Phi-4 and OLMo 3 OOF point estimates in paper.md (must fail target-bound check!)
+    assert "+0.03632" in paper_txt and "+0.03163" in paper_txt
+    swapped_md = paper_txt.replace("+0.03632", "__TMP__").replace("+0.03163", "+0.03632").replace("__TMP__", "+0.03163")
+    _expect_fail("swapped paper.md Phi-4/OLMo 3 OOF point estimates", lambda: _verify_v6_tables(swapped_md, tex_txt))
+
+    # 11. Inject nested quick_blind key inside e251 JSON (must fail recursive guard!)
+    bad_qb = copy.deepcopy(e251_base)
+    bad_qb["lm_guardrails"]["base"]["quick_blind_phi4_50"] = 0.99
+    _expect_fail("injected nested quick_blind key in e251", lambda: _verify_v6_tables(paper_txt, tex_txt, e251_override=bad_qb))
+
+    # 12. Replace canonical L12 invariance checkpoint key `base` with fictitious key (must fail exact key-set guard!)
+    bad_l12 = copy.deepcopy(e251_base)
+    del bad_l12["l12_invariance_max_abs_diff"]["base"]
+    bad_l12["l12_invariance_max_abs_diff"]["fake_ckpt"] = 0.0
+    _expect_fail("fictitious L12 checkpoint key in e251", lambda: _verify_v6_tables(paper_txt, tex_txt, e251_override=bad_l12))
+
+    print("[PASS] Verifier corruption regression self-test passed (12/12 injected CI, order/target-swap, table, delta-col, quick_blind, L12-key, & multimodal corruptions caught).")
 
 
 def run_unit_tests():
@@ -1398,10 +1502,11 @@ def run_unit_tests():
     except ImportError:
         skipped.extend(["exp228/exp229/e4b_living (missing torch)"])
 
-    # Strictly isolate JPL_CKPT_DIR in a temp sandbox so tests NEVER touch user checkpoints!
+    # Strictly isolate JPL_CKPT_DIR in a temp sandbox and disable .pyc writes so tests NEVER pollute the workspace!
     with tempfile.TemporaryDirectory(prefix="jpl_repro_test_") as td:
         env = dict(os.environ)
         env["JPL_CKPT_DIR"] = str(Path(td) / "ckpt")
+        env["PYTHONDONTWRITEBYTECODE"] = "1"
         for name, cmd in tests:
             res = subprocess.run(cmd, cwd=str(ARCH), env=env, capture_output=True, text=True)
             assert res.returncode == 0, f"Unit test '{name}' failed:\n{res.stdout}\n{res.stderr}"

@@ -801,8 +801,10 @@ def make_fig8():
             mm = lg[ak]["per_seed"][s]["multimodal"]
             mm_checks.append(bool(mm["vision_ok"] and mm["audio_ok"]))
     mm_pass, mm_tot = sum(1 for ok in mm_checks if ok), len(mm_checks)
+    l12_max = max(float(v) for v in e251["l12_invariance_max_abs_diff"].values())
+    l12_str = "0" if l12_max == 0.0 else f"{l12_max:.2e}"
     info = (
-        f"3-Seed Paired (seeds 251–253, L19–20, L12 Δ=0):\n"
+        f"3-Seed Paired (seeds 251–253, L19–20, L12 Δ={l12_str}):\n"
         f"  vs. ctrl50: Phi-4 +{p4_dc['mean']:.4f}±{p4_dc['sd']:.4f} | OLMo +{ol_dc['mean']:.4f}±{ol_dc['sd']:.4f}\n"
         f"  vs. Base:   Phi-4 +{p4_db:.4f} ({rats['phi4_mini']['ratio_of_3seed_means']:.1f}×) | OLMo +{ol_db:.4f} ({rats['olmo3_7b']['ratio_of_3seed_means']:.1f}×)\n"
         f"  Teacher: C3_50 {c3_t_p4:.3f} > C4_50 {c4_t_p4:.3f} | NLL +{dnll:.4f} vs ctrl50\n"
@@ -979,7 +981,10 @@ def make_fig9():
 
     h8_480_lex = sum(1 for v in t480["holm8_all3_20k"].values() if v < 0.05)
     h8_476_lex = sum(1 for v in t476["holm8_all3_20k"].values() if v < 0.05)
+    h8_ch_pass = sum(1 for v in t480["holm8_chance"].values() if v < 0.05)
+    h8_ch_tot = len(t480["holm8_chance"])
     h8_ch_max = max(max(t480["holm8_chance"].values()), max(t476["holm8_chance_2k"].values()))
+    maj_oracle_pct = float(t480["test_majority_oracle"]["rate"]) * 100.0 if isinstance(t480["test_majority_oracle"], dict) else float(t480["test_majority_oracle"]) * 100.0
     lex_lo = min(v["macro_auroc"] for v in t480["lexical_baselines"].values())
     lex_hi = max(v["macro_auroc"] for v in t480["lexical_baselines"].values())
     ax2.text(
@@ -987,7 +992,7 @@ def make_fig9():
         f"True 9-class West → Non-West ({t480['n_train']}/{t480['n_test']} & {t476['n_train']}/{t476['n_test']}):\n"
         f"  Lexical baselines near chance ({lex_lo:.3f}–{lex_hi:.3f});\n"
         f"  C5⊥V3: {h8_480_lex}/8 (480) & {h8_476_lex}/8 (476) vs. lex Holm-8;\n"
-        f"  8/8 vs. chance (Holm-8 p ≤ {h8_ch_max:.3f}); maj. 30.4%.",
+        f"  {h8_ch_pass}/{h8_ch_tot} vs. chance (Holm-8 p ≤ {h8_ch_max:.3f}); maj. {maj_oracle_pct:.1f}%.",
         transform=ax2.transAxes, ha="left", va="top", fontsize=6.5, fontweight="bold", color=C_DARK,
         bbox=dict(boxstyle="round,pad=0.22", facecolor="#EBF5FB", edgecolor=C_BLUE, lw=0.7),
     )

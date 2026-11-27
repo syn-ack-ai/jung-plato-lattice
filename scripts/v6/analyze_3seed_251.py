@@ -60,11 +60,21 @@ def _sid_and_splits(rows, seed_base):
         splits.append(np.array([0 if int(s) in f0 else 1 for s in sid_idx], dtype=int))
     return sid_idx, splits
 
-EXP_DIR = Path(os.environ.get("EXP251_DIR", str(SCRIPT_DIR))).resolve()
+SCRATCH_DIR = Path(os.environ.get("JPL_WORK_DIR", "."))
+EXP_DIR = Path(os.environ.get("EXP251_DIR", os.environ.get("JPL_EXP251_DIR", str(SCRATCH_DIR / "exp251_e4b_c4_50")))).resolve()
 EVAL_DIR = EXP_DIR / "eval_cache"
-DEPTH_DIR = Path(os.environ.get("EXP251_DEPTH_DIR", str(ARCH_DIR / "fluent" / "plato" / "depth_cache"))).resolve()
+PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(ARCH_DIR / "fluent" / "plato"))).resolve()
+DEPTH_DIR = Path(os.environ.get("EXP251_DEPTH_DIR", os.environ.get("JPL_DEPTH_DIR", str(PLATO_CACHE / "depth240")))).resolve()
 SELFSHAPE_DIR = ARCH_DIR / "selfshape"
 OUT_REPO_JSON = ARCH_DIR / "aion_8b" / "runs" / "e4b_transplant50_exp251.json"
+
+
+def _targets_path() -> Path:
+    p = EXP_DIR / "targets_e4b_50.npz"
+    if p.exists():
+        return p
+    alt = EXP_DIR / "data" / "targets_e4b_50.npz"
+    return alt if alt.exists() else p
 
 PLATO50_LAYER = 20
 MLP_LAYERS = [19, 20]
@@ -295,7 +305,7 @@ def _eval_cv2_20split(Ds, Dt, Qs, Qt, splits, mask_ben=None, sid_i=None):
 
 def analyze_3seed(write_repo_json: bool = True):
     t0 = time.time()
-    d_t = np.load(EXP_DIR / "targets_e4b_50.npz", allow_pickle=True)
+    d_t = np.load(_targets_path(), allow_pickle=True)
     ev_groups = d_t["ev_pt_groups"].tolist()
     ev_doms = d_t["ev_pt_domains"].tolist()
     ev_ret = d_t["ev_pt_ret"]
@@ -787,14 +797,15 @@ def analyze_3seed(write_repo_json: bool = True):
     for bk in BLIND_KEYS:
         c3_b = paired_fp_r2f["c3_50_minus_base"][bk]
         ct_b = paired_fp_r2f["ctrl50_minus_base"][bk]
-        per_s_rat = [round(c3_b[i] / ct_b[i], 2) if abs(ct_b[i]) > 1e-9 else None for i in range(len(SEEDS))]
+        per_s_rat_fp = [c3_b[i] / ct_b[i] if abs(ct_b[i]) > 1e-9 else None for i in range(len(SEEDS))]
+        per_s_rat = [round(r, 2) if r is not None else None for r in per_s_rat_fp]
         m_c3 = float(np.mean(c3_b))
         m_ct = float(np.mean(ct_b))
         lift_ratios[bk] = {
             "c3_50_minus_base_mean": round(m_c3, 4),
             "ctrl50_minus_base_mean": round(m_ct, 4),
             "ratio_of_3seed_means": round(m_c3 / m_ct, 2) if abs(m_ct) > 1e-9 else None,
-            "mean_of_per_seed_ratios": round(float(np.mean([r for r in per_s_rat if r is not None])), 2),
+            "mean_of_per_seed_ratios": round(float(np.mean([r for r in per_s_rat_fp if r is not None])), 2),
             "per_seed_ratios": {str(SEEDS[i]): per_s_rat[i] for i in range(len(SEEDS))},
         }
 
@@ -827,36 +838,41 @@ def analyze_3seed(write_repo_json: bool = True):
         }
 
     train_config = {
-        "model_id": "google/gemma-4-E4B-it",
-        "precision": "bf16_backbone_fp32_master_mlp",
-        "seeds": list(SEEDS),
-        "n_seeds": len(SEEDS),
-        "steps": int(tlogs["c3_50"]["plato50_steps"]),
-        "grad_accum": 4,
-        "optimizer": "AdamW",
-        "betas": [0.9, 0.95],
-        "weight_decay_mlp": 0.01,
-        "weight_decay_head": 0.0,
-        "lr_mlp": 1.5e-5,
-        "lr_head": 1e-3,
-        "lr_schedule": "linear_warmup_10pct_then_cosine",
-        "grad_clip_norm": 1.0,
-        "ce_w": 0.25,
-        "kl_w": 1.5,
-        "plato_w_c3_c4": float(tlogs["c3_50"]["plato50_w"]),
-        "plato_w_ctrl50": float(tlogs["ctrl50"]["plato50_w"]),
-        "anneal_start_frac": 0.65,
-        "anneal_end_frac": 0.90,
-        "mlp_layers": list(tlogs["c3_50"]["plato50_mlp_layers"]),
-        "plato50_layer": int(tlogs["c3_50"]["plato50_layer"]),
-        "train_corpus": "neutral_only (gut+proc+chat, zero myth passages)",
+        "provenance_note": "Fields under observed_in_train_logs are parsed and asserted directly from all 9 train_*_log.json files; fields under runner_code_defaults reflect the resolved constants in e4b_transplant50_cuda.py.",
+        "observed_in_train_logs": {
+            "seeds": list(SEEDS),
+            "n_seeds": len(SEEDS),
+            "steps": int(tlogs["c3_50"]["plato50_steps"]),
+            "plato_w_c3_c4": float(tlogs["c3_50"]["plato50_w"]),
+            "plato_w_ctrl50": float(tlogs["ctrl50"]["plato50_w"]),
+            "mlp_layers": list(tlogs["c3_50"]["plato50_mlp_layers"]),
+            "plato50_layer": int(tlogs["c3_50"]["plato50_layer"]),
+        },
+        "runner_code_defaults": {
+            "model_id": "google/gemma-4-E4B-it",
+            "precision": "bf16_backbone_fp32_master_mlp",
+            "grad_accum": 4,
+            "optimizer": "AdamW",
+            "betas": [0.9, 0.95],
+            "weight_decay_mlp": 0.01,
+            "weight_decay_head": 0.0,
+            "lr_mlp": 1.5e-5,
+            "lr_head": 1e-3,
+            "lr_schedule": "linear_warmup_10pct_then_cosine",
+            "grad_clip_norm": 1.0,
+            "ce_w": 0.25,
+            "kl_w": 1.5,
+            "anneal_start_frac": 0.65,
+            "anneal_end_frac": 0.90,
+            "train_corpus": "neutral_only (gut+proc+chat, zero myth passages)",
+        },
         "eval_wrapper_note": "Evaluated via LivingE4B wrapper (aion_8b/e4b_living.py) with Titans disabled during base-study extraction and enabled on multimodal fixtures; the transplant itself modifies only L19-20 MLPs (0 incremental parameters).",
         "weight_drift_mlp_l19_l20": weight_drift,
     }
 
     out = {
         "script_sha256": _sha256(Path(__file__)),
-        "targets_sha256": _sha256(EXP_DIR / "targets_e4b_50.npz"),
+        "targets_sha256": _sha256(_targets_path()),
         "n_seeds": len(SEEDS),
         "seeds": list(SEEDS),
         "plato50_layer": PLATO50_LAYER,
@@ -890,8 +906,8 @@ def analyze_3seed(write_repo_json: bool = True):
         ol_sd = f"±{ol['sd']['r2_frob']:.4f}" if "sd" in ol else "       "
         nll_sd = f"±{lg['held_gut_nll_sd']:.4f}" if "held_gut_nll_sd" in lg else "       "
         print(
-            f"  {arm:7s} | Phi4: cos={p4['cos']:.4f} R2f={p4['r2_frob']:+.4f}{p4_sd} (R2o={p4['r2_opt']:.3f}, T1={p4['top1']*100:.1f}%) "
-            f"| OLMo: cos={ol['cos']:.4f} R2f={ol['r2_frob']:+.4f}{ol_sd} (R2o={ol['r2_opt']:.3f}, T1={ol['top1']*100:.1f}%) "
+            f"  {arm:7s} | Phi4: cos={p4['cos']:.4f} R2f={p4['r2_frob']:+.4f}{p4_sd} (R2o={p4['r2_opt_fp']:.3f}, T1={p4['top1_fp']*100:.1f}%) "
+            f"| OLMo: cos={ol['cos']:.4f} R2f={ol['r2_frob']:+.4f}{ol_sd} (R2o={ol['r2_opt_fp']:.3f}, T1={ol['top1_fp']*100:.1f}%) "
             f"| NLL={lg['held_gut_nll_mean']:.4f}{nll_sd} | MCQ={lg['proc_held']['overall']['with']*100:.2f}% "
             f"| natAct={nat['acc']*100:.2f}%",
             flush=True,

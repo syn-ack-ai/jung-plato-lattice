@@ -50,17 +50,17 @@ from collections import Counter
 from pathlib import Path
 import numpy as np
 
+SCRIPT_DIR = Path(__file__).resolve().parent
 SCRATCH_DIR = Path(os.environ.get("JPL_WORK_DIR", "."))
 EXP_DIR = SCRATCH_DIR / "exp247_round3"
-EXP_DIR.mkdir(parents=True, exist_ok=True)
 EXP245_DIR = SCRATCH_DIR / "exp245_controls"
 EXP242_DIR = SCRATCH_DIR / "exp240_242"
-REPO_ARCH = Path(__file__).resolve().parents[2] / "bench" / "archetypes"
+REPO_ARCH = SCRIPT_DIR.parents[1] / "bench" / "archetypes"
 REPO_FLUENT = REPO_ARCH / "fluent"
-PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(Path(__file__).resolve().parents[2] / "bench" / "archetypes" / "fluent" / "plato")))
+PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(REPO_FLUENT / "plato")))
 DEPTH_DIR = PLATO_CACHE / "depth240"
 
-for p in (str(REPO_ARCH), str(REPO_FLUENT), str(EXP245_DIR)):
+for p in (str(REPO_ARCH), str(REPO_FLUENT), str(SCRIPT_DIR)):
     if p not in sys.path:
         sys.path.insert(0, p)
 
@@ -75,8 +75,8 @@ MLX_KEYS = ("gemma4_e4b", "qwen35_9b", "llama31_8b", "mistral7b", "phi4_mini", "
 C4_KEYS = ("gemma4_e4b", "qwen35_9b", "llama31_8b", "mistral7b")
 DEPTH_FRACS = (0.15, 0.30, 0.50, 0.70, 0.85)
 
-DATA_JSON = EXP_DIR / "bm_actor2x2_247_data.json"
-OUT_JSON = EXP_DIR / "exp247_binding_results.json"
+DATA_JSON = REPO_ARCH / "selfshape" / "bm_actor2x2_247_data.json"
+OUT_JSON = REPO_FLUENT / "plato" / "v6_exp247_binding_results.json"
 
 
 def _sha256_file(path):

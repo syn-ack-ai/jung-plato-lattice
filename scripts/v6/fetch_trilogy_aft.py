@@ -19,6 +19,7 @@ import argparse
 import csv
 import hashlib
 import json
+import os
 import re
 import urllib.request
 from pathlib import Path
@@ -102,23 +103,36 @@ def fetch_and_reconstruct(out_dir: Path, force: bool = False) -> tuple[Path, Pat
         raise RuntimeError(f"Expected 500 records in {MANIFEST_PATH}, found {len(manifest)}")
 
     rebuilt = []
+    seen_ids = set()
+    verified_sha_count = 0
     shorter_480, equal_480, kept_480 = 0, 0, 0
     for rec in manifest:
         idx = int(rec["aft_idx"])
         if not (0 <= idx < len(aft_rows)):
             raise RuntimeError(f"aft_idx {idx} out of range (0..{len(aft_rows)-1})")
+        if idx in seen_ids:
+            raise RuntimeError(f"Duplicate aft_idx {idx} in manifest")
+        seen_ids.add(idx)
         row = aft_rows[idx]
         if str(row["atu_id"]).strip() != str(rec["atu_id"]).strip():
             raise RuntimeError(
                 f"ATU ID mismatch at aft_idx={idx}: csv='{row['atu_id']}' vs manifest='{rec['atu_id']}'"
             )
+        exp_sha = rec.get("excerpt_sha256")
+        if not isinstance(exp_sha, str) or len(exp_sha) != 64 or not re.fullmatch(r"[0-9a-f]{64}", exp_sha):
+            raise RuntimeError(f"Missing or invalid excerpt_sha256 in manifest at aft_idx={idx}")
+        if "excerpt_wc" not in rec or int(rec["excerpt_wc"]) <= 0:
+            raise RuntimeError(f"Missing or invalid excerpt_wc in manifest at aft_idx={idx}")
+        if "historical_non_western" not in rec:
+            raise RuntimeError(f"Missing historical_non_western in manifest at aft_idx={idx}")
         ex = clean_excerpt(row["text"])
         ex_wc = len(ex.split())
         ex_sha = _sha256_bytes(ex.encode("utf-8"))
-        if "excerpt_sha256" in rec and ex_sha != rec["excerpt_sha256"]:
-            raise RuntimeError(f"Excerpt SHA-256 mismatch at aft_idx={idx}: got {ex_sha}, expected {rec['excerpt_sha256']}")
-        if "excerpt_wc" in rec and ex_wc != int(rec["excerpt_wc"]):
+        if ex_sha != exp_sha:
+            raise RuntimeError(f"Excerpt SHA-256 mismatch at aft_idx={idx}: got {ex_sha}, expected {exp_sha}")
+        if ex_wc != int(rec["excerpt_wc"]):
             raise RuntimeError(f"Excerpt word-count mismatch at aft_idx={idx}: got {ex_wc}, expected {rec['excerpt_wc']}")
+        verified_sha_count += 1
         if rec.get("included", False):
             kept_480 += 1
             raw_wc = len((row["text"] or "").split())
@@ -132,6 +146,7 @@ def fetch_and_reconstruct(out_dir: Path, force: bool = False) -> tuple[Path, Pat
             "division": rec["division"],
             "title": str(row.get("tale_title", "")).strip(),
             "provenance": str(row.get("provenance", "")).strip(),
+            "non_western": bool(rec["historical_non_western"]),
             "adjudicated_provenance": rec["adjudicated_provenance"],
             "included": bool(rec["included"]),
             "exclusion_reason": rec.get("exclusion_reason"),
@@ -140,6 +155,8 @@ def fetch_and_reconstruct(out_dir: Path, force: bool = False) -> tuple[Path, Pat
             "excerpt_sha256": ex_sha,
         })
 
+    if verified_sha_count != 500 or len(seen_ids) != 500:
+        raise RuntimeError(f"Expected 500 verified unique excerpts, got verified={verified_sha_count}, unique={len(seen_ids)}")
     if (kept_480, shorter_480, equal_480) != (480, 442, 38):
         raise RuntimeError(f"Unexpected 480-set truncation counts: kept={kept_480}, shorter={shorter_480}, equal={equal_480} (expected 480, 442, 38)")
 
@@ -148,14 +165,14 @@ def fetch_and_reconstruct(out_dir: Path, force: bool = False) -> tuple[Path, Pat
     tmp_j.replace(out_json)
     print(
         f"VERIFIED_AFT_FETCH_OK: commit={UPSTREAM_COMMIT_SHA[:12]} sha256={EXPECTED_AFT_SHA256[:12]} "
-        f"rows={len(aft_rows)} matched_500_sha256=500/500 kept_480={kept_480} (shorter={shorter_480}, equal={equal_480}) -> {out_json}"
+        f"rows={len(aft_rows)} matched_500_sha256={verified_sha_count}/500 kept_480={kept_480} (shorter={shorter_480}, equal={equal_480}) -> {out_json}"
     )
     return csv_path, out_json
 
 
 def main():
     ap = argparse.ArgumentParser(description="Fetch pinned upstream aft.csv and verify 500/500 Claim C excerpts locally.")
-    ap.add_argument("--out-dir", type=Path, default=Path("./folklore_local_data"))
+    ap.add_argument("--out-dir", type=Path, default=Path(os.environ.get("JPL_FOLK_DIR", "./folklore_local_data")))
     ap.add_argument("--force", action="store_true", help="Re-download aft.csv even if already present")
     args = ap.parse_args()
     fetch_and_reconstruct(args.out_dir, force=args.force)

@@ -26,7 +26,7 @@ We gave five independently trained open-weight language models (from Google, Ali
 
 > **For ML and AI engineers:** Supervising one middle layer through a temporary linear projection head (dropped after training) transfers 256-dim cross-family geometry across unrelated tokenizers with zero added inference parameters. In Experiment 251 (3 paired seeds on 8B multimodal `google/gemma-4-E4B-it`), a rival-only 50%-depth consensus (`C3_50`: Qwen3.5 + Llama 3.1 + Mistral, zero Gemma 4) beats matched `CE+KL` control by `+0.0869 ± 0.0017` (Phi-4) and `+0.0780 ± 0.0017` (OLMo 3) $R^2_{\text{frob}}$ with exact `0.0` layer-12 drift, passing vision/audio fixtures, a slight `+0.0039` Gutenberg NLL cost, and zero observed mean MCQ change (`0.00 ± 0.50 pp`).
 
-> **For psychologists and analytical psychology readers:** We tested whether Carl Jung's narrative archetypes appear as privileged structures inside these shared language-model spaces. On 480 cleaned historical folktales indexed to the Aarne–Thompson–Uther (ATU) catalog, predicted archetype-to-folktale pairings fail (`cos = -0.106, p = 0.952`), unlabeled statistical clustering (PCA) matches or outperforms labeled Jungian categories, and ordinary workplace roles transfer higher than Jung-inspired roles across modern micro-stories (`94.3%–98.1%` vs. `85.9%–92.7%`). Making no claim about machine consciousness or psyche, we analyze aligned subspaces strictly as statistical projections of human cultural data.
+> **For psychologists and analytical psychology readers:** We tested whether Carl Jung's narrative archetypes appear as privileged structures inside these shared language-model spaces. On 480 cleaned historical folktales indexed to the Aarne–Thompson–Uther (ATU) catalog, predicted archetype-to-folktale pairings fail (`cos = -0.106, p = 0.952`), unlabeled directions of variation (PCA) match or outperform labeled Jungian categories, and ordinary workplace roles transfer higher than Jung-inspired roles across modern micro-stories (`94.3%–98.1%` vs. `85.9%–92.7%`). Making no claim either way about machine consciousness or psyche, we analyze aligned subspaces strictly as statistical projections of human cultural data.
 
 Four main findings and three explicitly dropped audits summarize the release:
 
@@ -51,6 +51,7 @@ Four main findings and three explicitly dropped audits summarize the release:
 | **4. Historical ATU Folktales (`480 / 476 / 477 / 473`) & Role Controls** *(Sec. 4.8.2, Claim C)* | `480` cleaned (`476` audit-motivated framing-excl., `477/473` overlap-excl.) ATU excerpts from Hagedorn & Darányi (2022) in neutral-only `C5` + `8` study Jung vs. `8` workplace & `8` family roles | No uniquely Jungian privilege: 5 predicted Jung–ATU pairs fail (`cos = -0.106, p = 0.952`); unlabeled `PCA7_setcent` (`0.15729`) beats `Q_jung7` (`0.13803`, Holm-7 `0.007/0.008`, joint basic spans zero); `Q_jung7` beats Workplace (`0.07300`, Holm-7 `0.007`), ties Family (`0.11332`), and slightly beats 10k shuffles (`0.0417`, `477: 0.0405`, `473: 0.0414`); true-9 refit (`84/135`, maj. `30.4%`) clears chance `8/8` & lex `6/8` (`480`) / `5/8` (`476`); workplace roles (`94.3%–98.1%`) beat Jung (`85.9%–92.7%`) on modern stories |
 | **5. 5M Cross-Tokenizer Distillation & LORO** *(Secs. 4.5–4.6)* | 24 equal-param `4.72M` non-embed (`8.92M` total) `bpe8k` runs (`P0`–`P3`, `M0`–`M3`) + 1-seed 25M `d50` screen (`D0`–`D3`) + 199-family LORO | Held-out `Phi-4` $R^2_{\text{frob}}$ `-0.029 → +0.132`, `OLMo 3` `-0.073 → +0.130–+0.154` (zero seed overlap; downstream mixed/null); `M2` vs. `M3` lifts `HOUSE` cos `0.200 → 0.619` while `mcq_gain` drops `0.172 → 0.119`; LORO beats TF-IDF on `beat_0–1` (qualified by Exp 243 external null) |
 | **6. 30% Stage A, Epistemic Probing, & Dropped Audits** *(Secs. 4.7, 4.8.4)* | 8B `L11–12` Stage A control + 24-pair native epistemic audit + Exps 241, 243, 244 adversarial follow-ups | 30% Stage A lifts `Phi-4`/`OLMo 3` `+0.0216/+0.0202` over control (`88.2%/86.0%` of total lift over Base); 24-pair `Combined_Perp` clears `11/12` nominal (`6/12` Holm; sentiment matches under Aion). Explicitly dropped: Exp 244 (inadmissible `rand500_p95 = 0.759–0.980`, `0/4` Holm), Exp 241 (causal null `-0.0070`), Exp 243 (trailed BoW `0.493` vs. `0.625` EN-12) |
+| **7. Cross-Lingual Causal Story Form** *(Sec. 4.3)* | `bench/archetypes/crosslang/` (`78` pattern groups across `4` languages EN/EL/JA/ZH, `5` models, `scripts/v6/crosslang_audit.py` → `v6_crosslang_audit.json`) | Same-pattern cross-lingual margin `+0.0789` (`[+0.0630, +0.0944]`), story-beyond-clauses `+0.0225` (`[+0.0139, +0.0305]`), clear-sign matched `+0.1204` (`n=1,165`), fixed within-outcome shuffle floor `+0.0046` (`[-0.0285, +0.0427]`); myths vs. mechanisms n.s. (`+0.0178`) |
 
 ![Figure 7: Five-Depth Trajectory & 50%-Depth Actor-Binding Audit](paper/figures/fig7_depth_and_actor_binding.png)
 ![Figure 9: Historical World Folktale Audit (480 / 476 ATU Excerpts)](paper/figures/fig9_historical_folklore_audit.png)
@@ -63,10 +64,10 @@ Four main findings and three explicitly dropped audits summarize the release:
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# Verify privacy firewall, forbidden upstream-text guard, in-memory Python syntax check,
-# all 9 figures + hero art, 82 references, every verified table body cell + headline prose
-# values across BOTH paper.md and main.tex, arXiv tarball cleanliness, a table-corruption
-# regression self-test, and zero-GPU unit tests:
+# Verify privacy firewall, forbidden upstream-text guard, in-memory Python 3.10+ syntax check,
+# all 9 figures + hero art, 87 references, script SHA-256 parity, every verified table cell +
+# headline prose values across paper.md, main.tex, and README.md, arXiv tarball cleanliness,
+# a 12-case corruption regression self-test, and zero-GPU unit tests:
 python scripts/verify_repro.py
 
 # Regenerate all 9 publication figures (300 DPI PNG + vector PDF) directly from JSONs:
@@ -103,11 +104,11 @@ jung-plato-lattice/
 │   │   └── runs/                        # e4b_base, stage_a, stage_a_ctrl, e4b_transplant50_exp251, epistemic JSONs
 │   ├── items3/ & items7/                # Public ARN-style narrative quartets (myths + matched mechanisms)
 │   ├── archstory/ & selfshape/          # HOUSE, SELF2, valence/BoW/actor2x2/role benchmarks & ATU SHA-256 manifest
-│   └── crosslang/                       # Public 4-language (EN / EL / JA / ZH) causal story pairs
+│   ├── crosslang/                       # Public 4-language (EN / EL / JA / ZH) causal story pairs + v6_crosslang_audit.json
 ├── scripts/
 │   ├── verify_repro.py                  # Table + headline cross-verifier, license/privacy guard, tarball & unit tests
 │   ├── build_docx.py                    # Builds paper/The_Jung_Plato_Lattice_v6.docx from paper/paper.md
-│   └── v6/                              # All 29 sanitized v6 experiment/audit runners + fetch_trilogy_aft.py
+│   └── v6/                              # 29 sanitized v6 experiment/audit runners + fetch_trilogy_aft.py (30 files)
 ├── LICENSES/Apache-2.0.txt              # Apache-2.0 text for included OpenAssistant OASST2 dialogue excerpts
 ├── THIRD_PARTY_LICENSES.md              # Complete attribution, data provenance & licensing boundaries
 ├── requirements.txt
@@ -135,6 +136,10 @@ If you build on this paper, datasets, or code, please cite [CITATION.cff](CITATI
 }
 ```
 
+## Statement on AI Assistance
+
+Benjamin Babeshkin conceived the research program, directed the experiments and methodology, reviewed all claims, and takes full scholarly responsibility for the manuscript and code. AI coding and language-model assistants were used under author direction to help author benchmark stimuli, implement and execute analysis scripts, draft and copyedit prose, and run automated internal code, statistics, and manuscript audits. All reported numbers, table cells, and confidence intervals are cross-checked programmatically against committed JSON outputs by `scripts/verify_repro.py`.
+
 ## License
 
-Original code and benchmarks authored in this repository are released under the [MIT License](LICENSE). Third-party datasets (including OASST2 under Apache-2.0 and BLiMP under CC BY 4.0) and open-weight models remain subject to their respective licenses documented in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).
+Original code and benchmarks authored in this repository are released under the [MIT License](LICENSE). Third-party datasets (including OASST2 under Apache-2.0, BLiMP under CC BY 4.0, and COPA under BSD 2-Clause) and open-weight models remain subject to their respective licenses documented in [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LICENSES.md).

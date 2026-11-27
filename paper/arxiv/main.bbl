@@ -30,7 +30,7 @@ P.~H. Sch{\"o}nemann, ``A generalized solution of the orthogonal {Procrustes}
 C.~G. Jung, {\em The Archetypes and the Collective Unconscious}, vol.~9.I of
   {\em Collected Works of C. G. Jung}.
 \newblock Princeton University Press, 2nd~ed., 1968.
-\newblock Translated by R. F. C. Hull; includes \P136.
+\newblock Translated by R. F. C. Hull; includes \P5, \P155.
 
 \bibitem{jung1969structure}
 C.~G. Jung, {\em The Structure and Dynamics of the Psyche}, vol.~8 of {\em
@@ -151,8 +151,8 @@ N.~Kriegeskorte, M.~Mur, and P.~Bandettini, ``Representational similarity
 
 \bibitem{groger2026revisiting}
 F.~Gr{\"o}ger, S.~Wen, and M.~Brbi{\'c}, ``Revisiting the {Platonic}
-  representation hypothesis: An {Aristotelian} view,'' {\em arXiv preprint
-  arXiv:2602.14486}, 2026.
+  representation hypothesis: An {Aristotelian} view,'' in {\em Proceedings of
+  the International Conference on Machine Learning (ICML)}, 2026.
 
 \bibitem{usama2026convergence}
 M.~Usama and D.~E. Chang, ``Convergence without understanding: When language
@@ -178,6 +178,30 @@ M.~Lan, P.~Torr, A.~Meek, A.~Khakzar, {\em et~al.}, ``Quantifying feature space
 E.~Zhou, S.~Salhan, C.~Arnett, and A.~Korhonen, ``Cross-lingual alignment
   without joint training: Do monolingual language models converge on universal
   representations?,'' {\em arXiv preprint arXiv:2608.27115}, 2026.
+
+\bibitem{agarwal2026crossarch}
+A.~Agarwal, ``Cross-architecture steering transfer in language models: A
+  systematic empirical study,'' {\em arXiv preprint arXiv:2608.05164}, 2026.
+
+\bibitem{rinaldi2026theseus}
+F.~Rinaldi, A.~Panariello, G.~Salici, A.~Porrello, and S.~Calderara,
+  ``Transporting task vectors across different architectures without
+  training,'' {\em arXiv preprint arXiv:2602.12952}, 2026.
+
+\bibitem{behnamghader2024llm2vec}
+P.~BehnamGhader, V.~Adlakha, M.~Mosbach, D.~Bahdanau, N.~Chapados, and
+  S.~Reddy, ``{LLM2Vec}: Large language models are secretly powerful text
+  encoders,'' in {\em Conference on Language Modeling (COLM)}, 2024.
+
+\bibitem{springer2025repetition}
+J.~M. Springer, S.~Kotha, D.~Fried, G.~Neubig, and A.~Raghunathan, ``Repetition
+  improves language model embeddings,'' in {\em International Conference on
+  Learning Representations (ICLR)}, 2025.
+
+\bibitem{romero2015fitnets}
+A.~Romero, N.~Ballas, S.~E. Kahou, A.~Chassang, C.~Gatta, and Y.~Bengio,
+  ``{FitNets}: Hints for thin deep nets,'' in {\em International Conference on
+  Learning Representations (ICLR)}, 2015.
 
 \bibitem{huggins2021jung}
 R.~V. Huggins, ``{C. G. Jung}, {J. J. Honegger}, and the case of {Emil
@@ -338,7 +362,9 @@ A.~Tandon, K.~Dalal, X.~Li, D.~Koceja, {\em et~al.}, ``End-to-end test-time
 
 \bibitem{feng2026inplace}
 G.~Feng, S.~Luo, K.~Hua, G.~Zhang, {\em et~al.}, ``In-place test-time
-  training,'' {\em arXiv preprint arXiv:2604.06169}, 2026.
+  training,'' in {\em International Conference on Learning Representations
+  (ICLR)}, 2026.
+\newblock Oral presentation.
 
 \bibitem{grattafiori2024llama3}
 A.~Grattafiori, A.~Dubey, A.~Jauhri, A.~Pandey, {\em et~al.}, ``The {Llama} 3
@@ -360,7 +386,7 @@ A.~Abouelenin, A.~Ashfaq, A.~Atkinson, H.~H. Awadalla, {\em et~al.},
 
 \bibitem{walsh2025olmo2}
 {Team OLMo}, P.~Walsh, L.~Soldaini, D.~Groeneveld, {\em et~al.}, ``2 {OLMo} 2
-  furious,'' {\em arXiv preprint arXiv:2501.00656}, 2025.
+  furious,'' in {\em Conference on Language Modeling (COLM)}, 2025.
 
 \bibitem{jung1968aion}
 C.~G. Jung, {\em Aion: Researches into the Phenomenology of the Self},
@@ -380,8 +406,9 @@ D.~Rein, B.~L. Hou, A.~C. Stickland, J.~Petty, {\em et~al.}, ``{GPQA}: A
 
 \bibitem{yang2025swesmith}
 J.~Yang, K.~Lieret, C.~E. Jimenez, A.~Wettig, {\em et~al.}, ``{SWE-smith}:
-  Scaling data for software engineering agents,'' {\em arXiv preprint
-  arXiv:2504.21798}, 2025.
+  Scaling data for software engineering agents,'' in {\em Advances in Neural
+  Information Processing Systems (NeurIPS), Datasets and Benchmarks Track},
+  2025.
 
 \bibitem{vogler2007writers}
 C.~Vogler, {\em The Writer's Journey: Mythic Structure for Writers}.
@@ -395,8 +422,8 @@ D.~Amodei, ``{Anthropic's} chief on {A.I.}: ``{We} don't know if the models are
   Feb. 2026.
 
 \bibitem{sutskever2022slightly}
-I.~Sutskever, ````it may be that today's large neural networks are slightly
-  conscious''.'' Twitter / X post,
+I.~Sutskever, ``It may be that today's large neural networks are slightly
+  conscious.'' Twitter / X post,
   \url{https://x.com/ilyasut/status/1491554478243258368}, Feb. 2022.
 
 \bibitem{chalmers2023could}

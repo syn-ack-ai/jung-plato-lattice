@@ -173,9 +173,12 @@ def _add_formatted_runs(
         if italic:
             rc.italic = True
 
-    # Priority order: backtick code first (never split math/code), then ***, then **, then safe *italic* (skip math 0.5*(...))
+    # Priority order: backtick code first, then ***, then ** (preferring rightmost ** in *** closures), then safe *italic*
     token_re = re.compile(
-        r"(`[^`\n]+`|\*\*\*(?!\s)(.+?)(?<!\s)\*\*\*|\*\*(?!\s)(.+?)(?<!\s)\*\*|(?<![0-9A-Za-z_])\*(?!\s)([^*\n]+?)(?<!\s)\*(?![0-9A-Za-z_]))"
+        r"(`[^`\n]+`"
+        r"|\*\*\*(?!\s)(.+?)(?<!\s)\*\*\*"
+        r"|\*\*(?!\s)(.+?)(?<!\s)\*\*(?!\*)"
+        r"|(?<![0-9A-Za-z_*])\*(?!\s|\*)((?:[^*\n]|(?:\*\*[^*\n]+?\*\*))+?)(?<!\s)\*(?![0-9A-Za-z_*]))"
     )
 
     def _walk(segment: str, bold: bool, italic: bool):
@@ -270,6 +273,11 @@ def _add_page_number_footer(section):
 
 def build_docx(md_path: Path = DEFAULT_MD, out_path: Path = DEFAULT_DOCX):
     doc = Document()
+    cp = doc.core_properties
+    cp.title = "The Jung-Plato Lattice: Multi-Family Representation Denoising, Compositional Probing, and Cross-Tokenizer Distillation"
+    cp.author = "Benjamin Babeshkin"
+    cp.subject = "Preprint v6 (Dual-Audience Review Copy for ML/AI Engineers and Psychologists)"
+    cp.comments = "Generated from paper/paper.md via scripts/build_docx.py; DOI 10.5281/zenodo.24572076"
 
     for sec in doc.sections:
         sec.top_margin = Inches(0.85)
@@ -452,12 +460,14 @@ def build_docx(md_path: Path = DEFAULT_MD, out_path: Path = DEFAULT_DOCX):
                         p.paragraph_format.line_spacing = 1.05
                         p.alignment = WD_ALIGN_PARAGRAPH.LEFT if c_idx == 0 else WD_ALIGN_PARAGRAPH.CENTER
                         if r_idx == 0:
-                            clean_hdr = _tex_math_to_unicode(val.replace("**", "").replace("`", ""))
-                            run = p.add_run(clean_hdr)
-                            run.font.name = "Calibri"
-                            run.font.bold = True
-                            run.font.size = Pt(f_sz)
-                            run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+                            _add_formatted_runs(
+                                p,
+                                val,
+                                base_size=f_sz,
+                                base_color=RGBColor(0xFF, 0xFF, 0xFF),
+                                bold_default=True,
+                                font_name="Calibri",
+                            )
                         else:
                             _add_formatted_runs(p, val, base_size=f_sz, base_color=DARK)
                 sp = doc.add_paragraph()
@@ -477,9 +487,12 @@ def build_docx(md_path: Path = DEFAULT_MD, out_path: Path = DEFAULT_DOCX):
             continue
 
         # Bullet / numbered list items
-        if re.match(r"^(\s*[-*]|\s*\d+\.)\s+", raw):
-            indent_lvl = len(raw) - len(raw.lstrip(" "))
-            content = re.sub(r"^(\s*[-*]|\s*\d+\.)\s+", "", raw).strip()
+        m_list = re.match(r"^(\s*)(?:([-*])|(\d+\.))\s+(.*)$", raw)
+        if m_list:
+            indent_lvl = len(m_list.group(1))
+            is_bullet = m_list.group(2) is not None
+            num_lbl = m_list.group(3)
+            content = m_list.group(4).strip()
             if in_refs:
                 p = doc.add_paragraph()
                 p.paragraph_format.left_indent = Inches(0.35)
@@ -488,13 +501,27 @@ def build_docx(md_path: Path = DEFAULT_MD, out_path: Path = DEFAULT_DOCX):
                 p.paragraph_format.space_after = Pt(3)
                 p.paragraph_format.line_spacing = 1.1
                 _add_formatted_runs(p, content, base_size=8.8, base_color=DARK)
-            else:
-                p = doc.add_paragraph(style="List Bullet" if raw.lstrip().startswith(("-", "*")) else "List Number")
+            elif is_bullet:
+                p = doc.add_paragraph(style="List Bullet")
                 if indent_lvl >= 2:
                     p.paragraph_format.left_indent = Inches(0.55)
                 p.paragraph_format.space_before = Pt(1)
                 p.paragraph_format.space_after = Pt(3.5)
                 p.paragraph_format.line_spacing = 1.15
+                _add_formatted_runs(p, content, base_size=10.0, base_color=DARK)
+            else:
+                # Explicit hanging-indent numbered paragraph so every ordered list restarts cleanly at 1.
+                p = doc.add_paragraph()
+                p.paragraph_format.left_indent = Inches(0.35 if indent_lvl < 2 else 0.60)
+                p.paragraph_format.first_line_indent = Inches(-0.24)
+                p.paragraph_format.space_before = Pt(1)
+                p.paragraph_format.space_after = Pt(3.5)
+                p.paragraph_format.line_spacing = 1.15
+                rn = p.add_run(f"{num_lbl} ")
+                rn.bold = True
+                rn.font.name = "Georgia"
+                rn.font.size = Pt(10.0)
+                rn.font.color.rgb = NAVY
                 _add_formatted_runs(p, content, base_size=10.0, base_color=DARK)
             i += 1
             continue
@@ -531,13 +558,16 @@ def build_docx(md_path: Path = DEFAULT_MD, out_path: Path = DEFAULT_DOCX):
     out_path.parent.mkdir(parents=True, exist_ok=True)
     doc.save(str(out_path))
 
-    # Validate zero raw TeX math leaks and zero stray Markdown tokens in output docx
+    # Validate zero raw TeX math leaks and zero stray Markdown formatting (including *italic*) in output docx
     check_doc = Document(str(out_path))
     all_txt = "\n".join(
         [p.text for p in check_doc.paragraphs]
         + [c.text for t in check_doc.tables for r in t.rows for c in r.cells]
     )
-    leaks = re.findall(r"(\$[^$\n]{1,40}\$|\\frac|\\mathbb|\\hat\{|\\tilde\{|\\text\{|`[^`\n]+`|\*\*[^*\n]+\*\*)", all_txt)
+    leaks = re.findall(
+        r"(\$[^$\n]{1,40}\$|\\frac|\\mathbb|\\hat\{|\\tilde\{|\\text\{|`[^`\n]+`|\*\*[^*\n]+\*\*|(?<![0-9])\*(?!\s)[^*\n]{2,80}(?<!\s)\*(?![0-9A-Za-z_]))",
+        all_txt,
+    )
     assert not leaks, f"Raw LaTeX/Markdown leaks found in {out_path}: {leaks[:10]}"
     print(
         f"SAVED Word manuscript: {out_path} ({out_path.stat().st_size:,} bytes; "

@@ -47,13 +47,13 @@ from pathlib import Path
 import numpy as np
 
 SCRATCH_DIR = Path(os.environ.get("JPL_WORK_DIR", "."))
-FOLK_DIR = SCRATCH_DIR / "folklore_test"
+FOLK_DIR = Path(os.environ.get("JPL_FOLK_DIR", "./folklore_local_data"))
 REPO_ARCH = Path(__file__).resolve().parents[2] / "bench" / "archetypes"
 REPO_FLUENT = REPO_ARCH / "fluent"
 PLATO_CACHE = Path(os.environ.get("JPL_PLATO_DIR", str(Path(__file__).resolve().parents[2] / "bench" / "archetypes" / "fluent" / "plato")))
 
 AFT_JSON = FOLK_DIR / "aft_real_myths_500.json"
-FAM_JSON = FOLK_DIR / "family_roles239_data.json"
+FAM_JSON = REPO_ARCH / "selfshape" / "family_roles239_data.json"
 OUT_JSON = FOLK_DIR / "real_myth_basis239.json"
 
 for p in (str(REPO_ARCH), str(REPO_FLUENT)):

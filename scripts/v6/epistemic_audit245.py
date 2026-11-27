@@ -39,7 +39,6 @@ import numpy as np
 
 SCRATCH_DIR = Path(os.environ.get("JPL_WORK_DIR", "."))
 EXP_DIR = SCRATCH_DIR / "exp245_controls"
-EXP_DIR.mkdir(parents=True, exist_ok=True)
 REPO_ARCH = Path(__file__).resolve().parents[2] / "bench" / "archetypes"
 REPO_FLUENT = REPO_ARCH / "fluent"
 REPO_AION = REPO_ARCH / "aion_8b"
