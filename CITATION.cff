@@ -6,9 +6,9 @@ authors:
     given-names: "Benjamin"
     alias: "syn-ack-ai"
     orcid: "https://orcid.org/0009-0004-1919-3209"
-date-released: 2026-11-26
-doi: "10.5281/zenodo.24572077"
-url: "https://doi.org/10.5281/zenodo.24572077"
+date-released: 2026-11-27
+doi: "10.5281/zenodo.24572076"
+url: "https://doi.org/10.5281/zenodo.24572076"
 repository-code: "https://github.com/syn-ack-ai/jung-plato-lattice"
 license: MIT
 keywords:

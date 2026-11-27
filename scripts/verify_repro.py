@@ -7,8 +7,8 @@ Checks:
      committed spoken-audio fixture, 53 verified references across paper.md, references.bib, and main.bbl,
      and arXiv LaTeX hygiene (\\pdfoutput=1 header and zero unescaped ~digits).
   4. Strict ordered, typed cell-level cross-verification of committed JSON artifacts against EVERY numeric
-     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 2d, 2e, 3, 3b, 3c, 4, 5) AND
-     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:bswap, tab:named, tab:loro, tab:5m, tab:8b, tab:epi).
+     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 2d, 2e, 2f, 3, 3b, 3c, 4, 5) AND
+     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:bswap, tab:named, tab:nonjung, tab:loro, tab:5m, tab:8b, tab:epi).
   5. Comprehensive zero-GPU scientific unit tests with fully isolated temporary `JPL_CKPT_DIR` (explicitly
      reporting any optional tests skipped when optional packages are not installed).
 """
@@ -486,6 +486,41 @@ def check_headline_numbers_and_paper_sync():
         _assert_row_regex(tex_na, f"Gemma 4 -> {rkey}", checks, f"TeX tab:named {mk}", exact_cols=7, cleaner=lambda s: s)
 
     # =========================================================================
+    # 2e. Experiment 237 Referee Controls (8 Non-Jungian Roles Table 2f & tab:nonjung, Order-Balanced bs60, Zero-PN items3)
+    # =========================================================================
+    nj_data = json.load(open(ARCH / "selfshape" / "nonjung_roles237_data.json"))
+    assert len(nj_data) == 320
+    r237 = json.load(open(ARCH / "fluent" / "plato" / "referee_ctrl237.json"))
+    assert abs(r237["nonjung_roles_c5_geometry"]["effective_rank_pr_raw"] - 4.379) < 1e-3
+    assert abs(r237["nonjung_roles_c5_geometry"]["effective_rank_pr_perp_val3"] - 4.74) < 1e-2
+    assert abs(r237["items3_zero_proper_name_control"]["heldout_myth_pool_excluded"]["olmo3_7b"]["anchor"]["diff_no_pn"] - 0.0454) < 5e-4
+    assert abs(r237["items3_zero_proper_name_control"]["heldout_myth_pool_excluded"]["phi4_mini"]["anchor"]["diff_no_pn"] + 0.0167) < 5e-4
+    assert abs(r237["bow_swap_word_order_and_last_token"]["last_token"]["qwen35_9b"]["balanced_2fold_perp_v2"] - 0.757) < 1e-3
+    md_nj_rows = _parse_md_table_after(paper_txt, "referee_ctrl237.json")
+    assert len(md_nj_rows) == 6, f"Expected 6 rows in MD Table 2f, got {len(md_nj_rows)}"
+    tex_nj = _parse_tex_table(tex_txt, "tab:nonjung")
+    assert len(tex_nj) == 6, f"Expected 6 rows in tab:nonjung, got {len(tex_nj)}"
+    for mk, rkey in t2b_models:
+        r = r237["nonjung_roles_gemma_to_6"][mk]["raw"]
+        p3 = r237["nonjung_roles_gemma_to_6"][mk]["perp_val3_dbl"]
+        lr = r237["nonjung_roles_gemma_to_6"][mk]["lenres_top1_mean"]
+        assert all(v["p_perm_max"] <= 0.001 for v in r["per_archetype"].values())
+        assert all(v["p_perm_max"] <= 0.001 for v in p3["per_archetype"].values())
+        checks = [
+            (1, rf"^{r['top1_8way_mean']*100:.1f}%\s*\({r['top1_wins_over_bow_20']}/20\s*/\s*{r['top1_wins_over_tfidf_ridge_20']}/20\)$"),
+            (2, rf"^{p3['top1_8way_mean']*100:.1f}%\s*\({p3['top1_wins_over_tfidf_ridge_20']}/20\)$"),
+            (3, rf"^{r['macro_auroc_mean']:.3f}$"),
+            (4, rf"^{p3['macro_auroc_mean']:.3f}$"),
+            (5, rf"^{lr*100:.1f}%$"),
+            (6, rf"^{r['within_setting_top1_mean']*100:.1f}%$"),
+        ]
+        _assert_row_regex(md_nj_rows, f"Gemma 4 → {rkey}", checks, f"MD Table 2f {mk}", exact_cols=7)
+        _assert_row_regex(tex_nj, f"Gemma 4 -> {rkey}", checks, f"TeX tab:nonjung {mk}", exact_cols=7, cleaner=lambda s: s)
+    for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
+        for needle in ("4.38", "4.74", "+0.0454", "-0.0167", "75.7"):
+            assert needle in doc, f"Experiment 237 headline '{needle}' missing from {label}!"
+
+    # =========================================================================
     # 3. 199-Family Strict LORO Retrieval vs. Strict-LQO TF-IDF (Table 3b & tab:loro)
     # =========================================================================
     myth = json.load(open(ARCH / "fluent" / "plato" / "myth229_meta.json"))
@@ -801,7 +836,7 @@ def check_headline_numbers_and_paper_sync():
             (6, rf"^{n95}$"),
         ], f"TeX tab:epi {tex_key}", exact_cols=7, cleaner=lambda s: s)
 
-    print("[PASS] All 6 pillars, Experiments 234-236 (valence, exact-BoW swaps, 8 named archetypes), 24 student JSONs, ALL paper.md tables (1..5), AND ALL 9 main.tex tables (tab:gpa..tab:epi) match cleanly.")
+    print("[PASS] All 6 pillars, Experiments 234-237 (valence, exact-BoW/order, 8 Jung vs. 8 non-Jung roles, zero-PN items3), 24 student JSONs, ALL paper.md tables (1..5), AND ALL 10 main.tex tables (tab:gpa..tab:epi) match cleanly.")
 
 
 def run_unit_tests():
@@ -811,6 +846,7 @@ def run_unit_tests():
         ("valence_ctrl234", [sys.executable, str(ARCH / "fluent" / "valence_ctrl234.py"), "test"]),
         ("named_arch235", [sys.executable, str(ARCH / "fluent" / "named_arch235.py"), "test"]),
         ("bow_swap236", [sys.executable, str(ARCH / "fluent" / "bow_swap236.py"), "test"]),
+        ("nonjung_roles237", [sys.executable, str(ARCH / "fluent" / "nonjung_roles237.py"), "test"]),
         ("audit233_epistemic_overlap", [sys.executable, "-c", "from aion_8b import audit233_epistemic as a; a._verify_zero_entity_overlap()"]),
     ]
     skipped = []
