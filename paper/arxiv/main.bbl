@@ -334,9 +334,8 @@ D.~Chen, M.~Shukor, T.~Moutakanni, W.~Chung, J.~Yu, T.~Kasarla, Y.~Bang,
 
 \bibitem{xi2025hallucination}
 X.~Wang, Q.~Shi, Z.~Ding, J.~Gao, and X.~Yang, ``Hallucination as a
-  computational boundary: A hierarchy of inevitability and the oracle escape,''
-  in {\em Proceedings of the AAAI Conference on Artificial Intelligence
-  (AAAI)}, vol.~40, 2026.
+  computational boundary: A hierarchy of inevitability and the oracle escape.''
+  arXiv preprint arXiv:2508.07334, 2025.
 
 \bibitem{kadavath2022language}
 S.~Kadavath, T.~Conerly, A.~Askell, T.~Henighan, {\em et~al.}, ``Language

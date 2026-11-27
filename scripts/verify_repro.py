@@ -204,7 +204,8 @@ def check_paper_and_figures():
             "+0.0569", "8,916,480", "+0.78,+10.22", "+0.78, +10.22", "0.0945",
             "lack a psyche", "four major breakthroughs", "Four major breakthroughs",
             "Xi et al.", "1468-5922.00282", "canonical Jungian", "0.04225", "0.03631",
-            "Audit-Verified Preprint",
+            "Audit-Verified Preprint", "39/21", "78 passing patterns", "78 of 80 patterns passed",
+            "retained 74% median transfer accuracy", "retained 74\\% median transfer accuracy",
         ):
             assert forbidden not in doc, f"Forbidden/stale string '{forbidden}' found in {label}!"
     for label, doc in [("paper.md", txt), ("main.tex", tex)]:
@@ -628,6 +629,9 @@ def check_headline_numbers_and_paper_sync():
     assert abs(r237["items3_zero_proper_name_control"]["heldout_myth_pool_excluded"]["olmo3_7b"]["anchor"]["diff_no_pn"] - 0.0454) < 5e-4
     assert abs(r237["items3_zero_proper_name_control"]["heldout_myth_pool_excluded"]["phi4_mini"]["anchor"]["diff_no_pn"] + 0.0167) < 5e-4
     assert abs(r237["bow_swap_word_order_and_last_token"]["last_token"]["qwen35_9b"]["balanced_2fold_perp_v2"] - 0.757) < 1e-3
+    assert r237["bow_swap_word_order_and_last_token"]["n_good_first"] == 38
+    assert r237["bow_swap_word_order_and_last_token"]["n_bad_first"] == 22
+    assert "38/22" in tex_txt, "Exact bow_swap_60 order skew 38/22 missing from main.tex!"
     md_nj_rows = _parse_md_table_after(paper_txt, "referee_ctrl237.json")
     assert len(md_nj_rows) == 6, f"Expected 6 rows in MD Table 2f, got {len(md_nj_rows)}"
     tex_nj = _parse_tex_table(tex_txt, "tab:nonjung")
@@ -1070,8 +1074,15 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     assert ep244["committed_script_sha256"] == _sha256_file(v6_dir / "epistemic_audit245.py"), "committed_script_sha256 mismatch: epistemic_audit245.py!"
     assert ep244["data_sha256"] == _sha256_file(ARCH / "selfshape" / "epi_matched245_data.json"), "data_sha256 mismatch: epi_matched245_data.json!"
 
-    # Cross-Lingual Pattern Similarity audit invariants (v6_crosslang_audit.json)
+    # Cross-Lingual Pattern Similarity audit invariants (v6_crosslang_audit.json + raw JSONL counts)
     assert len(xling["models"]) == 5 and len(xling["languages"]) == 4 and xling["c1_primary"]["n_patterns"] == 78
+    _cl_checked_I = [json.loads(l) for l in open(ARCH / "crosslang" / "checked.jsonl") if l.strip() and json.loads(l).get("set") == "I"]
+    _cl_pass_I = [r for r in _cl_checked_I if r.get("p31", 0) > 0.5]
+    _cl_pat_langs = {}
+    for _r in _cl_pass_I:
+        _cl_pat_langs.setdefault(_r["pattern_id"], set()).add(_r["lang"])
+    assert len(_cl_checked_I) == 318 and len(_cl_pass_I) == 317
+    assert sum(1 for _s in _cl_pat_langs.values() if len(_s) == 4) == 77
     assert abs(xling["c1_primary"]["mean"] - 0.0789) < 5e-4
     assert abs(xling["c1_edited_clauses_only"]["mean"] - 0.0564) < 5e-4
     assert abs(xling["c1_story_beyond_clauses_paired"]["mean"] - 0.0225) < 5e-4
