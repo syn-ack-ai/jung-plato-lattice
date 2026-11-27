@@ -1,0 +1,2123 @@
+{
+  "dataset_integrity": {
+    "n_stories": 320,
+    "n_settings": 40,
+    "n_archetypes": 8,
+    "n_existing_settings_checked": 179,
+    "setting_overlap": 0,
+    "ban_list_hits": 0,
+    "ngram12_overlap": 0,
+    "word_count_by_archetype": {
+      "Hero": {
+        "mean": 51.02,
+        "std": 1.9,
+        "min": 47,
+        "max": 56
+      },
+      "Shadow": {
+        "mean": 50.7,
+        "std": 2.06,
+        "min": 45,
+        "max": 56
+      },
+      "Trickster": {
+        "mean": 51.58,
+        "std": 1.48,
+        "min": 48,
+        "max": 55
+      },
+      "Wise_Old_Man": {
+        "mean": 50.83,
+        "std": 1.64,
+        "min": 48,
+        "max": 55
+      },
+      "Great_Mother": {
+        "mean": 51.52,
+        "std": 1.36,
+        "min": 48,
+        "max": 54
+      },
+      "Persona": {
+        "mean": 51.3,
+        "std": 1.44,
+        "min": 47,
+        "max": 55
+      },
+      "Anima_Animus": {
+        "mean": 51.67,
+        "std": 1.42,
+        "min": 47,
+        "max": 54
+      },
+      "Threshold_Guardian": {
+        "mean": 51.2,
+        "std": 1.66,
+        "min": 46,
+        "max": 54
+      }
+    }
+  },
+  "lexical_baselines_20splits": {
+    "bow_unigram": {
+      "macro_auroc_mean": 0.9583,
+      "macro_auroc_std": 0.0049,
+      "top1_8way_mean": 0.8063,
+      "top1_8way_std": 0.0147,
+      "top2_8way_mean": 0.9175,
+      "per_archetype_auroc": {
+        "Hero": 0.9291,
+        "Shadow": 0.9856,
+        "Trickster": 0.9242,
+        "Wise_Old_Man": 0.9256,
+        "Great_Mother": 0.994,
+        "Persona": 0.9856,
+        "Anima_Animus": 0.9736,
+        "Threshold_Guardian": 0.9487
+      }
+    },
+    "tfidf_centroid": {
+      "macro_auroc_mean": 0.9831,
+      "macro_auroc_std": 0.0025,
+      "top1_8way_mean": 0.8869,
+      "top1_8way_std": 0.0147,
+      "top2_8way_mean": 0.955,
+      "per_archetype_auroc": {
+        "Hero": 0.9573,
+        "Shadow": 0.992,
+        "Trickster": 0.9795,
+        "Wise_Old_Man": 0.9676,
+        "Great_Mother": 0.9977,
+        "Persona": 0.9984,
+        "Anima_Animus": 0.9953,
+        "Threshold_Guardian": 0.9766
+      }
+    },
+    "tfidf_ridge": {
+      "macro_auroc_mean": 0.9835,
+      "macro_auroc_std": 0.0026,
+      "top1_8way_mean": 0.8906,
+      "top1_8way_std": 0.0137,
+      "top2_8way_mean": 0.9558,
+      "per_archetype_auroc": {
+        "Hero": 0.9591,
+        "Shadow": 0.9922,
+        "Trickster": 0.9801,
+        "Wise_Old_Man": 0.9676,
+        "Great_Mother": 0.9978,
+        "Persona": 0.9985,
+        "Anima_Animus": 0.9953,
+        "Threshold_Guardian": 0.9774
+      }
+    }
+  },
+  "c5_geometry": {
+    "effective_rank_pr_raw": 5.009,
+    "singular_values_raw": [
+      1.5582,
+      1.3788,
+      1.1476,
+      0.9421,
+      0.7862,
+      0.6857,
+      0.6147,
+      0.0127
+    ],
+    "mean_abs_offdiag_cos_raw": 0.2452,
+    "max_pos_offdiag_cos_raw": 0.3755,
+    "effective_rank_pr_perp_val3": 5.06,
+    "singular_values_perp_val3": [
+      1.5328,
+      1.4046,
+      1.1564,
+      0.8839,
+      0.7999,
+      0.7151,
+      0.6387,
+      0.0135
+    ],
+    "mean_abs_offdiag_cos_perp_val3": 0.2435,
+    "per_archetype_valence_house_overlap": {
+      "Hero": {
+        "cos_sent": -0.2542,
+        "cos_outval": -0.5028,
+        "cos_house": 0.0003,
+        "sqnorm_in_val2_span": 0.2902,
+        "sqnorm_in_val3_span": 0.3273
+      },
+      "Shadow": {
+        "cos_sent": -0.0923,
+        "cos_outval": 0.0697,
+        "cos_house": -0.2641,
+        "sqnorm_in_val2_span": 0.0541,
+        "sqnorm_in_val3_span": 0.1195
+      },
+      "Trickster": {
+        "cos_sent": -0.0655,
+        "cos_outval": -0.0084,
+        "cos_house": -0.0845,
+        "sqnorm_in_val2_span": 0.0083,
+        "sqnorm_in_val3_span": 0.0106
+      },
+      "Wise_Old_Man": {
+        "cos_sent": -0.0772,
+        "cos_outval": -0.1411,
+        "cos_house": -0.1843,
+        "sqnorm_in_val2_span": 0.0219,
+        "sqnorm_in_val3_span": 0.059
+      },
+      "Great_Mother": {
+        "cos_sent": -0.0211,
+        "cos_outval": -0.0701,
+        "cos_house": 0.0962,
+        "sqnorm_in_val2_span": 0.0073,
+        "sqnorm_in_val3_span": 0.028
+      },
+      "Persona": {
+        "cos_sent": 0.3065,
+        "cos_outval": 0.4251,
+        "cos_house": 0.25,
+        "sqnorm_in_val2_span": 0.1813,
+        "sqnorm_in_val3_span": 0.1885
+      },
+      "Anima_Animus": {
+        "cos_sent": 0.1989,
+        "cos_outval": 0.226,
+        "cos_house": 0.0449,
+        "sqnorm_in_val2_span": 0.0529,
+        "sqnorm_in_val3_span": 0.0657
+      },
+      "Threshold_Guardian": {
+        "cos_sent": 0.0146,
+        "cos_outval": 0.0838,
+        "cos_house": 0.0614,
+        "sqnorm_in_val2_span": 0.0126,
+        "sqnorm_in_val3_span": 0.0192
+      }
+    },
+    "pairwise_cos_raw": {
+      "Hero": {
+        "Hero": 1.0,
+        "Shadow": -0.478,
+        "Trickster": -0.212,
+        "Wise_Old_Man": -0.081,
+        "Great_Mother": 0.37,
+        "Persona": -0.389,
+        "Anima_Animus": -0.444,
+        "Threshold_Guardian": -0.094
+      },
+      "Shadow": {
+        "Hero": -0.478,
+        "Shadow": 1.0,
+        "Trickster": 0.349,
+        "Wise_Old_Man": -0.096,
+        "Great_Mother": -0.504,
+        "Persona": 0.044,
+        "Anima_Animus": 0.091,
+        "Threshold_Guardian": -0.25
+      },
+      "Trickster": {
+        "Hero": -0.212,
+        "Shadow": 0.349,
+        "Trickster": 1.0,
+        "Wise_Old_Man": -0.051,
+        "Great_Mother": -0.428,
+        "Persona": -0.209,
+        "Anima_Animus": -0.218,
+        "Threshold_Guardian": -0.004
+      },
+      "Wise_Old_Man": {
+        "Hero": -0.081,
+        "Shadow": -0.096,
+        "Trickster": -0.051,
+        "Wise_Old_Man": 1.0,
+        "Great_Mother": -0.182,
+        "Persona": -0.538,
+        "Anima_Animus": -0.038,
+        "Threshold_Guardian": 0.376
+      },
+      "Great_Mother": {
+        "Hero": 0.37,
+        "Shadow": -0.504,
+        "Trickster": -0.428,
+        "Wise_Old_Man": -0.182,
+        "Great_Mother": 1.0,
+        "Persona": -0.109,
+        "Anima_Animus": -0.375,
+        "Threshold_Guardian": -0.054
+      },
+      "Persona": {
+        "Hero": -0.389,
+        "Shadow": 0.044,
+        "Trickster": -0.209,
+        "Wise_Old_Man": -0.538,
+        "Great_Mother": -0.109,
+        "Persona": 1.0,
+        "Anima_Animus": 0.289,
+        "Threshold_Guardian": -0.308
+      },
+      "Anima_Animus": {
+        "Hero": -0.444,
+        "Shadow": 0.091,
+        "Trickster": -0.218,
+        "Wise_Old_Man": -0.038,
+        "Great_Mother": -0.375,
+        "Persona": 0.289,
+        "Anima_Animus": 1.0,
+        "Threshold_Guardian": -0.285
+      },
+      "Threshold_Guardian": {
+        "Hero": -0.094,
+        "Shadow": -0.25,
+        "Trickster": -0.004,
+        "Wise_Old_Man": 0.376,
+        "Great_Mother": -0.054,
+        "Persona": -0.308,
+        "Anima_Animus": -0.285,
+        "Threshold_Guardian": 1.0
+      }
+    },
+    "pairwise_cos_perp_val3": {
+      "Hero": {
+        "Hero": 1.0,
+        "Shadow": -0.456,
+        "Trickster": -0.232,
+        "Wise_Old_Man": -0.155,
+        "Great_Mother": 0.368,
+        "Persona": -0.254,
+        "Anima_Animus": -0.4,
+        "Threshold_Guardian": -0.065
+      },
+      "Shadow": {
+        "Hero": -0.456,
+        "Shadow": 1.0,
+        "Trickster": 0.34,
+        "Wise_Old_Man": -0.138,
+        "Great_Mother": -0.488,
+        "Persona": 0.037,
+        "Anima_Animus": 0.061,
+        "Threshold_Guardian": -0.271
+      },
+      "Trickster": {
+        "Hero": -0.232,
+        "Shadow": 0.34,
+        "Trickster": 1.0,
+        "Wise_Old_Man": -0.06,
+        "Great_Mother": -0.425,
+        "Persona": -0.227,
+        "Anima_Animus": -0.227,
+        "Threshold_Guardian": -0.006
+      },
+      "Wise_Old_Man": {
+        "Hero": -0.155,
+        "Shadow": -0.138,
+        "Trickster": -0.06,
+        "Wise_Old_Man": 1.0,
+        "Great_Mother": -0.174,
+        "Persona": -0.527,
+        "Anima_Animus": -0.032,
+        "Threshold_Guardian": 0.423
+      },
+      "Great_Mother": {
+        "Hero": 0.368,
+        "Shadow": -0.488,
+        "Trickster": -0.425,
+        "Wise_Old_Man": -0.174,
+        "Great_Mother": 1.0,
+        "Persona": -0.102,
+        "Anima_Animus": -0.362,
+        "Threshold_Guardian": -0.057
+      },
+      "Persona": {
+        "Hero": -0.254,
+        "Shadow": 0.037,
+        "Trickster": -0.227,
+        "Wise_Old_Man": -0.527,
+        "Great_Mother": -0.102,
+        "Persona": 1.0,
+        "Anima_Animus": 0.234,
+        "Threshold_Guardian": -0.394
+      },
+      "Anima_Animus": {
+        "Hero": -0.4,
+        "Shadow": 0.061,
+        "Trickster": -0.227,
+        "Wise_Old_Man": -0.032,
+        "Great_Mother": -0.362,
+        "Persona": 0.234,
+        "Anima_Animus": 1.0,
+        "Threshold_Guardian": -0.304
+      },
+      "Threshold_Guardian": {
+        "Hero": -0.065,
+        "Shadow": -0.271,
+        "Trickster": -0.006,
+        "Wise_Old_Man": 0.423,
+        "Great_Mother": -0.057,
+        "Persona": -0.394,
+        "Anima_Animus": -0.304,
+        "Threshold_Guardian": 1.0
+      }
+    }
+  },
+  "zero_shot_gemma_to_6": {
+    "qwen35_9b": {
+      "raw": {
+        "macro_auroc_mean": 0.9719,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8986,
+        "top1_8way_std": 0.0105,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 11,
+        "top2_8way_mean": 0.9606,
+        "within_setting_top1_mean": 0.9053,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9417,
+            "auroc_20split_std": 0.0051,
+            "cos_2fold": 0.8774,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 17,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9669,
+            "auroc_20split_std": 0.0031,
+            "cos_2fold": 0.7647,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9646,
+            "auroc_20split_std": 0.0024,
+            "cos_2fold": 0.7899,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9687,
+            "auroc_20split_std": 0.0041,
+            "cos_2fold": 0.7651,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 11
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9778,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.8339,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9993,
+            "auroc_20split_std": 0.0003,
+            "cos_2fold": 0.8512,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 16
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9901,
+            "auroc_20split_std": 0.0012,
+            "cos_2fold": 0.7911,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9665,
+            "auroc_20split_std": 0.0049,
+            "cos_2fold": 0.7507,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 18,
+            "wins_over_tfidf_ridge_20": 3
+          }
+        }
+      },
+      "perp_val2_dbl": {
+        "macro_auroc_mean": 0.9648,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 18,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8934,
+        "top1_8way_std": 0.0078,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 11,
+        "top2_8way_mean": 0.9533,
+        "within_setting_top1_mean": 0.8928,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.8976,
+            "auroc_20split_std": 0.0048,
+            "cos_2fold": 0.8174,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9574,
+            "auroc_20split_std": 0.0029,
+            "cos_2fold": 0.7623,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9657,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.799,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9614,
+            "auroc_20split_std": 0.0045,
+            "cos_2fold": 0.7585,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9817,
+            "auroc_20split_std": 0.0022,
+            "cos_2fold": 0.8355,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9991,
+            "auroc_20split_std": 0.0003,
+            "cos_2fold": 0.7974,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 14
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9922,
+            "auroc_20split_std": 0.0012,
+            "cos_2fold": 0.787,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 3
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.963,
+            "auroc_20split_std": 0.0053,
+            "cos_2fold": 0.747,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 18,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.965,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 19,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8938,
+        "top1_8way_std": 0.0072,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 9,
+        "top2_8way_mean": 0.9475,
+        "within_setting_top1_mean": 0.8984,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9044,
+            "auroc_20split_std": 0.0052,
+            "cos_2fold": 0.7937,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9541,
+            "auroc_20split_std": 0.0035,
+            "cos_2fold": 0.7412,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9677,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.8022,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 3
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9526,
+            "auroc_20split_std": 0.0051,
+            "cos_2fold": 0.7547,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9857,
+            "auroc_20split_std": 0.0019,
+            "cos_2fold": 0.8359,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.999,
+            "auroc_20split_std": 0.0003,
+            "cos_2fold": 0.7963,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 14
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9921,
+            "auroc_20split_std": 0.0011,
+            "cos_2fold": 0.7911,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 3
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9647,
+            "auroc_20split_std": 0.0049,
+            "cos_2fold": 0.7536,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 18,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "lenres_fold_local": {
+        "macro_auroc_mean": 0.9686,
+        "top1_8way_mean": 0.8778
+      }
+    },
+    "llama31_8b": {
+      "raw": {
+        "macro_auroc_mean": 0.9762,
+        "macro_auroc_std": 0.0012,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 1,
+        "top1_8way_mean": 0.927,
+        "top1_8way_std": 0.0071,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 20,
+        "top2_8way_mean": 0.9683,
+        "within_setting_top1_mean": 0.9025,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.966,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.8743,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 13
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9841,
+            "auroc_20split_std": 0.0023,
+            "cos_2fold": 0.7581,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 6,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9521,
+            "auroc_20split_std": 0.0028,
+            "cos_2fold": 0.7218,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9766,
+            "auroc_20split_std": 0.0033,
+            "cos_2fold": 0.7144,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 16
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9762,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.7794,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9995,
+            "auroc_20split_std": 0.0002,
+            "cos_2fold": 0.8181,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 17
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9912,
+            "auroc_20split_std": 0.001,
+            "cos_2fold": 0.7529,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9641,
+            "auroc_20split_std": 0.0049,
+            "cos_2fold": 0.7237,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 18,
+            "wins_over_tfidf_ridge_20": 3
+          }
+        }
+      },
+      "perp_val2_dbl": {
+        "macro_auroc_mean": 0.9698,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9131,
+        "top1_8way_std": 0.0074,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 18,
+        "top2_8way_mean": 0.9627,
+        "within_setting_top1_mean": 0.8908,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9277,
+            "auroc_20split_std": 0.0055,
+            "cos_2fold": 0.8108,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 6,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9759,
+            "auroc_20split_std": 0.0026,
+            "cos_2fold": 0.7509,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9525,
+            "auroc_20split_std": 0.003,
+            "cos_2fold": 0.726,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9706,
+            "auroc_20split_std": 0.0031,
+            "cos_2fold": 0.7117,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 13
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9803,
+            "auroc_20split_std": 0.0019,
+            "cos_2fold": 0.78,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9992,
+            "auroc_20split_std": 0.0004,
+            "cos_2fold": 0.773,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 15
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9928,
+            "auroc_20split_std": 0.0012,
+            "cos_2fold": 0.7392,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9591,
+            "auroc_20split_std": 0.0051,
+            "cos_2fold": 0.7254,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 16,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9708,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9139,
+        "top1_8way_std": 0.0073,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 19,
+        "top2_8way_mean": 0.9644,
+        "within_setting_top1_mean": 0.8959,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9347,
+            "auroc_20split_std": 0.0059,
+            "cos_2fold": 0.7917,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 11,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9754,
+            "auroc_20split_std": 0.0028,
+            "cos_2fold": 0.7224,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9567,
+            "auroc_20split_std": 0.0027,
+            "cos_2fold": 0.7299,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.963,
+            "auroc_20split_std": 0.0036,
+            "cos_2fold": 0.7116,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 6
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9848,
+            "auroc_20split_std": 0.0022,
+            "cos_2fold": 0.7743,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9991,
+            "auroc_20split_std": 0.0004,
+            "cos_2fold": 0.7725,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 13
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9922,
+            "auroc_20split_std": 0.0012,
+            "cos_2fold": 0.741,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9607,
+            "auroc_20split_std": 0.0045,
+            "cos_2fold": 0.7232,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 16,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "lenres_fold_local": {
+        "macro_auroc_mean": 0.9732,
+        "top1_8way_mean": 0.9116
+      }
+    },
+    "mistral7b": {
+      "raw": {
+        "macro_auroc_mean": 0.9743,
+        "macro_auroc_std": 0.0011,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9228,
+        "top1_8way_std": 0.0075,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 20,
+        "top2_8way_mean": 0.9619,
+        "within_setting_top1_mean": 0.9125,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9466,
+            "auroc_20split_std": 0.0052,
+            "cos_2fold": 0.8778,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9732,
+            "auroc_20split_std": 0.003,
+            "cos_2fold": 0.7545,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9586,
+            "auroc_20split_std": 0.002,
+            "cos_2fold": 0.7606,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9773,
+            "auroc_20split_std": 0.0039,
+            "cos_2fold": 0.7422,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 18
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9787,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.8063,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9996,
+            "auroc_20split_std": 0.0002,
+            "cos_2fold": 0.8451,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 18
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9868,
+            "auroc_20split_std": 0.0014,
+            "cos_2fold": 0.7521,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9737,
+            "auroc_20split_std": 0.0042,
+            "cos_2fold": 0.7529,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 8
+          }
+        }
+      },
+      "perp_val2_dbl": {
+        "macro_auroc_mean": 0.9674,
+        "macro_auroc_std": 0.0011,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9128,
+        "top1_8way_std": 0.0078,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 18,
+        "top2_8way_mean": 0.957,
+        "within_setting_top1_mean": 0.903,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9038,
+            "auroc_20split_std": 0.0048,
+            "cos_2fold": 0.8161,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9658,
+            "auroc_20split_std": 0.0029,
+            "cos_2fold": 0.7516,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9595,
+            "auroc_20split_std": 0.0017,
+            "cos_2fold": 0.767,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9704,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.7385,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 11
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9831,
+            "auroc_20split_std": 0.002,
+            "cos_2fold": 0.8057,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.999,
+            "auroc_20split_std": 0.0003,
+            "cos_2fold": 0.809,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 14
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9898,
+            "auroc_20split_std": 0.0014,
+            "cos_2fold": 0.7441,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9675,
+            "auroc_20split_std": 0.005,
+            "cos_2fold": 0.7509,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 4
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9684,
+        "macro_auroc_std": 0.0011,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9109,
+        "top1_8way_std": 0.0071,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 15,
+        "top2_8way_mean": 0.9591,
+        "within_setting_top1_mean": 0.9075,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9105,
+            "auroc_20split_std": 0.0054,
+            "cos_2fold": 0.8009,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9637,
+            "auroc_20split_std": 0.0036,
+            "cos_2fold": 0.7203,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9603,
+            "auroc_20split_std": 0.0018,
+            "cos_2fold": 0.7669,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9653,
+            "auroc_20split_std": 0.0046,
+            "cos_2fold": 0.7358,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 8
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9867,
+            "auroc_20split_std": 0.0019,
+            "cos_2fold": 0.8031,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9989,
+            "auroc_20split_std": 0.0004,
+            "cos_2fold": 0.807,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 13
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9901,
+            "auroc_20split_std": 0.0014,
+            "cos_2fold": 0.751,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9714,
+            "auroc_20split_std": 0.0043,
+            "cos_2fold": 0.7451,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 5
+          }
+        }
+      },
+      "lenres_fold_local": {
+        "macro_auroc_mean": 0.9658,
+        "top1_8way_mean": 0.8998
+      }
+    },
+    "inkling2_mini": {
+      "raw": {
+        "macro_auroc_mean": 0.9674,
+        "macro_auroc_std": 0.0012,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8588,
+        "top1_8way_std": 0.0135,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 0,
+        "top2_8way_mean": 0.9386,
+        "within_setting_top1_mean": 0.8995,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9536,
+            "auroc_20split_std": 0.0043,
+            "cos_2fold": 0.7193,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 6
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9693,
+            "auroc_20split_std": 0.0051,
+            "cos_2fold": 0.64,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9553,
+            "auroc_20split_std": 0.0033,
+            "cos_2fold": 0.6706,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9702,
+            "auroc_20split_std": 0.0047,
+            "cos_2fold": 0.5607,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 12
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9606,
+            "auroc_20split_std": 0.0022,
+            "cos_2fold": 0.7133,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9962,
+            "auroc_20split_std": 0.001,
+            "cos_2fold": 0.7028,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.987,
+            "auroc_20split_std": 0.0015,
+            "cos_2fold": 0.5974,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9468,
+            "auroc_20split_std": 0.0065,
+            "cos_2fold": 0.5584,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 7,
+            "wins_over_tfidf_ridge_20": 0
+          }
+        }
+      },
+      "perp_val2_dbl": {
+        "macro_auroc_mean": 0.9617,
+        "macro_auroc_std": 0.0011,
+        "macro_wins_over_bow_20": 15,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8609,
+        "top1_8way_std": 0.012,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 1,
+        "top2_8way_mean": 0.9412,
+        "within_setting_top1_mean": 0.8886,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9114,
+            "auroc_20split_std": 0.0052,
+            "cos_2fold": 0.6786,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9557,
+            "auroc_20split_std": 0.0057,
+            "cos_2fold": 0.6368,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9547,
+            "auroc_20split_std": 0.0028,
+            "cos_2fold": 0.6835,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9691,
+            "auroc_20split_std": 0.0039,
+            "cos_2fold": 0.5573,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 11
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9632,
+            "auroc_20split_std": 0.002,
+            "cos_2fold": 0.7225,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.996,
+            "auroc_20split_std": 0.0007,
+            "cos_2fold": 0.6575,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.99,
+            "auroc_20split_std": 0.002,
+            "cos_2fold": 0.5922,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9531,
+            "auroc_20split_std": 0.0061,
+            "cos_2fold": 0.5835,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 13,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9636,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 18,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.867,
+        "top1_8way_std": 0.0123,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 0,
+        "top2_8way_mean": 0.9402,
+        "within_setting_top1_mean": 0.898,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9216,
+            "auroc_20split_std": 0.0056,
+            "cos_2fold": 0.6796,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 4,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9526,
+            "auroc_20split_std": 0.0063,
+            "cos_2fold": 0.6172,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9618,
+            "auroc_20split_std": 0.0022,
+            "cos_2fold": 0.6829,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9591,
+            "auroc_20split_std": 0.0042,
+            "cos_2fold": 0.5653,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 3
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.971,
+            "auroc_20split_std": 0.0018,
+            "cos_2fold": 0.7348,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9954,
+            "auroc_20split_std": 0.0008,
+            "cos_2fold": 0.6823,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.989,
+            "auroc_20split_std": 0.0019,
+            "cos_2fold": 0.5903,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9587,
+            "auroc_20split_std": 0.0058,
+            "cos_2fold": 0.6155,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 16,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "lenres_fold_local": {
+        "macro_auroc_mean": 0.9597,
+        "top1_8way_mean": 0.8405
+      }
+    },
+    "phi4_mini": {
+      "raw": {
+        "macro_auroc_mean": 0.9652,
+        "macro_auroc_std": 0.0017,
+        "macro_wins_over_bow_20": 19,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8852,
+        "top1_8way_std": 0.0081,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 8,
+        "top2_8way_mean": 0.9573,
+        "within_setting_top1_mean": 0.8739,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9387,
+            "auroc_20split_std": 0.0048,
+            "cos_2fold": 0.8316,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 15,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9632,
+            "auroc_20split_std": 0.0032,
+            "cos_2fold": 0.7029,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.939,
+            "auroc_20split_std": 0.0046,
+            "cos_2fold": 0.6732,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 15,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9791,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.6466,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 17
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9636,
+            "auroc_20split_std": 0.0024,
+            "cos_2fold": 0.8003,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9989,
+            "auroc_20split_std": 0.0004,
+            "cos_2fold": 0.7819,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 14
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9838,
+            "auroc_20split_std": 0.0014,
+            "cos_2fold": 0.772,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 17,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9552,
+            "auroc_20split_std": 0.0061,
+            "cos_2fold": 0.7238,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 14,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "perp_val2_dbl": {
+        "macro_auroc_mean": 0.9585,
+        "macro_auroc_std": 0.0016,
+        "macro_wins_over_bow_20": 8,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8808,
+        "top1_8way_std": 0.0081,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 7,
+        "top2_8way_mean": 0.9525,
+        "within_setting_top1_mean": 0.87,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.8983,
+            "auroc_20split_std": 0.0036,
+            "cos_2fold": 0.7818,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9546,
+            "auroc_20split_std": 0.0035,
+            "cos_2fold": 0.7035,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9432,
+            "auroc_20split_std": 0.0042,
+            "cos_2fold": 0.6889,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 16,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9709,
+            "auroc_20split_std": 0.0041,
+            "cos_2fold": 0.6409,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 10
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9649,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.8049,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9978,
+            "auroc_20split_std": 0.0005,
+            "cos_2fold": 0.726,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9872,
+            "auroc_20split_std": 0.0015,
+            "cos_2fold": 0.7631,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9507,
+            "auroc_20split_std": 0.006,
+            "cos_2fold": 0.7287,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 10,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9594,
+        "macro_auroc_std": 0.0018,
+        "macro_wins_over_bow_20": 11,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.875,
+        "top1_8way_std": 0.0093,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 2,
+        "top2_8way_mean": 0.9481,
+        "within_setting_top1_mean": 0.8764,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9036,
+            "auroc_20split_std": 0.0039,
+            "cos_2fold": 0.7617,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9484,
+            "auroc_20split_std": 0.0038,
+            "cos_2fold": 0.6706,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.949,
+            "auroc_20split_std": 0.0038,
+            "cos_2fold": 0.6898,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9628,
+            "auroc_20split_std": 0.0042,
+            "cos_2fold": 0.6361,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 6
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9719,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.801,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9975,
+            "auroc_20split_std": 0.0006,
+            "cos_2fold": 0.7261,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 3
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9873,
+            "auroc_20split_std": 0.0016,
+            "cos_2fold": 0.768,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9543,
+            "auroc_20split_std": 0.0059,
+            "cos_2fold": 0.7272,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 15,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "lenres_fold_local": {
+        "macro_auroc_mean": 0.964,
+        "top1_8way_mean": 0.8742
+      }
+    },
+    "olmo3_7b": {
+      "raw": {
+        "macro_auroc_mean": 0.9726,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9191,
+        "top1_8way_std": 0.0079,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 19,
+        "top2_8way_mean": 0.9603,
+        "within_setting_top1_mean": 0.9064,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9432,
+            "auroc_20split_std": 0.0049,
+            "cos_2fold": 0.8588,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 18,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9726,
+            "auroc_20split_std": 0.0032,
+            "cos_2fold": 0.7376,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9615,
+            "auroc_20split_std": 0.0031,
+            "cos_2fold": 0.7358,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9757,
+            "auroc_20split_std": 0.0034,
+            "cos_2fold": 0.709,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 16
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9721,
+            "auroc_20split_std": 0.0021,
+            "cos_2fold": 0.8256,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9983,
+            "auroc_20split_std": 0.0005,
+            "cos_2fold": 0.8093,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 7
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9886,
+            "auroc_20split_std": 0.0012,
+            "cos_2fold": 0.7374,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9684,
+            "auroc_20split_std": 0.0054,
+            "cos_2fold": 0.7021,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 4
+          }
+        }
+      },
+      "perp_val2_dbl": {
+        "macro_auroc_mean": 0.966,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9086,
+        "top1_8way_std": 0.0086,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 17,
+        "top2_8way_mean": 0.9545,
+        "within_setting_top1_mean": 0.8998,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9034,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.797,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9656,
+            "auroc_20split_std": 0.0038,
+            "cos_2fold": 0.7283,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9636,
+            "auroc_20split_std": 0.0029,
+            "cos_2fold": 0.7448,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.971,
+            "auroc_20split_std": 0.0032,
+            "cos_2fold": 0.7035,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 13
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9759,
+            "auroc_20split_std": 0.0019,
+            "cos_2fold": 0.8228,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9975,
+            "auroc_20split_std": 0.0006,
+            "cos_2fold": 0.7566,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 3
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9907,
+            "auroc_20split_std": 0.0015,
+            "cos_2fold": 0.7295,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9606,
+            "auroc_20split_std": 0.0062,
+            "cos_2fold": 0.6993,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 17,
+            "wins_over_tfidf_ridge_20": 2
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9662,
+        "macro_auroc_std": 0.0014,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9028,
+        "top1_8way_std": 0.0098,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 14,
+        "top2_8way_mean": 0.9505,
+        "within_setting_top1_mean": 0.9036,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9084,
+            "auroc_20split_std": 0.0041,
+            "cos_2fold": 0.7764,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9628,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.6934,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9673,
+            "auroc_20split_std": 0.0029,
+            "cos_2fold": 0.7464,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9605,
+            "auroc_20split_std": 0.0038,
+            "cos_2fold": 0.6906,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9802,
+            "auroc_20split_std": 0.002,
+            "cos_2fold": 0.819,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.997,
+            "auroc_20split_std": 0.0007,
+            "cos_2fold": 0.7551,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9912,
+            "auroc_20split_std": 0.0016,
+            "cos_2fold": 0.7349,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9621,
+            "auroc_20split_std": 0.0061,
+            "cos_2fold": 0.6977,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 17,
+            "wins_over_tfidf_ridge_20": 2
+          }
+        }
+      },
+      "lenres_fold_local": {
+        "macro_auroc_mean": 0.9684,
+        "top1_8way_mean": 0.8922
+      }
+    }
+  },
+  "c5_consensus_to_heldout": {
+    "phi4_mini": {
+      "raw": {
+        "macro_auroc_mean": 0.9691,
+        "macro_auroc_std": 0.0013,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8992,
+        "top1_8way_std": 0.0073,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 12,
+        "top2_8way_mean": 0.9541,
+        "within_setting_top1_mean": 0.8922,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9382,
+            "auroc_20split_std": 0.0048,
+            "cos_2fold": 0.8599,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 15,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9642,
+            "auroc_20split_std": 0.0028,
+            "cos_2fold": 0.7902,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9576,
+            "auroc_20split_std": 0.003,
+            "cos_2fold": 0.7464,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9724,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.6909,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 13
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.974,
+            "auroc_20split_std": 0.0017,
+            "cos_2fold": 0.8487,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9982,
+            "auroc_20split_std": 0.0005,
+            "cos_2fold": 0.84,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 8
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9886,
+            "auroc_20split_std": 0.0009,
+            "cos_2fold": 0.8092,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 19,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9595,
+            "auroc_20split_std": 0.0047,
+            "cos_2fold": 0.8055,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 17,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9632,
+        "macro_auroc_std": 0.0011,
+        "macro_wins_over_bow_20": 17,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.8925,
+        "top1_8way_std": 0.007,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 10,
+        "top2_8way_mean": 0.9531,
+        "within_setting_top1_mean": 0.8895,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9031,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.7991,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9505,
+            "auroc_20split_std": 0.0032,
+            "cos_2fold": 0.7633,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9646,
+            "auroc_20split_std": 0.0024,
+            "cos_2fold": 0.7604,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9587,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.6874,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.981,
+            "auroc_20split_std": 0.0017,
+            "cos_2fold": 0.8524,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9972,
+            "auroc_20split_std": 0.0006,
+            "cos_2fold": 0.7976,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 1
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9929,
+            "auroc_20split_std": 0.001,
+            "cos_2fold": 0.8043,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9577,
+            "auroc_20split_std": 0.0042,
+            "cos_2fold": 0.8083,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 16,
+            "wins_over_tfidf_ridge_20": 1
+          }
+        }
+      }
+    },
+    "olmo3_7b": {
+      "raw": {
+        "macro_auroc_mean": 0.975,
+        "macro_auroc_std": 0.001,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9264,
+        "top1_8way_std": 0.0074,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 20,
+        "top2_8way_mean": 0.9627,
+        "within_setting_top1_mean": 0.9197,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9476,
+            "auroc_20split_std": 0.0046,
+            "cos_2fold": 0.8955,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 2
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9689,
+            "auroc_20split_std": 0.0031,
+            "cos_2fold": 0.8149,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9727,
+            "auroc_20split_std": 0.0022,
+            "cos_2fold": 0.811,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.9706,
+            "auroc_20split_std": 0.0034,
+            "cos_2fold": 0.7827,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 12
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9791,
+            "auroc_20split_std": 0.0017,
+            "cos_2fold": 0.876,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9978,
+            "auroc_20split_std": 0.0006,
+            "cos_2fold": 0.8592,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9931,
+            "auroc_20split_std": 0.0006,
+            "cos_2fold": 0.818,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9699,
+            "auroc_20split_std": 0.0039,
+            "cos_2fold": 0.7775,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 5
+          }
+        }
+      },
+      "perp_val3_dbl": {
+        "macro_auroc_mean": 0.9685,
+        "macro_auroc_std": 0.0011,
+        "macro_wins_over_bow_20": 20,
+        "macro_wins_over_tfidf_ridge_20": 0,
+        "top1_8way_mean": 0.9111,
+        "top1_8way_std": 0.0065,
+        "top1_wins_over_bow_20": 20,
+        "top1_wins_over_tfidf_ridge_20": 18,
+        "top2_8way_mean": 0.9536,
+        "within_setting_top1_mean": 0.9189,
+        "per_archetype": {
+          "Hero": {
+            "auroc_20split_mean": 0.9107,
+            "auroc_20split_std": 0.0046,
+            "cos_2fold": 0.8414,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 2,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Shadow": {
+            "auroc_20split_mean": 0.9597,
+            "auroc_20split_std": 0.0042,
+            "cos_2fold": 0.7848,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Trickster": {
+            "auroc_20split_mean": 0.9766,
+            "auroc_20split_std": 0.002,
+            "cos_2fold": 0.8203,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Wise_Old_Man": {
+            "auroc_20split_mean": 0.959,
+            "auroc_20split_std": 0.004,
+            "cos_2fold": 0.7738,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 4
+          },
+          "Great_Mother": {
+            "auroc_20split_mean": 0.9864,
+            "auroc_20split_std": 0.0016,
+            "cos_2fold": 0.8742,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 0,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Persona": {
+            "auroc_20split_mean": 0.9967,
+            "auroc_20split_std": 0.0008,
+            "cos_2fold": 0.8216,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 0
+          },
+          "Anima_Animus": {
+            "auroc_20split_mean": 0.9956,
+            "auroc_20split_std": 0.0007,
+            "cos_2fold": 0.8041,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 20,
+            "wins_over_tfidf_ridge_20": 9
+          },
+          "Threshold_Guardian": {
+            "auroc_20split_mean": 0.9632,
+            "auroc_20split_std": 0.0041,
+            "cos_2fold": 0.7752,
+            "p_perm_max": 0.001,
+            "wins_over_bow_20": 18,
+            "wins_over_tfidf_ridge_20": 2
+          }
+        }
+      }
+    }
+  }
+}

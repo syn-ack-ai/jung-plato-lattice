@@ -7,8 +7,8 @@ Checks:
      committed spoken-audio fixture, 53 verified references across paper.md, references.bib, and main.bbl,
      and arXiv LaTeX hygiene (\\pdfoutput=1 header and zero unescaped ~digits).
   4. Strict ordered, typed cell-level cross-verification of committed JSON artifacts against EVERY numeric
-     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 3, 3b, 3c, 4, 5) AND
-     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:loro, tab:5m, tab:8b, tab:epi).
+     table in BOTH `paper/paper.md` (Tables 1, pairwise matrix, 2, 2a, 2b, 2c, 2d, 2e, 3, 3b, 3c, 4, 5) AND
+     `paper/arxiv/main.tex` (Tables tab:gpa, tab:teleport, tab:val, tab:bswap, tab:named, tab:loro, tab:5m, tab:8b, tab:epi).
   5. Comprehensive zero-GPU scientific unit tests with fully isolated temporary `JPL_CKPT_DIR` (explicitly
      reporting any optional tests skipped when optional packages are not installed).
 """
@@ -142,6 +142,24 @@ def _parse_md_tables(paper_txt: str):
     return rows
 
 
+def _parse_md_table_after(paper_txt: str, header_needle: str):
+    """Return rows of the single Markdown table whose header line contains `header_needle`."""
+    lines = paper_txt.splitlines()
+    for i, line in enumerate(lines):
+        s = line.strip()
+        if s.startswith("|") and s.endswith("|") and header_needle in s:
+            rows = []
+            for j in range(i + 1, len(lines)):
+                sj = lines[j].strip()
+                if not (sj.startswith("|") and sj.endswith("|")):
+                    break
+                if re.match(r"^\|[\s:\-|]+\|$", sj):
+                    continue
+                rows.append([c.strip() for c in sj.strip("|").split("|")])
+            return rows
+    raise AssertionError(f"Markdown table with header '{header_needle}' not found!")
+
+
 def _clean_md(s: str) -> str:
     s = s.replace("**", "").replace("*", "").replace("`", "")
     return re.sub(r"\s+", " ", s).strip()
@@ -225,6 +243,7 @@ def check_headline_numbers_and_paper_sync():
         ("C4", "4-Family Consensus (C4"),
         ("C5", "5-Family Consensus (C5"),
     ]
+    md_t1_rows = _parse_md_table_after(paper_txt, "Source Representation (256-dim PCA / GPA)")
     tex_gpa = _parse_tex_table(tex_txt, "tab:gpa")
     assert len(tex_gpa) == 7, f"Expected 7 rows in tab:gpa, got {len(tex_gpa)}"
     for k, row_key in t1_rows:
@@ -242,7 +261,7 @@ def check_headline_numbers_and_paper_sync():
             (5, rf"^{re.escape(ol_r2o)}\s*\({re.escape(ol_r2f)}\)$"),
             (6, rf"^{re.escape(ol_t1)}\s*/\s*{re.escape(ol_t5)}$"),
         ]
-        _assert_row_regex(md_rows, row_key, checks, f"MD Table 1 {k}", exact_cols=7)
+        _assert_row_regex(md_t1_rows, row_key, checks, f"MD Table 1 {k}", exact_cols=7)
         _assert_row_regex(tex_gpa, row_key, checks, f"TeX tab:gpa {k}", exact_cols=7, cleaner=lambda s: s)
 
     # Post-GPA Pairwise Cosine Matrix (paper.md)
@@ -404,6 +423,67 @@ def check_headline_numbers_and_paper_sync():
     for label, doc in [("paper.md", paper_txt), ("main.tex", tex_txt)]:
         for needle in ("46.8", "53.2", "0.602", "0.519", "0.977"):
             assert needle in doc, f"Experiment 234 headline '{needle}' missing from {label}!"
+
+    # =========================================================================
+    # 2c. Experiment 236 Exact Identical-BoW Swap Audit (Table 2d & tab:bswap)
+    # =========================================================================
+    bs_data = json.load(open(ARCH / "selfshape" / "bow_swap236_data.json"))
+    assert len(bs_data["bow_swap_60"]) == 60
+    b236 = json.load(open(ARCH / "fluent" / "plato" / "bow_swap236.json"))
+    assert abs(b236["lexical_baselines"]["bow_bs60_unigram_20split_mean"] - 0.5) < 1e-12
+    assert abs(b236["lexical_baselines"]["bow_house_to_vm60_unigram"] - 0.9083) < 5e-4
+    md_bs_rows = _parse_md_table_after(paper_txt, "bow_swap236.json")
+    assert len(md_bs_rows) == 6, f"Expected 6 rows in MD Table 2d, got {len(md_bs_rows)}"
+    tex_bs = _parse_tex_table(tex_txt, "tab:bswap")
+    assert len(tex_bs) == 6, f"Expected 6 rows in tab:bswap, got {len(tex_bs)}"
+    for mk, rkey in t2b_models:
+        v = b236["transfer_bow_swap_60"][mk]
+        s_acc, s_p = f"{v['zs_sent_to_bs_acc']*100:.1f}%", f"{v['zs_sent_to_bs_p']:.3f}"
+        h_acc, h_p = f"{v['zs_house_to_bs_acc']*100:.1f}%", f"{v['zs_house_to_bs_p']:.3f}"
+        hp_acc, hp_c, hp_p = f"{v['zs_house_perp_val2_dbl_to_bs_acc']*100:.1f}%", f"{v['zs_house_perp_val2_dbl_to_bs_cos']:+.3f}", f"{v['zs_house_perp_val2_dbl_to_bs_p']:.3f}"
+        hp_ns = r"\s+n\.s\." if v["zs_house_perp_val2_dbl_to_bs_p"] >= 0.05 else ""
+        r2_acc, r2_p = f"{v['bs_2fold_raw_20split_mean']*100:.1f}%", f"{v['bs_2fold_raw_p_max']:.3f}"
+        p2_acc, p2_c, p2_p = f"{v['bs_2fold_perp_val2_20split_mean']*100:.1f}%", f"{v['bs_2fold_perp_val2_cos']:+.3f}", f"{v['bs_2fold_perp_val2_p_max']:.3f}"
+        p2_ns = r"\s+n\.s\." if v["bs_2fold_perp_val2_p_max"] >= 0.05 else ""
+        p5_acc = f"{v['bs_2fold_perp_val5_20split_mean']*100:.1f}%"
+        checks = [
+            (1, rf"^{re.escape(s_acc)}\s*\({re.escape(s_p)}\)$"),
+            (2, rf"^{re.escape(h_acc)}\s*\({re.escape(h_p)}\)$"),
+            (3, rf"^{re.escape(hp_acc)}\s*\({re.escape(hp_c)},\s*{re.escape(hp_p)}{hp_ns}\)$"),
+            (4, rf"^{re.escape(r2_acc)}\s*\({re.escape(r2_p)}\)$"),
+            (5, rf"^{re.escape(p2_acc)}\s*\({re.escape(p2_c)},\s*{re.escape(p2_p)}{p2_ns}\)$"),
+            (6, rf"^{re.escape(p5_acc)}$"),
+        ]
+        _assert_row_regex(md_bs_rows, f"Gemma 4 → {rkey}", checks, f"MD Table 2d {mk}", exact_cols=7)
+        _assert_row_regex(tex_bs, f"Gemma 4 -> {rkey}", checks, f"TeX tab:bswap {mk}", exact_cols=7, cleaner=lambda s: s)
+
+    # =========================================================================
+    # 2d. Experiment 235 Fair Trial of 8 Canonical Named Archetypes (Table 2e & tab:named)
+    # =========================================================================
+    na_data = json.load(open(ARCH / "selfshape" / "named_arch235_data.json"))
+    assert len(na_data) == 320
+    n235 = json.load(open(ARCH / "fluent" / "plato" / "named_arch235.json"))
+    assert abs(n235["c5_geometry"]["effective_rank_pr_raw"] - 5.009) < 1e-3
+    assert abs(n235["c5_geometry"]["effective_rank_pr_perp_val3"] - 5.06) < 1e-2
+    md_na_rows = _parse_md_table_after(paper_txt, "named_arch235.json")
+    assert len(md_na_rows) == 6, f"Expected 6 rows in MD Table 2e, got {len(md_na_rows)}"
+    tex_na = _parse_tex_table(tex_txt, "tab:named")
+    assert len(tex_na) == 6, f"Expected 6 rows in tab:named, got {len(tex_na)}"
+    for mk, rkey in t2b_models:
+        r = n235["zero_shot_gemma_to_6"][mk]["raw"]
+        p3 = n235["zero_shot_gemma_to_6"][mk]["perp_val3_dbl"]
+        lr = n235["zero_shot_gemma_to_6"][mk]["lenres_fold_local"]
+        assert all(v["p_perm_max"] <= 0.001 for v in p3["per_archetype"].values())
+        checks = [
+            (1, rf"^{r['top1_8way_mean']*100:.1f}%\s*\({r['top1_wins_over_tfidf_ridge_20']}/20\)$"),
+            (2, rf"^{p3['top1_8way_mean']*100:.1f}%\s*\({p3['top1_wins_over_tfidf_ridge_20']}/20\)$"),
+            (3, rf"^{r['macro_auroc_mean']:.3f}$"),
+            (4, rf"^{p3['macro_auroc_mean']:.3f}$"),
+            (5, rf"^{lr['top1_8way_mean']*100:.1f}%$"),
+            (6, rf"^{r['within_setting_top1_mean']*100:.1f}%$"),
+        ]
+        _assert_row_regex(md_na_rows, f"Gemma 4 → {rkey}", checks, f"MD Table 2e {mk}", exact_cols=7)
+        _assert_row_regex(tex_na, f"Gemma 4 -> {rkey}", checks, f"TeX tab:named {mk}", exact_cols=7, cleaner=lambda s: s)
 
     # =========================================================================
     # 3. 199-Family Strict LORO Retrieval vs. Strict-LQO TF-IDF (Table 3b & tab:loro)
@@ -721,7 +801,7 @@ def check_headline_numbers_and_paper_sync():
             (6, rf"^{n95}$"),
         ], f"TeX tab:epi {tex_key}", exact_cols=7, cleaner=lambda s: s)
 
-    print("[PASS] All 6 pillars, Experiment 234 valence control, 24 student JSONs, strict audits, ALL paper.md tables (1, pairwise, 2, 2a, 2b, 2c, 3, 3b, 3c, 4, 5), AND ALL 7 main.tex tables (tab:gpa..tab:epi) match cleanly.")
+    print("[PASS] All 6 pillars, Experiments 234-236 (valence, exact-BoW swaps, 8 named archetypes), 24 student JSONs, ALL paper.md tables (1..5), AND ALL 9 main.tex tables (tab:gpa..tab:epi) match cleanly.")
 
 
 def run_unit_tests():
@@ -729,6 +809,8 @@ def run_unit_tests():
         ("sceptic_ctrl230", [sys.executable, str(ARCH / "aion_8b" / "sceptic_ctrl230.py"), "test"]),
         ("arch_rot229", [sys.executable, str(ARCH / "fluent" / "arch_rot229.py"), "test"]),
         ("valence_ctrl234", [sys.executable, str(ARCH / "fluent" / "valence_ctrl234.py"), "test"]),
+        ("named_arch235", [sys.executable, str(ARCH / "fluent" / "named_arch235.py"), "test"]),
+        ("bow_swap236", [sys.executable, str(ARCH / "fluent" / "bow_swap236.py"), "test"]),
         ("audit233_epistemic_overlap", [sys.executable, "-c", "from aion_8b import audit233_epistemic as a; a._verify_zero_entity_overlap()"]),
     ]
     skipped = []
