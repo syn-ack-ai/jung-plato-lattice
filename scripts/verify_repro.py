@@ -1077,7 +1077,7 @@ def _verify_v6_tables(paper_txt: str, tex_txt: str, e251_override=None):
     # Cross-Lingual Pattern Similarity audit invariants (v6_crosslang_audit.json + raw JSONL counts)
     assert len(xling["models"]) == 5 and len(xling["languages"]) == 4 and xling["c1_primary"]["n_patterns"] == 78
     _cl_checked_I = [json.loads(l) for l in open(ARCH / "crosslang" / "checked.jsonl") if l.strip() and json.loads(l).get("set") == "I"]
-    _cl_pass_I = [r for r in _cl_checked_I if r.get("p31", 0) > 0.5]
+    _cl_pass_I = [r for r in _cl_checked_I if r.get("p31", 0) >= 0.7 and r.get("mass", 0) >= 0.5]
     _cl_pat_langs = {}
     for _r in _cl_pass_I:
         _cl_pat_langs.setdefault(_r["pattern_id"], set()).add(_r["lang"])
