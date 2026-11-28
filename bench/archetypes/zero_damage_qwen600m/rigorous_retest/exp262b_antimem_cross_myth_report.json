@@ -1,0 +1,90 @@
+{
+  "llama31_memorization_nll": {
+    "original_odyssey": {
+      "nll": 2.34564,
+      "ppl": 10.44,
+      "n_tok": 11659
+    },
+    "scrubbed_odyssey": {
+      "nll": 2.88661,
+      "ppl": 17.932,
+      "n_tok": 11604
+    },
+    "brand_new_myths": {
+      "nll": 3.51719,
+      "ppl": 33.69,
+      "n_tok": 7136
+    }
+  },
+  "by_depth": {
+    "depth_30": {
+      "original_odyssey": {
+        "n_pts": 299,
+        "gpa_3blind_r2": 0.56756,
+        "gpa_3blind_top1": 0.99331,
+        "gcca_3blind_top1": 0.99666,
+        "gcca_qwen27b_top1": 1.0
+      },
+      "scrubbed_odyssey": {
+        "n_pts": 299,
+        "gpa_3blind_r2": 0.56956,
+        "gpa_3blind_top1": 0.99554,
+        "gcca_3blind_top1": 0.99777,
+        "gcca_qwen27b_top1": 1.0
+      },
+      "brand_new_myths": {
+        "n_pts": 248,
+        "gpa_3blind_r2": 0.04206,
+        "gpa_3blind_top1": 0.98656,
+        "gcca_3blind_top1": 0.98925,
+        "gcca_qwen27b_top1": 0.99194
+      }
+    },
+    "depth_50": {
+      "original_odyssey": {
+        "n_pts": 299,
+        "gpa_3blind_r2": 0.4869,
+        "gpa_3blind_top1": 0.98662,
+        "gcca_3blind_top1": 0.9922,
+        "gcca_qwen27b_top1": 0.99666
+      },
+      "scrubbed_odyssey": {
+        "n_pts": 299,
+        "gpa_3blind_r2": 0.51687,
+        "gpa_3blind_top1": 0.99331,
+        "gcca_3blind_top1": 0.99554,
+        "gcca_qwen27b_top1": 0.99331
+      },
+      "brand_new_myths": {
+        "n_pts": 248,
+        "gpa_3blind_r2": -0.20268,
+        "gpa_3blind_top1": 0.95027,
+        "gcca_3blind_top1": 0.95968,
+        "gcca_qwen27b_top1": 0.91532
+      }
+    },
+    "depth_70": {
+      "original_odyssey": {
+        "n_pts": 299,
+        "gpa_3blind_r2": 0.38932,
+        "gpa_3blind_top1": 0.94649,
+        "gcca_3blind_top1": 0.97547,
+        "gcca_qwen27b_top1": 0.97659
+      },
+      "scrubbed_odyssey": {
+        "n_pts": 299,
+        "gpa_3blind_r2": 0.4637,
+        "gpa_3blind_top1": 0.97436,
+        "gcca_3blind_top1": 0.98774,
+        "gcca_qwen27b_top1": 0.98328
+      },
+      "brand_new_myths": {
+        "n_pts": 248,
+        "gpa_3blind_r2": -0.71487,
+        "gpa_3blind_top1": 0.85215,
+        "gcca_3blind_top1": 0.89247,
+        "gcca_qwen27b_top1": 0.73387
+      }
+    }
+  }
+}

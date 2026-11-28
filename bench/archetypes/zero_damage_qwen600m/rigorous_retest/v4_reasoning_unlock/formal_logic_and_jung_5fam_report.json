@@ -1,0 +1,1174 @@
+{
+  "n_logic_train": 780,
+  "n_logic_eval": 295,
+  "n_all4_train_passages": 4907,
+  "n_all4_train_pts": 32107,
+  "formal_logic_separate": {
+    "depth_15": {
+      "gemma4_31b": {
+        "phi4_mini": {
+          "r2_frob": 0.56426,
+          "r2_opt": 0.60802,
+          "cos": 0.76591,
+          "top1": 0.72716,
+          "top5": 0.92283
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.49842,
+          "r2_opt": 0.55677,
+          "cos": 0.74406,
+          "top1": 0.64047,
+          "top5": 0.87145
+        },
+        "mean_r2_frob": 0.53134,
+        "mean_top1": 0.68382
+      },
+      "qwen38_27b": {
+        "phi4_mini": {
+          "r2_frob": 0.45436,
+          "r2_opt": 0.52475,
+          "cos": 0.74686,
+          "top1": 0.8381,
+          "top5": 0.95461
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.43052,
+          "r2_opt": 0.5061,
+          "cos": 0.73542,
+          "top1": 0.826,
+          "top5": 0.94301
+        },
+        "mean_r2_frob": 0.44244,
+        "mean_top1": 0.83205
+      },
+      "inkling2_mini": {
+        "phi4_mini": {
+          "r2_frob": 0.19008,
+          "r2_opt": 0.34203,
+          "cos": 0.59075,
+          "top1": 0.6627,
+          "top5": 0.8765
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.10881,
+          "r2_opt": 0.29158,
+          "cos": 0.57175,
+          "top1": 0.62032,
+          "top5": 0.83665
+        },
+        "mean_r2_frob": 0.14944,
+        "mean_top1": 0.64151
+      },
+      "llama31_8b": {
+        "phi4_mini": {
+          "r2_frob": 0.48169,
+          "r2_opt": 0.54285,
+          "cos": 0.7437,
+          "top1": 0.87392,
+          "top5": 0.97327
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.44829,
+          "r2_opt": 0.51691,
+          "cos": 0.74058,
+          "top1": 0.86689,
+          "top5": 0.95865
+        },
+        "mean_r2_frob": 0.46499,
+        "mean_top1": 0.87041
+      },
+      "mistral7b": {
+        "phi4_mini": {
+          "r2_frob": 0.55974,
+          "r2_opt": 0.60346,
+          "cos": 0.77506,
+          "top1": 0.88098,
+          "top5": 0.9753
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.51017,
+          "r2_opt": 0.56396,
+          "cos": 0.76226,
+          "top1": 0.86434,
+          "top5": 0.95663
+        },
+        "mean_r2_frob": 0.53496,
+        "mean_top1": 0.87266
+      },
+      "GPA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.66138,
+          "r2_opt": 0.68768,
+          "cos": 0.82462,
+          "top1": 0.89611,
+          "top5": 0.9763
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.6011,
+          "r2_opt": 0.63762,
+          "cos": 0.80414,
+          "top1": 0.8704,
+          "top5": 0.96167
+        },
+        "mean_r2_frob": 0.63124,
+        "mean_top1": 0.88325
+      },
+      "GCCA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.37426,
+          "r2_opt": 0.46493,
+          "cos": 0.67913,
+          "top1": 0.92083,
+          "top5": 0.98285
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.36987,
+          "r2_opt": 0.4599,
+          "cos": 0.68774,
+          "top1": 0.91377,
+          "top5": 0.98185
+        },
+        "mean_r2_frob": 0.37206,
+        "mean_top1": 0.9173
+      }
+    },
+    "depth_30": {
+      "gemma4_31b": {
+        "phi4_mini": {
+          "r2_frob": 0.11236,
+          "r2_opt": 0.30462,
+          "cos": 0.67233,
+          "top1": 0.69088,
+          "top5": 0.86839
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.29029,
+          "r2_opt": 0.40915,
+          "cos": 0.66204,
+          "top1": 0.7277,
+          "top5": 0.87495
+        },
+        "mean_r2_frob": 0.20133,
+        "mean_top1": 0.70929
+      },
+      "qwen38_27b": {
+        "phi4_mini": {
+          "r2_frob": 0.1497,
+          "r2_opt": 0.32539,
+          "cos": 0.70842,
+          "top1": 0.8099,
+          "top5": 0.93144
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.32557,
+          "r2_opt": 0.42889,
+          "cos": 0.68058,
+          "top1": 0.80285,
+          "top5": 0.91885
+        },
+        "mean_r2_frob": 0.23764,
+        "mean_top1": 0.80637
+      },
+      "inkling2_mini": {
+        "phi4_mini": {
+          "r2_frob": -0.10295,
+          "r2_opt": 0.18611,
+          "cos": 0.5528,
+          "top1": 0.71262,
+          "top5": 0.90724
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.01214,
+          "r2_opt": 0.22904,
+          "cos": 0.53416,
+          "top1": 0.69142,
+          "top5": 0.89261
+        },
+        "mean_r2_frob": -0.04541,
+        "mean_top1": 0.70202
+      },
+      "llama31_8b": {
+        "phi4_mini": {
+          "r2_frob": 0.17025,
+          "r2_opt": 0.33601,
+          "cos": 0.71262,
+          "top1": 0.89107,
+          "top5": 0.96874
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.36616,
+          "r2_opt": 0.45606,
+          "cos": 0.70003,
+          "top1": 0.87646,
+          "top5": 0.95663
+        },
+        "mean_r2_frob": 0.26821,
+        "mean_top1": 0.88377
+      },
+      "mistral7b": {
+        "phi4_mini": {
+          "r2_frob": 0.26329,
+          "r2_opt": 0.39456,
+          "cos": 0.75769,
+          "top1": 0.89158,
+          "top5": 0.9758
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.44932,
+          "r2_opt": 0.51652,
+          "cos": 0.73677,
+          "top1": 0.88352,
+          "top5": 0.96923
+        },
+        "mean_r2_frob": 0.3563,
+        "mean_top1": 0.88755
+      },
+      "GPA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.32896,
+          "r2_opt": 0.43924,
+          "cos": 0.79707,
+          "top1": 0.90519,
+          "top5": 0.97932
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.5336,
+          "r2_opt": 0.58311,
+          "cos": 0.77516,
+          "top1": 0.88704,
+          "top5": 0.96823
+        },
+        "mean_r2_frob": 0.43128,
+        "mean_top1": 0.89611
+      },
+      "GCCA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.12161,
+          "r2_opt": 0.30837,
+          "cos": 0.68647,
+          "top1": 0.91982,
+          "top5": 0.98739
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.33618,
+          "r2_opt": 0.43504,
+          "cos": 0.68829,
+          "top1": 0.9042,
+          "top5": 0.97831
+        },
+        "mean_r2_frob": 0.22889,
+        "mean_top1": 0.91201
+      }
+    },
+    "depth_50": {
+      "gemma4_31b": {
+        "phi4_mini": {
+          "r2_frob": -0.10269,
+          "r2_opt": 0.18447,
+          "cos": 0.52572,
+          "top1": 0.47707,
+          "top5": 0.68183
+        },
+        "olmo3_7b": {
+          "r2_frob": -0.07762,
+          "r2_opt": 0.19342,
+          "cos": 0.5195,
+          "top1": 0.5547,
+          "top5": 0.73123
+        },
+        "mean_r2_frob": -0.09015,
+        "mean_top1": 0.51588
+      },
+      "qwen38_27b": {
+        "phi4_mini": {
+          "r2_frob": 0.26185,
+          "r2_opt": 0.38852,
+          "cos": 0.69529,
+          "top1": 0.76302,
+          "top5": 0.90422
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.28149,
+          "r2_opt": 0.3992,
+          "cos": 0.68673,
+          "top1": 0.79628,
+          "top5": 0.91226
+        },
+        "mean_r2_frob": 0.27167,
+        "mean_top1": 0.77965
+      },
+      "inkling2_mini": {
+        "phi4_mini": {
+          "r2_frob": -0.13517,
+          "r2_opt": 0.16302,
+          "cos": 0.50554,
+          "top1": 0.46399,
+          "top5": 0.73325
+        },
+        "olmo3_7b": {
+          "r2_frob": -0.11718,
+          "r2_opt": 0.16501,
+          "cos": 0.49948,
+          "top1": 0.53809,
+          "top5": 0.77562
+        },
+        "mean_r2_frob": -0.12618,
+        "mean_top1": 0.50104
+      },
+      "llama31_8b": {
+        "phi4_mini": {
+          "r2_frob": 0.42071,
+          "r2_opt": 0.49865,
+          "cos": 0.76529,
+          "top1": 0.86436,
+          "top5": 0.9511
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.3949,
+          "r2_opt": 0.47771,
+          "cos": 0.73479,
+          "top1": 0.85377,
+          "top5": 0.95362
+        },
+        "mean_r2_frob": 0.4078,
+        "mean_top1": 0.85906
+      },
+      "mistral7b": {
+        "phi4_mini": {
+          "r2_frob": 0.44375,
+          "r2_opt": 0.51561,
+          "cos": 0.78191,
+          "top1": 0.89108,
+          "top5": 0.97732
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.42333,
+          "r2_opt": 0.49794,
+          "cos": 0.74882,
+          "top1": 0.88304,
+          "top5": 0.96975
+        },
+        "mean_r2_frob": 0.43354,
+        "mean_top1": 0.88706
+      },
+      "GPA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.43543,
+          "r2_opt": 0.5104,
+          "cos": 0.77724,
+          "top1": 0.86437,
+          "top5": 0.96472
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.45379,
+          "r2_opt": 0.52233,
+          "cos": 0.76247,
+          "top1": 0.86385,
+          "top5": 0.96371
+        },
+        "mean_r2_frob": 0.44461,
+        "mean_top1": 0.86411
+      },
+      "GCCA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.2318,
+          "r2_opt": 0.36943,
+          "cos": 0.68258,
+          "top1": 0.88251,
+          "top5": 0.9748
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.27281,
+          "r2_opt": 0.39273,
+          "cos": 0.68009,
+          "top1": 0.89564,
+          "top5": 0.97883
+        },
+        "mean_r2_frob": 0.25231,
+        "mean_top1": 0.88908
+      }
+    },
+    "depth_70": {
+      "gemma4_31b": {
+        "phi4_mini": {
+          "r2_frob": -0.15729,
+          "r2_opt": 0.1552,
+          "cos": 0.50207,
+          "top1": 0.30564,
+          "top5": 0.53005
+        },
+        "olmo3_7b": {
+          "r2_frob": -0.20314,
+          "r2_opt": 0.13027,
+          "cos": 0.47914,
+          "top1": 0.30362,
+          "top5": 0.54362
+        },
+        "mean_r2_frob": -0.18022,
+        "mean_top1": 0.30463
+      },
+      "qwen38_27b": {
+        "phi4_mini": {
+          "r2_frob": 0.34819,
+          "r2_opt": 0.44568,
+          "cos": 0.72196,
+          "top1": 0.61576,
+          "top5": 0.83665
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.28979,
+          "r2_opt": 0.40407,
+          "cos": 0.69668,
+          "top1": 0.60872,
+          "top5": 0.83511
+        },
+        "mean_r2_frob": 0.31899,
+        "mean_top1": 0.61224
+      },
+      "inkling2_mini": {
+        "phi4_mini": {
+          "r2_frob": -0.04345,
+          "r2_opt": 0.20612,
+          "cos": 0.54673,
+          "top1": 0.40245,
+          "top5": 0.68887
+        },
+        "olmo3_7b": {
+          "r2_frob": -0.08564,
+          "r2_opt": 0.18102,
+          "cos": 0.52842,
+          "top1": 0.4337,
+          "top5": 0.71765
+        },
+        "mean_r2_frob": -0.06454,
+        "mean_top1": 0.41807
+      },
+      "llama31_8b": {
+        "phi4_mini": {
+          "r2_frob": 0.51046,
+          "r2_opt": 0.56527,
+          "cos": 0.78324,
+          "top1": 0.73977,
+          "top5": 0.88806
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.41775,
+          "r2_opt": 0.49487,
+          "cos": 0.7481,
+          "top1": 0.72418,
+          "top5": 0.89261
+        },
+        "mean_r2_frob": 0.4641,
+        "mean_top1": 0.73198
+      },
+      "mistral7b": {
+        "phi4_mini": {
+          "r2_frob": 0.5732,
+          "r2_opt": 0.61465,
+          "cos": 0.81121,
+          "top1": 0.80084,
+          "top5": 0.92588
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.47132,
+          "r2_opt": 0.53446,
+          "cos": 0.7705,
+          "top1": 0.762,
+          "top5": 0.9168
+        },
+        "mean_r2_frob": 0.52226,
+        "mean_top1": 0.78142
+      },
+      "GPA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.53473,
+          "r2_opt": 0.58421,
+          "cos": 0.79458,
+          "top1": 0.78619,
+          "top5": 0.92838
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.45748,
+          "r2_opt": 0.52427,
+          "cos": 0.7646,
+          "top1": 0.78014,
+          "top5": 0.9269
+        },
+        "mean_r2_frob": 0.49611,
+        "mean_top1": 0.78317
+      },
+      "GCCA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.30128,
+          "r2_opt": 0.41347,
+          "cos": 0.69953,
+          "top1": 0.82198,
+          "top5": 0.9531
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.25173,
+          "r2_opt": 0.3779,
+          "cos": 0.6789,
+          "top1": 0.81698,
+          "top5": 0.94958
+        },
+        "mean_r2_frob": 0.27651,
+        "mean_top1": 0.81948
+      }
+    },
+    "depth_85": {
+      "gemma4_31b": {
+        "phi4_mini": {
+          "r2_frob": -0.38322,
+          "r2_opt": 0.0714,
+          "cos": 0.44506,
+          "top1": 0.10388,
+          "top5": 0.25113
+        },
+        "olmo3_7b": {
+          "r2_frob": -0.42467,
+          "r2_opt": 0.05176,
+          "cos": 0.40341,
+          "top1": 0.10389,
+          "top5": 0.25417
+        },
+        "mean_r2_frob": -0.40394,
+        "mean_top1": 0.10389
+      },
+      "qwen38_27b": {
+        "phi4_mini": {
+          "r2_frob": 0.27487,
+          "r2_opt": 0.40127,
+          "cos": 0.74506,
+          "top1": 0.50434,
+          "top5": 0.70956
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.19069,
+          "r2_opt": 0.34668,
+          "cos": 0.70212,
+          "top1": 0.466,
+          "top5": 0.70351
+        },
+        "mean_r2_frob": 0.23278,
+        "mean_top1": 0.48517
+      },
+      "inkling2_mini": {
+        "phi4_mini": {
+          "r2_frob": 0.41599,
+          "r2_opt": 0.49391,
+          "cos": 0.74601,
+          "top1": 0.64348,
+          "top5": 0.85676
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.33845,
+          "r2_opt": 0.43699,
+          "cos": 0.71116,
+          "top1": 0.59151,
+          "top5": 0.81741
+        },
+        "mean_r2_frob": 0.37722,
+        "mean_top1": 0.6175
+      },
+      "llama31_8b": {
+        "phi4_mini": {
+          "r2_frob": 0.52879,
+          "r2_opt": 0.57974,
+          "cos": 0.7986,
+          "top1": 0.71808,
+          "top5": 0.87342
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.41749,
+          "r2_opt": 0.49482,
+          "cos": 0.7492,
+          "top1": 0.67977,
+          "top5": 0.86181
+        },
+        "mean_r2_frob": 0.47314,
+        "mean_top1": 0.69893
+      },
+      "mistral7b": {
+        "phi4_mini": {
+          "r2_frob": 0.58661,
+          "r2_opt": 0.62557,
+          "cos": 0.82165,
+          "top1": 0.77913,
+          "top5": 0.91778
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.46511,
+          "r2_opt": 0.52959,
+          "cos": 0.76762,
+          "top1": 0.72519,
+          "top5": 0.89965
+        },
+        "mean_r2_frob": 0.52586,
+        "mean_top1": 0.75216
+      },
+      "GPA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.58351,
+          "r2_opt": 0.62379,
+          "cos": 0.82423,
+          "top1": 0.75842,
+          "top5": 0.90974
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.48198,
+          "r2_opt": 0.54358,
+          "cos": 0.77763,
+          "top1": 0.7161,
+          "top5": 0.89007
+        },
+        "mean_r2_frob": 0.53275,
+        "mean_top1": 0.73726
+      },
+      "GCCA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.37038,
+          "r2_opt": 0.46187,
+          "cos": 0.74129,
+          "top1": 0.79426,
+          "top5": 0.94151
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.28381,
+          "r2_opt": 0.39968,
+          "cos": 0.69834,
+          "top1": 0.75292,
+          "top5": 0.9163
+        },
+        "mean_r2_frob": 0.3271,
+        "mean_top1": 0.77359
+      }
+    },
+    "depth_90": {
+      "gemma4_31b": {
+        "phi4_mini": {
+          "r2_frob": -0.42489,
+          "r2_opt": 0.05244,
+          "cos": 0.41877,
+          "top1": 0.1029,
+          "top5": 0.26778
+        },
+        "olmo3_7b": {
+          "r2_frob": -0.46483,
+          "r2_opt": 0.02988,
+          "cos": 0.38086,
+          "top1": 0.09533,
+          "top5": 0.24661
+        },
+        "mean_r2_frob": -0.44486,
+        "mean_top1": 0.09912
+      },
+      "qwen38_27b": {
+        "phi4_mini": {
+          "r2_frob": 0.42566,
+          "r2_opt": 0.50288,
+          "cos": 0.76463,
+          "top1": 0.55677,
+          "top5": 0.76756
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.32164,
+          "r2_opt": 0.42776,
+          "cos": 0.71541,
+          "top1": 0.49728,
+          "top5": 0.73529
+        },
+        "mean_r2_frob": 0.37365,
+        "mean_top1": 0.52702
+      },
+      "inkling2_mini": {
+        "phi4_mini": {
+          "r2_frob": 0.30175,
+          "r2_opt": 0.41609,
+          "cos": 0.71268,
+          "top1": 0.47653,
+          "top5": 0.72717
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.23076,
+          "r2_opt": 0.36776,
+          "cos": 0.67046,
+          "top1": 0.44124,
+          "top5": 0.69793
+        },
+        "mean_r2_frob": 0.26626,
+        "mean_top1": 0.45888
+      },
+      "llama31_8b": {
+        "phi4_mini": {
+          "r2_frob": 0.5452,
+          "r2_opt": 0.59245,
+          "cos": 0.80475,
+          "top1": 0.7201,
+          "top5": 0.89005
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.42436,
+          "r2_opt": 0.49929,
+          "cos": 0.75037,
+          "top1": 0.6631,
+          "top5": 0.86181
+        },
+        "mean_r2_frob": 0.48478,
+        "mean_top1": 0.6916
+      },
+      "mistral7b": {
+        "phi4_mini": {
+          "r2_frob": 0.59313,
+          "r2_opt": 0.63081,
+          "cos": 0.82397,
+          "top1": 0.7761,
+          "top5": 0.9289
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.46555,
+          "r2_opt": 0.52973,
+          "cos": 0.76646,
+          "top1": 0.71258,
+          "top5": 0.89813
+        },
+        "mean_r2_frob": 0.52934,
+        "mean_top1": 0.74434
+      },
+      "GPA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.58792,
+          "r2_opt": 0.62714,
+          "cos": 0.825,
+          "top1": 0.74434,
+          "top5": 0.89409
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.47952,
+          "r2_opt": 0.54138,
+          "cos": 0.77334,
+          "top1": 0.68987,
+          "top5": 0.87494
+        },
+        "mean_r2_frob": 0.53372,
+        "mean_top1": 0.7171
+      },
+      "GCCA_5Fam": {
+        "phi4_mini": {
+          "r2_frob": 0.37749,
+          "r2_opt": 0.46707,
+          "cos": 0.7444,
+          "top1": 0.78064,
+          "top5": 0.92489
+        },
+        "olmo3_7b": {
+          "r2_frob": 0.299,
+          "r2_opt": 0.40961,
+          "cos": 0.70236,
+          "top1": 0.73576,
+          "top5": 0.90873
+        },
+        "mean_r2_frob": 0.33825,
+        "mean_top1": 0.7582
+      }
+    }
+  },
+  "jung_archetype_5fam": {
+    "depth_15": {
+      "GPA_5F_SetA_Myth": {
+        "hits": 22,
+        "total": 30,
+        "acc": 0.7333,
+        "mean_margin": 0.0599
+      },
+      "GPA_5F_SetB_Causal": {
+        "hits": 24,
+        "total": 30,
+        "acc": 0.8,
+        "mean_margin": 0.1021
+      },
+      "GCCA_5F_SetA_Myth": {
+        "hits": 25,
+        "total": 30,
+        "acc": 0.8333,
+        "mean_margin": 0.0951
+      },
+      "GCCA_5F_SetB_Causal": {
+        "hits": 22,
+        "total": 30,
+        "acc": 0.7333,
+        "mean_margin": 0.1146
+      }
+    },
+    "depth_30": {
+      "GPA_5F_SetA_Myth": {
+        "hits": 27,
+        "total": 30,
+        "acc": 0.9,
+        "mean_margin": 0.1482
+      },
+      "GPA_5F_SetB_Causal": {
+        "hits": 28,
+        "total": 30,
+        "acc": 0.9333,
+        "mean_margin": 0.1963
+      },
+      "GCCA_5F_SetA_Myth": {
+        "hits": 27,
+        "total": 30,
+        "acc": 0.9,
+        "mean_margin": 0.1657
+      },
+      "GCCA_5F_SetB_Causal": {
+        "hits": 28,
+        "total": 30,
+        "acc": 0.9333,
+        "mean_margin": 0.2155
+      }
+    },
+    "depth_50": {
+      "GPA_5F_SetA_Myth": {
+        "hits": 24,
+        "total": 30,
+        "acc": 0.8,
+        "mean_margin": 0.1073
+      },
+      "GPA_5F_SetB_Causal": {
+        "hits": 30,
+        "total": 30,
+        "acc": 1.0,
+        "mean_margin": 0.1611
+      },
+      "GCCA_5F_SetA_Myth": {
+        "hits": 25,
+        "total": 30,
+        "acc": 0.8333,
+        "mean_margin": 0.164
+      },
+      "GCCA_5F_SetB_Causal": {
+        "hits": 30,
+        "total": 30,
+        "acc": 1.0,
+        "mean_margin": 0.2254
+      }
+    },
+    "depth_70": {
+      "GPA_5F_SetA_Myth": {
+        "hits": 25,
+        "total": 30,
+        "acc": 0.8333,
+        "mean_margin": 0.1106
+      },
+      "GPA_5F_SetB_Causal": {
+        "hits": 28,
+        "total": 30,
+        "acc": 0.9333,
+        "mean_margin": 0.1475
+      },
+      "GCCA_5F_SetA_Myth": {
+        "hits": 26,
+        "total": 30,
+        "acc": 0.8667,
+        "mean_margin": 0.1312
+      },
+      "GCCA_5F_SetB_Causal": {
+        "hits": 29,
+        "total": 30,
+        "acc": 0.9667,
+        "mean_margin": 0.1743
+      }
+    },
+    "depth_85": {
+      "GPA_5F_SetA_Myth": {
+        "hits": 27,
+        "total": 30,
+        "acc": 0.9,
+        "mean_margin": 0.1187
+      },
+      "GPA_5F_SetB_Causal": {
+        "hits": 27,
+        "total": 30,
+        "acc": 0.9,
+        "mean_margin": 0.1101
+      },
+      "GCCA_5F_SetA_Myth": {
+        "hits": 25,
+        "total": 30,
+        "acc": 0.8333,
+        "mean_margin": 0.1292
+      },
+      "GCCA_5F_SetB_Causal": {
+        "hits": 27,
+        "total": 30,
+        "acc": 0.9,
+        "mean_margin": 0.1205
+      }
+    },
+    "depth_90": {
+      "GPA_5F_SetA_Myth": {
+        "hits": 24,
+        "total": 30,
+        "acc": 0.8,
+        "mean_margin": 0.08
+      },
+      "GPA_5F_SetB_Causal": {
+        "hits": 27,
+        "total": 30,
+        "acc": 0.9,
+        "mean_margin": 0.0979
+      },
+      "GCCA_5F_SetA_Myth": {
+        "hits": 22,
+        "total": 30,
+        "acc": 0.7333,
+        "mean_margin": 0.085
+      },
+      "GCCA_5F_SetB_Causal": {
+        "hits": 24,
+        "total": 30,
+        "acc": 0.8,
+        "mean_margin": 0.1001
+      }
+    }
+  },
+  "cross_canon_4x4": {
+    "depth_30": {
+      "world_myth": {
+        "world_myth": 0.58282,
+        "bible_en": 0.49882,
+        "torah_he": 0.27832,
+        "formal_logic": 0.41772
+      },
+      "bible_en": {
+        "world_myth": 0.55196,
+        "bible_en": 0.51263,
+        "torah_he": 0.27181,
+        "formal_logic": 0.38709
+      },
+      "torah_he": {
+        "world_myth": 0.46062,
+        "bible_en": 0.40114,
+        "torah_he": 0.34283,
+        "formal_logic": 0.31943
+      },
+      "formal_logic": {
+        "world_myth": 0.57438,
+        "bible_en": 0.49552,
+        "torah_he": 0.27898,
+        "formal_logic": 0.42444
+      }
+    },
+    "depth_50": {
+      "world_myth": {
+        "world_myth": 0.54807,
+        "bible_en": 0.40901,
+        "torah_he": 0.07289,
+        "formal_logic": 0.42778
+      },
+      "bible_en": {
+        "world_myth": 0.52771,
+        "bible_en": 0.45818,
+        "torah_he": 0.09388,
+        "formal_logic": 0.41101
+      },
+      "torah_he": {
+        "world_myth": 0.47104,
+        "bible_en": 0.38942,
+        "torah_he": 0.1722,
+        "formal_logic": 0.35523
+      },
+      "formal_logic": {
+        "world_myth": 0.53724,
+        "bible_en": 0.40018,
+        "torah_he": 0.0774,
+        "formal_logic": 0.44158
+      }
+    },
+    "depth_70": {
+      "world_myth": {
+        "world_myth": 0.56509,
+        "bible_en": 0.36985,
+        "torah_he": -0.01834,
+        "formal_logic": 0.49524
+      },
+      "bible_en": {
+        "world_myth": 0.54264,
+        "bible_en": 0.44549,
+        "torah_he": 0.0315,
+        "formal_logic": 0.47925
+      },
+      "torah_he": {
+        "world_myth": 0.48513,
+        "bible_en": 0.36761,
+        "torah_he": 0.16826,
+        "formal_logic": 0.41763
+      },
+      "formal_logic": {
+        "world_myth": 0.54482,
+        "bible_en": 0.33615,
+        "torah_he": -0.02973,
+        "formal_logic": 0.5023
+      }
+    },
+    "depth_85": {
+      "world_myth": {
+        "world_myth": 0.6014,
+        "bible_en": 0.2568,
+        "torah_he": -0.03823,
+        "formal_logic": 0.53009
+      },
+      "bible_en": {
+        "world_myth": 0.56109,
+        "bible_en": 0.33283,
+        "torah_he": -0.00837,
+        "formal_logic": 0.49878
+      },
+      "torah_he": {
+        "world_myth": 0.46791,
+        "bible_en": 0.20052,
+        "torah_he": 0.06554,
+        "formal_logic": 0.41117
+      },
+      "formal_logic": {
+        "world_myth": 0.57781,
+        "bible_en": 0.21582,
+        "torah_he": -0.04498,
+        "formal_logic": 0.53613
+      }
+    }
+  },
+  "canon_jung_energy": {
+    "depth_15": {
+      "world_myth": {
+        "jung_setA_myth_energy": 0.1385,
+        "jung_setB_causal_energy": 0.1378,
+        "ratio_causal_to_myth": 0.995
+      },
+      "bible_en": {
+        "jung_setA_myth_energy": 0.1364,
+        "jung_setB_causal_energy": 0.146,
+        "ratio_causal_to_myth": 1.071
+      },
+      "torah_he": {
+        "jung_setA_myth_energy": 0.042,
+        "jung_setB_causal_energy": 0.0375,
+        "ratio_causal_to_myth": 0.891
+      },
+      "formal_logic": {
+        "jung_setA_myth_energy": 0.142,
+        "jung_setB_causal_energy": 0.1612,
+        "ratio_causal_to_myth": 1.135
+      }
+    },
+    "depth_30": {
+      "world_myth": {
+        "jung_setA_myth_energy": 0.1385,
+        "jung_setB_causal_energy": 0.1319,
+        "ratio_causal_to_myth": 0.952
+      },
+      "bible_en": {
+        "jung_setA_myth_energy": 0.1306,
+        "jung_setB_causal_energy": 0.1389,
+        "ratio_causal_to_myth": 1.063
+      },
+      "torah_he": {
+        "jung_setA_myth_energy": 0.0585,
+        "jung_setB_causal_energy": 0.0583,
+        "ratio_causal_to_myth": 0.997
+      },
+      "formal_logic": {
+        "jung_setA_myth_energy": 0.1223,
+        "jung_setB_causal_energy": 0.1529,
+        "ratio_causal_to_myth": 1.25
+      }
+    },
+    "depth_50": {
+      "world_myth": {
+        "jung_setA_myth_energy": 0.1545,
+        "jung_setB_causal_energy": 0.1502,
+        "ratio_causal_to_myth": 0.972
+      },
+      "bible_en": {
+        "jung_setA_myth_energy": 0.1234,
+        "jung_setB_causal_energy": 0.1224,
+        "ratio_causal_to_myth": 0.992
+      },
+      "torah_he": {
+        "jung_setA_myth_energy": 0.0772,
+        "jung_setB_causal_energy": 0.079,
+        "ratio_causal_to_myth": 1.023
+      },
+      "formal_logic": {
+        "jung_setA_myth_energy": 0.1436,
+        "jung_setB_causal_energy": 0.1735,
+        "ratio_causal_to_myth": 1.208
+      }
+    },
+    "depth_70": {
+      "world_myth": {
+        "jung_setA_myth_energy": 0.1336,
+        "jung_setB_causal_energy": 0.1189,
+        "ratio_causal_to_myth": 0.89
+      },
+      "bible_en": {
+        "jung_setA_myth_energy": 0.0906,
+        "jung_setB_causal_energy": 0.0936,
+        "ratio_causal_to_myth": 1.033
+      },
+      "torah_he": {
+        "jung_setA_myth_energy": 0.0733,
+        "jung_setB_causal_energy": 0.0696,
+        "ratio_causal_to_myth": 0.95
+      },
+      "formal_logic": {
+        "jung_setA_myth_energy": 0.1105,
+        "jung_setB_causal_energy": 0.137,
+        "ratio_causal_to_myth": 1.24
+      }
+    },
+    "depth_85": {
+      "world_myth": {
+        "jung_setA_myth_energy": 0.1696,
+        "jung_setB_causal_energy": 0.1774,
+        "ratio_causal_to_myth": 1.045
+      },
+      "bible_en": {
+        "jung_setA_myth_energy": 0.1241,
+        "jung_setB_causal_energy": 0.1424,
+        "ratio_causal_to_myth": 1.147
+      },
+      "torah_he": {
+        "jung_setA_myth_energy": 0.0743,
+        "jung_setB_causal_energy": 0.0749,
+        "ratio_causal_to_myth": 1.008
+      },
+      "formal_logic": {
+        "jung_setA_myth_energy": 0.1583,
+        "jung_setB_causal_energy": 0.1974,
+        "ratio_causal_to_myth": 1.247
+      }
+    },
+    "depth_90": {
+      "world_myth": {
+        "jung_setA_myth_energy": 0.1283,
+        "jung_setB_causal_energy": 0.118,
+        "ratio_causal_to_myth": 0.92
+      },
+      "bible_en": {
+        "jung_setA_myth_energy": 0.0831,
+        "jung_setB_causal_energy": 0.0891,
+        "ratio_causal_to_myth": 1.073
+      },
+      "torah_he": {
+        "jung_setA_myth_energy": 0.0635,
+        "jung_setB_causal_energy": 0.0672,
+        "ratio_causal_to_myth": 1.059
+      },
+      "formal_logic": {
+        "jung_setA_myth_energy": 0.0981,
+        "jung_setB_causal_energy": 0.1399,
+        "ratio_causal_to_myth": 1.426
+      }
+    }
+  }
+}

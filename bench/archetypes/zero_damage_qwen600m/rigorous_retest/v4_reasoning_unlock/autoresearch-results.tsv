@@ -1,0 +1,27 @@
+iteration	metric_value	delta	delta_pct	status	description	evaluator_source	timestamp
+0	0.41765	-	-	baseline	Qwen3-0.6B Base Greedy FP32 (71/170 dev_mbpp_170; WT2=3.29107)	mechanical	2026-11-27T23:22:00
+0	0.59412	+0.17647	+42.3%	reference	Gemma 4 E4B-it-8bit Greedy Ceiling (101/170 dev_mbpp_170)	mechanical	2026-11-27T23:58:10
+1	0.41765	+0.00000	+0.0%	reverted	P1-Iter1: 3-Fam GCCA Procrustes static (K8=71/170, G+8=71/170 vs Own06B 67, Shuf 57; Proc41-80=111/200 vs Base 83)	mechanical	2026-11-28T00:08:00
+2	0.42353	+0.00588	+1.4%	kept	P1-Iter2: 3-Fam GCCA + Ridge(d128,lam200) static (G+8=72/170 > Greedy 71, > LP 62 p=0.048, > Own06B 67; Proc41-80=116/200!)	mechanical	2026-11-28T00:08:50
+3	0.41176	-0.00589	-1.4%	reverted	P1-Iter3: Ridge-GCCA full_trajectory_deltas (70/170; noisy mid-body splits diluted S_zs_cal)	mechanical	2026-11-28T00:09:20
+4	0.39412	-0.02353	-5.6%	reverted	P1-Iter4: Real E2B bugs ONLY (62 train pairs -> 67/170; too few pairs alone)	mechanical	2026-11-28T00:10:20
+5	0.40588	-0.01177	-2.8%	reverted	P1-Iter5: Combined AST + 3x Real E2B bugs in Ridge-GCCA (69/170 -> Level-1 Pivot!)	mechanical	2026-11-28T00:10:50
+6	0.41176	-0.00589	-1.4%	reverted	P1-Iter6: Late GPA(50,70,85) audit_end LogReg (MBPP 70/170; Proc41-80=122/200 = +19.5pp over Base, +3.5pp over Own06B!)	mechanical	2026-11-28T00:11:30
+7	0.41176	-0.00589	-1.4%	reverted	P1-Iter7: 31B-only Ridge(50,70,85) (70/170 < 3-family GCCA 72/170; Proc 120 < GPA 122; Level-2 Shift!)	mechanical	2026-11-28T00:12:10
+8	0.41765	+0.00000	+0.0%	reverted	P1-Iter8: Hybrid GCCA+Audit+LP+Greedy (71/170 > 0.6B-Only 66 & Shuf 66.4, but bad LP diluted pure Compass 72)	mechanical	2026-11-28T00:13:20
+9	0.42353	+0.00588	+1.4%	reverted	P1-Iter9: Nonlinear MLP Map + Greedy-Prior(0.75) (72/170 tied best; K8=69 > Own06B 65 & Shuf 64.8)	mechanical	2026-11-28T00:14:00
+10	0.42353	+0.00588	+1.4%	reverted	P1-Iter10: Dual GCCA+GPA + Greedy-Prior(0.75) (72/170 tied best; Pillar 1 summary: MBPP 72/170 > all baselines, Proc41-80 122/200 +19.5pp!)	mechanical	2026-11-28T00:14:30
+11	0.40588	-0.01177	-2.8%	reverted	P2-Iter11: Plain GRPO baseline (45 steps, lr=3e-5, kl=0.05 -> 69/170, WT2=-0.00038, code_nll=1.23509, Proc=40.0%)	mechanical	2026-11-28T00:18:55
+12	0.40000	-0.01765	-4.2%	reverted	P2-Iter12: GRPO + cold Transition-MLP at lr=3e-5 (68/170; diagnosed cold MLP + tiny kl=0.0002 -> upgrading lr & pre-warming MLP!)	mechanical	2026-11-28T00:23:10
+13	0.40588	-0.01177	-2.8%	reverted	P2-Iter13: Plain GRPO upgraded (60 steps, G=6, lr=1.5e-4, kl=0.02 -> 69/170, WT2=-0.00198, code_nll=1.23381)	mechanical	2026-11-28T00:30:00
+14	0.44706	+0.02941	+7.0%	kept	P2-Iter14: GRPO + Pre-Warmed 31B Transition-MLP Δh (76/170 +4.1pp vs Plain GRPO, WT2=-0.01038 IMPROVED, code_nll=-0.01177!)	mechanical	2026-11-28T00:36:30
+15	0.41176	-0.00589	-1.4%	reverted	P2-Iter15: Matched Shuffled Transition-MLP control (70/170, WT2=-0.00196, code_nll=1.23397 -> CAUSALITY CONFIRMED vs Iter14 76/170 & WT2 -0.01038!)	mechanical	2026-11-28T00:43:30
+16	0.42353	+0.00588	+1.4%	reverted	P2-Iter16: GRPO + 31B Compass dead-group shaping (72/170 > Plain GRPO 69 & Base 71, WT2=-0.00341, Proc=40.5%, < Iter14 76/170)	mechanical	2026-11-28T00:51:15
+17	0.40588	-0.01177	-2.8%	reverted	P2-Iter17: Synergy Transition-MLP + Compass (69/170; early kl spike 0.123 disrupted smooth MLP transition gradient)	mechanical	2026-11-28T00:58:15
+18	0.42353	+0.00588	+1.4%	reverted	P2-Iter18: Scaled GRPO+31B Transition-MLP (90 steps, trans_w=0.60 -> 72/170, WT2=-0.01075, code_nll=1.22194, Proc=40.5%; Iter 14 stays Champ!)	mechanical	2026-11-28T01:06:40
+19	-4.21636	-	-	reference	P3-Iter19: Fresh 30.53M LM Scratch CE baseline (code_eval_nll=4.21636, wt2=10.11378, blind=-0.061/0.058/0.191)	mechanical	2026-11-28T01:10:55
+20	-4.12332	+0.09304	+2.2%	kept	P3-Iter20: Fresh 30.53M LM + 31B GCCA MLP Scaffold(both, w=0.60) (code_eval=-0.09304, OOD WT2=-0.06414, blind +16.8/+16.2/+10.8pts!)	mechanical	2026-11-28T01:18:05
+21	-4.28350	-0.06714	-1.6%	reverted	P3-Iter21: Matched Shuffled From-Scratch control (code_eval=+0.067 WORSE, WT2=+0.067 WORSE -> CAUSALITY CONFIRMED!)	mechanical	2026-11-28T01:21:45
+22	-4.09536	+0.12100	+2.9%	kept	P3-Iter22: Fresh 30.53M LM + Pure Transition Δh -> 31B GCCA (code_eval=4.09536 = -0.1210 vs CE, -0.1881 vs Shuf, blind 0.305!)	mechanical	2026-11-28T01:23:15
+23	-4.05277	+0.16359	+3.9%	kept	P3-Iter23: Fresh 30.53M LM + Annealed 31B GPA Transition Δh(w=1.20) (code_eval=4.05277 = -0.1636 vs CE, -0.2307 vs Shuf, blind +19.8/+16.6/+11.8pts!)	mechanical	2026-11-28T01:24:30
+24	-4.09623	+0.12013	+2.8%	reverted	P3-Iter24: Annealed 31B GPA both(h+Δh, w=1.20) (code_eval=4.09623 < Iter23 pure Δh 4.05277; all 24 iterations complete!)	mechanical	2026-11-28T01:26:00
