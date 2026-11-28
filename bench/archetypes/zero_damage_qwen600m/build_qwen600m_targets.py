@@ -6,13 +6,15 @@ Zero Qwen models appear anywhere in the teacher targets!
 Zero mythology passages appear in training targets (strictly neutral: gut + proc + chat)!
 """
 import json
+import os
 import time
 from pathlib import Path
 import numpy as np
 
-PLATO = Path("/Users/benjaminbabeshkin/systemone/bench/archetypes/fluent/plato")
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
+PLATO = ARCH / "fluent" / "plato"
 D50 = PLATO / "depth50_distill"
-OUT_DIR = Path("/Users/benjaminbabeshkin/systemone/exp256_qwen600m_autoresearch")
+OUT_DIR = Path(os.environ.get("JPL_OUT_DIR", Path(__file__).resolve().parent))
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 TEACHERS = ["gemma4_e4b", "llama31_8b", "mistral7b"]  # Strictly NON-Qwen 7B-9B rivals!

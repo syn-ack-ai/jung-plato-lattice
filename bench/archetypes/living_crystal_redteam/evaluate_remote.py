@@ -16,6 +16,7 @@ Round-1 Gauntlet AND Round-2 Escalation Adversarial Suites + Real Model Integrit
 Prints ONE valid JSON summary line to stdout matching `autoresearch-skill/evaluator-contract.md`.
 """
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -23,11 +24,11 @@ from pathlib import Path
 import numpy as np
 import torch
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
 PLATO = ARCH / "fluent" / "plato"
 PROBES = ARCH / "exp252" / "probes"
 OUT_DIR = ARCH / "exp252" / "results"
-NIGHTLY_DIR = Path("/home/skypanther/private_data/buddy_ckpt/nightly")
+NIGHTLY_DIR = Path(os.environ.get("JPL_CKPT_DIR", ARCH / "checkpoints"))
 
 for p in (str(ARCH), str(ARCH / "exp252"), str(ARCH / "exp255_ar")):
     if p not in sys.path:

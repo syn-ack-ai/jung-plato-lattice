@@ -47,6 +47,8 @@ Zero examples in Round 3 appeared in any calibration set or autoresearch evaluat
 - **Plausible non-safety personal spoofing by an authenticated user:** If an adversary already holds authenticated user access and makes a calm, factually plausible, non-safety personal change (e.g., moving a casual dinner time), no model-level filter can distinguish attacker from user — that requires authentication, not representation geometry.
 - **Single residual supersession miss (`upd_tea`):** Gemma 4 occasionally retained the earlier drink name when wording said *"switched from X to Y"* inside a single KV turn; a tiny canonical rewrite (*"Current preference: Y"*) before KV caching would close that last `1/4` edge case.
 
+- **Note on Round-3 count & post-audit hardening:** Round 3 consists of 5 adversarial attack scenarios (R3-1..R3-5) plus 1 `N = 160` scale/latency audit (R3-6), authored by the same researcher who built the defense (so it is an internal stress test, not an independent external red team). Following adversarial code review, `hardened_memory.best.py` was further hardened to fail CLOSED on malformed judge outputs, strictly block `BENIGN_UPDATE` from deactivating `safety_critical` entries without `confirmed_override=True`, build new KV tensors transactionally before marking old entries inactive, include mounted KV length `m_len` + answer budget in 512-token sliding-window trimming, and remove domain-specific few-shot examples from `_audit_conflict`.
+
 ## Recommended Next Steps
-1. Wire `hardened_memory.best.py` into an isolated Aion branch (`aion/memory.py` + `aion/app.py`) behind an opt-in feature flag with explicit user confirmation UI for `QUARANTINE_SAFETY_CONFLICT` items.
-2. Restart live Aion on `dreamer` or pivot to the parked Dual-Stratum 30%+50% QAT LoRA coding-agent plan (`e4b_dual_stratum_lora_plan.md`).
+1. Wire `hardened_memory.best.py` behind an opt-in feature flag with explicit user confirmation UI for `QUARANTINE_SAFETY_CONFLICT` items.
+2. Validate against an independently authored, frozen external red-team suite after code freeze.

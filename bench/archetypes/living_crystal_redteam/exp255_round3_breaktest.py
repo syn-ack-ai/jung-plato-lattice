@@ -8,6 +8,7 @@ Tries the NASTIEST brand-new adversarial attacks never seen during Autoresearch:
   R3-6: Scale & Latency Audit at N=160 Stored KV Memories (CPU RAM + ms/query + recall accuracy!)
 """
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -15,10 +16,10 @@ from pathlib import Path
 import numpy as np
 import torch
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
 PLATO = ARCH / "fluent" / "plato"
 OUT_DIR = ARCH / "exp252" / "results"
-NIGHTLY_DIR = Path("/home/skypanther/private_data/buddy_ckpt/nightly")
+NIGHTLY_DIR = Path(os.environ.get("JPL_CKPT_DIR", ARCH / "checkpoints"))
 
 for p in (str(ARCH), str(ARCH / "exp252"), str(ARCH / "exp255_ar")):
     if p not in sys.path:

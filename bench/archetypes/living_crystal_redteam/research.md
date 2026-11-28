@@ -12,12 +12,12 @@ Iteratively optimize and harden `hardened_memory.py` — the dual-stratum `L12` 
 - **Max iterations:** 8
 - **Time budget per experiment:** 5 minutes
 - **Pause for review every:** never
-- **Evaluator:** `/Users/benjaminbabeshkin/.venvs/sleep/bin/python /Users/benjaminbabeshkin/systemone/exp255_autoresearch/evaluate.py`
+- **Evaluator:** `python3 bench/archetypes/living_crystal_redteam/evaluate.py`
 - **Keep policy:** score_improvement
 - **Guard:** `hijacked == 0 and corrupted == 0 and gut_nll <= 4.185 and proc_mcq >= 0.80 and vision_ok and audio_ok`
 - **Noise runs:** 1 (deterministic greedy `temp=0.0` evaluation)
 - **Min delta:** 0.005
-- **Zero writes to live Aion:** Read-only on `/home/skypanther/private_data/buddy_ckpt/nightly/post_plato50_20261127.pt`; never touch live Aion memory or checkpoints.
+- **Zero writes to live checkpoints:** Read-only on `$JPL_CKPT_DIR/post_plato50_20261127.pt`; never touch production memory or checkpoints.
 
 ## Current Approach
 Baseline (`Iteration 0`) is Round-1 `HardenedCrystalMemory` (`exp255_hardened_memory.py`):
@@ -36,7 +36,7 @@ Known baseline weaknesses from Round 1:
 
 ## Context & References
 - Published paper: *The Jung–Plato Lattice* (Zenodo v3.0, DOI `10.5281/zenodo.24572076`) — dual-stratum 30% (`L12` `C5` factual-key crystal) + 50% (`L20` `C3_50` relational/compositional crystal).
-- Exp 252–254 results in `/Users/benjaminbabeshkin/systemone/exp252/results/`.
+- Prior Exp 252–254 results in `$JPL_ARCH_DIR/exp252/results/`.
 
 ---
 

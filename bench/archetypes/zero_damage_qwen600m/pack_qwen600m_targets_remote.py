@@ -1,14 +1,15 @@
-"""Run on dreamer to tokenize passages.jsonl + eval_passages.jsonl with exact Qwen/Qwen3-0.6B tokenizer
+"""Run on GPU host to tokenize passages.jsonl + eval_passages.jsonl with exact Qwen/Qwen3-0.6B tokenizer
 and merge into the single compact `targets_qwen600m_rival30_50.npz` file.
 """
 import json
+import os
 from pathlib import Path
 import numpy as np
 from transformers import AutoTokenizer
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
 PLATO = ARCH / "fluent" / "plato"
-OUT_DIR = ARCH / "exp256_q600"
+OUT_DIR = Path(os.environ.get("JPL_Q600_DIR", Path(__file__).resolve().parent))
 RAW_NPZ = OUT_DIR / "rival30_50_raw_consensus.npz"
 FINAL_NPZ = OUT_DIR / "targets_qwen600m_rival30_50.npz"
 

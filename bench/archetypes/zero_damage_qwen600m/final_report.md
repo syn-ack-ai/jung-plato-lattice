@@ -1,6 +1,8 @@
-# Final Report — Experiment 256: Zero-Damage & Quality-Lifting Native-Frame Platonic Shape Transfer + Living Crystal Coding Agent on `Qwen/Qwen3-0.6B`
+# Exploratory Report — Experiment 256 (Superseded by Post-Audit Re-Test Exp 257–258)
 
-## 1. Executive Summary
+> **Post-Audit Notice:** This file preserves the original exploratory 17-iteration Exp 256 autoresearch log on the 40-task dev suite. Following adversarial review, all confirmed evaluator, statistical, sandboxing, and baseline defects were fixed and re-tested across **5 fresh paired seeds (`101–105`) on untouched `HumanEval (164)`, `MBPP Sanitized Test (257)`, and `WikiText-2`** in `rigorous_retest/` (see `notes/exp255_256_zero_damage_and_living_crystal.md` for the authoritative, corrected conclusions — notably: blind cross-family alignment `+6.8/+9.9 pts`, cross-domain `Proc-200` reasoning `+2.8` to `+3.2 pp`, in-family `held_gut` NLL `-0.0066`, and near-zero `SWE-240` damage hold cleanly, whereas untouched `HumanEval`/`MBPP` coding and OOD `WikiText-2` do **not** lift above Base).
+
+## 1. Original Exploratory Summary (Historical Record)
 Following `wjgoarxiv/autoresearch-skill` strictly across **17 autonomous iterations (`Iter 0`–`Iter 16`)** plus a **7-run multi-seed causal falsification suite** and a **4-arm Living Crystal Coding-Agent benchmark**, we eliminated the weight-transplant damage tax observed in Exp 251 and demonstrated that **pure hidden-state geometric shape transfer from 13× larger rival-family models (`Gemma 4 E4B + Llama 3.1 8B + Mistral 7B`; ZERO Qwen, ZERO teacher logits, ZERO next-token cross-entropy `ce_w = 0.0`)** makes `Qwen/Qwen3-0.6B` (596M params) **strictly better across executable Python coding, held-out language fluency, procedural multi-hop reasoning, and compositional binding simultaneously—with ZERO damage across all 6 evaluation suites (`pass: TRUE`)**:
 
 - **Strict Zero-Damage Champion (`Iter 15: H15_dual_prose_code`, `pass: TRUE` on `2/3` seeds):**
@@ -18,7 +20,7 @@ Following `wjgoarxiv/autoresearch-skill` strictly across **17 autonomous iterati
   - **`score = +2.74 ± 0.87`** (`0/2` pass), fluency **`-0.0006 ± 0.0007` NLL** (~0, **`8.5–9.5×` weaker** than true shape!), executable unit tests **`-0.92 ± 0.92 pp`** (**HURT** unit tests vs **`+2.05` to `+4.29 pp`** for true shape!), and blind alignment **DESTROYED** (**`-2.07 ± 0.16 pts`** at `L8`, **`-3.80 ± 0.24 pts`** at `L14` — a **`+9.7 / +14.2` pt causal chasm**!).
 - **4-Arm Living Crystal Coding Agent (`HardenedCrystalMemory` ported from Exp 255 `0.9742`):**
   - Multi-turn repo-spec executable coding (`C1` zero-keyword + `C2` 2-hop + `C3` live supersession) jumped from **`0/18 (0.0%)`** without crystal to **`11–12/18 (61–67%)`** with Zero-Text KV-Cache mounting (`0` extra prompt tokens on top-1 mounts, `8/10` zero-keyword `Ret@1`), while the Dual-Stratum `L8+L14` Crystal Write-Firewall + Provenance Zero-Trust + Security-Invariant Lock blocked **`16/16 (100.0%)`** red-team prompt-injection & security-erosion attacks (including untrusted PR comments, polite stealth overrides, and Spanish cross-lingual weakening) with **`6/6` (Base+Crystal) / `5/6` (Realigned+Crystal)** urgent prod alerts allowed.
-  - All Exp 255 red-team findings (`/Users/benjaminbabeshkin/systemone/exp255_autoresearch/hardened_memory.best.py`) remain fully preserved and intact.
+  - All Exp 255 red-team findings (`bench/archetypes/living_crystal_redteam/hardened_memory.best.py`) remain preserved and were further hardened post-audit.
 
 ---
 
@@ -90,9 +92,9 @@ Porting Exp 255's `HardenedCrystalMemory` (`L8` frozen neutral-anchored All-but-
 ---
 
 ## 6. Reproducible Artifacts
-- Winning Zero-Damage Recipe: `exp256_qwen600m_autoresearch/transplant_recipe.best.py` (exact `Iter 15`, `iter15_pass_delta.pt` on `dreamer`)
-- Peak Pure-Prose Cross-Domain Recipe: `exp256_qwen600m_autoresearch/transplant_recipe.iter14.py` (`iter14_best_delta.pt` on `dreamer`)
-- Immutable Evaluator & Benchmark: `exp256_qwen600m_autoresearch/evaluate_remote.py`, `code_agent_bench.py`, `base_ref.json`
+- Winning Exp 256 Recipe: `bench/archetypes/zero_damage_qwen600m/transplant_recipe.best.py` (`Iter 15`)
+- Pure-Prose Exp 256 Recipe: `bench/archetypes/zero_damage_qwen600m/transplant_recipe.iter14.py` (`Iter 14`)
+- Exp 256 Evaluator & Benchmark: `bench/archetypes/zero_damage_qwen600m/evaluate_remote.py`, `code_agent_bench.py`, `base_ref.json`
 - Full Logs & Verification Data: `research.md`, `research_log.md`, `autoresearch-results.tsv`, `causal_falsification_3seed.json`, `living_crystal_coding_4arm.json`
-- Publication Charts: `progress.png`, `exp256_final_summary.png`
-- Preserved Exp 255 Red-Team Crystal Memory (8B E4B, `0.9742`, `0` Round-3 breaks): `exp255_autoresearch/hardened_memory.best.py`
+- Charts: `progress.png`, `exp256_final_summary.png`
+- Preserved & Post-Audit Hardened Exp 255 Memory: `bench/archetypes/living_crystal_redteam/hardened_memory.best.py`

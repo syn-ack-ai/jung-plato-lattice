@@ -26,6 +26,7 @@ Evaluates 4 real executable multi-turn coding-agent suites + adversarial red-tea
 import copy
 import gc
 import json
+import os
 import re
 import subprocess
 import sys
@@ -36,8 +37,8 @@ import numpy as np
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
-QDIR = ARCH / "exp256_q600"
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
+QDIR = Path(os.environ.get("JPL_Q600_DIR", Path(__file__).resolve().parent))
 TARGETS_NPZ = QDIR / "targets_qwen600m_rival30_50.npz"
 OUT_JSON = QDIR / "living_crystal_coding_4arm.json"
 

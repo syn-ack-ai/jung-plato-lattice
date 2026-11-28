@@ -1,11 +1,12 @@
 """Extract 8B Rival (`google/gemma-4-E4B-it`, ZERO Qwen!) 30% (L12) & 50% (L20) hidden-state geometry
 on ~400 clean Python standard-library code snippets (100% disjoint from our 40 eval tasks & 240 SWE-Smith repos!).
 
-Run on `dreamer` (RTX 4090, ~15s). Saves `stdlib_code_gemma4_8b_targets.npz` for Dual-Domain
+Run on a GPU host (~15s). Saves `stdlib_code_gemma4_8b_targets.npz` for Dual-Domain
 (Prose + Code) Pure-Geometry Shape Transfer (ce_w = 0.0!).
 """
 import gc
 import inspect
+import os
 import sys
 import time
 from pathlib import Path
@@ -14,8 +15,8 @@ import numpy as np
 import torch
 from transformers import AutoTokenizer
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
-QDIR = ARCH / "exp256_q600"
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
+QDIR = Path(os.environ.get("JPL_Q600_DIR", Path(__file__).resolve().parent))
 OUT_NPZ = QDIR / "stdlib_code_gemma4_8b_targets.npz"
 
 if str(ARCH) not in sys.path:

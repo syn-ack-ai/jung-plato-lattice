@@ -15,6 +15,7 @@ Emits ONE JSON line to stdout adhering to `autoresearch-skill/evaluator-contract
 """
 import difflib
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -24,10 +25,10 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
 PLATO = ARCH / "fluent" / "plato"
 PROBES = ARCH / "exp252" / "probes"
-QDIR = ARCH / "exp256_q600"
+QDIR = Path(os.environ.get("JPL_Q600_DIR", Path(__file__).resolve().parent))
 TARGETS_NPZ = QDIR / "targets_qwen600m_rival30_50.npz"
 SWE_CODE_PATH = QDIR / "swe_code_240.jsonl"
 BASE_REF_PATH = QDIR / "base_ref.json"

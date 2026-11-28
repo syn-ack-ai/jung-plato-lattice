@@ -1,15 +1,17 @@
-"""Local wrapper for immutable mechanical evaluation on dreamer (RTX 4090).
+"""Local wrapper for immutable mechanical evaluation on a configured GPU host.
 Usage: python evaluate.py [--init-base-only] [--promote-best]
 Adheres strictly to `autoresearch-skill/evaluator-contract.md`.
 """
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
-LOCAL_DIR = Path("/Users/benjaminbabeshkin/systemone/exp256_qwen600m_autoresearch")
-REMOTE_DIR = "~/systemone/bench/archetypes/exp256_q600"
-REMOTE_PY = "/home/skypanther/anaconda3/envs/ai-lab/bin/python"
+LOCAL_DIR = Path(__file__).resolve().parent
+REMOTE_HOST = os.environ.get("JPL_REMOTE_HOST", "gpu-host")
+REMOTE_DIR = os.environ.get("JPL_REMOTE_Q600_DIR", "bench/archetypes/exp256_q600")
+REMOTE_PY = os.environ.get("JPL_REMOTE_PYTHON", "python3")
 
 
 def main():
@@ -17,21 +19,20 @@ def main():
     promote = "--promote-best" in sys.argv
     if promote:
         subprocess.run(
-            ["ssh", "dreamer", f"cp {REMOTE_DIR}/candidate_delta.pt {REMOTE_DIR}/best_delta.pt"],
+            ["ssh", REMOTE_HOST, f"cp {REMOTE_DIR}/candidate_delta.pt {REMOTE_DIR}/best_delta.pt"],
             check=True,
         )
         print(json.dumps({"promoted": True}))
         return
 
-    # Upload ONLY mutable transplant_recipe.py (or immutable harness on init)
     files = [str(LOCAL_DIR / "transplant_recipe.py")]
     if init_only:
         files.extend([str(LOCAL_DIR / "evaluate_remote.py"), str(LOCAL_DIR / "code_agent_bench.py")])
-    subprocess.run(["scp", "-q", *files, f"dreamer:{REMOTE_DIR}/"], check=True)
+    subprocess.run(["scp", "-q", *files, f"{REMOTE_HOST}:{REMOTE_DIR}/"], check=True)
 
     flag = " --init-base-only" if init_only else ""
     res = subprocess.run(
-        ["ssh", "dreamer", f"{REMOTE_PY} {REMOTE_DIR}/evaluate_remote.py{flag}"],
+        ["ssh", REMOTE_HOST, f"{REMOTE_PY} {REMOTE_DIR}/evaluate_remote.py{flag}"],
         capture_output=True,
         text=True,
     )
@@ -40,9 +41,9 @@ def main():
         sys.exit(res.returncode)
 
     if not init_only:
-        subprocess.run(["scp", "-q", f"dreamer:{REMOTE_DIR}/last_eval.json", str(LOCAL_DIR / "last_eval.json")], check=False)
+        subprocess.run(["scp", "-q", f"{REMOTE_HOST}:{REMOTE_DIR}/last_eval.json", str(LOCAL_DIR / "last_eval.json")], check=True)
     else:
-        subprocess.run(["scp", "-q", f"dreamer:{REMOTE_DIR}/base_ref.json", str(LOCAL_DIR / "base_ref.json")], check=False)
+        subprocess.run(["scp", "-q", f"{REMOTE_HOST}:{REMOTE_DIR}/base_ref.json", str(LOCAL_DIR / "base_ref.json")], check=True)
 
     lines = [l.strip() for l in res.stdout.strip().splitlines() if l.strip()]
     for line in reversed(lines):

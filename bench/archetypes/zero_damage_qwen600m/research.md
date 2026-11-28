@@ -8,11 +8,11 @@ Eliminate the weight-transplant damage tax observed in Exp 251 (naive Platonic d
 - **Primary metric:** `score` (maximize; `0.0000` = unmodified `Qwen/Qwen3-0.6B`)
   - `score = (-100 * d_nll) + (80 * d_code_pass1) + (80 * d_code_units) + (80 * d_swe) + (80 * d_proc) + (50 * d_actor)`
 - **Target (`pass: true`):** `guard_ok == True` (`d_align_peak >= +0.050`), `d_nll <= 0.0`, `d_code_units >= 0.0`, `d_swe >= 0.0`, `d_proc >= 0.0`, `score >= +3.00`.
-- **Evaluator:** `python /Users/benjaminbabeshkin/systemone/exp256_qwen600m_autoresearch/evaluate.py` (IMMUTABLE).
+- **Evaluator:** `python3 bench/archetypes/zero_damage_qwen600m/evaluate.py` (IMMUTABLE).
 - **Max iterations:** `12` (autonomous loop; follow `stuck-detection.md`: 3 flat -> Level-1 strategy switch; 5 flat -> Level-2 paradigm shift).
 
 ## Mutable File
-- `/Users/benjaminbabeshkin/systemone/exp256_qwen600m_autoresearch/transplant_recipe.py` (ONLY file modified across iterations).
+- `bench/archetypes/zero_damage_qwen600m/transplant_recipe.py` (ONLY file modified across iterations).
 
 ## Constraints & Guardrails
 1. **Zero benchmark leakage:** Training uses ONLY strictly neutral `targets_qwen600m_rival30_50.npz` (`gut + proc + chat`, ZERO myth, ZERO coding tasks, ZERO eval passages).

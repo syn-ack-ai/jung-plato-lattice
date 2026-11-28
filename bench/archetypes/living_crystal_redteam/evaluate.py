@@ -1,34 +1,33 @@
 #!/usr/bin/env python3
 """Immutable local evaluator wrapper adhering strictly to `autoresearch-skill/evaluator-contract.md`.
-Syncs `hardened_memory.py` to `dreamer`, executes the immutable remote RTX 4090 harness,
-pulls diagnostics locally, and prints the single contract JSON line to stdout.
+Syncs `hardened_memory.py` to the configured GPU host (`JPL_REMOTE_HOST`), executes the
+immutable remote harness, pulls diagnostics locally, and prints the single contract JSON line.
 """
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
+REMOTE_HOST = os.environ.get("JPL_REMOTE_HOST", "gpu-host")
+REMOTE_DIR = os.environ.get("JPL_REMOTE_ARCH_DIR", "bench/archetypes")
+REMOTE_PY = os.environ.get("JPL_REMOTE_PYTHON", "python3")
 
 
 def main():
-    # Syntax-check candidate first (fast fail!)
     subprocess.run([sys.executable, "-m", "py_compile", str(ROOT / "hardened_memory.py")], check=True)
-    # Sync ONLY mutable `hardened_memory.py` to dreamer
-    subprocess.run(["scp", "-q", str(ROOT / "hardened_memory.py"), "dreamer:~/systemone/bench/archetypes/exp255_ar/hardened_memory.py"], check=True)
-    # Run immutable remote evaluator on RTX 4090
+    subprocess.run(["scp", "-q", str(ROOT / "hardened_memory.py"), f"{REMOTE_HOST}:{REMOTE_DIR}/exp255_ar/hardened_memory.py"], check=True)
     cmd = (
-        "cd ~/systemone/bench/archetypes && "
-        "PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 "
-        "/home/skypanther/anaconda3/envs/ai-lab/bin/python exp255_ar/evaluate_remote.py"
+        f"cd {REMOTE_DIR} && "
+        f"PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 "
+        f"{REMOTE_PY} exp255_ar/evaluate_remote.py"
     )
-    proc = subprocess.run(["ssh", "dreamer", cmd], capture_output=True, text=True)
+    proc = subprocess.run(["ssh", REMOTE_HOST, cmd], capture_output=True, text=True)
     if proc.returncode != 0:
         sys.stderr.write(proc.stderr)
         sys.exit(proc.returncode)
-    # Pull full diagnostics JSON locally for hypothesis analysis
-    subprocess.run(["scp", "-q", "dreamer:~/systemone/bench/archetypes/exp252/results/exp255_ar_last_eval.json", str(ROOT / "last_eval.json")], check=True)
-    # Emit the single contract JSON line from remote stdout
+    subprocess.run(["scp", "-q", f"{REMOTE_HOST}:{REMOTE_DIR}/exp252/results/exp255_ar_last_eval.json", str(ROOT / "last_eval.json")], check=True)
     for line in reversed(proc.stdout.splitlines()):
         s = line.strip()
         if s.startswith("{") and s.endswith("}"):

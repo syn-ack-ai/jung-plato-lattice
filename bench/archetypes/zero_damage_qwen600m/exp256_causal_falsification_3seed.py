@@ -13,6 +13,7 @@ import copy
 import gc
 import importlib.util
 import json
+import os
 import sys
 import time
 from pathlib import Path
@@ -21,8 +22,8 @@ import numpy as np
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-ARCH = Path("/home/skypanther/systemone/bench/archetypes")
-QDIR = ARCH / "exp256_q600"
+ARCH = Path(os.environ.get("JPL_ARCH_DIR", Path(__file__).resolve().parent.parent))
+QDIR = Path(os.environ.get("JPL_Q600_DIR", Path(__file__).resolve().parent))
 TARGETS_NPZ = QDIR / "targets_qwen600m_rival30_50.npz"
 CODE_NPZ = QDIR / "stdlib_code_gemma4_8b_targets.npz"
 BASE_REF_PATH = QDIR / "base_ref.json"

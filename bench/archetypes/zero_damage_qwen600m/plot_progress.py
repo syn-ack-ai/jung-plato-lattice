@@ -2,19 +2,28 @@
 using `autoresearch-skill/scripts/style_presets.py`.
 """
 import csv
+import os
 import sys
 from pathlib import Path
 
-SKILL_SCRIPTS = "/Users/benjaminbabeshkin/.agents/skills/autoresearch/scripts"
-if SKILL_SCRIPTS not in sys.path:
+SKILL_SCRIPTS = os.environ.get("AUTORESEARCH_SCRIPTS_DIR", "")
+if SKILL_SCRIPTS and Path(SKILL_SCRIPTS).exists():
     sys.path.insert(0, SKILL_SCRIPTS)
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-import style_presets as sp
+try:
+    import style_presets as sp
+except ImportError:
+    class _SP:
+        @staticmethod
+        def rcparams():
+            import matplotlib as mpl
+            mpl.rcParams.update({"figure.dpi": 180, "font.size": 10.5, "axes.spines.top": False, "axes.spines.right": False})
+    sp = _SP()
 
-DIR = Path("/Users/benjaminbabeshkin/systemone/exp256_qwen600m_autoresearch")
+DIR = Path(__file__).resolve().parent
 TSV = DIR / "autoresearch-results.tsv"
 OUT = DIR / "progress.png"
 

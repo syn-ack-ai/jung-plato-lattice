@@ -1,5 +1,5 @@
 {
- "delta_checkpoint": "/home/skypanther/systemone/bench/archetypes/exp256_q600/iter15_pass_delta.pt",
+ "delta_checkpoint": "iter15_pass_delta.pt",
  "arms": [
   {
    "arm": "Arm1_Base_NoCrystal",

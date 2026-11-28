@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """Refresh `progress.png` from `autoresearch-results.tsv` using autoresearch-skill style presets."""
 import csv
+import os
 import sys
 from pathlib import Path
 
-sys.path.insert(0, "/Users/benjaminbabeshkin/.agents/skills/autoresearch/scripts")
-from style_presets import rcparams, OKABE_ITO  # noqa: E402
+SKILL_SCRIPTS = os.environ.get("AUTORESEARCH_SCRIPTS_DIR", "")
+if SKILL_SCRIPTS and Path(SKILL_SCRIPTS).exists():
+    sys.path.insert(0, SKILL_SCRIPTS)
+    from style_presets import rcparams, OKABE_ITO  # noqa: E402
+else:
+    OKABE_ITO = ["#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7", "#000000"]
+    def rcparams():
+        import matplotlib as mpl
+        mpl.rcParams.update({"figure.dpi": 180, "font.size": 10.5, "axes.spines.top": False, "axes.spines.right": False})
 import matplotlib.pyplot as plt  # noqa: E402
 
 

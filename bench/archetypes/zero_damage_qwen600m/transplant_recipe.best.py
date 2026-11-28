@@ -14,6 +14,7 @@ Iteration 15 (`H15_dual_domain_prose_plus_code_geom` — Dual-Domain Pure-Geomet
 """
 import gc
 import math
+import os
 import time
 from pathlib import Path
 import numpy as np
@@ -23,7 +24,7 @@ import torch.nn.functional as F
 
 LAYER_30 = 8
 LAYER_50 = 14
-CODE_TARGETS_NPZ = Path("/home/skypanther/systemone/bench/archetypes/exp256_q600/stdlib_code_gemma4_8b_targets.npz")
+CODE_TARGETS_NPZ = Path(os.environ.get("JPL_CODE_TARGETS_NPZ", Path(__file__).resolve().parent / "stdlib_code_gemma4_8b_targets.npz"))
 
 
 class LoRALinearWrap(nn.Module):
