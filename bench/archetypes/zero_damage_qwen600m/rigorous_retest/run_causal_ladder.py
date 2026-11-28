@@ -191,6 +191,27 @@ def summarize_results(runs_dir: Path, out_path: Path):
                 rb = np.mean([loaded[b][s]["swe_per_pair"][i]["full_margin"] for s in range(len(SEEDS)) for i in idxs])
                 repo_diffs.append(ra - rb)
             boot["swe_repo_full_margin"] = cluster_bootstrap_diff(repo_diffs)
+            # 6. Proc-200 items (200 items, accuracy and answer margin)
+            pr_a = np.mean([[float(x["ok"]) for x in r["proc_per_item"]] for r in loaded[a]], axis=0)
+            pr_b = np.mean([[float(x["ok"]) for x in r["proc_per_item"]] for r in loaded[b]], axis=0)
+            boot["proc_item_acc"] = cluster_bootstrap_diff(pr_a - pr_b)
+            pm_a = np.mean([[float(x["margin"]) for x in r["proc_per_item"]] for r in loaded[a]], axis=0)
+            pm_b = np.mean([[float(x["margin"]) for x in r["proc_per_item"]] for r in loaded[b]], axis=0)
+            boot["proc_item_margin"] = cluster_bootstrap_diff(pm_a - pm_b)
+            # 7. Actor-240 pairs (120 orig/mirror pair clusters)
+            ac_a = np.mean([[float(x["ok"]) for x in r["actor_per_item"]] for r in loaded[a]], axis=0)
+            ac_b = np.mean([[float(x["ok"]) for x in r["actor_per_item"]] for r in loaded[b]], axis=0)
+            ac_pair_diff = 0.5 * ((ac_a[0::2] - ac_b[0::2]) + (ac_a[1::2] - ac_b[1::2]))
+            boot["actor_pair_acc"] = cluster_bootstrap_diff(ac_pair_diff)
+            mc_a = np.mean([
+                [float(r["actor_per_item"][2 * k]["ok"] and r["actor_per_item"][2 * k + 1]["ok"]) for k in range(len(r["actor_per_item"]) // 2)]
+                for r in loaded[a]
+            ], axis=0)
+            mc_b = np.mean([
+                [float(r["actor_per_item"][2 * k]["ok"] and r["actor_per_item"][2 * k + 1]["ok"]) for k in range(len(r["actor_per_item"]) // 2)]
+                for r in loaded[b]
+            ], axis=0)
+            boot["actor_mirror_pair_consistent"] = cluster_bootstrap_diff(mc_a - mc_b)
             contrasts[c_key]["cluster_bootstrap"] = boot
 
     out = {

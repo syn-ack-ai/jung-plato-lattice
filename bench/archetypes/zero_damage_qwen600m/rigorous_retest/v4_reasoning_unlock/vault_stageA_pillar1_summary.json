@@ -1,0 +1,225 @@
+{
+  "humaneval_164": {
+    "greedy": {
+      "hits": 58,
+      "pass1": 0.35366
+    },
+    "random_k8_mean": 0.34451,
+    "oracle_k8_hits": 89,
+    "oracle_k8_pass1": 0.54268,
+    "oracle_k9_hits": 90,
+    "oracle_k9_pass1": 0.54878,
+    "self_logprob_mean_ast": {
+      "k8_hits": 59,
+      "k8_pass1": 0.35976,
+      "k9_hits": 60,
+      "k9_pass1": 0.36585
+    },
+    "self_logprob_sum_ast": {
+      "k8_hits": 54,
+      "k8_pass1": 0.32927,
+      "k9_hits": 54,
+      "k9_pass1": 0.32927
+    },
+    "self_consistency_ast": {
+      "k8_hits": 58,
+      "k8_pass1": 0.35366,
+      "k9_hits": 58,
+      "k9_pass1": 0.35366
+    },
+    "self_audit_yes_no_ast": {
+      "k8_hits": 56,
+      "k8_pass1": 0.34146,
+      "k9_hits": 55,
+      "k9_pass1": 0.33537
+    },
+    "own_06b_native_probe": {
+      "k8_hits": 65,
+      "k8_pass1": 0.39634,
+      "k9_hits": 66,
+      "k9_pass1": 0.40244
+    },
+    "shuffled_compass_ctrl": {
+      "k8_hits": 61,
+      "k8_pass1": 0.37195,
+      "k9_hits": 64,
+      "k9_pass1": 0.39024
+    },
+    "platonic_31b_gcca_compass": {
+      "k8_hits": 66,
+      "k8_pass1": 0.40244,
+      "k9_hits": 65,
+      "k9_pass1": 0.39634
+    },
+    "bootstraps": {
+      "k9_compass_vs_greedy": {
+        "delta_pp": 4.27,
+        "ci95_lo_pp": -0.61,
+        "ci95_hi_pp": 9.76,
+        "p_two_sided": 0.1294,
+        "wins": 13,
+        "losses": 6
+      },
+      "k8_compass_vs_lp_mean": {
+        "delta_pp": 4.27,
+        "ci95_lo_pp": -1.22,
+        "ci95_hi_pp": 9.76,
+        "p_two_sided": 0.1438,
+        "wins": 14,
+        "losses": 7
+      },
+      "k9_compass_vs_lp_mean": {
+        "delta_pp": 3.05,
+        "ci95_lo_pp": -2.44,
+        "ci95_hi_pp": 8.54,
+        "p_two_sided": 0.3178,
+        "wins": 13,
+        "losses": 8
+      },
+      "k8_compass_vs_own06b": {
+        "delta_pp": 0.61,
+        "ci95_lo_pp": -3.05,
+        "ci95_hi_pp": 4.27,
+        "p_two_sided": 0.8892,
+        "wins": 5,
+        "losses": 4
+      },
+      "k9_compass_vs_own06b": {
+        "delta_pp": -0.61,
+        "ci95_lo_pp": -4.88,
+        "ci95_hi_pp": 3.05,
+        "p_two_sided": 0.8638,
+        "wins": 5,
+        "losses": 6
+      },
+      "k8_compass_vs_shuf": {
+        "delta_pp": 3.05,
+        "ci95_lo_pp": -1.83,
+        "ci95_hi_pp": 8.54,
+        "p_two_sided": 0.3014,
+        "wins": 12,
+        "losses": 7
+      },
+      "k9_compass_vs_shuf": {
+        "delta_pp": 0.61,
+        "ci95_lo_pp": -4.28,
+        "ci95_hi_pp": 6.1,
+        "p_two_sided": 0.909,
+        "wins": 10,
+        "losses": 9
+      }
+    }
+  },
+  "mbpp_test_257": {
+    "greedy": {
+      "hits": 110,
+      "pass1": 0.42802
+    },
+    "random_k8_mean": 0.40078,
+    "oracle_k8_hits": 142,
+    "oracle_k8_pass1": 0.55253,
+    "oracle_k9_hits": 142,
+    "oracle_k9_pass1": 0.55253,
+    "self_logprob_mean_ast": {
+      "k8_hits": 103,
+      "k8_pass1": 0.40078,
+      "k9_hits": 103,
+      "k9_pass1": 0.40078
+    },
+    "self_logprob_sum_ast": {
+      "k8_hits": 104,
+      "k8_pass1": 0.40467,
+      "k9_hits": 105,
+      "k9_pass1": 0.40856
+    },
+    "self_consistency_ast": {
+      "k8_hits": 106,
+      "k8_pass1": 0.41245,
+      "k9_hits": 106,
+      "k9_pass1": 0.41245
+    },
+    "self_audit_yes_no_ast": {
+      "k8_hits": 104,
+      "k8_pass1": 0.40467,
+      "k9_hits": 104,
+      "k9_pass1": 0.40467
+    },
+    "own_06b_native_probe": {
+      "k8_hits": 109,
+      "k8_pass1": 0.42412,
+      "k9_hits": 109,
+      "k9_pass1": 0.42412
+    },
+    "shuffled_compass_ctrl": {
+      "k8_hits": 104,
+      "k8_pass1": 0.40467,
+      "k9_hits": 104,
+      "k9_pass1": 0.40467
+    },
+    "platonic_31b_gcca_compass": {
+      "k8_hits": 111,
+      "k8_pass1": 0.43191,
+      "k9_hits": 112,
+      "k9_pass1": 0.4358
+    },
+    "bootstraps": {
+      "k9_compass_vs_greedy": {
+        "delta_pp": 0.78,
+        "ci95_lo_pp": -3.5,
+        "ci95_hi_pp": 5.06,
+        "p_two_sided": 0.7824,
+        "wins": 18,
+        "losses": 16
+      },
+      "k8_compass_vs_lp_mean": {
+        "delta_pp": 3.11,
+        "ci95_lo_pp": -1.17,
+        "ci95_hi_pp": 7.39,
+        "p_two_sided": 0.16,
+        "wins": 19,
+        "losses": 11
+      },
+      "k9_compass_vs_lp_mean": {
+        "delta_pp": 3.5,
+        "ci95_lo_pp": -0.78,
+        "ci95_hi_pp": 7.78,
+        "p_two_sided": 0.1204,
+        "wins": 20,
+        "losses": 11
+      },
+      "k8_compass_vs_own06b": {
+        "delta_pp": 0.78,
+        "ci95_lo_pp": -2.33,
+        "ci95_hi_pp": 3.89,
+        "p_two_sided": 0.731,
+        "wins": 10,
+        "losses": 8
+      },
+      "k9_compass_vs_own06b": {
+        "delta_pp": 1.17,
+        "ci95_lo_pp": -2.33,
+        "ci95_hi_pp": 4.67,
+        "p_two_sided": 0.5686,
+        "wins": 11,
+        "losses": 8
+      },
+      "k8_compass_vs_shuf": {
+        "delta_pp": 2.72,
+        "ci95_lo_pp": -1.17,
+        "ci95_hi_pp": 7.0,
+        "p_two_sided": 0.2146,
+        "wins": 18,
+        "losses": 11
+      },
+      "k9_compass_vs_shuf": {
+        "delta_pp": 3.11,
+        "ci95_lo_pp": -0.78,
+        "ci95_hi_pp": 7.39,
+        "p_two_sided": 0.1548,
+        "wins": 19,
+        "losses": 11
+      }
+    }
+  },
+  "elapsed_sec": 810.2
+}
