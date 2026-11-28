@@ -1,0 +1,4 @@
+iteration	metric_value	delta	delta_pct	status	description	evaluator_source	timestamp
+0	0.8533	-	-	baseline	Round-1 HardenedCrystalMemory baseline (s1=1.00, s2=0.75, s3=0.25, s4=1.00, s5=1.00, s6=0.917, s7=0.958)	python evaluate.py	2026-11-27T15:42:40
+1	0.9442	+0.0909	+10.65%	kept	Joint cos>=0.93 & Jaccard>=0.65 spam dedup + strict KEEP_BOTH conflict auditor	python evaluate.py	2026-11-27T15:45:41
+2	0.9742	+0.0300	+3.18%	kept	2-Hop Associative Crystal Spreading Activation + 2nd-opinion crystal check (TARGET MET)	python evaluate.py	2026-11-27T15:48:17
