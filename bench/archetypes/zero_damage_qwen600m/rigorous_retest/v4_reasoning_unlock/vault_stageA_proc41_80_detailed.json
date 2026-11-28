@@ -1,0 +1,162 @@
+{
+  "full_gpa_50_70_85": {
+    "base_lp_hits": 83,
+    "own_06b_hits": 115,
+    "shuf_hits": 46,
+    "platonic_31b_hits": 122,
+    "boot_plato_vs_lp": {
+      "delta_pp": 19.5,
+      "ci95_lo_pp": 11.5,
+      "ci95_hi_pp": 27.5,
+      "p_two_sided": 0.0,
+      "wins": 59,
+      "losses": 20
+    },
+    "boot_plato_vs_own06b": {
+      "delta_pp": 3.5,
+      "ci95_lo_pp": -2.0,
+      "ci95_hi_pp": 9.0,
+      "p_two_sided": 0.2672,
+      "wins": 20,
+      "losses": 13
+    },
+    "boot_plato_vs_shuf": {
+      "delta_pp": 38.0,
+      "ci95_lo_pp": 28.5,
+      "ci95_hi_pp": 47.0,
+      "p_two_sided": 0.0,
+      "wins": 97,
+      "losses": 21
+    },
+    "by_kind": {
+      "binding": {
+        "n": 40,
+        "base_lp": 20,
+        "own_06b": 29,
+        "shuf": 13,
+        "platonic_31b": 29
+      },
+      "counterfactual": {
+        "n": 40,
+        "base_lp": 23,
+        "own_06b": 37,
+        "shuf": 5,
+        "platonic_31b": 40
+      },
+      "ordering": {
+        "n": 40,
+        "base_lp": 12,
+        "own_06b": 16,
+        "shuf": 7,
+        "platonic_31b": 16
+      },
+      "tracking": {
+        "n": 40,
+        "base_lp": 14,
+        "own_06b": 21,
+        "shuf": 10,
+        "platonic_31b": 22
+      },
+      "twohop": {
+        "n": 40,
+        "base_lp": 14,
+        "own_06b": 12,
+        "shuf": 11,
+        "platonic_31b": 15
+      }
+    }
+  },
+  "full_gcca_30_50_70_85": {
+    "base_lp_hits": 83,
+    "own_06b_hits": 101,
+    "shuf_hits": 40,
+    "platonic_31b_hits": 116,
+    "boot_plato_vs_lp": {
+      "delta_pp": 16.5,
+      "ci95_lo_pp": 8.49,
+      "ci95_hi_pp": 24.5,
+      "p_two_sided": 0.0,
+      "wins": 56,
+      "losses": 23
+    },
+    "boot_plato_vs_own06b": {
+      "delta_pp": 7.5,
+      "ci95_lo_pp": 1.5,
+      "ci95_hi_pp": 13.5,
+      "p_two_sided": 0.0202,
+      "wins": 28,
+      "losses": 13
+    },
+    "boot_plato_vs_shuf": {
+      "delta_pp": 38.0,
+      "ci95_lo_pp": 28.5,
+      "ci95_hi_pp": 47.0,
+      "p_two_sided": 0.0,
+      "wins": 98,
+      "losses": 22
+    },
+    "by_kind": {
+      "binding": {
+        "n": 40,
+        "base_lp": 20,
+        "own_06b": 24,
+        "shuf": 12,
+        "platonic_31b": 29
+      },
+      "counterfactual": {
+        "n": 40,
+        "base_lp": 23,
+        "own_06b": 34,
+        "shuf": 7,
+        "platonic_31b": 40
+      },
+      "ordering": {
+        "n": 40,
+        "base_lp": 12,
+        "own_06b": 13,
+        "shuf": 7,
+        "platonic_31b": 14
+      },
+      "tracking": {
+        "n": 40,
+        "base_lp": 14,
+        "own_06b": 20,
+        "shuf": 6,
+        "platonic_31b": 21
+      },
+      "twohop": {
+        "n": 40,
+        "base_lp": 14,
+        "own_06b": 10,
+        "shuf": 8,
+        "platonic_31b": 12
+      }
+    }
+  },
+  "five_seed_80pct_subsample_gpa": {
+    "platonic_hits": [
+      116,
+      116,
+      118,
+      113,
+      114
+    ],
+    "own06b_hits": [
+      110,
+      104,
+      111,
+      108,
+      113
+    ],
+    "shuf_hits": [
+      39,
+      57,
+      40,
+      42,
+      49
+    ],
+    "platonic_mean_acc": 0.577,
+    "own06b_mean_acc": 0.546,
+    "shuf_mean_acc": 0.227
+  }
+}

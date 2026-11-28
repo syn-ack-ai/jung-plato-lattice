@@ -1,5 +1,5 @@
 """Locked-Vault Verification Stage C: Pillar 2 5-Seed Exact Paired Verification (`Seeds 101..105`).
-Runs SOLO on <GPU_HOST> RTX 4090 after Stage A & B complete!
+Runs on a single RTX 4090 GPU after Stage A & B complete!
 
 Evaluates 3 EXACT PAIRED arms across 5 fresh seeds `{101, 102, 103, 104, 105}` (`steps=60, B=4, G=6, lr=1.5e-4, kl_w=0.02`,
 unfrozen `L2..L27` `o_proj + down_proj` LoRA `r=16`, exact FP32 merge + exact FP32 eval):
@@ -167,9 +167,9 @@ def evaluate_full_vault(model, tok, d_c, mbpp_dev_tasks, mbpp_test_tasks, data_d
     return {
         "summary": summary,
         "per_fn_nll": [float(x["nll"]) for x in dev_res["per_fn_nll"]],
-        "dev_mbpp_bool": [bool(x) for x in dev_res["mbpp_per_task_bool"]],
+        "dev_mbpp_bool": [bool(x["ok"]) if isinstance(x, dict) else bool(x) for x in (dev_res["mbpp_per_task_bool"].values() if isinstance(dev_res["mbpp_per_task_bool"], dict) else dev_res["mbpp_per_task_bool"])],
         "mbpp_test_bool": mbpp_te_bools,
-        "humaneval_bool": [bool(x) for x in he_res["per_task_bool"]],
+        "humaneval_bool": [bool(he_res["per_task_bool"][k]) for k in sorted(he_res["per_task_bool"].keys())] if isinstance(he_res["per_task_bool"], dict) else [bool(x["ok"]) if isinstance(x, dict) else bool(x) for x in he_res["per_task_bool"]],
         "wt2_per_article": [float(x["nll"]) for x in wt2_res["per_article"]],
         "proc41_80_bool": [bool(x["ok"]) for x in proc_res["per_item"]],
         "proc41_80_margin": [float(x["margin"]) for x in proc_res["per_item"]],
